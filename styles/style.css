@@ -13,6 +13,8 @@ body {
 	margin: 0 auto;
 }
 
+/*HEADER */
+
 .main-header {
 	display: flex;
 	justify-content: space-between;
@@ -64,22 +66,21 @@ body {
 
 .btn {
 	display: inline-block;
-	border-radius: 0.15em;
+	vertical-align: top;
+	padding: .5rem 1rem;
 	font-weight: bold;
 	line-height: 1.25;
 	text-align: center;
 	white-space: nowrap;
-	vertical-align: middle;
-}
-
-.main-header .btn-donate {
-	width: 10%;
-	padding: .5rem 1rem;
-	background-color: #CE5F31;
-	color: #fff;
 	text-decoration: none;
 	border: none;
-	transition: all .2s;
+	border-radius: 0.15em;
+	transition: all .2s;	
+}
+
+.btn-donate {
+	background-color: #CE5F31;
+	color: #fff;
 }
 
 .main-header .btn-donate:hover {
@@ -89,6 +90,14 @@ body {
 .main-header .btn-donate:active {
 	background-color: #0339ac;
 }
+
+/* MAIN */
+
+.btn-volunteer {
+	background-color: #ffffff;
+	color: #000000;
+}
+
 
 
 
