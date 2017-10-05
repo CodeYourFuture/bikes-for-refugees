@@ -20,6 +20,7 @@ body {
 	justify-content: space-between;
 	align-items: center;
 	margin-top: 20px;
+	margin-bottom: 40px;
 	padding: 0 1rem;
 }
 
@@ -83,11 +84,12 @@ body {
 	color: #fff;
 }
 
-.main-header .btn-donate:hover {
+.btn-donate:hover,
+.btn-donta:focus {
 	background-color: #245cd3;
 }
 
-.main-header .btn-donate:active {
+.btn-donate:active {
 	background-color: #0339ac;
 }
 
@@ -97,6 +99,39 @@ body {
 	background-color: #ffffff;
 	color: #000000;
 }
+
+.btn-volunteer:hover,
+.btn-volunteer:focus {
+	background-color: #f59d79;
+}
+
+.btn-volunteer:active {
+	background-color: #d47954;
+}
+
+.main-flex {
+	display: flex;
+	justify-content: space-between;
+}
+
+.main-promo {
+	width: 60%;
+}
+
+.upcoming-events {
+	width: 35%;
+}
+
+.learn-more {
+	width: 60%;
+}
+
+.article-flex {
+	display: flex;
+	justify-content: space-between;
+}
+
+
 
 
 
