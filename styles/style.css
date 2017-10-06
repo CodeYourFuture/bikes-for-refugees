@@ -19,8 +19,8 @@ body {
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
-	margin-top: 20px;
-	margin-bottom: 40px;
+	margin-top: 1.5rem;
+	margin-bottom: 3rem;
 	padding: 0 1rem;
 }
 
@@ -68,9 +68,9 @@ body {
 .btn {
 	display: inline-block;
 	vertical-align: top;
-	padding: .5rem 1rem;
+	padding: 0.5rem 1rem;
 	font-weight: bold;
-	line-height: 1.25;
+	line-height: 1.25rem;
 	text-align: center;
 	white-space: nowrap;
 	text-decoration: none;
@@ -95,6 +95,46 @@ body {
 
 /* MAIN */
 
+.gratitude {
+	padding: 0.7rem 0.7rem 0.7rem 2rem;
+	margin-bottom: 2.5rem;
+	border: 1px solid #dccdc6;
+	border-left: 1px solid #ce5f31;
+
+}
+
+.main-flex {
+	display: flex;
+	justify-content: space-between;
+}
+
+.main-promo {
+	width: 60%;
+	padding-left: 2rem;
+	background: #000000 url(../images/header-bike.jpg) no-repeat;
+	background-size: cover;
+	color: #ffffff;
+}
+
+.main-promo h1 {
+	font-family: "Helvetica Neue", Arial, sans-serif;
+	margin-top: 3rem;
+	margin-bottom: 1rem;
+	font-size: 4rem;
+	font-weight: 300;
+}
+
+.main-promo p {
+	margin-bottom: 4rem;
+	font-family: "Helvetica Neue", Arial, sans-serif;
+	font-size: 1.2rem;
+	font-weight: 300;
+}
+
+.main-promo .buttons {
+	margin-bottom: 3rem;
+}
+
 .btn-volunteer {
 	background-color: #ffffff;
 	color: #000000;
@@ -109,27 +149,57 @@ body {
 	background-color: #d47954;
 }
 
-.main-flex {
-	display: flex;
-	justify-content: space-between;
-}
-
-.main-promo {
-	width: 60%;
-}
+  /* UNCOMING EVENTS */
 
 .upcoming-events {
 	width: 35%;
+}
+
+.upcoming-events h2 {
+	text-transform: uppercase;
+	font-size: 1.1rem;
+	font-weight: bold;
+	margin-top: 0;
+}
+
+.upcoming-events a {
+	display: inline-block;
+	vertical-align: top;
+	margin: 0.5rem 0;
+	text-decoration: none;
+	color: #0275df;
+	background-color: #ffffff;
+	font-weight: bold;
+}
+
+.upcoming-events a:hover,
+.upcoming-events a:focus {
+	text-decoration: underline;
+}
+
+.upcoming-events a:active {
+	color: rgba(2,117,223,0.5);
+}
+
+.upcoming-events p {
+	margin: 0;
+	padding: 0;
 }
 
 .learn-more {
 	width: 60%;
 }
 
+.learn-more .learn-article {
+	width: 45%;
+}
+
 .article-flex {
 	display: flex;
 	justify-content: space-between;
 }
+
+
 
 
 
