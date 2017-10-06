@@ -72,7 +72,7 @@ body {
 	vertical-align: middle;
 }
 
-.main-header .btn-donate {
+.btn-donate {
 	padding: .5rem 1rem;
 	background-color: #CE5F31;
 	color: #fff;
@@ -81,10 +81,110 @@ body {
 	transition: all .2s;
 }
 
-.main-header .btn-donate:hover {
-	background-color: #245cd3;
+.btn-donate:hover,
+.btn-donate:focus {
+	background-color: #f2966f;
 }
 
-.main-header .btn-donate:active {
-	background-color: #0339ac;
+.btn-donate:active {
+	background-color: #f06126;
 }
+
+.conclusion-message {
+	margin-top: 40px;
+	position: relative;
+	padding: 1rem;
+	border: 1px solid #E4D9D3;
+}
+
+.conclusion-message:before {
+	content: " ";
+	position: absolute;
+	top: 0;
+	left: -1px;
+	bottom: 0;
+	border-left: 2px solid #f2966f;
+}
+
+.promo {
+	margin-top: 40px;
+	width: 60%;
+	box-sizing: border-box;
+	background: url(../images/jumbotron-background_720.jpg) center center no-repeat;
+	-webkit-background-size: cover;
+	background-size: cover;
+	min-height: 362px;
+	padding: 1rem;
+}
+
+.promo h1 {
+	font-weight: normal;
+	font-size: 4.5rem;
+	padding: 0;
+	margin-bottom: 0;
+	color: #fff;
+}
+
+.promo p {
+	margin-top: 15px;
+	color: #cacaca;
+	font-size: 1.5rem;
+}
+
+.promo hr {
+	border: 0;
+	height: 0;
+	border-top: 1px solid rgba(0, 0, 0, 0.1);
+	border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+	margin-bottom: 35px;
+}
+
+.btn-volonteer {
+	padding: .5rem 1rem;
+	background-color: #ffffff;
+	color: #000000;
+	text-decoration: none;
+	border: none;
+	transition: all .2s;
+}
+
+.btn-volonteer:hover,
+.btn-volonteer:focus {
+	background-color: #acacac;
+}
+
+.btn-volonteer:active {
+	background-color: #7c7c7c;
+}
+
+.learn-more {
+	margin-top: 40px;
+	width: 60%;
+}
+
+.learn-more h2 {
+	position: relative;
+	border-bottom: 1px solid #E4D9D3;
+	font-size: 1.2rem;
+	text-transform: uppercase;
+}
+
+.learn-more h2:before {
+	width: 7.3rem;
+	content: " ";
+	position: absolute;
+	bottom: -1px;
+	border-bottom: 1px solid #f2966f;
+}
+
+.learn-more article {
+	width: 45%;
+	padding: 1rem;
+	border: 1px solid #DDDDDD;
+}
+
+.learn-more article:hover,
+.learn-more article:focus {
+	background-color: #DDDDDD;
+}
+
