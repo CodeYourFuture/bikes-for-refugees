@@ -1,11 +1,387 @@
-/**
- * Base styles to use at the start of the class
- *
- * Module: HTML/CSS
- * Lesson: 1,2
- * Class: Scotland 2017
- */
+html,
+body {
+	margin: 0;
+	padding: 0;
+	font-weight: normal;
+	font-size: 14px;
+	font-family: "Source Sans Pro",-apple-system,system-ui,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
+	color: #000;
+}
 
+.container {
+	width: 80%;
+	margin: 0 auto;
+}
+
+/*HEADER */
+
+.main-header {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin-top: 1.5rem;
+	margin-bottom: 3rem;
+	padding: 0 1rem;
+}
+
+.main-logo {
+	width: 20%;
+	margin-right: 2rem;
+}
+
+.main-nav {
+	width: 65%;
+	font-size: 1.1rem;
+}
+
+.main-nav li {
+	margin-right: 2.5rem;
+	text-transform: uppercase;
+}
+
+.main-nav li:last-child {
+	margin-right: 0;
+}
+
+.main-nav a {
+	text-decoration: none;
+	color: #000;
+	font-weight: bold;
+}
+
+.main-nav a:hover, 
+.main-nav a:focus {
+	text-decoration: underline;
+}
+
+.main-nav a:active {
+	color: rgba(0,0,0,0.6);
+}
+
+.nav-menu {
+	display: flex;
+	justify-content: flex-start;
+	padding: 0;
+	margin: 0;
+	list-style-type: none;
+}
+
+.btn {
+	display: inline-block;
+	vertical-align: top;
+	padding: 0.5rem 1rem;
+	font-size: 1.2rem;
+	line-height: 1.25rem;
+	text-align: center;
+	white-space: nowrap;
+	text-decoration: none;
+	border: none;
+	border-radius: 0.15em;
+	transition: all .2s;	
+}
+
+.main-header .btn-donate {
+	padding: 1rem;
+}
+
+.btn-donate {
+	background-color: #CE5F31;
+	color: #fff;
+}
+
+.btn-donate:hover,
+.btn-donta:focus {
+	background-color: #245cd3;
+}
+
+.btn-donate:active {
+	background-color: #0339ac;
+}
+
+/* MAIN */
+
+.gratitude {
+	padding: 0.7rem 0.7rem 0.7rem 2rem;
+	margin-bottom: 2.5rem;
+	border: 1px solid #dccdc6;
+	border-left: 1px solid #ce5f31;
+
+}
+
+.main-flex {
+	display: flex;
+	justify-content: space-between;
+}
+
+.main-promo {
+	box-sizing: border-box;
+	width: 60%;
+	min-height: 26rem;
+	padding: 0 2rem;
+	margin-bottom: 3rem;
+	background: #000000 url(../images/jumbotron-background.jpg) center no-repeat;
+	background-size: cover;
+	color: #ffffff;
+}
+
+.main-promo h1 {
+	font-family: "Helvetica Neue", Arial, sans-serif;
+	margin-top: 3.5rem;
+	margin-bottom: 1rem;
+	font-size: 4.3rem;
+	font-weight: 300;
+}
+
+.main-promo p {
+	margin-bottom: 2.5rem;
+	font-family: "Helvetica Neue", Arial, sans-serif;
+	font-size: 1.4rem;
+	font-weight: 300;
+}
+
+.main-promo p:after {
+	content: '';
+	display: inline-block;
+	width: 100%;
+	height: 1px;
+	margin-top: 3rem;
+	background: rgba(255,255,255,0.3);
+}
+
+.main-promo .buttons {
+	margin-bottom: 3rem;
+}
+
+.btn-volunteer {
+	background-color: #ffffff;
+	color: #000000;
+}
+
+.btn-volunteer:hover,
+.btn-volunteer:focus {
+	background-color: #f59d79;
+}
+
+.btn-volunteer:active {
+	background-color: #d47954;
+}
+
+  /* UNCOMING EVENTS */
+
+.upcoming-events {
+	box-sizing: border-box;
+	width: 37%;
+	line-height: 1.5rem;
+}
+
+.upcoming-events h2 {
+	position: relative;
+	margin-top: 0;
+	margin-bottom: 2rem;
+	padding-bottom: 0.4rem;
+	text-transform: uppercase;
+	font-size: 1.1rem;
+	font-weight: bold;
+	border-bottom: 1px solid #dddddd;	
+}
+
+.upcoming-events h2:after {
+	position: absolute;
+	top: 1.9rem;
+	display: block;
+	content: '';
+	width: 35%;
+	height: 1px;
+	background: #ce5f31;
+}
+
+.upcoming-events a {
+	display: inline-block;
+	vertical-align: top;
+	margin: 0  0 0.6rem 0;
+	text-decoration: none;
+	font-weight: bold;
+	color: #0275df;
+	background-color: #ffffff;
+}
+
+.upcoming-events a:hover,
+.upcoming-events a:focus {
+	text-decoration: underline;
+}
+
+.upcoming-events a:active {
+	color: rgba(2,117,223,0.5);
+}
+
+.event-article {
+	margin-left: 8rem;
+	margin-bottom: 4rem;
+}
+
+.spring-event,
+.bike-event,
+.help-event,
+.social-icon {
+	position: relative;
+}
+
+.spring-event:before {
+	position: absolute;
+	top: 0;
+	left: -8rem;
+	content: '';
+	width: 6rem;
+	height: 6rem;
+	background: url(../images/spring-article.jpg) no-repeat center;
+	background-size: cover;	
+}
+
+.bike-event:before {
+	position: absolute;
+	top: 0;
+	left: -8rem;
+	content: '';
+	width: 6rem;
+	height: 4rem;
+	background: url(../images/logo1.jpg) no-repeat center;
+	background-size: cover;	
+}
+
+.help-event:before {
+	position: absolute;
+	top: 0;
+	left: -8rem;
+	content: '';
+	width: 6rem;
+	height: 6rem;
+	background: url(../images/news-article.jpg) no-repeat center;
+	background-size: cover;	
+}
+
+.upcoming-events .social-icon {
+	position: relative;
+	margin-left: 2rem;
+}
+
+.social-icon:before {
+	position: absolute;
+	content: '';
+	top: -0.5;
+	left: -2rem;
+	width: 1.5rem;
+	height: 1.5rem;
+	background: url(../images/fb-icon.png) no-repeat center;
+	background-size: cover;
+}
+
+.upcoming-events p {
+	margin: 0;
+	padding: 0;
+}
+
+.learn-more {
+	margin-bottom: 6rem;
+	box-sizing: border-box;
+	width: 60%;
+}
+
+.learn-more h2 {
+	position: relative;
+	margin-top: 0;
+	margin-bottom: 2rem;
+	padding-bottom: 0.4rem;
+	text-transform: uppercase;
+	font-size: 1.1rem;
+	font-weight: bold;
+	border-bottom: 1px solid #dddddd;
+
+}
+
+.learn-more h2:after {
+	position: absolute;
+	top: 1.8rem;
+	content: '';
+	display: block;
+	width: 20%;
+	height: 1px;
+	background: #ce5f31;
+}
+
+.learn-more .learn-article {
+	width: 48%;
+	box-sizing: border-box;
+	padding: 1rem;
+	border: 1px solid #dddddd;
+	line-height: 1.5rem;
+}
+
+.article-flex {
+	display: flex;
+	justify-content: space-between;
+}
+
+.learn-more .learn-article:hover,
+.learn-more .learn-article:focus {
+	background-color: #dddddd;
+}
+
+.learn-article a {
+	position: relative;
+	display: inline-block;
+	vertical-align: top;
+	margin: 0.6rem 0;
+	text-decoration: none;
+	color: #0275df;
+	font-weight: bold;
+	margin-left: 1rem;
+}
+
+.learn-article a:hover,
+.learn-article a:focus {
+	text-decoration: underline;
+}
+
+.learn-article a:active {
+	color: rgba(2,117,223,0.5);
+}
+
+.learn-article a:before {
+	position: absolute;
+	top: 0.3rem;
+	left: -1rem;
+	content: '';
+	width: 0;
+	height: 0;
+	border-style: solid;
+	border-width: 0.4rem 0 0.4rem 0.4rem;
+	border-color: transparent transparent transparent #ce5f31;
+}
+
+.promo-footer {
+	width: 60%;
+	margin-bottom: 4rem;
+	text-align: center;
+}
+
+.promo-footer:before{
+	content: '';
+	display: inline-block;
+	margin-bottom: 1rem;
+	width: 100%;
+	height: 1px;
+	background: #dddddd;	
+}
+
+
+
+
+
+
+
+
+
+/*
 html,
 body {
 	font-family: "Source Sans Pro",-apple-system,system-ui,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
@@ -33,11 +409,13 @@ body {
 }
 
 /* Buttons */
-.btn {
+ /*.btn {
 	border-radius: 0.15em;
 }
 
-/* Alert */
+
+
+
 .alert {
 	position: relative;
 	margin-top: 2em;
@@ -62,12 +440,37 @@ body {
 	background: #ce5f31;
 }
 
-/* Jumbotron */
+
 .jumbotron {
 	border-radius: 0;
+	color: #ffffff;
+	background: #000000 url(../images/header-bike.jpg) no-repeat;
+	background-size: cover;
+	position: relative;	
 }
 
-/* Headings */
+.jumbotron:after {
+    content:"";
+    display:block;
+    width:100%;
+    height: 100%;
+    background-color:rgba(0,0,0,0.5);
+    position:absolute;
+    top:0;
+    left:0;
+ 	z-index: 1;
+  }
+
+.jumbotron > * {
+    position:relative;
+    z-index: 2;
+}
+
+hr.my-4 {
+	border-top: 1px solid rgba(255,255,255,0.7);
+}
+
+
 .heading-underline {
 	position: relative;
 	margin-bottom: 2em;
@@ -89,9 +492,14 @@ body {
 	background: #ce5f31;
 }
 
-/* Article */
+
 .article {
+	box-sizing: border-box;
 	margin-bottom: 2em;
+}
+
+.articles .border {
+	border: 1px solid #dddddd;
 }
 
 .article-title {
@@ -125,3 +533,4 @@ body {
 	   max-height: 80px;
 	}
 }
+*/
