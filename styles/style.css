@@ -31,6 +31,7 @@ body {
 
 .main-nav {
 	width: 65%;
+	font-size: 1.1rem;
 }
 
 .main-nav li {
@@ -170,6 +171,7 @@ body {
 .upcoming-events {
 	box-sizing: border-box;
 	width: 37%;
+	line-height: 1.5rem;
 }
 
 .upcoming-events h2 {
@@ -310,6 +312,7 @@ body {
 	box-sizing: border-box;
 	border: 1px solid #dddddd;
 	padding: 1rem;
+	line-height: 1.5rem;
 }
 
 .article-flex {
