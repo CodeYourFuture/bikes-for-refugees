@@ -44,7 +44,7 @@ h2:before {
 
 .main-logo {
 	width: 20%;
-	margin-right: 2rem;
+	margin-right: 1.5rem;
 }
 
 .main-nav {
@@ -188,6 +188,7 @@ h2:before {
 
 .promo-events h2 {
 	margin-top: 0;
+	margin-bottom: 25px;
 }
 
 .events-item {
@@ -196,7 +197,7 @@ h2:before {
 	display: -ms-flex;
 	display: -o-flex;
 	display: flex;
-	margin-top: 25px;
+	margin-bottom: 30px;
 }
 
 .events-item h3 {
