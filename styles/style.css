@@ -13,6 +13,22 @@ body {
 	margin: 0 auto;
 }
 
+h2 {
+	position: relative;
+	border-bottom: 1px solid #E4D9D3;
+	font-size: 1.2rem;
+	text-transform: uppercase;
+}
+
+h2:before {
+	width: 7.3rem;
+	content: " ";
+	position: absolute;
+	bottom: -1px;
+	border-bottom: 1px solid #f2966f;
+}
+
+
 .main-header {
 	display: -webkit-flex;
 	display: -moz-flex;
@@ -106,8 +122,17 @@ body {
 	border-left: 2px solid #f2966f;
 }
 
+.promo-wrap {
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	justify-content: space-between;
+	padding-top: 40px;
+}
+
 .promo {
-	margin-top: 40px;
 	width: 60%;
 	box-sizing: border-box;
 	background: url(../images/jumbotron-background_720.jpg) center center no-repeat;
@@ -157,28 +182,72 @@ body {
 	background-color: #7c7c7c;
 }
 
+.promo-events {
+	width: 35%;
+}
+
+.promo-events h2 {
+	margin-top: 0;
+}
+
+.events-item {
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	margin-top: 25px;
+}
+
+.events-item h3 {
+	margin-top: 0;
+	margin-bottom: 0;
+}
+
+.description-wrap {
+	margin-left: 1rem;
+}
+
+.promo-events a {
+	text-decoration: none;
+	color: #0286DA;
+	font-weight: bold;
+	font-size: 0.9rem;
+}
+
+.promo-events a:hover,
+.promo-events a:focus {
+	color: #3fb4ff;
+}
+
+.description-wrap a {
+	font-size: 1rem;
+}
+
+.fb-anchor {
+	background: url(../images/facebook-icon.png) no-repeat;
+	padding-left: 1.6rem;
+}
+
 .learn-more {
 	margin-top: 40px;
+	padding-bottom: 60px;
 	width: 60%;
-}
-
-.learn-more h2 {
-	position: relative;
 	border-bottom: 1px solid #E4D9D3;
-	font-size: 1.2rem;
-	text-transform: uppercase;
 }
 
-.learn-more h2:before {
-	width: 7.3rem;
-	content: " ";
-	position: absolute;
-	bottom: -1px;
-	border-bottom: 1px solid #f2966f;
+.learn-more .article-wrap {
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	justify-content: space-between;
 }
 
 .learn-more article {
-	width: 45%;
+	width: 48%;
+	box-sizing: border-box;
 	padding: 1rem;
 	border: 1px solid #DDDDDD;
 }
@@ -188,3 +257,43 @@ body {
 	background-color: #DDDDDD;
 }
 
+.learn-more article h3 {
+	margin-top: 0;
+}
+
+.learn-more article a {
+	position: relative;
+	padding-left: 1.8rem;
+	text-decoration: none;
+	color: #0286DA;
+	font-size: 0.9rem;
+	font-weight: bold;
+}
+
+.learn-more article a:hover,
+.learn-more article a:focus {
+	color: #3fb4ff;
+}
+
+.learn-more article a:before {
+	position: absolute;
+	left: 0.1rem;
+	top: 0.19rem;
+	content: "";
+	width: 0;
+	height: 0;
+	border-top: 5px solid transparent;
+	border-left: 10px solid #CE5F31;
+	border-bottom: 5px solid transparent;
+}
+
+footer {
+	width: 60%;
+	padding-top: 20px;
+	padding-bottom: 20px;
+	text-align: center;
+}
+
+footer p {
+	font-size: 0.9rem;
+}
