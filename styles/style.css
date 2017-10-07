@@ -180,7 +180,7 @@ body {
 	font-weight: bold;
 	margin-top: 0;
 	margin-bottom: 2rem;
-	padding-bottom: 0.5rem;
+	padding-bottom: 0.4rem;
 	border-bottom: 1px solid #dddddd;
 	position: relative;
 }
@@ -292,13 +292,13 @@ body {
 	font-weight: bold;
 	margin-top: 0;
 	margin-bottom: 2rem;
-	padding-bottom: 0.5rem;
+	padding-bottom: 0.4rem;
 	border-bottom: 1px solid #dddddd;
 	position: relative;
 }
 
 .learn-more h2:after {
-	top: 1.9rem;
+	top: 1.8rem;
 	position: absolute;
 	content: '';
 	display: block;
