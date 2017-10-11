@@ -319,7 +319,7 @@ article {
 }
 
 .aside-row p {
-    pading: 10px 0;
+    padding: 0px 0 24px;
 }
 
 .learn-more {
@@ -329,11 +329,6 @@ article {
 
 .hero-content>hr {
     border-bottom-color: #d76e4c;
-}
-
-.aside-row {
-    margin: 0% 0 4%;
-    ;
 }
 
 .aside-row a {
