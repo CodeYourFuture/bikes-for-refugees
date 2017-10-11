@@ -63,7 +63,10 @@ a {
 
 .btn-donate:hover,
 .btn-today-donate:hover,
-.btn-volunteer:hover {
+.btn-volunteer:hover,
+.btn-donate:focus,
+.btn-today-donate:focus,
+.btn-volunteer:focus {
     background: #DA5B35;
 }
 
@@ -159,21 +162,17 @@ header ul li a {
     text-transform: uppercase;
     font-weight: 500;
     color: #201A1A;
-    border: 2px solid #FFFFFF;
-    padding: 3px;
+    border: 2px solid rgba(255, 255, 255, 0);
+    padding: 5px 0;
     transition: all .3s ease-in-out;
+    text-align:center;
 }
 
-header ul li :before {
-    content: "";
-    position: absolute;
-    bottom: -5px;
-    right: 0;
-    border-right: 1px solid #13AC2C;
-    border-bottom: 1px solid #701010;
-    width: 3px;
-    height: 3px;
-
+header ul li a:hover,
+header ul li a:focus {
+    border-bottom: 2px solid #c26133;
+    border-top: 2px solid #c26133;
+    color: #c26133;
 }
 
 .text-info {
