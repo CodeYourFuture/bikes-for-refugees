@@ -4,200 +4,197 @@
 */
 
 /* temp styling */
-
-
-
 /* main styling for code your futrue week 1 tutorial by PRABESH recreation of the page without using bootstrap*/
+
 header {
-    max-width:85%;
-    margin:0 auto;
-    display:flex;
-    flex-wrap:wrap;
+    max-width: 85%;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap :wrap;
 }
 .logo-img {
-    height:50px;
-    width:158px;
+    height: 50px;
+    width: 158px;
 }
 .navigation-ul {
-    list-style:none; 
+    list-style: none; 
 }
 .navigation-ul li {
-    float:left;
-    width:10%;
+    float: left;
+    width: 10%;
 }
 .navigation-ul li:nth-child(3), .navigation-ul li:nth-child(4) {
-   width:20%;
+   width: 20%;
 }
 .navigation-ul li:nth-child(2) {
-    width:15%;
+    width: 15%;
 }
  
 .navigation-ul li a {
-    text-decoration:none;
-    color:black;
-    font-weight:bold;
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
 }
 .logo-container {
-    flex-grow:0;
+    flex-grow: 0;
 }
 .navigation-ul {
-    flex-grow:4;
+    flex-grow: 4;
 
 }
 .donate-now {
-    flex-grow:0;
+    flex-grow: 0;
     
-    margin-top:20px;
-    padding:20px;
-    border-radius:5px;
-    border-width:0px;
-    background:#CE5F31;
-    color:white;
-    
-    font-size:.9em;
-      
+    margin-top: 20px;
+    padding: 20px;
+    border-radius: 5px;
+    border-width: 0px;
+    background: #CE5F31;
+    color: white;
+
+    font-size: 0.9em;      
 }
 
 .thankyou-message-display-box {
-    height:60px;
-    width:87%;
-    border:1px solid #DCCDC6;
-    margin:0 auto;
-    margin-top:50px;
-    border-left-width:1.4px;
-    border-left-color:rgba(206, 95, 49, .7);
+    height: 60px;
+    width: 87%;
+    border: 1px solid #DCCDC6;
+    margin: 0 auto;
+    margin-top: 50px;
+    border-left-width: 1.4px;
+    border-left-color: rgba(206, 95, 49, .7);
 }
 .thankyou-message-display-box > p {
-    padding:2px 0px 0px 20px;
+    padding: 2px 0px 0px 20px;
     
 }
 .left-section {
-    width:700px;
+    width: 700px;
 }
 .main-body-content {
-    width:87%;
-    margin:0 auto;
-    display:flex;
-    margin-top:50px;
+    width: 87%;
+    margin: 0 auto;
+    display: flex;
+    margin-top: 50px;
 }
 
 .left-section-image {
     background-image:url('../images/header-bike.jpg');
-    height:350px;
-    width:700px;
-    flex-grow:2;
-    position:relative;  
+    height: 350px;
+    width: 700px;
+    flex-grow: 2;
+    position: relative;  
 }
 .left-section-content {
-    color:white;
-    position:relative;
-    padding:20px 30px 0 30px;
+    color: white;
+    position: relative;
+    padding: 20px 30px 0 30px;
     
 }
 .left-section-image:before {
-    content:'';
-    position:absolute;
-    top:0;
-    right:0;
-    left:0;
-    bottom:0;
-    background:rgba(0,0,0,.7);
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    background: rgba(0,0,0,.7);
    
 
 }
 .left-section-content > h1 {
-    font-size:4.3em;
-    font-weight:100;
+    font-size: 4.3em;
+    font-weight: 100;
    
    
 }
 .left-section-content > p {
-    font-size:1.3em;
-    font-weight:100;
-    padding-top:-20px;
-    margin-top:-45px;
+    font-size: 1.3em;
+    font-weight: 100;
+    padding-top: -20px;
+    margin-top: -45px;
 }
 .horizontal-line-inside-bike-pic {
- opacity:.5;
+ opacity: .5;
  
 }
 .buttons-inside-pic {
-    margin-top:15px;
-    padding:15px 15px;
-    font-weight:bold;
-    font-size:.8em;
-    border-radius:5px;
-    outline:none;
-    text-shadow:0;
-    border-width:0;
+    margin-top: 15px;
+    padding: 15px 15px;
+    font-weight: bold;
+    font-size: 0.8em;
+    border-radius: 5px;
+    outline: none;
+    text-shadow: 0;
+    border-width: 0;
 }
 .donate-today-button {
-    background:#CE5F31;
-    border-color:#CE5F31;
-    color:white;
+    background: #CE5F31;
+    border-color: #CE5F31;
+    color: white;
    
 }
 .right-section {
-    flex-grow:1;
-    margin-left:30px;
+    flex-grow: 1;
+    margin-left: 30px;
 }
 
 .left-hand-side-articles {
-    display:flex;
-    margin-top:30px;
+    display: flex;
+    margin-top: 30px;
 }
 .first-left-hand-side-article {
-    background:#DDDDDD;
-    box-sizing:border-box;
-    padding:10px 20px;
-    margin-right:10px;
-    font-size:1.04em;
-    flex:1;
+    background: #DDDDDD;
+    box-sizing: border-box;
+    padding: 10px 20px;
+    margin-right: 10px;
+    font-size: 1.04em;
+    flex: 1;
 }
 
 
 
 .second-left-hand-side-article {
-    margin-left:10px;
-    border:1px solid #DCCDC6;
-    box-sizing:border-box;
-    padding:10px 20px;
-    font-size:1.04em;
-    flex:1;
+    margin-left: 10px;
+    border: 1px solid #DCCDC6;
+    box-sizing: border-box;
+    padding: 10px 20px;
+    font-size: 1.04em;
+    flex: 1;
 }
 .orange-triangle {
-    color:#CE5F31;
+    color: #CE5F31;
 }
 .blue-color-learn-more {
-    color:#0275D8;
+    color: #0275D8;
 }
 .footer-section {
     margin-top: 50px;
 }
 .footer-section > p {
-    font-size:1.04em;
-    text-align:center;
-    padding-top:15px;
+    font-size: 1.04em;
+    text-align: center;
+    padding-top: 15px;
 }
 .horizontal-lines {
-    height:.01px;
-    background:#DCCDC6;
+    height: 0.01px;
+    background: #DCCDC6;
 }
 
 .events {
-    display:flex;
+    display: flex;
 }
 .events-pics {
-    height:100px;
-    width:100px;
+    height: 100px;
+    width: 100px;
 }
 .event-description {
-    margin-left:20px;
+    margin-left: 20px;
 }
 .event-headings {
-    font-weight:bold;
-    font-size:.9em;
-    color:#0275D8;
+    font-weight: bold;
+    font-size: 0.9em;
+    color: #0275D8;
 }
 
 
