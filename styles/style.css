@@ -12,20 +12,25 @@ header {
     display: flex;
     flex-wrap :wrap;
 }
+
 .logo-img {
     height: 50px;
     width: 158px;
 }
+
 .navigation-ul {
     list-style: none; 
 }
+
 .navigation-ul li {
     float: left;
     width: 10%;
 }
+
 .navigation-ul li:nth-child(3), .navigation-ul li:nth-child(4) {
    width: 20%;
 }
+
 .navigation-ul li:nth-child(2) {
     width: 15%;
 }
@@ -35,13 +40,16 @@ header {
     color: black;
     font-weight: bold;
 }
+
 .logo-container {
     flex-grow: 0;
 }
+
 .navigation-ul {
     flex-grow: 4;
 
 }
+
 .donate-now {
     flex-grow: 0;
     
@@ -51,7 +59,6 @@ header {
     border-width: 0px;
     background: #CE5F31;
     color: white;
-
     font-size: 0.9em;      
 }
 
@@ -64,13 +71,16 @@ header {
     border-left-width: 1.4px;
     border-left-color: rgba(206, 95, 49, .7);
 }
+
 .thankyou-message-display-box > p {
     padding: 2px 0px 0px 20px;
     
 }
+
 .left-section {
     width: 700px;
 }
+
 .main-body-content {
     width: 87%;
     margin: 0 auto;
@@ -85,12 +95,14 @@ header {
     flex-grow: 2;
     position: relative;  
 }
+
 .left-section-content {
     color: white;
     position: relative;
     padding: 20px 30px 0 30px;
     
 }
+
 .left-section-image:before {
     content: '';
     position: absolute;
@@ -99,25 +111,24 @@ header {
     left: 0;
     bottom: 0;
     background: rgba(0,0,0,.7);
-   
-
 }
+
 .left-section-content > h1 {
     font-size: 4.3em;
-    font-weight: 100;
-   
-   
+    font-weight: 100; 
 }
+
 .left-section-content > p {
     font-size: 1.3em;
     font-weight: 100;
     padding-top: -20px;
     margin-top: -45px;
 }
+
 .horizontal-line-inside-bike-pic {
  opacity: .5;
- 
 }
+
 .buttons-inside-pic {
     margin-top: 15px;
     padding: 15px 15px;
@@ -128,12 +139,14 @@ header {
     text-shadow: 0;
     border-width: 0;
 }
+
 .donate-today-button {
     background: #CE5F31;
     border-color: #CE5F31;
     color: white;
    
 }
+
 .right-section {
     flex-grow: 1;
     margin-left: 30px;
@@ -143,6 +156,7 @@ header {
     display: flex;
     margin-top: 30px;
 }
+
 .first-left-hand-side-article {
     background: #DDDDDD;
     box-sizing: border-box;
@@ -152,8 +166,6 @@ header {
     flex: 1;
 }
 
-
-
 .second-left-hand-side-article {
     margin-left: 10px;
     border: 1px solid #DCCDC6;
@@ -162,20 +174,25 @@ header {
     font-size: 1.04em;
     flex: 1;
 }
+
 .orange-triangle {
     color: #CE5F31;
 }
+
 .blue-color-learn-more {
     color: #0275D8;
 }
+
 .footer-section {
     margin-top: 50px;
 }
+
 .footer-section > p {
     font-size: 1.04em;
     text-align: center;
     padding-top: 15px;
 }
+
 .horizontal-lines {
     height: 0.01px;
     background: #DCCDC6;
@@ -184,13 +201,16 @@ header {
 .events {
     display: flex;
 }
+
 .events-pics {
     height: 100px;
     width: 100px;
 }
+
 .event-description {
     margin-left: 20px;
 }
+
 .event-headings {
     font-weight: bold;
     font-size: 0.9em;
