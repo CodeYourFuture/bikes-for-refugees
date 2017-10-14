@@ -47,12 +47,10 @@ header {
 
 .navigation-ul {
     flex-grow: 4;
-
 }
 
 .donate-now {
-    flex-grow: 0;
-    
+    flex-grow: 0; 
     margin-top: 20px;
     padding: 20px;
     border-radius: 5px;
@@ -62,7 +60,7 @@ header {
     font-size: 0.9em;      
 }
 
-.thankyou-message-display-box {
+.thanks-message {
     height: 60px;
     width: 87%;
     border: 1px solid #DCCDC6;
@@ -72,9 +70,8 @@ header {
     border-left-color: rgba(206, 95, 49, .7);
 }
 
-.thankyou-message-display-box > p {
-    padding: 2px 0px 0px 20px;
-    
+.thanks-message > p {
+    padding: 2px 0px 0px 20px;   
 }
 
 .left-section {
@@ -125,7 +122,7 @@ header {
     margin-top: -45px;
 }
 
-.horizontal-line-inside-bike-pic {
+.line-one {
  opacity: .5;
 }
 
@@ -143,8 +140,7 @@ header {
 .donate-today-button {
     background: #CE5F31;
     border-color: #CE5F31;
-    color: white;
-   
+    color: white;  
 }
 
 .right-section {
@@ -152,12 +148,12 @@ header {
     margin-left: 30px;
 }
 
-.left-hand-side-articles {
+.articles-left {
     display: flex;
     margin-top: 30px;
 }
 
-.first-left-hand-side-article {
+.article-one {
     background: #DDDDDD;
     box-sizing: border-box;
     padding: 10px 20px;
@@ -166,7 +162,7 @@ header {
     flex: 1;
 }
 
-.second-left-hand-side-article {
+.article-two {
     margin-left: 10px;
     border: 1px solid #DCCDC6;
     box-sizing: border-box;
@@ -179,7 +175,7 @@ header {
     color: #CE5F31;
 }
 
-.blue-color-learn-more {
+.learn-more {
     color: #0275D8;
 }
 
@@ -193,7 +189,7 @@ header {
     padding-top: 15px;
 }
 
-.horizontal-lines {
+.lines {
     height: 0.01px;
     background: #DCCDC6;
 }
