@@ -1,14 +1,21 @@
 
-
-/*Use a media query to add a breakpoint at 800px:*/
-/* @media (max-width:800px) {
-	.left, .main, .right {
-	  width:100%; /*The width is 100%, when the viewport is 800px or smaller*/
-	} 
 body {
+	font-size: 14px;
 	font-family: "Source Sans Pro",-apple-system,system-ui,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
 	background: #DF0606;
 }
+
+@media screen and (max-width: 320px) {
+    body {
+        font-size:10px;
+    }
+}
+
+
+
+
+
+
 /* Headings */
 .navigation-bar {
 	max-width: 80%
