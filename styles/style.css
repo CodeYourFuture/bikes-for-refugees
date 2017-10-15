@@ -88,6 +88,18 @@ h2:before {
 	vertical-align: middle;
 }
 
+@media (min-width: 320px) {
+	.btn {
+		width: 80%;
+	}
+}
+
+@media (min-width: 768px) {
+	.btn {
+		width: 40%;
+	}
+}
+
 .btn-donate {
 	padding: .5rem 1rem;
 	background-color: #CE5F31;
@@ -95,6 +107,18 @@ h2:before {
 	text-decoration: none;
 	border: none;
 	transition: all .2s;
+}
+
+@media (min-width: 320px) {
+	.btn-donate {
+		margin-bottom: 10px;
+	}
+}
+
+@media (min-width: 768px) {
+	.btn-donate {
+		margin-bottom: 0;
+	}
 }
 
 .btn-donate:hover,
@@ -132,6 +156,26 @@ h2:before {
 	padding-top: 40px;
 }
 
+@media (min-width: 320px) {
+	.promo-wrap {
+		-webkit-flex-direction: column;
+		-moz-flex-direction: column;
+		-ms-flex-direction: column;
+		-o-flex-direction: column;
+		flex-direction: column;
+	}
+}
+
+@media (min-width: 576px) {
+	.promo-wrap {
+		-webkit-flex-direction: row;
+		-moz-flex-direction: row;
+		-ms-flex-direction: row;
+		-o-flex-direction: row;
+		flex-direction: row;
+	}
+}
+
 .promo {
 	width: 60%;
 	box-sizing: border-box;
@@ -142,12 +186,54 @@ h2:before {
 	padding: 1rem;
 }
 
+@media (min-width: 320px) {
+	.promo {
+		width: 100%;
+	}
+}
+
+@media (min-width: 576px) {
+	.promo {
+		width: 60%;
+	}
+}
+
 .promo h1 {
 	font-weight: normal;
-	font-size: 4.5rem;
+	font-size: 2rem;
 	padding: 0;
 	margin-bottom: 0;
 	color: #fff;
+}
+
+@media (min-width: 320px) {
+	.promo h1 {
+		font-size: 2.3rem;
+	}
+}
+
+@media (min-width: 576px) {
+	.promo h1 {
+		font-size: 3rem;
+	}
+}
+
+@media (min-width: 768px) {
+	.promo h1 {
+		font-size: 3.7rem;
+	}
+}
+
+@media (min-width: 992px) {
+	.promo h1 {
+		font-size: 4rem;
+	}
+}
+
+@media (min-width: 1200px) {
+	.promo h1 {
+		font-size: 4.5rem;
+	}
 }
 
 .promo p {
@@ -184,6 +270,18 @@ h2:before {
 
 .promo-events {
 	width: 35%;
+}
+
+@media (min-width: 320px) {
+	.promo-events {
+		width: 100%;
+	}
+}
+
+@media (min-width: 576px) {
+	.promo-events {
+		width: 35%;
+	}
 }
 
 .promo-events h2 {
@@ -298,3 +396,4 @@ footer {
 footer p {
 	font-size: 0.9rem;
 }
+
