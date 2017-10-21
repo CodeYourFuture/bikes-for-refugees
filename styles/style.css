@@ -28,7 +28,6 @@ h2:before {
 	border-bottom: 1px solid #f2966f;
 }
 
-
 .main-header {
 	display: -webkit-flex;
 	display: -moz-flex;
@@ -43,12 +42,74 @@ h2:before {
 }
 
 .main-logo {
-	width: 20%;
 	margin-right: 1.5rem;
 }
 
-.main-nav {
-	width: 65%;
+@media(min-width: 320px) {
+	.main-nav {
+		position: relative;
+		display: -webkit-flex;
+		display: -moz-flex;
+		display: -ms-flex;
+		display: -o-flex;
+		display: flex;
+		justify-content: flex-end;
+	}
+
+	.main-nav .nav-menu {
+		position: absolute;
+		left: 70%;
+		display: none;
+		margin: 0;
+		list-style-type: none;
+		width: 100%;
+		padding: 0;
+	}
+
+	.main-nav:hover .nav-menu {
+		display: -webkit-flex;
+		display: -moz-flex;
+		display: -ms-flex;
+		display: -o-flex;
+		display: flex;
+		-webkit-flex-direction: column;
+		-moz-flex-direction: column;
+		-ms-flex-direction: column;
+		-o-flex-direction: column;
+		flex-direction: column;
+	}
+
+	.main-nav .menu-button {
+		display: -webkit-flex;
+		display: -moz-flex;
+		display: -ms-flex;
+		display: -o-flex;
+		display: flex;
+	}
+
+	.main-header .btn-donate {
+		display: none;
+	}
+}
+
+@media (min-width: 992px) {
+	.main-nav .menu-button {
+		display: none;
+	}
+
+	.main-header .btn-donate {
+		display: inline-block;
+	}
+
+	.main-nav .nav-menu {
+		position: relative;
+		left: 0;
+		display: -webkit-flex;
+		display: -moz-flex;
+		display: -ms-flex;
+		display: -o-flex;
+		display: flex;
+	}
 }
 
 .main-nav li {
@@ -105,7 +166,6 @@ h2:before {
 
 @media (min-width: 320px) {
 	.btn {
-		width: 35%;
 		white-space: normal;
 	}
 }
@@ -114,6 +174,24 @@ h2:before {
 	.btn {
 		width: max-content;
 	}
+}
+
+.btn-menu {
+	padding: .5rem 1rem;
+	background-color: #0286DA;
+	color: #fff;
+	text-decoration: none;
+	border: none;
+	transition: all .2s;
+}
+
+.btn-donate:hover,
+.btn-donate:focus {
+	background-color: #f2966f;
+}
+
+.btn-donate:active {
+	background-color: #f06126;
 }
 
 .btn-donate {
@@ -135,10 +213,21 @@ h2:before {
 }
 
 .conclusion-message {
-	margin-top: 40px;
 	position: relative;
 	padding: 1rem;
 	border: 1px solid #E4D9D3;
+}
+
+@media(min-width: 320px) {
+	.conclusion-message {
+		margin-top: 80px;
+	}	
+}
+
+@media(min-width: 992px) {
+	.conclusion-message {
+		margin-top: 40px;
+	}
 }
 
 .conclusion-message:before {
