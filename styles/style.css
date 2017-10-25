@@ -1,11 +1,22 @@
+/* --------bikes-for-refugees-mobile-first ---------------- */
+
+body, html {
+    margin: 0;
+    padding: 0;
+}
+
+
+
 /*inserted by Prabesh ------------------------------------------------------------- 
 *Bikes-for-refugees
 
 */
 
+
+
 /* temp styling */
 /* main styling for code your futrue week 1 tutorial by PRABESH recreation of the page without using bootstrap*/
-
+/*
 header {
     max-width: 85%;
     margin: 0 auto;
@@ -75,7 +86,7 @@ header {
 }
 
 .left-section {
-    width: 700px;
+    width: 70%; 
 }
 
 .main-body-content {
@@ -87,11 +98,11 @@ header {
 
 .left-section-image {
     background-image:url('../images/header-bike.jpg');
-    height: 350px;
-    width: 700px;
+    height: 49%;
     flex-grow: 2;
     position: relative;  
 }
+
 
 .left-section-content {
     color: white;
@@ -111,19 +122,30 @@ header {
 }
 
 .left-section-content > h1 {
-    font-size: 4.3em;
+    font-size: 2em;
     font-weight: 100; 
+
+}
+.left-section-content > p {
+    font-size: 1em;
+    padding-top: -20px;
+    margin-top: -15px;
+    
 }
 
-.left-section-content > p {
-    font-size: 1.3em;
-    font-weight: 100;
-    padding-top: -20px;
-    margin-top: -45px;
+@media screen and (min-width : 320px) {
+    .left-section-content > h1 {
+        font-size: 4.3em;
+    }
+
+    .left-section-content > p {
+      font-size: 1.2em;
+      margin-top: -45px;
+    }
 }
 
 .line-one {
- opacity: .5;
+ opacity: 0.5;
 }
 
 .buttons-inside-pic {
@@ -135,6 +157,7 @@ header {
     outline: none;
     text-shadow: 0;
     border-width: 0;
+   
 }
 
 .donate-today-button {
@@ -144,6 +167,7 @@ header {
 }
 
 .right-section {
+    width:30%;
     flex-grow: 1;
     margin-left: 30px;
 }
@@ -346,3 +370,4 @@ body {
 	}
 }
 */
+
