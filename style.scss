@@ -1,0 +1,212 @@
+
+/* mobile first development approach bikes-for-refugess development --- Prabesh */
+
+/* varibles */
+$btn-color: #D95520;
+
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: "Source Sans Pro",-apple-system,system-ui,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;    
+}
+
+* {
+    box-sizing: border-box;
+} 
+
+.logo-div {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;   
+}
+
+.logo {
+    height: 100px;
+    width:auto;  
+}
+
+.btn {
+    padding: 25px 23px;
+    font-size:1em;
+    background: $btn-color;
+    border: transparent;
+    color: white;
+    border-radius: 5px;
+    line-height: 6px;
+}
+
+.donate-btn {
+    height: 30px;
+    margin-right: 10px;
+}
+
+.btn-voltr {
+    background: #fff;
+    color: #3B2E2F;
+}
+
+/* Menu toggler */
+.nav-toggler {
+    display: block;
+    position: relative;
+    overflow: hidden;
+    margin: 30px 0 0 10px;
+    padding: 0;
+    width: 30px;
+    height: 25px;
+    font-size: 0;
+    text-indent: -9999px;
+    appearance: none;
+    box-shadow: none;
+    border-radius: none;
+    border: none;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.nav-toggler:focus {
+    outline: none;
+}
+
+.nav-toggler span {
+    display: block;
+    position: absolute;
+    top: 10.4px;
+    height: 4px;
+    width: 100%;
+    background: $btn-color;
+    margin: auto;
+    border-radius: 5px;
+}
+
+.nav-toggler span::before, .nav-toggler span::after {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 100%;
+    height:4px;
+    background: $btn-color;
+    border-radius: 5px;
+}
+
+.nav-toggler span::before {
+    top: -8px;
+}
+
+.nav-toggler span::after {
+    bottom: -8px;
+}
+
+/* Thank you alert message */
+.alert {
+    min-width: 576px;
+    width: 100%;
+    border: 1px solid #DCCDC6;
+    border-left-color: rgba(206, 95, 49, .7);
+}
+
+.alert > p {
+    padding: 10px;
+    font-size: 1.2rem;
+    
+}
+
+.main-pic {
+    background-image:url('./images/header-bike.jpg');
+    height: 350px;
+    min-width: 576px;
+    width: 100%;
+    position: relative;
+   
+}
+
+.main-pic::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    background: rgba(0,0,0,.7);
+}
+
+.pic-content {
+    color: white;
+    position: relative;
+    padding: 50px 20px 0 20px;
+    font-size: 1.2rem;
+}
+
+.pic-content > h1 {
+    font-size: 3em;
+    font-weight: 100;
+}
+
+.pic-content > p {
+    font-size: 0.9em;   
+}
+
+/* Events section */
+.heading-underline {
+    position: relative;
+	margin-bottom: 2em;
+	padding-bottom: 0.5em;
+	border-bottom: 1px solid #dccdc6;
+	font-size: 1.3rem;
+	font-weight: 600;
+	text-transform: uppercase;
+}
+
+.heading-underline:before {
+	content: '';
+	position: absolute;
+	bottom: -1px;
+	left: 0;
+	width: 25%;
+	height: 1px;
+	max-width: 100px;
+	background: #ce5f31;
+}
+
+.event {
+    display: flex;
+    margin: 20px;
+}
+
+.event > img {
+    height: 130px;
+    width: auto;
+}
+
+.events-pics {
+   min-width: 23%;
+   margin: 10px;
+}
+
+.event-description {
+    font-size: 1.2rem;
+    margin: 10px;  
+}
+
+.event-headings {
+    color: #1A6ADC;
+}
+
+span.facebook-logo {
+    padding-right: 5px;
+}
+
+/* Articles */
+.articles {
+    padding: 20px;
+    border-radius: 5px;
+}
+
+.artl-one {
+    background: #DDDDDD;
+}
+
+.artl-two {
+    margin-top: 5px;
+    border: 1px solid #DCCDC6;
+}
