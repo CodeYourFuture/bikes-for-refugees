@@ -8,170 +8,241 @@
 
 html,
 body {
-    font-family: "Source Sans Pro", -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  font-family: "Source Sans Pro",-apple-system,system-ui,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
+  margin: 0;
+  padding: 0;
+  font-weight: normal;
+  font-size: 14px;
+  color: #292b2c;
 }
 
+/*@media screen and (min-width: 900px) {
+    body {
+        background: red;
+    }
+}
+*/
 .container {
-    padding-left: 100;
-
+  width: 85%;
+  margin: 0 auto;
 }
 
-.site-footer {
-    margin-top: 4em;
+.nav-header {
+  display: flex;
+  align-items: center;
+  margin-top: 20px;
+  padding: 0 1rem;
 }
 
-.site-footer p {
-    border-top: 1px solid #dccdc6;
-    padding-top: 2em;
-    padding-bottom: 2em;
+.navbar {
+  width: 70%;
+  justify-content: flex-start;
 }
 
-.navbar-brand > img {
-    max-height: 40px;
-    width: auto;
+.img-fluid {
+  float: left;
+  max-height: 50px;
 }
 
-.navbar-light .navbar-nav .nav-link {
-    color: #292b2c;
-    font-weight: 600;
-    text-transform: uppercase;
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #fff;
 }
 
-/* Buttons */
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: black;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.ml-auto {
+  margin-left: auto !important;
+}
+
+.btn-donate {
+  padding: .5rem 1rem;
+  background-color: #CE5F31;
+  color: #fff;
+  text-decoration: none;
+  border: none;
+  transition: all .2s;
+}
+
+.btn-donate:hover, .btn-donate:focus {
+  background-color: #0743e7;
+}
 
 .btn {
-    border-radius: 0.15em;
-
+  display: inline-block;
+  border-radius: 0.15em;
+  font-weight: 400;
+  line-height: 1.25;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: middle;
 }
 
-.btn-primary {
-
-    background-color: #d46434;
-    border-color: #d46434;
-
+.btn-volunteer {
+  padding: .5rem 1rem;
+  background-color: #ffffff;
+  color: #000000;
+  text-decoration: none;
+  border: none;
+  transition: all .2s;
 }
 
-.btn-secondary {
-
-    border-color: #ffffff;
-
+.conclusion-message {
+  margin-top: 40px;
+  position: relative;
+  padding: 1.5rem;
+  border: 1px solid #E4D9D3;
 }
 
-/* Alert */
-
-.alert {
-    position: relative;
-    margin-top: 2em;
-    margin-bottom: 3em;
-    padding-top: 1.5em;
-    padding-bottom: 1.5em;
-    border: 1px solid #dccdc6;
-    border-radius: 0;
-    font-size: 0.85rem;
-    line-height: 1.3em;
-    background: transparent;
-    color: #292b2c;
+.conclusion-message::before {
+  content: " ";
+  position: absolute;
+  top: 0;
+  left: -1px;
+  bottom: 0;
+  border-left: 1px solid #f2966f;
 }
 
-.alert:before {
-    content: '';
-    position: absolute;
-    left: -1px;
-    top: 0;
-    height: 100%;
-    width: 1px;
-    background: #ce5f31;
+.row {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 40px;
 }
 
-/* Jumbotron */
-
-.jumbotron {
-    border-radius: 0;
-    margin-right: 20;
-    height: 400;
-
-
-    background: url("../images/jumbotron-background.jpg");
+.primary-content {
+  width: 62%;
+  box-sizing: border-box;
+  background: url(../images/jumbotron-background.jpg) center center no-repeat;
+  background-size: auto auto;
+  -webkit-background-size: cover;
+  background-size: cover;
+  min-height: 362px;
+  padding: 1rem;
 }
 
-.display-3 {
-
-    color: #fff;
+.primary-content h1 {
+  font-weight: normal;
+  font-size: 4.5rem;
+  padding: 0;
+  margin-bottom: 0;
+  color: #fff;
 }
 
-.lead {
-
-    color: #fff;
+.primary-content p {
+  margin-top: 15px;
+  color: #cacaca;
+  font-size: 1.5rem;
 }
 
-.my-4 {
-    color: #ffffff;
+.sidebar-content {
+  width: 35%;
 }
 
-/* Headings */
-
-.heading-underline {
-    position: relative;
-    margin-bottom: 2em;
-    padding-bottom: 0.5em;
-    border-bottom: 1px solid #dccdc6;
-    font-size: 1rem;
-    font-weight: 600;
-    text-transform: uppercase;
+h2 {
+  position: relative;
+  border-bottom: 1px solid #E4D9D3;
+  font-size: 1.2rem;
+  text-transform: uppercase;
 }
 
-.heading-underline:before {
-    content: '';
-    position: absolute;
-    bottom: -1px;
-    left: 0;
-    width: 25%;
-    height: 1px;
-    max-width: 100px;
-    background: #ce5f31;
+.sidebar-content h2 {
+  margin-top: 0;
+  margin-bottom: 25px;
 }
 
-/* Article */
-
-.article {
-    margin-bottom: 2em;
+h2::before {
+  width: 7.3rem;
+  content: " ";
+  position: absolute;
+  bottom: -1px;
+  border-bottom: 1px solid #f2966f;
 }
 
-.article-title {
-    margin-bottom: 0.5em;
-    font-weight: 700;
+.events-item {
+  display: flex;
+  margin-bottom: 30px;
 }
 
-.article-read-more a {
-    font-size: 0.85em;
-    font-weight: 700;
-    text-decoration: uppercase;
+.sidebar-content a {
+  text-decoration: none;
+  color: #0286DA;
+  font-weight: bold;
+  font-size: 0.9rem;
 }
 
-.article-read-more a:hover,
-.article-read-more a:focus {
-    text-decoration: none;
+.description-wrap {
+  margin-left: 1rem;
 }
 
-.article-read-more .fa {
-    margin-right: 0.5em;
-    color: #ce5f31;
+.learn-more {
+  margin-top: 40px;
+  padding-bottom: 60px;
+  width: 60%;
+  border-bottom: 1px solid #E4D9D3;
 }
 
-.article-read-more:last-child {
-    margin-bottom: 0;
+.learn-more .article-wrap {
+  display: flex;
+  justify-content: space-between;
 }
 
-.floatleft {
-    float: left;
-    margin: 0 15px 0 0;
+.learn-more article {
+  width: 48%;
+  box-sizing: border-box;
+  padding: 1rem;
+  border: 1px solid #DDDDDD;
 }
 
+.learn-more article h3 {
+  margin-top: 0;
 }
 
-@media screen and (min-width: 992px) {
+.learn-more article a::before {
+  position: absolute;
+  left: 0.1rem;
+  top: 0.19rem;
+  content: "";
+  width: 0;
+  height: 0;
+  border-top: 5px solid transparent;
+  border-left: 10px solid #CE5F31;
+  border-bottom: 5px solid transparent;
+}
 
-    .navbar-brand > img {
-        max-height: 80px;
-    }
+.learn-more article a {
+  position: relative;
+  padding-left: 1.8rem;
+  text-decoration: none;
+  color: #0286DA;
+  font-size: 0.9rem;
+  font-weight: bold;
+}
+
+.learn-more article:hover, .learn-more article:focus {
+  background-color: #DDDDDD;
+}
+
+footer {
+  width: 60%;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  text-align: center;
+}
+
+footer p {
+  border-top: 1px solid #dccdc6;
+  padding-top: 2em;
+  padding-bottom: 2em;
 }
