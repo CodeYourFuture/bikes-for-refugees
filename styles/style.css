@@ -16,12 +16,6 @@ body {
   color: #292b2c;
 }
 
-/*@media screen and (min-width: 900px) {
-    body {
-        background: red;
-    }
-}
-*/
 .container {
   width: 85%;
   margin: 0 auto;
@@ -37,6 +31,13 @@ body {
 .navbar {
   width: 70%;
   justify-content: flex-start;
+}
+
+#menu-icon {
+  display: hidden;
+  width: 40px;
+  height: 40px;
+  background: url(img/nav.png) center;
 }
 
 .img-fluid {
@@ -245,4 +246,12 @@ footer p {
   border-top: 1px solid #dccdc6;
   padding-top: 2em;
   padding-bottom: 2em;
+}
+
+/*--------------Media---------*/
+
+@media screen and (max-width: 768px) {
+    h2 {
+        font-size: 100%;
+    }
 }
