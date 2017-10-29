@@ -1,0 +1,547 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+.clearfix:after {
+	content: "";
+  display: table;
+  clear: both;
+}
+/* color:#c6633c */
+
+html{
+    background: #fff;
+    font-family: 'Roboto Condensed', sans-serif;
+    color: #2a2726;
+    font-size: 20px;
+    line-height: 1.5em;
+    font-weight: 300;
+    text-rendering: optimizeLegibility;
+}
+
+.container, img{width: 100%;}
+.container{padding: 0 1.6em;}
+
+header,
+main,
+.text-alert{
+    padding-bottom: 2em; 
+}
+.hero{margin-bottom: 2em;}
+
+p{
+    font-size: 80%;
+    color: #444242;
+    font-weight: 500;
+}
+
+.btn, .text-fa, .event-title{text-decoration: none;}
+
+label,
+#toggle{display: none;}
+
+/*****************************************************************************************/
+/************************ header ********************************************************/
+
+.flex-header{
+    display: flex;
+    align-items: center;
+}
+
+.logo{width:18%;}
+
+.nav-flex{
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+}
+
+.navbar{
+    list-style: none;
+    display: flex;
+    align-items: center;
+}
+
+.nav-link{
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #2a2726;
+    font-weight: 500;
+    font-size: 85%;
+    padding: 4px 0;
+    transition: all .5ms ease-in-out;
+}
+
+.nav-link:hover,
+.nav-link:focus{
+    color: #c6633c;
+    border-bottom: 1px solid #c25023;
+    border-top: 1px solid #c25023;
+    border-radius: 3px;
+}
+
+/************************************ *****************************************************/
+/************************ toggle button ********************************************************/
+
+.menu-icon{
+    position: absolute;
+    width: 40px;
+    padding: 4px 5px 1px;
+    border-radius: 3px;
+    display: none;
+    cursor: pointer;
+}
+
+.icon{
+    height: 2px;
+    border-bottom: .1rem solid #cd7e22;
+    padding: .1rem;
+    
+}
+
+/************************************ *****************************************************/
+/************************ button ********************************************************/
+
+.btn{
+    background: rgba(255, 255, 255, 0);
+    border-radius: 3px;
+    border:  1px solid transparent;
+    font-size: 78%;
+    font-weight: 500;
+    text-align: center;
+    vertical-align: middle;
+    transition: all .3s ease-in-out;
+}
+
+.btn-donate{border-radius: 5px;}
+.btn-donate,
+.btn-today-donate{
+    background: #c6633c;
+    color: #fff;
+    text-transform: capitalize;
+}
+.btn-donate:hover,
+.btn-today-donate:hover,
+.btn-volunteer:hover,
+.btn-donate:focus,
+.btn-today-donate:focus,
+.btn-volunteer:focus{
+    background: #c25023;
+    color: #fff;
+}
+
+.btn-donate{padding: .5rem 1.2rem;}
+.btn-volunteer{
+    color: #2B2929;
+    background: #fff;
+}
+.btn-today-donate,
+.btn-volunteer{
+    padding: .5em .6em; 
+    border-radius:20px;       
+}
+.hero-btn{
+    padding-top: 5%;
+    padding-left: 6%;
+}
+
+/*****************************************************************************************/
+/************************ main ********************************************************/
+
+.text-alert{margin-top: -1.4em;}
+
+.text-alert p{
+    border: .4px solid #c6633c;
+    border-left-width: 2.5px;
+    padding: .1em 1em;
+}
+
+.site-content{
+    display: flex;
+}
+
+.hero{
+    background: linear-gradient(45deg, rgba(0, 0, 0, 0.80), rgba(0, 0, 0, 0.29)), url(/images/header-bike.jpg) no-repeat center;
+    background-size: cover;
+    /* padding: 250px 0 40px 20px; */
+    /* padding: 18% 5% 30%; */
+}
+
+.hero-text{
+    position: relative;
+    padding-left: 6%;
+    color: #fff;
+    padding-top: 6%;
+}
+
+.hero-text h1{
+    font-size: 200%;
+    font-weight: 400;
+    padding-top: 2rem;
+}
+
+.hero-text h5::after{
+    position: absolute;
+    content: "";
+    width: 90%;
+    left: 1.85em;
+    bottom: -.5em;
+    border-bottom: 1px solid #ECE8E8;
+
+}
+.hero-text h5{
+    font-weight: 300;
+    
+    padding-top: 1.5em;
+    color: #c3c3c3;
+}
+
+.text-heading{
+    position: relative;
+    border-bottom: .4px solid #F16532;
+    font-size: 85%;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.text-heading:before{
+    content: "";
+    position: absolute;
+    border-bottom: 1.5px solid #F16532;
+    width: 150px;
+    bottom: 0px;
+    left: 0;
+}
+
+.article-flex{
+    padding-top: 1.5em;
+    display: flex;
+    position: relative;
+}
+
+.article-flex::after{
+    content: "";
+    position: absolute;
+    border-bottom: 1px solid #F16532;
+    bottom: -60px;
+    left: 0;
+    right: 0; 
+}
+.article-more-information{padding: .9em;}
+
+.article-more-information h1{
+    padding-bottom: .4em;
+    font-size: 80%;
+    font-weight: 700;
+}
+
+.text-fa{
+    font-weight: 600;
+    font-size: 70%;
+    color: #0c4dff;
+}
+
+.fa{padding-right: .4em;}
+
+.fa-caret-right:before {
+    color: #c6633c;
+}
+
+.fa-facebook-square:before {
+    color: #0d0dad;
+}
+
+.why-refugees{background: rgba(230, 230, 230, 0.88);}
+
+.event-title{
+    font-size: 70%;
+    font-weight: 600;
+    color: #0c4dff;
+}
+
+.event-news:first-of-type{padding-top: 1em;}
+
+.event-news{
+    padding-bottom: .9em;
+}
+
+.event-news .text-fa{margin-left: 7em;}
+.event-news:after{
+    content: "";
+    clear: both;
+    display: table;
+}
+
+.event-news div{
+    width: 75%;
+    padding-left: .4em;
+    margin-top: -.6em;
+    float: left;
+}
+
+.img-aside{
+    width: 20%;
+    height: 20%;
+    float: left;
+}
+
+footer p{
+    padding: 4em 0em;
+    text-align: center;
+    width: 55%;
+}
+
+/*****************************************************************************************/
+/************************ media queries ********************************************************/
+
+@media screen and (min-width:1200px){
+
+    .container{
+        max-width: 1200px;
+        width: 100%;
+        margin: 0 auto;
+        padding: 0;
+    }
+
+    .hero{
+        height: 45vh;
+    }
+}
+
+
+@media screen and (min-width:1000px){
+
+    .hero {height: 38vh;}
+}
+
+
+@media screen and (min-width:960px){
+
+    .container{
+        width: 87%;
+        margin: 0 auto;
+        padding: 0
+    }
+
+    .logo{width:16%;}
+
+    .nav-flex{width: 95%}
+
+    .nav-li{padding: 0 .6rem;}
+
+    .nav-link{font-size: 80%;}
+}
+
+@media screen and (min-width:769px) and (max-width:1000px){
+
+    body{font-size: 17px;
+    line-height: 1.35em;
+}
+
+    .nav-li{padding: 0 .3rem;}
+    
+    .nav-link {
+        font-size: 89%;
+        text-transform: uppercase;
+    }
+
+    .hero {height: 33.4vh;}
+
+    .img-aside{width: 15%;}
+    .event-news div {
+        width: 85%;
+        padding-left: .4em;
+        margin-top: -.4em;
+        float: left;
+    }
+}
+
+@media screen and (min-width:769px) {
+
+    .main-content{
+        width: 60%;
+        padding-right: 1em;
+    }
+
+    .aside-event{
+        width: 39%;
+    }
+}
+
+@media screen and (max-width:768px){
+    
+    img{width: 90%;}
+
+    .btn-donate {
+        padding: 2px 8px;
+    }
+
+    .container {overflow: hidden;  }
+
+    .logo{
+        width:40%;
+        margin-right: 40%;
+        float: left;
+    }
+
+    .nav-flex {
+        display: table;
+        width: auto;
+    }
+    .navbar{
+        display: none; 
+        justify-content: space-between;
+        flex-direction: column;
+    }
+
+    .text-alert p {
+        padding: .1em .5em;
+        font-size: 68%;
+        font-weight: 500;
+    }
+
+    .text-alert strong{
+        font-size: 110%;
+        color: #474741;
+    }
+    .site-content{
+        flex-direction: column;
+    }
+
+    .section-more-information{
+        padding-bottom: 2em;
+    }
+
+    .hero{
+        padding-bottom: 2em;
+        margin: 0 -30px 30px;
+    }
+
+    .hero-text h1{
+            font-size: 1.8rem;
+            margin-bottom: 14px;
+    }
+    
+    .hero-text h5{
+            line-height: 1.3em;
+            font-weight: 400;
+            color: #c3c3c3;
+    }  
+    
+    .img-aside{
+        width: 30%;
+        display: none;
+    }
+
+    .article-flex{
+        flex-direction: column;
+    }  
+    .article-flex::after{bottom: 0;}
+
+    .event-title {
+        font-size: 150%;
+        font-weight: 400;
+        color: #eb845e;
+    }
+
+    .event-news {margin: 0 -1.6em;}
+
+    .event-news div{
+        width: 100%;
+        padding-left: 1em;
+    }
+
+    .box{padding: 100px 0;}
+
+    .box p{color: #fff;}
+
+    .box-fundraiser{
+        background: linear-gradient(45deg, rgba(1, 0, 0, 0.91), rgba(0, 0, 0, 0.52)), url(/images/news-spring-fundraisers.jpg) no-repeat center;
+    background-attachment: fixed;
+    background-size: contain;
+    }
+
+    .box-edinburgh{
+        background: linear-gradient(45deg, rgba(1, 0, 0, 0.91), rgba(0, 0, 0, 0.52)), url(/images/bikes-for-refugees-logo.jpg) no-repeat;
+        background-attachment: fixed;
+        background-size: cover;
+    }
+
+    .box-help{
+        background: linear-gradient(45deg, rgba(1, 0, 0, 0.91), rgba(0, 0, 0, 0.52)), url(/images/news-cycle.jpg) no-repeat;
+        background-attachment: fixed;
+        background-size: cover;
+    }
+
+    .box-facebook{
+        background: linear-gradient(45deg, rgba(1, 0, 0, 0.91), rgba(0, 0, 0, 0.52)), url(mages/news-spring-fundraisers.jpg) no-repeat;
+        background-attachment: fixed;
+        background-size: cover;
+    }
+
+    .event-news .text-fa {
+        margin-left: 1em;
+        font-size: 120%;
+    }
+
+    footer p {
+        padding: 2em 0;
+        width: 100%;
+        text-align: center;
+    }
+}
+
+
+@media screen and (max-width:480px){
+
+    img{width: 130%;}
+
+    p{line-height: 1.4;}
+
+    .container{padding: 0 .9em}
+
+    .logo{
+        width:30%;
+        margin-right: 50%;
+    }
+
+    .text-alert p {
+        padding: .1em .2em;
+        font-size: 55%;
+    }
+
+    .btn-donate {
+        padding: 2px 2px;
+        font-size: 70%;
+    }
+
+    .btn-today-donate, .btn-volunteer {
+        padding: .4em;
+        border-radius: 9px;
+        font-size: 65%;
+    }
+
+    .hero-text h1 {font-size: 150%;}
+    
+    .hero-text h5 {
+        font-size: 55%;
+        padding: 0;
+        font-weight: 500;
+    }
+
+    .event-news {
+        margin: 0 -.9em;
+    }
+    
+    .event-news .text-fa{margin-left: 0em;}
+
+    .event-title{font-size: 100%;}
+
+}    
