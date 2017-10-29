@@ -218,14 +218,6 @@ header ul li a:focus {
     transition: background .2s linear;
 }
 
-.hero-img:hover{
-    background: linear-gradient(rgba(255, 153, 120, 0.92), rgba(73, 42, 32, 0.36)), url(../img/header-bike.jpg) no-repeat;
-    position: relative;
-    background-size: cover;
-    margin-bottom: 4%;
-    
-}
-
 .text-hero {
     padding-left: 60px;
     width: 78%;
