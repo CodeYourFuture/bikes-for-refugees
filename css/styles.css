@@ -203,8 +203,7 @@ header ul li a:focus {
 }
 
 .article-aside {
-    display: flex;
-    flex-direction: column;
+    display: block;
 }
 
 .hero-img {
