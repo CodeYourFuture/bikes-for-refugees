@@ -58,12 +58,12 @@ h2:before {
 
 	.main-nav .nav-menu {
 		position: absolute;
-		left: 70%;
+		left: -200%;
 		display: none;
 		margin: 0;
 		list-style-type: none;
-		width: 100%;
-		padding: 0;
+		padding: 0.5rem;
+		background-color: #CE5F31;
 	}
 
 	.main-nav:hover .nav-menu {
@@ -77,14 +77,6 @@ h2:before {
 		-ms-flex-direction: column;
 		-o-flex-direction: column;
 		flex-direction: column;
-	}
-
-	.main-nav .menu-button {
-		display: -webkit-flex;
-		display: -moz-flex;
-		display: -ms-flex;
-		display: -o-flex;
-		display: flex;
 	}
 
 	.main-header .btn-donate {
@@ -109,6 +101,15 @@ h2:before {
 		display: -ms-flex;
 		display: -o-flex;
 		display: flex;
+		background: #fff;
+	}
+
+	.main-header .main-nav:hover .nav-menu {
+		-webkit-flex-direction: row;
+		-moz-flex-direction: row;
+		-ms-flex-direction: row;
+		-o-flex-direction: row;
+		flex-direction: row;
 	}
 }
 
