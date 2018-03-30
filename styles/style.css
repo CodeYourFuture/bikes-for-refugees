@@ -31,11 +31,33 @@ body {
 	font-weight: 600;
 	text-transform: uppercase;
 }
+.nav-link {
+margin: 10px;
+padding: 5px 5px;
+}
+.nav-link {
+	border: 1px solid transparent;
+
+  }
+.nav-link:hover,
+.nav-link:focus {
+	background-color: red;
+}
+
+
 
 /* Buttons */
 .btn {
 	border-radius: 0.15em;
 }
+.btn-secondary:hover,
+.btn-secondary:focus {
+  background: #ef7f52;
+}
+.btn-secondary {
+	background-color: antiquewhite;
+}
+
 
 /* Alert */
 .alert {
@@ -124,4 +146,9 @@ body {
 	.navbar-brand > img {
 	   max-height: 80px;
 	}
+}
+@media screen and (max-width: 600px) {
+.btn {
+	font-size: 0.5rem;
+}
 }
