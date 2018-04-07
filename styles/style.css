@@ -37,7 +37,7 @@ body {
 	border-radius: 0.15em;
 }
 
-/* Seraphine code starts here */
+/* Seraphine code starts here, I just wanted to create a branch and merge with master */
 .btn-primary {
 	background-color: #ce5f31;
 }
@@ -63,7 +63,7 @@ body {
 .nav-link {
 	border: 1px solid transparent;
 }
-/* Seraphine code ends here */
+/* Seraphine code ends here*/
 
 /* Alert */
 .alert {
