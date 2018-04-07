@@ -37,6 +37,34 @@ body {
 	border-radius: 0.15em;
 }
 
+/* Seraphine code starts here, I just wanted to create a branch and merge with master. Made more changes*/
+.btn-primary {
+	background-color: #ce5f31;
+}
+.btn-primary:hover,
+.btn-primary:focus {
+  background: #0e0c0c;
+}
+
+.btn-secondary {
+	color: #ce5f31;
+}
+
+.btn-secondary:hover,
+.btn-secondary:focus {
+	background-color: aqua;
+}
+
+.navbar-toggleable-md .navbar-collapse {
+	padding: 0.5rem;
+	margin: 0.5rem;
+}
+
+.nav-link {
+	border: 1px solid transparent;
+}
+/* Seraphine code ends here*/
+
 /* Alert */
 .alert {
 	position: relative;
