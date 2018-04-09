@@ -99,6 +99,8 @@ padding: 5px 5px;
 	font-size: 1rem;
 	font-weight: 600;
 	text-transform: uppercase;
+	font-size: 25px;
+	font-weight: bold;
 }
 
 .heading-underline:before {
@@ -113,13 +115,33 @@ padding: 5px 5px;
 }
 
 /* Article */
+
+.column-1 {
+	border: 1px solid #292b2c;
+	padding: 15px 5px 5px 10px;
+	margin: 10px;
+	background: #87a7a8;
+	font-size: 18px;
+}
+
+.column-2 {
+	border: 1px solid #292b2c;
+	padding: 15px 5px 5px 10px;
+	margin: 10px;
+	background: #dccdc6;
+	font-size: 18px;
+}
+
+
 .article {
 	margin-bottom: 2em;
+	
 }
 
 .article-title {
 	margin-bottom: 0.5em;
 	font-weight: 700;
+	
 }
 
 .article-read-more a {
