@@ -41,10 +41,8 @@ padding: 5px 5px;
   }
 .nav-link:hover,
 .nav-link:focus {
-	background-color: red;
+	background-color: rgb(139, 180, 187);
 }
-
-
 
 /* Buttons */
 .btn {
@@ -55,9 +53,15 @@ padding: 5px 5px;
   background: #ef7f52;
 }
 .btn-secondary {
-	background-color: antiquewhite;
+	background-color: rgb(228, 235, 164);
+	border-radius: 7px;
 }
 
+.btn-primary {
+background: #ce5f31;
+border: none;
+border-radius: 10px;
+}
 
 /* Alert */
 .alert {
@@ -88,6 +92,38 @@ padding: 5px 5px;
 .jumbotron {
 	border-radius: 0;
 	background-image: url('../images/header-bike.jpg');
+	color: #f5f5ed;
+	font-weight: 600;
+}
+
+/* sub-columns */
+
+.check {
+	border: 1px solid #292b2c;
+	height: 7rem;
+	text-align: center;
+	font-size: 25px;
+	font-weight: 600;
+	margin: 10px;
+	margin-bottom: 3rem;
+}
+
+.donate {
+	border: 1px solid #292b2c;
+	height: 7rem;
+	text-align: center;
+	font-size: 25px;
+	font-weight: 600;
+	margin: 10px;
+}
+
+.volunteer {
+	border: 1px solid #292b2c;
+	height: 7rem;
+	text-align: center;
+	font-size: 25px;
+	font-weight: 600;
+	margin: 10px;
 }
 
 /* Headings */
@@ -99,6 +135,8 @@ padding: 5px 5px;
 	font-size: 1rem;
 	font-weight: 600;
 	text-transform: uppercase;
+	font-size: 25px;
+	font-weight: bold;
 }
 
 .heading-underline:before {
@@ -110,16 +148,37 @@ padding: 5px 5px;
 	height: 1px;
 	max-width: 100px;
 	background: #ce5f31;
+	
 }
 
 /* Article */
+
+.column-1 {
+	border: 1px solid #292b2c;
+	padding: 15px 5px 5px 10px;
+	margin: 10px;
+	background: #87a7a8;
+	font-size: 18px;
+}
+
+.column-2 {
+	border: 1px solid #292b2c;
+	padding: 15px 5px 5px 10px;
+	margin: 10px;
+	background: #dccdc6;
+	font-size: 18px;
+}
+
+
 .article {
 	margin-bottom: 2em;
+	
 }
 
 .article-title {
 	margin-bottom: 0.5em;
 	font-weight: 700;
+	
 }
 
 .article-read-more a {
