@@ -35,8 +35,21 @@ body {
 /* Buttons */
 .btn {
 	border-radius: 0.15em;
+	
 }
-
+.btn-orange:link{
+	background-color: #ce5f31;
+	text-decoration: none;
+	color: white;
+}
+.btn-orange:visited{
+	background-color: #ce5f31;
+	text-decoration: none;
+	color:white;
+}
+.btn-orange:hover{
+	background-color: #ce7955;
+}
 /* Alert */
 .alert {
 	position: relative;
@@ -65,6 +78,12 @@ body {
 /* Jumbotron */
 .jumbotron {
 	border-radius: 0;
+	background-image: url("../images/header-bike.jpg");
+	background-repeat: no-repeat;
+	background-position: left top;
+	background-size: cover;
+	color: white;
+
 }
 
 /* Headings */
@@ -88,12 +107,49 @@ body {
 	max-width: 100px;
 	background: #ce5f31;
 }
+.flex-container{
+	display: flex;
+	justify-content: space-between;
+	margin: 10px 0;
+}
+.flex-elem{
+	/*width: 150px;
+	height: 150px;*/
+	text-align: center;
+	text-transform: capitalize;
+	border: #ce5f31 1px solid;
+	background-color: aqua;
+	box-sizing: border-box;
+	padding:4rem 0;
+	margin-bottom: 3px;
 
+}
 /* Article */
-.article {
-	margin-bottom: 2em;
+.primary-content .articles{
+	display: flex;
+	justify-content: space-between;
 }
 
+.primary-content  .article{
+ padding: 1rem;
+}
+.articles{
+	box-sizing: border-box;
+	
+}
+.article {
+	margin-bottom: 2em;
+	
+}
+
+.primary-content  .article:first-child{
+	background-color: #c6cbce;
+	
+}
+.primary-content  .article:last-child{
+	border: #949697 1px solid;
+    
+}
 .article-title {
 	margin-bottom: 0.5em;
 	font-weight: 700;
@@ -119,6 +175,9 @@ body {
 	margin-bottom: 0;
 }
 
+.sidebar-content  .articles .article{
+	
+}
 @media screen and (min-width: 992px) {
 
 	.navbar-brand > img {
