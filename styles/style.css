@@ -61,6 +61,7 @@ padding: 5px 5px;
 background: #ce5f31;
 border: none;
 border-radius: 10px;
+height: 2.3rem;
 }
 
 /* Alert */
@@ -155,16 +156,12 @@ border-radius: 10px;
 
 .column-1 {
 	border: 1px solid #292b2c;
-	padding: 15px 5px 5px 10px;
-	margin: 10px;
 	background: #87a7a8;
 	font-size: 18px;
 }
 
 .column-2 {
 	border: 1px solid #292b2c;
-	padding: 15px 5px 5px 10px;
-	margin: 10px;
 	background: #dccdc6;
 	font-size: 18px;
 }
