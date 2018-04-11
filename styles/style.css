@@ -147,6 +147,16 @@ body {
 .primary-content > .jumbotron {
 	background-image: url('https://images.unsplash.com/photo-1501236570302-906143a7c9f8?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=560e0a540d582b6127db8b21b1363df2&auto=format&fit=crop&w=800&q=60');
 	background-size: cover;
+	background-position: right center;
+}
+
+.jumbotron {
+	color: #ffffff;
+}
+
+p.article-lead {
+	font-weight: 300;
+	margin-bottom: 0;
 }
 
 .bike-more-info {
