@@ -37,6 +37,24 @@ body {
 	border-radius: 0.15em;
 }
 
+.btn-primary {
+		background-color: #ce5f31;
+}
+
+.btn-primary:hover,
+.btn-primary:focus {
+  background: #ef7f52;
+}
+
+.btn-secondary {
+	color: #ce5f31;
+}
+
+.btn-secondary:hover,
+.btn-secondary:focus {
+	color: #ef7f52;
+}
+
 /* Alert */
 .alert {
 	position: relative;
