@@ -45,8 +45,10 @@
 }
  /* Buttons */
  .btn {
-	 border-radius: 0.15em;
+	 border-radius: 0.3em;
 	 transition: all .4s;
+	 font-size: 1.5rem;
+	 
  }
  .btn-red {
 	 background-color:#ce5f31; 
@@ -58,6 +60,9 @@
  .btn-white:hover, .btn-white:focus{
 	 background-color:green;
 	 color:white;
+ }
+ .btn-primary, .btn-secondary {
+	 border: none;
  }
  /* Alert */
  .alert {
@@ -130,7 +135,6 @@
  }
  .article {
 	 margin-bottom: 2em;
-	 padding:2rem;
  }
  .article:not(:last-child){
 	margin-right: 1rem;
@@ -160,29 +164,34 @@
 	 margin-bottom: 0;
  }
  /* makinng three boxes */
- .boxes{
-	 display:flex;
-	 justify-content: space-between;
-	 height: 10rem;
-	 margin-bottom: 1.5rem;
- }
- .box{
+ .boxes > div{
 	 background-color: #EDEDEE;
-	 width:10rem;
+	 border: 2px solid #828282;
+	 font-size: 1.4rem;
+	 font-weight: 600;
+	 height: 10rem;
+	 width:5rem;
+	 margin-bottom: 2rem;
 	 display: flex;
 	 justify-content: center;
 	 align-items: center;
-	 border: 2px solid #828282;
-	 font-size: 1.4rem;
-	 text-align: center;
-	 font-weight: 600;
  }
- .box-1{
+ 
+ .articles-box > .article{
+	padding:2rem;
+ }
+ .articles-box > article:first-child{
+	background-color: #DCDCDC;
+ }
+ .articles-box > article:last-child{
+	border: 1px solid rgb(209, 70, 70);;
+ }
+ /* .box-1{
 	background-color: #DCDCDC;
  }
  .box-2{
 	border: 1px solid #E8E8E8;
- }
+ } */
  /* box for images  */
  .img {
 	 width: 2rem;
@@ -190,6 +199,15 @@
 	 height: 2rem;
 	 display: inline-block;
 	 margin-right: 0.2rem;
+ }
+ @media screen and (max-width: 767px) {
+	.articles-box >.article:not(:last-child) {
+		margin-right: 0;
+	}
+	.boxes > div, .boxes-2 > .article{
+		width:100%;
+		height: 100%;
+	}
  }
  @media screen and (min-width: 992px) {
  
