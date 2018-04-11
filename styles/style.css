@@ -10,7 +10,15 @@ html,
 body {
 	font-family: "Source Sans Pro",-apple-system,system-ui,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
 }
-
+.btn:hover {
+  background: #51EF55;
+}
+.volunteer{
+  color:#ce5f31; 
+}
+.blue-button {
+  background-color: #ce5f31;
+}
 .site-footer {
 	margin-top: 4em;
 }
@@ -29,7 +37,9 @@ body {
 .navbar-light .navbar-nav .nav-link {
 	color: #292b2c;
 	font-weight: 600;
-	text-transform: uppercase;
+  text-transform: uppercase;
+  padding-right: 10;
+  border: 1px solid transparent;
 }
 
 /* Buttons */
@@ -66,7 +76,18 @@ body {
 .jumbotron {
 	border-radius: 0;
 }
-
+.parentBox{
+  display: flex;
+  justify-content: space-between;
+  flex-flow: right;
+}
+.box {
+  background:lightgray;
+  height: 100px;
+  width: 100px;
+  border: 1px solid #ddd;
+  padding: 20px 20px 20px 20px;
+}
 /* Headings */
 .heading-underline {
 	position: relative;
@@ -114,14 +135,19 @@ body {
 	margin-right: 0.5em;
 	color: #ce5f31;
 }
-
 .article-read-more:last-child {
 	margin-bottom: 0;
 }
+.display-3 {
+  font-size: 50px;
+}
 
-@media screen and (min-width: 992px) {
+@media screen and (max-width: 320px) {
 
 	.navbar-brand > img {
 	   max-height: 80px;
-	}
+  }
+  .display-3 {
+    font-size: 25px;
+  }
 }
