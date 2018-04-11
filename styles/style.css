@@ -99,32 +99,16 @@ height: 2.3rem;
 
 /* sub-columns */
 
-.check {
+.highlight-box {
 	border: 1px solid #292b2c;
 	height: 7rem;
+	width: 5rem;
 	text-align: center;
 	font-size: 25px;
 	font-weight: 600;
 	margin: 10px;
-	margin-bottom: 3rem;
-}
-
-.donate {
-	border: 1px solid #292b2c;
-	height: 7rem;
-	text-align: center;
-	font-size: 25px;
-	font-weight: 600;
-	margin: 10px;
-}
-
-.volunteer {
-	border: 1px solid #292b2c;
-	height: 7rem;
-	text-align: center;
-	font-size: 25px;
-	font-weight: 600;
-	margin: 10px;
+	margin-bottom: 3rem;	
+	
 }
 
 /* Headings */
@@ -154,16 +138,12 @@ height: 2.3rem;
 
 /* Article */
 
-.column-1 {
+.column {
 	border: 1px solid #292b2c;
-	background: #87a7a8;
 	font-size: 18px;
-}
-
-.column-2 {
-	border: 1px solid #292b2c;
-	background: #dccdc6;
-	font-size: 18px;
+	height: 17rem;
+	width: 2.5rem;
+	/* margin: 20px; */
 }
 
 
