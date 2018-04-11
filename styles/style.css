@@ -168,3 +168,20 @@ p.article-lead {
 	justify-content: center;
 	align-items: center;
 }
+
+.learn-more h2 {
+	text-align: center;
+}
+
+.learn-more  .card {
+	padding: 2rem;
+	margin: 15px;
+}
+
+.learn-more .card p {
+	margin-bottom: 1rem;
+}
+
+.learn-more .card:first-of-type {
+	background-color: rgba(0, 0, 0, 0.2);
+}
