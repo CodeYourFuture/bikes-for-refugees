@@ -87,8 +87,21 @@
  /* Jumbotron */
  .jumbotron {
 	 border-radius: 0;
+	 background-image: url("../images/header-bike.jpg");
+	 background-size: cover;
+	 /* opacity: .9; */
+	 /* font-weight: 900; */
+	 filter: brightness(50%);
  }
- 
+ .display-3{
+	color:rgba(255, 255, 255, 0.9);
+	font-weight: 500;
+ }
+ .lead{
+	color:rgb(255, 255, 255);
+	font-weight: 400;
+	font-size: 2rem;
+ }
  /* Headings */
  .heading-underline {
 	 position: relative;
