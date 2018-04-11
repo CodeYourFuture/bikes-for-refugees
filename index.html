@@ -15,12 +15,12 @@
 	<body>
 		<a href="#content" class="sr-only sr-only-focusable">Skip to main content</a>
 		<div class="site-header container">
-			<div class="navbar navbar-toggleable-md navbar-light">
+			<nav class="navbar navbar-toggleable-md navbar-light">
 				<button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
 					<span class="navbar-toggler-icon"></span>
 				</button>
 				<a href="/" class="navbar-brand">
-					<img class="img-fluid" src="https://raw.githubusercontent.com/Code-Your-Future/syllabus/master/html-css/assets/bikes-for-refugees-logo.jpg" alt="Logo for Bikes for Refugees Scotland">
+					<img class="img-fluid" src="images/bikes-for-refugees_logo.jpg" alt="Logo for Bikes for Refugees Scotland">
 					<h1 class="sr-only">Bikes for Refugees Scotland - Providing donated bikes and accessories to refugees and asylum seekers.</h1>
 				</a>
 
@@ -39,11 +39,11 @@
 							<a class="nav-link" href="#">Contact Us</a>
 						</li>
 					</ul>
-					<a href="#" class="btn btn-primary ml-auto">
+					<a href="#" class="btn btn-orange ml-auto">
 						Donate Now
 					</a>
 				</div>
-			</div>
+			</nav>
 		</div>
 
 		<div id="content" class="container site-content">
@@ -57,13 +57,18 @@
 						<p class="lead">Providing donated bikes and accessories to refugees and asylum seekers in Scotland.</p>
 						<hr class="my-4">
 						<div class="buttons">
-							<a class="btn btn-primary btn-lrg" href="#">Donate a bike today</a>
+							<a class="btn  btn-orange" href="#">Donate a bike today</a>
 							<a class="btn btn-secondary btn-lrg" href="#">Volunteer</a>
 						</div>
 					</div>
+					<section class="flex-container row">
+						  <div class="flex-elem col-md-3">check availability</div>
+						  <div class="flex-elem col-md-3">donate bikes</div>
+						  <div class="flex-elem col-md-3">volunteer with us</div>
+					</section>
 					<h2 class="heading-underline">Learn more</h2>
-					<div class="articles">
-						<article class="article">
+					<div class="articles row ">
+						<article class="article col-md-6">
 							<div class="article-title">
 								Why do refugees need bikes?
 							</div>
@@ -75,7 +80,8 @@
 								</a>
 							</p>
 						</article>
-						<article class="article">
+
+						<article class="article col-md-6 ">
 							<div class="article-title">
 								How can I help?
 							</div>
@@ -91,32 +97,44 @@
 				</div>
 				<div class="sidebar-content col-lg">
 					<h2 class="heading-underline">Upcoming events</h2>
-					<div class="articles row">
-						<article class="article">
-							<a href="#">
-								<img class="img-fluid" src="https://raw.githubusercontent.com/Code-Your-Future/syllabus/master/html-css/assets/news-spring-fundraisers.jpg">
-					  	</a>
-							<div class="article-title article-title--sidebar">
-								<a href="#">Join us for our Spring fundraisers</a>
+
+					<div class="articles">
+						<article class="article row">
+							<a href="#" class="col-3">
+								<img class="img-fluid" src="images/spring-fundraisers_thumbnail.jpg">
+					  	   </a>
+							<div class=" col-9">
+								<a href="#" class="article-title article-title--sidebar" >Join us for our Spring fundraisers</a>
+								<p class="article-lead">Riders needed now to help raise awareness and funds for BfR and Médecins Sans Frontières.</p>
+
+				
+
 							</div>
-							<p class="article-lead">Riders needed now to help raise awareness and funds for BfR and Médecins Sans Frontières.</p>
+							
 						</article>
-						<article class="article">
-							<a href="#">
-								<img class="img-fluid" src="https://raw.githubusercontent.com/Code-Your-Future/syllabus/master/html-css/assets/bikes-for-refugees-logo.jpg">
+
+						<article class="article row">
+							<a href="#" class="col-3">
+								<img class="img-fluid" src="images/bikes-for-refugees_logo.jpg">
+
+
 							</a>
-							<div class="article-title article-title--sidebar">
-								<a href="#">Bike dropoff event in Edinburgh on May 11</a>
+							<div class="col-9">
+								<a href="#" class="article-title article-title--sidebar ">Bike dropoff event in Edinburgh on May 11</a>
 							</div>
 						</article>
-						<article class="article">
-							<a href="#">
-								<img class="img-fluid" src="https://raw.githubusercontent.com/Code-Your-Future/syllabus/master/html-css/assets/news-cycle.jpg">
+
+						<article class="article row">
+							<a href="#" class="col-3">
+								<img class="img-fluid" src="images/edinburgh-damascus_thumbnail.png">
+
+
 							</a>
-							<div class="article-title article-title--sidebar">
-								<a href="#">Help us cycle 4,797km</a>
+							<div class="col-9">
+								<a href="#" class="article-title article-title--sidebar">Help us cycle 4,797km</a>
+								<p class="article-lead">We need you to help us cycle 4797km, the distance of Edinburgh to Damascus.</p>
 							</div>
-							<p class="article-lead">We need you to help us cycle 4797km, the distance of Edinburgh to Damascus.</p>
+							
 						</article>
 							<a href="https://www.facebook.com/BikesforRefugeesScotland/events/?ref=page_internal" class="facebook-link">
 								<span class="fa fa-facebook-square"></span>
