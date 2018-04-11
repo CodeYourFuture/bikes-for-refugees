@@ -101,6 +101,13 @@ body {
 	opacity: 0.7;
 }
 
+/* newly added boxes*/
+.bg-dark{
+	background-color: #f6f6f6;
+	height: 8rem;
+	justify-content: space-between;
+}
+
 /* Headings */
 .heading-underline {
 	position: relative;
