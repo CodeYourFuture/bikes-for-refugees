@@ -143,3 +143,13 @@ body {
 	   max-height: 80px;
 	}
 }
+
+.bike-more-info {
+	padding: 6rem 0;
+}
+
+.bike-more-info .card {
+	min-height: 250px;
+	justify-content: center;
+	align-items: center;
+}
