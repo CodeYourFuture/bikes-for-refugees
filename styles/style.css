@@ -33,7 +33,7 @@ body {
 	font-weight: 600;
 	text-transform: uppercase;
   margin: 0px 15px;
-  border-radius: 7px;
+  border-radius: 3px;
   min-width: 100px;
   text-align: center;
   }
@@ -43,8 +43,6 @@ body {
 	font-weight: 600;
 	text-transform: uppercase;
   }
-
-
 /* Buttons */
 .btn {
 	border-radius: 0.15em;
