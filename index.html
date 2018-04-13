@@ -9,27 +9,30 @@
 	<link rel="dns-prefetch" href="//code.jquery.com">
 	<link rel="dns-prefetch" href="//cdnjs.cloudflare.com">
 	<link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,300i,400,400i,600,600i,700,700i" rel="stylesheet">
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ"
+	<!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous"> -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
 	 crossorigin="anonymous">
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 	<link rel="stylesheet" href="styles/style.css">
 </head>
 
 <body>
+	<!-- nvaigation -->
 	<a href="#content" class="sr-only sr-only-focusable">Skip to main content</a>
-	<div class="site-header container">
-		<div class="navbar navbar-toggleable-md navbar-light">
+	<div class="site-header container px-0">
+		<div class="navbar navbar-expand-lg navbar-toggleable-md navbar-dark bg-dark">
 			<button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
 			 aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
 				<span class="navbar-toggler-icon"></span>
 			</button>
-			<a href="/" class="navbar-brand">
+			<a href="/" class="navbar-brand mr-0">
 				<img class="img-fluid" src="images/bikes-for-refugees_logo.jpg" alt="Logo for Bikes for Refugees Scotland">
 				<h1 class="sr-only">Bikes for Refugees Scotland - Providing donated bikes and accessories to refugees and asylum seekers.</h1>
 			</a>
 
 			<div class="collapse navbar-collapse" id="navbarSupportedContent">
-				<ul class="navbar-nav mr-auto">
+				<ul class="navbar-nav w-100 justify-content-around">
+					<!--mr-auto-->
 					<li class="nav-item active">
 						<a class="nav-link" href="/">Home
 							<span class="sr-only">(current)</span>
@@ -45,146 +48,147 @@
 						<a class="nav-link" href="#">Contact Us</a>
 					</li>
 				</ul>
-				<a href="#" class="btn btn-primary ml-auto btn-red">
+				<a href="#" class="btn btn-primary btn-red">
+					<!--ml-auto-->
 					Donate Now
 				</a>
 			</div>
 		</div>
 	</div>
-
+	<!-- main content -->
 	<div id="content" class="container site-content">
 		<div class="row">
-			<div class="col alert alert-info" role="alert">
-				You've helped us give
-				<span id="donation-count-alert">72</span> bikes to refugees and asylum seekers.
-				<strong>Thank you!</strong>
+			<div class="col px-0">
+				<div class="alert alert-info" role="alert">
+					You've helped us give
+					<span id="donation-count-alert">72</span> bikes to refugees and asylum seekers.
+					<strong>Thank you!</strong>
+				</div>
 			</div>
+	
 		</div>
-		<!--row end-->
+		
 		<div class="row">
+			<!-- left side -->
 			<div class="primary-content col-sm-12 col-lg-8">
-				<div class="jumbotron">
-					<h1 class="display-3">Bikes for Refugees</h1>
-					<p class="lead">Providing donated bikes and accessories to refugees and asylum seekers in Scotland.</p>
-					<hr class="my-4">
-					<div class="buttons">
-						<a class="btn btn-primary btn-lrg btn-red" href="#">Donate a bike today</a>
-						<a class="btn btn-secondary btn-lrg btn-white" href="#">Volunteer</a>
+				<div class="row articles">
+					<div class="col px-0">
+						<div class="jumbotron">
+							<h1 class="display-3">Bikes for Refugees</h1>
+							<p class="lead">Providing donated bikes and accessories to refugees and asylum seekers in Scotland.</p>
+							<hr class="my-4">
+							<div class="buttons">
+								<a class="btn btn-primary btn-red btn-lrg" href="#">Donate a bike today</a>
+								<a class="btn btn-secondary btn-lrg btn-white" href="#">Volunteer</a>
+							</div>
+						</div>
 					</div>
 				</div>
-				<section class="container">
-					<div class="row boxes justify-content-between">
-						<div class="col-xs-12 col-md-3">
-							Check availability
-						</div>
-						<div class="col-xs-12 col-md-3">
-							Donate bikes
-						</div>
-						<div class="col-xs-12 col-md-3">
-							Volunteer with us
-						</div>
+				<div class="row boxes justify-content-between">
+					<div class="col-12 col-md-3">
+						Check availability
 					</div>
-				</section>
-				<!-- <section class="container"> -->
+					<div class="col-12 col-md-3">
+						Donate bikes
+					</div>
+					<div class="col-12 col-md-3">
+						Volunteer with us
+					</div>
+				</div>
 				<div class="row">
-					<h2 class="col-12 heading-underline">Learn more</h2>
-					<!-- <div class="col-12 boxes"> -->
-					<div class="container">
-						<div class="row articles-box">
-							<article class="col-xs-12 col-md article">
-								<div class="article-title">
-									Why do refugees need bikes?
-								</div>
-								<p class="article-lead">Many refugees are placed in housing in areas where there are few jobs. Bikes provide low-cost transportation so that
-									they can get to work, manage child care and do their shopping.</p>
-								<p class="article-read-more">
-									<a href="#">
-										<span class="fa fa-caret-right"></span>
-										Learn more
-									</a>
-								</p>
-							</article>
-							<article class="col-xs-12 col-md article">
-								<div class="article-title">
-									How can I help?
-								</div>
-								<p class="article-lead">We need lots of bikes and bike accessories! If you have an old bike you don't use, bring it to one of our dropoff
-									events. Or come attend one of our fundraisers.</p>
-								<p class="article-read-more">
-									<a href="#">
-										<span class="fa fa-caret-right"></span>
-										Learn more
-									</a>
-								</p>
-							</article>
-						</div>
+					<div class="col-12 px-0">
+						<h2 class="heading-underline">Learn more</h2>
 					</div>
-
-					<!-- </div> -->
 				</div>
-				<!-- row -->
-				<!-- </section> -->
-			</div>
-			<div class="sidebar-content col-sm-12 col-lg-4">
-				<div class="container">
-					<div class="row">
-						<div class="col-12 heading-underline">Upcoming events</div>
-						<div class="col-12 articles">
-							<article class="article">
-								<a href="#">
-									<img class="img-fluid" src="images/spring-fundraisers_thumbnail.jpg">
-								</a>
-								<div class="article-title article-title--sidebar">
-									<a href="#">Join us for our Spring fundraisers</a>
-								</div>
-								<p class="article-lead">Riders needed now to help raise awareness and funds for BfR and Médecins Sans Frontières.</p>
-							</article>
-							<article class="article">
-								<a href="#">
-									<img class="img-fluid" src="images/bikes-for-refugees_logo.jpg">
-								</a>
-
-								<div class="article-title article-title--sidebar">
-									<a href="#">Bike dropoff event in Edinburgh on May 11</a>
-								</div>
-							</article>
-							<article class="article">
-								<a href="#">
-									<!-- <div class="img"></div> -->
-									<img class="img-fluid" src="images/edinburgh-damascus_thumbnail.png">
-								</a>
-								<div class="article-title article-title--sidebar">
-									<a href="#">Help us cycle 4,797km</a>
-								</div>
-								<p class="article-lead">We need you to help us cycle 4797km, the distance of Edinburgh to Damascus.</p>
-							</article>
-							<a href="https://www.facebook.com/BikesforRefugeesScotland/events/?ref=page_internal" class="facebook-link">
-								<span class="fa fa-facebook-square"></span>
-								All Facebook events
+				
+				<div class="row articles articles-bg">
+					<article class="col-sm article mr-sm-3 py-4">
+						<div class="article-title">
+							Why do refugees need bikes?
+						</div>
+						<p class="article-lead">Many refugees are placed in housing in areas where there are few jobs. Bikes provide low-cost transportation so that
+							they can get to work, manage child care and do their shopping.</p>
+						<p class="article-read-more">
+							<a href="#">
+								<span class="fa fa-caret-right"></span>
+								Learn more
 							</a>
+						</p>
+					</article>
+					<article class="col-sm article py-4">
+						<div class="article-title">
+							How can I help?
 						</div>
-					</div>
+						<p class="article-lead">We need lots of bikes and bike accessories! If you have an old bike you don't use, bring it to one of our dropoff events.
+							Or come attend one of our fundraisers.</p>
+						<p class="article-read-more">
+							<a href="#">
+								<span class="fa fa-caret-right"></span>
+								Learn more
+							</a>
+						</p>
+					</article>
 				</div>
 			</div>
-			<!--row end-->
-		</div>
-		<!--container end-->
-		<!-- footer -->
-		<div class="site-footer container">
-			<div class="row">
-				<div class="col-lg-8">
-					<p class="text-center">
-						Bikes for Refugees Scotland is a volunteer-led project to help people explore and make connections with their local communities.
-					</p>
+			<!--column-left-->
+			<!-- right side -->
+			<div class="sidebar-content col-sm-12 col-lg-4">
+				<h2 class="heading-underline">Upcoming events</h2>
+				<div class="articles row">
+					<article class="article col-12">
+						<a href="#">
+							<img class="img-fluid" src="images/spring-fundraisers_thumbnail.jpg">
+						</a>
+						<div class="article-title article-title--sidebar">
+							<a href="#">Join us for our Spring fundraisers</a>
+						</div>
+						<p class="article-lead">Riders needed now to help raise awareness and funds for BfR and Médecins Sans Frontières.</p>
+					</article>
+					<article class="article col-12">
+						<a href="#">
+							<img class="img-fluid" src="images/bikes-for-refugees_logo.jpg">
+						</a>
+						<div class="article-title article-title--sidebar">
+							<a href="#">Bike dropoff event in Edinburgh on May 11</a>
+						</div>
+					</article>
+					<article class="article col-12">
+						<a href="#">
+							<img class="img-fluid" src="images/edinburgh-damascus_thumbnail.png">
+						</a>
+						<div class="article-title article-title--sidebar">
+							<a href="#">Help us cycle 4,797km</a>
+						</div>
+						<p class="article-lead">We need you to help us cycle 4797km, the distance of Edinburgh to Damascus.</p>
+					</article>
+					<a href="https://www.facebook.com/BikesforRefugeesScotland/events/?ref=page_internal" class="col-12 facebook-link">
+						<span class="fa fa-facebook-square"></span>
+						All Facebook events
+					</a>
 				</div>
 			</div>
 		</div>
-		<script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n"
-		 crossorigin="anonymous"></script>
-		<script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb"
-		 crossorigin="anonymous"></script>
-		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn"
-		 crossorigin="anonymous"></script>
+		<!--column-right-->
+	</div>
+	<!--row-->
+	</div>
+	<!-- footer -->
+	<div class="site-footer container">
+		<div class="row">
+			<div class="col-lg-8">
+				<p class="text-center">
+					Bikes for Refugees Scotland is a volunteer-led project to help people explore and make connections with their local communities.
+				</p>
+			</div>
+		</div>
+	</div>
+
+	<script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n"
+	 crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb"
+	 crossorigin="anonymous"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn"
+	 crossorigin="anonymous"></script>
 </body>
 
 </html>
