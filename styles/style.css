@@ -66,12 +66,31 @@ body {
 .jumbotron {
 	border-radius: 0;
 }
+container {
+	display: flex;
+	width: 100%;
+	height: auto;
+	flex-direction: row;
+	
+	
+} 
+.box {
+display: flex;
+text-align: center;
+
+width: 300px;
+height: 200px;
+border: 1px solid rgb(219, 214, 205);
+justify-content: center;
+padding-bottom: 15px;
+
+}
 
 /* Headings */
 .heading-underline {
 	position: relative;
 	margin-bottom: 2em;
-	padding-bottom: 0.5em;
+	padding: 1.5em;
 	border-bottom: 1px solid #dccdc6;
 	font-size: 1rem;
 	font-weight: 600;
