@@ -109,14 +109,18 @@ body {
 /* Article */
 
 .my-box {
-	padding: 6rem 0;
-}
+	padding: 3rem 0;
+}	
 
 .my-box .box {
-	min-height: 2rem;
-	justify-content: center;
-	align-items: center;
+	border: 1px solid #292b2c;
+	min-height: 7rem;
+	font-size: 27px;
+	font-weight: 700;
+	text-align: center;
 }
+
+
 
 .article {
 	margin-bottom: 2em;
