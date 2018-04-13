@@ -93,20 +93,40 @@ body {
 /* Jumbotron */
 .jumbotron {
 	border-radius: 0;
-	background-image: url(../images/header-bike.jpg);
+	/*background-image: url(../images/header-bike.jpg);*/
     background-size: cover;
     background-repeat: no-repeat;
 	background-position: center bottom;
 	color: white;
-	opacity: 0.7;
+	background: linear-gradient( rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7) ), url('../images/header-bike.jpg');	
+	opacity: 0.8;
+}
+/* newly added boxes*/
+.my-row { 
+	border: 1px solid #939393;
+	background-color: #ededed;
+	height: 10rem;
+	font-weight: bold;
+	font-size: 1.5rem;
+	display: flex;
+	text-align: center;
+	align-items: center;
+	margin-bottom: 3rem;
+	
 }
 
-/* newly added boxes*/
-.bg-dark{
-	background-color: #f6f6f6;
-	height: 8rem;
-	justify-content: space-between;
+article.bg-grey {
+	background-color: lightgray;
+	padding: 2rem;
+
 }
+
+article.bg-light {
+	border: 1px solid #939393;
+	padding: 2rem;
+	margin-left: 2rem;
+}
+
 
 /* Headings */
 .heading-underline {
