@@ -93,6 +93,7 @@ body {
 	font-size: 1rem;
 	font-weight: 600;
 	text-transform: uppercase;
+	font-size: 2rem;
 }
 
 .heading-underline:before {
@@ -120,11 +121,17 @@ body {
 	text-align: center;
 }
 
-
-
 .article {
 	margin-bottom: 2em;
 }
+
+.articles .element {
+	border: 1px solid #292b2c;
+	height: 15rem;
+	background: #b7dbff;
+	width: 24rem;
+}
+ 
 
 .article-title {
 	margin-bottom: 0.5em;
