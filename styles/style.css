@@ -50,6 +50,7 @@ body {
 	line-height: 1.3em;
 	background: transparent;
 	color: #292b2c;
+	b
 }
 
 .alert:before {
@@ -65,6 +66,7 @@ body {
 /* Jumbotron */
 .jumbotron {
 	border-radius: 0;
+	background-image: url(http://res.cloudinary.com/dtcyr3qi6/image/upload/v1523471684/header-bike_teqvfg.jpg);
 }
 container {
 	display: flex;
@@ -84,6 +86,14 @@ border: 1px solid rgb(219, 214, 205);
 justify-content: center;
 padding-bottom: 15px;
 
+}
+.refugees {
+border: 1px solid rgb(14, 13, 13);
+background-color: rgb(238, 226, 226);	
+width: 500px;
+}
+.help {
+border: 1px solid rgb(14, 13, 13);	
 }
 
 /* Headings */
