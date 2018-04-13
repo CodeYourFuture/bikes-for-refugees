@@ -34,6 +34,17 @@ body {
 	text-transform: uppercase;
 }
 
+.nav-link {
+	padding: 1rem 2rem;
+	margin: 0.5rem 1rem;
+	border: 1px solid transparent;
+}
+
+.nav-link:hover {
+	border: 1px solid #ffad76;
+	background: #ffad76;
+}
+
 /* Buttons */
 .btn {
 	border-radius: 0.15em;
