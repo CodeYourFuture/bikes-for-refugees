@@ -90,6 +90,7 @@ body {
 	height: 180px;
 	border: 1px solid black;
 	background-color: rgba(128, 128, 128, 0.356);
+	color: 50%;
 	
 	/* flex-box */
 	display: flex;
