@@ -41,7 +41,20 @@ body {
   padding-right: 10;
   border: 1px solid transparent;
 }
+/* .my-container {
+  border:3px solid blue;
 
+  } */
+/* .my-row {
+  border:3px solid green;
+}
+.my-col { 
+  border:2px solid black;
+
+} */
+.ml-auto {
+  margin-top: 50px;
+}
 /* Buttons */
 .btn {
 	border-radius: 0.15em;
