@@ -78,6 +78,27 @@ body {
 	text-transform: uppercase;
 }
 
+.my-container {
+	width: 100%;
+	height:auto;
+	padding-bottom: 20px;
+}
+
+
+.box {
+	width: 200px;
+	height: 180px;
+	border: 1px solid black;
+	background-color: grey;
+	
+	/* flex-box */
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+	
+
 .heading-underline:before {
 	content: '';
 	position: absolute;
