@@ -104,7 +104,7 @@ body {
 	font-size: 1rem;
 	font-weight: 600;
 	text-transform: uppercase;
-	font-size: 2rem;
+	font-size: 1.57rem;
 }
 
 .heading-underline:before {
@@ -120,32 +120,30 @@ body {
 
 /* Article */
 
-.my-box {
-	padding: 3rem 0;
+.box {
+	border: 1px solid #292b2c;
+	height: 10rem;
+	font-size: 20px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	margin: 5px;
+	margin-bottom: 2rem;
 	
 }	
-
-.my-box .box {
-	border: 1px solid #292b2c;
-	min-height: 7rem;
-	font-size: 27px;
-	font-weight: 700;
-	text-align: center;
-	margin: 1rem;
-}
-
-.article {
-	margin-bottom: 2em;
-}
 
 .articles .element {
 	border: 1px solid #292b2c;
 	height: 15rem;
-	background: #b7dbff;
-	width: 24rem;
+	margin: 5px;
+	padding: 5px 5px 5px 5px;
+	
 }
  
-
+.first-element {
+	background: #ede1b4;
+}
 .article-title {
 	margin-bottom: 0.5em;
 	font-weight: 700;
