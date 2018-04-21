@@ -67,6 +67,32 @@ body {
 	border-radius: 0;
 }
 
+.my-container{
+	padding: 0;
+}
+.my-row{
+	height: 150px;
+}
+.my-col{
+	margin: 0;
+}
+.my-p{
+	border: 2px solid gray;
+	height: 145px;
+	margin: 0;
+	text-align: center;
+	padding-top: 30%;
+	font-size: 1.2rem;
+	background-color: rgb(241, 240, 240);
+}
+.left-art{
+	background-color: lightgray
+}
+.right-art{
+	border: 2px solid rgba(223, 222, 222, 0.911);
+}
+
+
 /* Headings */
 .heading-underline {
 	position: relative;
