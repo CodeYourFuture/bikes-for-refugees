@@ -9,12 +9,28 @@
 html,
 body {
 	font-family: "Source Sans Pro",-apple-system,system-ui,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
-}
 
-.site-footer {
-	margin-top: 4em;
+	width: 100%;
+	height:100%;
 }
-
+/* Jumbotron */
+.jumbotron {
+	border-radius: 0;
+	background-image: url('../images/header-bike.jpg');
+	color: #f5f5ed;
+	      filter: gray; /* IE5+ */
+      -webkit-filter: grayscale(1); /* Webkit Nightlies & Chrome Canary */
+      -webkit-transition: all .8s ease-in-out;  
+}
+.jumbotron:hover {
+	    filter: none;
+      -webkit-filter: grayscale(0);
+      -webkit-transform: scale(1.01);
+}
+.jumbotron h1{
+	font-size:  3.5rem;
+	font-weight: 300;
+}
 .site-footer p {
 	border-top: 1px solid #dccdc6;
 	padding-top: 2em;
@@ -27,15 +43,36 @@ body {
 }
 
 .navbar-light .navbar-nav .nav-link {
-	color: #292b2c;
+	color: #000;
 	font-weight: 600;
 	text-transform: uppercase;
-}
+	margin: 0px 15px;
+	border-radius: 3px;
+	min-width: 150px;
+	text-align: center;
+  }
+.nav-link:hover {
+	background-color: #ce5f31;
+  	color: white;
+	font-weight: 600;
+	text-transform: uppercase;
+  }
 
 /* Buttons */
 .btn {
 	border-radius: 0.15em;
 }
+.btn:hover {
+	background-color: #ce5f31;
+}
+.btn-donate {
+	background-color: #ce5f31;
+	color: #fff;
+}
+.btn-donate:hover {
+	color: black;
+}
+
 
 /* Alert */
 .alert {
@@ -66,7 +103,6 @@ body {
 .jumbotron {
 	border-radius: 0;
 }
-
 /* Headings */
 .heading-underline {
 	position: relative;
@@ -88,12 +124,34 @@ body {
 	max-width: 100px;
 	background: #ce5f31;
 }
-
+.box {
+  min-height: 20vh;
+  width: 90%;
+  background-color: lightgray;
+  font-size: 1rem;
+  font-weight: bold;
+  text-align: center;
+  margin: 3% auto;
+  padding: 1%;
+}
 /* Article */
 .article {
 	margin-bottom: 2em;
+	margin:1% 1%;
+	padding: 1%;
+}
+.article.gray {
+	background-color: #DDDDDD;
+}
+.article.border {
+	border: 1px solid #DDDDDD;
 }
 
+/* Article 
+.article {
+	margin-bottom: 2em;
+}
+*/
 .article-title {
 	margin-bottom: 0.5em;
 	font-weight: 700;
@@ -118,10 +176,26 @@ body {
 .article-read-more:last-child {
 	margin-bottom: 0;
 }
+.article-title--sidebar {
+	font-size: 0.8rem;
+	font-weight: 700;
+}
+.img-fluid--sidebar {
+	margin-top: 25%;
+	width: 100%;
+	min-height: 70px;
+}
+.site-footer {
+	margin-top: 4em;
+}
 
 @media screen and (min-width: 992px) {
 
 	.navbar-brand > img {
 	   max-height: 80px;
+	}
+
+	.box {
+		width: 100%;
 	}
 }
