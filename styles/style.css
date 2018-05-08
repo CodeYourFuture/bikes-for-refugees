@@ -36,6 +36,10 @@ body {
 .btn {
 	border-radius: 0.15em;
 }
+.btn-primary{
+	background-color: rgb(240, 106, 28);
+	border: none;
+}
 
 /* Alert */
 .alert {
@@ -65,7 +69,51 @@ body {
 /* Jumbotron */
 .jumbotron {
 	border-radius: 0;
+	background-image:url("/home/abz/bikes-for-refugees/images/header-bike.jpg");
 }
+.display-3{
+	color: white;
+	font-weight: bold;
+}
+.lead{
+	color: lightgrey;
+	font-weight: bold;
+}
+
+.my-container{
+	padding: 0;
+}
+.my-row{
+	height: 150px;
+}
+.my-col{
+	margin: 0;
+}
+.my-p{
+	border: 2px solid gray;
+	height: 145px;
+	margin: 0;
+	text-align: center;
+	padding-top: 30%;
+	font-size: 1.2rem;
+	background-color: rgb(241, 240, 240);
+}
+.arprimary-content {
+	
+}
+.left-art{
+	background-color: lightgray;
+	padding-right: 20px; 
+	
+}
+.right-art{
+	border: 2px solid rgba(223, 222, 222, 0.911);
+	padding-left: 20px;
+}
+.side-art{
+	overflow: hidden;
+}
+
 
 /* Headings */
 .heading-underline {
