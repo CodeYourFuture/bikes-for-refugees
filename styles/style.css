@@ -142,7 +142,7 @@ div #navbarSupportedContent .btn, div .buttons :first-child{
 	background-color: red;	
 }
 /*screen size smaller than 320px*/
-@media screen and (min-width: 320px) {
+@media screen and (max-width: 320px) {
 	 .display-3{
 		font-size: 35px;
 	 }
