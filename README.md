@@ -11,7 +11,7 @@ Then, **clone** it to your machine, using the following terminal commands.
 `cd <your-project-directory>`
 
 >Clone the repo:
-`git clone git@github.com:<your_username>/bikes-for-refugees.git`
+`git clone https://github.com/<your_username>/bikes-for-refugees.git`
 
 Now, **create a new branch** with your name in the title
 >`git checkout -b bikes-for-refugees/yourname`
@@ -52,5 +52,6 @@ _Make sure you're on your branch_
 
 > In your terminal: add, commit and push your changes
 
-> Go to Github and open a PR
+> Go to Github and open a PR **with the CodeYourFuture repository as the base repository** (not your own).
 
+Look here for help with your PR: https://codeyourfuture.github.io/syllabus-master/others/making-a-pull-request.html
