@@ -8,24 +8,35 @@
 
 html,
 body {
-	font-family: "Source Sans Pro",-apple-system,system-ui,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
+	font-family: "Source Sans Pro","Helvetica Neue",Arial,sans-serif;
 }
 
+button {
+	font-family: "Source Sans Pro","Helvetica Neue",Arial,sans-serif;
+}
+
+/*  Navigation */
 .navbar-brand > img {
 	max-height: 40px;
 	width: auto;
+}
+
+.navbar-light .navbar-toggler {
+	border: 0;
+	right:  0;
 }
 
 .navbar-light .navbar-nav .nav-link {
 	color: #292b2c;
 	font-weight: 600;
 	text-transform: uppercase;
+
+	/*  Challenge: can you make the navigation links orange on hover? */
 }
 
 /* Buttons */
-.btn {
-	border-radius: 0.15em;
-}
+/* INSERT BUTTON STYLES HERE */
+
 
 /* Alert */
 .alert {
@@ -109,6 +120,7 @@ body {
 	margin-bottom: 0;
 }
 
+/* Footer */
 .footer {
 	margin-top: 4em;
 }
