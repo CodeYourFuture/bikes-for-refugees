@@ -8,34 +8,35 @@
 
 html,
 body {
-	font-family: "Source Sans Pro",-apple-system,system-ui,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
+	font-family: "Source Sans Pro","Helvetica Neue",Arial,sans-serif;
 }
 
-.site-footer {
-	margin-top: 4em;
+button {
+	font-family: "Source Sans Pro","Helvetica Neue",Arial,sans-serif;
 }
 
-.site-footer p {
-	border-top: 1px solid #dccdc6;
-	padding-top: 2em;
-	padding-bottom: 2em;
-}
-
+/*  Navigation */
 .navbar-brand > img {
 	max-height: 40px;
 	width: auto;
+}
+
+.navbar-light .navbar-toggler {
+	border: 0;
+	right:  0;
 }
 
 .navbar-light .navbar-nav .nav-link {
 	color: #292b2c;
 	font-weight: 600;
 	text-transform: uppercase;
+
+	/*  Challenge: can you make the navigation links orange on hover? */
 }
 
 /* Buttons */
-.btn {
-	border-radius: 0.15em;
-}
+/* INSERT BUTTON STYLES HERE */
+
 
 /* Alert */
 .alert {
@@ -94,30 +95,43 @@ body {
 	margin-bottom: 2em;
 }
 
-.article-title {
+.article__title {
 	margin-bottom: 0.5em;
 	font-weight: 700;
 }
 
-.article-read-more a {
+.article__read-more a {
 	font-size: 0.85em;
 	font-weight: 700;
 	text-decoration: uppercase;
 }
 
-.article-read-more a:hover,
-.article-read-more a:focus {
+.article__read-more a:hover,
+.article__read-more a:focus {
 	text-decoration: none;
 }
 
-.article-read-more .fa {
+.article__read-more .fa {
 	margin-right: 0.5em;
 	color: #ce5f31;
 }
 
-.article-read-more:last-child {
+.article__read-more:last-child {
 	margin-bottom: 0;
 }
+
+/* Footer */
+.footer {
+	margin-top: 4em;
+}
+
+.footer p {
+	border-top: 1px solid #dccdc6;
+	padding-top: 2em;
+	padding-bottom: 2em;
+}
+
+/* Media queries */
 
 @media screen and (min-width: 992px) {
 
