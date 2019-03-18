@@ -8,22 +8,22 @@
 
 html,
 body {
-	font-family: "Source Sans Pro","Helvetica Neue",Arial,sans-serif;
+	font-family: "Source Sans Pro", "Helvetica Neue", Arial, sans-serif;
 }
 
 button {
-	font-family: "Source Sans Pro","Helvetica Neue",Arial,sans-serif;
+	font-family: "Source Sans Pro", "Helvetica Neue", Arial, sans-serif;
 }
 
 /*  Navigation */
-.navbar-brand > img {
+.navbar-brand>img {
 	max-height: 40px;
 	width: auto;
 }
 
 .navbar-light .navbar-toggler {
 	border: 0;
-	right:  0;
+	right: 0;
 }
 
 .navbar-light .navbar-nav .nav-link {
@@ -34,8 +34,18 @@ button {
 	/*  Challenge: can you make the navigation links orange on hover? */
 }
 
+/* Orange links on hover */
+.navbar-light .navbar-nav .nav-link:hover {
+	color: #f78809;
+}
+
 /* Buttons */
 /* INSERT BUTTON STYLES HERE */
+.orangeBtn {
+	background: rgb(236, 137, 6);
+	color: white;
+
+}
 
 
 /* Alert */
@@ -65,7 +75,31 @@ button {
 
 /* Jumbotron */
 .jumbotron {
+	/* padding: 0; */
+	background-image: url("images/header-bike.jpg");
+	/* background: none; */
 	border-radius: 0;
+}
+
+
+
+.learnMoreSec {
+	display: flex;
+	justify-content: space-between;
+}
+
+/* select only the two articles of the learn more section */
+.learnMoreSec article {
+	border: 1px solid grey;
+	flex-basis: 48%;
+	padding: 10px;
+}
+
+/* apply the background to only one part of the learn more section */
+.learnMoreSec article:nth-child(1) {
+	background: rgb(209, 205, 205);
+	border: none;
+
 }
 
 /* Headings */
@@ -92,10 +126,31 @@ button {
 
 /* Article */
 .article {
+	display: flex;
+	flex-wrap: wrap;
 	margin-bottom: 2em;
+
+}
+
+.article a .img-fluid {
+
+	border: 2px solid red;
+
+	margin-right: 10px;
+	flex: 1;
+	max-height: 100%;
+	max-width: auto;
+}
+
+
+
+/* class created to have two parts in each article: the text (with header and the paragraph) */
+.sideText {
+	flex-basis: 70%;
 }
 
 .article__title {
+
 	margin-bottom: 0.5em;
 	font-weight: 700;
 }
@@ -135,7 +190,7 @@ button {
 
 @media screen and (min-width: 992px) {
 
-	.navbar-brand > img {
-	   max-height: 80px;
+	.navbar-brand>img {
+		max-height: 80px;
 	}
 }
