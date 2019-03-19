@@ -39,6 +39,16 @@ button {
 	color: white;
 }
 
+.changeHov:hover {
+	background: green;
+	color: white;
+	/* zoom: 150%; */
+}
+
+.jumbotron .changeHov:hover {
+	position: absolute;
+	zoom: 150%;
+}
 
 
 /* Alert */
