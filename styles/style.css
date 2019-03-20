@@ -85,6 +85,10 @@ button.donate-button {
 	color: white;
 }
 
+hr.my-4{
+	border-color:white;
+}
+
 .jumbotron h1{
 	font-size: 4.5em;
 }
@@ -118,10 +122,8 @@ button.donate-button {
 /* Article */
 .upcoming-event{
 	display:flex;
-	justify-content:flex-end;
 	height:120px;
 	margin : 10px 0;
-
 }
 
 .upcoming-event__link{
