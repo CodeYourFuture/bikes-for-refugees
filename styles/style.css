@@ -36,7 +36,18 @@ button {
 
 /* Buttons */
 /* INSERT BUTTON STYLES HERE */
+button.volunteer-button {
+background-color: rgb(255,255,255);
+border-style:none;
+font-size: 20px;
+}
 
+button.donate-button {
+	background-color: #ce5f31;;
+	border-style:none;
+	color: rgb(255,255,255);
+	font-size: 20px;
+}
 
 /* Alert */
 .alert {
@@ -66,6 +77,20 @@ button {
 /* Jumbotron */
 .jumbotron {
 	border-radius: 0;
+	height:420px;
+	background-image : url('../images/header-bike.jpg');
+	background-repeat : no-repeat;
+	background-position:center;
+	background-size:cover;
+	color: white;
+}
+
+.jumbotron h1{
+	font-size: 4.5em;
+}
+
+.jumbotron p{
+	font-size :1.3em;
 }
 
 /* Headings */
@@ -91,9 +116,52 @@ button {
 }
 
 /* Article */
-.article {
-	margin-bottom: 2em;
+.upcoming-event{
+	display:flex;
+	justify-content:flex-end;
+	height:120px;
+	margin : 10px 0;
+
 }
+
+.upcoming-event__link{
+	margin-right: 10px;
+	width:180px;
+	overflow:hidden;
+	}
+
+.upcoming-event__content{
+	width:100%;
+}
+.upcoming-event__picture {
+	/*border : 1px dotted blue;*/
+	width:180px;
+	overflow:hidden;
+}
+
+.img-fluid{
+	/*border : 1px solid black;*/
+	height:100px;
+	width:auto;
+	display:block;
+}
+
+.sub-content {
+	display : flex;
+	justify-content:space-between;
+}
+.sub-content .article {
+	width:47%;
+	margin-bottom: 2em;
+	padding : 15px;
+	border : 1px solid black;
+}
+
+.sub-content .article:first-child{
+	background-color : rgb(200, 200, 200);
+	border-style:none;
+}
+
 
 .article__title {
 	margin-bottom: 0.5em;
@@ -119,6 +187,8 @@ button {
 .article__read-more:last-child {
 	margin-bottom: 0;
 }
+
+
 
 /* Footer */
 .footer {
