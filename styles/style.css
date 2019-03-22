@@ -1,29 +1,21 @@
-/**
- * Base styles to use at the start of the class
- *
- * Module: HTML/CSS
- * Lesson: 1,2
- * Class: Scotland 2017
- */
-
 html,
 body {
-	font-family: "Source Sans Pro","Helvetica Neue",Arial,sans-serif;
+	font-family: "Source Sans Pro", "Helvetica Neue", Arial, sans-serif;
 }
 
 button {
-	font-family: "Source Sans Pro","Helvetica Neue",Arial,sans-serif;
+	font-family: "Source Sans Pro", "Helvetica Neue", Arial, sans-serif;
 }
 
 /*  Navigation */
-.navbar-brand > img {
+.navbar-brand>img {
 	max-height: 40px;
 	width: auto;
 }
 
 .navbar-light .navbar-toggler {
 	border: 0;
-	right:  0;
+	right: 0;
 }
 
 .navbar-light .navbar-nav .nav-link {
@@ -36,7 +28,19 @@ button {
 
 /* Buttons */
 /* INSERT BUTTON STYLES HERE */
+button.volunteer-button {
+	background-color: rgb(255, 255, 255);
+	border-style: none;
+	font-size: 20px;
+}
 
+button.donate-button {
+	background-color: #ce5f31;
+	;
+	border-style: none;
+	color: rgb(255, 255, 255);
+	font-size: 20px;
+}
 
 /* Alert */
 .alert {
@@ -66,6 +70,24 @@ button {
 /* Jumbotron */
 .jumbotron {
 	border-radius: 0;
+	height: 420px;
+	background-image: url('../images/header-bike.jpg');
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+	color: white;
+}
+
+hr.my-4 {
+	border-color: white;
+}
+
+.jumbotron h1 {
+	font-size: 4.5em;
+}
+
+.jumbotron p {
+	font-size: 1.3em;
 }
 
 /* Headings */
@@ -91,9 +113,52 @@ button {
 }
 
 /* Article */
-.article {
-	margin-bottom: 2em;
+.upcoming-event {
+	display: flex;
+	height: 120px;
+	margin: 10px 0;
 }
+
+.upcoming-event__link {
+	margin-right: 10px;
+	width: 180px;
+	overflow: hidden;
+}
+
+.upcoming-event__content {
+	width: 100%;
+}
+
+.upcoming-event__picture {
+	/*border : 1px dotted blue;*/
+	width: 180px;
+	overflow: hidden;
+}
+
+.img-fluid {
+	/*border : 1px solid black;*/
+	height: 100px;
+	width: auto;
+	display: block;
+}
+
+.sub-content {
+	display: flex;
+	justify-content: space-between;
+}
+
+.sub-content .article {
+	width: 47%;
+	margin-bottom: 2em;
+	padding: 15px;
+	border: 1px solid black;
+}
+
+.sub-content .article:first-child {
+	background-color: rgb(200, 200, 200);
+	border-style: none;
+}
+
 
 .article__title {
 	margin-bottom: 0.5em;
@@ -120,6 +185,8 @@ button {
 	margin-bottom: 0;
 }
 
+
+
 /* Footer */
 .footer {
 	margin-top: 4em;
@@ -135,7 +202,7 @@ button {
 
 @media screen and (min-width: 992px) {
 
-	.navbar-brand > img {
-	   max-height: 80px;
+	.navbar-brand>img {
+		max-height: 80px;
 	}
 }
