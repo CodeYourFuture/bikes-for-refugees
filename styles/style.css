@@ -6,136 +6,180 @@
  * Class: Scotland 2017
  */
 
-html,
-body {
-	font-family: "Source Sans Pro","Helvetica Neue",Arial,sans-serif;
-}
-
-button {
-	font-family: "Source Sans Pro","Helvetica Neue",Arial,sans-serif;
-}
-
-/*  Navigation */
-.navbar-brand > img {
-	max-height: 40px;
-	width: auto;
-}
-
-.navbar-light .navbar-toggler {
-	border: 0;
-	right:  0;
-}
-
-.navbar-light .navbar-nav .nav-link {
-	color: #292b2c;
-	font-weight: 600;
-	text-transform: uppercase;
-
-	/*  Challenge: can you make the navigation links orange on hover? */
-}
-
-/* Buttons */
-/* INSERT BUTTON STYLES HERE */
-
-
-/* Alert */
-.alert {
-	position: relative;
-	margin-top: 2em;
-	margin-bottom: 3em;
-	padding-top: 1.5em;
-	padding-bottom: 1.5em;
-	border: 1px solid #dccdc6;
-	border-radius: 0;
-	font-size: 0.85rem;
-	line-height: 1.3em;
-	background: transparent;
-	color: #292b2c;
-}
-
-.alert:before {
-	content: '';
-	position: absolute;
-	left: -1px;
-	top: 0;
-	height: 100%;
-	width: 1px;
-	background: #ce5f31;
-}
-
-/* Jumbotron */
-.jumbotron {
-	border-radius: 0;
-}
-
-/* Headings */
-.heading-underline {
-	position: relative;
-	margin-bottom: 2em;
-	padding-bottom: 0.5em;
-	border-bottom: 1px solid #dccdc6;
-	font-size: 1rem;
-	font-weight: 600;
-	text-transform: uppercase;
-}
-
-.heading-underline:before {
-	content: '';
-	position: absolute;
-	bottom: -1px;
-	left: 0;
-	width: 25%;
-	height: 1px;
-	max-width: 100px;
-	background: #ce5f31;
-}
-
-/* Article */
-.article {
-	margin-bottom: 2em;
-}
-
-.article__title {
-	margin-bottom: 0.5em;
-	font-weight: 700;
-}
-
-.article__read-more a {
-	font-size: 0.85em;
-	font-weight: 700;
-	text-decoration: uppercase;
-}
-
-.article__read-more a:hover,
-.article__read-more a:focus {
-	text-decoration: none;
-}
-
-.article__read-more .fa {
-	margin-right: 0.5em;
-	color: #ce5f31;
-}
-
-.article__read-more:last-child {
-	margin-bottom: 0;
-}
-
-/* Footer */
-.footer {
-	margin-top: 4em;
-}
-
-.footer p {
-	border-top: 1px solid #dccdc6;
-	padding-top: 2em;
-	padding-bottom: 2em;
-}
-
-/* Media queries */
-
-@media screen and (min-width: 992px) {
-
-	.navbar-brand > img {
-	   max-height: 80px;
-	}
-}
+ html,
+ body {
+   font-family: "Source Sans Pro", "Helvetica Neue", Arial, sans-serif;
+ }
+ 
+ button {
+   font-family: "Source Sans Pro", "Helvetica Neue", Arial, sans-serif;
+ }
+ 
+ .orange-button {
+   background-color: #ce5f31;
+   color: white;
+ }
+ 
+ /*  Navigation */
+ .navbar-brand > img {
+   max-height: 40px;
+   width: auto;
+ }
+ 
+ .navbar-light .navbar-toggler {
+   border: 0;
+   right: 0;
+ }
+ 
+ .navbar-light .navbar-nav .nav-link {
+   color: #292b2c;
+   font-weight: 600;
+   text-transform: uppercase;
+ 
+   /*  Challenge: can you make the navigation links orange on hover? */
+ }
+ 
+ /* Buttons */
+ /* INSERT BUTTON STYLES HERE */
+ 
+ /* Alert */
+ .alert {
+   position: relative;
+   margin-top: 2em;
+   margin-bottom: 3em;
+   padding-top: 1.5em;
+   padding-bottom: 1.5em;
+   border: 1px solid #dccdc6;
+   border-radius: 0;
+   font-size: 0.85rem;
+   line-height: 1.3em;
+   background: transparent;
+   color: #292b2c;
+ }
+ 
+ .alert:before {
+   content: "";
+   position: absolute;
+   left: -1px;
+   top: 0;
+   height: 100%;
+   width: 1px;
+   background: #ce5f31;
+ }
+ 
+ /* Jumbotron */
+ .jumbotron {
+   margin-top: 20px;
+   background-image: url("../images/header-bike.jpg");
+   background-size: cover;
+   color: white;
+ }
+ 
+ .img-fluid {
+   width: 100px;
+   height: 80px;
+ }
+ 
+ /* Headings */
+ .heading-underline {
+   position: relative;
+   margin-bottom: 2em;
+   padding-bottom: 0.5em;
+   border-bottom: 1px solid #dccdc6;
+   font-size: 1rem;
+   font-weight: 600;
+   text-transform: uppercase;
+ }
+ 
+ .heading-underline:before {
+   content: "";
+   position: absolute;
+   bottom: -1px;
+   left: 0;
+   width: 25%;
+   height: 1px;
+   max-width: 100px;
+   background: #ce5f31;
+ }
+ 
+ /* Article */
+ .learnmore {
+   display: flex;
+   justify-content: space-around;
+ }
+ .article2 {
+   border: 1px solid rgb(184, 178, 178);
+   padding: 20px;
+ }
+ .article1 {
+   margin-right: 20px;
+   background-color: lightGrey;
+   padding: 20px;
+ }
+ 
+ .aside-article {
+   margin-bottom: 1em;
+   display: flex;
+ 
+   align-items: stretch;
+ }
+ .article__title {
+   margin-bottom: 0.5em;
+   font-weight: 700;
+ }
+ 
+ .article__read-more a {
+   font-size: 0.85em;
+   font-weight: 700;
+   text-decoration: uppercase;
+ }
+ 
+ .article__read-more a:hover,
+ .article__read-more a:focus {
+   text-decoration: none;
+ }
+ 
+ .article__read-more .fa {
+   margin-right: 0.5em;
+   color: #ce5f31;
+ }
+ 
+ .article__read-more:last-child {
+   margin-bottom: 0;
+ }
+ 
+ /* Footer */
+ .footer {
+   margin-top: 4em;
+ }
+ 
+ .footer p {
+   border-top: 1px solid #dccdc6;
+   padding-top: 2em;
+   padding-bottom: 2em;
+ }
+ 
+ /* Media queries */
+ 
+ @media screen and (min-width: 992px) {
+   .navbar-brand > img {
+	 max-height: 80px;
+   }
+ }
+ 
+ .sidebar section {
+   display: flex;
+   flex-direction: column;
+   margin-left: 10px;
+ }
+ 
+ .sidebar article {
+   display: flex;
+ 
+   justify-content: space-between;
+ }
+ 
+ .article__title {
+   width: auto;
+ }
+ 
