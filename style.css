@@ -1,0 +1,174 @@
+/**
+ * Base styles to use at the start of the class
+ *
+ * Module: HTML/CSS
+ * Lesson: 1,2
+ * Class: Scotland 2017
+ */
+
+html,
+body {
+  font-family: "Source Sans Pro", "Helvetica Neue", Arial, sans-serif;
+}
+
+button {
+  font-family: "Source Sans Pro", "Helvetica Neue", Arial, sans-serif;
+}
+
+/*  Navigation */
+.navbar-brand > img {
+  max-height: 40px;
+  width: auto;
+}
+
+.navbar-light .navbar-toggler {
+  border: 0;
+  right: 0;
+}
+
+.navbar-light .navbar-nav .nav-link {
+  color: #292b2c;
+  font-weight: 600;
+  text-transform: uppercase;
+
+  /*  Challenge: can you make the navigation links orange on hover? */
+}
+
+/* Buttons */
+/* INSERT BUTTON STYLES HERE */
+.donate-button {
+  background-color: #ce5f31;
+  color: white;
+}
+
+/* Alert */
+.alert {
+  position: relative;
+  margin-top: 2em;
+  margin-bottom: 3em;
+  padding-top: 1.5em;
+  padding-bottom: 1.5em;
+  border: 1px solid #dccdc6;
+  border-radius: 0;
+  font-size: 0.85rem;
+  line-height: 1.3em;
+  background: transparent;
+  color: #292b2c;
+}
+
+.alert:before {
+  content: "";
+  position: absolute;
+  left: -1px;
+  top: 0;
+  height: 100%;
+  width: 1px;
+  background: #ce5f31;
+}
+
+/* Jumbotron */
+.jumbotron {
+  border-radius: 0;
+  background-image: url("./images/header-bike.jpg");
+  color: white;
+}
+
+/* Headings */
+.heading-underline {
+  position: relative;
+  margin-bottom: 2em;
+  padding-bottom: 0.5em;
+  border-bottom: 1px solid #dccdc6;
+  font-size: 1rem;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.heading-underline:before {
+  content: "";
+  position: absolute;
+  bottom: -1px;
+  left: 0;
+  width: 25%;
+  height: 1px;
+  max-width: 100px;
+  background: #ce5f31;
+}
+
+/* Article */
+.know-more {
+  display: flex;
+}
+.article1 {
+  margin-bottom: 2em;
+  width: 100%;
+  height: 100%px;
+  margin-right: 10px;
+  background-color: cadetblue;
+  padding: 10px;
+  font-size: 17px;
+}
+.article2 {
+  margin-bottom: 2em;
+  width: 100%;
+  height: 100%px;
+  padding: 10px;
+  font-size: 17px;
+  border: 1px solid;
+  border-color: cadetblue;
+}
+
+.article__title {
+  margin-bottom: 0.5em;
+  font-weight: 700;
+}
+
+.article__read-more a {
+  font-size: 0.85em;
+  font-weight: 700;
+  text-decoration: uppercase;
+}
+
+.article__read-more a:hover,
+.article__read-more a:focus {
+  text-decoration: none;
+}
+
+.article__read-more .fa {
+  margin-right: 0.5em;
+  color: #ce5f31;
+}
+
+.article__read-more:last-child {
+  margin-bottom: 0;
+}
+
+.img-fluid {
+  width: 300px;
+}
+.fundraisers1 {
+  display: flex;
+  justify-content: flex-start;
+}
+.article3 {
+  display: flex;
+  flex-direction: column;
+}
+/* Footer */
+.footer {
+  margin-top: 4em;
+}
+
+.footer p {
+  border-top: 1px solid #dccdc6;
+  padding-top: 2em;
+  padding-bottom: 2em;
+}
+
+/* Media queries */
+
+@media screen and (min-width: 992px) {
+  .navbar-brand > img {
+    max-height: 80px;
+  }
+}
