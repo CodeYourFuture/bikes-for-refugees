@@ -12,7 +12,7 @@
 		<link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,300i,400,400i,600,600i,700,700i" rel="stylesheet">
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-		<link rel="stylesheet" href="styles/style.css">
+		<link rel="stylesheet" type="text/css" href="style.css" />
 
 		<title>Bikes for Refugees | Scotland</title>
 	</head>
@@ -43,7 +43,7 @@
 							<a class="nav-link" href="#">Contact Us</a>
 						</li>
 					</ul>
-					<button>Donate Now</button>
+					<button class = "donate-button">Donate Now</button>
 				</div>
 			</div>
 		</div>
@@ -53,19 +53,20 @@
 				You've helped us give <span id="donation-count-alert">72</span> bikes to refugees and asylum seekers. <strong>Thank you!</strong>
 			</div>
 			<div class="row">
-				<div class="main col-lg-8">
+			
+				<div class="main col-lg-8">		
 					<div class="jumbotron">
+						
 						<h1>Bikes for Refugees</h1>
 						<p>Providing donated bikes and accessories to refugees and asylum seekers in Scotland.</p>
 						<hr class="my-4">
-						<button>Donate a bike today</button>
+						<button class="donate-button">Donate a bike today</button>
 						<button>Volunteer</button>
 					</div>
-
 					<div>
 						<h2 class="heading-underline">Learn more</h2>
-
-							<article class="article">
+						<section class= "know-more">
+						<article class="article1">
 								<h6 class="article__title">
 									Why do refugees need bikes?
 								</h6>
@@ -78,7 +79,7 @@
 								</p>
 							</article>
 
-							<article class="article">
+							<article class="article2">
 								<h6 class="article__title">
 									How can I help?
 								</h6>
@@ -90,38 +91,45 @@
 									</a>
 								</p>
 							</article>
+						</section>
 
 					</div>
 				</div>
 
 				<div class="sidebar col-lg-4">
 						<h2 class="heading-underline">Upcoming events</h2>
-						<article class="article">
+						<section class="fundraisers1">
 							<a href="#">
-								<img class="img-fluid" src="https://raw.githubusercontent.com/Code-Your-Future/syllabus/master/html-css/assets/news-spring-fundraisers.jpg" alt="">
-					  	</a>
+								<img class="img-fluid" src="./images/spring-fundraisers_thumbnail.jpg" alt="spring-logo">
+						  </a>
+						<article class="article3">
 							<h6 class="article__title article__title--sidebar">
 								<a href="#">Join us for our Spring fundraisers</a>
 							</h6>
 							<p>Riders needed now to help raise awareness and funds for BfR and Médecins Sans Frontières.</p>
 						</article>
-						<article class="article">
+						</section>
+						<section class="fundraisers1">
 							<a href="#">
-								<img class="img-fluid" src="https://raw.githubusercontent.com/Code-Your-Future/syllabus/master/html-css/assets/bikes-for-refugees-logo.jpg" alt="">
+								<img class="img-fluid" src="./images/bikes-for-refugees_logo.jpg" alt="header-bike">
 							</a>
+							<article class="article3">
 							<h6 class="article__title article__title--sidebar">
 								<a href="#">Bike dropoff event in Edinburgh on May 11</a>
 							</h6>
 						</article>
-						<article class="article">
+						</section>
+						<section class="fundraisers1">
 							<a href="#">
-								<img class="img-fluid" src="https://raw.githubusercontent.com/Code-Your-Future/syllabus/master/html-css/assets/news-cycle.jpg" alt="">
+								<img class="img-fluid" src="./images/edinburgh-damascus_thumbnail.png" alt="">
 							</a>
+							<article class="article3">
 							<h6 class="article__title article__title--sidebar">
 								<a href="#">Help us cycle 4,797km</a>
 							</h6>
 							<p>We need you to help us cycle 4797km, the distance of Edinburgh to Damascus.</p>
 						</article>
+						</section>
 							<a href="https://www.facebook.com/BikesforRefugeesScotland/events/?ref=page_internal" class="facebook-link">
 								<span class="fa fa-facebook-square"></span>
 								All Facebook events
