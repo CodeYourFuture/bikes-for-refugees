@@ -8,134 +8,203 @@
 
 html,
 body {
-	font-family: "Source Sans Pro","Helvetica Neue",Arial,sans-serif;
+  font-family: "Source Sans Pro", "Helvetica Neue", Arial, sans-serif;
 }
 
 button {
-	font-family: "Source Sans Pro","Helvetica Neue",Arial,sans-serif;
+  font-family: "Source Sans Pro", "Helvetica Neue", Arial, sans-serif;
 }
 
 /*  Navigation */
 .navbar-brand > img {
-	max-height: 40px;
-	width: auto;
+  max-height: 40px;
+  width: auto;
 }
-
 .navbar-light .navbar-toggler {
-	border: 0;
-	right:  0;
+  border: 0;
+  right: 0;
 }
-
 .navbar-light .navbar-nav .nav-link {
-	color: #292b2c;
-	font-weight: 600;
-	text-transform: uppercase;
-
-	/*  Challenge: can you make the navigation links orange on hover? */
+  color: #292b2c;
+  font-weight: 600;
+  text-transform: uppercase;
+  /*  Challenge: can you make the navigation links orange on hover? */
 }
-
+a:hover {
+  color: red;
+}
 /* Buttons */
 /* INSERT BUTTON STYLES HERE */
-
-
+.donate {
+  color: white;
+  background-color: rgb(240, 106, 28);
+}
+.main button {
+  border-radius: 0.2em;
+  border: none;
+}
+div.navigation button {
+  background-color: rgb(240, 106, 28);
+  border: none;
+  border-radius: 0.2em;
+}
 /* Alert */
 .alert {
-	position: relative;
-	margin-top: 2em;
-	margin-bottom: 3em;
-	padding-top: 1.5em;
-	padding-bottom: 1.5em;
-	border: 1px solid #dccdc6;
-	border-radius: 0;
-	font-size: 0.85rem;
-	line-height: 1.3em;
-	background: transparent;
-	color: #292b2c;
+  position: relative;
+  margin-top: 2em;
+  margin-bottom: 3em;
+  padding-top: 1.5em;
+  padding-bottom: 1.5em;
+  border: 1px solid #dccdc6;
+  border-radius: 0;
+  font-size: 0.85rem;
+  line-height: 1.3em;
+  background: transparent;
+  color: #292b2c;
 }
 
 .alert:before {
-	content: '';
-	position: absolute;
-	left: -1px;
-	top: 0;
-	height: 100%;
-	width: 1px;
-	background: #ce5f31;
+  content: "";
+  position: absolute;
+  left: -1px;
+  top: 0;
+  height: 100%;
+  width: 1px;
+  background: #ce5f31;
 }
 
 /* Jumbotron */
 .jumbotron {
-	border-radius: 0;
+  margin-top: 20px;
+  background-image: url("../images/header-bike.jpg");
+  background-size: cover;
+  columns: white;
 }
-
+.jumbotron h1 {
+  color: white;
+}
+.jumbotron p {
+  color: white;
+}
 /* Headings */
 .heading-underline {
-	position: relative;
-	margin-bottom: 2em;
-	padding-bottom: 0.5em;
-	border-bottom: 1px solid #dccdc6;
-	font-size: 1rem;
-	font-weight: 600;
-	text-transform: uppercase;
+  position: relative;
+  margin-bottom: 2em;
+  padding-bottom: 0.5em;
+  border-bottom: 1px solid #dccdc6;
+  font-size: 1rem;
+  font-weight: 600;
+  text-transform: uppercase;
 }
 
 .heading-underline:before {
-	content: '';
-	position: absolute;
-	bottom: -1px;
-	left: 0;
-	width: 25%;
-	height: 1px;
-	max-width: 100px;
-	background: #ce5f31;
+  content: "";
+  position: absolute;
+  bottom: -1px;
+  left: 0;
+  width: 25%;
+  height: 1px;
+  max-width: 100px;
+  background: #ce5f31;
 }
 
 /* Article */
 .article {
-	margin-bottom: 2em;
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 2em;
+  justify-content: center;
 }
-
-.article__title {
-	margin-bottom: 0.5em;
-	font-weight: 700;
+.first-article {
+  display: flex;
+  flex-direction: row;
+}
+.art-left {
+  border: 1px solid rgb(202, 199, 199);
+  width: 1000px;
+  height: 200px;
+  padding: 10px;
+  background-color: rgb(202, 199, 199);
+  border-radius: 0.5em;
+}
+.art-right {
+  border: 1px solid rgb(247, 237, 237);
+  margin-left: 20px;
+  width: 1000px;
+  height: 200px;
+  padding: 10px;
+  border-radius: 0.5em;
+}
+.article__title,
+p {
+  margin-bottom: 0.5em;
+  font-weight: 400;
+  margin-left: 10px;
+  color: rgb(48, 44, 44);
 }
 
 .article__read-more a {
-	font-size: 0.85em;
-	font-weight: 700;
-	text-decoration: uppercase;
+  font-size: 0.85em;
+  font-weight: 700;
+  text-decoration: uppercase;
 }
 
 .article__read-more a:hover,
 .article__read-more a:focus {
-	text-decoration: none;
+  text-decoration: none;
 }
-
 .article__read-more .fa {
-	margin-right: 0.5em;
-	color: #ce5f31;
+  margin-right: 0.5em;
+  color: #ce5f31;
 }
 
 .article__read-more:last-child {
-	margin-bottom: 0;
+  margin-bottom: 0;
 }
 
 /* Footer */
 .footer {
-	margin-top: 4em;
+  margin-top: 4em;
 }
 
 .footer p {
-	border-top: 1px solid #dccdc6;
-	padding-top: 2em;
-	padding-bottom: 2em;
+  border-top: 1px solid #dccdc6;
+  padding-top: 2em;
+  padding-bottom: 2em;
 }
 
 /* Media queries */
 
 @media screen and (min-width: 992px) {
+  .navbar-brand > img {
+    max-height: 80px;
+  }
+}
 
-	.navbar-brand > img {
-	   max-height: 80px;
-	}
+.section.article {
+  display: flex;
+  flex-direction: row;
+  word-wrap: break-word;
+  width: 100%;
+  height: 100px;
+  overflow: hidden;
+}
+
+.sidebar section {
+  display: flex;
+  flex-direction: column;
+  margin-left: 5px;
+}
+.img-fluid {
+  height: 100px;
+  max-width: 100px;
+  display: block;
+}
+.sidebar-img--container {
+  display: flex;
+  flex-direction: column;
+}
+.art-heading--span {
+  color: black;
+  font-weight: 700;
 }
