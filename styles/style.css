@@ -39,14 +39,16 @@ button {
 button.volunteer-button {
 background-color: rgb(255,255,255);
 border-style:none;
-font-size: 20px;
+font-size: 18px;
+border-radius:3px;
 }
 
 button.donate-button {
 	background-color: #ce5f31;;
 	border-style:none;
 	color: rgb(255,255,255);
-	font-size: 20px;
+	font-size: 18px;
+border-radius:3px;
 }
 
 /* Alert */
@@ -123,7 +125,7 @@ hr.my-4{
 .upcoming-event{
 	display:flex;
 	height:120px;
-	margin : 10px 0;
+	margin : 15px 0;
 }
 
 .upcoming-event__link{
@@ -151,12 +153,13 @@ hr.my-4{
 .sub-content {
 	display : flex;
 	justify-content:space-between;
+	
 }
 .sub-content .article {
 	width:47%;
 	margin-bottom: 2em;
 	padding : 15px;
-	border : 1px solid black;
+	border : 1px solid gray;
 }
 
 .sub-content .article:first-child{
