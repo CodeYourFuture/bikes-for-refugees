@@ -42,27 +42,40 @@ nav:nth-child(2) {
 	text-transform: uppercase;
 }
 .nav-link: {
-	margin:40px
+	margin:40px;
+	
 }
 
 /* Buttons */
 .btn {
 	border-radius: 0.15em;
 	background-color: #ce5f31;
-	border:transparent;
+	border:1px solid transparent;
 	margin:3px;
 }
 .btn-secondary {
 	background-color: white;
 }
-.btn:hover btn:focus {
+.btn:hover {
 background-color:white;
 color:black;
+border:none;
 }
-.btn-secondary:hover btn:focus {
+.btn-secondary:hover{
 	background-color:#ce5f31;
 	color:white;
+}
+.btn:focus {
+	background-color:white;
+	color:black;
+	border:none;
 	}
+.btn-secondary:focus{
+	background-color:#ce5f31;
+	color:white;
+	border:transparent;
+}
+
 
 
 /* Alert */
@@ -105,6 +118,40 @@ color:black;
 	font-weight: 600;
 	
 	color:white;
+}
+.three-btn {
+	display:flex;
+	justify-content: space-around;
+	margin:2em;
+	
+	
+}
+.three-btn a{
+	
+	color:white;
+	background-color: #ce5f31;
+	padding:0.5em;
+	border-radius: 0.25em;
+	text-decoration: none;
+	margin:1em;	
+}
+.three-btn a:hover{
+	
+	color:black;
+	background-color: white;
+	padding:0.5em;
+	border-radius: 0.25em;
+	text-decoration: none;
+	border:1px solid #ce5f31; 	
+}
+.three-btn a:focus{
+	
+	color:black;
+	background-color: white;
+	padding:0.5em;
+	border-radius: 0.25em;
+	text-decoration: none;
+	border:1px solid #ce5f31; 	
 }
 
 /* Headings */
@@ -167,44 +214,54 @@ color:black;
 	   
 	}
 }
-.xyz1{
-	float:left;
-	max-width: 48%;
-	background-color: lightgray;
-	padding: 15px;
-	margin-right: 0px;
-	height: 230px;
-	
+.articles{
+	display: flex;	
+	margin-bottom: 2em;
 }
-.xyz2{
-	float:right;
-	max-width: 48%;
-	padding: 15px;
-	margin-left: 5px;
-	border: solid 1px;
-	border-color:lightgray;
-	
-	height: 230px;
+
+.articles >div:first-child{
+	background-color:grey;
+	margin-right:0.5em;
+	padding:1em;
 }
+.articles >div:last-child{
+	border:1px solid grey;
+	margin-left:0.5em;
+	padding:1em;
+}
+
+
+
+
 /* aside*/
-.asd-flt{
-	float:left;
-}
 .col-3{
 	float:left;
-	width: 100px;
+	width:25%;
 	overflow: hidden;
 }
 .col-9{
 	float:right;
-
+	width:75%
 	overflow: hidden;
 }
 .col-12{
 	font-weight:bold;
 }
-.asb{
-	max-width: 200%;
+.row1{
+	display:flex;
+}
+.row1 img{
+	max-height:100%;
 	overflow: hidden;
-	position: relative;
+	
+}
+
+
+@media screen and (max-width:320px){
+.d.title-bike{
+width:100%;}
+.buttons{
+	display: flex;
+
+}
 }
