@@ -11,9 +11,8 @@ body {
 	font-family: "Source Sans Pro","Helvetica Neue",Arial,sans-serif;
 }
 
-button {
-	font-family: "Source Sans Pro","Helvetica Neue",Arial,sans-serif;
-}
+
+
 
 /*  Navigation */
 .navbar-brand > img {
@@ -36,6 +35,11 @@ button {
 
 /* Buttons */
 /* INSERT BUTTON STYLES HERE */
+button:not(#button3) {
+	font-family: "Source Sans Pro","Helvetica Neue",Arial,sans-serif;
+	color: white;
+	background-color: rgb(180, 36, 36);
+}
 
 
 /* Alert */
@@ -63,9 +67,22 @@ button {
 	background: #ce5f31;
 }
 
-/* Jumbotron */
+/* Jumbotron 
 .jumbotron {
 	border-radius: 0;
+	position:relative;
+}*/
+ 
+.img-content{
+	position:relative;
+	color:white;
+	bottom:250px;
+	margin-left: 25px;
+}
+#header-img {
+	opacity:0.5;
+	transform: scaleX(-1);
+	width:100%;
 }
 
 /* Headings */
@@ -90,16 +107,47 @@ button {
 	background: #ce5f31;
 }
 
-/* Article */
+/* Article 
 .article {
 	margin-bottom: 2em;
+}*/
+.flex-container{
+	display: flex;
+
 }
+
+.flex-container h6{
+	margin-bottom: 0.5em;
+	font-weight: 700;
+
+}
+.container1{
+	margin-right: 75px;
+	text-align: justify;
+	background-color: rgb(217, 221, 221);
+
+
+}
+.container2{
+	border-style: ridge;
+}
+.img-fluid{
+	float:left;
+	object-fit: cover;
+	width: 25%;
+}
+
 
 .article__title {
 	margin-bottom: 0.5em;
 	font-weight: 700;
+	margin-left:100px;
 }
-
+.sidebar p{
+	font-size: 10pt;
+	text-align: justify;
+	margin-left: 100px;
+}
 .article__read-more a {
 	font-size: 0.85em;
 	font-weight: 700;
