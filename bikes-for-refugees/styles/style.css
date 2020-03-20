@@ -1,0 +1,206 @@
+/**
+ * Base styles to use at the start of the class
+ *
+ * Module: HTML/CSS
+ * Lesson: 1,2
+ * Class: Scotland 2017
+ */
+
+html,
+body {
+  font-family: "Source Sans Pro", "Helvetica Neue", Arial, sans-serif;
+  margin-left: 2em;
+  margin-right: 1em;
+}
+
+button {
+  font-family: "Source Sans Pro", "Helvetica Neue", Arial, sans-serif;
+}
+
+/*  Navigation */
+.navbar-brand > img {
+  max-height: 40px;
+  width: auto;
+}
+
+.navbar-light .navbar-toggler {
+  border: 0;
+  right: 0;
+}
+
+.navbar-light .navbar-nav .nav-link {
+  color: #292b2c;
+  font-weight: 600;
+  text-transform: uppercase;
+
+  /*  Challenge: can you make the navigation links orange on hover? */
+  /*Yes*/
+}
+a:hover {
+  color: #ce5f31;
+}
+/* Buttons */
+.donate-button {
+  background-color: orange;
+}
+
+.donate-button:hover {
+  background-color: blue;
+}
+
+.button-donate-today {
+  background-color: orange;
+}
+
+.button-donate-today:hover {
+  background-color: orangered;
+}
+
+.volunteer-button {
+  background-color: orange;
+}
+
+.volunteer-button:hover {
+  background-color: orangered;
+}
+
+/* Alert */
+.alert {
+  position: relative;
+  margin-top: 2em;
+  margin-bottom: 3em;
+  padding-top: 1.5em;
+  padding-bottom: 1.5em;
+  border: 1px solid #dccdc6;
+  border-radius: 0;
+  font-size: 0.85rem;
+  line-height: 1.3em;
+  background: transparent;
+  color: #292b2c;
+  margin-left: 5em;
+}
+
+.alert:before {
+  content: "";
+  position: absolute;
+  left: -1px;
+  top: 0;
+  height: 100%;
+  width: 1px;
+  background: #ce5f31;
+}
+
+/* Jumbotron */
+.jumbotron {
+  margin-left: 5em;
+  padding-bottom: 8em;
+  color: white;
+  border-radius: 0;
+  background-image: url(../images/header-bike.jpg);
+}
+
+/* Headings */
+.heading-underline {
+  margin-left: 2em;
+  position: relative;
+  margin-bottom: 2em;
+  padding-bottom: 0.5em;
+  border-bottom: 1px solid #dccdc6;
+  font-size: 1rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  margin-left: 5em;
+}
+
+.heading-underline:before {
+  content: "";
+  position: absolute;
+  bottom: -1px;
+  left: 0;
+  width: 25%;
+  height: 1px;
+  max-width: 100px;
+  background: #ce5f31;
+}
+
+/* Article */
+.article {
+  margin-bottom: 2em;
+  margin-left: 5em;
+}
+/*side bar*/
+.article__title--sidebar {
+  display: flex;
+  flex-direction: column;
+  width: 250px;
+  margin-bottom: 40px;
+}
+
+.article__title {
+  margin-bottom: 0.5em;
+  font-weight: 700;
+  display: flex;
+}
+
+.down-article {
+  display: flex;
+}
+
+.article__read-more a {
+  font-size: 0.85em;
+  font-weight: 700;
+  text-decoration: uppercase;
+}
+
+.article__read-more a:hover,
+.article__read-more a:focus {
+  text-decoration: none;
+}
+
+.article__read-more .fa {
+  margin-right: 0.5em;
+  color: #ce5f31;
+}
+
+.article__read-more:last-child {
+  margin-bottom: 0;
+}
+
+/* Footer */
+.footer {
+  margin-top: 4em;
+}
+
+.footer p {
+  border-top: 1px solid #dccdc6;
+  padding-top: 2em;
+  padding-bottom: 2em;
+}
+
+/* images*/
+.img-fluid {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding-right: 10px;
+  width: 100px;
+  height: 50px;
+  float: left;
+}
+
+.header-bike {
+  width: 100%;
+  height: 100%;
+}
+
+.facebook-link {
+  margin-left: 5em;
+}
+
+/* Media queries */
+
+@media screen and (min-width: 992px) {
+  .navbar-brand > img {
+    max-height: 80px;
+  }
+}
