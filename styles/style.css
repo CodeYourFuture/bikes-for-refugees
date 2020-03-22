@@ -180,7 +180,7 @@ button {
   text-align: left;
   display: flex;
   flex-direction: column;
-  height: 250px;
+  height: auto;
   justify-content: left;
 }
 
