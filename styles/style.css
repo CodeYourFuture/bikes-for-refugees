@@ -33,10 +33,19 @@ button {
 
   /*  Challenge: can you make the navigation links orange on hover? */
 }
+.navlink {
+  border: 1px solid transparent;
+}
 
 /* Buttons */
 /* INSERT BUTTON STYLES HERE */
-
+.btn {
+  background: #ce5f31;
+}
+.btn:hover,
+.btn:focus {
+    background: #ef7f52;
+}
 /* Alert */
 .alert {
   position: relative;
@@ -67,13 +76,19 @@ button {
   border-radius: 0;
   background-image: url("../images/header-bike.jpg");
   color: white;
-  height: 50%;
+  height: 45%;
 }
 
 .image {
   float: left;
-  width: 162px;
+  width: cover;
   margin-right: 15px;
+}
+.img{
+  flex-direction: column;
+  width: 8em;
+  padding-left: 10mm;
+ 
 }
 
 /* Headings */
@@ -147,19 +162,25 @@ button {
   }
 }
 
+ .box  {
+  background-color: rgb(199, 194, 194);
+}
+
 .boxes {
   display: flex;
   justify-content: space-between;
   margin-bottom: 2em;
-  align-items: center;
+  
+  align-items: left;
 }
 .boxes div {
-  padding: 0 1em;
+  padding: 1em 2em;
   border: 1px solid;
-  width: 25%;
-  text-align: center;
+  width: 45%;
+  text-align: left;
   display: flex;
   flex-direction: column;
-  height: 100px;
-  justify-content: center;
+  height: 250px;
+  justify-content: left;
 }
+
