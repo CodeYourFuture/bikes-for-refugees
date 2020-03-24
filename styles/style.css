@@ -11,9 +11,8 @@ body {
 	font-family: "Source Sans Pro","Helvetica Neue",Arial,sans-serif;
 }
 
-button {
-	font-family: "Source Sans Pro","Helvetica Neue",Arial,sans-serif;
-}
+
+
 
 /*  Navigation */
 .navbar-brand > img {
@@ -36,6 +35,11 @@ button {
 
 /* Buttons */
 /* INSERT BUTTON STYLES HERE */
+button:not(#button3) {
+	font-family: "Source Sans Pro","Helvetica Neue",Arial,sans-serif;
+	color: white;
+	background-color: rgb(180, 36, 36);
+}
 
 
 /* Alert */
@@ -63,9 +67,22 @@ button {
 	background: #ce5f31;
 }
 
-/* Jumbotron */
+/* Jumbotron 
 .jumbotron {
 	border-radius: 0;
+	position:relative;
+}*/
+ 
+.img-content{
+	position:relative;
+	color:white;
+	bottom:250px;
+	margin-left: 25px;
+}
+#header-img {
+	opacity:0.5;
+	transform: scaleX(-1);
+	width:100%;
 }
 
 /* Headings */
@@ -90,16 +107,72 @@ button {
 	background: #ce5f31;
 }
 
-/* Article */
-.article {
-	margin-bottom: 2em;
+
+.flex-container{
+	display: flex;
+	justify-content: space-between;
+
 }
+.flex-container article{
+	padding: 10px;
+	width: 45%;
+}
+
+.flex-container article:first-child{
+	background: #eee;
+
+}
+
+.flex-container article:last-child{
+	border: 1px solid #aaa;
+}
+
+.flex-container h6{
+	margin-bottom: 0.5em;
+	font-weight: 700;
+	
+
+}
+
+/*.container1{
+	margin-right: 75px;
+	text-align: justify;
+	background-color: rgb(217, 221, 221);
+
+
+}
+.container2{
+	border-style: ridge;
+}*/
+
+.sidebar .article {
+	margin-bottom: 2em;
+	display: flex;
+}
+
+.img-fluid{
+	max-width:100px;
+	margin-right: 10px;
+
+}
+/*.img-fluid{
+	float:left;
+	object-fit: cover;
+	width: 25%;
+}*/
+
+
 
 .article__title {
 	margin-bottom: 0.5em;
 	font-weight: 700;
+	/*margin-left:10px;*/
 }
-
+/*.sidebar p{
+	font-size: 10pt;
+	/*text-align: justify;
+	margin-left: 10px;
+}*/
 .article__read-more a {
 	font-size: 0.85em;
 	font-weight: 700;
@@ -129,6 +202,24 @@ button {
 	border-top: 1px solid #dccdc6;
 	padding-top: 2em;
 	padding-bottom: 2em;
+}
+
+.boxes {
+	display: flex;
+	justify-content: space-between;
+	margin-bottom: 2em;
+	align-items: center;
+}
+
+.boxes div {
+	padding: 0 1em;
+	border: 1px solid;
+	width: 25%;
+	text-align: center;
+	display: flex;
+	flex-direction: column;
+	height: 50px;
+	justify-content: center;
 }
 
 /* Media queries */
