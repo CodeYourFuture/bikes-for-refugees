@@ -9,6 +9,9 @@
 html,
 body {
 	font-family: "Source Sans Pro","Helvetica Neue",Arial,sans-serif;
+	font-size: 1.1rem;
+	font-weight: 600;
+	line-height: 1.5;
 }
 
 button {
@@ -37,6 +40,8 @@ button {
 /* Buttons */
 /* INSERT BUTTON STYLES HERE */
 
+
+}
 
 /* Alert */
 .alert {
@@ -132,10 +137,54 @@ button {
 }
 
 /* Media queries */
+.boxes {
+	display: flex;
+	justify-content: space-between;
+	margin-bottom: 2em;
+	align-items: center;
+}
+.boxes div {
+	padding: 0 1em;
+	border: 1px solid #666666;
+	width: 25%;
+	text-align: center;
+	background-color: #dfdfdf;
+	display: flex;
+	flex-direction: column;
+	height: 100px;
+	justify-content: center;
+}
 
+.container{
+	margin: 1 rem auto;
+	width: auto; /*On the work that was provided this was 500px I have changed it to auto to fill the page */
+	max-width: 100%;
+	padding: 2rem 0;
+	box-sizing: border-box;
+	border: 1px solid #999;
+}
 @media screen and (min-width: 992px) {
 
 	.navbar-brand > img {
 	   max-height: 80px;
 	}
+}
+@media(max-width:700px){
+	.boxes{
+		flex-wrap: wrap;
+	}
+}
+
+.boxes div{
+	width: 48%;
+	margin-bottom: 1rem;
+}
+
+@media(max-width: 320px){
+	.boxes{
+		display: block;
+	}
+}
+.boxes div{
+	width: 100%;
 }
