@@ -129,6 +129,17 @@ button {
   margin-right: 0.5em;
   color: #ce5f31;
 }
+.sub-content {
+  display: flex;
+  justify-content: space-between;
+}
+.sub-content .article {
+  width: 47%;
+  margin-bottom: 2em;
+  padding: 15px;
+  border: 1px solid black;
+  border: 1px solid gray;
+}
 
 .article__read-more:last-child {
   margin-bottom: 0;
