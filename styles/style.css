@@ -101,12 +101,12 @@ button {
 
 .sidebar .article {
   margin-bottom: 2em;
-  display: flex; /* added to align the image correctly */
+  display: flex;
 }
 
 .img-fluid {
-  max-width: 100px; /* maximum width of the image */
-  margin-right: 10px; /* adds space between the image and the text */
+  max-width: 100px;
+  margin-right: 20px;
 }
 
 .article__title {
@@ -119,7 +119,9 @@ button {
   font-weight: 700;
   text-decoration: uppercase;
 }
-
+.jumbotron {
+  background: url(https://github.com/halitos/bikes-for-refugees/blob/master/images/header-bike.jpg?raw=true);
+}
 .article__read-more a:hover,
 .article__read-more a:focus {
   text-decoration: none;
@@ -137,14 +139,18 @@ button {
   width: 47%;
   margin-bottom: 2em;
   padding: 15px;
-  border: 1px solid black;
   border: 1px solid gray;
+}
+
+.sub-content .article:first-of-type {
+  background-color: lightgray;
+  border: 0px;
 }
 
 .article__read-more:last-child {
   margin-bottom: 0;
 }
-.boxes {
+/* .boxes {
   display: flex;
   justify-content: space-between;
   margin-bottom: 2em;
@@ -160,7 +166,7 @@ button {
   flex-direction: column;
   height: 100px;
   justify-content: center;
-}
+} */
 
 /* Footer */
 .footer {
