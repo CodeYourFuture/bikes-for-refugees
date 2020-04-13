@@ -73,6 +73,7 @@ button {
 /* Jumbotron */
 .jumbotron {
   border-radius: 0;
+  background: url(https://github.com/halitos/bikes-for-refugees/blob/master/images/header-bike.jpg?raw=true);
 }
 
 /* Headings */
@@ -119,9 +120,7 @@ button {
   font-weight: 700;
   text-decoration: uppercase;
 }
-.jumbotron {
-  background: url(https://github.com/halitos/bikes-for-refugees/blob/master/images/header-bike.jpg?raw=true);
-}
+
 .article__read-more a:hover,
 .article__read-more a:focus {
   text-decoration: none;
@@ -150,7 +149,7 @@ button {
 .article__read-more:last-child {
   margin-bottom: 0;
 }
-/* .boxes {
+.boxes {
   display: flex;
   justify-content: space-between;
   margin-bottom: 2em;
@@ -166,7 +165,7 @@ button {
   flex-direction: column;
   height: 100px;
   justify-content: center;
-} */
+}
 
 /* Footer */
 .footer {
