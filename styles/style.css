@@ -6,6 +6,10 @@
  * Class: Scotland 2017
  */
 
+ * {
+	 box-sizing: border-box;
+ }
+
 html,
 body {
 	font-family: "Source Sans Pro","Helvetica Neue",Arial,sans-serif;
@@ -35,8 +39,17 @@ button {
 }
 
 /* Buttons */
+
+#nav-button {
+ background: rgb(226, 96, 49);
+  color: white;
+}
+
 /* INSERT BUTTON STYLES HERE */
 
+#h1-jum, #p-jum {
+	color: white;
+}
 
 /* Alert */
 .alert {
@@ -63,9 +76,12 @@ button {
 	background: #ce5f31;
 }
 
-/* Jumbotron */
+
+
+/* Jumbotron */   /*  bike picture => inline style - in the jumbotron */
 .jumbotron {
 	border-radius: 0;
+
 }
 
 /* Headings */
@@ -100,6 +116,33 @@ button {
 	font-weight: 700;
 }
 
+/* cont1-2*/
+
+#cont1-2 {
+	display: flex;
+	flex-direction: row;
+}
+
+ 
+/* art1   art2 */
+
+#art1 {
+	box-sizing: border-box;
+	margin: 5px;
+	padding: 15px;
+	background-color: lightgray;
+}
+
+#art2 {
+	box-sizing: border-box;
+	border:1px solid lightgray;
+	margin: 5px;
+	padding: 15px;
+	background-color: white;
+}
+
+
+
 .article__read-more a {
 	font-size: 0.85em;
 	font-weight: 700;
@@ -119,6 +162,34 @@ button {
 .article__read-more:last-child {
 	margin-bottom: 0;
 }
+
+
+/* cont-side   side 1, 2 ,3     img 1-2-3 */
+
+
+
+#cont-side {
+	display: flex;
+	flex-direction: column;
+}
+
+#side1,
+#side2,
+#side3 {
+	display: flex;
+	flex-direction: row;
+	font-size: smaller;
+}
+
+
+#img-1,
+#img-2,
+#img-3 {
+	padding: 0.5em;
+	max-width: 100px;
+	max-height: 100px;	
+}
+
 
 /* Footer */
 .footer {
