@@ -36,8 +36,18 @@ button {
 
 /* Buttons */
 /* INSERT BUTTON STYLES HERE */
-
-
+.donate{
+	background-color:  blue;
+}
+.donate:hover {
+ 	background: green;
+}
+.volunteer{
+	color: red;
+}
+.volunteer:hover {
+	background: orange;
+}
 /* Alert */
 .alert {
 	position: relative;
