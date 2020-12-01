@@ -25,6 +25,12 @@ button {
 	border: 0;
 	right:  0;
 }
+.nav-link {
+	padding: 1px;
+	margin-right: 1.5em;
+	background-color: #ce5f31;
+	border: 1px solid transparent;
+}
 
 .navbar-light .navbar-nav .nav-link {
 	color: #292b2c;
@@ -40,13 +46,13 @@ button {
 	background-color:  blue;
 }
 .donate:hover {
- 	background: green;
+ 	background: rgb(238, 223, 7);
 }
 .volunteer{
 	color: red;
 }
 .volunteer:hover {
-	background: orange;
+	background: rgb(59, 141, 141);
 }
 /* Alert */
 .alert {
