@@ -36,7 +36,10 @@ button {
 
 /* Buttons */
 /* INSERT BUTTON STYLES HERE */
-
+button:hover {
+	background-color: rgb(23, 218, 33);
+	border-radius: 10px;	
+}
 
 /* Alert */
 .alert {
