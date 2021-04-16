@@ -20,8 +20,9 @@ You're now ready to code!
 
 ### Exercise
 
-The aim of the exercise is for your webpage to look like this: 
-https://codeyourfuture.github.io/syllabus-london/html-css/assets/screenshot-complete.png
+The aim of the exercise is for your webpage to look like the following screenshot.
+
+![Bike For Refugees after](bikes-for-refugees-after.png)
 
 Open the `index.html` file in your browser, and compare it to the image of the final result. What's different?
 
@@ -40,9 +41,6 @@ There are 3 buttons on the page. They need to be styled correctly - remember, re
 #### Fix the positioning
 
 Use Flexbox to move elements around so they are positioned correctly.
-
-https://codeyourfuture.github.io/syllabus-london/html-css/assets/screenshot-complete.png
-
 
 ### Submit your work
 
