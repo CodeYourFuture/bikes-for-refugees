@@ -29,8 +29,8 @@ button {
 
 
 
-.navbar-light .navbar-nav a.nav-link:hover {
-  color: brown;
+.navbar-light .navbar-nav a.nav-link:hover, .navbar-light .navbar-nav a.nav-link:focus{
+  color: orange;
   font-weight: 600;
   text-transform: uppercase;
   
