@@ -11,8 +11,24 @@ body {
   font-family: "Source Sans Pro", "Helvetica Neue", Arial, sans-serif;
 }
 
-button {
+button  {
   font-family: "Source Sans Pro", "Helvetica Neue", Arial, sans-serif;
+  
+}
+
+.donateBtn {
+  background: rgb(152, 87, 52);
+  color: white;
+  border: none;
+  border-radius: 12px;
+  padding: 7px 10px;
+}
+
+.volunteerbtn {
+  background: oldlace;
+  color: rgb(152, 87, 52);
+  border: none;
+  padding: 7px 10px;
 }
 
 /* Navigation */
@@ -67,7 +83,7 @@ button {
 /* Jumbotron */
 
 .jumbotron {
-  background-image: url("../images/header.jpg");
+  background-image: url("../images/header-bike.jpg");
   border-radius: 0;
   color: #fff;
 }
