@@ -13,6 +13,8 @@ body {
 
 button {
   font-family: "Source Sans Pro", "Helvetica Neue", Arial, sans-serif;
+  border-radius: 5px;
+  padding: 5px;
 }
 
 /* Navigation */
@@ -36,7 +38,14 @@ button {
 }
 
 /* Buttons */
+.donate-btn {
+  background-color: #c05326;
+  color: #fff;
+}
 
+#volunteer-btn {
+  color: #c05326;
+}
 /* INSERT BUTTON STYLES HERE */
 
 /* Alert */
@@ -67,7 +76,7 @@ button {
 /* Jumbotron */
 
 .jumbotron {
-  background-image: url("../images/header.jpg");
+  background-image: url("../images/header-bike.jpg");
   border-radius: 0;
   color: #fff;
 }
