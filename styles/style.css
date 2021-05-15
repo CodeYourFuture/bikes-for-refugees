@@ -37,6 +37,13 @@ button {
 
 /* Buttons */
 
+.donatebtn {
+  background-color: #c05326;
+  color: rgba(255, 255, 255, 0.733);
+  border: 0;
+  border-radius: 5px;
+  padding: 10px;
+}
 /* INSERT BUTTON STYLES HERE */
 
 /* Alert */
@@ -67,7 +74,7 @@ button {
 /* Jumbotron */
 
 .jumbotron {
-  background-image: url("../images/header.jpg");
+  background-image: url("/images/header-bike.jpg");
   border-radius: 0;
   color: #fff;
 }
