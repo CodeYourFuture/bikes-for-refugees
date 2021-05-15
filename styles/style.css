@@ -67,7 +67,7 @@ button {
 /* Jumbotron */
 
 .jumbotron {
-  background-image: url("../images/header.jpg");
+  background-image: url("../images/header-bike.jpg");
   border-radius: 0;
   color: #fff;
 }
@@ -150,4 +150,44 @@ button {
   .navbar-brand > img {
     max-height: 80px;
   }
+}
+
+.class-button{
+background-color: #c05326;
+color:white;
+border-radius:10px;
+}
+
+.jumbotron button:last-of-type{
+background-color: #fcf9f7;
+color:#c05326;
+border-radius:10px;
+}
+
+#section_div__container{
+display: flex;
+flex-direction: column;
+}
+.article{
+
+display: flex;
+flex-direction: row;
+border: 2px solid black;
+margin-left: 3px;
+margin-right:3px;
+padding:10px;
+
+}
+.article__body{
+display: flex;
+flex-direction: column;
+  
+
+}
+
+#section__div{
+
+display: flex;
+flex-direction: row;
+
 }
