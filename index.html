@@ -29,8 +29,8 @@
   </head>
 
   <body>
-    <div class="header container">
-      <div class="navigation navbar navbar-toggleable-md navbar-light">
+    <header class="header container">
+      <nav class="navigation navbar navbar-toggleable-md navbar-light">
         <button
           class="navigation__toggle navbar-toggler navbar-toggler-right"
           type="button"
@@ -52,8 +52,10 @@
             accessories to refugees and asylum seekers.
           </h1>
         </a>
-
-        <div
+<h1 class="sr-only">
+  mobile menu.
+</h1>
+        <nav
           class="navigation__content collapse navbar-collapse"
           id="navbarSupportedContent"
         >
@@ -74,11 +76,11 @@
             </li>
           </ul>
           <button>Donate Now</button>
-        </div>
-      </div>
-    </div>
+        </nav>
+      </nav>
+    </header>
 
-    <div id="content" class="container">
+    <main id="content" class="container">
       <div class="row">
         <div class="main col-lg-8">
           <div class="alert">
@@ -198,9 +200,9 @@
         </div>
       </div>
       <!-- end of row -->
-    </div>
+    </main>
 
-    <div class="footer container">
+    <footer class="footer container">
       <div class="row">
         <div class="col-lg-8">
           <p class="text-center">
@@ -209,7 +211,7 @@
           </p>
         </div>
       </div>
-    </div>
+    </footer>
 
     <script
       src="https://code.jquery.com/jquery-3.1.1.slim.min.js"
