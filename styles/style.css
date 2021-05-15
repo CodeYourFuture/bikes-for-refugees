@@ -67,7 +67,7 @@ button {
 /* Jumbotron */
 
 .jumbotron {
-  background-image: url("../images/header.jpg");
+  background-image: url("../images/header-bike.jpg");
   border-radius: 0;
   color: #fff;
 }
@@ -144,6 +144,27 @@ button {
   padding-bottom: 2em;
 }
 
+.donate_button{
+  background-color:#c05326;
+  color: #fff;
+}
+.volunteer_button {
+  background-color: #fff;
+  color: #c05326;
+}
+.article{
+  border: 1px solid rgb(151, 134, 103);
+  display: flex;
+  flex-direction: row;
+  padding: 12px 12px 12px 0px;
+}
+.article__image {
+  margin-right: 24px;
+}
+.header {
+  display: flex;
+  flex-direction: row;
+}
 /* Media queries */
 
 @media screen and (min-width: 992px) {
