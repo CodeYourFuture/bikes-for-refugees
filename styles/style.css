@@ -11,10 +11,6 @@ body {
   font-family: "Source Sans Pro", "Helvetica Neue", Arial, sans-serif;
 }
 
-button {
-  font-family: "Source Sans Pro", "Helvetica Neue", Arial, sans-serif;
-}
-
 /* Navigation */
 
 .navbar-brand > img {
@@ -35,8 +31,24 @@ button {
   /* Challenge: can you make the navigation links orange on hover? */
 }
 
-/* Buttons */
+.nav-link:hover {
+  background-color: orange;
+}
 
+/* Buttons */
+button {
+  font-family: "Source Sans Pro", "Helvetica Neue", Arial, sans-serif;
+  background-color: #c05326;
+  border: none;
+  border-radius: 0.2em;
+  color: #fff;
+  padding: 10px;
+}
+/* STYLE FOR VOLUNTEER BUTTON */
+.my-4 {
+  color: #c05326;
+  background-color: #fff;
+}
 /* INSERT BUTTON STYLES HERE */
 
 /* Alert */
@@ -67,7 +79,7 @@ button {
 /* Jumbotron */
 
 .jumbotron {
-  background-image: url("../images/header.jpg");
+  background-image: url(/images/header-bike.jpg);
   border-radius: 0;
   color: #fff;
 }
@@ -96,9 +108,17 @@ button {
 }
 
 /* Article */
+/*flexbox*/
+
+.section_container {
+  display: flex;
+}
 
 .article {
-  margin-bottom: 2em;
+  margin-inline: 0.3rem;
+  margin-bottom: 1.5rem;
+  border: 1px solid #dccdc6;
+  padding: 1rem 1rem;
 }
 
 .article__image {
