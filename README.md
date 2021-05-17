@@ -3,18 +3,9 @@ Exercise for HTML & CSS - lesson 1
 
 ### Set up
 
-**Fork** this repository to your personal Github account (look for the 'fork' button on this page).
+**Clone** this repository onto your machine. Remember [the git cheat-sheet]( https://syllabus.codeyourfuture.io/git/desktop/cheatsheet#i-want-to-get-code-from-a-repo-onto-my-computer-cloning) if you get stuck!
 
-Then, **clone** it to your machine, using the following terminal commands.
-
->Go to the folder you wish to save the project in:
-`cd <your-project-directory>`
-
->Clone the repo:
-`git clone https://github.com/<your_username>/bikes-for-refugees.git`
-
-Now, **create a new branch** with your name in the title
->`git checkout -b bikes-for-refugees/yourname`
+Open up the repository you just cloned (again, check the [git cheat-sheet](https://syllabus.codeyourfuture.io/git/desktop/cheatsheet#i-want-to-open-visual-studio-code-with-code-from-my-repository) if you need help!)
 
 You're now ready to code!
 
@@ -46,10 +37,4 @@ Use Flexbox to move elements around so they are positioned correctly.
 
 Once you've finished, **open a pull request** so your work can be reviewed by a mentor.
 
-_Make sure you're on your branch_
-
-> In your terminal: add, commit and push your changes
-
-> Go to Github and open a PR **with the CodeYourFuture repository as the base repository** (not your own).
-
-Look here for help with your PR: https://codeyourfuture.github.io/syllabus-master/others/making-a-pull-request.html
+As always, you can check [the git cheatsheet](https://syllabus.codeyourfuture.io/git/desktop/cheatsheet#i-want-to-send-my-code-to-volunteers-pushing) if you get stuck!
