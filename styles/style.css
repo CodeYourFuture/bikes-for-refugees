@@ -34,10 +34,32 @@ button {
 
   /* Challenge: can you make the navigation links orange on hover? */
 }
-
+.navigation_links {
+  display: flex;
+  flex-direction: row;
+}
+.navigation {
+  display: grid;
+  grid-template-columns: 1fr 8fr
+}
 /* Buttons */
 
+
 /* INSERT BUTTON STYLES HERE */
+.donate_button{
+  border: none;
+  border-radius: 5px;
+  background-color:#c05326;
+  color: #fff;
+  padding: 10px;
+}
+.volunteer_button {
+  border:none;
+  border-radius: 5px;
+  background-color: #fff;
+  color: #c05326;
+  padding: 10px;
+}
 
 /* Alert */
 
@@ -132,6 +154,29 @@ button {
   margin-bottom: 0;
 }
 
+.article{
+  border: 1px solid #dccdc6;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  padding: 20px 12px 20px 0px;
+}
+.article__image {
+  margin-right: 24px;
+}
+
+.article-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.article:first-child{
+  margin-right: 20px;
+}
+.article-container .article {
+  padding: 20px;
+}
 /* Footer */
 
 .footer {
@@ -144,27 +189,11 @@ button {
   padding-bottom: 2em;
 }
 
-.donate_button{
-  background-color:#c05326;
-  color: #fff;
-}
-.volunteer_button {
-  background-color: #fff;
-  color: #c05326;
-}
-.article{
-  border: 1px solid rgb(151, 134, 103);
+/* .header {
   display: flex;
   flex-direction: row;
-  padding: 12px 12px 12px 0px;
-}
-.article__image {
-  margin-right: 24px;
-}
-.header {
-  display: flex;
-  flex-direction: row;
-}
+  justify-content: space-between;
+} */
 /* Media queries */
 
 @media screen and (min-width: 992px) {
