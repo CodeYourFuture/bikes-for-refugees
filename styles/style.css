@@ -36,17 +36,25 @@ button {
 }
 .navigation_links {
   display: flex;
+  align-items: center;
   flex-direction: row;
+  flex-grow: 1;
 }
-.navigation {
+/* .navigation {
   display: grid;
   grid-template-columns: 1fr 8fr
+} */
+.navigation {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
 }
 /* Buttons */
 
 
 /* INSERT BUTTON STYLES HERE */
 .donate_button{
+  /* .jumbotron button:first-of-type{ */
   border: none;
   border-radius: 5px;
   background-color:#c05326;
@@ -200,4 +208,19 @@ button {
   .navbar-brand > img {
     max-height: 80px;
   }
+}
+@media screen and (max-width: 350px) {
+  .navigation_links{
+    display: none;
+  }
+  .navigation_links.show{
+    display: block;
+  }
+  .jumbotron button {
+    /* width: 40%; */
+  }
+  .article-container {
+    flex-direction: column;
+  }
+
 }
