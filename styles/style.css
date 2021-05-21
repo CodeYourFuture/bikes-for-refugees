@@ -221,5 +221,10 @@ button {
   .article-container {
     flex-direction: column;
   }
+  .button-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap:wrap;
+  }
 
 }
