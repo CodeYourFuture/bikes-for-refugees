@@ -209,6 +209,7 @@ button {
     max-height: 80px;
   }
 }
+
 @media screen and (max-width: 350px) {
   .navigation_links{
     display: none;
@@ -216,9 +217,7 @@ button {
   .navigation_links.show{
     display: block;
   }
-  .jumbotron button {
-    /* width: 40%; */
-  }
+ 
   .article-container {
     flex-direction: column;
   }
