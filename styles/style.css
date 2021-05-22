@@ -5,7 +5,13 @@
  * Lesson: 1,2
  * Class: Scotland 2017
  */
+@media screen and ( max-width: 320px){
+  body{
+    font-size: 2 rem;
+  }
 
+  
+}
 html,
 body {
   font-family: "Source Sans Pro", "Helvetica Neue", Arial, sans-serif;
