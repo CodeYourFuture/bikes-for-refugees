@@ -84,6 +84,31 @@ button {
   color: #fff;
 }
 
+.box-container {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 30px;
+}
+
+.box {
+  border: 1px solid;
+  background-color: gray;
+  width: 25%;
+  padding: 50px;
+}
+
+@media screen and (max-width: 320px) {
+  .jumbotron > h2 {
+    font-size: 1em;
+    color: red;
+  }
+
+  button {
+    padding: 2px;
+    font-size: 10px;
+  }
+}
+
 /* Headings */
 
 .heading-underline {
