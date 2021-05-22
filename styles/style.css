@@ -5,7 +5,9 @@
  * Lesson: 1,2
  * Class: Scotland 2017
  */
-
+@media  {
+  
+}
 html,
 body {
   font-family: "Source Sans Pro", "Helvetica Neue", Arial, sans-serif;
@@ -63,6 +65,25 @@ button {
   width: 1px;
   background: #c05326;
 }
+
+/* container-flex */
+
+.container-flex{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+
+}
+
+.items{
+  border: 1px solid rgb(red, green, blue);
+  padding: 50px;
+  margin-bottom: 20px;
+  border-radius: 5px;
+  background-color: grey;
+}
+
+
 
 /* Jumbotron */
 
