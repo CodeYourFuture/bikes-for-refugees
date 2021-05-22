@@ -67,11 +67,17 @@ button {
 /* Jumbotron */
 
 .jumbotron {
-  background-image: url("../images/header.jpg");
+  background-image: url("/images/header-bike.jpg");
   border-radius: 0;
   color: #fff;
 }
-
+.donatebtn {
+  background-color: #c05326;
+  border: 0;
+  border-radius: 5;
+  color: white;
+  padding: 10px;
+}
 /* Headings */
 
 .heading-underline {
@@ -100,7 +106,12 @@ button {
 .article {
   margin-bottom: 2em;
 }
-
+.article_body {
+  border: 1px solid lightgray ;
+  padding: 10px ;
+  border-radius: 5px;
+  justify-content: center;
+}
 .article__image {
   object-fit: contain;
   width: 5rem;
