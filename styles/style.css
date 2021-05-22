@@ -28,6 +28,7 @@ button {
 }
 
 .navbar-light .navbar-nav .nav-link {
+  padding:2rem;
   color: #292b2c;
   font-weight: 600;
   text-transform: uppercase;
@@ -153,15 +154,26 @@ button {
 }
 
 .class-button{
-background-color: #c05326;
+background-color:#c05326;
 color:white;
+padding:0.5rem;
+border:none;
 border-radius:10px;
 }
 
 .jumbotron button:last-of-type{
-background-color: #fcf9f7;
+background-color:#fff;
+padding:0.5rem;
+border:none;
 color:#c05326;
 border-radius:10px;
+}
+
+.class-button:hover, .class-button:focus, 
+.jumbotron button:last-of-type:hover, 
+.jumbotron button:last-of-type:focus{
+background-color:#934423;
+
 }
 
 #section_div__container{
