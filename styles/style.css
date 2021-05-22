@@ -34,10 +34,40 @@ button {
 
   /* Challenge: can you make the navigation links orange on hover? */
 }
-
+.navigation_links {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  flex-grow: 1;
+}
+/* .navigation {
+  display: grid;
+  grid-template-columns: 1fr 8fr
+} */
+.navigation {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
 /* Buttons */
 
+
 /* INSERT BUTTON STYLES HERE */
+.donate_button{
+  /* .jumbotron button:first-of-type{ */
+  border: none;
+  border-radius: 5px;
+  background-color:#c05326;
+  color: #fff;
+  padding: 10px;
+}
+.volunteer_button {
+  border:none;
+  border-radius: 5px;
+  background-color: #fff;
+  color: #c05326;
+  padding: 10px;
+}
 
 /* Alert */
 
@@ -67,11 +97,18 @@ button {
 /* Jumbotron */
 
 .jumbotron {
-  background-image: url("../images/header.jpg");
+  background-image: url("../images/header-bike.jpg");
   border-radius: 0;
   color: #fff;
+  
 }
-
+.jumbotron .button-container {
+  display: flex;
+  justify-content: center;
+}
+.button-container button {
+  margin: 0 12px;
+}
 /* Headings */
 
 .heading-underline {
@@ -132,6 +169,45 @@ button {
   margin-bottom: 0;
 }
 
+.article{
+  border: 1px solid #dccdc6;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  padding: 20px 12px 20px 0px;
+}
+.article__image {
+  margin-right: 24px;
+}
+
+.article-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.article:first-child{
+  margin-right: 20px;
+}
+.article-container .article {
+  padding: 20px;
+}
+.container-flex {
+  
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.container-flex div {
+  border: 1px solid black;
+  border-radius: 5px;
+  background-color:rgb(169, 164, 164);
+  margin:4px;
+  padding:42px 24px;
+  width: 20vw;
+  text-align: center;
+
+}
 /* Footer */
 
 .footer {
@@ -144,10 +220,36 @@ button {
   padding-bottom: 2em;
 }
 
+/* .header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+} */
 /* Media queries */
 
 @media screen and (min-width: 992px) {
   .navbar-brand > img {
     max-height: 80px;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .navigation_links{
+    display: none;
+  }
+  .navigation_links.show{
+    display: block;
+  }
+ 
+  .article-container {
+    flex-direction: column;
+  }
+  .button-container {
+    flex-direction: column;
+
+  }
+  .button-container button {
+    margin:12px 0;
+
   }
 }
