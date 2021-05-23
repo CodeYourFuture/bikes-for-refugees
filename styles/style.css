@@ -31,13 +31,37 @@ button {
   color: #292b2c;
   font-weight: 600;
   text-transform: uppercase;
-
-  /* Challenge: can you make the navigation links orange on hover? */
 }
+  /* Challenge: can you make the navigation links orange on hover? */
+
 
 /* Buttons */
+.button {
+  border-radius: 5px;
+  border: none;
+  padding: 10px 7px;
+  font-size: 14px;
+}
 
-/* INSERT BUTTON STYLES HERE */
+.primary {
+  background-color: #c05326;
+  color: #fff;
+}
+.secondary {
+  background-color:#fff;
+  color: #c05326;
+}
+
+.primary:hover {
+  background-color:#934423;
+  color: #fff;
+}
+
+.secondary:hover {
+  background-color:#934423;
+  color: #fff;
+}
+
 
 /* Alert */
 
@@ -67,7 +91,8 @@ button {
 /* Jumbotron */
 
 .jumbotron {
-  background-image: url("../images/header.jpg");
+  background-image: url("../images/header-bike.jpg");
+  background-size: cover;
   border-radius: 0;
   color: #fff;
 }
@@ -97,13 +122,45 @@ button {
 
 /* Article */
 
+.bottom__article {
+  display: flex;
+  /* flex-flow: wrap; */
+  justify-content: space-between;
+}
+
 .article {
   margin-bottom: 2em;
 }
 
+.article__left{
+  border: 2px solid #dccdc6;
+  width: 49%;
+  padding: 0.4rem;
+}
+
+.article__right{
+  border: 2px solid #dccdc6;
+  width: 49%;
+  padding: 0.4rem;
+}
+
+@media screen and (max-width: 480px) {
+  .bottom__article {
+    flex-direction: column;
+  }
+  .article__left {
+    width: 100%;
+  }
+  .article__right {
+    width: 100%;
+  }
+
+}
+
+
 .article__image {
   object-fit: contain;
-  width: 5rem;
+  width: 30%;
 }
 
 .article__title {
@@ -111,6 +168,7 @@ button {
   font-size: 1rem;
   font-weight: 700;
 }
+
 
 .article__read-more a {
   font-size: 0.85em;
@@ -131,6 +189,19 @@ button {
 .article__read-more:last-child {
   margin-bottom: 0;
 }
+
+.article-top {
+  border: 2px solid #dccdc6;
+  display: flex;
+  justify-content: space-between;
+}
+
+.article_side-info {
+  width: 68%;
+  padding: 0.4rem;
+}
+
+
 
 /* Footer */
 
