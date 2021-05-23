@@ -11,7 +11,29 @@ body {
   font-family: "Source Sans Pro", "Helvetica Neue", Arial, sans-serif;
 }
 
-/* Style Buttons */
+/* Navigation */
+
+.navbar-brand > img {
+  max-height: 40px;
+  width: auto;
+}
+
+.navbar-light .navbar-toggler {
+  border: 0;
+  right: 0;
+}
+
+.navbar-light .navbar-nav .nav-link {
+  color: #292b2c;
+  font-weight: 600;
+  text-transform: uppercase;
+
+  /* Challenge: can you make the navigation links orange on hover? */
+}
+
+/* Buttons */
+
+/* INSERT BUTTON STYLES HERE */
 
 .donate-button {
   font-family: "Source Sans Pro", "Helvetica Neue", Arial, sans-serif;
@@ -41,30 +63,6 @@ body {
   background-color: #a34914;
   color: #fff;
 }
-
-/* Navigation */
-
-.navbar-brand > img {
-  max-height: 40px;
-  width: auto;
-}
-
-.navbar-light .navbar-toggler {
-  border: 0;
-  right: 0;
-}
-
-.navbar-light .navbar-nav .nav-link {
-  color: #292b2c;
-  font-weight: 600;
-  text-transform: uppercase;
-
-  /* Challenge: can you make the navigation links orange on hover? */
-}
-
-/* Buttons */
-
-/* INSERT BUTTON STYLES HERE */
 
 /* Alert */
 
@@ -108,14 +106,28 @@ body {
   flex-wrap: wrap;
 }
 
+.learn-more {
+  display: flex;
+  justify-content: space-between;
+}
+
+.article-one {
+  margin-right: 25px;
+}
+
 .actions {
-  border: 3px solid black;
+  border: 3px solid lightgray;
+  background-color: #fff;
+  color: #c05326;
+  font-weight: bold;
   padding: 50px;
-  width: 25%;
+  min-width: 100px;
+  width: 160px;
   height: 160px;
   place-items: center;
-  /* text-align: center; */
+  border-radius: 5px;
   margin-bottom: 50px;
+  margin: 2rem auto;
 }
 
 /* Headings */
@@ -143,7 +155,8 @@ body {
 
 /* Article */
 
-.article {
+.article-one,
+.article-two {
   margin-bottom: 2em;
   border: 2px solid lightgray;
   border-radius: 5px;
@@ -217,5 +230,10 @@ p {
 
   .jumbotron button {
     font-size: 0.7rem;
+  }
+
+  /* ** containers wrap at 320px ** */
+  .learn-more {
+    flex-wrap: wrap;
   }
 }
