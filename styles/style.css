@@ -172,3 +172,9 @@
      max-height: 80px;
    }
  }
+
+ @media screen and (max-width: 320px) {
+  h2 {
+    font-size: 0.5rem;
+  }
+}
