@@ -20,7 +20,7 @@ button  {
   background: rgb(152, 87, 52);
   color: white;
   border: none;
-  border-radius: 12px;
+  border-radius: 5px;
   padding: 7px 10px;
 }
 
@@ -48,13 +48,22 @@ button  {
   font-weight: 600;
   text-transform: uppercase;
 
-  /* Challenge: can you make the navigation links orange on hover? */
+}
+
+/* Challenge: can you make the navigation links orange on hover? */
+.navbar-light .navbar-nav .nav-link:hover {
+  color: orange;
 }
 
 /* Buttons */
 
 /* INSERT BUTTON STYLES HERE */
-
+.topDonatebtn {
+  background: rgb(152, 87, 52);
+  color: white;
+  border: none;
+  border-radius: 5px;
+}
 /* Alert */
 
 .alert {
@@ -115,11 +124,24 @@ button  {
 
 .article {
   margin-bottom: 2em;
+  display: flex; 
+  border: 1px solid rgba(0, 0, 0, 0.329);
+  border-radius: 5px;
+  margin: 40px 5px;
+  padding: 10px;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-content: flex-start;
 }
 
 .article__image {
   object-fit: contain;
   width: 5rem;
+  margin-right: 15px;
 }
 
 .article__title {
@@ -166,4 +188,23 @@ button  {
   .navbar-brand > img {
     max-height: 80px;
   }
+}
+
+@media screen and (max-width: 320px) {
+  .jumbotron h2 {
+    font-size: 1.5rem;
+
+  }
+
+
+  /*.navbar-brand > img {
+    width: 50%;
+    height: 10%;
+  }*/
+
+.donateBtn, .volunteerbtn {
+font-size: 15px;
+
+  }
+
 }
