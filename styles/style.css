@@ -9,19 +9,38 @@
 html,
 body {
   font-family: "Source Sans Pro", "Helvetica Neue", Arial, sans-serif;
+  background-color: rgb(241, 232, 232);
 }
 
 button {
   font-family: "Source Sans Pro", "Helvetica Neue", Arial, sans-serif;
 }
-
+/* header*/
+.header > .navigation {
+  display: flex;
+  flex-flow: row;
+  justify-content: space-between;
+}
+.navigation__logo{
+  border: 1px dotted #d8a28f;
+  padding: 5px;
+  border-radius: 5px;
+}
 /* Navigation */
-
+.navbar-nav{
+  margin: 0 auto;
+ 
+}
 .navbar-brand > img {
   max-height: 40px;
   width: auto;
 }
-
+.nav-link{
+  background-color:#d8a28f ;
+  margin: 5px;
+  padding: 5px;
+  border-radius: 8px;
+}
 .navbar-light .navbar-toggler {
   border: 0;
   right: 0;
@@ -30,14 +49,43 @@ button {
 .navbar-light .navbar-nav .nav-link {
   color: #292b2c;
   font-weight: 600;
-  text-transform: uppercase;
+  text-transform: initial;
+ 
 
   /* Challenge: can you make the navigation links orange on hover? */
+}
+.navbar-light .navbar-nav .nav-link:hover{
+  color: #c05326;
+  padding: 5px;
+  border: 1px dotted black;
+  border-radius: 8px;
+  background-color: blanchedalmond;
 }
 
 /* Buttons */
 
 /* INSERT BUTTON STYLES HERE */
+
+.btn.btn_donate{
+  font-size: larger;
+  color: #2E1705;
+  background-color: #e9967a;
+}
+.btn.btn_donate:hover{
+  color: #E7A184;
+  background-color: #2E1705;
+}
+.btn.btn_volunteer{
+  font-size: larger;
+  color: #2EBDD6;
+  background-color: #171717;
+  border: 2px solid slategrey;
+}
+.btn.btn_volunteer:hover{
+  font-size: x-large;
+  color: #FFFFFF;
+  background-color: #414953;
+}
 
 /* Alert */
 
@@ -64,10 +112,11 @@ button {
   background: #c05326;
 }
 
+
 /* Jumbotron */
 
 .jumbotron {
-  background-image: url("../images/header.jpg");
+  background-image: url("../images/header-bike.jpg");
   border-radius: 0;
   color: #fff;
 }
@@ -95,12 +144,31 @@ button {
   background: #c05326;
 }
 
+
+/*section for articles*/
+#article_section{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+
 /* Article */
 
 .article {
-  margin-bottom: 2em;
+  margin: 1.2em;
 }
-
+.article:last-child{
+  background-color: #E7A184;
+  padding: 10px;
+  border-radius: 10px;
+}
+.article:last-child h3{
+  color:#242424;
+}
+.article:last-child a{
+  color: #242424;
+}
 .article__image {
   object-fit: contain;
   width: 5rem;
@@ -108,14 +176,19 @@ button {
 
 .article__title {
   margin-bottom: 0.5em;
-  font-size: 1rem;
+  padding-bottom: 0.5em;
+  font-size: 1.5rem;
   font-weight: 700;
+  border-bottom:1px solid lightgrey;
+  color: #506e91;
+  
 }
 
 .article__read-more a {
-  font-size: 0.85em;
+  font-size: 1em;
   font-weight: 700;
   text-decoration: uppercase;
+  color: #506e91;
 }
 
 .article__read-more a:hover,
@@ -132,6 +205,35 @@ button {
   margin-bottom: 0;
 }
 
+/*sidebar styles*/
+aside {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #a6b1bd;
+  padding: 15px;
+  
+
+  
+}
+aside .article__image{
+  margin-right: 15px;
+}
+aside a{
+  font-size: 1.1rem;
+  color: #506e91;
+}
+/*facebook link*/
+.facebook-link{
+  color:#506e91 ;
+}
+.facebook-link:hover{
+  color: #2E1705;
+}
+.facebook-link:focus{
+  color: #302e2d;
+}
 /* Footer */
 
 .footer {
