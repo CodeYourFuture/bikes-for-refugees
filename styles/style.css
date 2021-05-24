@@ -9,6 +9,7 @@
 html,
 body {
   font-family: "Source Sans Pro", "Helvetica Neue", Arial, sans-serif;
+  margin-left: 0.25em;
 }
 
 button {
@@ -81,6 +82,21 @@ button {
   color: #fff;
 }
 
+.box-container {
+  display: flex;
+  justify-content: space-around;
+  height: 10%;
+  margin-bottom: 5%;
+}
+
+.item {
+  border: 1px grey solid;
+  height: 100%;
+  padding: 4%;
+  background-color: #eee;
+  place-items: center;
+  border-radius: 2px;
+}
 /* Headings */
 
 .heading-underline {
@@ -91,6 +107,7 @@ button {
   font-size: 1rem;
   font-weight: 600;
   text-transform: uppercase;
+  margin-left: 1em;
 }
 
 .heading-underline:before {
@@ -104,11 +121,17 @@ button {
   background: #c05326;
 }
 
-/* Article */
-
 .article {
   margin-bottom: 2em;
+  float: right;
+  display: flex;
 }
+
+.article__body {
+  width: 70%;
+  margin: 2em;
+}
+
 
 .article__image {
   object-fit: contain;
@@ -141,6 +164,9 @@ button {
   margin-bottom: 0;
 }
 
+.facebook-link {
+  margin-left: 1em;
+}
 /* Footer */
 
 .footer {
@@ -159,4 +185,18 @@ button {
   .navbar-brand > img {
     max-height: 80px;
   }
+}
+
+@media screen and (min-width: 320px) {
+  .jumbotron h2 {
+      font-size: 1rem;
+    }
+  
+  .jumbotron .donate-btn {
+    width: 40%;
+    }
+
+    .article {
+      flex-direction: column;
+    }
 }
