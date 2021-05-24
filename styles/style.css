@@ -6,6 +6,18 @@
  * Class: Scotland 2017
  */
 
+@media screen and (min-width: 320px) {
+  .jumbotron h2 {
+    font-size: 3rem;
+  }
+}
+
+@media screen and (max-width: 295px) {
+  .jumbotron button {
+    font-size: 0.8rem;
+  }
+}
+
 html,
 body {
   font-family: "Source Sans Pro", "Helvetica Neue", Arial, sans-serif;
@@ -37,6 +49,23 @@ button {
 
 /* Buttons */
 
+nav button, .jumbotron button:first-of-type {
+  background-color: #892a03;
+  color: #fff;
+  border: 0;
+}
+
+.jumbotron button {
+  padding: 8px 5px;
+  border-radius: 5px;
+  border: 0;
+}
+
+.volunteer {
+  color: #892a03;
+  font-weight: 550;
+}
+
 /* INSERT BUTTON STYLES HERE */
 
 /* Alert */
@@ -67,7 +96,7 @@ button {
 /* Jumbotron */
 
 .jumbotron {
-  background-image: url("../images/header.jpg");
+  background-image: url("../images/header-bike.jpg");
   border-radius: 0;
   color: #fff;
 }
@@ -97,8 +126,21 @@ button {
 
 /* Article */
 
+.article__container {
+  display: flex;
+  gap: 20px;
+}
+
 .article {
   margin-bottom: 2em;
+  padding: 1rem;
+  border: 1px solid  #dccdc6;
+  display: flex;
+  gap: 20px;
+}
+
+.col-lg-4 .article {
+  padding: 16px 10px 16px 0;
 }
 
 .article__image {
