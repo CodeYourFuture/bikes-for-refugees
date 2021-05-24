@@ -107,6 +107,21 @@ button {
     padding: 2px;
     font-size: 10px;
   }
+
+  .box-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 30px;
+  }
+
+  .box {
+    border: 1px solid;
+    background-color: gray;
+    width: 200px;
+    padding: 10px;
+    margin: 10px;
+  }
 }
 
 /* Headings */
