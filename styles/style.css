@@ -49,12 +49,13 @@ button {
 
 /* Buttons */
 
-.donate {
+nav button, .jumbotron button:first-of-type {
   background-color: #892a03;
   color: #fff;
+  border: 0;
 }
 
-.donate, .volunteer {
+.jumbotron button {
   padding: 8px 5px;
   border-radius: 5px;
   border: 0;
