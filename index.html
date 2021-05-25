@@ -29,7 +29,7 @@
   </head>
 
   <body>
-    <div class="header container">
+    <header class="header container">
       <div class="navigation navbar navbar-toggleable-md navbar-light">
         <button
           class="navigation__toggle navbar-toggler navbar-toggler-right"
@@ -76,10 +76,10 @@
           <button>Donate Now</button>
         </div>
       </div>
-    </div>
+    </header>
 
-    <div id="content" class="container">
-      <div class="row">
+    <main id="content" class="container">
+      <section class="row">
         <div class="main col-lg-8">
           <div class="alert">
             You've helped us give<span id="donation-count-alert">72</span> bikes
@@ -95,6 +95,17 @@
             <hr class="my-4" />
             <button>Donate a bike today</button>
             <button>Volunteer</button>
+          </div>
+          <div class="container-flex">
+              <div class="item check">
+                <p>Check Availability</p>
+              </div>
+              <div class="item donate">
+                <p>Donate bikes</p>
+              </div>
+              <div class="item volunteer">
+                <p>Volunteer with us</p>
+              </div>
           </div>
 
           <div>
@@ -138,7 +149,7 @@
           </div>
         </div>
 
-        <div class="sidebar col-lg-4">
+        <aside class="sidebar col-lg-4">
           <h2 class="heading-underline">Upcoming events</h2>
 
           <div class="article">
@@ -195,12 +206,12 @@
             <span class="fa fa-facebook-square"></span>
             All Facebook events
           </a>
-        </div>
-      </div>
+        </aside>
+      </section>
       <!-- end of row -->
-    </div>
+    </main>
 
-    <div class="footer container">
+    <footer class="footer container">
       <div class="row">
         <div class="col-lg-8">
           <p class="text-center">
@@ -209,7 +220,7 @@
           </p>
         </div>
       </div>
-    </div>
+    </footer>
 
     <script
       src="https://code.jquery.com/jquery-3.1.1.slim.min.js"
