@@ -183,3 +183,28 @@ button {
     max-height: 80px;
   }
 }
+
+@media screen and (max-width: 320px) {
+  #title {
+    font-size: 10px;
+  }
+  button {
+    width: 40%;
+  }
+}
+
+
+.container-flex {
+  display: flex;
+  /* flex-direction: row;
+  justify-content: space-around; */
+  /* align-items: center; */
+}
+
+/* .container-flex div {
+  border: 1px solid black;
+  background-color: rgb(169, 164, 164);
+  margin: 40px;
+  padding: 50px;
+  border-radius: 5px;
+} */
