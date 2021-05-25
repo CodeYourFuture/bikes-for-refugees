@@ -14,7 +14,9 @@ body {
 button {
   font-family: "Source Sans Pro", "Helvetica Neue", Arial, sans-serif;
 }
-
+button:hover {
+  background-color: #c05326;
+}
 /* Navigation */
 
 .navbar-brand > img {
@@ -34,7 +36,6 @@ button {
 
   /* Challenge: can you make the navigation links orange on hover? */
 }
-
 /* Buttons */
 
 /* INSERT BUTTON STYLES HERE */
@@ -67,7 +68,7 @@ button {
 /* Jumbotron */
 
 .jumbotron {
-  background-image: url("../images/header.jpg");
+  background-image: url("../images/header-bike.jpg");
   border-radius: 0;
   color: #fff;
 }
@@ -99,11 +100,14 @@ button {
 
 .article {
   margin-bottom: 2em;
+  display: flex;
+  flex-direction: row;
 }
 
 .article__image {
+  width: 3rem;
+  min-height: 3rem;
   object-fit: contain;
-  width: 5rem;
 }
 
 .article__title {
@@ -131,7 +135,13 @@ button {
 .article__read-more:last-child {
   margin-bottom: 0;
 }
-
+.article__body {
+  border: 1px solid gray;
+  margin: 5px;
+  padding: 20px;
+  display: flex;
+  justify-content: space-evenly;
+}
 /* Footer */
 
 .footer {
@@ -149,5 +159,10 @@ button {
 @media screen and (min-width: 992px) {
   .navbar-brand > img {
     max-height: 80px;
+  }
+}
+@media (max-width: 350px) {
+  button {
+    width: 25%;
   }
 }
