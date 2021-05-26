@@ -67,9 +67,24 @@ button {
 /* Jumbotron */
 
 .jumbotron {
-  background-image: url("../images/header.jpg");
+  background-image: url("../images/header-bike.jpg");
   border-radius: 0;
   color: #fff;
+}
+
+/*Box container*/
+.box-container {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 50px;
+}
+
+.boxes {
+  border: 2px solid teal;
+  width: 20%;
+  padding: 20px;
+  background-color: lightgray;
+  text-align: center;
 }
 
 /* Headings */
