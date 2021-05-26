@@ -13,6 +13,28 @@ body {
 
 button {
   font-family: "Source Sans Pro", "Helvetica Neue", Arial, sans-serif;
+  background-color: #c05326;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: 15px;
+}
+
+#volunteer {
+  background-color: #fff;
+  color: #c05326;
+}
+
+button:hover,
+button:focus,
+#volunteer:hover,
+#volunteer:focus {
+  background-color: #934423;
+}
+
+#volunteer:hover,
+#volunteer:focus {
+  color: #fff;
 }
 
 /* Navigation */
@@ -31,6 +53,7 @@ button {
   color: #292b2c;
   font-weight: 600;
   text-transform: uppercase;
+  padding: 0 20px;
 
   /* Challenge: can you make the navigation links orange on hover? */
 }
@@ -114,6 +137,9 @@ button {
 
 .article {
   margin-bottom: 2em;
+  border: 1px solid #dddddd;
+  padding: 15px;
+  border-radius: 5px;
 }
 
 .article__image {
@@ -164,5 +190,15 @@ button {
 @media screen and (min-width: 992px) {
   .navbar-brand > img {
     max-height: 80px;
+  }
+}
+
+@media screen and (max-width: 330px) {
+  h2 {
+    font-size: 1.4em;
+  }
+
+  .jumbotron button {
+    font-size: 12px;
   }
 }
