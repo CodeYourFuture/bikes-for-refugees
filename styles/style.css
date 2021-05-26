@@ -35,6 +35,10 @@ button {
 }
 
 /* Buttons */
+button:hover{
+  background:#c05326;
+  border:none;
+}
 
 /* INSERT BUTTON STYLES HERE */
 
@@ -113,13 +117,24 @@ button {
 
 /* Article */
 
+.articles{
+  display:flex;
+  flex-wrap:wrap;
+  justify-content:space-between;
+}
+
 .article {
   margin-bottom: 2em;
+  width:350px;
+  padding:10px;
+  border:1px solid #c05326;
+  display:flex;
 }
 
 .article__image {
   object-fit: contain;
   width: 5rem;
+  margin-right:10px;
 }
 
 .article__title {
