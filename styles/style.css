@@ -39,7 +39,14 @@ button {
 
 .donatebtn {
   background-color: #c05326;
-  color: rgba(255, 255, 255, 0.733);
+  color: #ffffff;
+  border: 0;
+  border-radius: 5px;
+  padding: 10px;
+}
+#volunteerbtn {
+  background-color: #ffffff;
+  color: #c05326;
   border: 0;
   border-radius: 5px;
   padding: 10px;
@@ -108,9 +115,17 @@ button {
   margin-bottom: 2em;
 }
 
+.article__body {
+  border: 1px solid #ede6e2;
+  padding: 10px;
+  border-radius: 5px;
+  align-content: left;
+}
+
 .article__image {
   object-fit: contain;
   width: 5rem;
+  padding: 20px, 20px, 0px;
 }
 
 .article__title {
@@ -149,6 +164,20 @@ button {
   border-top: 1px solid #dccdc6;
   padding-top: 2em;
   padding-bottom: 2em;
+}
+
+.container-flex {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+.items {
+  border: 1px solid rgb(129, 125, 125);
+  padding: 50px;
+  margin: 40px;
+  border-radius: 5px;
+  background-color: rgb(211, 207, 207);
+  width: 100%;
 }
 
 /* Media queries */
