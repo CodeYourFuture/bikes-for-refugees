@@ -9,6 +9,8 @@
 html,
 body {
   font-family: "Source Sans Pro", "Helvetica Neue", Arial, sans-serif;
+  font-size: 14px;
+  padding: 40px;
 }
 
 button {
@@ -110,6 +112,10 @@ button {
 }
 
 /* Article */
+.article-container {
+  display: flex;
+  justify-content: space-between;
+}
 
 .article {
   margin-bottom: 2em;
@@ -119,7 +125,10 @@ button {
   border: 1px solid #ede6e2;
   padding: 10px;
   border-radius: 5px;
-  align-content: left;
+}
+
+.article:first-child {
+  margin-right: 10px;
 }
 
 .article__image {
@@ -130,7 +139,7 @@ button {
 
 .article__title {
   margin-bottom: 0.5em;
-  font-size: 1rem;
+  font-size: 0.9rem;
   font-weight: 700;
 }
 
@@ -153,6 +162,18 @@ button {
 .article__read-more:last-child {
   margin-bottom: 0;
 }
+.article_sidebar {
+  border: 1px solid #ede6e2;
+  border-radius: 5px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+.art-img {
+  padding-right: 10px;
+}
 
 /* Footer */
 
@@ -166,11 +187,6 @@ button {
   padding-bottom: 2em;
 }
 
-.container-flex {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-}
 .items {
   border: 1px solid rgb(129, 125, 125);
   padding: 50px;
