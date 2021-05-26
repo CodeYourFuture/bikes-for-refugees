@@ -9,6 +9,8 @@
 html,
 body {
   font-family: "Source Sans Pro", "Helvetica Neue", Arial, sans-serif;
+  font-size: 14px;
+  padding: 40px;
 }
 
 button {
@@ -37,6 +39,20 @@ button {
 
 /* Buttons */
 
+.donatebtn {
+  background-color: #c05326;
+  color: #ffffff;
+  border: 0;
+  border-radius: 5px;
+  padding: 10px;
+}
+#volunteerbtn {
+  background-color: #ffffff;
+  color: #c05326;
+  border: 0;
+  border-radius: 5px;
+  padding: 10px;
+}
 /* INSERT BUTTON STYLES HERE */
 
 /* Alert */
@@ -67,7 +83,7 @@ button {
 /* Jumbotron */
 
 .jumbotron {
-  background-image: url("../images/header.jpg");
+  background-image: url("/images/header-bike.jpg");
   border-radius: 0;
   color: #fff;
 }
@@ -96,19 +112,34 @@ button {
 }
 
 /* Article */
+.article-container {
+  display: flex;
+  justify-content: space-between;
+}
 
 .article {
   margin-bottom: 2em;
 }
 
+.article__body {
+  border: 1px solid #ede6e2;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.article:first-child {
+  margin-right: 10px;
+}
+
 .article__image {
   object-fit: contain;
   width: 5rem;
+  padding: 20px, 20px, 0px;
 }
 
 .article__title {
   margin-bottom: 0.5em;
-  font-size: 1rem;
+  font-size: 0.9rem;
   font-weight: 700;
 }
 
@@ -131,6 +162,18 @@ button {
 .article__read-more:last-child {
   margin-bottom: 0;
 }
+.article_sidebar {
+  border: 1px solid #ede6e2;
+  border-radius: 5px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+.art-img {
+  padding-right: 10px;
+}
 
 /* Footer */
 
@@ -142,6 +185,15 @@ button {
   border-top: 1px solid #dccdc6;
   padding-top: 2em;
   padding-bottom: 2em;
+}
+
+.items {
+  border: 1px solid rgb(129, 125, 125);
+  padding: 50px;
+  margin: 40px;
+  border-radius: 5px;
+  background-color: rgb(211, 207, 207);
+  width: 100%;
 }
 
 /* Media queries */
