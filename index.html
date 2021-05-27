@@ -29,8 +29,8 @@
   </head>
 
   <body>
-    <div class="header container">
-      <div class="navigation navbar navbar-toggleable-md navbar-light">
+    <header class="header container">
+      <nav class="navigation navbar navbar-toggleable-md navbar-light">
         <button
           class="navigation__toggle navbar-toggler navbar-toggler-right"
           type="button"
@@ -42,18 +42,19 @@
         >
           <span class="navigation__toggle-icon navbar-toggler-icon"></span>
         </button>
+        <h1 class="sr-only">
+            Bikes for Refugees Scotland - Providing donated bikes and
+            accessories to refugees and asylum seekers.
+          </h1>
         <a class="navigation__logo navbar-brand" href="/">
           <img
             src="images/bikes-for-refugees_logo.jpg"
             alt="Logo for Bikes for Refugees Scotland"
           />
-          <h1 class="sr-only">
-            Bikes for Refugees Scotland - Providing donated bikes and
-            accessories to refugees and asylum seekers.
-          </h1>
-        </a>
+          </a>
 
-        <div
+        <div 
+          class="navigation_links"
           class="navigation__content collapse navbar-collapse"
           id="navbarSupportedContent"
         >
@@ -73,12 +74,12 @@
               <a class="nav-link" href="#">Contact Us</a>
             </li>
           </ul>
-          <button class="donatebtn" > Donate Now</button>
+          <button class="donate_button" > Donate Now</button>
         </div>
-      </div>
-    </div>
+      </nav>
+    </header>
 
-    <div id="content" class="container">
+    <main id="content" class="container">
       <div class="row">
         <div class="main col-lg-8">
           <div class="alert">
@@ -93,14 +94,18 @@
               seekers in Scotland.
             </p>
             <hr class="my-4" />
-            <button>Donate a bike today</button>
-            <button>Volunteer</button>
+
+          <div class="button-container">
+            <button class="donate_button">Donate a bike today</button>
+            <button class="volunteer_button">Volunteer</button>
           </div>
+          </div>
+            
 
           <div>
             <h2 class="heading-underline">Learn more</h2>
 
-            <div>
+            <div class="article-container">
               <div class="article">
                 <div class="article__body">
                   <h3 class="article__title">Why do refugees need bikes?</h3>
@@ -138,7 +143,7 @@
           </div>
         </div>
 
-        <div class="sidebar col-lg-4">
+        <aside class="sidebar col-lg-4">
           <h2 class="heading-underline">Upcoming events</h2>
 
           <div class="article">
@@ -197,7 +202,7 @@
             <span class="fa fa-facebook-square"></span>
             All Facebook events
           </a>
-        </div>
+        </aside>
       </div>
       <!-- end of row -->
     </div>
@@ -211,7 +216,7 @@
           </p>
         </div>
       </div>
-    </div>
+    </main>
 
     <script
       src="https://code.jquery.com/jquery-3.1.1.slim.min.js"
