@@ -111,11 +111,22 @@ button {
 
 .article {
   margin-bottom: 2em;
+  border: 1px solid #dddddd;
+  padding: 15px;
+  border-radius: 5px;
+}
+.article-main {
+  display: flex;
+  justify-content: space-between;
+}
+.article:first-child {
+  margin-right: 10px;
 }
 
 .article__image {
   object-fit: contain;
   width: 5rem;
+  padding-right: 10px;
 }
 
 .article__title {
@@ -142,6 +153,16 @@ button {
 
 .article__read-more:last-child {
   margin-bottom: 0;
+}
+aside {
+  border: 1px solid #dddcdc;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  padding-top: 10px;
+  padding-bottom: 10px;
 }
 
 /* Footer */
