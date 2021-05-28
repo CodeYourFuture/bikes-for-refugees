@@ -5,7 +5,13 @@
  * Lesson: 1,2
  * Class: Scotland 2017
  */
+@media screen and ( max-width: 320px){
+  body{
+    font-size: 2 rem;
+  }
 
+  
+}
 html,
 body {
   font-family: "Source Sans Pro", "Helvetica Neue", Arial, sans-serif;
@@ -13,6 +19,12 @@ body {
 
 button {
   font-family: "Source Sans Pro", "Helvetica Neue", Arial, sans-serif;
+  background-color: #c05326;
+  
+}
+button:hover{
+  background-color: #fff;
+  color:#c05326;
 }
 
 /* Navigation */
@@ -67,7 +79,7 @@ button {
 /* Jumbotron */
 
 .jumbotron {
-  background-image: url("../images/header.jpg");
+  background-image: url("../images/header-bike.jpg");
   border-radius: 0;
   color: #fff;
 }
@@ -99,23 +111,45 @@ button {
 
 .article {
   margin-bottom: 2em;
+  border: solid 1px #292b2c;
+  padding: 10px;
+  display: flex;
+  margin: 10px;
 }
+
+  
+  
+  
+   
+
 
 .article__image {
   object-fit: contain;
   width: 5rem;
+  margin: auto;
+  padding-right: 10px;
+  
+ 
 }
 
 .article__title {
   margin-bottom: 0.5em;
   font-size: 1rem;
   font-weight: 700;
+  
+  
+  
+}
+.learn-moor{
+  display: flex;
+  
 }
 
 .article__read-more a {
   font-size: 0.85em;
   font-weight: 700;
   text-decoration: uppercase;
+  
 }
 
 .article__read-more a:hover,
