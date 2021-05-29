@@ -16,6 +16,11 @@ button {
 }
 
 /* Navigation */
+.nav-item{
+  padding: 1rem 2rem;
+  border: solid 1px crimson;
+  border-radius: 10px;
+}
 
 .navbar-brand > img {
   max-height: 40px;
