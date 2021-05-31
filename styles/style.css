@@ -38,7 +38,23 @@ button {
 /* Buttons */
 
 /* INSERT BUTTON STYLES HERE */
+button{
+  background-color : #c05326;
+  padding:0.5rem;
+  border:0;
+  border-radius: 5%;
+}
+.volunteer{
+  background-color: white;
+  color : #c05326;
+}
 
+button:hover, button:focus{
+  background-color:#934423;
+}
+.nav-link{
+  padding:1rem;
+}
 /* Alert */
 
 .alert {
