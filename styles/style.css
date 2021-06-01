@@ -132,15 +132,28 @@ button {
 .article-1 {
   margin: 10px;
   margin-bottom: 20px;
-}
-
-.article__body {
   border: 1px solid grey;
   border-radius: 0.6em;
   padding: 1em;
+  margin-top: 1.5vh;
 }
 
-.article__image {
+.article__body {
+}
+
+.article-2-container {
+  display: flex;
+  border: 1px solid grey;
+  border-radius: 0.6em;
+  padding: 1em;
+  margin-top: 1.5vh;
+}
+
+.article-2__body {
+  margin-left: 20px;
+}
+
+.article-2__image {
   object-fit: contain;
   width: 5rem;
 }
