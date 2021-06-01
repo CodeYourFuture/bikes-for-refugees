@@ -31,11 +31,40 @@ button {
   color: #292b2c;
   font-weight: 600;
   text-transform: uppercase;
+  padding: 20px;
 
   /* Challenge: can you make the navigation links orange on hover? */
 }
 
 /* Buttons */
+#btn-donate
+{
+  background-color: #c05326;
+  border: 0px;
+  padding: 15px;
+  border-radius: 10px;
+
+}
+#btn-volunter
+{
+  background-color: #fff;
+  color: #c05326;
+  border: 0px;
+  padding: 15px;
+  border-radius: 10px;
+}
+
+#btn-volunter:hover,
+#btn-donate:hover
+{
+  background-color: #934423;
+}
+
+#btn-volunter:focus,
+#btn-donate:focus
+{
+  background-color: #934423;
+}
 
 /* INSERT BUTTON STYLES HERE */
 
@@ -151,3 +180,6 @@ button {
     max-height: 80px;
   }
 }
+
+
+
