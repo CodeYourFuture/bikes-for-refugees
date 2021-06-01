@@ -9,15 +9,28 @@
 html,
 body {
   font-family: "Source Sans Pro", "Helvetica Neue", Arial, sans-serif;
+
 }
 
-button {
-  font-family: "Source Sans Pro", "Helvetica Neue", Arial, sans-serif;
+main {
+  display: grid;
+  grid-template-columns: 1fr 1fr 2fr;
+}
+
+.header {
+  grid-template-columns: 1;
+  grid-column-end: 4;
 }
 
 /* Navigation */
+.navigation__links {
+  justify-content: center;
+  display: flex;
+  flex-direction: row;
+  ;
+}
 
-.navbar-brand > img {
+.navbar-brand>img {
   max-height: 40px;
   width: auto;
 }
@@ -28,16 +41,42 @@ button {
 }
 
 .navbar-light .navbar-nav .nav-link {
-  color: #292b2c;
+  color: #dd4f28;
   font-weight: 600;
   text-transform: uppercase;
-
   /* Challenge: can you make the navigation links orange on hover? */
 }
 
-/* Buttons */
-
 /* INSERT BUTTON STYLES HERE */
+
+.donate-button {
+  padding: 5px;
+  background-color: #f05326;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-family: "Source Sans Pro", "Helvetica Neue", Arial, sans-serif;
+
+}
+
+.donate-bike-button {
+  padding: 5px;
+  background-color: #f05326;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-family: "Source Sans Pro", "Helvetica Neue", Arial, sans-serif;
+}
+
+.volunteer-button {
+  padding: 5px;
+  background-color: white;
+  border-radius: 5px;
+  color: black;
+  border: none;
+  font-family: "Source Sans Pro", "Helvetica Neue", Arial, sans-serif;
+}
+
 
 /* Alert */
 
@@ -67,7 +106,7 @@ button {
 /* Jumbotron */
 
 .jumbotron {
-  background-image: url("../images/header.jpg");
+  background-image: url("../images/header-bike.jpg");
   border-radius: 0;
   color: #fff;
 }
@@ -99,17 +138,42 @@ button {
 
 .article {
   margin-bottom: 2em;
+  border-radius: 2px;
+  display: flex;
+  grid-template-columns: 1/3;
 }
 
 .article__image {
   object-fit: contain;
   width: 5rem;
+  display: inline-block;
+  margin: 20px 10px;
 }
 
 .article__title {
   margin-bottom: 0.5em;
   font-size: 1rem;
   font-weight: 700;
+}
+
+
+.article-content {
+  /* border: 1px solid #dccdc6; */
+  display: flex;
+  flex-direction: row;
+  background-color: #f1f1f1;
+  justify-content: space-between;
+
+
+
+}
+
+.article-content-container {
+  background-color: #fff;
+  display: flex;
+  display: inline-block;
+  justify-content: space-between;
+  padding: 20px
 }
 
 .article__read-more a {
@@ -146,8 +210,16 @@ button {
 
 /* Media queries */
 
-@media screen and (min-width: 992px) {
-  .navbar-brand > img {
+@media screen and (min-width: 460px) {
+  .navbar-brand>img {
     max-height: 80px;
+  }
+
+  .article-content-container {
+    display: column;
+  }
+
+  .article-content {
+    display: column;
   }
 }
