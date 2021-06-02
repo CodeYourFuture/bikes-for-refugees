@@ -36,7 +36,19 @@ button {
 }
 
 /* Buttons */
-
+.primary {
+  background-color: #d66839;
+  color: rgba(255, 255, 255, 0.7);
+  border: 0;
+  border-radius: 5px;
+  padding: 10px;
+}
+.secondary {
+  color: #d66839;
+  border: 0;
+  border-radius: 5px;
+  padding: 10px;
+}
 /* INSERT BUTTON STYLES HERE */
 
 /* Alert */
@@ -67,7 +79,7 @@ button {
 /* Jumbotron */
 
 .jumbotron {
-  background-image: url("../images/header.jpg");
+  background-image: url("/images/header-bike.jpg");
   border-radius: 0;
   color: #fff;
 }
@@ -99,11 +111,23 @@ button {
 
 .article {
   margin-bottom: 2em;
+  border: 1px solid #dddddd;
+  padding: 15px;
+  border-radius: 5px;
+  width: 100%;
+}
+.article-main {
+  display: flex;
+  justify-content: space-between;
+}
+.article:first-child {
+  margin-right: 10px;
 }
 
 .article__image {
   object-fit: contain;
   width: 5rem;
+  padding-right: 10px;
 }
 
 .article__title {
@@ -131,6 +155,16 @@ button {
 .article__read-more:last-child {
   margin-bottom: 0;
 }
+aside {
+  border: 1px solid #dddcdc;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  max-width: 100%;
+}
 
 /* Footer */
 
@@ -146,7 +180,7 @@ button {
 
 /* Media queries */
 
-@media screen and (min-width: 992px) {
+@media screen and (min-width: 1000px) {
   .navbar-brand > img {
     max-height: 80px;
   }
