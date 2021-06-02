@@ -20,6 +20,7 @@ button {
 .navbar-brand > img {
   max-height: 40px;
   width: auto;
+  margin-right: 40px;
 }
 
 .navbar-light .navbar-toggler {
@@ -34,10 +35,26 @@ button {
 
   /* Challenge: can you make the navigation links orange on hover? */
 }
+.nav-link:hover {
+  color: #c05326 !important;
+}
 
 /* Buttons */
 
-/* INSERT BUTTON STYLES HERE */
+.donate {
+  background-color: rgb(212, 88, 31);
+  border: rgb(212, 88, 31) solid 2px;
+  border-radius: 5px;
+  color: white;
+  height: 40px;
+}
+.volunteer-button {
+  background-color: white;
+  border: white solid 2px;
+  border-radius: 5px;
+  color: rgb(212, 88, 31);
+  height: 40px;
+}
 
 /* Alert */
 
@@ -67,7 +84,7 @@ button {
 /* Jumbotron */
 
 .jumbotron {
-  background-image: url("../images/header.jpg");
+  background-image: url("/images/header-bike.jpg");
   border-radius: 0;
   color: #fff;
 }
@@ -99,11 +116,36 @@ button {
 
 .article {
   margin-bottom: 2em;
+  border: 1px solid rgb(221, 210, 210);
+  border-radius: 4px;
+}
+.article:first-child {
+  margin-right: 20px;
+}
+.info {
+  display: flex;
+  justify-content: space-between;
 }
 
 .article__image {
   object-fit: contain;
   width: 5rem;
+  float: left;
+}
+.article__body {
+  margin: 10px;
+}
+.sidebar-article {
+  display: flex;
+  border: solid 1px rgb(221, 210, 210);
+  border-radius: 4px;
+  margin-bottom: 30px;
+  width: 98%;
+  margin-top: 10px;
+}
+.sidebar-info {
+  display: flex;
+  flex-direction: column;
 }
 
 .article__title {
@@ -130,6 +172,9 @@ button {
 
 .article__read-more:last-child {
   margin-bottom: 0;
+}
+.facebook-link {
+  margin-top: 10px;
 }
 
 /* Footer */

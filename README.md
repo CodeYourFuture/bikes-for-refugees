@@ -1,4 +1,5 @@
 # bikes-for-refugees
+
 Exercise for HTML & CSS - lesson 1
 
 ### Set up
@@ -7,14 +8,15 @@ Exercise for HTML & CSS - lesson 1
 
 Then, **clone** it to your machine, using the following terminal commands.
 
->Go to the folder you wish to save the project in:
-`cd <your-project-directory>`
+> Go to the folder you wish to save the project in:
+> `cd <your-project-directory>`
 
->Clone the repo:
-`git clone https://github.com/<your_username>/bikes-for-refugees.git`
+> Clone the repo:
+> `git clone https://github.com/<your_username>/bikes-for-refugees.git`
 
 Now, **create a new branch** with your name in the title
->`git checkout -b bikes-for-refugees/yourname`
+
+> `git checkout -b bikes-for-refugees/yourname`
 
 You're now ready to code!
 
