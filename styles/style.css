@@ -13,6 +13,31 @@ body {
 
 button {
   font-family: "Source Sans Pro", "Helvetica Neue", Arial, sans-serif;
+  
+}
+#navbarSupportedContent button{
+  background-color: orange;
+  color: white;
+  border-radius: 10px;
+  font-size: large;
+  border: none;
+
+}
+.btn1{
+  background-color: orange;
+  color: white;
+  border-radius: 5px;
+  border: none;
+  margin-right: 5px;
+  padding: 5px;
+  
+}
+.btn2{
+  background-color: white;
+  color: orange;
+  border-radius: 5px;
+  border: none;
+  padding: 5px;
 }
 
 /* Navigation */
@@ -99,6 +124,8 @@ button {
 
 .article {
   margin-bottom: 2em;
+  
+
 }
 
 .article__image {
