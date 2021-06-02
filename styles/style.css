@@ -114,6 +114,7 @@ button {
   border: 1px solid #dddddd;
   padding: 15px;
   border-radius: 5px;
+  width: 100%;
 }
 .article-main {
   display: flex;
@@ -159,10 +160,10 @@ aside {
   border-radius: 5px;
   display: flex;
   flex-direction: column;
-  justify-content: space-evenly;
-  align-items: center;
+  align-items: flex-start;
   padding-top: 10px;
   padding-bottom: 10px;
+  max-width: 100%;
 }
 
 /* Footer */
@@ -179,7 +180,7 @@ aside {
 
 /* Media queries */
 
-@media screen and (min-width: 992px) {
+@media screen and (min-width: 1000px) {
   .navbar-brand > img {
     max-height: 80px;
   }
