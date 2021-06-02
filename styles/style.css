@@ -13,6 +13,7 @@ body {
 
 button {
   font-family: "Source Sans Pro", "Helvetica Neue", Arial, sans-serif;
+  height:40px;
 }
 
 /* Navigation */
@@ -28,6 +29,7 @@ button {
 }
 
 .navbar-light .navbar-nav .nav-link {
+  padding:2rem;
   color: #292b2c;
   font-weight: 600;
   text-transform: uppercase;
@@ -38,6 +40,28 @@ button {
 /* Buttons */
 
 /* INSERT BUTTON STYLES HERE */
+  .class-button{
+  background-color:#c05326;
+  color:white;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+  
+  border:none;
+  border-radius:10px;
+  }
+
+  .jumbotron button:last-of-type{
+  background-color:#fff;
+  color:#c05326;
+
+  }
+
+  .class-button:hover, .class-button:focus, 
+  .jumbotron button:last-of-type:hover, 
+  .jumbotron button:last-of-type:focus{
+  background-color:#934423;
+
+  }
 
 /* Alert */
 
@@ -67,7 +91,7 @@ button {
 /* Jumbotron */
 
 .jumbotron {
-  background-image: url("../images/header.jpg");
+  background-image: url("../images/header-bike.jpg");
   border-radius: 0;
   color: #fff;
 }
@@ -104,6 +128,7 @@ button {
 .article__image {
   object-fit: contain;
   width: 5rem;
+  margin-right:1em;
 }
 
 .article__title {
@@ -151,3 +176,45 @@ button {
     max-height: 80px;
   }
 }
+
+
+
+  #section_div__container{
+    display: flex;
+    flex-direction: column;
+  }
+  .article{
+
+    display: flex;
+    flex-direction: row;
+    border: 2px solid rgb(226, 226, 226);
+    border-radius:5px;
+    margin-left: 3px;
+    margin-right:3px;
+    padding:10px;
+
+  }
+  .article__body{
+    display: flex;
+    flex-direction: column;
+      
+
+  }
+
+  #section__div{
+
+    display: flex;
+    flex-direction: row;
+
+  }
+
+  @media screen and (max-width:360px){
+
+  #section__div{
+
+    display: flex;
+    flex-direction: column;
+
+  }
+
+  }
