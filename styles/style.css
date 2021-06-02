@@ -39,6 +39,30 @@ button {
 
 /* INSERT BUTTON STYLES HERE */
 
+.donate-now-button {
+  background-color: #c05326;
+  color: white;
+  border-radius: 0.6em;
+  padding: 15px;
+  font-size: 1.3em;
+}
+
+.donate-today-button {
+  background-color: #c05326;
+  color: white;
+  border-radius: 0.6em;
+  padding: 15px;
+  font-size: 1.3em;
+}
+
+.volunteer-button {
+  background-color: white;
+  color: #c05326;
+  border-radius: 0.6em;
+  padding: 15px;
+  font-size: 1.3em;
+}
+
 /* Alert */
 
 .alert {
@@ -67,7 +91,7 @@ button {
 /* Jumbotron */
 
 .jumbotron {
-  background-image: url("../images/header.jpg");
+  background: url("header-bike.jpg");
   border-radius: 0;
   color: #fff;
 }
@@ -101,7 +125,35 @@ button {
   margin-bottom: 2em;
 }
 
-.article__image {
+.article-1-container {
+  display: flex;
+}
+
+.article-1 {
+  margin: 10px;
+  margin-bottom: 20px;
+  border: 1px solid grey;
+  border-radius: 0.6em;
+  padding: 1em;
+  margin-top: 1.5vh;
+}
+
+.article__body {
+}
+
+.article-2-container {
+  display: flex;
+  border: 1px solid grey;
+  border-radius: 0.6em;
+  padding: 1em;
+  margin-top: 1.5vh;
+}
+
+.article-2__body {
+  margin-left: 20px;
+}
+
+.article-2__image {
   object-fit: contain;
   width: 5rem;
 }

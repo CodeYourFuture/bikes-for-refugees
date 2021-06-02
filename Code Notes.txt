@@ -1,0 +1,14 @@
+Code Notes:
+
+
+Issues with flexbox and positioning content inside of boxes: 
+
+If running into issues with elements not displaying e.g. horizontally on a single line then look into targeting the correct element. 
+I will want to target the container element of the e.g. 2 boxes. I will set it to display:inline-flex , and then make sure that it 
+is definitely the outer container. Then as long as the 2 boxes are inside this container, then it should display properly. 
+
+Again, when trying to get multiple items to display  properly within a box, I need to check the nesting in the html. For example
+in this code you'll see the article-1 boxes, and article-2 boxes are nested differenty. This is because in article 1 I wanted all 
+the elements within the boxes to be vertically stacked. Whereas in article 2, I wanted the image on the left, and then the header
+and the text to be vertically stacked. 
+

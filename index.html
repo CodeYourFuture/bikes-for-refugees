@@ -28,8 +28,8 @@
     <title>Bikes for Refugees | Scotland</title>
   </head>
 
-  <body>
-    <div class="header container">
+  <header>
+    <nav class="header container">
       <div class="navigation navbar navbar-toggleable-md navbar-light">
         <button
           class="navigation__toggle navbar-toggler navbar-toggler-right"
@@ -44,7 +44,7 @@
         </button>
         <a class="navigation__logo navbar-brand" href="/">
           <img
-            src="images/bikes-for-refugees_logo.jpg"
+            src="styles\bikes-for-refugees_logo.jpg"
             alt="Logo for Bikes for Refugees Scotland"
           />
           <h1 class="sr-only">
@@ -73,11 +73,13 @@
               <a class="nav-link" href="#">Contact Us</a>
             </li>
           </ul>
-          <button>Donate Now</button>
+          <button class="donate-now-button">Donate Now</button>
         </div>
       </div>
-    </div>
+    </nav>
+  </header>
 
+    <body>
     <div id="content" class="container">
       <div class="row">
         <div class="main col-lg-8">
@@ -88,20 +90,21 @@
 
           <div class="jumbotron">
             <h2>Bikes for Refugees</h2>
+            
             <p>
               Providing donated bikes and accessories to refugees and asylum
               seekers in Scotland.
             </p>
             <hr class="my-4" />
-            <button>Donate a bike today</button>
-            <button>Volunteer</button>
+            <button class="donate-today-button">Donate a bike today</button>
+            <button class="volunteer-button">Volunteer</button>
           </div>
 
           <div>
             <h2 class="heading-underline">Learn more</h2>
 
-            <div>
-              <div class="article">
+            <div class="article-1-container">
+              <div class="article-1">
                 <div class="article__body">
                   <h3 class="article__title">Why do refugees need bikes?</h3>
                   <p>
@@ -118,7 +121,7 @@
                 </div>
               </div>
 
-              <div class="article">
+              <div class="article-1">
                 <div class="article__body">
                   <h3 class="article__title">How can I help?</h3>
                   <p>
@@ -141,13 +144,10 @@
         <div class="sidebar col-lg-4">
           <h2 class="heading-underline">Upcoming events</h2>
 
-          <div class="article">
-            <img
-              class="article__image"
-              src="https://raw.githubusercontent.com/Code-Your-Future/syllabus/master/html-css/assets/news-spring-fundraisers.jpg"
-              alt=""
-            />
-            <div class="article__body">
+          <div class="article-2-container">
+            <img class="article-2__image" src="styles\spring-fundraisers_thumbnail.jpg" alt="A cherry blossom branch with the text 'Spring Fundraisers'" />
+            <div class="article-2__body">
+              
               <h3 class="article__title article__title--sidebar">
                 <a href="#">Join us for our Spring fundraisers</a>
               </h3>
@@ -158,26 +158,20 @@
             </div>
           </div>
 
-          <div class="article">
-            <img
-              class="article__image"
-              src="https://raw.githubusercontent.com/Code-Your-Future/syllabus/master/html-css/assets/bikes-for-refugees-logo.jpg"
-              alt=""
-            />
-            <div class="article__body">
+          <div class="article-2-container">
+            <img class="article-2__image" src="styles\bikes-for-refugees_logo.jpg" alt="A bike with the text 'Bikes for refugees'" />
+            <div class="article-2__body">
+              
               <h3 class="article__title article__title--sidebar">
                 <a href="#">Bike dropoff event in Edinburgh on May 11</a>
               </h3>
             </div>
           </div>
 
-          <div class="article">
-            <img
-              class="article__image"
-              src="https://raw.githubusercontent.com/Code-Your-Future/syllabus/master/html-css/assets/news-cycle.jpg"
-              alt=""
-            />
-            <div class="article__body">
+          <div class="article-2-container">
+          <img class="article-2__image" src="styles\edinburgh-damascus_thumbnail.png" alt="A cyclist passing a sign that points left to Edinburgh, and right to Damascus " />
+            <div class="article-2__body">
+              
               <h3 class="article__title article__title--sidebar">
                 <a href="#">Help us cycle 4,797km</a>
               </h3>
@@ -199,7 +193,9 @@
       </div>
       <!-- end of row -->
     </div>
+  </body>
 
+  <footer>
     <div class="footer container">
       <div class="row">
         <div class="col-lg-8">
@@ -226,5 +222,5 @@
       integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn"
       crossorigin="anonymous"
     ></script>
-  </body>
+  </footer>
 </html>
