@@ -39,8 +39,21 @@ button {
 
 /* Buttons */
 
-/* INSERT BUTTON STYLES HERE */
+.primary-button-style{
+  border-style: none;
+  background-color: rgb(230, 100, 68);
+  color: whitesmoke;
+  border-radius: 5px;
+  padding: 0.5rem 0.5rem;
+}
 
+.alternative-button-style{
+  border-style: none;
+  background-color: whitesmoke;
+  color: rgb(230, 100, 68);
+  border-radius: 5px;
+  padding: 0.5rem 0.5rem;
+}
 /* Alert */
 
 .alert {
