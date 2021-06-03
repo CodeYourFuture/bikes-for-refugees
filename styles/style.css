@@ -132,12 +132,25 @@ button {
 /* Article */
 
 .article {
+  display: flex;
+  align-items: center;
   margin-bottom: 2em;
+  border: 1px solid rgb(214, 205, 205);
+  padding: 0.5rem;
+  margin: 0.5rem;
+  border-radius: 5px;
+}
+
+.heading-underline-cards{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
 }
 
 .article__image {
   object-fit: contain;
   width: 5rem;
+  padding-right: 1rem;
 }
 
 .article__title {
