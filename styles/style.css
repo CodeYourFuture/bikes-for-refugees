@@ -121,9 +121,24 @@ button {
 }
 
 /* Article */
+#articles{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+p{
+  display: flex
+  
+
+}
 
 .article {
   margin-bottom: 2em;
+    border: 1px solid grey;
+    border-radius: 5px;
+    margin-right: 10px;
+    padding: 10px;
+
+  
   
 
 }
@@ -131,6 +146,9 @@ button {
 .article__image {
   object-fit: contain;
   width: 5rem;
+  float: left;
+  margin-right: 2em;
+  
 }
 
 .article__title {
