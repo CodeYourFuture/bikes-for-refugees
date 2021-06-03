@@ -101,13 +101,13 @@ button:hover {
 .article {
   margin-bottom: 2em;
   display: flex;
-  flex-direction: row;
+  object-fit: contain;
 }
 
 .article__image {
   width: 3rem;
   min-height: 3rem;
-  object-fit: contain;
+  object-fit:scale-down
 }
 
 .article__title {
@@ -138,9 +138,9 @@ button:hover {
 .article__body {
   border: 1px solid gray;
   margin: 5px;
-  padding: 20px;
-  display: flex;
-  justify-content: space-evenly;
+  padding: 10px;
+  flex-direction: row;
+  
 }
 /* Footer */
 
@@ -153,7 +153,15 @@ button:hover {
   padding-top: 2em;
   padding-bottom: 2em;
 }
-
+.article1{
+  width:50%;
+  position: relative;
+}
+.article2{
+  width:50px;
+  top: 200px;
+  right:200px
+}
 /* Media queries */
 
 @media screen and (min-width: 992px) {
