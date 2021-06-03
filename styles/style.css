@@ -11,10 +11,33 @@ body {
   font-family: "Source Sans Pro", "Helvetica Neue", Arial, sans-serif;
 }
 
+.my-4{
+  background-color: #000000;
+}
+.donate-key{
+  color: white;
+  background-color: #c05326;
+  padding: .7rem;
+
+}
+.volunteer-key{
+  color: #c05326;
+  padding: .7rem;
+}
 button {
   font-family: "Source Sans Pro", "Helvetica Neue", Arial, sans-serif;
+  border: 0;
+  border-radius: 5px;
 }
-
+button:hover{
+  background-color: #934423;
+}
+button:focus{
+  background-color: #934423;
+}
+.volunteer-key:hover{
+  color: white;
+}
 /* Navigation */
 
 .navbar-brand > img {
@@ -31,7 +54,7 @@ button {
   color: #292b2c;
   font-weight: 600;
   text-transform: uppercase;
-
+  padding: 20px;
   /* Challenge: can you make the navigation links orange on hover? */
 }
 
@@ -67,7 +90,7 @@ button {
 /* Jumbotron */
 
 .jumbotron {
-  background-image: url("../images/header.jpg");
+  background-image: url("../images/header-bike.jpg");
   border-radius: 0;
   color: #fff;
 }
