@@ -13,6 +13,31 @@ body {
 
 button {
   font-family: "Source Sans Pro", "Helvetica Neue", Arial, sans-serif;
+  
+}
+#navbarSupportedContent button{
+  background-color: orange;
+  color: white;
+  border-radius: 10px;
+  font-size: large;
+  border: none;
+
+}
+.btn1{
+  background-color: orange;
+  color: white;
+  border-radius: 5px;
+  border: none;
+  margin-right: 5px;
+  padding: 5px;
+  
+}
+.btn2{
+  background-color: white;
+  color: orange;
+  border-radius: 5px;
+  border: none;
+  padding: 5px;
 }
 
 /* Navigation */
@@ -67,7 +92,7 @@ button {
 /* Jumbotron */
 
 .jumbotron {
-  background-image: url("../images/header.jpg");
+  background-image: url("/home/codyourfuture/Documents/GitHub/bikes-for-refugees/images/header-bike.jpg");
   border-radius: 0;
   color: #fff;
 }
@@ -96,14 +121,34 @@ button {
 }
 
 /* Article */
+#articles{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+p{
+  display: flex
+  
+
+}
 
 .article {
   margin-bottom: 2em;
+    border: 1px solid grey;
+    border-radius: 5px;
+    margin-right: 10px;
+    padding: 10px;
+
+  
+  
+
 }
 
 .article__image {
   object-fit: contain;
   width: 5rem;
+  float: left;
+  margin-right: 2em;
+  
 }
 
 .article__title {
