@@ -63,11 +63,23 @@ button {
   width: 1px;
   background: #c05326;
 }
+.btn-header
+{
+  background: #c05326;
+  color: white;
+  border: none;
+  border-radius:0.4em}
 
+  .btn-header1
+{
+  background: white;
+  color: #c05326;
+  border: none;
+  border-radius:0.4em}
 /* Jumbotron */
 
 .jumbotron {
-  background-image: url("../images/header.jpg");
+  background-image: url("../images/header-bike.jpg");
   border-radius: 0;
   color: #fff;
 }
@@ -99,8 +111,19 @@ button {
 
 .article {
   margin-bottom: 2em;
+  
 }
-
+.aside-art
+{
+  display:inline-flex;
+  border: 0.5px rgb(219, 217, 217) solid;
+  padding: 1em;
+}
+.aside-art img 
+{
+  padding-right: 0.5em;
+  padding-left: 0px;
+}
 .article__image {
   object-fit: contain;
   width: 5rem;
@@ -132,6 +155,11 @@ button {
   margin-bottom: 0;
 }
 
+.section-2
+{
+  display: inline-flex;
+  
+}
 /* Footer */
 
 .footer {
