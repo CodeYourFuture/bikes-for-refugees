@@ -36,7 +36,26 @@ button {
 }
 
 /* Buttons */
+.donate {
+  color: #dccdc6;
+  background: #c05326;
+  border-style: none;
+}
 
+.donate > a:hover {
+  color: #c05326;
+  background: #dccdc6;
+}
+
+button {
+  color: #c05326;
+  border-style: none;
+}
+
+.flexbox {
+  display: flex;
+  justify-content: space-between;
+}
 /* INSERT BUTTON STYLES HERE */
 
 /* Alert */
@@ -67,7 +86,7 @@ button {
 /* Jumbotron */
 
 .jumbotron {
-  background-image: url("../images/header.jpg");
+  background-image: url("../images/header-bike.jpg");
   border-radius: 0;
   color: #fff;
 }
@@ -99,6 +118,19 @@ button {
 
 .article {
   margin-bottom: 2em;
+  padding: 0.5em;
+  border: 0.05em;
+  border-style: solid;
+  border-color: grey;
+}
+
+.article-1 {
+  margin-bottom: 2em;
+  padding: 0.5em;
+  border: 0.05em;
+  border-style: solid;
+  border-color: grey;
+  width: 48%;
 }
 
 .article__image {
@@ -151,3 +183,28 @@ button {
     max-height: 80px;
   }
 }
+
+@media screen and (max-width: 320px) {
+  #title {
+    font-size: 10px;
+  }
+  button {
+    width: 40%;
+  }
+}
+
+
+.container-flex {
+  display: flex;
+  /* flex-direction: row;
+  justify-content: space-around; */
+  /* align-items: center; */
+}
+
+/* .container-flex div {
+  border: 1px solid black;
+  background-color: rgb(169, 164, 164);
+  margin: 40px;
+  padding: 50px;
+  border-radius: 5px;
+} */
