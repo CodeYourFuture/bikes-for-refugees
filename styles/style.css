@@ -31,8 +31,16 @@ button {
   color: #292b2c;
   font-weight: 600;
   text-transform: uppercase;
+}
 
-  /* Challenge: can you make the navigation links orange on hover? */
+/* Challenge: can you make the navigation links orange on hover? */
+
+/*  I used dev tools to determine where the color was being set which 
+    turned out to be in a bootstrap script that had a higher Specificity than a class or element selector
+    ( https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css ) so I used an id 
+    selector as it has a higher Specificity which worked :)*/
+#navbarSupportedContent > ul > li > a:hover {
+  color: #c05326;
 }
 
 /* Buttons */
@@ -50,8 +58,6 @@ button {
   background-color: #fff;
   color: #c05326;
 }
-
-/* INSERT BUTTON STYLES HERE */
 
 /* Alert */
 
