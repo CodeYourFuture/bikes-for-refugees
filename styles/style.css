@@ -37,6 +37,11 @@ button {
 
 /* Buttons */
 
+.button:hover,
+.button:focus {
+  background-color: #934423;
+}
+
 .orange-red-btn {
   background-color: #c05326;
 }
