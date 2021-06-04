@@ -70,7 +70,7 @@ button {
 /* Jumbotron */
 
 .jumbotron {
-  background-image: url("/images/header-bike.jpg");
+  background-image: url("/images/header-bike.jpg"); /* adding image*/
   border-radius: 0;
   color: #fff;
 }
@@ -101,7 +101,7 @@ button {
 
 .article {
   margin-bottom: 2em;
-  border: 1px solid rgba(226, 145, 90, 0.3);
+  border: 1px solid rgba(226, 145, 90, 0.3); /* adding borders*/
   padding: 4px 7px;
 }
 
