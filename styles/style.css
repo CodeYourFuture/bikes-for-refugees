@@ -1,14 +1,7 @@
-/**
- * Base styles to use at the start of the class
- *
- * Module: HTML/CSS
- * Lesson: 1,2
- * Class: Scotland 2017
- */
 
-html,
 body {
   font-family: "Source Sans Pro", "Helvetica Neue", Arial, sans-serif;
+
 }
 
 button {
@@ -22,22 +15,30 @@ button {
   width: auto;
 }
 
+
 .navbar-light .navbar-toggler {
-  border: 0;
+  border: 10px solid;
   right: 0;
 }
 
-.navbar-light .navbar-nav .nav-link {
-  color: #292b2c;
+.navbar-light .navbar-nav .nav-link:hover{
+  color:orange;
   font-weight: 600;
   text-transform: uppercase;
-
+  
   /* Challenge: can you make the navigation links orange on hover? */
+/*I thing I did this above challenge*/
 }
 
 /* Buttons */
-
-/* INSERT BUTTON STYLES HERE */
+.btn-donate, .btn-donate-now {
+  background-color: red;
+  color: white;
+}
+.btn-volunteer{
+  background-color: rgb(238, 232, 222);
+  color: red;
+}
 
 /* Alert */
 
@@ -67,10 +68,12 @@ button {
 /* Jumbotron */
 
 .jumbotron {
-  background-image: url("../images/header.jpg");
+  background-image: url(/images/header-bike.jpg);
   border-radius: 0;
-  color: #fff;
+  color:white;
+  width: 100%;
 }
+
 
 /* Headings */
 
@@ -95,10 +98,18 @@ button {
   background: #c05326;
 }
 
-/* Article */
 
+/*Bottom Articles*/
+.bottom-articles{
+  display: flex;
+  justify-content: space-between;
+}
+
+/* Article */
 .article {
-  margin-bottom: 2em;
+  border: 1px solid rgb(156, 184, 156);
+  padding: 10px;
+  width: 350px;
 }
 
 .article__image {
@@ -117,10 +128,17 @@ button {
   font-weight: 700;
   text-decoration: uppercase;
 }
+.sidebar .article{
+  display: flex;
+  margin: 8px;
+}
 
 .article__read-more a:hover,
 .article__read-more a:focus {
   text-decoration: none;
+  color: black;
+  font-size: larger;
+
 }
 
 .article__read-more .fa {
@@ -144,10 +162,14 @@ button {
   padding-bottom: 2em;
 }
 
-/* Media queries */
 
-@media screen and (min-width: 992px) {
+/* Media queries */
+@media screen and (max-width:992) {
+  
+
   .navbar-brand > img {
     max-height: 80px;
   }
 }
+
+
