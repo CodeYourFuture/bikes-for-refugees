@@ -101,6 +101,8 @@ button {
 
 .article {
   margin-bottom: 2em;
+  border: 1px solid rgba(226, 145, 90, 0.3);
+  padding: 4px 7px;
 }
 
 .article__image {
@@ -134,10 +136,11 @@ button {
   margin-bottom: 0;
 }
 
-.flex-container {       /* adding flexbox position */
+.flex-container {
+  /* adding flexbox position */
   display: flex;
   flex-direction: row;
-  
+  box-sizing: border-box;
 }
 
 /* Footer */
