@@ -26,6 +26,9 @@ button {
   max-height: 40px;
   width: auto;
 }
+button:hover, button:focus{
+  background-color: #934423;
+}
 
 .navbar-light .navbar-toggler {
   border: 0;
