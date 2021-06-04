@@ -37,6 +37,15 @@ button {
 
 /* Buttons */
 
+.orange-red-btn {
+  background-color: #c05326;
+}
+
+.white-btn {
+  background-color: #fff;
+  color: #c05326;
+}
+
 /* INSERT BUTTON STYLES HERE */
 
 /* Alert */
