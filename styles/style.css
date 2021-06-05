@@ -31,6 +31,9 @@ button {
   color: #292b2c;
   font-weight: 600;
   text-transform: uppercase;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  /* padding: 0rem 1rem; */
 
   /* Challenge: can you make the navigation links orange on hover? */
 }
@@ -38,7 +41,18 @@ button {
 /* Buttons */
 
 /* INSERT BUTTON STYLES HERE */
+.btn-donate{
+  background-color: #C05326;
+}
+.btn-vol{
+  color: #C05326;
+  background-color: #fff;
+}
 
+button:hover, 
+button:focus {
+  background-color: #934423;
+}
 /* Alert */
 
 .alert {
@@ -150,4 +164,13 @@ button {
   .navbar-brand > img {
     max-height: 80px;
   }
+}
+
+
+/* spacing questions */
+
+button{
+  padding: 0.5rem;
+  border: none;
+  border-radius: 0.25rem;
 }
