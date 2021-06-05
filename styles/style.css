@@ -15,6 +15,41 @@ button {
   font-family: "Source Sans Pro", "Helvetica Neue", Arial, sans-serif;
 }
 
+
+
+@media screen and (max-width:320px) {
+  .jumbotron button {
+    margin-right: 400px;
+    font-size: 50%;
+  }
+  .jumbotron {
+    background-color: black;
+  } 
+  .jumbotron p {
+    color: red;
+  }
+}
+
+.flexcontainer {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: flex-end;
+}
+
+.div {
+  height: 100px;
+  width: 100px;
+  margin: 20px;
+  padding: 20px;
+  font-size: 1.6rem;
+}
+
+.flexitem1 {
+  background-color: lightblue;
+  align-self: flex-end;
+  border: 3ps solid red;
+}
 /* Navigation */
 .nav-item{
   padding: 1rem 2rem;
