@@ -57,13 +57,7 @@ button:focus{
 
 /* INSERT BUTTON STYLES HERE */
 .jumbotron button {
-  font-size: 65%;
-}
-
-@media screen and (min-width: 330px) {
-  .jumbotron button {
-    font-size: 100%;
-  }
+  font-size: 75%;
 }
 
 /* Alert */
@@ -178,3 +172,10 @@ button:focus{
     max-height: 80px;
   }
 }
+
+@media screen and (min-width: 330px) {
+  .jumbotron button {
+    font-size: 100%;
+  }
+}
+
