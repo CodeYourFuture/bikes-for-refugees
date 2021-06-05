@@ -200,12 +200,12 @@ button {
 @media screen and (min-width: 0px) and (max-width: 320px) {
   .orange-red-btn {
     width: 7rem;
-    font-size: 0.75rem;
+    font-size: 0.72rem;
   }
 
   .white-btn {
     width: 4rem;
-    font-size: 0.75rem;
+    font-size: 0.72rem;
   }
 }
 
