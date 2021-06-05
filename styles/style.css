@@ -211,10 +211,14 @@ button {
 
 /* Fluid typography formula */
 @media (min-width: 640px) and (max-width: 1439px) {
-  font-size: calc(16px + (23 - 16) * (100vw - 640px) / (1439 - 640));
+  html {
+    font-size: calc(16px + (23 - 16) * (100vw - 640px) / (1439 - 640));
+  }
 }
 
 /* Define max font size */
 @media (min-width: 1440px) {
-  font-size: 23px;
+  html {
+    font-size: 23px;
+  }
 }
