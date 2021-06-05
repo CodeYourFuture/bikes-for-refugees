@@ -36,9 +36,9 @@ button {
 /* Challenge: can you make the navigation links orange on hover? */
 
 /*  I used dev tools to determine where the color was being set which 
-    turned out to be in a bootstrap script that had a higher Specificity than a class or element selector
+    turned out to be in a bootstrap script that had a higher specificity than a class or element selector
     ( https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css ) so I used an id 
-    selector as it has a higher Specificity which worked :)*/
+    selector as it has a higher specificity which worked :)*/
 #navbarSupportedContent > ul > li > a:hover {
   color: #c05326;
 }
@@ -52,11 +52,13 @@ button {
 
 .orange-red-btn {
   background-color: #c05326;
+  width: 9.3rem;
 }
 
 .white-btn {
   background-color: #fff;
   color: #c05326;
+  width: 5.3rem;
 }
 
 /* Alert */
@@ -169,5 +171,17 @@ button {
 @media screen and (min-width: 992px) {
   .navbar-brand > img {
     max-height: 80px;
+  }
+}
+
+@media screen and (min-width: 0px) and (max-width: 320px) {
+  .orange-red-btn {
+    width: 7rem;
+    font-size: 0.75rem;
+  }
+
+  .white-btn {
+    width: 4rem;
+    font-size: 0.75rem;
   }
 }
