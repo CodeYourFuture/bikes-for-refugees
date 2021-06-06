@@ -5,38 +5,12 @@
  * Lesson: 1,2
  * Class: Scotland 2017
  */
-
 html,
 body {
   font-family: "Source Sans Pro", "Helvetica Neue", Arial, sans-serif;
 }
-
-.my-4{
-  background-color: #000000;
-}
-.donate-key{
-  color: white;
-  background-color: #c05326;
-  padding: .7rem;
-
-}
-.volunteer-key{
-  color: #c05326;
-  padding: .7rem;
-}
-button {
-  font-family: "Source Sans Pro", "Helvetica Neue", Arial, sans-serif;
-  border: 0;
-  border-radius: 5px;
-}
-button:hover{
-  background-color: #934423;
-}
-button:focus{
-  background-color: #934423;
-}
-.volunteer-key:hover{
-  color: white;
+h2{
+  font-size: 20px;
 }
 /* Navigation */
 
@@ -59,11 +33,33 @@ button:focus{
 }
 
 /* Buttons */
+button {
+  font-family: "Source Sans Pro", "Helvetica Neue", Arial, sans-serif;
+  border: 0;
+  border-radius: 5px;
+}
+button:hover{
+  background-color: #934423;
+}
+button:focus{
+  background-color: #934423;
+}
+.volunteer-key{
+  color: #c05326;
+  padding: .7rem;
+}
+.volunteer-key:hover{
+  color: white;
+}
+.donate-key{
+  color: white;
+  background-color: #c05326;
+  padding: .7rem;
+}
 
 /* INSERT BUTTON STYLES HERE */
 
 /* Alert */
-
 .alert {
   position: relative;
   margin-bottom: 3em;
@@ -117,46 +113,67 @@ button:focus{
   max-width: 100px;
   background: #c05326;
 }
-
+.my-4{
+  background-color: #000000;
+}
 /* Article */
-
 .article {
   margin-bottom: 2em;
 }
-
 .article__image {
   object-fit: contain;
   width: 5rem;
 }
-
 .article__title {
   margin-bottom: 0.5em;
   font-size: 1rem;
   font-weight: 700;
 }
-
 .article__read-more a {
   font-size: 0.85em;
   font-weight: 700;
   text-decoration: uppercase;
 }
-
 .article__read-more a:hover,
 .article__read-more a:focus {
   text-decoration: none;
 }
-
 .article__read-more .fa {
   margin-right: 0.5em;
   color: #c05326;
 }
-
 .article__read-more:last-child {
   margin-bottom: 0;
 }
-
+.flex-box{
+  display: flex;
+  flex-direction: row;
+  }
+.flex-con{
+  display: flex;
+  flex-direction: column;
+  margin: .5rem;
+  padding: 1rem;
+  border: .01rem;
+  border-style: solid;
+  border-color: #c05326;
+  border-radius: 1%;
+}
+/* aSide */
+.flex-aside{
+  display: flex;
+  flex-direction: column;
+  }
+.flex-acon{
+  display: flex;
+  flex-direction: row;
+  padding: .5rem;
+  border: .05rem;
+  border-style: solid;
+  border-radius: 1%;
+  border-color: #c05326;
+}
 /* Footer */
-
 .footer {
   margin-top: 2em;
 }
@@ -169,9 +186,7 @@ button:focus{
 
 /* Media queries */
 
-h2{
-  font-size: 20px;
-}
+
 @media screen and (min-width: 992px) {
   .navbar-brand > img {
     max-height: 80px;
