@@ -13,6 +13,10 @@ body {
 
 button {
   font-family: "Source Sans Pro", "Helvetica Neue", Arial, sans-serif;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  cursor: pointer;
 }
 
 /* Navigation */
@@ -35,9 +39,15 @@ button {
   /* Challenge: can you make the navigation links orange on hover? */
 }
 
+
+
 /* Buttons */
 
 /* INSERT BUTTON STYLES HERE */
+
+.header button {
+	background-color:#C05325;
+}
 
 /* Alert */
 
@@ -67,9 +77,21 @@ button {
 /* Jumbotron */
 
 .jumbotron {
-  background-image: url("../images/header.jpg");
+  background-image: url("../images/header-bike.jpg");
   border-radius: 0;
   color: #fff;
+}
+
+.jumbotron button {
+	padding: 8px 5px;
+}
+
+.jumbotron button:first-of-type {
+	background-color: #C05325;
+}
+
+.jumbotron button:last-of-type {
+	color: #C05325;
 }
 
 /* Headings */
