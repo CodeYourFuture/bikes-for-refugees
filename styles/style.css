@@ -72,6 +72,26 @@ button {
   color: #fff;
 }
 
+/*.jumbotron button {
+  display: inline-flex;
+  justify-items: center;
+}*/
+
+
+/* flexbox*/
+
+.flexbox1 {
+  background-color: #0c95da;
+  /*width: 25%;
+  padding: 20px;*/
+  /*border: 5px solid black;*/
+  /*margin: 5px 20px;*/
+  
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
 /* Headings */
 
 .heading-underline {
@@ -150,4 +170,20 @@ button {
   .navbar-brand > img {
     max-height: 80px;
   }
+}
+
+/*@media screen and(max-width: 320px){
+  button {
+    padding: 1px 1px;
+    font-size: 12px;
+    
+  }
+}*/
+
+@media (min-width: 640px) and (max-width: 1439px) {
+  font-size: calc(16px + (23 - 16) * (100vw - 640px) / (1439 - 640));
+}
+
+@media (min-width:1440px) {
+  font-size: 23px;
 }
