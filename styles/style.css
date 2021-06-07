@@ -73,6 +73,14 @@ button {
   color: #c05326;
   background-color: #fff;
 }
+
+button:hover {
+  background-color: #934423;
+}
+
+button:focus {
+  background-color: #934423;
+}
 /* Jumbotron */
 
 .jumbotron {
