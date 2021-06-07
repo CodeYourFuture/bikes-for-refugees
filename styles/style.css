@@ -171,6 +171,19 @@ body {
   margin-bottom: 0;
 }
 
+.learn-more-articles {
+  display: flex;
+  flex-direction: row;
+}
+
+.learn-more-articles article:first-child {
+  margin-right: 0.4rem;
+}
+
+.learn-more-articles article:last-child {
+  margin-left: 0.4rem;
+}
+
 /* Footer */
 
 .footer {
