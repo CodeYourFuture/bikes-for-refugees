@@ -134,7 +134,10 @@ body {
 /* Article */
 
 .article {
+  display: flex;
   margin-bottom: 2em;
+  border: 1px solid #dccdc6;
+  border-radius: 4px;
 }
 
 .article__image {
