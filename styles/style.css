@@ -64,6 +64,15 @@ button {
   background: #c05326;
 }
 
+/* */
+.orange-red {
+  background-color: #c05326;
+}
+
+.text {
+  color: #c05326;
+  background-color: #fff;
+}
 /* Jumbotron */
 
 .jumbotron {
