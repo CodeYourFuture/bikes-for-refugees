@@ -31,7 +31,6 @@ h2{
   padding: 20px;
   /* Challenge: can you make the navigation links orange on hover? */
 }
-
 /* Buttons */
 button {
   font-family: "Source Sans Pro", "Helvetica Neue", Arial, sans-serif;
@@ -44,6 +43,7 @@ button:hover{
 button:focus{
   background-color: #934423;
 }
+/* INSERT BUTTON STYLES HERE */
 .volunteer-key{
   color: #c05326;
   padding: .7rem;
@@ -56,9 +56,6 @@ button:focus{
   background-color: #c05326;
   padding: .7rem;
 }
-
-/* INSERT BUTTON STYLES HERE */
-
 /* Alert */
 .alert {
   position: relative;
@@ -72,7 +69,6 @@ button:focus{
   background: transparent;
   color: #292b2c;
 }
-
 .alert:before {
   content: "";
   position: absolute;
@@ -82,17 +78,13 @@ button:focus{
   width: 1px;
   background: #c05326;
 }
-
 /* Jumbotron */
-
 .jumbotron {
   background-image: url("../images/header-bike.jpg");
   border-radius: 0;
   color: #fff;
 }
-
 /* Headings */
-
 .heading-underline {
   position: relative;
   margin-bottom: 2em;
@@ -148,8 +140,10 @@ button:focus{
 .flex-box{
   display: flex;
   flex-direction: row;
+  
   }
 .flex-con{
+  font-size: small;
   display: flex;
   flex-direction: column;
   margin: .5rem;
@@ -177,16 +171,12 @@ button:focus{
 .footer {
   margin-top: 2em;
 }
-
 .footer p {
   border-top: 1px solid #dccdc6;
   padding-top: 2em;
   padding-bottom: 2em;
 }
-
 /* Media queries */
-
-
 @media screen and (min-width: 992px) {
   .navbar-brand > img {
     max-height: 80px;
