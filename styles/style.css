@@ -115,6 +115,7 @@ button:focus{
 .article__image {
   object-fit: contain;
   width: 5rem;
+  margin: .5rem;
 }
 .article__title {
   margin-bottom: 0.5em;
@@ -148,10 +149,7 @@ button:focus{
   flex-direction: column;
   margin: .5rem;
   padding: 1rem;
-  border: .01rem;
-  border-style: solid;
-  border-color: #c05326;
-  border-radius: 1%;
+  border: .05rem solid #dccdc6;
 }
 /* aSide */
 .flex-aside{
@@ -162,10 +160,7 @@ button:focus{
   display: flex;
   flex-direction: row;
   padding: .5rem;
-  border: .05rem;
-  border-style: solid;
-  border-radius: 1%;
-  border-color: #c05326;
+  border: .05rem solid #dccdc6;
 }
 /* Footer */
 .footer {
