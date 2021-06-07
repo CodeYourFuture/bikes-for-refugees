@@ -9,9 +9,6 @@
 html,
 body {
   font-family: "Source Sans Pro", "Helvetica Neue", Arial, sans-serif;
-}
-
-html {
   font-size: 16px;
 }
 
@@ -200,19 +197,5 @@ html {
   .white-btn {
     width: 4rem;
     font-size: 0.72rem;
-  }
-}
-
-/* Fluid typography formula */
-@media (min-width: 640px) and (max-width: 1439px) {
-  html {
-    font-size: calc(16px + (23 - 16) * (100vw - 640px) / (1439 - 640));
-  }
-}
-
-/* Define max font size */
-@media (min-width: 1440px) {
-  html {
-    font-size: 23px;
   }
 }
