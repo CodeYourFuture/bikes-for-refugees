@@ -35,10 +35,13 @@ button {
   color: #292b2c;
   font-weight: 600;
   text-transform: uppercase;
-
+  margin: 0px 10px;
   /* Challenge: can you make the navigation links orange on hover? */
 }
 
+.navbar-light .navbar-nav .nav-link:hover {
+	color: #c05326;
+}
 
 
 /* Buttons */
@@ -132,17 +135,18 @@ button {
 .article {
   margin-bottom: 2em;
   border: 1px solid #f1d1c3;
-  padding: 15px;
+  
   border-radius: 5px;
 }
 
 .learn-flex article {
-	width: 49%;
+	width: 49%;padding: 15px;
 }
 
 .article__image {
   object-fit: contain;
   width: 5rem;
+  margin-right: 15px;
 }
 
 .article__title {
@@ -170,6 +174,14 @@ button {
 .article__read-more:last-child {
   margin-bottom: 0;
 }
+
+
+.sidebar .article {
+	display: flex;
+	padding: 15px 15px 15px 0;
+}
+
+
 
 /* Footer */
 
