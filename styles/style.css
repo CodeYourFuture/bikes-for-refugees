@@ -15,10 +15,6 @@ html {
   font-size: 16px;
 }
 
-button {
-  font-family: "Source Sans Pro", "Helvetica Neue", Arial, sans-serif;
-}
-
 /* Navigation */
 
 .navbar-brand > img {
@@ -49,22 +45,39 @@ button {
 
 /* Buttons */
 
+.button {
+  font-family: "Source Sans Pro", "Helvetica Neue", Arial, sans-serif;
+  font-size: 0.7rem;
+  border: 0;
+  border-radius: 4px;
+}
+
 .button:hover,
 .button:focus {
   background-color: #934423;
+  color: #fff;
 }
 
 .orange-red-btn {
   background-color: #c05326;
-  width: 9.3rem;
+  border-color: #c05326;
+  color: #fff;
+  width: 6.8rem;
+  height: 1.8rem;
 }
 
 .white-btn {
   background-color: #fff;
+  border-color: #fff;
   color: #c05326;
-  width: 5.3rem;
+  width: 3.4rem;
+  height: 1.8rem;
 }
 
+.header-button {
+  width: 4.2rem;
+  height: 1.7rem;
+}
 /* Alert */
 
 .alert {
