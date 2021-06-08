@@ -173,15 +173,13 @@ body {
 
 .learn-more-articles {
   display: flex;
-  flex-direction: row;
+  flex-flow: row wrap;
+  justify-content: space-between;
 }
 
-.learn-more-articles article:first-child {
-  margin-right: 0.4rem;
-}
-
-.learn-more-articles article:last-child {
-  margin-left: 0.4rem;
+.learn-more-articles > article {
+  width: 49.5%;
+  padding: 1rem;
 }
 
 /* Footer */
