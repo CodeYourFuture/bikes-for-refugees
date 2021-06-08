@@ -99,6 +99,7 @@ button {
 
 .jumbotron button:last-of-type {
 	color: #C05325;
+	background-color: #fff;
 }
 
 /* Headings */
