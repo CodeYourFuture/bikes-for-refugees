@@ -120,6 +120,13 @@ button:focus {
   align-items: center;
 }
 
+.flexbox1 button:first-child {
+  background-color: rgb(248, 245, 245);
+}
+
+.flexbox1 button:last-child {
+  border: 1px solid rgb(206, 28, 28);
+}
 /* Headings */
 
 .heading-underline {
