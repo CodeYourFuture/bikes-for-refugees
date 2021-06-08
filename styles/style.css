@@ -35,7 +35,7 @@ body {
 /*  I used dev tools to determine where the color was being set which 
     turned out to be in a bootstrap script that had a higher specificity than a class or element selector
     ( https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css ) so I used an id 
-    selector as it has a higher specificity which worked :)*/
+    selector as it has a higher specificity which worked :) */
 #navbarSupportedContent > ul > li > a:hover {
   color: #c05326;
 }
@@ -135,6 +135,8 @@ body {
 
 .article {
   display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
   margin-bottom: 2em;
   border: 1px solid #dccdc6;
   border-radius: 4px;
@@ -143,6 +145,11 @@ body {
 .article__image {
   object-fit: contain;
   width: 5rem;
+}
+
+.aside__article__body {
+  width: 72%;
+  padding: 1rem 1rem 1rem 0rem;
 }
 
 .article__title {
