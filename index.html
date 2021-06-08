@@ -29,8 +29,8 @@
   </head>
 
   <body>
-    <div class="header container">
-      <div class="navigation navbar navbar-toggleable-md navbar-light">
+    <header class="header container">
+      <nav class="navigation navbar navbar-toggleable-md navbar-light">
         <button
           class="navigation__toggle navbar-toggler navbar-toggler-right"
           type="button"
@@ -55,8 +55,8 @@
 
         <div
           class="navigation__content collapse navbar-collapse"
-          id="navbarSupportedContent"
-        >
+          id="navbarSupportedContent">
+
           <ul class="navbar-nav mr-auto">
             <li class="nav-item active">
               <a class="nav-link" href="/">
@@ -75,10 +75,10 @@
           </ul>
           <button class="donation-button">Donate Now</button>
         </div>
-      </div>
-    </div>
+      </nav>
+    </header>
 
-    <div id="content" class="container">
+    <article id="content" class="container">
       <div class="row">
         <div class="main col-lg-8">
           <div class="alert">
@@ -98,7 +98,7 @@
           </div>
       
 
-          <div>
+          <section>
             <h2 class="heading-underline">Learn more</h2>
 
             <div class="articles-container">
@@ -136,72 +136,75 @@
                 </div>
               </div>
             </div>
-          </div>
+          </section>
         </div>
 
-        <div class="sidebar col-lg-4">
+        <aside class="sidebar col-lg-4">
           <h2 class="heading-underline">Upcoming events</h2>
-
-          <div class="article">
-            <img
-              class="article__image"
-              src="images/spring-fundraisers_thumbnail.jpg"
-              alt=""
-            />
-            <div class="article__body">
-              <h3 class="article__title article__title--sidebar">
-                <a href="#">Join us for our Spring fundraisers</a>
-              </h3>
-              <p>
-                Riders needed now to help raise awareness and funds for BfR and
-                Médecins Sans Frontières.
-              </p>
+          <div class="sidebar-articles-container">
+            <div class="article">
+              <img
+                class="article__image"
+                src="images/spring-fundraisers_thumbnail.jpg"
+                alt=""
+              />
+              <div class="article__body">
+                <h3 class="article__title article__title--sidebar">
+                  <a href="#">Join us for our Spring fundraisers</a>
+                </h3>
+                <p>
+                  Riders needed now to help raise awareness and funds for BfR and
+                  Médecins Sans Frontières.
+                </p>
+              </div>
             </div>
-          </div>
 
-          <div class="article">
-            <img
-              class="article__image"
-              src="images/bikes-for-refugees_logo.jpg"
-              alt=""
-            />
-            <div class="article__body">
-              <h3 class="article__title article__title--sidebar">
-                <a href="#">Bike dropoff event in Edinburgh on May 11</a>
-              </h3>
+            <div class="article">
+              <img
+                class="article__image"
+                src="images/bikes-for-refugees_logo.jpg"
+                alt=""
+              />
+              <div class="article__body">
+                <h3 class="article__title article__title--sidebar">
+                  <a href="#">Bike dropoff event in Edinburgh on May 11</a>
+                </h3>
+              </div>
             </div>
-          </div>
 
-          <div class="article">
-            <img
-              class="article__image"
-              src="images/edinburgh-damascus_thumbnail.png"
-              alt=""
-            />
-            <div class="article__body">
-              <h3 class="article__title article__title--sidebar">
-                <a href="#">Help us cycle 4,797km</a>
-              </h3>
-              <p>
-                We need you to help us cycle 4797km, the distance of Edinburgh
-                to Damascus.
-              </p>
+            <div class="article">
+              <img
+                class="article__image"
+                src="images/edinburgh-damascus_thumbnail.png"
+                alt=""
+              />
+              <div class="article__body">
+                <h3 class="article__title article__title--sidebar">
+                  <a href="#">Help us cycle 4,797km</a>
+                </h3>
+                <p>
+                  We need you to help us cycle 4797km, the distance of Edinburgh
+                  to Damascus.
+                </p>
+              </div>
             </div>
-          </div>
 
-          <a
-            href="https://www.facebook.com/BikesforRefugeesScotland/events/?ref=page_internal"
-            class="facebook-link"
-          >
-            <span class="fa fa-facebook-square"></span>
-            All Facebook events
-          </a>
-        </div>
+            <a
+              href="https://www.facebook.com/BikesforRefugeesScotland/events/?ref=page_internal"
+              class="facebook-link"
+            >
+              <span class="fa fa-facebook-square"></span>
+              All Facebook events
+            </a>
+          </div>
+        </aside> 
       </div>
-      <!-- end of row -->
-    </div>
+                
 
-    <div class="footer container">
+      <!-- end of row -->
+    </article>
+
+    <footer class="footer container">
       <div class="row">
         <div class="col-lg-8">
           <p class="text-center">
@@ -210,7 +213,7 @@
           </p>
         </div>
       </div>
-    </div>
+    </footer>
 
     <script
       src="https://code.jquery.com/jquery-3.1.1.slim.min.js"

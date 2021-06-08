@@ -10,15 +10,6 @@ html,
 body {
   font-family: "Source Sans Pro", "Helvetica Neue", Arial, sans-serif;
 }
-@media (min-width: 640px) and (max-width: 1439px) {
-  html {
-    font-size: calc(16px + (23-16) * (100vw-640px)/(1439-640));
-  }
-}
-@media (min-width: 1440px){
-  html {font-size: 23px;
-  } 
-}
 
 
 button {
@@ -134,13 +125,8 @@ button {
   flex-direction: row;
   justify-content: space-between;
 }
-/* this isn't right as i've just noticed on the display page the left one is slightly larger?
 
-.articles-container .article { 
-  width: 45%;
-}
- */
-.article:first-of-type {
+.article:first-child {
   flex-grow: 2;
   margin-right: 1rem;
 }
@@ -182,6 +168,13 @@ button {
 .article__read-more:last-child {
   margin-bottom: 0;
 }
+
+/* Sidebar */
+.sidebar-articles-container {
+  display: flex;
+  flex-direction: column;
+}
+
 
 /* Footer */
 
