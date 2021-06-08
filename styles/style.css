@@ -44,7 +44,7 @@ body {
 
 .button {
   font-family: "Source Sans Pro", "Helvetica Neue", Arial, sans-serif;
-  font-size: 0.7rem;
+  font-size: 1rem;
   border: 0;
   border-radius: 4px;
 }
@@ -59,21 +59,21 @@ body {
   background-color: #c05326;
   border-color: #c05326;
   color: #fff;
-  width: 6.8rem;
-  height: 1.8rem;
+  width: 9.2rem;
+  height: 2.5rem;
 }
 
 .white-btn {
   background-color: #fff;
   border-color: #fff;
   color: #c05326;
-  width: 3.4rem;
-  height: 1.8rem;
+  width: 5rem;
+  height: 2.5rem;
 }
 
 .header-button {
-  width: 4.4rem;
-  height: 1.7rem;
+  width: 6rem;
+  height: 2.5rem;
 }
 /* Alert */
 
@@ -185,7 +185,7 @@ body {
 }
 
 .learn-more-articles > article {
-  width: 49.5%;
+  width: 49%;
   padding: 1rem;
 }
 
