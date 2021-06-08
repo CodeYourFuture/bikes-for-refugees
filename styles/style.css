@@ -10,6 +10,16 @@ html,
 body {
   font-family: "Source Sans Pro", "Helvetica Neue", Arial, sans-serif;
 }
+@media (min-width: 640px) and (max-width: 1439px) {
+  html {
+    font-size: calc(16px + (23-16) * (100vw-640px)/(1439-640));
+  }
+}
+@media (min-width: 1440px){
+  html {font-size: 23px;
+  } 
+}
+
 
 button {
   font-family: "Source Sans Pro", "Helvetica Neue", Arial, sans-serif;
@@ -67,10 +77,23 @@ button {
 /* Jumbotron */
 
 .jumbotron {
-  background-image: url("../images/header.jpg");
+  background-image: url("../images/header-bike.jpg");
   border-radius: 0;
   color: #fff;
 }
+@media (max-width:300px) {
+    .jumbotron button {
+    max-width: 50%;
+  }
+}
+
+/* New Boxes*/
+.boxes {
+  display:flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
 
 /* Headings */
 
