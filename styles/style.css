@@ -100,12 +100,7 @@ button {
   }
 }
 
-/* New Boxes*/
-.boxes {
-  display:flex;
-  flex-direction: row;
-  justify-content: space-between;
-}
+
 
 
 /* Headings */
@@ -133,8 +128,21 @@ button {
 
 /* Article */
 
+/* make it flex */
+.articles-container {
+  display:flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.articles-container .article {
+  width: 45%;
+}
+
 .article {
   margin-bottom: 2em;
+  border: 1px solid #dccdc6;
+  border-radius: 10px;
+  padding: 1em;
 }
 
 .article__image {
