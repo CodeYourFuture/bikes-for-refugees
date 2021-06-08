@@ -134,14 +134,21 @@ button {
   flex-direction: row;
   justify-content: space-between;
 }
-.articles-container .article {
+/* this isn't right as i've just noticed on the display page the left one is slightly larger?
+
+.articles-container .article { 
   width: 45%;
+}
+ */
+.article:first-of-type {
+  flex-grow: 2;
+  margin-right: 1rem;
 }
 
 .article {
   margin-bottom: 2em;
   border: 1px solid #dccdc6;
-  border-radius: 10px;
+  border-radius: 5px;
   padding: 1em;
 }
 
