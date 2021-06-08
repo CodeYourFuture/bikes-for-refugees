@@ -47,8 +47,21 @@ button {
 
 /* Buttons */
 
-/* INSERT BUTTON STYLES HERE */
+button {
+  border-radius: 5px;
+  border-width: 0;
+  padding: 0.75rem;
+}
 
+.donation-button {
+  background-color: #c05326;
+  color:#fff;
+}
+
+.volunteer-button {
+  background-color: #fff;
+  color: #c05326; 
+}
 /* Alert */
 
 .alert {
