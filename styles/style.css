@@ -13,6 +13,10 @@ body {
 
 button {
   font-family: "Source Sans Pro", "Helvetica Neue", Arial, sans-serif;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  cursor: pointer;
 }
 
 /* Navigation */
@@ -31,13 +35,22 @@ button {
   color: #292b2c;
   font-weight: 600;
   text-transform: uppercase;
-
+  margin: 0px 10px;
   /* Challenge: can you make the navigation links orange on hover? */
 }
+
+.navbar-light .navbar-nav .nav-link:hover {
+	color: #c05326;
+}
+
 
 /* Buttons */
 
 /* INSERT BUTTON STYLES HERE */
+
+.header button {
+	background-color:#C05325;
+}
 
 /* Alert */
 
@@ -67,9 +80,26 @@ button {
 /* Jumbotron */
 
 .jumbotron {
-  background-image: url("../images/header.jpg");
+  background-image: url("../images/header-bike.jpg");
   border-radius: 0;
   color: #fff;
+}
+
+.jumbotron p {
+	margin-bottom: 40px;
+}
+
+.jumbotron button {
+	padding: 8px 5px;
+}
+
+.jumbotron button:first-of-type {
+	background-color: #C05325;
+}
+
+.jumbotron button:last-of-type {
+	color: #C05325;
+	background-color: #fff;
 }
 
 /* Headings */
@@ -97,13 +127,28 @@ button {
 
 /* Article */
 
+.learn-flex {
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: space-between;
+}
+
 .article {
   margin-bottom: 2em;
+  border: 1px solid #f1d1c3;
+  
+  border-radius: 5px;
+}
+
+.learn-flex article {
+	width: 49%;padding: 15px;
 }
 
 .article__image {
   object-fit: contain;
   width: 5rem;
+  margin-right: 15px;
+  height: 100%;
 }
 
 .article__title {
@@ -131,6 +176,14 @@ button {
 .article__read-more:last-child {
   margin-bottom: 0;
 }
+
+
+.sidebar .article {
+	display: flex;
+	padding: 15px 15px 15px 0;
+}
+
+
 
 /* Footer */
 
