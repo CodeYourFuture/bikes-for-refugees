@@ -9,6 +9,7 @@
 html,
 body {
   font-family: "Source Sans Pro", "Helvetica Neue", Arial, sans-serif;
+  box-sizing: border-box;
 }
 
 /* Navigation */
@@ -46,6 +47,7 @@ body {
 
 .donate-button:hover {
   background-color: #fff;
+  padding: 0.27rem;
   color: #a34914;
   border: 2px solid #a34914;
 }
@@ -61,7 +63,9 @@ body {
 
 .volunteer-button:hover {
   background-color: #a34914;
+  padding: 0.27rem;
   color: #fff;
+  border: 2px solid #fff;
 }
 
 /* Alert */
@@ -155,6 +159,10 @@ body {
 
 /* Article */
 
+.article {
+  display: flex;
+}
+
 .article-one,
 .article-two {
   margin-bottom: 2em;
@@ -200,6 +208,18 @@ p {
 
 .article__read-more:last-child {
   margin-bottom: 0;
+}
+
+.sidebar .article {
+  border: 2px solid lightgray;
+  background-color: #fff;
+  border-radius: 3px;
+  margin: 0.5rem;
+  padding: 0.5rem;
+}
+
+.facebook-link {
+  margin: 2rem 0.5rem;
 }
 
 /* Footer */
