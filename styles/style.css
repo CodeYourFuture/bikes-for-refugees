@@ -147,6 +147,7 @@ button {
   object-fit: contain;
   width: 5rem;
   margin-right: 15px;
+  height: 100%;
 }
 
 .article__title {
