@@ -37,7 +37,22 @@ button {
 
 /* Buttons */
 
-/* INSERT BUTTON STYLES HERE */
+.red-btn{
+  background-color: #c05326;
+}
+.green-btn{
+  background-color: #fff;
+  color: #c05326;
+}
+.pink-btn{
+  background-color: aqua;
+}
+.purple-btn{
+  background-color: blue;
+}
+.yellow-btn{
+  background-color: burlywood;
+}
 
 /* Alert */
 
@@ -151,3 +166,23 @@ button {
     max-height: 80px;
   }
 }
+
+@media screen and (max-width: 320px) {
+  .jumbotron button {
+  width: 75px;  
+  font-size: 10px;
+  }
+}
+html {
+  font-size: 16px;
+}
+/* Fluid typography formula */
+@media (min-width:640px) and (max-width: 1439px){
+  font-size: calc(16px + (23 - 16) * (100vw - 640px)/1439 - 640));
+}
+/* Define max font size */
+@media (min-width:1440px){
+  font-size :23px;
+}
+
+
