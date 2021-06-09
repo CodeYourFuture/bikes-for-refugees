@@ -14,16 +14,7 @@ body {
 button {
   font-family: "Source Sans Pro", "Helvetica Neue", Arial, sans-serif;
 }
-.donate{
-  background-color: rgb(206, 117, 8);
-  color: #fff;
-  border: none;
-}
-.volunteer{
-  background-color: white;
-  color: rgb(206, 117, 8) ;
-  border: none;
-}
+
 
 /* Navigation */
 
@@ -44,11 +35,22 @@ button {
 
   /* Challenge: can you make the navigation links orange on hover? */
 }
-
+.nav-link:hover{
+  background-color: rgb(206, 108, 11);
+}
 /* Buttons */
 
 /* INSERT BUTTON STYLES HERE */
-
+.donate{
+  background-color: rgb(206, 108, 11);
+  color: #fff;
+  border: none;
+}
+.volunteer{
+  background-color: white;
+  color: rgb(206, 117, 8) ;
+  border: none;
+}
 /* Alert */
 
 .alert {
@@ -106,14 +108,32 @@ button {
 }
 
 /* Article */
-
-.article {
-  margin-bottom: 2em;
+.main_article{
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
 }
+.main_article>.article{
+  width: 49%;
+}
+  .article{
+    display: flex;
+    flex-flow: row nowrap;
+  justify-content: space-between;
+
+  margin-bottom: 2em;
+  border: 2px solid  #e2d6d1;
+  border-radius: 6px;
+  padding: 10px 10px;
+  font-size: 0.8rem;
+
+}
+
 
 .article__image {
   object-fit: contain;
   width: 5rem;
+  margin-right: 10px;
 }
 
 .article__title {
