@@ -13,6 +13,7 @@ body {
 
 button {
   font-family: "Source Sans Pro", "Helvetica Neue", Arial, sans-serif;
+  border-radius: 4px;
 }
 
 
