@@ -34,11 +34,41 @@ button {
 
   /* Challenge: can you make the navigation links orange on hover? */
 }
+.navigation_links {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
 
+.navigation {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+}
 /* Buttons */
 
 /* INSERT BUTTON STYLES HERE */
 
+.donate_button {
+background-color: #c05326;
+color: #fff;
+border: none;
+border-radius: 5px;
+padding: 10px;
+
+}
+header .donate_button {
+  justify-self: right;
+}
+.volunteer_button {
+  color: #c05326;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+/* .navigation-links:last-child {
+  margin-right: 50px;
+} */
 /* Alert */
 
 .alert {
@@ -67,9 +97,14 @@ button {
 /* Jumbotron */
 
 .jumbotron {
-  background-image: url("../images/header.jpg");
+  background-image: url("../images/header-bike.jpg");
   border-radius: 0;
   color: #fff;
+}
+
+.jumbotron .button-container {
+  display: flex;
+  justify-content:flex-start;
 }
 
 /* Headings */
@@ -99,11 +134,27 @@ button {
 
 .article {
   margin-bottom: 2em;
+  border: 2px solid red;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  border: 2px solid #dccdc6;
+  border-radius: 5px;
+  margin-right: 20px;
+  padding: 10px;
 }
 
+.article-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  
+}
 .article__image {
   object-fit: contain;
   width: 5rem;
+  margin-right: 20px;
 }
 
 .article__title {
@@ -149,5 +200,29 @@ button {
 @media screen and (min-width: 992px) {
   .navbar-brand > img {
     max-height: 80px;
+  }
+}
+
+@media (min-width: 320px) and (max-width: 800px) {
+  .article {
+    font-size: 0.7em;
+  }
+}
+@media screen and (max-width: 320px) {
+
+  .jumbotron h2 {
+    font-size: 2rem;
+  }
+  button {
+    width: 40%;
+    padding: 2px;
+  }
+  
+}
+
+
+@media (max-width: 350px) {
+  button {
+    width: 25%;
   }
 }
