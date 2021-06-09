@@ -34,6 +34,9 @@ button {
 
   /* Challenge: can you make the navigation links orange on hover? */
 }
+#navbarSupportedContent > ul > li >a:hover {
+  color:coral;
+}
 
 /* Buttons */
 
@@ -145,6 +148,18 @@ button {
 
 .article__read-more:last-child {
   margin-bottom: 0;
+}
+.learn-more-articles {
+  display: flex;
+  flex-direction: row;
+}
+
+.learn-more-articles article:first-child {
+  margin-right: 0.4rem;
+}
+
+.learn-more-articles article:last-child {
+  margin-left: 0.4rem;
 }
 
 /* Footer */
