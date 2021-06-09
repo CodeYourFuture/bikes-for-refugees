@@ -14,6 +14,16 @@ body {
 button {
   font-family: "Source Sans Pro", "Helvetica Neue", Arial, sans-serif;
 }
+.donate{
+  background-color: rgb(206, 117, 8);
+  color: #fff;
+  border: none;
+}
+.volunteer{
+  background-color: white;
+  color: rgb(206, 117, 8) ;
+  border: none;
+}
 
 /* Navigation */
 
