@@ -9,6 +9,7 @@
 html,
 body {
   font-family: "Source Sans Pro", "Helvetica Neue", Arial, sans-serif;
+  font-size: 16px;
 }
 
 button {
@@ -83,9 +84,9 @@ button:focus {
 .jumbotron {
   background-image: url("../images/header.jpg");
   border-radius: 0;
-  color: #fff;
+  /* color: #fff; */
+  color: black;
 }
-
 /* Headings */
 
 .heading-underline {
@@ -166,7 +167,19 @@ button:focus {
   }
 }
 
+@media (min-width: 640px ) and (max-width: 1439px) {
+  html {
+    font-size: calc(16 + (23-16) * (100vw - 640px) / (1439 - 640));
+  }
+  
+}
 
+@media screen and (min-width: 1440px) {
+  html{
+    font-size: 23px;
+  }
+  
+}
 /* spacing questions */
 
 button{
