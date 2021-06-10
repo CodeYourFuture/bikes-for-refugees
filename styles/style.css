@@ -44,6 +44,7 @@ button {
 /* INSERT BUTTON STYLES HERE */
 .btn-donate{
   background-color: #C05326;
+  color: #fff;
 }
 .btn-vol{
   color: #C05326;
@@ -82,10 +83,11 @@ button:focus {
 /* Jumbotron */
 
 .jumbotron {
-  background-image: url("../images/header.jpg");
+  background-image: url("../images/header-bike.jpg");
+  background-repeat: no-repeat;
   border-radius: 0;
-  /* color: #fff; */
-  color: black;
+  color: #fff;
+  /* color: black; */
 }
 /* Headings */
 
