@@ -42,16 +42,16 @@ button {
 /* Buttons */
 
 /* INSERT BUTTON STYLES HERE */
-.btn-donate{
-  background-color: #C05326;
+.btn-donate {
+  background-color: #c05326;
   color: #fff;
 }
-.btn-vol{
-  color: #C05326;
+.btn-vol {
+  color: #c05326;
   background-color: #fff;
 }
 
-button:hover, 
+button:hover,
 button:focus {
   background-color: #934423;
 }
@@ -114,8 +114,14 @@ button:focus {
 
 /* Article */
 
+.articles-box {
+  display: flex;
+}
 .article {
   margin-bottom: 2em;
+  border: 1px solid rgb(204, 200, 200);
+  padding: 0.6rem;
+  margin: 0.6em;
 }
 
 .article__image {
@@ -149,6 +155,10 @@ button:focus {
   margin-bottom: 0;
 }
 
+a.facebook-link {
+  padding: 0.6rem;
+}
+
 /* Footer */
 
 .footer {
@@ -169,22 +179,20 @@ button:focus {
   }
 }
 
-@media (min-width: 640px ) and (max-width: 1439px) {
+@media (min-width: 640px) and (max-width: 1439px) {
   html {
     font-size: calc(16 + (23-16) * (100vw - 640px) / (1439 - 640));
   }
-  
 }
 
 @media screen and (min-width: 1440px) {
-  html{
+  html {
     font-size: 23px;
   }
-  
 }
 /* spacing questions */
 
-button{
+button {
   padding: 0.5rem;
   border: none;
   border-radius: 0.25rem;
