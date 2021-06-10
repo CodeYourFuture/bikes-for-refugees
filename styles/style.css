@@ -20,11 +20,30 @@ button {
 }
 .btn{
   background-color: #c05326;
+  color: #fff;
+  font-weight: bolder;
+  border: black solid 2px;
+  border-radius: 10px;
+  box-shadow: rgb(48, 21, 4) 3px 2px;
+  margin-right: 10px;
   
 }
+
+.btn:hover, .volunt-btn:hover
+{
+  background-color: rgb(240, 237, 58);
+  transition-delay: all .4s ease 0s;
+}
+
 .volunt-btn{
   background-color: white;
   color: #c05326;
+  font-weight: bolder;
+  border: black solid 2px;
+  border-radius: 10px;
+  padding: 6px;
+  box-shadow: rgb(48, 21, 4) 3px 2px;
+  
 }
 
 /* Navigation */
@@ -39,12 +58,16 @@ button {
   right: 0;
 }
 
-.navbar-light .navbar-nav .nav-link {
+.navbar-light .navbar-nav {
   color: #292b2c;
   font-weight: 600;
   text-transform: uppercase;
 
   /* Challenge: can you make the navigation links orange on hover? */
+}
+#navbarSupportedContent .nav-link:hover{
+  color: orange;
+  font-size: large;
 }
 
 /* Buttons */
