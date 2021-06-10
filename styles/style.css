@@ -11,8 +11,20 @@ body {
   font-family: "Source Sans Pro", "Helvetica Neue", Arial, sans-serif;
 }
 
+  /* ---------------------------------  
+    button desigining
+--------------------------------------- */
 button {
   font-family: "Source Sans Pro", "Helvetica Neue", Arial, sans-serif;
+  background-color: ;
+}
+.btn{
+  background-color: #c05326;
+  
+}
+.volunt-btn{
+  background-color: white;
+  color: #c05326;
 }
 
 /* Navigation */
@@ -67,7 +79,7 @@ button {
 /* Jumbotron */
 
 .jumbotron {
-  background-image: url("../images/header.jpg");
+  background-image: url("../images/header-bike.jpg");
   border-radius: 0;
   color: #fff;
 }
@@ -99,11 +111,19 @@ button {
 
 .article {
   margin-bottom: 2em;
+  border: black solid 1px;
+  display: flex;
+  
+}
+
+.article__body{
+  padding: 10px;
 }
 
 .article__image {
   object-fit: contain;
   width: 5rem;
+  padding-right: 10px;
 }
 
 .article__title {
@@ -131,6 +151,8 @@ button {
 .article__read-more:last-child {
   margin-bottom: 0;
 }
+
+
 
 /* Footer */
 
