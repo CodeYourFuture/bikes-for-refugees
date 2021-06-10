@@ -36,9 +36,23 @@ button {
 }
 
 /* Buttons */
-
 /* INSERT BUTTON STYLES HERE */
-
+.orange-button{
+  background-color: #c05326;
+  color: white;
+  border:none;
+  border-radius: 5%;
+}
+.wide-button{
+  padding: .3rem;
+}
+.white-button{
+  background-color: #ffffff;
+  color: #e26f42;
+  border:none;
+  border-radius: 5%;
+  padding: .3rem;
+}
 /* Alert */
 
 .alert {
