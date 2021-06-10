@@ -36,9 +36,23 @@ button {
 }
 
 /* Buttons */
-
 /* INSERT BUTTON STYLES HERE */
-
+.orange-button{
+  background-color: #c05326;
+  color: white;
+  border:none;
+  border-radius: 5%;
+}
+.wide-button{
+  padding: .3rem;
+}
+.white-button{
+  background-color: #ffffff;
+  color: #e26f42;
+  border:none;
+  border-radius: 5%;
+  padding: .3rem;
+}
 /* Alert */
 
 .alert {
@@ -67,7 +81,7 @@ button {
 /* Jumbotron */
 
 .jumbotron {
-  background-image: url("../images/header.jpg");
+  background-image: url("../images/header-bike.jpg");
   border-radius: 0;
   color: #fff;
 }
@@ -96,10 +110,18 @@ button {
 }
 
 /* Article */
-
-.article {
-  margin-bottom: 2em;
+.all-article-container{
+  display: flex;
+  justify-content: space-between;
 }
+.article {
+   margin-bottom: 1em;
+  border: 1px solid #d6b8ab;
+  padding: 2%;
+  border-radius: 2%;
+  width: 48%;
+}
+
 
 .article__image {
   object-fit: contain;
@@ -130,6 +152,17 @@ button {
 
 .article__read-more:last-child {
   margin-bottom: 0;
+}
+.article-aside{
+  display: flex;
+  margin-bottom: 1em;
+  border: 1px solid #d6b8ab;
+  padding: 2%;
+  border-radius: 2%;
+  width: 100%;
+}
+.article__body{
+  padding:2%;
 }
 
 /* Footer */
