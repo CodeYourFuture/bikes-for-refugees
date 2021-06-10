@@ -38,3 +38,5 @@ Use Flexbox to move elements around so they are positioned correctly.
 Once you've finished, **open a pull request** so your work can be reviewed by a mentor.
 
 As always, you can check [the git cheatsheet](https://syllabus.codeyourfuture.io/git/desktop/cheatsheet#i-want-to-send-my-code-to-volunteers-pushing) if you get stuck!
+
+All questions answred by Rana Ahmed.
