@@ -110,10 +110,18 @@ button {
 }
 
 /* Article */
-
-.article {
-  margin-bottom: 2em;
+.all-article-container{
+  display: flex;
+  justify-content: space-between;
 }
+.article {
+   margin-bottom: 1em;
+  border: 1px solid #d6b8ab;
+  padding: 2%;
+  border-radius: 2%;
+  width: 48%;
+}
+
 
 .article__image {
   object-fit: contain;
@@ -144,6 +152,17 @@ button {
 
 .article__read-more:last-child {
   margin-bottom: 0;
+}
+.article-aside{
+  display: flex;
+  margin-bottom: 1em;
+  border: 1px solid #d6b8ab;
+  padding: 2%;
+  border-radius: 2%;
+  width: 100%;
+}
+.article__body{
+  padding:2%;
 }
 
 /* Footer */
