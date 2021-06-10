@@ -9,11 +9,10 @@
 html,
 body {
   font-family: "Source Sans Pro", "Helvetica Neue", Arial, sans-serif;
+  font-size: 16px;
 }
 
-button {
-  font-family: "Source Sans Pro", "Helvetica Neue", Arial, sans-serif;
-}
+
 
 /* Navigation */
 
@@ -34,11 +33,46 @@ button {
 
   /* Challenge: can you make the navigation links orange on hover? */
 }
+#navbarSupportedContent > ul > li > a:hover {
+  color: #c05326;
+}
 
 /* Buttons */
 
 /* INSERT BUTTON STYLES HERE */
+.button {
+  font-family: "Source Sans Pro", "Helvetica Neue", Arial, sans-serif;
+  font-size: 1rem;
+  border: 0;
+  border-radius: 4px;
+}
 
+.button:hover,
+.button:focus {
+  background-color: #934423;
+  color: #fff;
+}
+
+.orange-red-btn {
+  background-color: #c05326;
+  border-color: #c05326;
+  color: #fff;
+  width: 9.2rem;
+  height: 2.5rem;
+}
+
+.white-btn {
+  background-color: #fff;
+  border-color: #fff;
+  color: #c05326;
+  width: 5rem;
+  height: 2.5rem;
+}
+
+.header-button {
+  width: 6rem;
+  height: 2.5rem;
+}
 /* Alert */
 
 .alert {
@@ -67,10 +101,11 @@ button {
 /* Jumbotron */
 
 .jumbotron {
-  background-image: url("../images/header.jpg");
+  background-image: url("../images/header-bike.jpg");
   border-radius: 0;
   color: #fff;
 }
+fl
 
 /* Headings */
 
@@ -98,12 +133,21 @@ button {
 /* Article */
 
 .article {
+   display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
   margin-bottom: 2em;
+  border: 1px solid #dccdc6;
+  border-radius: 4px;
 }
 
 .article__image {
   object-fit: contain;
   width: 5rem;
+}
+.aside__article__body {
+  width: 72%;
+  padding: 1rem 1rem 1rem 0rem;
 }
 
 .article__title {
@@ -131,6 +175,16 @@ button {
 .article__read-more:last-child {
   margin-bottom: 0;
 }
+.learn-more-articles {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+}
+
+.learn-more-articles > article {
+  width: 49%;
+  padding: 1rem;
+}
 
 /* Footer */
 
@@ -146,8 +200,14 @@ button {
 
 /* Media queries */
 
-@media screen and (min-width: 992px) {
-  .navbar-brand > img {
-    max-height: 80px;
+@media screen and (min-width: 0px) and (max-width: 320px) {
+  .orange-red-btn {
+    width: 7rem;
+    font-size: 0.72rem;
+  }
+
+  .white-btn {
+    width: 4rem;
+    font-size: 0.72rem;
   }
 }
