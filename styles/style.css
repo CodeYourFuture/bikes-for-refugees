@@ -1,27 +1,16 @@
-/**
- * Base styles to use at the start of the class
- *
- * Module: HTML/CSS
- * Lesson: 1,2
- * Class: Scotland 2017
- */
-
-html,
+Module HTML/CSS Scotland Class 5 html,
 body {
   font-family: "Source Sans Pro", "Helvetica Neue", Arial, sans-serif;
 }
-
 button {
   font-family: "Source Sans Pro", "Helvetica Neue", Arial, sans-serif;
 }
 
 /* Navigation */
-
 .navbar-brand > img {
   max-height: 40px;
   width: auto;
 }
-
 .navbar-light .navbar-toggler {
   border: 0;
   right: 0;
@@ -29,15 +18,35 @@ button {
 
 .navbar-light .navbar-nav .nav-link {
   color: #292b2c;
-  font-weight: 600;
+  font-weight: 650;
   text-transform: uppercase;
-
-  /* Challenge: can you make the navigation links orange on hover? */
 }
+.navbar-light .navbar-nav .nav-link:hover {
+  color: #c05326;
+}
+/* Challenge: can you make the navigation links orange on hover? */ /* answered above*/
 
 /* Buttons */
-
 /* INSERT BUTTON STYLES HERE */
+.button:hover,
+.button:focus {
+  background-color: #ec4c08;
+  color: #fff;
+}
+.orange-red-btn {
+  border-radius: 0.3rem;
+  background-color: #d35620;
+  color: #fff;
+}
+.white-btn {
+  color: ;
+}
+
+#btn {
+  background-color: white;
+  color: #ce5f31;
+  cursor: pointer;
+}
 
 /* Alert */
 
@@ -67,13 +76,13 @@ button {
 /* Jumbotron */
 
 .jumbotron {
-  background-image: url("../images/header.jpg");
+  background-image: url("/images/header-bike.jpg"); /* adding image*/
+  background-image: url("../images/header-bike.jpg");
   border-radius: 0;
   color: #fff;
 }
 
 /* Headings */
-
 .heading-underline {
   position: relative;
   margin-bottom: 2em;
@@ -99,6 +108,8 @@ button {
 
 .article {
   margin-bottom: 2em;
+  border: 1px solid rgba(226, 145, 90, 0.3); /* adding borders*/
+  padding: 4px 7px;
 }
 
 .article__image {
@@ -132,6 +143,13 @@ button {
   margin-bottom: 0;
 }
 
+.flex-container {
+  /* adding flexbox position */
+  display: flex;
+  flex-direction: row;
+  box-sizing: border-box;
+}
+
 /* Footer */
 
 .footer {
@@ -143,9 +161,7 @@ button {
   padding-top: 2em;
   padding-bottom: 2em;
 }
-
 /* Media queries */
-
 @media screen and (min-width: 992px) {
   .navbar-brand > img {
     max-height: 80px;
