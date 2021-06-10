@@ -18,33 +18,7 @@ button {
   font-family: "Source Sans Pro", "Helvetica Neue", Arial, sans-serif;
   background-color: ;
 }
-.btn{
-  background-color: #c05326;
-  color: #fff;
-  font-weight: bolder;
-  border: black solid 2px;
-  border-radius: 10px;
-  box-shadow: rgb(48, 21, 4) 3px 2px;
-  margin-right: 10px;
-  
-}
 
-.btn:hover, .volunt-btn:hover
-{
-  background-color: rgb(240, 237, 58);
-  transition-delay: all .4s ease 0s;
-}
-
-.volunt-btn{
-  background-color: white;
-  color: #c05326;
-  font-weight: bolder;
-  border: black solid 2px;
-  border-radius: 10px;
-  padding: 6px;
-  box-shadow: rgb(48, 21, 4) 3px 2px;
-  
-}
 
 /* Navigation */
 
@@ -72,7 +46,36 @@ button {
 
 /* Buttons */
 
+.btn{
+  background-color: #c05326;
+  color: #fff;
+  font-weight: bolder;
+  border: black solid 2px;
+  border-radius: 10px;
+  box-shadow: rgb(48, 21, 4) 3px 2px;
+  margin-right: 10px;
+  
+}
+
+
+.volunt-btn{
+  background-color: white;
+  color: #c05326;
+  font-weight: bolder;
+  border: black solid 2px;
+  border-radius: 10px;
+  padding: 6px;
+  box-shadow: rgb(48, 21, 4) 3px 2px;
+  
+}
+
 /* INSERT BUTTON STYLES HERE */
+
+.btn:hover, .volunt-btn:hover
+{
+  background-color: rgb(240, 237, 58);
+  transition-delay: all .4s ease 0s;
+}
 
 /* Alert */
 
@@ -136,11 +139,14 @@ button {
   margin-bottom: 2em;
   border: black solid 1px;
   display: flex;
+  padding: 10px;
+  box-shadow: 5px 5px 5px;
   
 }
 
-.article__body{
-  padding: 10px;
+.article:hover {
+  
+  background-color: rgb(248, 225, 225);
 }
 
 .article__image {
