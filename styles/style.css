@@ -128,8 +128,6 @@ button:focus {
 
 /* Article */
 
-
-
 .article {
   display: inline-flex;
   flex-direction: row;
@@ -140,9 +138,20 @@ button:focus {
   
 }
 
+.article-aside {
+  display: flex;
+  flex-direction: row;
+  border: 1px solid rgb(211, 210, 210);;
+  margin-bottom: 2em;
+  padding: 1.5rem 0;
+  float: left;
+  
+}
+
 .article__image {
   object-fit: contain;
   width: 5rem;
+  margin-right: 10px;
 }
 
 .article__title {
@@ -152,14 +161,7 @@ button:focus {
   
 }
 
-.article-aside {
-  display: flex;
-  flex-direction: row;
-  border: 1px solid rgb(211, 210, 210);;
-  margin-bottom: 2em;
-  padding: 1.5rem 0;
-  
-}
+
 .article__read-more a {
   font-size: 0.85em;
   font-weight: 700;
