@@ -32,7 +32,7 @@ body {
 
 /* Challenge: can you make the navigation links orange on hover? */
 
-/*  I used dev tools to determine where the color was being set which 
+/*  I used dev tools to determine where the colour was being set which 
     turned out to be in a bootstrap script that had a higher specificity than a class or element selector
     ( https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css ) so I used an id 
     selector as it has a higher specificity which worked :) */
