@@ -9,6 +9,7 @@
 html,
 body {
   font-family: "Source Sans Pro", "Helvetica Neue", Arial, sans-serif;
+  
 }
 
 button {
@@ -33,6 +34,27 @@ button {
   text-transform: uppercase;
 
   /* Challenge: can you make the navigation links orange on hover? */
+}
+
+
+/*FlexBox */
+/*aside column*/
+
+.article {
+  display: flex;
+  border: 1px solid #dccdc6;
+  margin-bottom: 1em;
+  padding: 1em;
+  line-height: 1.4em;
+}
+
+article {
+  display: flex;
+  justify-content: space-between;
+  /*border: 1px solid #dccdc6;*/
+  margin: 1em;
+  padding: 1em;
+  line-height: 1.4em;
 }
 
 /* Buttons */
@@ -70,6 +92,19 @@ button {
   background-image: url("../images/header-bike.jpg");
   border-radius: 0;
   color: #fff;
+}
+
+button {
+  border-radius: 4px;
+  color:rgb(255, 255, 255);
+  background-color: #c05326;
+  border: 0px;
+  
+}
+
+.button-white {
+  background-color: white; 
+  color:#c05326;;
 }
 
 /* Headings */
