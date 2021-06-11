@@ -31,6 +31,8 @@ button {
   color: #292b2c;
   font-weight: 600;
   text-transform: uppercase;
+  padding: 0 2rem;
+
 
   /* Challenge: can you make the navigation links orange on hover? */
 }
@@ -64,13 +66,42 @@ button {
   background: #c05326;
 }
 
+/* */
+
+button {
+  padding: 1rem;
+  border: 0rem;
+  border-radius: 20px;
+}
+.orange-red {
+  background-color: #c05326;
+}
+
+.text {
+  color: #c05326;
+  background-color: #fff;
+}
+
+button:hover {
+  background-color: #934423;
+}
+
+button:focus {
+  background-color: #934423;
+}
 /* Jumbotron */
 
 .jumbotron {
-  background-image: url("../images/header.jpg");
+  
+  background-image: url("../images/header-bike.jpg");
   border-radius: 0;
   color: #fff;
 }
+
+
+
+
+/* flexbox*/
 
 /* Headings */
 
@@ -98,19 +129,38 @@ button {
 /* Article */
 
 .article {
+  display: inline-flex;
+  flex-direction: row;
+  border: 1px solid rgb(211, 210, 210);
   margin-bottom: 2em;
+  padding: 1.5rem;
+  width: 45%;
+  
+}
+
+.article-aside {
+  display: flex;
+  flex-direction: row;
+  border: 1px solid rgb(211, 210, 210);;
+  margin-bottom: 2em;
+  padding: 1.5rem 0;
+  float: left;
+  
 }
 
 .article__image {
   object-fit: contain;
   width: 5rem;
+  margin-right: 10px;
 }
 
 .article__title {
   margin-bottom: 0.5em;
   font-size: 1rem;
   font-weight: 700;
+  
 }
+
 
 .article__read-more a {
   font-size: 0.85em;
@@ -150,4 +200,20 @@ button {
   .navbar-brand > img {
     max-height: 80px;
   }
+}
+
+@media screen and(max-width: 320px){
+  button {
+    
+    color: yellow;
+    
+  }
+}
+
+@media (min-width: 640px) and (max-width: 1439px) {
+  font-size: calc(16px + (23 - 16) * (100vw - 640px) / (1439 - 640));
+}
+
+@media (min-width:1440px) {
+  font-size: 23px;
 }
