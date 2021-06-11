@@ -141,6 +141,8 @@ button {
 .article__image {
   object-fit: contain;
   width: 5rem;
+  padding-right: 1rem;
+  padding-left: 0px;
 }
 
 .article__title {
