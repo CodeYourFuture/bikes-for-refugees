@@ -36,8 +36,13 @@ button {
 }
 
 /* Buttons */
-
 /* INSERT BUTTON STYLES HERE */
+.btn_donate:hover{
+  background-color: #ef96dc;
+}
+.btn_volunteer:hover{
+  background-color: #94e07d;    
+}
 
 /* Alert */
 
@@ -67,9 +72,10 @@ button {
 /* Jumbotron */
 
 .jumbotron {
-  background-image: url("../images/header.jpg");
+  background-image:url("file:///Users/megumi/Documents/GitHub/bikes-for-refugees/images/header-bike.jpg");
   border-radius: 0;
   color: #fff;
+
 }
 
 /* Headings */
@@ -104,6 +110,8 @@ button {
 .article__image {
   object-fit: contain;
   width: 5rem;
+  margin-right:10px;
+  margin-left:10px;
 }
 
 .article__title {
@@ -130,6 +138,16 @@ button {
 
 .article__read-more:last-child {
   margin-bottom: 0;
+}
+
+.container_article{
+  display:flex;
+  border-style:solid;
+  border-width:1px;
+  border-color:#dccdc6;
+  margin-bottom: 1.5rem;
+
+  width: 100%;
 }
 
 /* Footer */
