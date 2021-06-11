@@ -18,11 +18,13 @@ button {
 /* Navigation */
 
 .navbar-brand > img {
+  position: relative;
   max-height: 40px;
   width: auto;
 }
 
 .navbar-light .navbar-toggler {
+  width: 100%;
   border: 0;
   right: 0;
 }
@@ -39,6 +41,33 @@ button {
 
 /* INSERT BUTTON STYLES HERE */
 
+.buttonorange-red {
+  color: rgb(255, 252, 251);
+  background-color: orangered;
+  border-radius: 3px;
+  border: none;
+  padding: 10px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 20px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+
+.buttonwhite {
+  color: orangered;
+  background-color: #fdfeff;
+  border-radius: 3px;
+  border: none;
+  padding: 10px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 20px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
 /* Alert */
 
 .alert {
@@ -67,18 +96,28 @@ button {
 /* Jumbotron */
 
 .jumbotron {
-  background-image: url("../images/header.jpg");
+  background-image: url("../images/header-bike.jpg");
+  background-position: 0;
   border-radius: 0;
-  color: #fff;
+  background-size: 100%;
+  background-repeat: no-repeat;
+  color: #ffffff;
+}
+
+.box-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
 }
 
 /* Headings */
-
+.header {
+  padding-top: 2rem;
+}
 .heading-underline {
   position: relative;
   margin-bottom: 2em;
   padding-bottom: 0.5em;
-  border-bottom: 1px solid #dccdc6;
   font-size: 1rem;
   font-weight: 600;
   text-transform: uppercase;
@@ -96,14 +135,25 @@ button {
 }
 
 /* Article */
-
+.article-container {
+  display: flex;
+  flex-direction: row;
+}
 .article {
+  margin: 10px;
+  padding: 5px;
+  margin: 15px;
+  border: 1px solid #c05326;
   margin-bottom: 2em;
+  display: flex;
+  flex-direction: row;
+  border-radius: 5px;
 }
 
 .article__image {
   object-fit: contain;
   width: 5rem;
+  padding-right: 25px;
 }
 
 .article__title {
