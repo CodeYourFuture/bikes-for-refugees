@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+  <header>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
@@ -26,7 +26,7 @@
     <link rel="stylesheet" href="styles/style.css" />
 
     <title>Bikes for Refugees | Scotland</title>
-  </head>
+  </header>
 
   <body>
     <div class="header container">
@@ -42,18 +42,20 @@
         >
           <span class="navigation__toggle-icon navbar-toggler-icon"></span>
         </button>
-        <a class="navigation__logo navbar-brand" href="/">
-          <img
+          <a class="navigation__logo navbar-brand" href="/">
+            <img
             src="images/bikes-for-refugees_logo.jpg"
             alt="Logo for Bikes for Refugees Scotland"
-          />
+           />
           <h1 class="sr-only">
             Bikes for Refugees Scotland - Providing donated bikes and
             accessories to refugees and asylum seekers.
           </h1>
+          
         </a>
 
-        <div
+     
+    <nav
           class="navigation__content collapse navbar-collapse"
           id="navbarSupportedContent"
         >
@@ -73,35 +75,38 @@
               <a class="nav-link" href="#">Contact Us</a>
             </li>
           </ul>
-          <button>Donate Now</button>
-        </div>
-      </div>
+          <button class="buttonorange-red">
+            Donate Now
+          </button>
+          
+        </nav>
     </div>
+  </div>  
 
-    <div id="content" class="container">
-      <div class="row">
-        <div class="main col-lg-8">
-          <div class="alert">
+  <main id="content" class="container">
+    <div class="row">
+      <div class="main col-lg-8">
+        <section class="alert">
             You've helped us give<span id="donation-count-alert">72</span> bikes
             to refugees and asylum seekers. <strong>Thank you!</strong>
-          </div>
+        </section>
 
-          <div class="jumbotron">
-            <h2>Bikes for Refugees</h2>
-            <p>
-              Providing donated bikes and accessories to refugees and asylum
-              seekers in Scotland.
-            </p>
-            <hr class="my-4" />
-            <button>Donate a bike today</button>
-            <button>Volunteer</button>
-          </div>
+    <section class="jumbotron">
+      <h2>Bikes for Refugees</h2>
+      <p>
+        Providing donated bikes and accessories to refugees and asylum
+        seekers in Scotland.
+      </p>
+      <hr class="my-4" />
+      <button class="buttonorange-red">Donate a bike today</button>
+      <button class="buttonwhite">Volunteer</button>
+    </section>
 
           <div>
             <h2 class="heading-underline">Learn more</h2>
 
-            <div>
-              <div class="article">
+            <div class="article-container">
+              <article class="article">
                 <div class="article__body">
                   <h3 class="article__title">Why do refugees need bikes?</h3>
                   <p>
@@ -116,9 +121,9 @@
                     </a>
                   </p>
                 </div>
-              </div>
+              </article>
 
-              <div class="article">
+              <article class="article">
                 <div class="article__body">
                   <h3 class="article__title">How can I help?</h3>
                   <p>
@@ -133,7 +138,7 @@
                     </a>
                   </p>
                 </div>
-              </div>
+              </article>
             </div>
           </div>
         </div>
@@ -141,11 +146,11 @@
         <div class="sidebar col-lg-4">
           <h2 class="heading-underline">Upcoming events</h2>
 
-          <div class="article">
+          <article class="article">
             <img
               class="article__image"
-              src="https://raw.githubusercontent.com/Code-Your-Future/syllabus/master/html-css/assets/news-spring-fundraisers.jpg"
-              alt=""
+              src="images/spring-fundraisers_thumbnail.jpg"
+              alt="Spring fundraiser"
             />
             <div class="article__body">
               <h3 class="article__title article__title--sidebar">
@@ -156,26 +161,26 @@
                 Médecins Sans Frontières.
               </p>
             </div>
-          </div>
+          </article>
 
-          <div class="article">
+          <article class="article">
             <img
               class="article__image"
-              src="https://raw.githubusercontent.com/Code-Your-Future/syllabus/master/html-css/assets/bikes-for-refugees-logo.jpg"
-              alt=""
+              src="images/bikes-for-refugees_logo.jpg"
+              alt="Bikes for refugees logo"
             />
             <div class="article__body">
               <h3 class="article__title article__title--sidebar">
                 <a href="#">Bike dropoff event in Edinburgh on May 11</a>
               </h3>
             </div>
-          </div>
+          </article>
 
-          <div class="article">
+          <article class="article">
             <img
               class="article__image"
-              src="https://raw.githubusercontent.com/Code-Your-Future/syllabus/master/html-css/assets/news-cycle.jpg"
-              alt=""
+              src="images/edinburgh-damascus_thumbnail.png"
+              alt="Help us cycle"
             />
             <div class="article__body">
               <h3 class="article__title article__title--sidebar">
@@ -186,7 +191,7 @@
                 to Damascus.
               </p>
             </div>
-          </div>
+          </article>
 
           <a
             href="https://www.facebook.com/BikesforRefugeesScotland/events/?ref=page_internal"
@@ -200,7 +205,7 @@
       <!-- end of row -->
     </div>
 
-    <div class="footer container">
+    <footer class="footer container">
       <div class="row">
         <div class="col-lg-8">
           <p class="text-center">
@@ -209,7 +214,7 @@
           </p>
         </div>
       </div>
-    </div>
+    </footer>
 
     <script
       src="https://code.jquery.com/jquery-3.1.1.slim.min.js"
