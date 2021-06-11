@@ -9,6 +9,7 @@
 html,
 body {
   font-family: "Source Sans Pro", "Helvetica Neue", Arial, sans-serif;
+  font-size:16px;
 }
 
 button {
@@ -33,7 +34,6 @@ button {
   font-weight: 600;
   text-transform: uppercase;
   padding: 0rem 2rem;
-  /* Challenge: can you make the navigation links orange on hover? */
 }
 
 /* Buttons */
@@ -42,10 +42,11 @@ button {
   border:none;
   border-radius:3px;
 }
-.donateButton {
+.buttonOrange {
   background-color:#C05326;
+  color: white;
 }
-.buttonVolunteer {
+.whiteButton {
   background-color: #fff;
   color: #C05326;  
 }
@@ -88,7 +89,7 @@ button:focus{
 /* Jumbotron */
 
 .jumbotron {
-  background-image: url("../images/header.jpg");
+  background-image: url("../images/header-bike.jpg");
   border-radius: 0;
   color: #fff;
 }
@@ -120,11 +121,15 @@ button:focus{
 
 .article {
   margin-bottom: 2em;
+  padding:0.5em;
+  border: 0.3em solid #eeeeee;
+  border-radius: 5px;
 }
 
 .article__image {
   object-fit: contain;
   width: 5rem;
+  padding-right:1em;
 }
 
 .article__title {
@@ -152,6 +157,22 @@ button:focus{
 .article__read-more:last-child {
   margin-bottom: 0;
 }
+aside .article {
+  display: flex;
+}
+
+.articlesFlex {
+  display: flex;
+  justify-content: space-between;
+}
+.articlesFlex article:first-child {
+  margin-right: 0.3rem;
+}
+
+.articlesFlex article:last-child {
+  margin-left: 0.3rem;
+}
+
 
 /* Footer */
 
@@ -165,6 +186,20 @@ button:focus{
   padding-bottom: 2em;
 }
 
+/*Flex boxes*/
+.flex-container {
+  display:flex;
+  justify-content: space-between;
+  padding: 20px 0;
+}
+.flex-container div {
+  padding:30px 10px;
+  background-color: #F0F0F0;
+  border: 2px solid black;
+  font-weight: bold;
+  width:30%;
+  
+}
 /* Media queries */
 
 @media screen and (min-width: 992px) {
