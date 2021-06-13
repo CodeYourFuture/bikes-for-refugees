@@ -13,6 +13,13 @@ body {
 
 button {
   font-family: "Source Sans Pro", "Helvetica Neue", Arial, sans-serif;
+background-color: #c05326;
+color:white;
+}
+#volunteer{
+  font-family: "Source Sans Pro", "Helvetica Neue", Arial, sans-serif;
+  background-color: aliceblue;
+  color: #c05326;
 }
 
 /* Navigation */
@@ -61,13 +68,13 @@ button {
   top: 0;
   height: 100%;
   width: 1px;
-  background: #c05326;
+  background:green;
 }
 
 /* Jumbotron */
 
 .jumbotron {
-  background-image: url("../images/header.jpg");
+  background-image: url("/home/coder/GitHub/bikes-for-refugees/images/header-bike.jpg");
   border-radius: 0;
   color: #fff;
 }
@@ -96,20 +103,47 @@ button {
 }
 
 /* Article */
+.flex-container {
+  display: flex;
+  flex-direction: column;
+  
+}
 
 .article {
   margin-bottom: 2em;
+  position: relative;
+  margin-bottom: 3em;
+  padding-top: 1.5em;
+  padding-bottom: 1.5em;
+  border: 1px solid #dccdc6;
+  border-radius: 0;
+  font-size: 0.85rem;
+  line-height: 1.3em;
+  padding-left: 1.5em;
+  background: transparent;
+  color: #292b2c;
+  flex-direction:row;
+  display: flex;
+  
+  
+  
+   
+
 }
 
 .article__image {
   object-fit: contain;
   width: 5rem;
+  justify-content: center;
+  
 }
+
 
 .article__title {
   margin-bottom: 0.5em;
   font-size: 1rem;
   font-weight: 700;
+  
 }
 
 .article__read-more a {
@@ -132,6 +166,8 @@ button {
   margin-bottom: 0;
 }
 
+ 
+
 /* Footer */
 
 .footer {
@@ -151,3 +187,5 @@ button {
     max-height: 80px;
   }
 }
+
+
