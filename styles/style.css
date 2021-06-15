@@ -9,13 +9,21 @@
 html,
 body {
   font-family: "Source Sans Pro", "Helvetica Neue", Arial, sans-serif;
+  font-size:16px;
 }
 
 button {
   font-family: "Source Sans Pro", "Helvetica Neue", Arial, sans-serif;
+  padding: 0.5rem 1.5rem;
+  border: none;
+  border-radius: 1rem;
+}
+button:hover, button:focus{
+background-color: #934423;
 }
 
 /* Navigation */
+
 
 .navbar-brand > img {
   max-height: 40px;
@@ -28,16 +36,25 @@ button {
 }
 
 .navbar-light .navbar-nav .nav-link {
-  color: #292b2c;
+  color: #121314;
   font-weight: 600;
   text-transform: uppercase;
+  padding-left: 2rem;
+  padding-right: 2rem;
 
   /* Challenge: can you make the navigation links orange on hover? */
 }
 
 /* Buttons */
 
-/* INSERT BUTTON STYLES HERE */
+.button-donate{
+  background-color: #c05326;
+}
+
+.volunteer-button{
+  background-color:white;
+  color:#c05326;
+}
 
 /* Alert */
 
@@ -67,10 +84,11 @@ button {
 /* Jumbotron */
 
 .jumbotron {
-  background-image: url("../images/header.jpg");
+  background-image: url("/home/coder/Documents/GitHub/bikes-for-refugees/images/header-bike.jpg");
   border-radius: 0;
   color: #fff;
 }
+
 
 /* Headings */
 
@@ -95,18 +113,50 @@ button {
   background: #c05326;
 }
 
+.box-container{
+  display: flex;
+  justify-content: space-between;
+}
+
+.box-child{
+  margin: 10px; 
+}
+
+
+
 /* Article */
 
+.sidebar{
+  position: absolute;
+  top: 10%;
+  display: flex;
+  flex-flow: column wrap;
+  padding: 1rem;
+  margin-left: 67%;
+ 
+  
+}
 .article {
+  display: flex;
+  align-content: space-between;
   margin-bottom: 2em;
+  border: 1px solid #dccdc6;
+  padding: 1em;
 }
 
 .article__image {
+  display: inline-block;
+  align-content: flex-start;
   object-fit: contain;
   width: 5rem;
 }
 
+.flex-container{
+padding: 0.5rem;
+
+}
 .article__title {
+  
   margin-bottom: 0.5em;
   font-size: 1rem;
   font-weight: 700;
@@ -151,3 +201,35 @@ button {
     max-height: 80px;
   }
 }
+
+/* responsive button*/
+
+@media screen and (max-width:320px){
+  .jumbotron button{
+   margin-right: 400px;
+   margin-bottom: 10px;
+   background-color: rgb(209, 66, 23);
+   color: rgb(36, 15, 5);
+   font-size: 1.5rem;
+ 
+  }
+  .jumbotron{
+    background-color: orange;
+  }
+  .jumbotron button:hover, :focus{
+    background-color: white;
+  }
+ }
+
+ /*Fluid typography formula*/
+
+@media (min-width: 640px) and (max-width: 1439px) {
+  font-size: calc(16px + (23 - 16) * (100vw - 640px) / (1439- 640)); 
+ }
+
+ /* max font size*/
+
+ @media (min-width: 1440px) {
+   font-size: 23px;
+ }
+
