@@ -34,11 +34,20 @@ button {
 
   /* Challenge: can you make the navigation links orange on hover? */
 }
+.nav-link:hover{
+  background-color:orange;
+}
 
 /* Buttons */
 
 /* INSERT BUTTON STYLES HERE */
-
+.donateStyle{
+  background-color: rgb(224, 154, 22);
+}
+.volunteerStyle{
+  color: #c05326;
+  background-color:#fff;
+}
 /* Alert */
 
 .alert {
