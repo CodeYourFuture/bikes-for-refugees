@@ -38,7 +38,9 @@ button {
 /* Buttons */
 
 /* INSERT BUTTON STYLES HERE */
-
+button:hover, button:focus {
+  background-color: #934423 ;
+}
 /* Alert */
 
 .alert {
