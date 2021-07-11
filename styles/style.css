@@ -13,8 +13,14 @@ body {
 
 button {
   font-family: "Source Sans Pro", "Helvetica Neue", Arial, sans-serif;
+  padding: 1.2em;
+  border: none;
+  border-radius: 0.4em;
 }
 
+button:hover, button:focus {
+ background-color: #0fe444;
+}
 /* Navigation */
 
 .navbar-brand > img {
@@ -31,12 +37,24 @@ button {
   color: #292b2c;
   font-weight: 600;
   text-transform: uppercase;
+  padding-left: 2em;
+  padding-right: 2em;
+
 
   /* Challenge: can you make the navigation links orange on hover? */
 }
+.nav-link:hover, .nav-link:focus{
+  background-color: orange;
 
+}
 /* Buttons */
-
+.donate-btn{
+  background-color: #c05326;
+}
+.volunteer{
+  background-color: #c05326;
+  color: #fff;
+}
 /* INSERT BUTTON STYLES HERE */
 
 /* Alert */
