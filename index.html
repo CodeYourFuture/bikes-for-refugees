@@ -29,7 +29,7 @@
   </head>
 
   <body>
-    <div class="header container">
+    <header class="header container">
       <div class="navigation navbar navbar-toggleable-md navbar-light">
         <button
           class="navigation__toggle navbar-toggler navbar-toggler-right"
@@ -53,7 +53,7 @@
           </h1>
         </a>
 
-        <div
+        <nav
           class="navigation__content collapse navbar-collapse"
           id="navbarSupportedContent"
         >
@@ -73,10 +73,10 @@
               <a class="nav-link" href="#">Contact Us</a>
             </li>
           </ul>
-          <button>Donate Now</button>
-        </div>
+          <button class="donate">Donate Now</button>
+        </nav>
       </div>
-    </div>
+    </header>
 
     <div id="content" class="container">
       <div class="row">
@@ -86,22 +86,22 @@
             to refugees and asylum seekers. <strong>Thank you!</strong>
           </div>
 
-          <div class="jumbotron">
+          <article class="jumbotron">
             <h2>Bikes for Refugees</h2>
             <p>
               Providing donated bikes and accessories to refugees and asylum
               seekers in Scotland.
             </p>
             <hr class="my-4" />
-            <button>Donate a bike today</button>
-            <button>Volunteer</button>
-          </div>
+            <button  class="donate">Donate a bike today</button>
+            <button  class="volunteer">Volunteer</button>
+          </article>
 
           <div>
             <h2 class="heading-underline">Learn more</h2>
 
-            <div>
-              <div class="article">
+            <div class="main_article">
+              <article class="article">
                 <div class="article__body">
                   <h3 class="article__title">Why do refugees need bikes?</h3>
                   <p>
@@ -116,9 +116,9 @@
                     </a>
                   </p>
                 </div>
-              </div>
+              </article>
 
-              <div class="article">
+              <article class="article">
                 <div class="article__body">
                   <h3 class="article__title">How can I help?</h3>
                   <p>
@@ -133,18 +133,18 @@
                     </a>
                   </p>
                 </div>
-              </div>
+              </article>
             </div>
           </div>
         </div>
 
-        <div class="sidebar col-lg-4">
+        <aside class="sidebar col-lg-4">
           <h2 class="heading-underline">Upcoming events</h2>
 
-          <div class="article">
+          <article class="article">
             <img
               class="article__image"
-              src="https://raw.githubusercontent.com/Code-Your-Future/syllabus/master/html-css/assets/news-spring-fundraisers.jpg"
+              src="./images/spring-fundraisers_thumbnail.jpg"
               alt=""
             />
             <div class="article__body">
@@ -156,12 +156,12 @@
                 Médecins Sans Frontières.
               </p>
             </div>
-          </div>
+          </article>
 
-          <div class="article">
+          <article class="article">
             <img
               class="article__image"
-              src="https://raw.githubusercontent.com/Code-Your-Future/syllabus/master/html-css/assets/bikes-for-refugees-logo.jpg"
+              src="./images/bikes-for-refugees_logo.jpg"
               alt=""
             />
             <div class="article__body">
@@ -169,12 +169,12 @@
                 <a href="#">Bike dropoff event in Edinburgh on May 11</a>
               </h3>
             </div>
-          </div>
+          </article>
 
-          <div class="article">
+          <article class="article">
             <img
               class="article__image"
-              src="https://raw.githubusercontent.com/Code-Your-Future/syllabus/master/html-css/assets/news-cycle.jpg"
+              src="./images/edinburgh-damascus_thumbnail.png"
               alt=""
             />
             <div class="article__body">
@@ -186,7 +186,7 @@
                 to Damascus.
               </p>
             </div>
-          </div>
+          </article>
 
           <a
             href="https://www.facebook.com/BikesforRefugeesScotland/events/?ref=page_internal"
@@ -195,12 +195,12 @@
             <span class="fa fa-facebook-square"></span>
             All Facebook events
           </a>
-        </div>
+        </aside>
       </div>
       <!-- end of row -->
     </div>
 
-    <div class="footer container">
+    <footer class="footer container">
       <div class="row">
         <div class="col-lg-8">
           <p class="text-center">
@@ -209,7 +209,7 @@
           </p>
         </div>
       </div>
-    </div>
+    </footer>
 
     <script
       src="https://code.jquery.com/jquery-3.1.1.slim.min.js"
