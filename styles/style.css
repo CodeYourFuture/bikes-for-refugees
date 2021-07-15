@@ -9,10 +9,13 @@
 html,
 body {
   font-family: "Source Sans Pro", "Helvetica Neue", Arial, sans-serif;
+  font-size: 16px;
 }
+
 
 button {
   font-family: "Source Sans Pro", "Helvetica Neue", Arial, sans-serif;
+  background-color: #C05326;
 }
 
 /* Navigation */
@@ -32,12 +35,43 @@ button {
   font-weight: 600;
   text-transform: uppercase;
 
+  padding: 0rem 2rem;
+
   /* Challenge: can you make the navigation links orange on hover? */
 }
 
 /* Buttons */
 
+button.orange:hover {
+  background-color: #bb623c;
+}
+button.white {
+  background-color: #fff;
+  color: #C05326;
+}
+
 /* INSERT BUTTON STYLES HERE */
+
+button:hover, 
+button:focus {
+  background-color: #934423;
+}
+
+button {
+  padding: 0.5rem;
+  border: none;
+  border-radius: 2rem;
+}
+
+.jumbotron button{
+  font-size: 75%;
+}
+
+@media screen and (min-width: 330px) {
+  .jumbotron button{
+    font-size: 100%;
+  }
+}
 
 /* Alert */
 
@@ -69,8 +103,26 @@ button {
 .jumbotron {
   background-image: url("../images/header.jpg");
   border-radius: 0;
-  color: #fff;
+  color: rgb(165, 81, 81);
 }
+
+.box-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  }
+
+.box-container .item {
+width: 170px;
+height: 150px;
+background-color: #eceeef;
+margin: 1rem 1rem;
+align-content: center;
+line-height: 150px;
+text-align: center;
+border: 1px solid #6e6e6e;
+}
+
 
 /* Headings */
 
@@ -99,6 +151,10 @@ button {
 
 .article {
   margin-bottom: 2em;
+  padding:0.5em;
+  border: 0.3em solid #eeeeee;
+  border-radius: 5px;
+  justify-content: space-between ;
 }
 
 .article__image {
@@ -146,8 +202,25 @@ button {
 
 /* Media queries */
 
-@media screen and (min-width: 992px) {
+html {
+  font-size: 16px;
+}
+
+@media screen and (min-width: 1440px) {
+  html {
+    font-size: calc (16 + (23-16) * (100vw - 640px) / (1439 - 640));
+  }
+}
+
+@media screen and  (min-width: 992px) {
   .navbar-brand > img {
     max-height: 80px;
   }
 }
+
+@media screen and (min-width: 1440px) {
+  html{
+    font-size: 23px;
+  }
+}
+
