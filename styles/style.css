@@ -36,7 +36,14 @@ button {
 }
 
 /* Buttons */
+.btns-donate{
+  background-color: #c05326;
+}
 
+.btn-vol {
+  background-color:#fff;
+  color:#c05326
+}
 /* INSERT BUTTON STYLES HERE */
 
 /* Alert */
