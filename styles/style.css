@@ -31,6 +31,7 @@ button {
   color: #292b2c;
   font-weight: 600;
   text-transform: uppercase;
+  padding: 2rem;
 
   /* Challenge: can you make the navigation links orange on hover? */
 }
@@ -38,11 +39,17 @@ button {
 /* Buttons */
 .btns-donate{
   background-color: #c05326;
+  border-radius:4px;
+  border:none;
+  padding:.7rem;
 }
 
 .btn-vol {
   background-color:#fff;
-  color:#c05326
+  color:#c05326;
+  border-radius: 4px;
+  border:none;
+  padding:.7rem;
 }
 
 button:hover,
