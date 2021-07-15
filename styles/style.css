@@ -44,6 +44,16 @@ button {
   background-color:#fff;
   color:#c05326
 }
+
+button:hover,
+button:focus {
+  background: #ef7f52;
+}
+
+
+
+
+
 /* INSERT BUTTON STYLES HERE */
 
 /* Alert */
