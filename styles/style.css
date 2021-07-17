@@ -14,6 +14,19 @@ body {
 
 button {
   font-family: "Source Sans Pro", "Helvetica Neue", Arial, sans-serif;
+  padding: 0;
+  border: none;
+  border-radius: 10px;
+  font-size: 8px;
+}
+
+.donate-buttons {
+  background-color: #c05326;
+}
+
+.volunteer-button {
+  background-color: #fff;
+  color: #c05326;
 }
 
 /* Navigation */
@@ -32,6 +45,7 @@ button {
   color: #292b2c;
   font-weight: 600;
   text-transform: uppercase;
+  padding: 0 50px;
 
   /* Challenge: can you make the navigation links orange on hover? */
 }
@@ -177,8 +191,15 @@ button:hover, button:focus {
   }
 }
 
-@media screen and (min-width : 800px) {
-  body {
-    font-size: 3em;
+@media screen and (min-width : 320px) {
+  button {
+    padding: 10px;
+    font-size: 12px;
   }
-}
+} 
+
+/* @media screen and (min-width : 800px) {
+  body {
+    font-size: 2em;
+  }
+} */
