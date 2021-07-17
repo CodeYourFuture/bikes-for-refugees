@@ -14,7 +14,7 @@ body {
 button {
   font-family: "Source Sans Pro", "Helvetica Neue", Arial, sans-serif;
 }
-
+button:hover {background-color:#934423 
 /* Navigation */
 
 .navbar-brand > img {
@@ -71,6 +71,18 @@ button {
   border-radius: 0;
   color: #fff;
 }
+.flex-container {
+  
+  display: flex;
+  justify-content: space-between;
+}
+.flex-items{
+  display:flex;
+  width:25%;
+  border: 2px, blue;
+  height: 100px;
+  justify-content: center;
+  align-items: center;
 
 /* Headings */
 
@@ -149,5 +161,20 @@ button {
 @media screen and (min-width: 992px) {
   .navbar-brand > img {
     max-height: 80px;
+  }
+}
+@media screen and (in-width:320px) {
+  .jumbotron h2 {
+    font-size:35px;
+  }
+}
+
+@mediascreen and (min-width:320) and (max-width: 449px) {
+  .jumbotron h2 {
+    font-size: 35px;
+  }
+  button {
+    padding: 5px 15px;
+    /* font-size: 13px; */
   }
 }
