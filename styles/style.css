@@ -99,10 +99,15 @@ margin-bottom: 1.5rem;
   flex-direction: row;
   justify-content: space-around;
 }
+.flex-container :first-child {
+  background-color: grey;
+}
+.flex-container :last-child{
+  border: 1px solid grey;
+}
 .flex-items{
-  border: 1px solid black;
   padding: 20px;
-  background-color: coral;
+  background-color: rgb(235, 231, 229);
 }
 /* Headings */
 
