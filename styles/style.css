@@ -182,6 +182,14 @@ button:hover, button:focus {
   font-size: 1.2em;
   font-weight: bold;
 }
+/* Trying to change the first box and last box on the web-page */
+.box-container:first-child {
+  background-color: #ddd;
+}
+
+.box-container:last-child {
+  border: 5px solid #ddd;
+}
 
 /* Media queries */
 
