@@ -93,6 +93,17 @@ button:hover, button:focus {
 .jumbotron h2{
   font-size: 28px;
 }
+.flex-container{
+  display: flex;
+margin-bottom: 1.5rem;
+  flex-direction: row;
+  justify-content: space-around;
+}
+.flex-items{
+  border: 1px solid black;
+  padding: 20px;
+  background-color: coral;
+}
 /* Headings */
 
 .heading-underline {
