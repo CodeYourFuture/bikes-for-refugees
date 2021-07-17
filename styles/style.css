@@ -9,6 +9,7 @@
 html,
 body {
   font-family: "Source Sans Pro", "Helvetica Neue", Arial, sans-serif;
+  font-size: 12px;
 }
 
 button {
@@ -146,10 +147,38 @@ button:hover, button:focus {
   padding-bottom: 2em;
 }
 
+.box-container {
+  display: flex;
+  /* border: 1px solid; */
+  justify-content: space-between;
+}
+
+.box {
+  display: flex;
+  border: 1px solid;
+  margin: 5px;
+  /* padding: 40px 10px; */
+  width: 120px;
+  height: 120px;
+  /* text-align: center; */
+  /* vertical-align: middle; */
+  justify-content: center;
+  align-items: center;
+  background-color: lightgrey;
+  font-size: 1.2em;
+  font-weight: bold;
+}
+
 /* Media queries */
 
 @media screen and (min-width: 992px) {
   .navbar-brand > img {
     max-height: 80px;
+  }
+}
+
+@media screen and (min-width : 800px) {
+  body {
+    font-size: 3em;
   }
 }
