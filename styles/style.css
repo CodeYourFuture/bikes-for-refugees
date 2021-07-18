@@ -42,6 +42,7 @@ button {
   border-radius:4px;
   border:none;
   padding:.7rem;
+  color:white
 }
 
 .btn-vol {
@@ -91,7 +92,7 @@ button:focus {
 /* Jumbotron */
 
 .jumbotron {
-  background-image: url("../images/header.jpg");
+  background-image: url("../images/head.jpg");
   border-radius: 0;
   color: #fff;
 }
