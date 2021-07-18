@@ -3,7 +3,8 @@
  *
  * Module: HTML/CSS
  * Lesson: 1,2
- * Class: Scotland 2017
+ * Class: West Midlands Class 3
+ * Name: Maria Chira 2021
  */
 
 html,
@@ -11,11 +12,23 @@ body {
   font-family: "Source Sans Pro", "Helvetica Neue", Arial, sans-serif;
 }
 
+
+/* -----------------------------------------Exercise: -----------------------------------
+- use padding property to add more space inside all buttons.
+- use border property to remove the border from all the buttons.
+- use border-radius property to make the corners of the buttons rounded. */
 button {
   font-family: "Source Sans Pro", "Helvetica Neue", Arial, sans-serif;
+  padding: 5px;
+  border: none;
+  border-radius: 5px;
+
 }
 
 /* Navigation */
+nav{
+  width: 100%;
+}
 
 .navbar-brand > img {
   max-height: 40px;
@@ -35,9 +48,36 @@ button {
   /* Challenge: can you make the navigation links orange on hover? */
 }
 
+/* Exercise: Adding  more horizontal space inside the navigation links in the header using padding property */
+
+.navbar-toggleable-md .navbar-nav .nav-link{
+  padding: 0 20px;
+}
+
+
 /* Buttons */
 
-/* INSERT BUTTON STYLES HERE */
+/*---------------------------Exercise: BUTTON STYLES-------------------------- */
+
+/*Exercise: Changing the color of the text and background */
+.button-donate{
+  background-color: #c05326;
+  color: white;
+}
+
+.jumbotron button:last-child {
+  background-color:#fff;
+  color: #c05326;
+}
+
+/* Exercise: Changing the color of the buttons when in hover and focus state */
+button:focus,
+button:hover,
+.jumbotron button:last-child:focus,
+.jumbotron button:last-child:hover {
+  background-color: #934423;
+}
+
 
 /* Alert */
 
@@ -67,17 +107,20 @@ button {
 /* Jumbotron */
 
 .jumbotron {
-  background-image: url("../images/header.jpg");
-  border-radius: 0;
-  color: #fff;
+  background-image: url("../images/header-bike.jpg");
+  color:#fff
 }
 
 /* Headings */
 
+.main-heading{
+  font-size: 34px;
+}
+
 .heading-underline {
   position: relative;
-  margin-bottom: 2em;
-  padding-bottom: 0.5em;
+  margin: 2em 0;
+  padding: 0.5em;
   border-bottom: 1px solid #dccdc6;
   font-size: 1rem;
   font-weight: 600;
@@ -95,15 +138,53 @@ button {
   background: #c05326;
 }
 
+/* <!-- Exercise:Continue editing the "Bike for refugees" website by adding 3 boxes below Jumbotron, and use Flexbox to arrange them  --> */
+
+.container-item{
+  border: 1px solid rgb(168,168,168);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 180px;
+  height: 160px;
+  background-color: rgb(238,238,238);
+  color: black;
+  margin-bottom: 10px;;
+ 
+}
+.container{
+  display:flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+/* Exercise: Use the :first-child and the :last-child to give the left box a grey background (#ddd) and the right box a grey border (1px solid #ddd). */
+.container-item:first-child{
+  background-color: #ddd;
+}
+
+.container-item:last-child{
+  border: 1px solid #ddd;
+}
+
 /* Article */
 
-.article {
+
+/* Exercise: Creating boxes for each individual text piece + using flexbox to position the text piece in the middle of its box. */
+article {
   margin-bottom: 2em;
+  border: 2px solid rgb(168,168,168);
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .article__image {
   object-fit: contain;
   width: 5rem;
+  margin-right: 10px;
 }
 
 .article__title {
@@ -132,6 +213,15 @@ button {
   margin-bottom: 0;
 }
 
+
+.article-container{
+  display: flex;
+  justify-content: space-between;
+}
+
+.article-main-section {
+  width:48%;
+}
 /* Footer */
 
 .footer {
@@ -149,5 +239,18 @@ button {
 @media screen and (min-width: 992px) {
   .navbar-brand > img {
     max-height: 80px;
+  }
+}
+
+/* Exercise: Reduce the size of the "Bikes for Refugees" text so that it fits on a small screen (320px). But make sure it increases in size on larger screens. */
+@media screen and (max-width: 320px) {
+  .main-heading {
+    font-size: 25px;
+  }
+
+/* Exercise:Adjusting the size of the buttons in the jumbotron in order to make them fit on the same line when the viewport is smaller than 320px wide. */
+  .jumbotron button {
+    font-size: 9px;
+    padding:10px;
   }
 }
