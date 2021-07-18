@@ -96,6 +96,18 @@ button:focus {
   color: #fff;
 }
 
+.flexbox-container {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  flex-wrap: wrap;
+  margin-bottom: 20px;
+}
+.items {
+  padding: 20px 10px 20px 10px;
+  text-align: center;
+}
+
 /* Headings */
 
 .heading-underline {
