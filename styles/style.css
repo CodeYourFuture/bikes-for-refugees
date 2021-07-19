@@ -88,10 +88,8 @@ button:hover, button:focus {
 /* Jumbotron */
 
 .jumbotron {
+ background-image:url('../images/header-bike.jpg');
   color:white;
-  background-image: url("images/header-bike.jpg");
-  
-
 }
 .jumbotron h2{
   font-size: 28px;
