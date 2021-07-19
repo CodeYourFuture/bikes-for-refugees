@@ -92,22 +92,45 @@ button:focus {
 /* Jumbotron */
 
 .jumbotron {
-  background-image: url("../images/head.jpg");
+  background-image: url("../images/header-bike.jpg");
   border-radius: 0;
   color: #fff;
 }
 
-.flexbox-container {
-  display: flex;
-  justify-content: space-between;
-  width: 100%;
-  flex-wrap: wrap;
-  margin-bottom: 20px;
+/*added flexbox to 'questions' section*/
+.questions-flex-container {
+display: flex;
+justify-content:space-between;
+flex-direction: row;
+width: 100%;
+
 }
-.items {
-  padding: 20px 10px 20px 10px;
-  text-align: center;
+
+.questions-flex-container:first-child {
+
 }
+.questions-flex-items{
+padding:5px;
+border: 1px solid #c05326;
+border-radius: 4px;
+width: 47%;
+}
+
+
+/*flexbox for the aside*/
+
+.flex-container {
+  display:flex;
+  flex-direction: column;
+}
+
+.events-flex-items {
+  border-style:solid;
+  padding: 20px;
+  border: 1px solid #c05326;
+
+}
+
 
 /* Headings */
 
@@ -135,12 +158,14 @@ button:focus {
 /* Article */
 
 .article {
-  margin-bottom: 2em;
+  margin-bottom: 2em; 
+  border:1px;
 }
 
 .article__image {
   object-fit: contain;
   width: 5rem;
+  /*padding-left:20px;*/
 }
 
 .article__title {
