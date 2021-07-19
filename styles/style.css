@@ -131,18 +131,19 @@ width: 49%;
   flex-direction: column;
 }
 .flex-container article {
-  display: flex;
+display: flex;
 border: 5px solid rgb(255, 0, 183);
-align-items: row;
-
-
-
 }
+
+
 .events-flex-items {
   border-style:solid;
-  padding: 20px 20px 20px 20px;
+  /*padding: 20px 20px 20px 20px;*/
   border: 1px solid #c05326;
-  height: 50%;
+  /*height: 50%;*/
+  max-height: 170px;
+  display: flex;
+
 
 
 }
