@@ -9,24 +9,7 @@
 html,
 body {
   font-family: "Source Sans Pro", "Helvetica Neue", Arial, sans-serif;
-  font-size: 12px;
-}
-
-button {
-  font-family: "Source Sans Pro", "Helvetica Neue", Arial, sans-serif;
-  padding: 0;
-  border: none;
-  border-radius: 10px;
-  font-size: 8px;
-}
-
-.donate-buttons {
-  background-color: #c05326;
-}
-
-.volunteer-button {
-  background-color: #fff;
-  color: #c05326;
+  font-size: 14px;
 }
 
 /* Navigation */
@@ -45,7 +28,7 @@ button {
   color: #292b2c;
   font-weight: 600;
   text-transform: uppercase;
-  padding: 0 50px;
+  padding: 0 10px;
 
   /* Challenge: can you make the navigation links orange on hover? */
 }
@@ -56,6 +39,25 @@ button {
 button:hover, button:focus {
   background-color: #934423 ;
 }
+
+button {
+  font-family: "Source Sans Pro", "Helvetica Neue", Arial, sans-serif;
+  padding: 0;
+  border: none;
+  border-radius: 10px;
+  font-size: 1em;
+}
+
+.donate-buttons {
+  background-color: #c05326;
+  color: #fff;
+}
+
+.volunteer-button {
+  background-color: #fff;
+  color: #c05326;
+}
+
 /* Alert */
 
 .alert {
@@ -84,7 +86,7 @@ button:hover, button:focus {
 /* Jumbotron */
 
 .jumbotron {
-  background-image: url("../images/header.jpg");
+  background-image: url("../images/header-bike.jpg");
   border-radius: 0;
   color: #fff;
 }
