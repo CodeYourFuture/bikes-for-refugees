@@ -13,6 +13,20 @@ body {
 
 button {
   font-family: "Source Sans Pro", "Helvetica Neue", Arial, sans-serif;
+  background: #c05326;
+  color: white;
+  padding: 0.5em;
+  border-radius: 0.2em;
+  border-style: none;
+  font-size: 1.2em;
+}
+.volunteer-button {
+  background: white;
+  color: #c05326;
+  padding: 0.5em;
+  border-radius: 0.2em;
+  border-style: none;
+  font-size: 1.2em;
 }
 
 /* Navigation */
@@ -46,7 +60,7 @@ button {
   margin-bottom: 3em;
   padding-top: 1.5em;
   padding-bottom: 1.5em;
-  border: 1px solid #dccdc6;
+  border: 1px solid rgb(223, 221, 221);
   border-radius: 0;
   font-size: 0.85rem;
   line-height: 1.3em;
@@ -67,7 +81,7 @@ button {
 /* Jumbotron */
 
 .jumbotron {
-  background-image: url("../images/header.jpg");
+  background-image: url("/images/header-bike.jpg");
   border-radius: 0;
   color: #fff;
 }
@@ -99,11 +113,23 @@ button {
 
 .article {
   margin-bottom: 2em;
+  border: 0.1em solid rgb(223, 221, 221);
+  border-width: 0.1em;
+  border-radius: 0.3em;
+  padding: 1em;
+  margin: 0.5em;
+  display: flex;
+}
+aside .article {
+  width: 23em;
+  padding-left: 0em;
+  margin-bottom: 2.1em;
 }
 
 .article__image {
   object-fit: contain;
   width: 5rem;
+  margin-right: 1em;
 }
 
 .article__title {
@@ -131,6 +157,9 @@ button {
 .article__read-more:last-child {
   margin-bottom: 0;
 }
+.article-container {
+  display: flex;
+}
 
 /* Footer */
 
@@ -149,5 +178,11 @@ button {
 @media screen and (min-width: 992px) {
   .navbar-brand > img {
     max-height: 80px;
+  }
+}
+@media screen and (max-width: 320px) {
+  .jumbotron,
+  h2 {
+    font-size: 1px;
   }
 }
