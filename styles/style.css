@@ -13,8 +13,14 @@ body {
 
 button {
   font-family: "Source Sans Pro", "Helvetica Neue", Arial, sans-serif;
+  padding: 0.2em;
+  border: none;
+  border-radius: 0.2em;
 }
 
+button:hover, button:focus {
+ background-color: #0fe444;
+}
 /* Navigation */
 
 .navbar-brand > img {
@@ -31,12 +37,27 @@ button {
   color: #292b2c;
   font-weight: 600;
   text-transform: uppercase;
+  padding-left: 2em;
+  padding-right: 2em;
+
 
   /* Challenge: can you make the navigation links orange on hover? */
 }
+.nav-link:hover, .nav-link:focus{
+  background-color: orange;
 
+}
 /* Buttons */
-
+.donate-btn{
+  background-color: #c05326;
+  color: rgb(231, 225, 225);
+  padding: 0.5em;
+}
+.volunteer{
+  background-color: rgb(248, 244, 244);
+  color: #c05326;
+  padding: 0.5em;
+}
 /* INSERT BUTTON STYLES HERE */
 
 /* Alert */
@@ -67,11 +88,29 @@ button {
 /* Jumbotron */
 
 .jumbotron {
-  background-image: url("../images/header.jpg");
-  border-radius: 0;
-  color: #fff;
+ background-image:url('../images/header-bike.jpg');
+  color:white;
 }
-
+.jumbotron h2{
+  font-size: 28px;
+}
+/* inclass assignment buttons */
+.flex-container{
+  display: flex;
+  margin-bottom: 1.5rem;
+  flex-direction: row;
+  justify-content: space-around;
+}
+.flex-container :first-child {
+  background-color: grey;
+}
+.flex-container :last-child{
+  border: 1px solid grey;
+}
+.flex-items{
+  padding: 20px;
+  background-color: rgb(235, 231, 229);
+}
 /* Headings */
 
 .heading-underline {
@@ -98,7 +137,10 @@ button {
 /* Article */
 
 .article {
-  margin-bottom: 2em;
+  margin: 1em;
+  display: flex;
+  border: 1px solid #dccdc6;
+  border-radius: 0.4em;
 }
 
 .article__image {
@@ -110,6 +152,10 @@ button {
   margin-bottom: 0.5em;
   font-size: 1rem;
   font-weight: 700;
+}
+.article__body{
+  padding: 0.5em;
+  margin: 0.3em;
 }
 
 .article__read-more a {
@@ -131,7 +177,10 @@ button {
 .article__read-more:last-child {
   margin-bottom: 0;
 }
-
+.bottom-container{
+  display: flex;
+  flex-direction: row;
+}
 /* Footer */
 
 .footer {
@@ -150,4 +199,10 @@ button {
   .navbar-brand > img {
     max-height: 80px;
   }
+}
+@media screen and (min-width:320px){
+  .jumbotron h2{
+    font-size: 35px;
+  }
+
 }
