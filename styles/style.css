@@ -44,7 +44,7 @@ button {
   font-family: "Source Sans Pro", "Helvetica Neue", Arial, sans-serif;
   padding: 0;
   border: none;
-  border-radius: 10px;
+  border-radius: 5px;
   font-size: 1em;
 }
 
@@ -167,6 +167,7 @@ button {
   display: flex;
   /* border: 1px solid; */
   justify-content: space-between;
+  display: none;
 }
 
 .box {
@@ -183,6 +184,7 @@ button {
   background-color: lightgrey;
   font-size: 1.2em;
   font-weight: bold;
+  display: none;
 }
 /* Trying to change the first box and last box on the web-page */
 .box-container:first-child {
