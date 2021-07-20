@@ -10,6 +10,7 @@ html,
 body {
   font-family: "Source Sans Pro", "Helvetica Neue", Arial, sans-serif;
   font-size: 14px;
+  width: 100vw;
 }
 
 /* Navigation */
@@ -114,10 +115,48 @@ button {
   background: #c05326;
 }
 
+.container {
+  width: 100%;
+}
+
+.row {
+  display: flex;
+  width: 100%;
+}
+
+.main {
+  width: 83%;
+}
+
+/* Main content */
+
+.learn_more_content {
+  display: flex;
+  width: 100%;
+  justify-content: space-around;
+}
+
+.article__body{
+  width: 100%;
+}
+
+/* Aside content */
+
+.sidebar {
+  min-width: 17%;
+}
+
+section>article>.upcoming_events_content {
+  min-width: 100%;
+}
+
 /* Article */
 
 .article {
+  display: flex;
   margin-bottom: 2em;
+  border: 1px solid #ccc;
+  min-width: 40%;
 }
 
 .article__image {
