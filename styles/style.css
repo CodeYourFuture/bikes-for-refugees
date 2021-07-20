@@ -36,8 +36,22 @@ button {
 }
 
 /* Buttons */
+.button--primary {
+  color: white;
+  background-color: orangered;
+  border: none;
+  border-radius: 5px;
+}
 
-/* INSERT BUTTON STYLES HERE */
+.button--secondary {
+  color: orangered;
+  background-color: white;
+  border: none;
+  border-radius: 5px;
+}
+.button {
+  font-size: 16px;
+}
 
 /* Alert */
 
@@ -156,7 +170,7 @@ button {
   .jumbotron h2 {
     font-size: 1.7rem;
   }
-  .jumbotron button {
+  /* .jumbotron button {
     font-size: 0.5rem;
-  }
+  } */
 }
