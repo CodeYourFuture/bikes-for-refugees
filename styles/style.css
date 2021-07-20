@@ -151,3 +151,12 @@ button {
     max-height: 80px;
   }
 }
+
+@media screen and (min-width: 320px) {
+  .jumbotron h2 {
+    font-size: 1.7rem;
+  }
+  .jumbotron button {
+    font-size: 0.5rem;
+  }
+}
