@@ -36,8 +36,22 @@ button {
 }
 
 /* Buttons */
+.button--primary {
+  color: white;
+  background-color: orangered;
+  border: none;
+  border-radius: 5px;
+}
 
-/* INSERT BUTTON STYLES HERE */
+.button--secondary {
+  color: orangered;
+  background-color: white;
+  border: none;
+  border-radius: 5px;
+}
+.button {
+  font-size: 16px;
+}
 
 /* Alert */
 
@@ -67,7 +81,7 @@ button {
 /* Jumbotron */
 
 .jumbotron {
-  background-image: url("../images/header.jpg");
+  background-image: url("../images/header-bike.jpg");
   border-radius: 0;
   color: #fff;
 }
@@ -96,11 +110,26 @@ button {
 }
 
 /* Article */
+.articles {
+  display: flex;
+}
 
 .article {
   margin-bottom: 2em;
+  padding: 15px 10px;
+  border: 1px solid lightgrey;
 }
 
+.article:nth-child(odd) {
+  margin-right: 10px;
+}
+
+.article__event {
+  display: flex;
+  border: 1px solid lightgrey;
+  padding: 15px 10px;
+  margin: 40px 0;
+}
 .article__image {
   object-fit: contain;
   width: 5rem;
@@ -150,4 +179,13 @@ button {
   .navbar-brand > img {
     max-height: 80px;
   }
+}
+
+@media screen and (min-width: 320px) {
+  .jumbotron h2 {
+    font-size: 1.7rem;
+  }
+  /* .jumbotron button {
+    font-size: 0.5rem;
+  } */
 }
