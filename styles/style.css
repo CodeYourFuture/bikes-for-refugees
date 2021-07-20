@@ -110,11 +110,26 @@ button {
 }
 
 /* Article */
+.articles {
+  display: flex;
+}
 
 .article {
   margin-bottom: 2em;
+  padding: 15px 10px;
+  border: 1px solid lightgrey;
 }
 
+.article:nth-child(odd) {
+  margin-right: 10px;
+}
+
+.article__event {
+  display: flex;
+  border: 1px solid lightgrey;
+  padding: 15px 10px;
+  margin: 40px 0;
+}
 .article__image {
   object-fit: contain;
   width: 5rem;
