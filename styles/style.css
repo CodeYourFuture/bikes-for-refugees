@@ -133,11 +133,11 @@ button {
 .learn_more_content {
   display: flex;
   width: 100%;
-  justify-content: space-around;
+  justify-content: space-between;
 }
 
 .article__body{
-  width: 100%;
+  padding: 15px;
 }
 
 /* Aside content */
@@ -156,9 +156,11 @@ section>article>.upcoming_events_content {
   display: flex;
   margin-bottom: 2em;
   border: 1px solid #ccc;
-  min-width: 40%;
+  /* min-width: 40%; */
 }
-
+.learn_more_content .article {
+  width: 48%;
+}
 .article__image {
   object-fit: contain;
   width: 5rem;
