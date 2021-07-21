@@ -3,7 +3,7 @@
  *
  * Module: HTML/CSS
  * Lesson: 1,2
- * Class: Scotland 2017
+ * Class: West midlands 2021
  */
 
 html,
@@ -13,6 +13,10 @@ body {
 
 button {
   font-family: "Source Sans Pro", "Helvetica Neue", Arial, sans-serif;
+}
+
+.jumbotron h2 {
+  font-size: 26px;
 }
 
 /* Navigation */
@@ -31,13 +35,51 @@ button {
   color: #292b2c;
   font-weight: 600;
   text-transform: uppercase;
-
+  transition: 0.3s;
+}
   /* Challenge: can you make the navigation links orange on hover? */
+
+
+.navbar-light .navbar-nav .nav-link:hover, 
+.navbar-light .navbar-nav .nav-link:focus {
+  color: orange;
+  transition: 0.3s;
 }
 
 /* Buttons */
 
-/* INSERT BUTTON STYLES HERE */
+button.donate, .donate_now {
+  background-color: #c05326;
+  color: #fff;
+  transition: 0.3s;
+}
+button.volunteer {
+  background-color: #fff;
+  color: #c05326;
+  transition: 0.3s;
+}
+button:hover,
+button:focus {
+  background-color: #934423;
+  color: white;
+  cursor: pointer;
+  border: 1px solid black;
+  transition: 0.3s;
+}
+
+button.donate:hover, button.donate_now:hover, 
+button.donate:focus, button.donate_now:focus {
+  background-color: white;
+  color: black;
+  transition: 0.3s;
+}
+
+button {
+  border-radius: 5px;
+  border: none;
+  max-width: 100%;
+  min-height: 40px;
+}
 
 /* Alert */
 
@@ -67,7 +109,7 @@ button {
 /* Jumbotron */
 
 .jumbotron {
-  background-image: url("../images/header.jpg");
+  background-image: url("../images/header-bike.jpg");
   border-radius: 0;
   color: #fff;
 }
@@ -97,8 +139,25 @@ button {
 
 /* Article */
 
+.mid_section {
+  display: flex;
+  justify-content: space-between;
+}
+
+.mid_section .article {
+   max-width: 49%;
+}
+
 .article {
+  display: flex;
   margin-bottom: 2em;
+  border: 1px solid #dccdc6;
+  border-radius: 5px;
+ 
+}
+
+.article div {
+  padding: 15px;
 }
 
 .article__image {
@@ -150,4 +209,31 @@ button {
   .navbar-brand > img {
     max-height: 80px;
   }
+}
+
+@media screen and (min-width: 320px) {
+  .jumbotron h2 {
+    font-size: 35px;
+  }
+}
+
+@media screen and (max-width: 323px) {
+  .jumbotron button{
+    font-size: 13px;
+    padding: 5px;
+  }
+
+  /*button.donate {
+    
+    background-color: #fff;
+    color: #c05326;
+  }
+  button.volunteer {
+    background-color: #c05326;
+    color: #fff;
+  }*/
+
+  /*.threeboxes button {
+    font-size: 12px;
+  }*/
 }
