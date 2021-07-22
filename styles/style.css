@@ -15,6 +15,20 @@ button {
   font-family: "Source Sans Pro", "Helvetica Neue", Arial, sans-serif;
 }
 
+.button1 {
+  background-color: #e67919;
+  color: #fff;
+}
+
+.button2 {
+  background-color: #fff;
+  color: #e67919;
+}
+
+.button3 {
+  background-color: #e67919;
+  color: #fff;
+}
 /* Navigation */
 
 .navbar-brand > img {
@@ -43,6 +57,7 @@ button {
 
 .alert {
   position: relative;
+ 
   margin-bottom: 3em;
   padding-top: 1.5em;
   padding-bottom: 1.5em;
@@ -67,7 +82,7 @@ button {
 /* Jumbotron */
 
 .jumbotron {
-  background-image: url("../images/header.jpg");
+  background-image: url("../images/header-bike.jpg");
   border-radius: 0;
   color: #fff;
 }
@@ -98,15 +113,21 @@ button {
 /* Article */
 
 .article {
+  display: flex;
+  flex-direction: row;
   margin-bottom: 2em;
+  border: 1px solid #d1d1cd;
 }
 
 .article__image {
+  object-position: -10px center;
   object-fit: contain;
   width: 5rem;
 }
 
 .article__title {
+  display: flex;
+  flex-direction: row;
   margin-bottom: 0.5em;
   font-size: 1rem;
   font-weight: 700;
