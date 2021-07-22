@@ -35,9 +35,29 @@ button {
   /* Challenge: can you make the navigation links orange on hover? */
 }
 
+.nav-link {
+  padding-top: 1rem;
+}
+
 /* Buttons */
 
 /* INSERT BUTTON STYLES HERE */
+.btn:hover {
+  background-color: #c05326;
+}
+.donate-now {
+  background-color: #c05326;
+  border-color: #c05326;
+  color: rgb(212, 209, 209);
+  width: 15%;
+  height: 50%;
+}
+
+.donate-bike {
+  background-color: #c05326;
+  border-color: #c05326;
+  color: rgb(212, 209, 209);
+}
 
 /* Alert */
 
@@ -67,7 +87,7 @@ button {
 /* Jumbotron */
 
 .jumbotron {
-  background-image: url("../images/header.jpg");
+  background-image: url("/images/header-bike.jpg");
   border-radius: 0;
   color: #fff;
 }
@@ -110,6 +130,22 @@ button {
   margin-bottom: 0.5em;
   font-size: 1rem;
   font-weight: 700;
+}
+
+.article__body {
+  width: 95%;
+  border: 1px solid rgb(230, 227, 227);
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  padding: 10px;
+
+}
+
+.article__container{
+  display: flex;
+  flex-direction: row;
+  width: 100%;
 }
 
 .article__read-more a {
