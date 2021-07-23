@@ -11,34 +11,106 @@ body {
   font-family: "Source Sans Pro", "Helvetica Neue", Arial, sans-serif;
 }
 
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  border: 1px solid black;
+}
+
+header .logo-links {
+  display: flex;
+  justify-content: space-evenly;
+  border: 1px solid black;
+}
+
+header img {
+  max-height: 80px;
+  width: auto;
+  margin-left: 70px;
+}
+
 button {
   font-family: "Source Sans Pro", "Helvetica Neue", Arial, sans-serif;
+  color: #c05326;
 }
 
-/* Navigation */
-
-.navbar-brand > img {
-  max-height: 40px;
-  width: auto;
+button:hover,
+button:focus {
+  background: #934423;
 }
 
-.navbar-light .navbar-toggler {
-  border: 0;
-  right: 0;
+.navbar-nav,
+.nav-item,
+.nav-link {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  border: 1px solid black;
 }
 
-.navbar-light .navbar-nav .nav-link {
+.nav-item {
+  margin-right: 0px;
+}
+
+.nav-item:first-child {
+  margin-left: 20px;
+  width: 80px;
+}
+
+.nav-item:nth-child(2) {
+  width: 110px;
+}
+
+.nav-item:nth-child(3) {
+  width: 150px;
+}
+
+.navbar-nav {
+  margin-right: 35px;
+}
+
+.nav-link {
   color: #292b2c;
   font-weight: 600;
   text-transform: uppercase;
+  width: 120px;
 
   /* Challenge: can you make the navigation links orange on hover? */
 }
+
+/* .header-container .nav-link:hover {
+  color: #c05326; 
+} */
 
 /* Buttons */
 
 /* INSERT BUTTON STYLES HERE */
 
+.orange-button,
+.navigation__toggle {
+  background-color: #c05326;
+  color: #fff;
+  font-size: 0.8rem;
+  border: none;
+  border-radius: 2px;
+  height: 30px;
+}
+
+.navigation__toggle {
+  border-radius: 4px;
+  height: 30px;
+  width: 100px;
+  margin: 20px 80px 0px 0px;
+  padding: 0px 0px 0px 0px;
+}
+
+.white-button {
+  background-color: #fff;
+  color: #c05326;
+  height: 30px;
+  border-radius: 2px;
+  border: none;
+}
 /* Alert */
 
 .alert {
@@ -67,9 +139,17 @@ button {
 /* Jumbotron */
 
 .jumbotron {
-  background-image: url("../images/header.jpg");
+  background-image: url("../images/header-bike.jpg");
   border-radius: 0;
   color: #fff;
+  font-size: 0.5rem;
+}
+
+.jumbotron p {
+  font-size: 0.8rem;
+}
+
+/* font-size: ;
 }
 
 /* Headings */
@@ -97,8 +177,23 @@ button {
 
 /* Article */
 
-.article {
+.articles {
+  display: flex;
+}
+
+.article-one {
   margin-bottom: 2em;
+  border: 0.5px solid #dccdc6;
+  padding: 10px;
+  border-radius: 4px;
+}
+
+.article-two {
+  margin-bottom: 2em;
+  border: 0.5px solid #dccdc6;
+  padding: 10px;
+  border-radius: 4px;
+  margin-left: 20px;
 }
 
 .article__image {
@@ -108,14 +203,18 @@ button {
 
 .article__title {
   margin-bottom: 0.5em;
-  font-size: 1rem;
-  font-weight: 700;
+  font-size: 0.8rem;
+  font-weight: 900;
 }
 
 .article__read-more a {
   font-size: 0.85em;
   font-weight: 700;
   text-decoration: uppercase;
+}
+
+.art-content {
+  font-size: 0.8rem;
 }
 
 .article__read-more a:hover,
@@ -130,6 +229,29 @@ button {
 
 .article__read-more:last-child {
   margin-bottom: 0;
+}
+
+/* Sidebar */
+
+.sidebar {
+  display: flex;
+  flex-direction: column;
+}
+
+.sidebar-article {
+  display: flex;
+  padding: 10px 10px 10px 0px;
+  border: 1px solid #dccdc6;
+  margin-bottom: 40px;
+  border-radius: 4px;
+}
+
+.sidebar-article img {
+  margin-right: 10px;
+}
+
+.article__body p {
+  font-size: 0.8rem;
 }
 
 /* Footer */
@@ -149,5 +271,12 @@ button {
 @media screen and (min-width: 992px) {
   .navbar-brand > img {
     max-height: 80px;
+  }
+}
+
+@media screen and (min-width: 310px) {
+  .orange-button,
+  .white-button {
+    font-size: 0.8rem;
   }
 }
