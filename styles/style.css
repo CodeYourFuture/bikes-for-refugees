@@ -14,13 +14,11 @@ body {
 .header-container {
   display: flex;
   justify-content: space-between;
-  border: 1px solid black;
 }
 
 header .logo-links {
   display: flex;
   justify-content: space-evenly;
-  border: 1px solid black;
 }
 
 header img {
@@ -45,7 +43,6 @@ button:focus {
   display: flex;
   flex-direction: row;
   align-items: center;
-  border: 1px solid black;
 }
 
 .nav-item {
@@ -74,13 +71,17 @@ button:focus {
   font-weight: 600;
   text-transform: uppercase;
   width: 120px;
-
-  /* Challenge: can you make the navigation links orange on hover? */
 }
 
-/* .header-container .nav-link:hover {
-  color: #c05326; 
-} */
+.header-container .nav-link:hover {
+  color: #c05326;
+}
+
+.hamburger {
+  display: none;
+  height: 1.7rem;
+  width: 1.7rem;
+}
 
 /* Buttons */
 
@@ -147,9 +148,6 @@ button:focus {
 
 .jumbotron p {
   font-size: 0.8rem;
-}
-
-/* font-size: ;
 }
 
 /* Headings */
@@ -278,5 +276,20 @@ button:focus {
   .orange-button,
   .white-button {
     font-size: 0.8rem;
+  }
+}
+
+@media screen and (max-width: 870px) {
+  .navbar-nav {
+    display: none;
+  }
+
+  .navigation__toggle {
+    margin-right: 110px;
+  }
+
+  .hamburger {
+    display: inline-block;
+    margin: 20px 70px 0px 0px;
   }
 }
