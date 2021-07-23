@@ -1,9 +1,10 @@
 # bikes-for-refugees
+
 Exercise for HTML & CSS - lesson 1
 
 ### Set up
 
-**Clone** this repository onto your machine. Remember [the git cheat-sheet]( https://syllabus.codeyourfuture.io/git/desktop/cheatsheet#i-want-to-get-code-from-a-repo-onto-my-computer-cloning) if you get stuck!
+**Clone** this repository onto your machine. Remember [the git cheat-sheet](https://syllabus.codeyourfuture.io/git/desktop/cheatsheet#i-want-to-get-code-from-a-repo-onto-my-computer-cloning) if you get stuck!
 
 Open up the repository you just cloned (again, check the [git cheat-sheet](https://syllabus.codeyourfuture.io/git/desktop/cheatsheet#i-want-to-open-visual-studio-code-with-code-from-my-repository) if you need help!)
 
