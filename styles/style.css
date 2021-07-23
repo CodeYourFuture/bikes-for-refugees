@@ -29,7 +29,7 @@ button {
 
 .navbar-light .navbar-nav .nav-link {
   color: #292b2c;
-  font-weight: 600;
+  font-weight: 650;
   text-transform: uppercase;
 
   /* Challenge: can you make the navigation links orange on hover? */
@@ -38,6 +38,21 @@ button {
 /* Buttons */
 
 /* INSERT BUTTON STYLES HERE */
+.donate {
+  background-color: #c05326;
+  color: rgb(223, 215, 215);
+  border-radius: 5px;
+  box-shadow: none;
+  height: 40px;
+}
+
+.volunteer {
+  background-color: white;
+  color: #c05326;
+  border-radius: 5px;
+  height: 40px;
+}
+
 
 /* Alert */
 
@@ -67,7 +82,7 @@ button {
 /* Jumbotron */
 
 .jumbotron {
-  background-image: url("../images/header.jpg");
+  background-image: url("../images/header-bike.jpg");
   border-radius: 0;
   color: #fff;
 }
@@ -96,14 +111,26 @@ button {
 }
 
 /* Article */
-
+.article-container {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 15px;
+}
 .article {
+  display: flex;
+  /* flex-direction: column; */
   margin-bottom: 2em;
+  border: 2px solid rgb(221, 208, 208);
+  border-radius: 5px;
+  margin: 5px ;
+  padding: 10px;
+  margin-bottom: 30px;
 }
 
 .article__image {
   object-fit: contain;
   width: 5rem;
+  padding-right: 15px;
 }
 
 .article__title {
