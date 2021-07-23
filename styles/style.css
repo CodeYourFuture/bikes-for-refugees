@@ -5,7 +5,6 @@
  * Lesson: 1,2
  * Class: Scotland 2017
  */
-
 html,
 body {
   font-family: "Source Sans Pro", "Helvetica Neue", Arial, sans-serif;
@@ -53,6 +52,7 @@ button {
   background-color: #ffff;
   color: #c05326;
 }
+
 /* Alert */
 
 .alert {
@@ -81,13 +81,29 @@ button {
 /* Jumbotron */
 
 .jumbotron {
-  background-image: url("../images/header.jpg");
+  background-image: url("../images/header-bike.jpg");
   border-radius: 0;
   color: #fff;
 }
 
-/* Headings */
+.cards {
+  border: 1px solid gray;
+  border-radius: 4px;
+  padding: 1rem;
+}
 
+.aside-cards {
+  border: 1px solid gray;
+  border-radius: 4px;
+  padding-top: 1rem;
+  padding-right: 0.5rem;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+/* Headings */
 .heading-underline {
   position: relative;
   margin-bottom: 2em;
@@ -111,6 +127,15 @@ button {
 
 /* Article */
 
+.article-main-wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+
+.article-1 {
+  margin-right: 1rem;
+}
+
 .article {
   margin-bottom: 2em;
 }
@@ -118,6 +143,7 @@ button {
 .article__image {
   object-fit: contain;
   width: 5rem;
+  margin-right: 2em;
 }
 
 .article__title {
@@ -144,6 +170,10 @@ button {
 
 .article__read-more:last-child {
   margin-bottom: 0;
+}
+#content {
+  display: flex;
+  flex-wrap: wrap;
 }
 
 /* Footer */
