@@ -29,7 +29,7 @@ button {
 
 .navbar-light .navbar-nav .nav-link {
   color: #292b2c;
-  font-weight: 600;
+  font-weight: 700;
   text-transform: uppercase;
 
   /* Challenge: can you make the navigation links orange on hover? */
@@ -67,7 +67,7 @@ button {
 /* Jumbotron */
 
 .jumbotron {
-  background-image: url("../images/header.jpg");
+  background-image: url("../images/header-bike.jpg");
   border-radius: 0;
   color: #fff;
 }
