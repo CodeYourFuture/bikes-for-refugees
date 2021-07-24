@@ -9,7 +9,7 @@
 html,
 body {
   font-family: "Source Sans Pro", "Helvetica Neue", Arial, sans-serif;
-  font-size: 10px;
+  font-size: 20px;
 }
 
 button {
@@ -90,13 +90,16 @@ button:hover{
   background-image: url("../images/header-bike.jpg");
   border-radius: 0;
   color: #fff;
+  height: 300px;
+  background-repeat: no-repeat;
 }
+/*
 .buttonClass{
   margin: 1px solid black;
   display: flex;
   justify-content: space-between;
   padding-bottom: 20px;
-}
+}*/
 
 /* Headings */
 
@@ -131,7 +134,7 @@ button:hover{
 
 .article__image {
   object-fit: contain;
-  width: 5rem;
+  width: 6rem;
 }
 
 .article__title {
@@ -174,7 +177,7 @@ button:hover{
 /*style the side icons*/
 .article__image{
   width: 150px;
-  height: 200px;
+  height: 150px;
 }
 
 .article__body{
