@@ -8,10 +8,13 @@
 
 html,
 body {
+  font-size: 12px;
   font-family: "Source Sans Pro", "Helvetica Neue", Arial, sans-serif;
 }
 
+
 button {
+  border-radius: 5px;
   font-family: "Source Sans Pro", "Helvetica Neue", Arial, sans-serif;
 }
 
@@ -39,14 +42,24 @@ button {
 }
 
 /* Buttons */
+button:hover{
+  font-size: 1.2em;
+}
+
 
 /* INSERT BUTTON STYLES HERE */
 .donateStyle{
+  padding-left: 5px;
+  padding-right: 5px;
+
   background-color: rgb(224, 154, 22);
 }
 .volunteerStyle{
   color: #c05326;
   background-color:#fff;
+}
+.navber{
+  padding:0rem 2rem;
 }
 /* Alert */
 
@@ -66,6 +79,7 @@ button {
 .alert:before {
   content: "";
   position: absolute;
+
   left: -1px;
   top: 0;
   height: 100%;
@@ -76,9 +90,16 @@ button {
 /* Jumbotron */
 
 .jumbotron {
-  background-image: url("../images/header.jpg");
+  background-image: url(../images/header-bike.jpg);
   border-radius: 0;
   color: #fff;
+}
+.buttonClass{
+  margin: 1px solid black;
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 20px;
+
 }
 
 /* Headings */
@@ -108,6 +129,8 @@ button {
 
 .article {
   margin-bottom: 2em;
+  display: inline-block;
+  border: 1px solid gray;
 }
 
 .article__image {
@@ -117,12 +140,12 @@ button {
 
 .article__title {
   margin-bottom: 0.5em;
-  font-size: 1rem;
+  font-size: 1.7rem;
   font-weight: 700;
 }
 
 .article__read-more a {
-  font-size: 0.85em;
+  font-size: 0.85emp;
   font-weight: 700;
   text-decoration: uppercase;
 }
@@ -139,6 +162,38 @@ button {
 
 .article__read-more:last-child {
   margin-bottom: 0;
+}
+/*styling learn more boxes*/
+.learn__more{
+  border: 1px solid gray;
+  margin: 10px;
+  padding: 10px;
+
+ }
+ .article__main{
+   display: flex;
+   align-items: flex-start;
+ }
+/*Styling side bar using flex box*/
+.article__image{
+  width: 150px;
+  height: 200px;
+  
+
+}
+.article__body{
+  display: flex;
+  flex-direction: column;
+  align-content: space-around ;
+  justify-content: space-around  ;
+  margin: 15px;
+ 
+}
+.article__bar{
+  border: 1px solid gray;
+  display: flex;
+  margin: 25px;
+  width: 500px;
 }
 
 /* Footer */
@@ -159,4 +214,18 @@ button {
   .navbar-brand > img {
     max-height: 80px;
   }
+}
+@media screen and(min-width: 320px) {
+  .jumbotron button{
+    font-size: 40px;
+    
+  }
+  @media screen and (min-width:320px){
+    .buttonClass{font-size: 12px;}
+  }
+  
+}
+@media screen and (min-width:320px){
+  body{font-size : 25px;}
+  
 }
