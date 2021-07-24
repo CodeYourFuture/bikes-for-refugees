@@ -14,7 +14,8 @@ body {
 
 
 button {
-  border-radius: 5px;
+  border-radius: 5px
+  ;
   font-family: "Source Sans Pro", "Helvetica Neue", Arial, sans-serif;
 }
 
@@ -94,13 +95,15 @@ button:hover{
   border-radius: 0;
   color: #fff;
 }
+/**********Commenting out exercise we did in class***********/
+/*
 .buttonClass{
   margin: 1px solid black;
   display: flex;
   justify-content: space-between;
   padding-bottom: 20px;
 
-}
+}*/
 
 /* Headings */
 
@@ -163,24 +166,25 @@ button:hover{
 .article__read-more:last-child {
   margin-bottom: 0;
 }
-/*styling learn more boxes*/
+/*styling learn more boxes at the bottom of background image*/
 .learn__more{
   border: 1px solid gray;
   margin: 10px;
   padding: 10px;
 
  }
+ /*Using flex property to bring them next to each other*/
  .article__main{
    display: flex;
    align-items: flex-start;
  }
+
 /*Styling side bar using flex box*/
 .article__image{
   width: 150px;
   height: 200px;
-  
-
 }
+/*Styling content inside the side boxes*/
 .article__body{
   display: flex;
   flex-direction: column;
@@ -189,6 +193,7 @@ button:hover{
   margin: 15px;
  
 }
+/*Styling  boxes on right*/
 .article__bar{
   border: 1px solid gray;
   display: flex;
@@ -208,7 +213,7 @@ button:hover{
   padding-bottom: 2em;
 }
 
-/* Media queries */
+/* ***************Media queries***** *********/
 
 @media screen and (min-width: 992px) {
   .navbar-brand > img {
@@ -228,4 +233,7 @@ button:hover{
 @media screen and (min-width:320px){
   body{font-size : 25px;}
   
+}
+
+
 }
