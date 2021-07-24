@@ -35,11 +35,30 @@ button {
   /* Challenge: can you make the navigation links orange on hover? */
 }
 
+
+.navbar-nav mr-auto {
+  padding-left padding-right: 50rem;
+
+}
+
+
 /* Buttons */
 
-/* INSERT BUTTON STYLES HERE */
 button {
-  color: #c05326;
+  border-radius: 5px;
+  border-style: none;
+  color: white;
+  background-color: rgb(221, 98, 53);
+  height: 40px;
+}
+
+.but-vol {
+  color: rgb(221, 98, 53);
+  background-color: white;
+}
+/* INSERT BUTTON STYLES HERE */
+button: hover, button: focus  {
+  background-color: #934423;
 }
 
 /* Alert */
@@ -70,9 +89,29 @@ button {
 /* Jumbotron */
 
 .jumbotron {
-  background-image: url("../images/header.jpg");
+  background-image: url("/images/header-bike.jpg");
   border-radius: 0;
   color: #fff;
+}
+
+.boxes {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 0;
+  margin-bottom: 30px;
+}
+
+.boxes div {
+  display: flex;
+  width: 120px;
+  height: 120px;
+  border: 2px black solid;
+  text-align: center;
+  align-items: center;
+  padding: 20px;
+  background-color: #eceeef;
+  font-weight: bold;
+  
 }
 
 /* Headings */
@@ -102,6 +141,11 @@ button {
 
 .article {
   margin-bottom: 2em;
+  display: flex;
+  flex direction: row;
+  border: 1.5px solid #dccdc6;
+  border-radius: 5px;
+  padding: 5px;
 }
 
 .article__image {
@@ -134,6 +178,14 @@ button {
 .article__read-more:last-child {
   margin-bottom: 0;
 }
+
+.article-box {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+
 
 /* Footer */
 
