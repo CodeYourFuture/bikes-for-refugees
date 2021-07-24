@@ -29,7 +29,7 @@
   </head>
 
   <body>
-    <div class="header container">
+    <header class="header container">
       <div class="navigation navbar navbar-toggleable-md navbar-light">
         <button
           class="navigation__toggle navbar-toggler navbar-toggler-right"
@@ -73,13 +73,13 @@
               <a class="nav-link" href="#">Contact Us</a>
             </li>
           </ul>
-          <button>Donate Now</button>
+          <button class="donateStyle">Donate Now</button>
         </div>
       </div>
-    </div>
+    </header>
 
-    <div id="content" class="container">
-      <div class="row">
+    <main id="content" class="container">
+      <section class="row">
         <div class="main col-lg-8">
           <div class="alert">
             You've helped us give<span id="donation-count-alert">72</span> bikes
@@ -93,16 +93,22 @@
               seekers in Scotland.
             </p>
             <hr class="my-4" />
-            <button>Donate a bike today</button>
-            <button>Volunteer</button>
+            <button class="donateStyle">Donate a bike today</button>
+            <button class="volunteerStyle">Volunteer</button>
           </div>
+          <!--
+          <div class="buttonClass">
+            <button>check Availability</button>
+            <button>Donate Bikes</button>
+            <button>Volunteer with us</button>
+
+          </div>-->
 
           <div>
             <h2 class="heading-underline">Learn more</h2>
 
-            <div>
-              <div class="article">
-                <div class="article__body">
+              <section class="article__main">
+                <div class="learn__more">
                   <h3 class="article__title">Why do refugees need bikes?</h3>
                   <p>
                     Many refugees are placed in housing in areas where there are
@@ -115,11 +121,8 @@
                       Learn more
                     </a>
                   </p>
-                </div>
               </div>
-
-              <div class="article">
-                <div class="article__body">
+                <div class="learn__more">
                   <h3 class="article__title">How can I help?</h3>
                   <p>
                     We need lots of bikes and bike accessories! If you have an
@@ -133,19 +136,19 @@
                     </a>
                   </p>
                 </div>
-              </div>
+              </section>
             </div>
           </div>
-        </div>
+        
 
         <div class="sidebar col-lg-4">
           <h2 class="heading-underline">Upcoming events</h2>
 
-          <div class="article">
+          <div class="article__bar">
             <img
               class="article__image"
-              src="https://raw.githubusercontent.com/Code-Your-Future/syllabus/master/html-css/assets/news-spring-fundraisers.jpg"
-              alt=""
+              src="../images/spring-fundraisers_thumbnail.jpg"
+              alt="spring-fundraisers_thumbnail"
             />
             <div class="article__body">
               <h3 class="article__title article__title--sidebar">
@@ -158,11 +161,11 @@
             </div>
           </div>
 
-          <div class="article">
+          <div class="article__bar">
             <img
               class="article__image"
-              src="https://raw.githubusercontent.com/Code-Your-Future/syllabus/master/html-css/assets/bikes-for-refugees-logo.jpg"
-              alt=""
+              src="../images/bikes-for-refugees_logo.jpg"
+              alt="bikes-for-refugees_logo"
             />
             <div class="article__body">
               <h3 class="article__title article__title--sidebar">
@@ -171,11 +174,11 @@
             </div>
           </div>
 
-          <div class="article">
+          <div class="article__bar">
             <img
               class="article__image"
-              src="https://raw.githubusercontent.com/Code-Your-Future/syllabus/master/html-css/assets/news-cycle.jpg"
-              alt=""
+              src="../images/edinburgh-damascus_thumbnail.png"
+              alt="edinbrugh-damascus_thumbnail"
             />
             <div class="article__body">
               <h3 class="article__title article__title--sidebar">
@@ -196,20 +199,20 @@
             All Facebook events
           </a>
         </div>
-      </div>
+      </section>
       <!-- end of row -->
-    </div>
+    </main>
 
-    <div class="footer container">
-      <div class="row">
+    <footer class="footer container">
+      <section class="row">
         <div class="col-lg-8">
           <p class="text-center">
             Bikes for Refugees Scotland is a volunteer-led project to help
             people explore and make connections with their local communities.
           </p>
         </div>
-      </div>
-    </div>
+      </section>
+    </footer>
 
     <script
       src="https://code.jquery.com/jquery-3.1.1.slim.min.js"
