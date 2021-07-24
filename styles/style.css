@@ -6,116 +6,133 @@
  * Class: Scotland 2017
  */
 
-html,
-body {
-  font-family: "Source Sans Pro", "Helvetica Neue", Arial, sans-serif;
-}
-
-button {
-  font-family: "Source Sans Pro", "Helvetica Neue", Arial, sans-serif;
-}
-button:hover {background-color:#934423 
+ html,
+ body {
+   font-family: "Source Sans Pro", "Helvetica Neue", Arial, sans-serif;
+ }
+ 
+ button {
+   font-family: "Source Sans Pro", "Helvetica Neue", Arial, sans-serif;
+   color: rgb(207, 202, 202);
+   background-color:#c05326; ;
+   font-size:1.2em;
+   border-radius:0.5em;
+   border-style: none;
+ }
 /* Navigation */
-
 .navbar-brand > img {
   max-height: 40px;
   width: auto;
 }
 
-.navbar-light .navbar-toggler {
-  border: 0;
-  right: 0;
-}
-
-.navbar-light .navbar-nav .nav-link {
-  color: #292b2c;
-  font-weight: 600;
-  text-transform: uppercase;
-
-  /* Challenge: can you make the navigation links orange on hover? */
-}
-
-/* Buttons */
-
-/* INSERT BUTTON STYLES HERE */
-
-/* Alert */
-
-.alert {
-  position: relative;
-  margin-bottom: 3em;
-  padding-top: 1.5em;
-  padding-bottom: 1.5em;
-  border: 1px solid #dccdc6;
-  border-radius: 0;
-  font-size: 0.85rem;
-  line-height: 1.3em;
-  background: transparent;
-  color: #292b2c;
-}
-
-.alert:before {
-  content: "";
-  position: absolute;
-  left: -1px;
-  top: 0;
-  height: 100%;
-  width: 1px;
-  background: #c05326;
-}
-
-/* Jumbotron */
-
-.jumbotron {
-  background-image: url("../images/header.jpg");
-  border-radius: 0;
-  color: #fff;
-}
-.flex-container {
-  
+ /* Navigation */
+ .navbar-brand > img {
+   max-height: 80px;
+   width: auto;
+ }
+ 
+ .navbar-light .navbar-toggler {
+   border: 0;
+   right: 0;
+ }
+ 
+ .navbar-light .navbar-nav .nav-link {
+   color: #292b2c;
+   font-weight: 600;
+   text-transform: uppercase;
+   
+   /* Challenge: can you make the navigation links orange on hover? */
+ }
+ .nav-link:hover{
+   background-color:rgb(224, 89, 11) 
+ }
+ /* Buttons */
+ 
+ /* INSERT BUTTON STYLES HERE */
+ .volunteer-button { 
+  font-family: "Source Sans Pro", "Helvetica Neue", Arial, sans-serif;
+  color: #c05326;
+  background-color:white ;
+  border-radius:0.5em;
+ }  
+ /* Alert */
+ 
+ .alert {
+   position: relative;
+   margin-bottom: 3em;
+   padding-top: 1.5em;
+   padding-bottom: 1.5em;
+   border: 1px solid #dccdc6;
+   border-radius: 0;
+   font-size: 1.00rem;
+   line-height: 1.3em;
+   background: transparent;
+   color: #292b2c;
+ }
+ 
+ .alert:before {
+   content: "";
+   position: absolute;
+   left: -1px;
+   top: 0;
+   height: 100%;
+   width: 1px;
+   font-size: 3.00rem;
+   background: #c05326;
+ }
+ 
+ /* Jumbotron */
+ 
+ .jumbotron {
+   background-image: url("../images/header-bike.jpg");
+   border-radius: 0;
+   color: #fff;
+ }
+ 
+ /* Headings */
+ 
+ .heading-underline {
+   position: relative;
+   margin-bottom: 2em;
+   padding-bottom: 0.5em;
+   border-bottom: 1px solid #dccdc6;
+   font-size: 1.2rem;
+   font-weight: 600;
+   text-transform: uppercase;
+ }
+ 
+ .heading-underline:before {
+   content: "";
+   position: absolute;
+   bottom: -1px;
+   left: 0;
+   width: 25%;
+   height: 1px;
+   max-width: 100px;
+   background: #c05326;
+ }
+ 
+ /* Article */
+ 
+ .article {
+  margin-bottom: 2em;
+  border: 0.1em solid rgb(223, 221, 221);
+  border-width: 0.1em;
+  border-radius: 0.3em;
+  padding: 1em;
+  margin: 0.5em;
   display: flex;
-  justify-content: space-between;
 }
-.flex-items{
-  display:flex;
-  width:25%;
-  border: 2px, blue;
-  height: 100px;
-  justify-content: center;
-  align-items: center;
-
-/* Headings */
-
-.heading-underline {
-  position: relative;
-  margin-bottom: 2em;
-  padding-bottom: 0.5em;
-  border-bottom: 1px solid #dccdc6;
-  font-size: 1rem;
-  font-weight: 600;
-  text-transform: uppercase;
-}
-
-.heading-underline:before {
-  content: "";
-  position: absolute;
-  bottom: -1px;
-  left: 0;
-  width: 25%;
-  height: 1px;
-  max-width: 100px;
-  background: #c05326;
-}
-
-/* Article */
-
-.article {
-  margin-bottom: 2em;
+aside .article {
+  width: 23em;
+  padding-left: 0em;
+  margin-bottom: 2.1em;
 }
 
 .article__image {
   object-fit: contain;
   width: 5rem;
+  margin-right: 1em;
 }
 
 .article__title {
@@ -143,7 +160,17 @@ button:hover {background-color:#934423
 .article__read-more:last-child {
   margin-bottom: 0;
 }
+.article-container {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+}
 
+.sidebar > .article {
+  padding-left: 0;
+  display: flex;
+  flex-direction: row;
+}
 /* Footer */
 
 .footer {
@@ -156,9 +183,25 @@ button:hover {background-color:#934423
   padding-bottom: 2em;
 }
 
+ /* Media queries */
+ 
+ @media screen and (min-width: 992px) {
+   .navbar-brand > img {
+     max-height: 80px;
+   }
+ }
+
+
+
+
+
+
+
+
+
 /* Media queries */
 
-@media screen and (min-width: 992px) {
+/* @media screen and (min-width: 992px) {
   .navbar-brand > img {
     max-height: 80px;
   }
@@ -167,14 +210,11 @@ button:hover {background-color:#934423
   .jumbotron h2 {
     font-size:35px;
   }
-}
+} */
 
-@mediascreen and (min-width:320) and (max-width: 449px) {
+/* @mediascreen and (min-width:320) and (max-width: 449px) {
   .jumbotron h2 {
     font-size: 35px;
   }
-  button {
-    padding: 5px 15px;
-    /* font-size: 13px; */
-  }
-}
+  */
+  
