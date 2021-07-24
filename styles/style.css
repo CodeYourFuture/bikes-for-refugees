@@ -10,12 +10,39 @@ html,
 body {
   font-family: "Source Sans Pro", "Helvetica Neue", Arial, sans-serif;
 }
+#header-image {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  
+}
 
 button {
-  font-family: "Source Sans Pro", "Helvetica Neue", Arial, sans-serif;
+    font-family: "Source Sans Pro", "Helvetica Neue", Arial, sans-serif;
+    background: #c05326;
+    color: white;
+    padding: 0.5em;
+    border-radius: 0.2em;
+    border-style: none;
+    font-size: 1.2em;
+  
+  }
+  .volunteer-button {
+    background: white;
+    color: #c05326;
+    padding: 0.5em;
+    border-radius: 0.2em;
+    border-style: none;
+    font-size: 1.2em
 }
 
 /* Navigation */
+.nav-link {
+  float: right;
+  display: flex;
+  width: 100%;
+  top: 0;
+  }
 
 .navbar-brand > img {
   max-height: 40px;
@@ -36,8 +63,11 @@ button {
 }
 
 /* Buttons */
+.donate{
+color: #c05326;
+}
 
-/* INSERT BUTTON STYLES HERE */
+* INSERT BUTTON STYLES HERE */
 
 /* Alert */
 
