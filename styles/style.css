@@ -81,6 +81,24 @@ button:last-child{
   background-image: url("../images/header.jpg");
   border-radius: 0;
   color: #fff;
+  display: flex;
+  flex-wrap: nowrap;
+  
+  
+}
+
+.jumbotron p, .jumbotron button, .jumbotron img{
+  position: absolute;
+}
+
+
+
+/* FIX HERE ONWARDS */
+.jumbotron img{
+  width: 100%;
+  height: 35%;
+  top: 8%;
+  right: 2%;
 }
 
 /* Headings */
@@ -110,12 +128,16 @@ button:last-child{
 
 .article {
   margin-bottom: 2em;
+  display: flex;
+  flex-direction: row;
 }
 
 .article__image {
   object-fit: contain;
   width: 5rem;
 }
+
+
 
 .article__title {
   margin-bottom: 0.5em;
