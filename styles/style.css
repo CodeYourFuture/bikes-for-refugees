@@ -11,20 +11,7 @@ body {
   font-family: "Source Sans Pro", "Helvetica Neue", Arial, sans-serif;
 }
 
-button {
-  font-family: "Source Sans Pro", "Helvetica Neue", Arial, sans-serif;
-  background-color:#c05326;
-  border: none;
-  border-radius: 5%;
-  padding: 10px 10px 10px;
-  color:#fff
-}
 
-button:last-child{
-  background-color: #fff;
-  color: #c05326;
-  font-weight: 500;
-}
 
 /* Navigation */
 
@@ -82,23 +69,66 @@ button:last-child{
   border-radius: 0;
   color: #fff;
   display: flex;
+  flex-direction: column;
   flex-wrap: nowrap;
+  max-width: 80%;
+  height: 30vh;
+  
   
   
 }
 
-.jumbotron p, .jumbotron button, .jumbotron img{
+.jumbotron p, .jumbotron button, .jumbotron img, .jumbotron h2{
   position: absolute;
+  
 }
 
 
 
-/* FIX HERE ONWARDS */
+
 .jumbotron img{
-  width: 100%;
-  height: 35%;
-  top: 8%;
+  width: 96%;
+  height: 36vh;
+  top: 12%;
   right: 2%;
+  /* overflow: hidden; */
+  
+}
+
+.jumbotron h2{
+max-width:100%;
+top: 20%;
+
+}
+
+.jumbotron p{
+max-width:100%;
+top: 25%;
+}
+
+button{
+  
+    font-family: "Source Sans Pro", "Helvetica Neue", Arial, sans-serif;
+    background-color:#c05326;
+    border: none;
+    border-radius: 5%;
+    padding: 10px 10px 10px;
+    color:#fff;
+    
+
+}
+  
+.jumbotron button:last-child{
+    background-color: #fff;
+    color: #c05326;
+    font-weight: 500;
+}
+
+.jumbotron button{
+  width:100px;
+  position: absolute;
+  top:40%;
+  
 }
 
 /* Headings */
