@@ -25,9 +25,11 @@ Where necessary, replace the `<div>`s with semantic HTML tags. This will not ren
 
 Some of the links to images are broken. The images you need are in the `images` folder - please replace any broken image links with the correct paths.
 
+Also add some CSS to make the images look the same as in the design!
+
 #### Style buttons
 
-There are 3 buttons on the page. They need to be styled correctly - remember, re-use styles as much as possible by using classes.
+There are 3 buttons on the page. They need to be styled correctly - remember, re-use styles as much as possible by using CSS classes.
 
 #### Fix the positioning
 

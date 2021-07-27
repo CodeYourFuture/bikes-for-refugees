@@ -15,12 +15,6 @@
     />
     <link
       rel="stylesheet"
-      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css"
-      integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ"
-      crossorigin="anonymous"
-    />
-    <link
-      rel="stylesheet"
       href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
     />
     <link rel="stylesheet" href="styles/style.css" />
@@ -29,20 +23,9 @@
   </head>
 
   <body>
-    <div class="header container">
-      <div class="navigation navbar navbar-toggleable-md navbar-light">
-        <button
-          class="navigation__toggle navbar-toggler navbar-toggler-right"
-          type="button"
-          data-toggle="collapse"
-          data-target="#navbarSupportedContent"
-          aria-controls="navbarSupportedContent"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <span class="navigation__toggle-icon navbar-toggler-icon"></span>
-        </button>
-        <a class="navigation__logo navbar-brand" href="/">
+    <div class="header">
+
+        <a class="navigation__logo" href="/">
           <img
             src="images/bikes-for-refugees_logo.jpg"
             alt="Logo for Bikes for Refugees Scotland"
@@ -53,46 +36,40 @@
           </h1>
         </a>
 
-        <div
-          class="navigation__content collapse navbar-collapse"
-          id="navbarSupportedContent"
-        >
-          <ul class="navbar-nav mr-auto">
-            <li class="nav-item active">
-              <a class="nav-link" href="/">
-                Home <span class="sr-only">(current)</span>
-              </a>
+        <div class="navigation">
+          <ul class="navigation__list">
+            <li class="navigation__list-item">
+              <a class="navigation__link" href="/">Home</a>
             </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">About Us</a>
+            <li class="navigation__list-item">
+              <a class="navigation__link" href="#">About Us</a>
             </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">News & Events</a>
+            <li class="navigation__list-item">
+              <a class="navigation__link" href="#">News & Events</a>
             </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Contact Us</a>
+            <li class="navigation__list-item">
+              <a class="navigation__link" href="#">Contact Us</a>
             </li>
           </ul>
-          <button>Donate Now</button>
         </div>
-      </div>
+
+        <button>Donate Now</button>
+
     </div>
 
-    <div id="content" class="container">
-      <div class="row">
-        <div class="main col-lg-8">
+    <div class="content">
+        <div class="main">
           <div class="alert">
-            You've helped us give<span id="donation-count-alert">72</span> bikes
+            You've helped us give<span class="donation-count-alert">72</span> bikes
             to refugees and asylum seekers. <strong>Thank you!</strong>
           </div>
 
-          <div class="jumbotron">
+          <div class="hero">
             <h2>Bikes for Refugees</h2>
             <p>
               Providing donated bikes and accessories to refugees and asylum
               seekers in Scotland.
             </p>
-            <hr class="my-4" />
             <button>Donate a bike today</button>
             <button>Volunteer</button>
           </div>
@@ -138,7 +115,7 @@
           </div>
         </div>
 
-        <div class="sidebar col-lg-4">
+        <div class="sidebar">
           <h2 class="heading-underline">Upcoming events</h2>
 
           <div class="article">
@@ -196,35 +173,13 @@
             All Facebook events
           </a>
         </div>
-      </div>
-      <!-- end of row -->
     </div>
 
-    <div class="footer container">
-      <div class="row">
-        <div class="col-lg-8">
-          <p class="text-center">
-            Bikes for Refugees Scotland is a volunteer-led project to help
-            people explore and make connections with their local communities.
-          </p>
-        </div>
-      </div>
+    <div class="footer">
+      <p class="text-center">
+        Bikes for Refugees Scotland is a volunteer-led project to help
+        people explore and make connections with their local communities.
+      </p>
     </div>
-
-    <script
-      src="https://code.jquery.com/jquery-3.1.1.slim.min.js"
-      integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js"
-      integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js"
-      integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn"
-      crossorigin="anonymous"
-    ></script>
   </body>
 </html>

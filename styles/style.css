@@ -2,8 +2,8 @@
  * Base styles to use at the start of the class
  *
  * Module: HTML/CSS
- * Lesson: 1,2
- * Class: Scotland 2017
+ * Lesson: 1
+ * 
  */
 
 html,
@@ -17,27 +17,27 @@ button {
 
 /* Navigation */
 
-.navbar-brand > img {
+.navigation__logo > img {
   max-height: 40px;
   width: auto;
 }
 
-.navbar-light .navbar-toggler {
-  border: 0;
-  right: 0;
+.navigation__list {
+  list-style: none;
 }
 
-.navbar-light .navbar-nav .nav-link {
+.navigation__link {
   color: #292b2c;
   font-weight: 600;
   text-transform: uppercase;
-
-  /* Challenge: can you make the navigation links orange on hover? */
+  text-decoration: none;
+  /* CHALLENGE: can you make these navigation links orange on hover? */
 }
 
 /* Buttons */
 
-/* INSERT BUTTON STYLES HERE */
+  /* INSERT BUTTON STYLES HERE */
+
 
 /* Alert */
 
@@ -64,11 +64,10 @@ button {
   background: #c05326;
 }
 
-/* Jumbotron */
+/* hero */
 
-.jumbotron {
+.hero {
   background-image: url("../images/header.jpg");
-  border-radius: 0;
   color: #fff;
 }
 
