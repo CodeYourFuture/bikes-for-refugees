@@ -11,23 +11,7 @@ body {
   font-family: "Source Sans Pro", "Helvetica Neue", Arial, sans-serif;
 }
 
-button {
-  font-family: "Source Sans Pro", "Helvetica Neue", Arial, sans-serif;
-  background: #c05326;
-  color: white;
-  padding: 0.5em;
-  border-radius: 0.2em;
-  border-style: none;
-  font-size: 1.2em;
-}
-.volunteer-button {
-  background: white;
-  color: #c05326;
-  padding: 0.5em;
-  border-radius: 0.2em;
-  border-style: none;
-  font-size: 1.2em;
-}
+
 
 /* Navigation */
 
@@ -76,6 +60,23 @@ button {
   height: 100%;
   width: 1px;
   background: #c05326;
+}
+button {
+  font-family: "Source Sans Pro", "Helvetica Neue", Arial, sans-serif;
+  background: #c05326;
+  color: white;
+  padding: 0.5em;
+  border-radius: 0.2em;
+  border-style: none;
+  font-size: 1.2em;
+}
+.volunteer-button {
+  background: white;
+  color: #c05326;
+  padding: 0.5em;
+  border-radius: 0.2em;
+  border-style: none;
+  font-size: 1.2em;
 }
 
 /* Jumbotron */
@@ -180,9 +181,9 @@ aside .article {
     max-height: 80px;
   }
 }
-@media screen and (max-width: 320px) {
-  .jumbotron,
-  h2 {
-    font-size: 1px;
+@media screen and (min-width: 320px) {
+  .jumbotron button
+   {
+    font-size: 2opx;
   }
 }
