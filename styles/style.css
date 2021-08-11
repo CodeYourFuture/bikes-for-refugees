@@ -11,9 +11,7 @@ body {
   font-family: "Source Sans Pro", "Helvetica Neue", Arial, sans-serif;
 }
 
-button {
-  font-family: "Source Sans Pro", "Helvetica Neue", Arial, sans-serif;
-}
+
 
 /* Navigation */
 
@@ -70,6 +68,84 @@ button {
   background-image: url("../images/header.jpg");
   border-radius: 0;
   color: #fff;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  max-width: 80%;
+  height: 40vh;
+  
+  
+  
+}
+
+.jumbotron p, .jumbotron button, .jumbotron img, .jumbotron h2{
+  position: absolute;
+  
+}
+
+
+
+
+.jumbotron img{
+  max-width: 100%;
+  max-height: 100%;
+  top: 12%;
+  right: 2%;
+  /* overflow: hidden; */
+  
+}
+
+.jumbotron h2{
+max-width:100%;
+top: 20%;
+
+}
+
+.jumbotron p{
+max-width:100%;
+top: 25%;
+}
+
+button{
+  
+    font-family: "Source Sans Pro", "Helvetica Neue", Arial, sans-serif;
+    background-color:#c05326;
+    border: none;
+    border-radius: 5%;
+    /* padding: 10px 10px 10px 10px; */
+    color:#fff;
+    text-align: center;
+    padding: 10px 0 10px 0;
+    
+}
+
+
+#donate_today{
+  top:40%;
+  width:20%;
+}
+
+#volunteer, #donate_now{
+  top:40%;
+  left:30%;
+  width:10%;
+}
+
+/* section :last-child{
+  left:300px;
+} */
+  
+.jumbotron button:last-child{
+    background-color: #fff;
+    color: #c05326;
+    font-weight: 500;
+}
+
+.jumbotron button{
+  width:100px;
+  position: absolute;
+  top:40%;
+  
 }
 
 /* Headings */
@@ -97,14 +173,54 @@ button {
 
 /* Article */
 
+
+
+.learn_more{
+  max-width:100%;
+  max-height: 100%;
+  display: flex;
+  flex-direction: row;
+  
+
+}
+
+.learn_more h2{
+  max-width: 100%;
+  max-height:100%;
+  position:absolute;
+  
+
+}
+
+
+
 .article {
   margin-bottom: 2em;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  
 }
+
+
+#first_article, #second_article{
+  max-width: 45%;
+  padding-top: 130px;
+  position: absolute;
+}
+
+#second_article{
+  left:60%;
+}
+
+
 
 .article__image {
   object-fit: contain;
   width: 5rem;
 }
+
+
 
 .article__title {
   margin-bottom: 0.5em;
@@ -135,7 +251,8 @@ button {
 /* Footer */
 
 .footer {
-  margin-top: 2em;
+  margin-top: 25%;
+
 }
 
 .footer p {
