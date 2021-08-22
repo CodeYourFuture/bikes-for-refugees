@@ -9,10 +9,7 @@
 html,
 body {
   font-family: "Source Sans Pro", "Helvetica Neue", Arial, sans-serif;
-}
-
-button {
-  font-family: "Source Sans Pro", "Helvetica Neue", Arial, sans-serif;
+  box-sizing: border-box;
 }
 
 /* Navigation */
@@ -38,6 +35,38 @@ button {
 /* Buttons */
 
 /* INSERT BUTTON STYLES HERE */
+
+.donate-button {
+  font-family: "Source Sans Pro", "Helvetica Neue", Arial, sans-serif;
+  background-color: #a34914;
+  color: #fff;
+  padding: 0.4rem;
+  border-radius: 4px;
+  border-style: none;
+}
+
+.donate-button:hover {
+  background-color: #fff;
+  padding: 0.27rem;
+  color: #a34914;
+  border: 2px solid #a34914;
+}
+
+.volunteer-button {
+  font-family: "Source Sans Pro", "Helvetica Neue", Arial, sans-serif;
+  background-color: #fff;
+  color: #a34914;
+  padding: 0.4rem;
+  border-radius: 4px;
+  border-style: none;
+}
+
+.volunteer-button:hover {
+  background-color: #a34914;
+  padding: 0.27rem;
+  color: #fff;
+  border: 2px solid #fff;
+}
 
 /* Alert */
 
@@ -67,9 +96,42 @@ button {
 /* Jumbotron */
 
 .jumbotron {
-  background-image: url("../images/header.jpg");
+  background-image: url("../images/header-bike.jpg");
   border-radius: 0;
   color: #fff;
+}
+
+/* 3 boxes */
+
+.box-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.learn-more {
+  display: flex;
+  justify-content: space-between;
+}
+
+.article-one {
+  margin-right: 25px;
+}
+
+.actions {
+  border: 3px solid lightgray;
+  background-color: #fff;
+  color: #c05326;
+  font-weight: bold;
+  padding: 50px;
+  min-width: 100px;
+  width: 160px;
+  height: 160px;
+  place-items: center;
+  border-radius: 5px;
+  margin-bottom: 50px;
+  margin: 2rem auto;
 }
 
 /* Headings */
@@ -98,12 +160,28 @@ button {
 /* Article */
 
 .article {
+  display: flex;
+}
+
+.article-one,
+.article-two {
   margin-bottom: 2em;
+  border: 2px solid lightgray;
+  border-radius: 5px;
+  display: flex;
+  padding: 0.6rem;
 }
 
 .article__image {
   object-fit: contain;
   width: 5rem;
+  padding: 0 0.5rem 0 0;
+}
+
+.article h3,
+p {
+  font-size: 0.9rem;
+  font-weight: 600;
 }
 
 .article__title {
@@ -132,6 +210,18 @@ button {
   margin-bottom: 0;
 }
 
+.sidebar .article {
+  border: 2px solid lightgray;
+  background-color: #fff;
+  border-radius: 3px;
+  margin: 0.5rem;
+  padding: 0.5rem;
+}
+
+.facebook-link {
+  margin: 2rem 0.5rem;
+}
+
 /* Footer */
 
 .footer {
@@ -149,5 +239,21 @@ button {
 @media screen and (min-width: 992px) {
   .navbar-brand > img {
     max-height: 80px;
+  }
+}
+
+/* Reduce size of heading */
+@media (max-width: 320px) {
+  .jumbotron h2 {
+    font-size: 1.7rem;
+  }
+
+  .jumbotron button {
+    font-size: 0.7rem;
+  }
+
+  /* ** containers wrap at 320px ** */
+  .learn-more {
+    flex-wrap: wrap;
   }
 }
