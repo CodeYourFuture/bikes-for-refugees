@@ -23,9 +23,10 @@ Where necessary, replace the `<div>`s with semantic HTML tags. This will not ren
 
 ### Fix the broken images
 
-Some of the links to images are broken. The images you need are in the `images` folder - please replace any broken image links with the correct paths.
+Some of the links to images are broken. The images you need are in the `images` folder - please replace any broken image links with the correct paths. 
+It's also good practice to include a description of the image in the `alt` attribute. 
 
-Also add some CSS to make the images look the same as in the design!
+Make sure to add some CSS to make the images look the same as in the design!
 
 ### Style buttons
 

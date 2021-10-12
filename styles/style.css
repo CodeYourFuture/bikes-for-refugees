@@ -1,5 +1,4 @@
 /**
- * Base styles to use at the start of the class
  *
  * Module: HTML/CSS
  * Lesson: 1
@@ -75,7 +74,6 @@ p {
   font-weight: 600;
   text-transform: uppercase;
   text-decoration: none;
-  /* CHALLENGE: can you make these navigation links orange on hover? */
 }
 
 
@@ -93,6 +91,51 @@ p {
   border: 6px solid var(--white);
   border-left-color: var(--orange-dark);
 }
+
+
+/* Buttons */
+
+  /* INSERT BUTTON STYLES HERE */
+
+
+/* Content */
+
+.content {
+  display: flex;
+  flex-direction: column;
+}
+
+/* Alert */
+
+.alert {
+  background-color: var(--orange-light);
+  border-left: 4px solid var(--orange-dark);
+  border-radius: 4px;
+  font-size: 0.85rem;
+  line-height: 1.3;
+  padding: 1.5rem 1rem;
+  margin-bottom: 2rem;
+}
+
+/* hero */
+
+.hero {
+  background-image: url("header-bike.jpg");
+  background-color: var(--grey-light);
+  padding: 6rem 2rem;
+  margin-bottom: 3rem;
+}
+
+.hero h1 {
+  margin-bottom: 1rem;
+  font-size: 2.5rem;
+}
+
+.hero p {
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+}
+
 
 /* Headings */
 
@@ -118,94 +161,10 @@ p {
 }
 
 
-/* Buttons */
-
-  /* INSERT BUTTON STYLES HERE */
-button {
-  background-color: var(--orange-dark);
-  color: var(--white);
-  border: 0;
-  border-radius: 4px;
-  padding: 0.5rem 0.75rem 0.6rem 0.75rem;
-  line-height: 1;
-  cursor: pointer;
-}
-
-.button--secondary {
-  color: var(--orange-dark);
-  background-color: var(--white);
-}
-
-/* Content */
-
-.content {
-  display: flex;
-  flex-direction: column;
-}
-
-/* Alert */
-
-.alert {
-  background-color: var(--orange-light);
-  border-left: 4px solid var(--orange-dark);
-  border-radius: 4px;
-  font-size: 0.85rem;
-  line-height: 1.3;
-  padding: 1.5rem 1rem;
-  margin-bottom: 2rem;
-}
-
-/* hero */
-
-.hero {
-  background-image: url("../images/header-bike.jpg");
-  color: var(--white);
-  padding: 6rem 2rem;
-  margin-bottom: 3rem;
-}
-
-.hero h1 {
-  margin-bottom: 1rem;
-  font-size: 2.5rem;
-}
-
-.hero p {
-  font-size: 1.2rem;
-  margin-bottom: 2rem;
-}
-
-/* Learn more section */
-
-.section--flex {
-  display: flex;
-}
-
-.article__grid-item {
-  width: 50%;
-}
-
-.article__grid-item:nth-child(odd) {
-  margin-right: 1rem;
-}
-
-
 /* Article */
 
 .article {
   margin-bottom: 1rem;
-  padding: 1rem;
-  border: 2px solid var(--grey-light);
-  border-radius: 4px;
-}
-
-.article--with-thumbnail {
-  display: flex;
-}
-
-.article__thumbnail {
-  object-fit: contain;
-  width: 5rem;
-  margin-right: 1rem;
 }
 
 .article__title {
@@ -224,6 +183,11 @@ button {
   margin-bottom: 1rem;
 }
 
+.article__thumbnail {
+  object-fit: contain;
+  width: 5rem;
+}
+
 .article__read-more {
   margin-top: 0;
 }
@@ -240,14 +204,13 @@ button {
   text-decoration: underline;
 }
 
-.article__read-more .fa {
+.fa {
   margin-right: 0.5rem;
   color: var(--orange-dark);
 }
 
 .facebook-link {
   color: var(--orange-dark);
-  text-align: right;
 }
 
 /* Sidebar */
