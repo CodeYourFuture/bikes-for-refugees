@@ -22,10 +22,11 @@
   <body>
     <div class="header">
 
-        <a class="header__logo" href="/">
+        <a href="#">
           <img
             src="images/bikes-for-refugees_logo.jpg"
             alt="Logo for Bikes for Refugees Scotland"
+            class="header__logo"
           />
         </a>
 
@@ -54,26 +55,26 @@
         <div class="main">
           <div class="alert">
             You've helped us give <span class="text-highlight">72</span> bikes
-            to refugees and asylum seekers. <strong>Thank you!</strong>
+            to refugees and asylum seekers so far. <strong>Thank you!</strong>
           </div>
 
           <div class="hero">
             <h1>Bikes for Refugees</h1>
-            <p class="body--large">
+            <p>
               Providing donated bikes and accessories to refugees and asylum
               seekers in Scotland.
             </p>
             <button>Donate a bike today</button>
-            <button>Volunteer</button>
+            <button class="button--secondary">Volunteer</button>
           </div>
 
           <div>
             <h2 class="heading-underline">Learn more</h2>
 
-            <div>
-              <div class="article">
+            <div class="section--flex">
+              <div class="article article__grid-item">
                 <h3 class="article__title">Why do refugees need bikes?</h3>
-                <p class="article__body">
+                <p class="article__summary">
                   Many refugees are placed in housing in areas where there are
                   few jobs. Bikes provide low-cost transportation so that they
                   can get to work, manage child care and do their shopping.
@@ -86,9 +87,9 @@
                 </p>
               </div>
 
-              <div class="article">
+              <div class="article article__grid-item">
                 <h3 class="article__title">How can I help?</h3>
-                <p class="article__body">
+                <p class="article__summary">
                   We need lots of bikes and bike accessories! If you have an
                   old bike you don't use, bring it to one of our dropoff
                   events. Or come attend one of our fundraisers.
@@ -107,47 +108,47 @@
         <div class="sidebar">
           <h2 class="heading-underline">Upcoming events</h2>
 
-          <div class="article">
+          <div class="article article--with-thumbnail">
             <img
-              class="article__image"
-              src="https://raw.githubusercontent.com/Code-Your-Future/syllabus/master/html-css/assets/news-spring-fundraisers.jpg"
-              alt=""
+              class="article__thumbnail"
+              src="./images/spring-fundraisers_thumbnail.jpg"
+              alt="Spring Fundraisers logo with blossom"
             />
             <div class="article__content">
-              <h3 class="article__title article__title--sidebar">
-                <a href="#">Join us for our Spring fundraisers</a>
+              <h3 class="article__title">
+                <a class="article__title-link" href="#">Join us for our Spring fundraisers</a>
               </h3>
-              <p class="article__body">
+              <p class="article__summary">
                 Riders needed now to help raise awareness and funds for BfR and
                 Médecins Sans Frontières.
               </p>
             </div>
           </div>
 
-          <div class="article">
+          <div class="article article--with-thumbnail">
             <img
-              class="article__image"
-              src="https://raw.githubusercontent.com/Code-Your-Future/syllabus/master/html-css/assets/bikes-for-refugees-logo.jpg"
-              alt=""
+              class="article__thumbnail"
+              src="./images/bikes-for-refugees_logo.jpg"
+              alt="Bikes for Refugees logo with bicycle"
             />
             <div class="article__content">
-              <h3 class="article__title article__title--sidebar">
-                <a href="#">Bike dropoff event in Edinburgh on May 11</a>
+              <h3 class="article__title">
+                <a class="article__title-link" href="#">Bike dropoff event in Edinburgh on May 11</a>
               </h3>
             </div>
           </div>
 
-          <div class="article">
+          <div class="article article--with-thumbnail">
             <img
-              class="article__image"
-              src="https://raw.githubusercontent.com/Code-Your-Future/syllabus/master/html-css/assets/news-cycle.jpg"
-              alt=""
+              class="article__thumbnail"
+              src="./images/edinburgh-damascus_thumbnail.png"
+              alt="Road sign pointing to Edimburgh and Damascus"
             />
             <div class="article__content">
-              <h3 class="article__title article__title--sidebar">
-                <a href="#">Help us cycle 4,797km</a>
+              <h3 class="article__title">
+                <a class="article__title-link" href="#">Help us cycle 4,797km</a>
               </h3>
-              <p class="article__body">
+              <p class="article__summary">
                 We need you to help us cycle 4797km, the distance of Edinburgh
                 to Damascus.
               </p>
@@ -156,6 +157,7 @@
 
           <a
             href="https://www.facebook.com/BikesforRefugeesScotland/events/?ref=page_internal"
+            target="_blank"
             class="facebook-link"
           >
             <span class="fa fa-facebook-square"></span>
@@ -165,10 +167,13 @@
     </div>
 
     <div class="footer">
-      <p class="text-center">
-        Bikes for Refugees Scotland is a volunteer-led project to help
-        people explore and make connections with their local communities.
-      </p>
+      <div class="footer__content">
+        <p>
+          <strong>Bikes for Refugees Scotland is a volunteer-led project to help
+          people explore and make connections with their local communities.</strong>
+        </p>
+        <p>Website by Code Your Future</p>
+      </div>
     </div>
   </body>
 </html>

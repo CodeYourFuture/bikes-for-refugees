@@ -1,7 +1,7 @@
 # bikes-for-refugees
 Exercise for HTML & CSS - lesson 1
 
-### Set up
+## Set up
 
 **Clone** this repository onto your machine. Remember [the git cheat-sheet]( https://syllabus.codeyourfuture.io/git/desktop/cheatsheet#i-want-to-get-code-from-a-repo-onto-my-computer-cloning) if you get stuck!
 
@@ -9,33 +9,39 @@ Open up the repository you just cloned (again, check the [git cheat-sheet](https
 
 You're now ready to code!
 
-### Exercise
+## Exercise
 
-The aim of the exercise is for your webpage to look like the following screenshot.
+The aim of the exercise is for your webpage to look like the following screenshot:
 
-![Bike For Refugees after](bikes-for-refugees-after.png)
+![Bike For Refugees: final design](bikes-for-refugees_final-design.png)
 
 Open the `index.html` file in your browser, and compare it to the image of the final result. What's different?
 
-#### Use semantic markup
+### Use semantic markup
 
 Where necessary, replace the `<div>`s with semantic HTML tags. This will not render differently in the browser, but it's good practice to use semantic markup when you can!
 
-#### Fix the broken images
+### Fix the broken images
 
 Some of the links to images are broken. The images you need are in the `images` folder - please replace any broken image links with the correct paths.
 
 Also add some CSS to make the images look the same as in the design!
 
-#### Style buttons
+### Style buttons
 
 There are 3 buttons on the page. They need to be styled correctly - remember, re-use styles as much as possible by using CSS classes.
 
-#### Fix the positioning
+### Fix the positioning
 
 Use Flexbox to move elements around so they are positioned correctly.
 
-### Submit your work
+### Bonus: hover effects
+
+Add a hover effect using CSS, so that:
+  1) The links in the top menu navigation become orange on hover
+  2) The colours of the buttons are inverted on hover
+
+## Submit your work
 
 Once you've finished, **open a pull request** so your work can be reviewed by a mentor.
 
