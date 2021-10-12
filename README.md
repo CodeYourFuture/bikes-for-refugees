@@ -29,11 +29,12 @@ Also add some CSS to make the images look the same as in the design!
 
 ### Style buttons
 
-There are 3 buttons on the page. They need to be styled correctly - remember, re-use styles as much as possible by using CSS classes.
+There are 3 buttons on the page: can you style them correctly so they follow the design?
+**Remember**, re-use styles as much as possible by using CSS classes.
 
 ### Fix the positioning
 
-Use Flexbox to move elements around so they are positioned correctly.
+Compare what you can see in your browser with the design provided. Can you spot the differences in layout? Use CSS Flexbox to move elements around so they are positioned correctly.
 
 ### Bonus: hover effects
 
