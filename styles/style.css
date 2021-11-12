@@ -66,7 +66,7 @@ p {
 }
 
 .navigation__item {
-  padding: 0.5rem 1rem;
+  padding: 0.5rem 0;
 }
 
 .navigation__link {
@@ -122,8 +122,6 @@ p {
 .hero {
   background-image: url("header-bike.jpg");
   background-color: var(--grey-light);
-  padding: 6rem 2rem;
-  margin-bottom: 3rem;
 }
 
 .hero h1 {
