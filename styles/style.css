@@ -97,11 +97,15 @@ p {
 .buttonBackground {
   background-color: #c05326;
   color: rgb(255, 255, 255);
+  font-weight: 600;
+
 }
 
 .bBInverted {
   background-color: rgb(255, 255, 255);
   color: #c05326;
+  font-weight: 600;
+
 }
 
 
