@@ -61,12 +61,16 @@ p {
 /* Navigation */
 
 .navigation__list {
-  display: flex;
   list-style: none;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+  justify-content: space-evenly;
 }
 
 .navigation__item {
-  padding: 0.5rem 0;
+  padding: 0.5rem 1rem;
+  
 }
 
 .navigation__link {
@@ -97,7 +101,18 @@ p {
 
   /* INSERT BUTTON STYLES HERE */
 
+button{
+  background:#c05326;
+  color: white;
+  border: none;
+  border-radius: 5px;
+}
 
+.volunteer-button{
+  background-color: white;
+  color: #c05326;
+  ;
+}
 /* Content */
 
 .content {
@@ -120,18 +135,24 @@ p {
 /* hero */
 
 .hero {
-  background-image: url("header-bike.jpg");
+  background-image: url("../images/header-bike.jpg");
   background-color: var(--grey-light);
+  padding-bottom: 170px;
+  margin-bottom: 50px;
+  color: white;
 }
 
 .hero h1 {
   margin-bottom: 1rem;
   font-size: 2.5rem;
+  padding: 21px;
+
 }
 
 .hero p {
   font-size: 1.2rem;
   margin-bottom: 2rem;
+  padding: 21px;
 }
 
 
@@ -209,6 +230,12 @@ p {
 
 .facebook-link {
   color: var(--orange-dark);
+}
+
+.learnmore-box{
+  display: flex;
+  padding: 40px;
+  margin: 40px;
 }
 
 /* Sidebar */
