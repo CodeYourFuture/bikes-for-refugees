@@ -94,11 +94,7 @@ p {
 
 
 /* Buttons */
-.buttonContainer {
-  display: flex;
-  justify-content: space-around;
-  /* margin-left: 100px; */
-}
+
 
 .buttonBackground {
   background-color: #c05326;
@@ -106,6 +102,7 @@ p {
   font-weight: 600;
   border: 6px solid #c05326;
   border-radius: 4px;
+  margin-left: 33px;
 
 }
 
@@ -115,7 +112,7 @@ p {
   font-weight: 600;
   border: 6px solid rgb(255,255,255);
   border-radius: 4px;
-
+  
 }
 
 
