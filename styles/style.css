@@ -144,6 +144,7 @@ p {
 .container {
   display: flex;
   flex-direction: column;
+  padding: 50px;
 }
 
 .hero h1 {
