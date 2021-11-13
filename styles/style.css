@@ -96,7 +96,8 @@ p {
 /* Buttons */
 .buttonContainer {
   display: flex;
-  margin-left: 100px;
+  justify-content: space-around;
+  /* margin-left: 100px; */
 }
 
 .buttonBackground {
