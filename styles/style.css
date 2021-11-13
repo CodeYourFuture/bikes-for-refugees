@@ -171,16 +171,13 @@ button:hover{
 
 .learn-more {
   display: flex;
+  justify-content: space-between;
 }
 
 .learn-more article {
   display: block;
+  width:45%;
 }
-
-.marginright {
-  margin-right:2rem;
-} 
-
 
 /* Headings */
 
