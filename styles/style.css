@@ -179,7 +179,8 @@ p {
 /* Article */
 
 .container {
-  display:flex
+  display:flex;
+  border: 2px solid #e4e4e4;
 }
 
 .article {
