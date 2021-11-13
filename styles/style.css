@@ -178,6 +178,10 @@ p {
 
 /* Article */
 
+.container {
+  display:flex
+}
+
 .article {
   margin-bottom: 1rem;
 }
