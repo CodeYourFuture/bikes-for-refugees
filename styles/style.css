@@ -177,10 +177,23 @@ p {
 
 
 /* Article */
+.articleContainer {
+  display: flex;
+  
+}
 
-.container {
+.containerOne {
   display:flex;
   border: 2px solid #e4e4e4;
+  padding: 15px;
+  margin: 10px;
+}
+
+.containerTwo {
+  display:flex;
+  border: 2px solid #e4e4e4;
+  padding: 15px;
+  margin: 10px;
 }
 
 .article {
