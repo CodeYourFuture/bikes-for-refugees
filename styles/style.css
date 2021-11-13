@@ -144,11 +144,15 @@ p {
 .hero h1 {
   margin-bottom: 1rem;
   font-size: 2.5rem;
+  color: rgb(255, 255, 255);
+
 }
 
 .hero p {
   font-size: 1.2rem;
   margin-bottom: 2rem;
+  color: rgb(255, 255, 255);
+  font-weight: 600;
 }
 
 
