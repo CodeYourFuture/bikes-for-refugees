@@ -20,7 +20,7 @@
   </head>
 
   <body>
-    <div class="header">
+    <header class="header">
 
         <a href="#">
           <img
@@ -30,7 +30,7 @@
           />
         </a>
 
-        <div>
+        <section>
           <ul class="navigation__list">
             <li class="navigation__item">
               <a class="navigation__link" href="#">Home</a>
@@ -45,34 +45,34 @@
               <a class="navigation__link" href="#">Contact Us</a>
             </li>
           </ul>
-        </div>
+        </section>
 
-        <button>Donate Now</button>
+        <button class='btn'>Donate Now</button>
 
-    </div>
+      </header>
 
-    <div class="content">
-        <div class="main">
-          <div class="alert">
+    <main class="content">
+        <section class="main">
+          <section class="alert">
             You've helped us give <span class="text-highlight">72</span> bikes
             to refugees and asylum seekers so far. <strong>Thank you!</strong>
-          </div>
+          </section>
 
-          <div class="hero">
+          <section class="hero">
             <h1>Bikes for Refugees</h1>
             <p>
               Providing donated bikes and accessories to refugees and asylum
               seekers in Scotland.
             </p>
-            <button>Donate a bike today</button>
-            <button>Volunteer</button>
-          </div>
+            <button class="btn">Donate a bike today</button>
+            <button id="btn">Volunteer</button>
+          </section>
 
-          <div>
+          <section>
             <h2 class="heading-underline">Learn more</h2>
 
-            <div>
-              <div class="article">
+            <section class="horizontal-flex">
+              <section class="article horizontal-flex-item">
                 <h3 class="article__title">Why do refugees need bikes?</h3>
                 <p class="article__summary">
                   Many refugees are placed in housing in areas where there are
@@ -85,9 +85,9 @@
                     Learn more
                   </a>
                 </p>
-              </div>
+              </section>
 
-              <div class="article">
+              <section class="article horizontal-flex-item">
                 <h3 class="article__title">How can I help?</h3>
                 <p class="article__summary">
                   We need lots of bikes and bike accessories! If you have an
@@ -100,21 +100,21 @@
                     Learn more
                   </a>
                 </p>
-              </div>
-            </div>
-          </div>
-        </div>
+              </section>
+            </section>
+          </section>
+        </section>
 
-        <div class="sidebar">
-          <h2 class="heading-underline">Upcoming events</h2>
+        <section class="sidebar">
+          <h2 class="heading-underline" style="margin-top: 0;">Upcoming events</h2>
 
-          <div class="article">
+          <section class="article horizontal-flex">
             <img
-              class="article__thumbnail"
-              src="spring-fundraisers_thumbnail.jpg"
-              alt=""
+              class="article__thumbnail horizontal-flex-image"
+              src="images/spring-fundraisers_thumbnail.jpg"
+              alt="fundraiser logo"
             />
-            <div class="article__content">
+            <section class="article__content horizontal-flex-text">
               <h3 class="article__title">
                 <a class="article__title-link" href="#">Join us for our Spring fundraisers</a>
               </h3>
@@ -122,29 +122,29 @@
                 Riders needed now to help raise awareness and funds for BfR and
                 Médecins Sans Frontières.
               </p>
-            </div>
-          </div>
+            </section>
+          </section>
 
-          <div class="article">
+          <section class="article horizontal-flex ">
             <img
-              class="article__thumbnail"
-              src="bikes-for-refugees_logo.jpg"
-              alt=""
+              class="article__thumbnail horizontal-flex-image"
+              src="images/bikes-for-refugees_logo.jpg"
+              alt="logo for site"
             />
-            <div class="article__content">
+            <section class="article__content horizontal-flex-text">
               <h3 class="article__title">
                 <a class="article__title-link" href="#">Bike dropoff event in Edinburgh on May 11</a>
               </h3>
-            </div>
-          </div>
+            </section>
+          </section>
 
-          <div class="article">
+          <section class="article horizontal-flex">
             <img
-              class="article__thumbnail"
-              src="edinburgh-damascus_thumbnail.png"
-              alt=""
+              class="article__thumbnail horizontal-flex-image"
+              src="images/edinburgh-damascus_thumbnail.png"
+              alt="Bicycle background"
             />
-            <div class="article__content">
+            <section class="article__content horizontal-flex-text">
               <h3 class="article__title">
                 <a class="article__title-link" href="#">Help us cycle 4,797km</a>
               </h3>
@@ -152,8 +152,8 @@
                 We need you to help us cycle 4797km, the distance of Edinburgh
                 to Damascus.
               </p>
-            </div>
-          </div>
+            </section>
+          </section>
 
           <a
             href="https://www.facebook.com/BikesforRefugeesScotland/events/?ref=page_internal"
@@ -163,17 +163,17 @@
             <span class="fa fa-facebook-square"></span>
             All Facebook events
           </a>
-        </div>
-    </div>
+        </section>
+      </main>
 
-    <div class="footer">
-      <div class="footer__content">
+    <footer class="footer">
+      <section class="footer__content">
         <p>
           <strong>Bikes for Refugees Scotland is a volunteer-led project to help
           people explore and make connections with their local communities.</strong>
         </p>
         <p>Website by Code Your Future</p>
-      </div>
-    </div>
+      </section>
+    </footer>
   </body>
 </html>
