@@ -76,6 +76,9 @@ p {
   text-decoration: none;
 }
 
+.navigation__link:hover {
+  color: var(--orange-dark);
+}
 
 /* Text styles */
 
@@ -104,12 +107,24 @@ p {
   padding: 5px 10px;
 }
 
+.btn:hover {
+  background-color: white;
+  color:#c05326;
+  cursor:pointer;
+}
+
 #btn {
   background-color: var(--white);
   color: var(--orange-dark);
   border-radius: 4.25px;
   border: 0;
   padding: 5px 10px;
+}
+
+#btn:hover{
+  background-color: var(--orange-dark);
+  color: white;
+  cursor: pointer;
 }
 
 /* Content */
