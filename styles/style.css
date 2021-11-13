@@ -94,8 +94,10 @@ p {
 
 
 /* Buttons */
-
-  /* INSERT BUTTON STYLES HERE */
+.buttonBackground {
+  background-color: #c05326;
+  color: rgb(255, 255, 255);
+}
 
 
 /* Content */
