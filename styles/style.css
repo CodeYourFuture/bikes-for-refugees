@@ -96,7 +96,9 @@ p {
 /* Buttons */
 
   /* INSERT BUTTON STYLES HERE */
-
+button {
+  background-color: #c05326;
+}
 
 /* Content */
 
@@ -120,7 +122,7 @@ p {
 /* hero */
 
 .hero {
-  background-image: url("header-bike.jpg");
+  background-image: url("../images/header-bike.jpg");
   background-color: var(--grey-light);
 }
 
