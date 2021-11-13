@@ -183,8 +183,9 @@ p {
   flex-direction: column;
 }
 
-parent_article {
-  display:
+.parent_article {
+  display: flex;
+  align-items: row;
 }
 
 .article__title {
