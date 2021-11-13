@@ -76,6 +76,9 @@ p {
   text-decoration: none;
 }
 
+button .hero {
+  background-color: red;
+}
 
 /* Text styles */
 
