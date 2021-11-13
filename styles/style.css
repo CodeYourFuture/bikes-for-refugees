@@ -24,6 +24,15 @@ button {
   font-size: 1rem;
 }
 
+.redButton {
+  background-color:orangered;
+  color: white;
+  border-radius: 10px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  font-weight: bolder;
+}
+
 h1,h2,h3,h4,h5,h6 {
   margin-top: 0;
   margin-bottom: 0;
@@ -51,6 +60,7 @@ p {
   height: 5rem;
   margin-bottom: 1rem;
   padding-top: 1rem;
+  padding:50px;
 }
 
 .header__logo {
@@ -66,7 +76,7 @@ p {
 }
 
 .navigation__item {
-  padding: 0.5rem 0;
+  padding: 20px;
 }
 
 .navigation__link {
@@ -120,8 +130,10 @@ p {
 /* hero */
 
 .hero {
-  background-image: url("header-bike.jpg");
+  background-image: url("../images/header-bike.jpg");
   background-color: var(--grey-light);
+  padding: 100px;
+  margin-bottom: 40px;
 }
 
 .hero h1 {
@@ -163,12 +175,23 @@ p {
 
 .article {
   margin-bottom: 1rem;
+  display: flex;
+  border: 1px solid var(--grey-light);
+}
+
+.bottom_article {
+  flex-direction: column;
+}
+
+parent_article {
+  display:
 }
 
 .article__title {
   margin-bottom: 0.5rem;
   font-size: 1rem;
   font-weight: 700;
+
 }
 
 .article__title-link {
