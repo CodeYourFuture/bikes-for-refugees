@@ -141,6 +141,11 @@ p {
   margin-bottom: 50px;
 }
 
+.container {
+  display: flex;
+  flex-direction: column;
+}
+
 .hero h1 {
   margin-bottom: 1rem;
   font-size: 2.5rem;
