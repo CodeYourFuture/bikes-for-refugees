@@ -67,6 +67,7 @@ p {
 
 .navigation__item {
   padding: 0.5rem 0;
+  margin: 0 2rem;
 }
 
 .navigation__link {
@@ -74,6 +75,10 @@ p {
   font-weight: 600;
   text-transform: uppercase;
   text-decoration: none;
+}
+
+.navigation__link:hover{
+  color:orange;
 }
 
 
@@ -95,7 +100,28 @@ p {
 
 /* Buttons */
 
-  /* INSERT BUTTON STYLES HERE */
+button {
+  padding: 0.5rem; 
+  border-radius: 5%;
+  border:none;
+  font-weight: 600;
+  color:red
+}
+
+button:hover{
+  color:white;
+  background-color: red;
+}
+
+.redbutton {
+  background-color: red;
+  color:white
+}
+
+.redbutton:hover {
+  background-color: white;
+  color:red;
+}
 
 
 /* Content */
@@ -120,19 +146,37 @@ p {
 /* hero */
 
 .hero {
-  background-image: url("header-bike.jpg");
+  background-image: url("../images/header-bike.jpg");
   background-color: var(--grey-light);
+  padding: 4rem 2rem;
+  margin-bottom:3rem;
 }
 
 .hero h1 {
   margin-bottom: 1rem;
   font-size: 2.5rem;
+  color:white;
+  font-weight: 800;
 }
 
 .hero p {
   font-size: 1.2rem;
   margin-bottom: 2rem;
+  color:white;
+  font-weight: 600;
 }
+
+.learn-more {
+  display: flex;
+}
+
+.learn-more article {
+  display: block;
+}
+
+.marginright {
+  margin-right:2rem;
+} 
 
 
 /* Headings */
@@ -163,10 +207,15 @@ p {
 
 .article {
   margin-bottom: 1rem;
+  display: flex;
+  padding: 1rem; 
+  border: 2px solid rgb(161, 161, 161);
+  border-radius:2%;
 }
 
 .article__title {
   margin-bottom: 0.5rem;
+  padding-left:1rem;
   font-size: 1rem;
   font-weight: 700;
 }
@@ -177,8 +226,9 @@ p {
 }
 
 .article__summary {
-  margin-top: 0;
+  margin-top: 1rem;
   margin-bottom: 1rem;
+  padding-left:1rem;
 }
 
 .article__thumbnail {
@@ -188,6 +238,7 @@ p {
 
 .article__read-more {
   margin-top: 0;
+  padding-left: 1rem;
 }
 
 .article__read-more a {
