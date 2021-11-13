@@ -15,13 +15,23 @@
 
 body {
   margin: 0;
-}
-
-body,
-button {
   font-family: "Source Sans Pro", "Helvetica Neue", Arial, sans-serif;
   color: var(--grey-dark);
   font-size: 1rem;
+}
+
+button {
+  background-color: var(--orange-dark);
+  color: var(--white);
+  border: none;
+  border-radius: 3px;
+  padding: 8px;
+  font-weight: bold;
+
+}
+.volunteer-button {
+  background-color: var(--white);
+  color: var(--orange-dark);
 }
 
 h1,h2,h3,h4,h5,h6 {
@@ -38,7 +48,7 @@ p {
 .content,
 .footer {
   padding: 0 1.5rem;
-  max-width: 1200px;
+  max-width: 1280px;
   margin: 0 auto;
 }
 
@@ -66,7 +76,7 @@ p {
 }
 
 .navigation__item {
-  padding: 0.5rem 0;
+  padding: 0.5rem 0.5rem;
 }
 
 .navigation__link {
@@ -74,6 +84,7 @@ p {
   font-weight: 600;
   text-transform: uppercase;
   text-decoration: none;
+  padding: 0 2rem;
 }
 
 
@@ -120,8 +131,11 @@ p {
 /* hero */
 
 .hero {
-  background-image: url("header-bike.jpg");
+  background-image: url("../images/header-bike.jpg");
   background-color: var(--grey-light);
+  padding: 5rem 2rem;
+  color:var(--white);
+  margin-bottom: 4rem;
 }
 
 .hero h1 {
@@ -216,7 +230,7 @@ p {
 .sidebar {
   display: flex;
   flex-direction: column;
-  min-width: 350px;
+  min-width: 370px;
 }
 
 /* Footer */
@@ -247,4 +261,35 @@ p {
   .main {
     padding-right: 2rem;
   }
+}
+
+section {
+  display: flex;
+}
+
+.article {
+  border: 2px solid var(--grey-light);
+  padding: 1rem;
+  margin: 0.5rem;
+  
+}
+
+.sidebar {
+  display: flex;
+  flex-direction: column;
+}
+
+.side-article {
+  border: 2px solid var(--grey-light);
+  padding: 1rem 1.5rem 1rem 0.5rem;
+  margin:0.5rem;
+  display:flex;
+}
+
+.article__thumbnail {
+  padding-right: 1rem;
+}
+
+.facebook-link {
+  margin-left: auto;
 }
