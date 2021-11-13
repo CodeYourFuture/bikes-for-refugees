@@ -94,6 +94,10 @@ p {
 
 
 /* Buttons */
+.buttonContainer {
+  display: flex;
+}
+
 .buttonBackground {
   background-color: #c05326;
   color: rgb(255, 255, 255);
