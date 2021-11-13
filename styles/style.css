@@ -137,6 +137,8 @@ p {
 .hero {
   background-image: url("../images/header-bike.jpg");
   background-color: var(--grey-light);
+  height: 325px;
+  margin-bottom: 50px;
 }
 
 .hero h1 {
