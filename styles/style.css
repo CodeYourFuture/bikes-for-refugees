@@ -277,6 +277,18 @@ button:hover {
     min-width: 350px;
 }
 
+.aside-article {
+    display: flex;
+    flex-direction: row;
+    width: auto;
+    box-sizing: border-box;
+}
+
+.article__content {
+    flex-direction: column;
+    padding-left: 15px;
+}
+
 
 /* Footer */
 
@@ -294,6 +306,10 @@ button:hover {
     padding-bottom: 1rem;
     text-align: center;
     font-size: 0.85rem;
+}
+
+.facebook-link {
+    text-align: right;
 }
 
 
