@@ -85,6 +85,9 @@ p {
   text-decoration: none;
 }
 
+.navigation__link:hover {
+  color: #ee2b11;
+}
 /* Text styles */
 
 .text-highlight {
