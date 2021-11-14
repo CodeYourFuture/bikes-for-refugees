@@ -15,6 +15,7 @@
 
 body {
   margin: 0;
+  padding:0;
 }
 
 body,
@@ -29,6 +30,9 @@ h1,h2,h3,h4,h5,h6 {
   margin-bottom: 0;
 }
 
+
+
+
 p {
   margin-top: 0;
   margin-bottom: 0;
@@ -38,8 +42,8 @@ p {
 .content,
 .footer {
   padding: 0 1.5rem;
-  max-width: 1200px;
-  margin: 0 auto;
+  max-width: 2200px;
+  margin: 0 10rem;
 }
 
 /* Header */
@@ -76,6 +80,13 @@ p {
   text-decoration: none;
 }
 
+.navigation__link:hover {
+  
+  background: rgb(233, 146, 7);
+
+
+}
+
 
 /* Text styles */
 
@@ -96,6 +107,17 @@ p {
 /* Buttons */
 
   /* INSERT BUTTON STYLES HERE */
+
+.button{
+
+  
+    
+  
+    
+}
+
+
+
 
 
 /* Content */
@@ -120,18 +142,26 @@ p {
 /* hero */
 
 .hero {
-  background-image: url("header-bike.jpg");
-  background-color: var(--grey-light);
+  background-image:url("../images/header-bike.jpg");
+  background-size:45rem 20rem;
+  padding: 2rem;
+  padding-bottom: 4rem;
+  
 }
+
+
 
 .hero h1 {
   margin-bottom: 1rem;
+  padding-top: 2rem;
   font-size: 2.5rem;
+  color: rgb(255, 255, 255);
 }
 
 .hero p {
   font-size: 1.2rem;
   margin-bottom: 2rem;
+  color: rgb(255, 255, 255);
 }
 
 
@@ -140,7 +170,8 @@ p {
 .heading-underline {
   position: relative;
   margin-bottom: 2rem;
-  padding-bottom: 0.5rem;
+  padding-top:2.2rem;
+  padding-bottom: 0.2rem;
   border-bottom: 2px solid var(--orange-light);
   font-size: 1rem;
   font-weight: 600;
@@ -152,7 +183,7 @@ p {
   position: absolute;
   bottom: -2px;
   left: 0;
-  width: 25%;
+  width: 70%;
   height: 2px;
   max-width: 100px;
   background: var(--orange-dark);
@@ -169,21 +200,25 @@ p {
   margin-bottom: 0.5rem;
   font-size: 1rem;
   font-weight: 700;
+  padding-top: 0.5rem;
 }
 
 .article__title-link {
   text-decoration: none;
   color: var(--orange-dark);
+  
 }
 
 .article__summary {
   margin-top: 0;
   margin-bottom: 1rem;
+  margin-right: 2rem;
 }
 
 .article__thumbnail {
   object-fit: contain;
   width: 5rem;
+  padding:30px;
 }
 
 .article__read-more {
@@ -202,6 +237,21 @@ p {
   text-decoration: underline;
 }
 
+.article_image{
+width: 200px;
+height:100px;
+
+}
+
+
+.article-content{
+  display:inline-block;
+  
+  
+
+}
+
+
 .fa {
   margin-right: 0.5rem;
   color: var(--orange-dark);
@@ -209,6 +259,7 @@ p {
 
 .facebook-link {
   color: var(--orange-dark);
+  text-align:right;
 }
 
 /* Sidebar */
@@ -217,6 +268,7 @@ p {
   display: flex;
   flex-direction: column;
   min-width: 350px;
+  width:85%;
 }
 
 /* Footer */
@@ -247,4 +299,156 @@ p {
   .main {
     padding-right: 2rem;
   }
+}
+
+
+.donate{
+
+  background-color:#c05326;
+  color: white;
+  border-radius:8px;
+  font-size: 0.9rem;
+  width: 9rem;
+  height: 2rem;
+  
+  
+}
+
+.donate:hover{
+
+background-color: white;
+color:#c05326;
+border-radius:8px;
+font-size: 0.9rem;
+width: 9rem;
+height: 2rem;
+
+
+
+}
+
+.donate_now{
+
+  background-color:#c05326;
+  color: white;
+  border-radius:8px;
+  font-size: 0.9rem;
+  width: 6rem;
+  height: 2rem;
+  
+  
+}
+
+.donate_now:hover{
+
+  background-color: white;
+  color: #c05326;
+  border-radius:8px;
+  font-size: 0.9rem;
+  width: 6rem;
+  height: 2rem;
+  
+  
+}
+
+
+.volunteer{
+  background-color: white;
+  color:#c05326;
+  border-radius:8px;
+  font-size: 0.9rem;
+  width: 6em;
+  height: 2rem;
+  font-weight: 550;
+  
+  
+
+}
+
+.volunteer:hover{
+  background-color:#c05326;
+  color:white;
+  border-radius:8px;
+  font-size: 0.9rem;
+  width: 6em;
+  height: 2rem;
+  font-weight: 550;
+  
+  
+
+}
+
+.w1-container {
+
+display:flex;
+
+border-width: 10px;
+
+}
+
+.w2-container {
+
+  display:flex;
+  flex-direction:row;
+  border-style: solid;
+  border-color: black;
+  border-width: 1px;
+  
+  
+  }
+
+.w3-container {
+
+    display:flex;
+    flex-direction:row;
+    border-style: solid;
+    border-color: black;
+    border-width: 1px;
+    
+    
+    }
+
+.border1 {
+      
+  border-style: solid;
+  border-color: gray;
+  border-width: 1px;
+  padding:1em;
+  margin:0.5em;
+    }
+
+
+.navigation__item{
+
+    padding:20px;
+
+    }
+
+
+ .icons-container{
+  
+  display:flex;
+  flex-direction: row;
+  
+  }
+
+
+.icon-container-level2{
+
+  display:flex;
+  flex-direction: row; 
+  border-style: solid;
+  border-color: gray;
+  border-width: 1px;
+
+   
+  }
+
+.box_outline{
+
+  border-style: solid;
+  border-color: black;
+  border-width: 1px;
+
+
 }
