@@ -63,10 +63,28 @@ p {
 .navigation__list {
   display: flex;
   list-style: none;
+  }
+}
+
+.nav1 {
+  margin: 30px;
+}
+
+ .nav2 {
+  margin: 30px;
+}
+                                        /* added new classes in order to fix navigation spacing issues */
+.nav3 {
+  margin: 30px;
+}
+
+.nav4 {
+  margin: 30px;
 }
 
 .navigation__item {
-  padding: 0.5rem 0;
+  display: flex;
+  margin: 20px;
 }
 
 .navigation__link {
@@ -76,6 +94,10 @@ p {
   text-decoration: none;
 }
 
+.nav:hover {
+  color: #c05326;
+}
+                                                    /* added colour change on hover to nav text */
 
 /* Text styles */
 
@@ -95,7 +117,38 @@ p {
 
 /* Buttons */
 
-  /* INSERT BUTTON STYLES HERE */
+
+.buttonBackground {
+  background-color: #c05326;
+  color: rgb(255, 255, 255);
+  font-weight: 600;
+  border: 6px solid #c05326;
+  border-radius: 4px;
+  margin-left: 33px;
+}
+
+.buttonBackground:hover {
+  background-color: #fff;
+  color: #c05326;
+  border: 6px solid #fff
+}
+
+                                                                /* added button class parameters, and colour inversion on hover */
+.bBInverted {
+  background-color: rgb(255, 255, 255);
+  color: #c05326;
+  font-weight: 600;
+  border: 6px solid rgb(255,255,255);
+  border-radius: 4px;
+  
+}
+
+
+.bBInverted:hover {
+  background-color: #c05326;
+  color: #fff;
+  border: 6px solid #c05326
+}
 
 
 /* Content */
@@ -120,18 +173,30 @@ p {
 /* hero */
 
 .hero {
-  background-image: url("header-bike.jpg");
+  background-image: url("../images/header-bike.jpg");
   background-color: var(--grey-light);
+  height: 325px;
+  margin-bottom: 50px;
+}
+                                                                                /* fixed image pathway */
+.container {
+  display: flex;
+  flex-direction: column;
+  padding: 60px 0px 20px 33px;
 }
 
 .hero h1 {
   margin-bottom: 1rem;
   font-size: 2.5rem;
+  color: rgb(255, 255, 255);
+
 }
 
 .hero p {
   font-size: 1.2rem;
   margin-bottom: 2rem;
+  color: rgb(255, 255, 255);
+  font-weight: 600;
 }
 
 
@@ -160,6 +225,28 @@ p {
 
 
 /* Article */
+.articleContainer {
+  display: flex;
+  margin-bottom: 20px;
+  
+}
+
+.containerOne {
+  display:flex;
+  border: 2px solid #e4e4e4;
+  padding: 15px;
+  padding-right: 20px;
+  margin-right: 10px;
+  flex-shrink: 1.1;
+}
+                                                                    /* added container classes to make necessary adjustments to webpage */
+.containerTwo {
+  display:flex;
+  border: 2px solid #e4e4e4;
+  padding: 15px;
+  margin-left: 10px;
+  
+}
 
 .article {
   margin-bottom: 1rem;
@@ -209,9 +296,39 @@ p {
 
 .facebook-link {
   color: var(--orange-dark);
+  text-align: right;
+}
+
+.fBLink:hover {
+  color: blueviolet;
 }
 
 /* Sidebar */
+
+.sideContainerOne {
+  display:flex;
+  border: 2px solid #e4e4e4; 
+  padding: 20px 10px 15px 15px;
+}
+
+.sideContainerTwo {
+  display:flex;
+  border: 2px solid #e4e4e4;
+  padding: 15px 30px 30px 15px;
+}
+
+                                                      /* added flex boxes to readjust the sidebar*/
+.sideContainerThree {
+  display:flex;
+  border: 2px solid #e4e4e4;
+  padding: 15px 30px 20px 15px;
+  justify-content: space-between;
+}
+
+.sBImg {
+  margin-right: 20px;
+}
+
 
 .sidebar {
   display: flex;

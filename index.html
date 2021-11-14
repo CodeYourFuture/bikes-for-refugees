@@ -20,7 +20,7 @@
   </head>
 
   <body>
-    <div class="header">
+    <header class="header">
 
         <a href="#">
           <img
@@ -32,46 +32,51 @@
 
         <div>
           <ul class="navigation__list">
-            <li class="navigation__item">
-              <a class="navigation__link" href="#">Home</a>
+            <li class="navigation__item nav1">
+              <a class="navigation__link nav" href="#">Home</a>
             </li>
-            <li class="navigation__item">
-              <a class="navigation__link" href="#">About Us</a>
+            <li class="navigation__item nav2">
+              <a class="navigation__link nav" href="#">About Us</a>
             </li>
-            <li class="navigation__item">
-              <a class="navigation__link" href="#">News & Events</a>
+            <li class="navigation__item nav3">
+              <a class="navigation__link nav" href="#">News & Events</a>
             </li>
-            <li class="navigation__item">
-              <a class="navigation__link" href="#">Contact Us</a>
+            <li class="navigation__item nav4">
+              <a class="navigation__link nav" href="#">Contact Us</a>
             </li>
           </ul>
         </div>
 
-        <button>Donate Now</button>
+        <button class="buttonBackground">Donate Now</button>
 
-    </div>
+      </header>
 
     <div class="content">
-        <div class="main">
+        <main class="main">
           <div class="alert">
             You've helped us give <span class="text-highlight">72</span> bikes
             to refugees and asylum seekers so far. <strong>Thank you!</strong>
           </div>
 
-          <div class="hero">
-            <h1>Bikes for Refugees</h1>
+        <div class="hero">
+          <div class="container">
+            <h1 >Bikes for Refugees</h1>
             <p>
               Providing donated bikes and accessories to refugees and asylum
               seekers in Scotland.
             </p>
-            <button>Donate a bike today</button>
-            <button>Volunteer</button>
           </div>
-
-          <div>
+          <div buttonContainer>
+            <button class="buttonBackground">Donate a bike today</button>
+            <button class="bBInverted">Volunteer</button>                       <!-- created button classes -->
+          </div>
+        </div>  
+         
+        <div>
             <h2 class="heading-underline">Learn more</h2>
 
-            <div>
+          <div class= "articleContainer">                                        <!-- various containers for use in CSS-->
+            <div class="containerOne">
               <div class="article">
                 <h3 class="article__title">Why do refugees need bikes?</h3>
                 <p class="article__summary">
@@ -86,7 +91,9 @@
                   </a>
                 </p>
               </div>
+           </div>
 
+           <div class="containerTwo">
               <div class="article">
                 <h3 class="article__title">How can I help?</h3>
                 <p class="article__summary">
@@ -103,17 +110,18 @@
               </div>
             </div>
           </div>
-        </div>
+          </div>
+        </main>
 
-        <div class="sidebar">
+        <sidebar class="sidebar">
           <h2 class="heading-underline">Upcoming events</h2>
 
-          <div class="article">
+          <div class="article sideContainerOne">
             <img
-              class="article__thumbnail"
-              src="spring-fundraisers_thumbnail.jpg"
+              class="article__thumbnail sBImg"
+              src="./images/spring-fundraisers_thumbnail.jpg"
               alt=""
-            />
+            />                                                                        <!-- fixed image pathways -->
             <div class="article__content">
               <h3 class="article__title">
                 <a class="article__title-link" href="#">Join us for our Spring fundraisers</a>
@@ -125,10 +133,10 @@
             </div>
           </div>
 
-          <div class="article">
+          <div class="article sideContainerTwo">
             <img
-              class="article__thumbnail"
-              src="bikes-for-refugees_logo.jpg"
+              class="article__thumbnail sBImg"
+              src="./images/bikes-for-refugees_logo.jpg"
               alt=""
             />
             <div class="article__content">
@@ -138,10 +146,10 @@
             </div>
           </div>
 
-          <div class="article">
+          <div class="article sideContainerThree">
             <img
-              class="article__thumbnail"
-              src="edinburgh-damascus_thumbnail.png"
+              class="article__thumbnail sBImg"
+              src="./images/edinburgh-damascus_thumbnail.png"
               alt=""
             />
             <div class="article__content">
@@ -158,15 +166,15 @@
           <a
             href="https://www.facebook.com/BikesforRefugeesScotland/events/?ref=page_internal"
             target="_blank"
-            class="facebook-link"
+            class="facebook-link fBLink"
           >
             <span class="fa fa-facebook-square"></span>
             All Facebook events
           </a>
-        </div>
+        </sidebar>
     </div>
 
-    <div class="footer">
+    <footer class="footer">
       <div class="footer__content">
         <p>
           <strong>Bikes for Refugees Scotland is a volunteer-led project to help
@@ -174,6 +182,6 @@
         </p>
         <p>Website by Code Your Future</p>
       </div>
-    </div>
+    </footer>
   </body>
 </html>
