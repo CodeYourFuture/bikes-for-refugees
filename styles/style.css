@@ -111,29 +111,19 @@ nav {
 /* Buttons */
 
 /* INSERT BUTTON STYLES HERE */
-.button,
-h1 {
+.button {
   padding-right: 0em;
+  font-weight: bold;
+  border: none;
+  border-radius: 0.25em;
 }
 .big {
   background-color: #db4e16;
   color: white;
-  font-size: 0.8em;
-  font-weight: bold;
-  width: 12em;
-  height: 2.5em;
-  border: none;
-  border-radius: 0.25em;
 }
 .small {
   background-color: white;
   color: orange;
-  font-size: 0.8em;
-  font-weight: bold;
-  height: 2.5em;
-  width: 6em;
-  border: none;
-  border-radius: 0.25em;
 }
 
 /* Content */
@@ -153,7 +143,6 @@ h1 {
   line-height: 1.3;
   padding: 1.5rem 1rem;
   margin-bottom: 2rem;
-  width: 83%;
 }
 
 /* hero */
@@ -163,7 +152,6 @@ h1 {
   background-color: var(--grey-light);
   margin-bottom: 1rem;
   padding: 6rem 2rem;
-  width: 80%;
   color: white;
   justify-content: space-between;
 }
@@ -202,23 +190,27 @@ h1 {
 }
 
 /* Article */
-.wrapper {
-  display: flex;
-  /* border: 2px solid black; */
-  justify-content: space-between;
-}
 
 .article {
-  border: 2px solid black;
+  border: 2px solid rgb(231, 223, 223);
   font-size: 1rem;
+  padding: 0.5rem;
+  border-radius: 0.2rem;
   margin: 0.3rem;
+}
+.direction_row {
+  display: flex;
+  flex-direction: row;
+}
+.direction_column {
+  display: flex;
+  flex-direction: column;
 }
 
 .article__title {
-  margin-bottom: 0.5rem;
+  margin: 0 1rem;
   font-size: 1rem;
   font-weight: 700;
-  width: 20%;
 }
 
 .article__title-link {
@@ -227,8 +219,10 @@ h1 {
 }
 
 .article__summary {
-  margin-top: 0;
-  margin-bottom: 1rem;
+  margin: 0 1rem;
+  padding: 0.5rem 0rem;
+  width: 70%;
+  display: flex;
 
   /* margin-right: 20rem;
   justify-content: space-around;
@@ -238,11 +232,14 @@ h1 {
 
 .article__thumbnail {
   object-fit: contain;
-  /* width: 5rem; */
+  width: 20%;
+  margin: 0 0.5rem;
+  flex-direction: row;
 }
 
 .article__read-more {
-  margin-top: 0;
+  margin: 0 0.5rem;
+  padding: 0.5rem 0.5rem;
 }
 
 .article__read-more a {
@@ -264,6 +261,7 @@ h1 {
 
 .facebook-link {
   color: var(--orange-dark);
+  text-align: right;
 }
 
 /* Sidebar */
