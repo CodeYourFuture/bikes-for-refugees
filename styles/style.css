@@ -267,19 +267,23 @@ p {
 /* Sidebar */
 
 .sideContainerOne {
+  display:flex;
   border: 2px solid #e4e4e4;
-  padding: 15px;
+  padding: 20px;
 }
 
 .sideContainerTwo {
+  display:flex;
   border: 2px solid #e4e4e4;
-  padding: 15px;
+  padding: 30px;
 }
 
 
 .sideContainerThree {
+  display:flex;
   border: 2px solid #e4e4e4;
-  padding: 15px;
+  padding: 15px 30px 20px 15px;
+  justify-content: space-between;
 }
 
 
