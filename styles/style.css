@@ -190,7 +190,7 @@ p {
 }
 
 .image_article {
-  flex-direction: flex;
+  display : flex;
 }
 
 .article__title {
