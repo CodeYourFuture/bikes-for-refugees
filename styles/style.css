@@ -298,6 +298,10 @@ p {
   color: var(--orange-dark);
 }
 
+.fBLink:hover {
+  color: blueviolet;
+}
+
 /* Sidebar */
 
 .sideContainerOne {
