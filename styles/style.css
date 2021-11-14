@@ -63,14 +63,22 @@ p {
 .navigation__list {
   display: flex;
   list-style: none;
+  
 }
 
 .navigation__item {
   padding: 0.5rem 0;
+  padding: 20px;
 }
 
 .navigation__link {
   color: var(--grey-dark);
+  font-weight: 600;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+.navigation__link:hover {
+  color: var(--orange-dark);
   font-weight: 600;
   text-transform: uppercase;
   text-decoration: none;
@@ -120,8 +128,10 @@ p {
 /* hero */
 
 .hero {
-  background-image: url("header-bike.jpg");
+  background-image: url("../images/header-bike.jpg");
   background-color: var(--grey-light);
+  padding: 100px 50px 100px 50px;
+  
 }
 
 .hero h1 {
@@ -133,7 +143,38 @@ p {
   font-size: 1.2rem;
   margin-bottom: 2rem;
 }
+.red-button{
+  color: white;
+  background-color: orangered;
+  border-radius: 5px;
+  border: 0px;
+  padding: 10px;
+}
+.red-button:hover{
+  color:orangered;
+  background-color: white;
+  border-radius: 5px;
+  border: 0px;
+  padding: 10px;
+}
 
+.white-button{
+  color:orangered;
+  background-color: white;
+  border-radius: 5px;
+  border: 0px;
+  padding: 10px;
+}
+.white-button:hover{
+  color: white;
+  background-color: orangered;
+  border-radius: 5px;
+  border: 0px;
+  padding: 10px;
+}
+.white-text{
+  color:white;
+}
 
 /* Headings */
 
@@ -145,6 +186,8 @@ p {
   font-size: 1rem;
   font-weight: 600;
   text-transform: uppercase;
+  padding-top: 30px;
+  
 }
 
 .heading-underline:before {
@@ -163,6 +206,10 @@ p {
 
 .article {
   margin-bottom: 1rem;
+  display: flex;
+  border: 2px solid rgb(221, 218, 218);
+  border-radius: 5px;
+  padding:20px 10px 20px 10px;
 }
 
 .article__title {
@@ -184,6 +231,7 @@ p {
 .article__thumbnail {
   object-fit: contain;
   width: 5rem;
+  padding: 10px;
 }
 
 .article__read-more {
@@ -196,14 +244,27 @@ p {
   color: var(--orange-dark);
   text-decoration: none;
 }
+.div-learn-more{
+  display:flex;
+}
+.article-learn-more{
+  display:flex;
+  flex-direction: column;
+
+}
+.margin-right{
+  margin-right: 20px;
+}
 
 .article__read-more a:hover,
 .article__read-more a:focus {
   text-decoration: underline;
 }
 
-.fa {
-  margin-right: 0.5rem;
+.face-right {
+  display: flex;
+  justify-content: flex-end;
+  
   color: var(--orange-dark);
 }
 
