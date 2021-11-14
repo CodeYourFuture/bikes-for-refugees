@@ -89,6 +89,9 @@ nav {
   text-transform: uppercase;
   text-decoration: none;
 }
+.navigation__link:hover {
+  color: orange;
+}
 
 /* Text styles */
 
@@ -179,7 +182,7 @@ h1 {
 
 .heading-underline {
   position: relative;
-  margin-bottom: 2rem;
+  margin: 1rem 0rem;
   padding-bottom: 0.5rem;
   border-bottom: 2px solid var(--orange-light);
   font-size: 1rem;
@@ -206,18 +209,16 @@ h1 {
 }
 
 .article {
-  margin-bottom: 1rem;
   border: 2px solid black;
   font-size: 1rem;
-  margin: 1rem 0rem;
+  margin: 0.3rem;
 }
 
 .article__title {
   margin-bottom: 0.5rem;
   font-size: 1rem;
   font-weight: 700;
-
-  /* padding: 1em 1em; */
+  width: 20%;
 }
 
 .article__title-link {
