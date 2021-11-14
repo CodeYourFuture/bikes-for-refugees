@@ -24,6 +24,20 @@ button {
   font-size: 1rem;
 }
 
+button {
+  font-weight: bold;
+  background-color: #c05326;
+  color : #ffff;
+  padding: 0.5rem;
+  border: none;
+  border-radius: 5px;
+}
+
+.newButton {
+  color: #c05326;
+  background-color: #fff;
+}
+
 h1,h2,h3,h4,h5,h6 {
   margin-top: 0;
   margin-bottom: 0;
@@ -120,8 +134,13 @@ p {
 /* hero */
 
 .hero {
-  background-image: url("header-bike.jpg");
+  background-image: url("../images/header-bike.jpg");
   background-color: var(--grey-light);
+  color: #ffff;
+  padding: 2rem;
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+  margin-bottom: 3rem;
 }
 
 .hero h1 {
@@ -133,6 +152,7 @@ p {
   font-size: 1.2rem;
   margin-bottom: 2rem;
 }
+
 
 
 /* Headings */
@@ -163,6 +183,14 @@ p {
 
 .article {
   margin-bottom: 1rem;
+  border-style: solid;
+  border-color: #c7d6e9;
+  border-radius: 5px;
+  padding: 2%;
+}
+
+.image_article {
+  flex-direction: flex;
 }
 
 .article__title {
@@ -184,6 +212,7 @@ p {
 .article__thumbnail {
   object-fit: contain;
   width: 5rem;
+  margin-right: 2%;;
 }
 
 .article__read-more {
