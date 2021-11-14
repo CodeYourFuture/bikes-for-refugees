@@ -5,13 +5,13 @@
  * 
  */
 
- :root {
-   --grey-dark: #292b2c;
-   --grey-light: #e4e4e4;
-   --orange-dark: #c05326;
-   --orange-light: #f7eae4;
-   --white: #fff;
- }
+:root {
+  --grey-dark: #292b2c;
+  --grey-light: #e4e4e4;
+  --orange-dark: #c05326;
+  --orange-light: #f7eae4;
+  --white: #fff;
+}
 
 body {
   margin: 0;
@@ -25,7 +25,7 @@ button {
 }
 
 .redButton {
-  background-color:orangered;
+  background-color: orangered;
   color: white;
   border-radius: 10px;
   padding-top: 10px;
@@ -33,7 +33,12 @@ button {
   font-weight: bolder;
 }
 
-h1,h2,h3,h4,h5,h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   margin-top: 0;
   margin-bottom: 0;
 }
@@ -60,7 +65,7 @@ p {
   height: 5rem;
   margin-bottom: 1rem;
   padding-top: 1rem;
-  padding:50px;
+  padding: 50px;
 }
 
 .header__logo {
@@ -86,7 +91,6 @@ p {
   text-decoration: none;
 }
 
-
 /* Text styles */
 
 .text-highlight {
@@ -102,11 +106,9 @@ p {
   border-left-color: var(--orange-dark);
 }
 
-
 /* Buttons */
 
-  /* INSERT BUTTON STYLES HERE */
-
+/* INSERT BUTTON STYLES HERE */
 
 /* Content */
 
@@ -146,7 +148,6 @@ p {
   margin-bottom: 2rem;
 }
 
-
 /* Headings */
 
 .heading-underline {
@@ -170,7 +171,6 @@ p {
   background: var(--orange-dark);
 }
 
-
 /* Article */
 
 .article {
@@ -192,7 +192,6 @@ p {
   margin-bottom: 0.5rem;
   font-size: 1rem;
   font-weight: 700;
-
 }
 
 .article__title-link {
