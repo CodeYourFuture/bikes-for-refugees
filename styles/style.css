@@ -5,13 +5,13 @@
  * 
  */
 
- :root {
-   --grey-dark: #292b2c;
-   --grey-light: #e4e4e4;
-   --orange-dark: #c05326;
-   --orange-light: #f7eae4;
-   --white: #fff;
- }
+:root {
+  --grey-dark: #292b2c;
+  --grey-light: #e4e4e4;
+  --orange-dark: #c05326;
+  --orange-light: #f7eae4;
+  --white: #fff;
+}
 
 body {
   margin: 0;
@@ -24,7 +24,12 @@ button {
   font-size: 1rem;
 }
 
-h1,h2,h3,h4,h5,h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   margin-top: 0;
   margin-bottom: 0;
 }
@@ -66,7 +71,7 @@ p {
 }
 
 .navigation__item {
-  padding: 0.5rem 0;
+  padding: 0.5rem 1rem;
 }
 
 .navigation__link {
@@ -76,6 +81,9 @@ p {
   text-decoration: none;
 }
 
+.navigation__link:hover {
+  color: var(--orange-dark);
+}
 
 /* Text styles */
 
@@ -92,11 +100,29 @@ p {
   border-left-color: var(--orange-dark);
 }
 
-
 /* Buttons */
+button {
+  background: var(--orange-dark);
+  border: none;
+  border-radius: 5px;
+  color: var(--orange-light);
+  padding: 10px;
+}
 
-  /* INSERT BUTTON STYLES HERE */
+button:hover {
+  background: var(--grey-dark);
+  color: var(--white);
+}
 
+.volunteer-button {
+  background: var(--white);
+  color: var(--grey-dark);
+}
+
+.volunteer-button:hover {
+  background: darkgreen;
+  color: var(--white);
+}
 
 /* Content */
 
@@ -120,20 +146,26 @@ p {
 /* hero */
 
 .hero {
-  background-image: url("header-bike.jpg");
+  background-image: url("../images/header-bike.jpg");
   background-color: var(--grey-light);
+  height: 320px;
+  margin-bottom: 50px;
+  padding-left: 2rem;
 }
 
 .hero h1 {
-  margin-bottom: 1rem;
+  margin-bottom: 1.5rem;
   font-size: 2.5rem;
+  color: var(--white);
+  width: 100%;
+  padding-top: 5rem;
 }
 
 .hero p {
   font-size: 1.2rem;
   margin-bottom: 2rem;
+  color: var(--white);
 }
-
 
 /* Headings */
 
@@ -152,17 +184,31 @@ p {
   position: absolute;
   bottom: -2px;
   left: 0;
-  width: 25%;
+  width: 100px;
   height: 2px;
   max-width: 100px;
   background: var(--orange-dark);
 }
 
-
 /* Article */
+.more-info {
+  display: flex;
+}
 
 .article {
   margin-bottom: 1rem;
+  border: solid 1px var(--grey-light);
+  border-radius: 3px;
+  padding: 1rem;
+  width: 100%;
+  margin-right: 1rem;
+}
+
+.article__content {
+  padding-left: 15px;
+}
+.article-sidebar {
+  display: flex;
 }
 
 .article__title {
@@ -188,6 +234,7 @@ p {
 
 .article__read-more {
   margin-top: 0;
+  margin-bottom: 1rem;
 }
 
 .article__read-more a {
@@ -209,6 +256,7 @@ p {
 
 .facebook-link {
   color: var(--orange-dark);
+  text-align: right;
 }
 
 /* Sidebar */
@@ -216,7 +264,7 @@ p {
 .sidebar {
   display: flex;
   flex-direction: column;
-  min-width: 350px;
+  min-width: 300px;
 }
 
 /* Footer */
