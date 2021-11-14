@@ -94,6 +94,10 @@ p {
   text-decoration: none;
 }
 
+.nav:hover {
+  color: #c05326;
+}
+
 
 /* Text styles */
 
@@ -121,8 +125,14 @@ p {
   border: 6px solid #c05326;
   border-radius: 4px;
   margin-left: 33px;
-
 }
+
+.buttonBackground:hover {
+  background-color: #fff;
+  color: #c05326;
+  border: 6px solid #fff
+}
+
 
 .bBInverted {
   background-color: rgb(255, 255, 255);
@@ -131,6 +141,13 @@ p {
   border: 6px solid rgb(255,255,255);
   border-radius: 4px;
   
+}
+
+
+.bBInverted:hover {
+  background-color: #c05326;
+  color: #fff;
+  border: 6px solid #c05326
 }
 
 
