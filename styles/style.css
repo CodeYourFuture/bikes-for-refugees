@@ -115,15 +115,18 @@ nav {
   padding-right: 0em;
   font-weight: bold;
   border: none;
-  border-radius: 0.25em;
 }
 .big {
   background-color: #db4e16;
   color: white;
+  border-style: none;
+  border-radius: 0.2em;
 }
 .small {
   background-color: white;
   color: orange;
+  border-style: none;
+  border-radius: 0.2em;
 }
 
 /* Content */
