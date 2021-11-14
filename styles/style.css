@@ -5,13 +5,13 @@
  * 
  */
 
- :root {
-   --grey-dark: #292b2c;
-   --grey-light: #e4e4e4;
-   --orange-dark: #c05326;
-   --orange-light: #f7eae4;
-   --white: #fff;
- }
+:root {
+  --grey-dark: #292b2c;
+  --grey-light: #e4e4e4;
+  --orange-dark: #c05326;
+  --orange-light: #f7eae4;
+  --white: #fff;
+}
 
 body {
   margin: 0;
@@ -24,7 +24,12 @@ button {
   font-size: 1rem;
 }
 
-h1,h2,h3,h4,h5,h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   margin-top: 0;
   margin-bottom: 0;
 }
@@ -76,6 +81,9 @@ p {
   text-decoration: none;
 }
 
+.navigation__link:hover {
+  color: #c05326;
+}
 
 /* Text styles */
 
@@ -92,11 +100,36 @@ p {
   border-left-color: var(--orange-dark);
 }
 
-
 /* Buttons */
 
-  /* INSERT BUTTON STYLES HERE */
+button {
+  background-color: #c05326;
+  color: #e4e4e4;
+  font-size: 1rem;
+  font-weight: 700;
+  height: 40px;
+  padding: 1px 21px;
+  border-radius: 5px;
+  border: none;
+  text-align: center;
+}
 
+.btn {
+  background-color: #fff;
+  color: #c05326;
+}
+
+button:hover {
+  background-color: #fff;
+  color: #c05326;
+}
+
+.btn:hover {
+  background-color: #c05326;
+  color: #e4e4e4;
+}
+
+/* INSERT BUTTON STYLES HERE */
 
 /* Content */
 
@@ -120,8 +153,12 @@ p {
 /* hero */
 
 .hero {
-  background-image: url("header-bike.jpg");
+  background-image: url("../images/header-bike.jpg");
+  background-size: cover;
   background-color: var(--grey-light);
+  color: #e4e4e4;
+  padding: 100px 15px;
+  margin-bottom: 55px;
 }
 
 .hero h1 {
@@ -133,7 +170,6 @@ p {
   font-size: 1.2rem;
   margin-bottom: 2rem;
 }
-
 
 /* Headings */
 
@@ -158,11 +194,25 @@ p {
   background: var(--orange-dark);
 }
 
-
 /* Article */
+
+.content-article {
+  display: flex;
+}
+
+.content-article .article {
+  display: flex;
+  flex-direction: column;
+  margin: 0 10px;
+}
 
 .article {
   margin-bottom: 1rem;
+  border: 1px solid #b2b8bd;
+  border-radius: 3px;
+  padding: 0.8rem;
+  display: flex;
+  justify-content: space-evenly;
 }
 
 .article__title {
@@ -184,6 +234,7 @@ p {
 .article__thumbnail {
   object-fit: contain;
   width: 5rem;
+  margin-right: 20px;
 }
 
 .article__read-more {
