@@ -275,7 +275,8 @@ items:center used to just the image on center of whole size of that article */
   display: flex;
   flex-direction: column;
   min-width: 350px;
-  align-items: end; /* to change possition of 'all facebook event' anchor tag */
+  align-items: flex-end; /* to change possition of 'all facebook event' anchor tag */
+  margin-left: 150px;
 }
 
 /* Footer */
