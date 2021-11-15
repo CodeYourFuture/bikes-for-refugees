@@ -193,12 +193,12 @@ nav a:hover {
 
 .article-underline {
   display: flex;
+  justify-content: space-between;
 }
 
 .article-underline article {
   display: block;
-  width: 50%;
-  margin: 8px;
+  width: 45%;
 }
 
 .article {
