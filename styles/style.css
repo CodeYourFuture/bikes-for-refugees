@@ -27,7 +27,9 @@ button,
   
 }
 
-
+.btn:hover {
+  background-color: #292b2c;
+}
 
 /*buttons*/
 .btn {
@@ -93,6 +95,12 @@ h1,h2,h3,h4,h5,h6 {
   padding: 1em;
 }
 
+/*link on hover*/
+
+.navigation__link:hover {
+  color: #c05326;
+
+}
 
 /* Text styles */
 
