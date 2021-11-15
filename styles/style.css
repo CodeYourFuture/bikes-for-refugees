@@ -197,12 +197,16 @@ p {
   flex-direction: row;
 }
 
+.space {
+  justify-content: space-between;
+}
+
 .column__direction {
   display: flex;
   flex-direction: column;
   width: 45%;
-  justify-content: space-between;
 }
+
 .article__title {
   margin-bottom: 0.5rem;
   font-size: 1rem;
