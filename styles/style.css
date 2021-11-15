@@ -18,10 +18,28 @@ body {
 }
 
 body,
-button {
+button,
+.btn{
   font-family: "Source Sans Pro", "Helvetica Neue", Arial, sans-serif;
   color: var(--grey-dark);
   font-size: 1rem;
+ 
+  
+}
+
+
+
+/*buttons*/
+.btn {
+  background: #c05326;
+  padding: 5px 10px;
+  border-radius: 5px;
+  color:#fff;
+}
+
+.btn_white{
+  background: #fff;
+  color:#c05326;
 }
 
 h1,h2,h3,h4,h5,h6 {
@@ -29,10 +47,7 @@ h1,h2,h3,h4,h5,h6 {
   margin-bottom: 0;
 }
 
-p {
-  margin-top: 0;
-  margin-bottom: 0;
-}
+
 
 .header,
 .content,
@@ -63,6 +78,7 @@ p {
 .navigation__list {
   display: flex;
   list-style: none;
+  
 }
 
 .navigation__item {
@@ -74,6 +90,7 @@ p {
   font-weight: 600;
   text-transform: uppercase;
   text-decoration: none;
+  padding: 1em;
 }
 
 
@@ -103,6 +120,7 @@ p {
 .content {
   display: flex;
   flex-direction: column;
+  margin:0%;
 }
 
 /* Alert */
@@ -120,14 +138,24 @@ p {
 /* hero */
 
 .hero {
-  background-image: url("header-bike.jpg");
+  background-image: url("../images/header-bike.jpg"); /*refers back to the parent folder*/
   background-color: var(--grey-light);
+  color:white;
+  padding: 3.5em;
+  width: auto;
+  height: 35vh;
+  background-repeat: no-repeat;
+  background-size: 818px;
+  
+  
 }
+
 
 .hero h1 {
   margin-bottom: 1rem;
   font-size: 2.5rem;
 }
+
 
 .hero p {
   font-size: 1.2rem;
@@ -135,16 +163,17 @@ p {
 }
 
 
+
 /* Headings */
 
 .heading-underline {
   position: relative;
-  margin-bottom: 2rem;
-  padding-bottom: 0.5rem;
+  margin-bottom:  2em;
   border-bottom: 2px solid var(--orange-light);
   font-size: 1rem;
   font-weight: 600;
   text-transform: uppercase;
+  
 }
 
 .heading-underline:before {
@@ -159,11 +188,39 @@ p {
 }
 
 
-/* Article */
+.headingdown {
+  margin : auto 0;
+  padding-top: 2.5em;
+
+}
 
 .article {
   margin-bottom: 1rem;
+  display: flex;
+  flex-direction: row;
+  border: solid 0.1em rgb(240, 226, 226);
+  padding: 1em;
+  
+  
+  }
+  
+  
+.container {
+    display: flex;
+    margin: 0px;  
+    padding-top: 2em;
+    
+} 
+
+
+.box {
+  display: flex;
+  flex-wrap: wrap;
+  float: left;
+  margin-right: 1em;
+  
 }
+
 
 .article__title {
   margin-bottom: 0.5rem;
@@ -179,11 +236,13 @@ p {
 .article__summary {
   margin-top: 0;
   margin-bottom: 1rem;
+  
 }
 
 .article__thumbnail {
   object-fit: contain;
   width: 5rem;
+  padding: 1em;
 }
 
 .article__read-more {
@@ -209,6 +268,7 @@ p {
 
 .facebook-link {
   color: var(--orange-dark);
+  margin-left: 11.5em;
 }
 
 /* Sidebar */
