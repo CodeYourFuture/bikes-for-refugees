@@ -105,7 +105,13 @@ p {
 
 /* INSERT BUTTON STYLES HERE */
 
-
+.button {
+    background-color: #c05326; 
+    border: 2px;
+    color: white;
+    hover: background-color  #e4e4e4;
+    
+  }
 /* Content */
 
 .content {
@@ -132,18 +138,21 @@ p {
 .hero {
     background-image: url("../images/header-bike.jpg");
     background-color: var(--grey-light);
-    padding: 80px;
+    padding: 70px;
 }
 
 .hero h1 {
     margin-bottom: 1rem;
     font-size: 2.5rem;
+     color:#ffffff;  
 }
 
 .hero p {
     font-size: 1.2rem;
     margin-bottom: 2rem;
+    color:#ffffff;  
 }
+
 
 
 /* Headings */
