@@ -24,6 +24,29 @@ button {
   font-size: 1rem;
 }
 
+.button1{
+background-color: var(--orange-dark);
+color: var(--white);
+border-radius: 5px;
+padding: 4px 8px;
+
+}
+
+.button2{
+  background-color: var(--orange-dark);
+color: var(--white);
+border-radius: 5px;
+padding: 4px 8px;
+
+}
+
+.button3{
+  background-color: var(--white);
+  color: var(--orange-dark);
+  border-radius: 5px;
+  padding: 4px 8px;
+}
+
 h1,h2,h3,h4,h5,h6 {
   margin-top: 0;
   margin-bottom: 0;
@@ -53,6 +76,7 @@ p {
   padding-top: 1rem;
 }
 
+
 .header__logo {
   max-height: 90px;
   width: auto;
@@ -66,7 +90,7 @@ p {
 }
 
 .navigation__item {
-  padding: 0.5rem 0;
+  padding: 0.5rem 1rem;
 }
 
 .navigation__link {
@@ -120,8 +144,11 @@ p {
 /* hero */
 
 .hero {
-  background-image: url("header-bike.jpg");
+  background-image: url("../images/header-bike.jpg");
   background-color: var(--grey-light);
+  color: var(--white);
+  padding: 6rem 2rem;
+  margin-bottom: 3rem;
 }
 
 .hero h1 {
@@ -163,12 +190,29 @@ p {
 
 .article {
   margin-bottom: 1rem;
+  
+  border: solid 2px var(--grey-light);
+  border-radius: 5px;
+  padding: 15px;
+  
 }
+.row-direction
+{
+  display: flex;
+  flex-direction: row;
 
+}
+.column-direction
+{
+  display: flex;
+  flex-direction: column;
+  margin-left: 10px;
+}
 .article__title {
   margin-bottom: 0.5rem;
   font-size: 1rem;
   font-weight: 700;
+  padding-bottom: 10px;;
 }
 
 .article__title-link {
@@ -184,6 +228,7 @@ p {
 .article__thumbnail {
   object-fit: contain;
   width: 5rem;
+  margin-right: 20px;
 }
 
 .article__read-more {
@@ -205,10 +250,12 @@ p {
 .fa {
   margin-right: 0.5rem;
   color: var(--orange-dark);
+  text-align: right;
 }
 
 .facebook-link {
   color: var(--orange-dark);
+  text-align: right;
 }
 
 /* Sidebar */
