@@ -67,15 +67,25 @@ p {
 
 .navigation__item {
   padding: 0.5rem 0;
+  margin: 0 0.8rem;
 }
+  
 
 .navigation__link {
   color: var(--grey-dark);
   font-weight: 600;
   text-transform: uppercase;
   text-decoration: none;
+  /*padding: 0px 20px;*/
 }
 
+.navigation__link:hover{
+  color: orange;
+}
+
+.bikes{
+  color: white;
+}
 
 /* Text styles */
 
@@ -100,6 +110,31 @@ p {
 
 /* Content */
 
+button{
+
+
+}
+.orange-button{
+  background-color: #bb6904;
+  color: white;
+}
+
+.orange-button:hover {
+  color: #bb6904;
+  background-color: white;
+ 
+}
+
+.white-button{
+  background-color: white;
+  color: #bb6904;
+}
+
+.white-button:hover{
+  color: white; 
+  background-color: #bb6904;
+}
+
 .content {
   display: flex;
   flex-direction: column;
@@ -120,8 +155,10 @@ p {
 /* hero */
 
 .hero {
-  background-image: url("header-bike.jpg");
+  background-image: url("../images/header-bike.jpg");
   background-color: var(--grey-light);
+  padding: 5.6rem 2rem; 
+  margin-bottom: 4rem; 
 }
 
 .hero h1 {
@@ -130,7 +167,7 @@ p {
 }
 
 .hero p {
-  font-size: 1.2rem;
+  font-size: 1.1rem;
   margin-bottom: 2rem;
 }
 
@@ -163,10 +200,17 @@ p {
 
 .article {
   margin-bottom: 1rem;
+  display: flex;
+  padding: 1rem;
+  border-style: solid;
+  border-color: rgb(218, 218, 218); 
+
+  
 }
 
 .article__title {
   margin-bottom: 0.5rem;
+  padding-left: 1rem;
   font-size: 1rem;
   font-weight: 700;
 }
@@ -177,17 +221,20 @@ p {
 }
 
 .article__summary {
-  margin-top: 0;
+  margin-top: 1rem;
   margin-bottom: 1rem;
+  padding-left: 1rem;
 }
 
 .article__thumbnail {
   object-fit: contain;
   width: 5rem;
+
 }
 
 .article__read-more {
   margin-top: 0;
+  padding-left: 1rem;
 }
 
 .article__read-more a {
@@ -209,6 +256,20 @@ p {
 
 .facebook-link {
   color: var(--orange-dark);
+  text-align: right;
+
+}
+
+.column-article {
+  display: flex;
+  justify-content: space-between;
+  
+
+}
+
+.column-article article {
+  display: block;
+  width: 45%;
 }
 
 /* Sidebar */
@@ -217,6 +278,9 @@ p {
   display: flex;
   flex-direction: column;
   min-width: 350px;
+
+  
+
 }
 
 /* Footer */
@@ -248,3 +312,4 @@ p {
     padding-right: 2rem;
   }
 }
+
