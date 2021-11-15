@@ -24,6 +24,21 @@ button {
   font-size: 1rem;
 }
 
+button {
+  padding: 0.4rem 0.6rem;
+  background-color: var(--orange-dark);
+  border: none;
+  color: var(--white);
+  border-radius: 0.2rem;
+  font-weight: 600;
+}
+
+.volunteer-btn {
+  background-color: var(--white);
+  color: var(--orange-dark);
+
+}
+
 h1,h2,h3,h4,h5,h6 {
   margin-top: 0;
   margin-bottom: 0;
@@ -60,9 +75,15 @@ p {
 
 /* Navigation */
 
+.nav-bar {
+  width: 40%;
+}
+
 .navigation__list {
   display: flex;
+  justify-content: space-between;
   list-style: none;
+  padding: 0;
 }
 
 .navigation__item {
@@ -122,6 +143,7 @@ p {
 .hero {
   background-image: url("../images/header-bike.jpg");
   background-color: var(--grey-light);
+  color: var(--white);
   padding: 80px;
 }
 
@@ -163,13 +185,22 @@ p {
 /* Article */
 
 .article {
+  display: flex;
   margin-bottom: 1rem;
+  border: 0.1rem solid var(--grey-light);
+  padding: 0.5rem;
+  border-radius: 0.2rem;
+
 }
 
 .article__title {
   margin-bottom: 0.5rem;
   font-size: 1rem;
   font-weight: 700;
+}
+
+.article__content {
+  padding-left: 1rem;
 }
 
 .article__title-link {
