@@ -42,6 +42,7 @@ p {
   margin: 0 auto;
 }
 
+
 /* Header */
 
 .header {
@@ -56,7 +57,14 @@ p {
 .header__logo {
   max-height: 90px;
   width: auto;
+  object: fill;
 }
+
+.logo__thumbnail {
+  object-fit: content;
+  width: 10rem;
+  margin-right: 1rem;
+} 
 
 /* Navigation */
 
@@ -66,7 +74,7 @@ p {
 }
 
 .navigation__item {
-  padding: 0.5rem 0;
+  padding: 0.5rem 1rem;
 }
 
 .navigation__link {
@@ -95,8 +103,36 @@ p {
 
 /* Buttons */
 
-  /* INSERT BUTTON STYLES HERE */
+/* Change the background color when hovered over or when the button has the focus */
 
+button:hover {
+  background-color: #934423;
+}
+
+button:focus {
+  background-color: #934423;
+}
+
+.aButton {
+  font-weight: bold; /* make the font STRONG */
+  background-color: #c05326;
+  color: #ffffff;
+  border: none;
+  padding: 8px;
+  border-radius: 10px;
+}
+
+
+/* Images */
+
+.aVolunteer {
+  font-weight: bold; /* make the font STRONG */
+  background-color: var(--white);
+  color: #c05326;
+  border: none;
+  padding: 8px;
+  border-radius: 10px;
+}
 
 /* Content */
 
@@ -120,11 +156,18 @@ p {
 /* hero */
 
 .hero {
-  background-image: url("header-bike.jpg");
+  background-image: url("../images/header-bike.jpg");
   background-color: var(--grey-light);
+  color: white;
+  height: 320px;
+  width: 780px;
+  padding-left: 2rem;
+  margin-bottom: 3rem;
+ 
 }
 
 .hero h1 {
+  padding-top:5rem;
   margin-bottom: 1rem;
   font-size: 2.5rem;
 }
@@ -163,8 +206,24 @@ p {
 
 .article {
   margin-bottom: 1rem;
+  /*display: flex;
+  flex-direction: row;*/
+  border:#B8B8B8 1px solid;
+  padding: 1rem;
 }
 
+.aPair {
+  display: flex;
+
+
+}
+
+.bottom_articles {
+  display: flex;
+  /* only way I can see to place a suitable gap in between. However there must be another way? */
+  gap: 1rem;
+}  
+ 
 .article__title {
   margin-bottom: 0.5rem;
   font-size: 1rem;
@@ -182,9 +241,11 @@ p {
 }
 
 .article__thumbnail {
-  object-fit: contain;
-  width: 5rem;
-}
+  object-fit: scale-down;
+  /* Lower the width in order to shrink the image */
+  width: 4rem;
+  padding: 0 1rem 0 0;*/
+} 
 
 .article__read-more {
   margin-top: 0;
@@ -202,6 +263,9 @@ p {
   text-decoration: underline;
 }
 
+.article__content{
+  }
+
 .fa {
   margin-right: 0.5rem;
   color: var(--orange-dark);
@@ -209,6 +273,8 @@ p {
 
 .facebook-link {
   color: var(--orange-dark);
+  /* Right-Justify the Logo*/
+  margin-left:12rem;
 }
 
 /* Sidebar */
@@ -217,6 +283,7 @@ p {
   display: flex;
   flex-direction: column;
   min-width: 350px;
+  padding-left:2rem;
 }
 
 /* Footer */
@@ -245,6 +312,6 @@ p {
   }
 
   .main {
-    padding-right: 2rem;
+    padding-right: 2rer;
   }
 }
