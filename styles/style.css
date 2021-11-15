@@ -32,11 +32,18 @@ button {
   border-radius: 0.2rem;
   font-weight: 600;
 }
+button:hover {
+  background-color: rgb(110, 108, 218);
+}
 
 .volunteer-btn {
   background-color: var(--white);
   color: var(--orange-dark);
 
+}
+
+.volunteer-btn:hover {
+  background-color: rgb(243, 228, 14);
 }
 
 h1,h2,h3,h4,h5,h6 {
