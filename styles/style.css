@@ -32,6 +32,7 @@ h1,h2,h3,h4,h5,h6 {
 p {
   margin-top: 0;
   margin-bottom: 0;
+  
 }
 
 .header,
@@ -66,7 +67,8 @@ p {
 }
 
 .navigation__item {
-  padding: 0.5rem 0;
+  padding: 15px;
+  
 }
 
 .navigation__link {
@@ -95,7 +97,29 @@ p {
 
 /* Buttons */
 
-  /* INSERT BUTTON STYLES HERE */
+  button{
+   
+    font-size: 15px;
+    border: none;
+    border-radius: 2px;
+    transition-duration: 0.4s;
+    padding: 8px;
+
+  }
+  .donateBtn{
+      background-color:chocolate;
+      color: floralwhite;
+  }
+  
+  .volunteerBtn{
+    background-color:white;
+    color:chocolate;
+  }
+
+  button:hover{
+    background-color:rgb(223, 187, 121);
+    
+}
 
 
 /* Content */
@@ -120,8 +144,11 @@ p {
 /* hero */
 
 .hero {
-  background-image: url("header-bike.jpg");
+  background-image : url(../images/header-bike.jpg);
   background-color: var(--grey-light);
+  padding:80px 30px;
+  color:white;
+
 }
 
 .hero h1 {
@@ -140,6 +167,7 @@ p {
 .heading-underline {
   position: relative;
   margin-bottom: 2rem;
+  margin-top:30px;
   padding-bottom: 0.5rem;
   border-bottom: 2px solid var(--orange-light);
   font-size: 1rem;
@@ -161,8 +189,17 @@ p {
 
 /* Article */
 
+.articles{
+  display:flex;
+}
+
+
 .article {
-  margin-bottom: 1rem;
+  
+  /*margin-bottom: 1rem;*/
+  border:rgb(223, 215, 215) solid 2px;
+  margin:10px;
+  padding: 15px;
 }
 
 .article__title {
@@ -184,6 +221,8 @@ p {
 .article__thumbnail {
   object-fit: contain;
   width: 5rem;
+  margin:10px;
+  padding:10px;
 }
 
 .article__read-more {
@@ -209,6 +248,8 @@ p {
 
 .facebook-link {
   color: var(--orange-dark);
+  margin-left:auto;
+  margin-top:12px;
 }
 
 /* Sidebar */
@@ -216,7 +257,8 @@ p {
 .sidebar {
   display: flex;
   flex-direction: column;
-  min-width: 350px;
+  min-width: 400px;
+  
 }
 
 /* Footer */
