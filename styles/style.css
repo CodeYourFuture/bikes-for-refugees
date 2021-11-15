@@ -199,7 +199,7 @@ color: var(--orange-dark);
   border:1px solid #d0f1fd;;
   padding: 0.5em;
   display: flex;
-  flex-direction: column;
+  
   
 }
 .article__content{
@@ -252,8 +252,11 @@ color: var(--orange-dark);
 
 .facebook-link {
   color: var(--orange-dark);
+  text-align: right;
 }
-
+.facebook-link:hover{
+  color: rgb(0, 60, 255);
+}
 /* Sidebar */
 
 .sidebar {
@@ -273,7 +276,9 @@ color: var(--orange-dark);
   justify-content: space-evenly;
 }
 .learn_more_item{
+  display: flex;
   width: 40%;
+  flex-direction: column;
 }
 
 /* Footer */
