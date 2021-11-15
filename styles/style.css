@@ -103,21 +103,25 @@ p {
 /* Buttons */
 button{
   border:none;
-  border-radius: 10px;
+  border-radius: 5px;
   font-size: 1em;
-  padding:10px;
+  padding:8px;
+  
 }
 .donate{
-  background-color: #11c6f3;
+  background-color: var(--orange-dark);
+  color:white;
 }
 .volunteer{
-  background-color: #fafafa;
+  background-color: var(--orange-light);
+  color: var(--orange-dark);
 }
 .volunteer:hover{
-  background-color: rgb(240, 126, 126);
+  background-color: rgb(10, 51, 45);
+  color:white;
 }
 .donate:hover{
-  background-color: rgb(20, 137, 214);
+  background-color: rgb(175, 58, 160);
 }
 
 /* Content */
@@ -209,7 +213,7 @@ button{
 
 /* following codes used on the class to inline image and text div of those articles on sidebar display in columns, align
 items:center used to just the image on center of whole size of that article */
-.inArt{
+.in-article{
   display: flex;
   align-items: center;
 }
