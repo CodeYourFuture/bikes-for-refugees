@@ -20,17 +20,16 @@
   </head>
 
   <body>
-    <header class="heading-underline">
-
-      <a href="#">
+    <header class="heading"> <!-- heading-underline -->
+     
+        <a href="#">
           <img
             src="images/bikes-for-refugees_logo.jpg"
             alt="Logo for Bikes for Refugees England"
             class="header__logo"
           />
-      </a>
-
-       <div>
+        </a>
+      
           <ul class="navigation__list">
             <li class="navigation__item">
               <a class="navigation__link" href="#">Home</a>
@@ -44,12 +43,10 @@
             <li class="navigation__item">
               <a class="navigation__link" href="#">Contact Us</a>
             </li>
-          </ul>
-       </div>
-
-        <button class="donate-button">Donate Now</button>
-
-    </header>
+          </li>
+      
+          <button class="donate-button">Donate Now</button>
+        </header>
 
     <div class="content">
         <main class="main">
@@ -59,19 +56,25 @@
           </div>
 
           <div class="hero">
-            <h1>Bikes for Refugees</h1>
+            <div class="hero-text">
+              <h1>Bikes for Refugees</h1>
             <p>
               Providing donated bikes and accessories to refugees and asylum
               seekers in Scotland.
             </p>
-            <button>Donate a bike today</button>
-            <button class="volunteer-button">Volunteer</button>
+            </div>
+            
+            <div class="hero-text">
+             <button>Donate a bike today</button>
+             <button class="volunteer-button">Volunteer</button>
+            </div>
           </div>
-
+    <!-- Learn More -->
           <div>
             <h2 class="heading-underline">Learn more</h2>
+            <!-- article 1 -->
             <section class="learnmore-box">
-              <div class="article">
+              <div class="article-learn">
                 <h3 class="article__title">Why do refugees need bikes?</h3>
                 <p class="article__summary">
                   Many refugees are placed in housing in areas where there are
@@ -86,7 +89,8 @@
                 </p>
               </div>
 
-              <div class="article">
+              <!-- article 2 -->
+              <div class="article-learn">
                 <h3 class="article__title">How can I help?</h3>
                 <p class="article__summary">
                   We need lots of bikes and bike accessories! If you have an
@@ -103,17 +107,18 @@
             </section>
           </div>
         </main>
-
-        <sidebar class="sidebar">
+    <!-- Upcoming Events -->
+  
+       <div class="sidebar">
           <h2 class="heading-underline">Upcoming events</h2>
-
-          <div class="article">
+       <!-- article 1 -->
+          <div class="article-event">
             <img
               class="article__thumbnail"
               src="images/spring-fundraisers_thumbnail.jpg"
               alt="spring fundraiser"
             />
-            <div class="article__content">
+            <div class="article_content">
               <h3 class="article__title">
                 <a class="article__title-link" href="#">Join us for our Spring fundraisers</a>
               </h3>
@@ -122,28 +127,31 @@
                 Médecins Sans Frontières.
               </p>
             </div>
-          </sidebar>
+          </div>
+    <!-- </sidebar> sidebar was here (i removed it) -->
 
-          <div class="article">
+         <!-- article 2 -->
+          <div class="article-event">
             <img
               class="article__thumbnail"
               src="images/bikes-for-refugees_logo.jpg"
               alt="Logo for Bikes for Refugees England"
             />
-            <div class="article__content">
+            <div class="article_content">
               <h3 class="article__title">
                 <a class="article__title-link" href="#">Bike dropoff event in Edinburgh on May 11</a>
               </h3>
             </div>
           </div>
 
-          <div class="article">
+        <!-- article 3 -->
+          <div class="article-event">
             <img
               class="article__thumbnail"
               src="images/edinburgh-damascus_thumbnail.png"
               alt="edingburg damascus road sign"
             />
-            <div class="article__content">
+            <div class="article_content">
               <h3 class="article__title">
                 <a class="article__title-link" href="#">Help us cycle 4,797km</a>
               </h3>
@@ -154,17 +162,21 @@
             </div>
           </div>
 
+    <!-- facebook link -->
           <a
-            href="https://www.facebook.com/BikesforRefugeesScotland/events/?ref=page_internal"
-            target="_blank"
-            class="facebook-link"
-          >
+              href="https://www.facebook.com/BikesforRefugeesScotland/events/?ref=page_internal"
+              target="_blank"
+              class="facebook-link"
+           >
             <span class="fa fa-facebook-square"></span>
             All Facebook events
           </a>
         </div>
-    </div>
+      </div>
+    </div> <!-- closing div content -->
 
+   
+    <!-- footer -->
     <footer class="footer">
       <div class="footer__content">
         <p>

@@ -56,21 +56,25 @@ p {
 .header__logo {
   max-height: 90px;
   width: auto;
+  margin-left: 120px;
+  margin-right: 200px;
 }
 
-/* Navigation */
+ /*Navigation */
+.heading{
+  display: flex;
+}
 
 .navigation__list {
   list-style: none;
   display: flex;
   flex-direction: row;
   align-items: flex-end;
-  justify-content: space-evenly;
+  justify-content: center;
 }
 
 .navigation__item {
-  padding: 0.5rem 1rem;
-  
+  padding: 0.5rem 1.3rem;
 }
 
 .navigation__link {
@@ -108,6 +112,11 @@ button{
   border-radius: 5px;
 }
 
+button.donate-button{
+  margin-bottom: 5px;
+  margin-left: 230px;
+}
+
 .volunteer-button{
   background-color: white;
   color: #c05326;
@@ -137,22 +146,22 @@ button{
 .hero {
   background-image: url("../images/header-bike.jpg");
   background-color: var(--grey-light);
-  padding-bottom: 170px;
+  padding-bottom: 88px;
   margin-bottom: 50px;
   color: white;
 }
 
-.hero h1 {
+.hero h1{
   margin-bottom: 1rem;
   font-size: 2.5rem;
-  padding: 21px;
-
 }
 
 .hero p {
   font-size: 1.2rem;
-  margin-bottom: 2rem;
-  padding: 21px;
+}
+
+.hero-text{
+  padding: 50px 80px 0px 35px;
 }
 
 
@@ -205,6 +214,7 @@ button{
 .article__thumbnail {
   object-fit: contain;
   width: 5rem;
+  margin-left: 10px;
 }
 
 .article__read-more {
@@ -234,8 +244,16 @@ button{
 
 .learnmore-box{
   display: flex;
-  padding: 40px;
-  margin: 40px;
+  justify-content: space-between;
+}
+
+.article-learn{
+  width: 45%;
+  border-radius: 5px;
+  border: 2px solid #e4e4e4;
+  padding: 15px;
+  
+  
 }
 
 /* Sidebar */
@@ -244,6 +262,26 @@ button{
   display: flex;
   flex-direction: column;
   min-width: 350px;
+}
+
+.article-event{
+  display: flex;
+  border-radius: 5px;
+  border: 2px solid #e4e4e4;
+  margin: 8px;
+}
+
+.article__thumbnail{
+  padding: 10px 0;
+}
+
+.article_content{
+  padding: 15px;
+}
+
+.facebook-link{
+  text-align: right;
+  padding-right: 10px;
 }
 
 /* Footer */
