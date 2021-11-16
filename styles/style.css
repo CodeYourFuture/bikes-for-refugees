@@ -66,7 +66,7 @@ p {
 }
 
 .navigation__item {
-  padding: 0.5rem 0;
+  padding: 0.5rem 0.8rem;
 }
 
 .navigation__link {
@@ -76,6 +76,9 @@ p {
   text-decoration: none;
 }
 
+.navigation__link:hover {
+  color: var(--orange-dark)
+}
 
 /* Text styles */
 
@@ -106,7 +109,7 @@ button {
 
 }
 
-.button__new {
+button:hover {
   background-color:white;
   color : var(--orange-dark);
 }
