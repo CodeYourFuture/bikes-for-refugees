@@ -205,6 +205,16 @@ button {
   border-radius: 3px;
 }
 
+.article2 {
+  margin-bottom: 1rem;
+  padding: 1rem;
+  border-style: solid;
+  border-color: lightgrey;
+  border-width: 2px;
+  border-radius: 3px;
+  display: flex;
+}
+
 .article__title {
   margin-bottom: 0.5rem;
   font-size: 1rem;
@@ -224,6 +234,7 @@ button {
 .article__thumbnail {
   object-fit: contain;
   width: 5rem;
+  padding-right: 10px;
 }
 
 .article__read-more {
