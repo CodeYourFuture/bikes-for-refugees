@@ -14,7 +14,7 @@
 }
 
 body {
-  margin: 0;
+  margin: 1rem;
 }
 
 body,
@@ -79,7 +79,7 @@ header {
   font-weight: 600;
   text-transform: uppercase;
   text-decoration: none;
-  padding: 10vw;
+  padding: 0.75rem;
   text-align: center;
   display: flex;
 }
@@ -116,6 +116,11 @@ header {
 button {
   background-color: #c05326;
   color: wheat;
+  border: none;
+}
+
+button:hover {
+  transform: scale(1.25);
 }
 
 /* Content */
@@ -141,6 +146,7 @@ button {
 main {
   display: flex;
   flex-direction: row;
+  width: 100%;
 }
 
 /* hero */
@@ -148,7 +154,13 @@ main {
 .hero {
   background-image: url("../images/header-bike.jpg");
   background-color: var(--grey-light);
-  margin-bottom: 50px;
+  height: auto;
+  margin-bottom: 2rem;
+  background-position: contain;
+  background-repeat: no-repeat;
+  padding-top: 2rem;
+  padding-left: 1rem;
+  padding-bottom: 10rem;
 }
 
 .hero h1 {
@@ -191,17 +203,19 @@ article {
   display: flex;
   flex-direction: row;
   border: 1px solid grey;
-  padding: 1.5rem;
+  padding: 5px;
+  height: auto;
 }
 
 .article__content {
-  margin-left: 1rem;
+  margin-left: 0.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 .article__title {
-  margin-bottom: 0.5rem;
   font-size: 1rem;
-  font-weight: 700;
 }
 
 .article__title-link {
@@ -212,6 +226,7 @@ article {
 .article__summary {
   margin-top: 0;
   margin-bottom: 1rem;
+  font-size: 0.8rem;
 }
 
 .article__thumbnail {
@@ -242,6 +257,8 @@ article {
 
 .facebook-link {
   color: var(--orange-dark);
+  display: flex;
+  justify-content: flex-end;
 }
 
 /* Sidebar */
@@ -249,8 +266,6 @@ article {
 .sidebar {
   display: flex;
   flex-direction: column;
-  min-width: 350px;
-  padding: 5%;
 }
 
 /* Footer */
@@ -279,9 +294,5 @@ footer p {
 @media screen and (min-width: 992px) {
   .content {
     flex-direction: row;
-  }
-
-  main {
-    padding-right: 2rem;
   }
 }
