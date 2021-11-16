@@ -86,7 +86,7 @@ p {
 }
 
 .navigation__link:hover {
-  color: #ee2b11;
+  color: rgb(226, 131, 7);
 }
 /* Text styles */
 
@@ -109,9 +109,12 @@ p {
 /* Buttons */
 .donate-button {
   background-color: rgb(226, 131, 7);
-  color: whitesmoke;
+  color: #fff;
 }
-
+.donate-button:hover {
+  color: rgb(226, 131, 7);
+  background-color: #fff;
+}
 .volunteer-button {
   color: rgb(226, 131, 7);
 }
