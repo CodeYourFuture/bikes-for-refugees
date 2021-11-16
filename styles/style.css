@@ -5,13 +5,13 @@
  * 
  */
 
- :root {
-   --grey-dark: #292b2c;
-   --grey-light: #e4e4e4;
-   --orange-dark: #c05326;
-   --orange-light: #f7eae4;
-   --white: #fff;
- }
+:root {
+  --grey-dark: #292b2c;
+  --grey-light: #e4e4e4;
+  --orange-dark: #c05326;
+  --orange-light: #f7eae4;
+  --white: #fff;
+}
 
 body {
   margin: 0;
@@ -22,9 +22,17 @@ button {
   font-family: "Source Sans Pro", "Helvetica Neue", Arial, sans-serif;
   color: var(--grey-dark);
   font-size: 1rem;
+  padding: 5px 8px;
+  border: none;
+  border-radius: 4px;
 }
 
-h1,h2,h3,h4,h5,h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   margin-top: 0;
   margin-bottom: 0;
 }
@@ -67,6 +75,7 @@ p {
 
 .navigation__item {
   padding: 0.5rem 0;
+  margin-left: 25px;
 }
 
 .navigation__link {
@@ -76,7 +85,9 @@ p {
   text-decoration: none;
 }
 
-
+.navigation__link:hover {
+  color: rgb(226, 131, 7);
+}
 /* Text styles */
 
 .text-highlight {
@@ -92,11 +103,22 @@ p {
   border-left-color: var(--orange-dark);
 }
 
-
+.main {
+  min-width: 820px;
+}
 /* Buttons */
-
-  /* INSERT BUTTON STYLES HERE */
-
+.donate-button {
+  background-color: rgb(226, 131, 7);
+  color: #fff;
+}
+.donate-button:hover {
+  color: rgb(226, 131, 7);
+  background-color: #fff;
+}
+.volunteer-button {
+  color: rgb(226, 131, 7);
+}
+/* INSERT BUTTON STYLES HERE */
 
 /* Content */
 
@@ -120,8 +142,14 @@ p {
 /* hero */
 
 .hero {
-  background-image: url("header-bike.jpg");
+  background-image: url("../images/header-bike.jpg");
   background-color: var(--grey-light);
+  color: #f7eae4;
+  height: 170px;
+  padding-left: 30px;
+  padding-top: 75px;
+  padding-bottom: 75px;
+  margin-bottom: 45px;
 }
 
 .hero h1 {
@@ -133,7 +161,6 @@ p {
   font-size: 1.2rem;
   margin-bottom: 2rem;
 }
-
 
 /* Headings */
 
@@ -158,11 +185,13 @@ p {
   background: var(--orange-dark);
 }
 
-
 /* Article */
 
 .article {
   margin-bottom: 1rem;
+  border: 1px solid rgb(212, 206, 206);
+  border-radius: 4px;
+  padding: 15px;
 }
 
 .article__title {
@@ -184,6 +213,7 @@ p {
 .article__thumbnail {
   object-fit: contain;
   width: 5rem;
+  margin-right: 10px;
 }
 
 .article__read-more {
@@ -202,9 +232,23 @@ p {
   text-decoration: underline;
 }
 
+.learn-more-cards {
+  display: flex;
+  justify-content: space-between;
+}
+
+.main-article {
+  width: 370px;
+}
+
 .fa {
   margin-right: 0.5rem;
   color: var(--orange-dark);
+}
+
+.facebook {
+  display: flex;
+  justify-content: flex-end;
 }
 
 .facebook-link {
@@ -218,7 +262,10 @@ p {
   flex-direction: column;
   min-width: 350px;
 }
-
+.sidebar .article {
+  display: flex;
+  justify-content: space-around;
+}
 /* Footer */
 
 .footer {
