@@ -24,20 +24,6 @@ button {
   font-size: 1rem;
 }
 
-button {
-  font-weight: bold;
-  background-color: #c05326;
-  color : #ffff;
-  padding: 0.5rem;
-  border: none;
-  border-radius: 5px;
-}
-
-.newButton {
-  color: #c05326;
-  background-color: #fff;
-}
-
 h1,h2,h3,h4,h5,h6 {
   margin-top: 0;
   margin-bottom: 0;
@@ -109,9 +95,21 @@ p {
 
 /* Buttons */
 
-  /* INSERT BUTTON STYLES HERE */
 
+button {
+  color:white;
+  background-color : var(--orange-dark);
+  margin: 0.1rem;
+  padding: 0.5rem;
+  border: none;
+  border-radius: 5px;
 
+}
+
+.button__new {
+  background-color:white;
+  color : var(--orange-dark);
+}
 /* Content */
 
 .content {
@@ -180,17 +178,26 @@ p {
 
 
 /* Article */
-
-.article {
-  margin-bottom: 1rem;
-  border-style: solid;
-  border-color: #c7d6e9;
-  border-radius: 5px;
-  padding: 2%;
+.main__article{
+  display: flex;
 }
 
-.image_article {
+.article {
+  border-style: solid;
+  border-color: #e7f0ff;
+  border-radius: 5px;
+  border-width: medium;
+  padding: 1rem;
+}
+
+.content__article {
+  width: 50%;
+  margin-right: 0.8rem;
+}
+
+.sidebar__article {
   display : flex;
+  margin-bottom: 1rem;
 }
 
 .article__title {
@@ -238,6 +245,7 @@ p {
 
 .facebook-link {
   color: var(--orange-dark);
+  align-self: flex-end;
 }
 
 /* Sidebar */
