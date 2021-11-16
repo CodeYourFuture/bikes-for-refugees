@@ -293,3 +293,19 @@ section {
 .facebook-link {
   margin-left: auto;
 }
+
+/* Hover effect */
+
+nav:hover {
+  color: var(--orange-dark);
+}
+
+.button:hover {
+  background-color: var(--white);
+  color: var(--orange-dark);
+}
+
+.volunteer-button:hover {
+  background-color: var(--orange-dark);
+  color: var(--white);
+}
