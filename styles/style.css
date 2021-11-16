@@ -62,11 +62,14 @@ p {
 
 .navigation__list {
   display: flex;
+  padding: 40px;
+  width: auto;
   list-style: none;
 }
 
 .navigation__item {
-  padding: 0.5rem 0;
+  padding: 1rem;
+
 }
 
 .navigation__link {
@@ -76,6 +79,9 @@ p {
   text-decoration: none;
 }
 
+.navigation__link:hover{
+  color: var(--orange-dark);
+}
 
 /* Text styles */
 
@@ -95,7 +101,28 @@ p {
 
 /* Buttons */
 
-  /* INSERT BUTTON STYLES HERE */
+button {
+    background-color: var(--orange-dark);
+    border: none;
+    color: white;
+    padding: 7px;
+    border-radius: 5px;
+    text-align: center;
+    display: inline-block;
+    font-size: 16px;
+  }
+  
+  button:hover{
+    background-color: rgb(44, 40, 40);
+    color: var(--orange-dark);
+    transition-duration: 0.4s;
+    opacity: 0.8;
+  }
+
+  .vol_btn {
+    background-color: white;
+    color: var(--orange-dark);
+    }
 
 
 /* Content */
@@ -120,18 +147,23 @@ p {
 /* hero */
 
 .hero {
-  background-image: url("header-bike.jpg");
+  background-image: url("../images/header-bike.jpg");
   background-color: var(--grey-light);
+  padding: 70px;
+  margin-bottom: 3rem;
+  height: 26%;
 }
 
 .hero h1 {
   margin-bottom: 1rem;
   font-size: 2.5rem;
+  color: white;
 }
 
 .hero p {
   font-size: 1.2rem;
   margin-bottom: 2rem;
+  color: white;
 }
 
 
@@ -140,7 +172,7 @@ p {
 .heading-underline {
   position: relative;
   margin-bottom: 2rem;
-  padding-bottom: 0.5rem;
+  padding-bottom: 1rem;
   border-bottom: 2px solid var(--orange-light);
   font-size: 1rem;
   font-weight: 600;
@@ -160,9 +192,17 @@ p {
 
 
 /* Article */
-
+.container{
+  display: flex;
+  gap: 1rem;
+}
 .article {
   margin-bottom: 1rem;
+  padding: 1rem;
+  border-style: solid;
+  border-color: lightgrey;
+  border-width: 2px;
+  border-radius: 3px;
 }
 
 .article__title {
@@ -216,7 +256,7 @@ p {
 .sidebar {
   display: flex;
   flex-direction: column;
-  min-width: 350px;
+  width: 85%;
 }
 
 /* Footer */
@@ -235,6 +275,11 @@ p {
   padding-bottom: 1rem;
   text-align: center;
   font-size: 0.85rem;
+}
+
+.facebook-link {
+  display: flex;
+  justify-content: flex-end;
 }
 
 /* Media queries */
