@@ -20,8 +20,34 @@ body {
 body,
 button {
   font-family: "Source Sans Pro", "Helvetica Neue", Arial, sans-serif;
-  color: var(--grey-dark);
+  
+  color:#292b2c;
   font-size: 1rem;
+  /* donate now button */
+  border-radius: 5px;
+  
+
+}
+/* changing 2 bottons donate now and donate bike today */
+.donate_now {
+  background-color: darkorange;
+  color:white;
+  border-radius: 5px;
+  border: none;
+  /* width: auto;  */
+  padding: 7px 17px;
+  margin-left: 40px;
+}
+/* .donate_now:hover {
+  background-color: rgb(17, 10, 0);
+} */
+
+.volunteer {
+  background-color: rgb(255, 255, 255);
+  color: darkorange;
+  border-radius: 5px;
+  border: none;
+  padding: 7px 17px;
 }
 
 h1,h2,h3,h4,h5,h6 {
@@ -74,6 +100,7 @@ p {
   font-weight: 600;
   text-transform: uppercase;
   text-decoration: none;
+  padding: 20px;
 }
 
 
@@ -90,6 +117,7 @@ p {
   width: 0;
   border: 6px solid var(--white);
   border-left-color: var(--orange-dark);
+  padding-left: 4px;
 }
 
 
@@ -120,18 +148,35 @@ p {
 /* hero */
 
 .hero {
-  background-image: url("header-bike.jpg");
+  background-image: url("../images/header-bike.jpg");
   background-color: var(--grey-light);
+  /* width: max;
+  height: auto;
+  was a nice try but didnt work */
+  /* background-size: auto;  not working */
+ padding-bottom: 80px;
+ margin-bottom: 40px;
 }
 
 .hero h1 {
   margin-bottom: 1rem;
   font-size: 2.5rem;
+  color:whitesmoke;
+  /* padding-left: 40px; let me try shrtcut */
+  padding-left: 40px;
+  padding-top: 80px;
+   
+  
+  /* position: relative; */
+
 }
 
 .hero p {
   font-size: 1.2rem;
   margin-bottom: 2rem;
+  color:whitesmoke;
+  padding-left: 40px ;
+  
 }
 
 
@@ -161,14 +206,50 @@ p {
 
 /* Article */
 
+
 .article {
   margin-bottom: 1rem;
+  /* changing flex to amke 2 column?! */
+  border: 2px solid rgb(238, 231, 231);
+  width: 48%;
+  padding-top: 10px;
+}
+
+.aside-article  {
+  display: flex;
+  flex-direction: row;
+  width: auto;
+  box-sizing: border-box;
+  /* added space on aside article */
+  padding: 16px;
+}
+
+
+ /* trying to make those 2 boxes in column */
+.flexbox {
+  display: flex; 
+  flex-direction: row;
+  justify-content: space-between;
+  
+  
+  
+  /* border just to see if i am changing the right element... so far nothing */
+  
+
+}
+
+.article__content {
+  display: flex;
+  flex-direction: column;
+  padding-left: 5px;
+  
 }
 
 .article__title {
   margin-bottom: 0.5rem;
   font-size: 1rem;
   font-weight: 700;
+  padding-left: 13px;
 }
 
 .article__title-link {
@@ -179,11 +260,17 @@ p {
 .article__summary {
   margin-top: 0;
   margin-bottom: 1rem;
+  /* space on the left side ...now should change space between article_title and article_sum */
+  padding-left: 13px;
+  /* should use shortcut next time */
+  padding-right: 10px;
+
 }
 
 .article__thumbnail {
   object-fit: contain;
   width: 5rem;
+  
 }
 
 .article__read-more {
@@ -195,6 +282,8 @@ p {
   font-weight: 700;
   color: var(--orange-dark);
   text-decoration: none;
+  /* added padding to orange dot and learn more */
+  padding-left: 13px;
 }
 
 .article__read-more a:hover,
@@ -209,6 +298,8 @@ p {
 
 .facebook-link {
   color: var(--orange-dark);
+  /* changed position of FB icon and text */
+  text-align: right;
 }
 
 /* Sidebar */
@@ -217,6 +308,7 @@ p {
   display: flex;
   flex-direction: column;
   min-width: 350px;
+  
 }
 
 /* Footer */

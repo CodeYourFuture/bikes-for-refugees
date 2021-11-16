@@ -20,7 +20,8 @@
   </head>
 
   <body>
-    <div class="header">
+    <!-- chaanged <div class ="header" > to <header> tag-->
+      <header class="header">
 
         <a href="#">
           <img
@@ -46,32 +47,34 @@
             </li>
           </ul>
         </div>
+        <!-- did mistake ... fix -->
+        <button class="donate_now">Donate Now</button>
+      
+      </header>
 
-        <button>Donate Now</button>
-
-    </div>
 
     <div class="content">
-        <div class="main">
+        <main class="main">
           <div class="alert">
             You've helped us give <span class="text-highlight">72</span> bikes
             to refugees and asylum seekers so far. <strong>Thank you!</strong>
           </div>
 
           <div class="hero">
+            <!-- still looking how to add background bike photo , nevermind founded :)-->
             <h1>Bikes for Refugees</h1>
             <p>
               Providing donated bikes and accessories to refugees and asylum
-              seekers in Scotland.
+              seekers in England.
             </p>
-            <button>Donate a bike today</button>
-            <button>Volunteer</button>
+            <button class="donate_now">Donate a bike today</button>
+            <button class="volunteer">Volunteer</button>
           </div>
 
           <div>
             <h2 class="heading-underline">Learn more</h2>
-
-            <div>
+           <!-- created parent element gave class to this elemet -->
+            <div class="flexbox">
               <div class="article">
                 <h3 class="article__title">Why do refugees need bikes?</h3>
                 <p class="article__summary">
@@ -103,18 +106,19 @@
               </div>
             </div>
           </div>
-        </div>
+        </main>
 
-        <div class="sidebar">
+        <sidebar class="sidebar">
           <h2 class="heading-underline">Upcoming events</h2>
-
-          <div class="article">
+         <!-- need to give another class or wrap around another class to style in css...done it -->
+          <div class="article aside-article ">
             <img
               class="article__thumbnail"
-              src="spring-fundraisers_thumbnail.jpg"
-              alt=""
+              src="images/spring-fundraisers_thumbnail.jpg"
+              alt="sakura with spring fundraisers words"
             />
             <div class="article__content">
+              
               <h3 class="article__title">
                 <a class="article__title-link" href="#">Join us for our Spring fundraisers</a>
               </h3>
@@ -124,12 +128,12 @@
               </p>
             </div>
           </div>
-
-          <div class="article">
+<!-- added new class  -->
+          <div class="article aside-article ">
             <img
               class="article__thumbnail"
-              src="bikes-for-refugees_logo.jpg"
-              alt=""
+              src="images/bikes-for-refugees_logo.jpg"
+              alt="bike logo"
             />
             <div class="article__content">
               <h3 class="article__title">
@@ -138,11 +142,11 @@
             </div>
           </div>
 
-          <div class="article">
+          <div class="article  aside-article ">
             <img
               class="article__thumbnail"
-              src="edinburgh-damascus_thumbnail.png"
-              alt=""
+              src="images/edinburgh-damascus_thumbnail.png"
+              alt="ednburgh"
             />
             <div class="article__content">
               <h3 class="article__title">
@@ -163,10 +167,10 @@
             <span class="fa fa-facebook-square"></span>
             All Facebook events
           </a>
-        </div>
+        </sidebar>
     </div>
 
-    <div class="footer">
+    <footer class="footer">
       <div class="footer__content">
         <p>
           <strong>Bikes for Refugees Scotland is a volunteer-led project to help
@@ -174,6 +178,6 @@
         </p>
         <p>Website by Code Your Future</p>
       </div>
-    </div>
+    </footer>
   </body>
 </html>
