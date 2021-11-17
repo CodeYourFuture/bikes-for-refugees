@@ -136,7 +136,7 @@ button:hover {
   margin-bottom: 1rem;
   padding: 96px 32px;
   color: white;
-  justify-content: space-between;
+  /* justify-content: space-between; */
 }
 .hero h1 {
   margin-bottom: 1rem;
