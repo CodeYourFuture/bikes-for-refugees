@@ -4,9 +4,9 @@
  * Lesson: 1
  * 
  */
-* {
+/* * {
   outline: 1px solid red;
-}
+} */
  :root {
    --grey-dark: #292b2c;
    --grey-light: #e4e4e4;
@@ -22,7 +22,6 @@ body {
 body,
 button {
   font-family: "Source Sans Pro", "Helvetica Neue", Arial, sans-serif;
-  /* color: var(--grey-dark); */
   font-size: 1rem;
 }
 
@@ -70,7 +69,7 @@ p {
 
 .navigation__item {
   padding: 0.5rem 1.5rem;
- 
+  font-size: 1.039rem; 
 }
 
 .navigation__link {
@@ -105,12 +104,21 @@ button {
     border-style: none;
     border-radius: 5px;
     font-weight: 600;
-    /* text-align: center; */
-  }
+}
 
 button ~ button {
   background-color: var(--white);
   color: var(--orange-dark);
+}
+
+button:hover {
+  background-color: var(--white);
+  color: var(--orange-dark);
+}
+
+button ~ button:hover {
+  background-color: var(--orange-dark);
+  color: var(--white);
 }
 /* Content */
 
@@ -137,9 +145,8 @@ button ~ button {
   background-image: url("../images/header-bike.jpg");
   background-color: var(--grey-light);
   /* background-repeat: no-repeat; */
-  padding: 70px 60px 75px 40px;
-  font-weight: 700;
-  
+  padding: 70px 60px 88px 40px;
+  margin-bottom: 60px;  
 }
 
 .hero h1 {
@@ -147,12 +154,15 @@ button ~ button {
   font-size: 2.5rem;
   color: var(--white);
   margin-left: 0;
+  font-weight: 700;
+  
 }
 
 .hero p {
   font-size: 1.2rem;
   margin-bottom: 2rem;
   color: var(--white);
+  font-weight: 600;
 }
 
 /* Headings */
@@ -165,7 +175,7 @@ button ~ button {
   font-size: 1rem;
   font-weight: 600;
   text-transform: uppercase;
-  padding-top: 20px;
+  
 }
 
 .heading-underline:before {
@@ -282,6 +292,4 @@ section .article {
   .main {
     padding-right: 2rem;
   }
-
-
 }
