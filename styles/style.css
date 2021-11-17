@@ -200,8 +200,8 @@ section {
   margin-bottom: 1rem;
   border: 2px solid var(--grey-light);
   border-radius: 4px;
-  padding: 20px;
-  margin-right: 20px;
+  padding: 16px 10px;
+  
 }
 
 .article__title {
@@ -218,12 +218,14 @@ section {
 .article__summary {
   margin-top: 0;
   margin-bottom: 1rem;
+  margin-right: 30px;
+  padding-bottom: 10px;  
 }
 
 .article__thumbnail {
   object-fit: contain;
   width: 5rem;
-  margin-right: 10px;
+  margin-right: 14px;
 }
 
 .article__read-more {
@@ -251,6 +253,10 @@ section {
 
 .facebook-link {
   color: var(--orange-dark);
+}
+
+section .article:first-child {
+  margin-right: 20px;
 }
 
 /* Sidebar */
