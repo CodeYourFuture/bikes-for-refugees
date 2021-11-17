@@ -4,7 +4,9 @@
  * Lesson: 1
  * 
  */
-
+* {
+  outline: 1px solid red;
+}
  :root {
    --grey-dark: #292b2c;
    --grey-light: #e4e4e4;
@@ -20,7 +22,7 @@ body {
 body,
 button {
   font-family: "Source Sans Pro", "Helvetica Neue", Arial, sans-serif;
-  color: var(--grey-dark);
+  /* color: var(--grey-dark); */
   font-size: 1rem;
 }
 
@@ -62,11 +64,13 @@ p {
 
 .navigation__list {
   display: flex;
+  justify-content: center;
   list-style: none;
 }
 
 .navigation__item {
-  padding: 0.5rem 0;
+  padding: 0.5rem 1.5rem;
+ 
 }
 
 .navigation__link {
@@ -74,10 +78,6 @@ p {
   font-weight: 600;
   text-transform: uppercase;
   text-decoration: none;
-}
-
-button .hero {
-  background-color: red;
 }
 
 /* Text styles */
@@ -98,9 +98,20 @@ button .hero {
 
 /* Buttons */
 
-  /* INSERT BUTTON STYLES HERE */
+button {
+    background-color: var(--orange-dark);
+    padding: 8px 10px;
+    color: var(--white);
+    border-style: none;
+    border-radius: 5px;
+    font-weight: 600;
+    /* text-align: center; */
+  }
 
-
+button ~ button {
+  background-color: var(--white);
+  color: var(--orange-dark);
+}
 /* Content */
 
 .content {
@@ -123,20 +134,26 @@ button .hero {
 /* hero */
 
 .hero {
-  background-image: url("header-bike.jpg");
+  background-image: url("../images/header-bike.jpg");
   background-color: var(--grey-light);
+  /* background-repeat: no-repeat; */
+  padding: 70px 60px 75px 40px;
+  font-weight: 700;
+  
 }
 
 .hero h1 {
   margin-bottom: 1rem;
   font-size: 2.5rem;
+  color: var(--white);
+  margin-left: 0;
 }
 
 .hero p {
   font-size: 1.2rem;
   margin-bottom: 2rem;
+  color: var(--white);
 }
-
 
 /* Headings */
 
@@ -148,6 +165,7 @@ button .hero {
   font-size: 1rem;
   font-weight: 600;
   text-transform: uppercase;
+  padding-top: 20px;
 }
 
 .heading-underline:before {
@@ -161,11 +179,19 @@ button .hero {
   background: var(--orange-dark);
 }
 
-
 /* Article */
 
+section {
+  display: flex;
+}
+
 .article {
+  display: flex;
   margin-bottom: 1rem;
+  border: 2px solid var(--grey-light);
+  border-radius: 4px;
+  padding: 20px;
+  margin-right: 20px;
 }
 
 .article__title {
@@ -187,6 +213,7 @@ button .hero {
 .article__thumbnail {
   object-fit: contain;
   width: 5rem;
+  margin-right: 10px;
 }
 
 .article__read-more {
@@ -206,8 +233,10 @@ button .hero {
 }
 
 .fa {
+  padding-left: 170px;
   margin-right: 0.5rem;
   color: var(--orange-dark);
+  
 }
 
 .facebook-link {
@@ -246,8 +275,13 @@ button .hero {
   .content {
     flex-direction: row;
   }
-
+section .article {
+  display: flex;
+  flex-direction: column;
+}
   .main {
     padding-right: 2rem;
   }
+
+
 }
