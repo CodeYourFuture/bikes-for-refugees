@@ -42,6 +42,10 @@ p {
   margin: 0 auto;
 }
 
+.main {
+  min-width: 51rem;
+}
+
 /* Header */
 
 .header {
@@ -74,8 +78,12 @@ p {
   font-weight: 600;
   text-transform: uppercase;
   text-decoration: none;
+  padding-inline: 15px;
 }
 
+.navigation__link:hover {
+  color: rgb(201, 82, 36);
+}
 
 /* Text styles */
 
@@ -95,7 +103,30 @@ p {
 
 /* Buttons */
 
-  /* INSERT BUTTON STYLES HERE */
+ .donate-now {
+  color: white;
+  background-color: rgb(201, 82, 36);
+  padding: 5px 10px 5px 10px;
+  border-radius: 5px;
+  border: 2px solid rgb(201, 82, 36);
+}
+.volunteer {
+  color: rgb(201, 82, 36);
+  background-color: white;
+  padding: 5px 10px 5px 10px;
+  border-radius: 5px;
+  border: 2px solid white;
+}
+
+.donate-now:hover {
+  background: rgb(201, 82, 36);
+  color: black;
+}
+
+.volunteer:hover {
+  background: white;
+  color: black;
+}
 
 
 /* Content */
@@ -120,18 +151,23 @@ p {
 /* hero */
 
 .hero {
-  background-image: url("header-bike.jpg");
+  background-image: url("../images/header-bike.jpg");
   background-color: var(--grey-light);
+  padding: 80px 100px 80px 30px;
+  margin: 20px 1px 50px 1px;
 }
 
 .hero h1 {
   margin-bottom: 1rem;
   font-size: 2.5rem;
+  color: white;
 }
 
 .hero p {
   font-size: 1.2rem;
   margin-bottom: 2rem;
+  padding-bottom: 10px;
+  color: white;
 }
 
 
@@ -163,6 +199,10 @@ p {
 
 .article {
   margin-bottom: 1rem;
+  border: 2px solid #d8d0cd;
+  padding: 15px;
+  display: flex;
+  flex-direction: row;
 }
 
 .article__title {
@@ -184,6 +224,7 @@ p {
 .article__thumbnail {
   object-fit: contain;
   width: 5rem;
+  margin: 10px;
 }
 
 .article__read-more {
@@ -209,6 +250,7 @@ p {
 
 .facebook-link {
   color: var(--orange-dark);
+  text-align: right;
 }
 
 /* Sidebar */
@@ -217,6 +259,22 @@ p {
   display: flex;
   flex-direction: column;
   min-width: 350px;
+}
+
+/* Main section */
+
+.textbox {
+  display: flex;
+  flex-direction: row;
+}
+
+.articlebox {
+  display: flex;
+  flex-direction: column;
+  padding: 20px 10px 30px 20px;
+  margin: 10px 2px 20px 2px;
+  border: 2px solid #d8d0cd;
+  border-radius: 4px;
 }
 
 /* Footer */
