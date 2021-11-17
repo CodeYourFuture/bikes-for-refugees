@@ -200,7 +200,7 @@ section {
   margin-bottom: 1rem;
   border: 2px solid var(--grey-light);
   border-radius: 4px;
-  padding: 16px 10px;
+  padding: 10px;
   
 }
 
@@ -245,7 +245,7 @@ section {
 }
 
 .fa {
-  padding-left: 170px;
+  padding-left: 190px;
   margin-right: 0.5rem;
   color: var(--orange-dark);
   
