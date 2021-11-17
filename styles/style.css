@@ -111,11 +111,17 @@ nav {
 /* Buttons */
 
 /* INSERT BUTTON STYLES HERE */
-.button {
-  padding-right: 0em;
-  font-weight: bold;
+button {
+  padding: 0.5em;
   border: none;
+  /* cursor: pointer;
+  filter: invert(1); */
 }
+button:hover {
+  cursor: pointer;
+  filter: invert(1);
+}
+
 .big {
   background-color: #db4e16;
   color: white;
