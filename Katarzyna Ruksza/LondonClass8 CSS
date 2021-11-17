@@ -5,16 +5,16 @@
  * 
  */
 
- :root {
-   --grey-dark: #292b2c;
-   --grey-light: #e4e4e4;
-   --orange-dark: #c05326;
-   --orange-light: #f7eae4;
-   --white: #fff;
- }
+:root {
+  --grey-dark: #292b2c;
+  --grey-light: #e4e4e4;
+  --orange-dark: #c05326;
+  --orange-light: #f7eae4;
+  --white: #fff;
+}
 
 body {
-  margin: 0;
+  margin: 0px;
 }
 
 body,
@@ -24,7 +24,12 @@ button {
   font-size: 1rem;
 }
 
-h1,h2,h3,h4,h5,h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   margin-top: 0;
   margin-bottom: 0;
 }
@@ -45,7 +50,6 @@ p {
 .main {
   min-width: 51rem;
 }
-
 /* Header */
 
 .header {
@@ -84,7 +88,6 @@ p {
 .navigation__link:hover {
   color: rgb(201, 82, 36);
 }
-
 /* Text styles */
 
 .text-highlight {
@@ -100,10 +103,9 @@ p {
   border-left-color: var(--orange-dark);
 }
 
-
 /* Buttons */
 
- .donate-now {
+.donate-now {
   color: white;
   background-color: rgb(201, 82, 36);
   padding: 5px 10px 5px 10px;
@@ -127,7 +129,6 @@ p {
   background: white;
   color: black;
 }
-
 
 /* Content */
 
@@ -165,11 +166,10 @@ p {
 
 .hero p {
   font-size: 1.2rem;
-  margin-bottom: 2rem;
+  margin-bottom: 1.2rem;
   padding-bottom: 10px;
   color: white;
 }
-
 
 /* Headings */
 
@@ -193,7 +193,6 @@ p {
   max-width: 100px;
   background: var(--orange-dark);
 }
-
 
 /* Article */
 
