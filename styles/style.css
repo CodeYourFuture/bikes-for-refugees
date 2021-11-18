@@ -5,13 +5,13 @@
  * 
  */
 
- :root {
-   --grey-dark: #292b2c;
-   --grey-light: #e4e4e4;
-   --orange-dark: #c05326;
-   --orange-light: #f7eae4;
-   --white: #fff;
- }
+:root {
+  --grey-dark: #292b2c;
+  --grey-light: #e4e4e4;
+  --orange-dark: #c05326;
+  --orange-light: #f7eae4;
+  --white: #fff;
+}
 
 body {
   margin: 0;
@@ -24,7 +24,12 @@ button {
   font-size: 1rem;
 }
 
-h1,h2,h3,h4,h5,h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   margin-top: 0;
   margin-bottom: 0;
 }
@@ -47,7 +52,7 @@ p {
 .header {
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: space-around;
   height: 5rem;
   margin-bottom: 1rem;
   padding-top: 1rem;
@@ -62,7 +67,9 @@ p {
 
 .navigation__list {
   display: flex;
+  justify-content: space-around;
   list-style: none;
+  width: 30rem;
 }
 
 .navigation__item {
@@ -75,7 +82,6 @@ p {
   text-transform: uppercase;
   text-decoration: none;
 }
-
 
 /* Text styles */
 
@@ -92,11 +98,18 @@ p {
   border-left-color: var(--orange-dark);
 }
 
-
 /* Buttons */
+button {
+  background-color: orangered;
+  color: white;
+  border: none;
+}
 
-  /* INSERT BUTTON STYLES HERE */
-
+/* INSERT BUTTON STYLES HERE */
+.v-button {
+  background-color: white;
+  color: orangered;
+}
 
 /* Content */
 
@@ -120,88 +133,113 @@ p {
 /* hero */
 
 .hero {
-  background-image: url("header-bike.jpg");
+  background-image: url("../images/header-bike.jpg");
   background-color: var(--grey-light);
+  padding: 90px;
+  color: white;
 }
 
 .hero h1 {
   margin-bottom: 1rem;
   font-size: 2.5rem;
+  color: white;
 }
 
-.hero p {
-  font-size: 1.2rem;
-  margin-bottom: 2rem;
+  .hero p {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+  }
+
+  /* Headings */
+
+  .heading-underline {
+    position: relative;
+    margin-bottom: 2rem;
+    margin-top: 2rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 2px solid var(--orange-light);
+    font-size: 1rem;
+    font-weight: 600;
+    text-transform: uppercase;
+  }
+
+  .heading-underline:before {
+    content: "";
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+    width: 25%;
+    height: 2px;
+    max-width: 100px;
+    background: var(--orange-dark);
+  }
+
+  /* Article */
+  
+  .container-article{
+    display:flex;
+    flex-direction:row;
+    justify-content:space-between;
+    
+  }
+   .container-article .article{
+     width:44%;
+   }
+  .article {
+    display:flex;
+    margin-bottom: 1rem;
+    border: 0.1rem solid var(--grey-light);
+    padding:0.9rem;
+  
+  }
+
+  .article-main{
+    display:flex;
+    flex-direction:column;
+    
+  }
+  
+  .article__title {
+    margin-bottom: 0.5rem;
+    font-size: 1rem;
+    font-weight: 700;
+  }
+
+
+  .article__title-link {
+    text-decoration: none;
+    color: var(--orange-dark);
+  }
+
+  .article__summary {
+    margin-top: 0;
+    margin-bottom: 1rem;
+    
+  }
+
+  .article__thumbnail {
+    object-fit: contain;
+    width: 5rem;
+    
+  }
+
+  .article__read-more {
+    margin-top: 0;
+    }
+
+  .article__read-more a {
+    font-size: 0.85rem;
+    font-weight: 700;
+    color: var(--orange-dark);
+    text-decoration: none;
+  
+  }
+
+  .article__read-more a:hover,
+  .article__read-more a:focus {
+    text-decoration: underline;
+  }
 }
-
-
-/* Headings */
-
-.heading-underline {
-  position: relative;
-  margin-bottom: 2rem;
-  padding-bottom: 0.5rem;
-  border-bottom: 2px solid var(--orange-light);
-  font-size: 1rem;
-  font-weight: 600;
-  text-transform: uppercase;
-}
-
-.heading-underline:before {
-  content: "";
-  position: absolute;
-  bottom: -2px;
-  left: 0;
-  width: 25%;
-  height: 2px;
-  max-width: 100px;
-  background: var(--orange-dark);
-}
-
-
-/* Article */
-
-.article {
-  margin-bottom: 1rem;
-}
-
-.article__title {
-  margin-bottom: 0.5rem;
-  font-size: 1rem;
-  font-weight: 700;
-}
-
-.article__title-link {
-  text-decoration: none;
-  color: var(--orange-dark);
-}
-
-.article__summary {
-  margin-top: 0;
-  margin-bottom: 1rem;
-}
-
-.article__thumbnail {
-  object-fit: contain;
-  width: 5rem;
-}
-
-.article__read-more {
-  margin-top: 0;
-}
-
-.article__read-more a {
-  font-size: 0.85rem;
-  font-weight: 700;
-  color: var(--orange-dark);
-  text-decoration: none;
-}
-
-.article__read-more a:hover,
-.article__read-more a:focus {
-  text-decoration: underline;
-}
-
 .fa {
   margin-right: 0.5rem;
   color: var(--orange-dark);
@@ -209,6 +247,7 @@ p {
 
 .facebook-link {
   color: var(--orange-dark);
+  text-align: right;
 }
 
 /* Sidebar */
@@ -216,7 +255,7 @@ p {
 .sidebar {
   display: flex;
   flex-direction: column;
-  min-width: 350px;
+  min-width: 30px;
 }
 
 /* Footer */
