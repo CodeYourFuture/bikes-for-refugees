@@ -1,20 +1,14 @@
-/**
- *
- * Module: HTML/CSS
- * Lesson: 1
- * 
- */
 
  :root {
-   --grey-dark: #292b2c;
-   --grey-light: #e4e4e4;
-   --orange-dark: #c05326;
-   --orange-light: #f7eae4;
-   --white: #fff;
- }
+  --grey-dark: #292b2c;
+  --grey-light: #e4e4e4;
+  --orange-dark: #c05326;
+  --orange-light: #f7eae4;
+  --white: #fff;
+}
 
 body {
-  margin: 0;
+  margin: 1rem;
 }
 
 body,
@@ -24,7 +18,12 @@ button {
   font-size: 1rem;
 }
 
-h1,h2,h3,h4,h5,h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   margin-top: 0;
   margin-bottom: 0;
 }
@@ -34,17 +33,17 @@ p {
   margin-bottom: 0;
 }
 
-.header,
+header,
 .content,
-.footer {
+footer {
   padding: 0 1.5rem;
-  max-width: 1200px;
+  max-width: 100vw;
   margin: 0 auto;
 }
 
 /* Header */
 
-.header {
+header {
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -63,6 +62,7 @@ p {
 .navigation__list {
   display: flex;
   list-style: none;
+  justify-items: space-between;
 }
 
 .navigation__item {
@@ -74,8 +74,8 @@ p {
   font-weight: 600;
   text-transform: uppercase;
   text-decoration: none;
+  
 }
-
 
 /* Text styles */
 
@@ -91,12 +91,28 @@ p {
   border: 6px solid var(--white);
   border-left-color: var(--orange-dark);
 }
+.white-text {
+  color: wheat;
+}
 
+.orange-text {
+  color: #c05326;
+}
+.white-bg {
+  background: wheat;
+}
 
 /* Buttons */
 
-  /* INSERT BUTTON STYLES HERE */
+button {
+  background-color: #c05326;
+  color: wheat;
+  border: none;
+}
 
+button:hover {
+  transform: scale(1.25);
+}
 
 /* Content */
 
@@ -117,11 +133,21 @@ p {
   margin-bottom: 2rem;
 }
 
-/* hero */
+
+main {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+}
+
+
 
 .hero {
-  background-image: url("header-bike.jpg");
+  background-image: url("../images/header-bike.jpg");
   background-color: var(--grey-light);
+  padding: 100px 30px;
+  color: var(--white);
+  margin-bottom: 50px;
 }
 
 .hero h1 {
@@ -133,7 +159,6 @@ p {
   font-size: 1.2rem;
   margin-bottom: 2rem;
 }
-
 
 /* Headings */
 
@@ -158,17 +183,30 @@ p {
   background: var(--orange-dark);
 }
 
-
 /* Article */
 
-.article {
+article {
   margin-bottom: 1rem;
+  display: flex;
+  flex-direction: row;
+  border: 1px solid grey;
+  padding: 5px;
+  height: auto;
+}
+.article{
+  border: 1px solid grey;
+  padding: 5px;
+  justify-content: space-between;
+}
+.article__content {
+  margin-left: 0.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 .article__title {
-  margin-bottom: 0.5rem;
   font-size: 1rem;
-  font-weight: 700;
 }
 
 .article__title-link {
@@ -179,6 +217,7 @@ p {
 .article__summary {
   margin-top: 0;
   margin-bottom: 1rem;
+  font-size: 0.8rem;
 }
 
 .article__thumbnail {
@@ -209,6 +248,8 @@ p {
 
 .facebook-link {
   color: var(--orange-dark);
+  display: flex;
+  justify-content: flex-end;
 }
 
 /* Sidebar */
@@ -216,35 +257,37 @@ p {
 .sidebar {
   display: flex;
   flex-direction: column;
-  min-width: 350px;
 }
 
 /* Footer */
 
-.footer {
+footer {
   margin-top: 2rem;
+  border-top: var(--orange-dark);
 }
 
+.a{
+  display:flex;
+  justify-content: space-between;
+  
+}
 .footer__content {
   border-top: 2px solid var(--orange-light);
   padding-top: 2rem;
   padding-bottom: 2rem;
+  border-top: 1px solid var(--orange-dark);
 }
 
-.footer p {
+footer p {
   padding-bottom: 1rem;
   text-align: center;
   font-size: 0.85rem;
 }
 
-/* Media queries */
+
 
 @media screen and (min-width: 992px) {
   .content {
     flex-direction: row;
-  }
-
-  .main {
-    padding-right: 2rem;
   }
 }
