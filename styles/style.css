@@ -105,35 +105,28 @@ p {
 /* Buttons */
 
   .button{
-    background-color: var(--orange-dark);
+    padding: 8px 12px;
     text-align: center;
+    text-decoration: none;
     text-decoration: none;
     display: inline-block;
     border-radius: 3px;
     border:none;
-    padding: 8px 12px;
     color:var(--white);
-    text-decoration: none;
+    background-color: var(--orange-dark);
 
 }
   .button:hover {
-    background-color: var(--white);
-    text-align: center;
-    text-decoration: none;
-    border-radius: 3px;
-    padding: 8px 12px;
     color:var(--orange-dark);
+    background-color: var(--white);
 
 }
 
   .donation:hover {
-    background-color: var(--white);
-    text-align: center;
-    text-decoration: none;
-    border: solid 2px var(--orange-dark);
-    border-radius: 3px;
     padding: 6px 10px;
+    border: solid 2px var(--orange-dark);
     color:var(--orange-dark);
+    background-color: var(--white);
 
 }
 
@@ -224,8 +217,8 @@ section article{
 
 }
 .article__content {
-padding: 9px 9px;
-margin-bottom: 5px;
+  padding: 9px 9px;
+  margin-bottom: 5px;
 }
 
 .article__title-link {
@@ -236,7 +229,6 @@ margin-bottom: 5px;
 .article__summary {
   margin-top: 0;
   margin-bottom: 1rem;
-  
 }
 
 .article__thumbnail {
