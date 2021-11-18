@@ -5,7 +5,7 @@
  * 
  */
 
- 
+
  :root {
    --grey-dark: #292b2c;
    --grey-light: #e4e4e4;
@@ -148,7 +148,6 @@ button ~ button:hover {
 .hero {
   background-image: url("../images/header-bike.jpg");
   background-color: var(--grey-light);
-  /* background-repeat: no-repeat; */
   padding: 70px 60px 88px 40px;
   margin-bottom: 60px;  
 }
@@ -178,8 +177,7 @@ button ~ button:hover {
   border-bottom: 2px solid var(--orange-light);
   font-size: 1rem;
   font-weight: 600;
-  text-transform: uppercase;
-  
+  text-transform: uppercase;  
 }
 
 .heading-underline:before {
@@ -204,8 +202,7 @@ section {
   margin-bottom: 1rem;
   border: 2px solid var(--grey-light);
   border-radius: 4px;
-  padding: 16px;
-  
+  padding: 16px;  
 }
 
 .article__title {
@@ -250,13 +247,12 @@ section {
 
   .bottom-box {
     width: 45%;
-  }
+}
 
 .fa {
   padding-left: 190px;
   margin-right: 0.5rem;
-  color: var(--orange-dark);
-  
+  color: var(--orange-dark);  
 }
 
 .facebook-link {
