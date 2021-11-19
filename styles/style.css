@@ -114,7 +114,6 @@ p {
     border:none;
     color:var(--white);
     background-color: var(--orange-dark);
-
 }
   .button:hover {
     color:var(--orange-dark);
@@ -127,7 +126,6 @@ p {
     border: solid 2px var(--orange-dark);
     color:var(--orange-dark);
     background-color: var(--white);
-
 }
 
 /* Content */
@@ -201,7 +199,6 @@ p {
   margin-bottom: 1rem;
   display: flex;
   justify-content: space-between;
-
 }
 
 section article{
@@ -214,7 +211,6 @@ section article{
   margin-bottom: 0.5rem;
   font-size: 1rem;
   font-weight: 700;
-
 }
 .article__content {
   padding: 9px 9px;
@@ -249,7 +245,7 @@ section article{
 
 .article__read-more a:hover,
 .article__read-more a:focus {
-  text-decoration: underline;
+  text-decoration: underline;  
 }
 
 .fa {
@@ -273,7 +269,6 @@ section article{
  aside .article {
   border: solid 2px var(--grey-light);
   padding: 7px 15px;
-
 }
 
 /* Footer */
