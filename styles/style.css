@@ -128,7 +128,7 @@ h1,h2,h3,h4,h5,h6 {
 .content {
   display: flex;
   flex-direction: column;
-  margin:0%;
+  
 }
 
 /* Alert */
@@ -224,7 +224,6 @@ h1,h2,h3,h4,h5,h6 {
 .box {
   display: flex;
   flex-wrap: wrap;
-  float: left;
   margin-right: 1em;
   
 }
@@ -276,9 +275,13 @@ h1,h2,h3,h4,h5,h6 {
 
 .facebook-link {
   color: var(--orange-dark);
-  margin-left: 11.5em;
+  
 }
 
+
+.facebook {
+  text-align: right;
+}
 /* Sidebar */
 
 .sidebar {
