@@ -123,8 +123,8 @@ button {
 /* main button hover */
 button:hover {
   background-color: var(--white);
-    color: var(--orange-dark);
-  }
+  color: var(--orange-dark);
+}
 
 /* volunteer button */
 .volunteer {
@@ -133,11 +133,11 @@ button:hover {
 
 }
 
-  /*: Bonus: hover effect top menu navigation become orange on hover */
-  /* main button hover */
- .volunteer:hover {
-    background-color: var(--orange-dark);
-    color: var(--white);
+/*: Bonus: hover effect top menu navigation become orange on hover */
+/* main button hover */
+.volunteer:hover {
+  background-color: var(--orange-dark);
+  color: var(--white);
 }
 
 
@@ -167,7 +167,8 @@ button:hover {
   background-image: url("../images/header-bike.jpg");
   background-color: var(--grey-light);
   padding: 5rem 1rem 5rem 2rem;
-  margin-bottom: 5px; /*space at the bottom */
+  margin-bottom: 5px;
+  /*space at the bottom */
   margin: 0 0 3rem 0;
   min-width: 20rem;
   min-height: 10rem;
@@ -221,18 +222,20 @@ button:hover {
 
 /* class: bottom articles boxed below */
 .right-article {
-  flex-direction: column; /* inside the box */
+  flex-direction: column;
+  /* inside the box */
   width: 22rem;
   height: 10rem;
-  margin:0% 0% 0% 1.7%;
-  float: right ;
+  margin: 0% 0% 0% 1.7%;
+  float: right;
   padding: 1rem;
   display: flex;
   border: 1px solid var(--grey-light);
 }
 
 .left-article {
-  flex-direction: column; /* inside the box */
+  flex-direction: column;
+  /* inside the box */
   width: 22rem;
   height: 10rem;
   margin: 0% 0% 0% 0%;
@@ -269,17 +272,20 @@ button:hover {
 .article__read-more {
   margin: 0 0 0 0.5rem;
 }
-
+/* Link before */
 .article__read-more a {
   font-size: 0.85rem;
   font-weight: 700;
-  color: var(--orange-dark);
   text-decoration: none;
+  color: var(--orange-dark);
 }
-
+/* link during and afterwards */
 .article__read-more a:hover,
 .article__read-more a:focus {
-  text-decoration: underline;
+  text-decoration: none;
+  color: var(--white);
+  font-weight: 400;
+  padding-right: 1rem;
 }
 
 .fa {
