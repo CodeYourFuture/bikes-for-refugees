@@ -5,13 +5,13 @@
  * 
  */
 
- :root {
-   --grey-dark: #292b2c;
-   --grey-light: #e4e4e4;
-   --orange-dark: #c05326;
-   --orange-light: #f7eae4;
-   --white: #fff;
- }
+:root {
+  --grey-dark: #292b2c;
+  --grey-light: #e4e4e4;
+  --orange-dark: #c05326;
+  --orange-light: #f7eae4;
+  --white: #fff;
+}
 
 body {
   margin: 0;
@@ -24,7 +24,13 @@ button {
   font-size: 1rem;
 }
 
-h1,h2,h3,h4,h5,h6 {
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   margin-top: 0;
   margin-bottom: 0;
 }
@@ -32,6 +38,7 @@ h1,h2,h3,h4,h5,h6 {
 p {
   margin-top: 0;
   margin-bottom: 0;
+  font-weight: 600;
 }
 
 .header,
@@ -74,10 +81,18 @@ p {
   font-weight: 600;
   text-transform: uppercase;
   text-decoration: none;
+  padding: 0.4rem 1rem 0.4rem 1rem;
 }
 
+/*: Bonus: hover effect: top menu navigation become orange on hover 
+The colours of the buttons are inverted on hover */
+a:hover {
+  background-color: var(--orange-dark);
+  color: var(--white);
+  border-radius: 0.2rem;
+}
 
-/* Text styles */
+/* Text styles  */
 
 .text-highlight {
   color: var(--orange-dark);
@@ -92,10 +107,38 @@ p {
   border-left-color: var(--orange-dark);
 }
 
-
 /* Buttons */
+button {
+  background-color: var(--orange-dark);
+  color: var(--white);
+  cursor: pointer;
+  border: none;
+  padding: 0.3rem;
+  text-align: center;
+  font-size: 0.8rem;
+  border-radius: 0.2rem;
+}
 
-  /* INSERT BUTTON STYLES HERE */
+/* Bonus hover: The colours of the buttons are inverted on hover  */
+/* main button hover */
+button:hover {
+  background-color: var(--white);
+  color: var(--orange-dark);
+}
+
+/* volunteer button */
+.volunteer {
+  background-color: var(--white);
+  color: var(--orange-dark);
+
+}
+
+/*: Bonus: hover effect top menu navigation become orange on hover */
+/* main button hover */
+.volunteer:hover {
+  background-color: var(--orange-dark);
+  color: var(--white);
+}
 
 
 /* Content */
@@ -115,25 +158,34 @@ p {
   line-height: 1.3;
   padding: 1.5rem 1rem;
   margin-bottom: 2rem;
+  font-weight: 600;
 }
 
 /* hero */
-
+/* rem and em is relative to the screen size */
 .hero {
-  background-image: url("header-bike.jpg");
+  background-image: url("../images/header-bike.jpg");
   background-color: var(--grey-light);
+  padding: 5rem 1rem 5rem 2rem;
+  margin-bottom: 5px;
+  /*space at the bottom */
+  margin: 0 0 3rem 0;
+  min-width: 20rem;
+  min-height: 10rem;
+  /* margin-bottom: 10 */
 }
 
 .hero h1 {
   margin-bottom: 1rem;
   font-size: 2.5rem;
+  color: var(--white);
 }
 
 .hero p {
-  font-size: 1.2rem;
   margin-bottom: 2rem;
+  color: var(--white);
+  font-weight: 600;
 }
-
 
 /* Headings */
 
@@ -143,7 +195,7 @@ p {
   padding-bottom: 0.5rem;
   border-bottom: 2px solid var(--orange-light);
   font-size: 1rem;
-  font-weight: 600;
+  font-weight: 800;
   text-transform: uppercase;
 }
 
@@ -158,17 +210,45 @@ p {
   background: var(--orange-dark);
 }
 
-
 /* Article */
 
 .article {
   margin-bottom: 1rem;
+  display: flex;
+  border: 1px solid var(--grey-light);
+  padding: 0.6rem;
+  border-radius: 0.2rem;
+}
+
+/* class: bottom articles boxed below */
+.right-article {
+  flex-direction: column;
+  /* inside the box */
+  width: 22rem;
+  height: 10rem;
+  margin: 0% 0% 0% 1.7%;
+  float: right;
+  padding: 1rem;
+  display: flex;
+  border: 1px solid var(--grey-light);
+}
+
+.left-article {
+  flex-direction: column;
+  /* inside the box */
+  width: 22rem;
+  height: 10rem;
+  margin: 0% 0% 0% 0%;
+  float: left;
+  padding: 1rem;
+  display: flex;
+  border: 1px solid var(--grey-light);
 }
 
 .article__title {
-  margin-bottom: 0.5rem;
   font-size: 1rem;
   font-weight: 700;
+  padding: 0.5rem;
 }
 
 .article__title-link {
@@ -177,29 +257,35 @@ p {
 }
 
 .article__summary {
+  font-size: .9rem;
   margin-top: 0;
-  margin-bottom: 1rem;
+  padding: 0.5rem;
+  color: var(--grey-dark);
 }
 
 .article__thumbnail {
   object-fit: contain;
   width: 5rem;
+  padding: 1rem;
 }
 
 .article__read-more {
-  margin-top: 0;
+  margin: 0 0 0 0.5rem;
 }
-
+/* Link before */
 .article__read-more a {
   font-size: 0.85rem;
   font-weight: 700;
-  color: var(--orange-dark);
   text-decoration: none;
+  color: var(--orange-dark);
 }
-
+/* link during and afterwards */
 .article__read-more a:hover,
 .article__read-more a:focus {
-  text-decoration: underline;
+  text-decoration: none;
+  color: var(--white);
+  font-weight: 400;
+  padding-right: 1rem;
 }
 
 .fa {
@@ -208,6 +294,7 @@ p {
 }
 
 .facebook-link {
+  text-align: right;
   color: var(--orange-dark);
 }
 
@@ -216,7 +303,8 @@ p {
 .sidebar {
   display: flex;
   flex-direction: column;
-  min-width: 350px;
+  /* min-width: 150px; */
+  max-width: 400px;
 }
 
 /* Footer */
@@ -227,12 +315,13 @@ p {
 
 .footer__content {
   border-top: 2px solid var(--orange-light);
-  padding-top: 2rem;
-  padding-bottom: 2rem;
+  padding-top: 1rem;
+  /* padding-bottom: 1rem; */
 }
 
 .footer p {
-  padding-bottom: 1rem;
+  padding-bottom: 0.5rem;
+  margin-top: 0rem;
   text-align: center;
   font-size: 0.85rem;
 }
@@ -246,5 +335,6 @@ p {
 
   .main {
     padding-right: 2rem;
+    min-width: 800px;
   }
 }
