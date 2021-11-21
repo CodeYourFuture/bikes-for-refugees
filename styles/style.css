@@ -40,6 +40,7 @@ p {
   padding: 0 1.5rem;
   max-width: 1200px;
   margin: 0 auto;
+  
 }
 
 /* Header */
@@ -66,7 +67,7 @@ p {
 }
 
 .navigation__item {
-  padding: 0.5rem 0;
+  padding: 0.5rem 0.5rem;
 }
 
 .navigation__link {
@@ -75,7 +76,9 @@ p {
   text-transform: uppercase;
   text-decoration: none;
 }
-
+.navigation__link:hover{
+  color:cadetblue;
+}
 
 /* Text styles */
 
@@ -95,19 +98,35 @@ p {
 
 /* Buttons */
 
-  /* INSERT BUTTON STYLES HERE */
+  .button{
+    background-color: var(--orange-dark);
+    color:var(--orange-light);
+    border-radius:5px; 
+    font-size: 18px;
+    padding:5px;
+    margin:0 25px 0 -25px;
+  
+  }
 
-
+  .button:hover{
+    background-color: var(--grey-dark); 
+    color:white;
+  }
+  .modify_bttn{
+    background-color:white;
+    color: rgb(219, 108, 4);
+  }
 /* Content */
 
 .content {
   display: flex;
   flex-direction: column;
-}
+
+  }
 
 /* Alert */
 
-.alert {
+.alert{
   background-color: var(--orange-light);
   border-left: 4px solid var(--orange-dark);
   border-radius: 4px;
@@ -120,18 +139,26 @@ p {
 /* hero */
 
 .hero {
-  background-image: url("header-bike.jpg");
+  background-image: url("../images/header-bike.jpg");
   background-color: var(--grey-light);
+  width:60vw;
+  height:41vh;
+  padding:70px 0 0 50px;
+  padding-left:50px;
+  margin-bottom:50px;
 }
-
-.hero h1 {
+.hero h1{
+  color:white;
   margin-bottom: 1rem;
-  font-size: 2.5rem;
+  font-size: 1.8rem;
+  
 }
 
 .hero p {
-  font-size: 1.2rem;
+  color:white;
+  font-size: 0.9rem;
   margin-bottom: 2rem;
+  
 }
 
 
@@ -163,6 +190,13 @@ p {
 
 .article {
   margin-bottom: 1rem;
+  border:solid var(--grey-light);
+  padding:10px;
+}
+.learn_more{
+  display:flex;
+  flex-direction:row;
+  gap:20px;
 }
 
 .article__title {
@@ -218,7 +252,14 @@ p {
   flex-direction: column;
   min-width: 350px;
 }
-
+.sidebar .article{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  padding: 15px;
+  gap: 15px;
+  
+}
 /* Footer */
 
 .footer {
@@ -236,6 +277,9 @@ p {
   text-align: center;
   font-size: 0.85rem;
 }
+span{
+  margin-left: 7rem;
+}
 
 /* Media queries */
 
@@ -247,4 +291,5 @@ p {
   .main {
     padding-right: 2rem;
   }
-}
+
+ 
