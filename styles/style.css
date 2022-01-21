@@ -145,6 +145,37 @@ color:white;
   font-weight: 700;
   
 }
+.flex-container {
+  display: flex;
+  flex-direction: column;
+  background-color: rgb(216, 218, 221);
+  align-items: center;
+  border-style: inset;
+  margin: 90px 90px 90px 90px;
+
+
+}
+
+
+.log{
+
+  background-color: rgb(228, 222, 222);
+}
+
+ 
+  
+ 
+
+.flex-container > div {
+  
+  
+  margin: 10px;
+  
+  
+  font-size: 20px;
+}
+
+
 
 .article__read-more a {
   font-size: 0.85em;
