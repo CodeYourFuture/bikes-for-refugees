@@ -68,8 +68,13 @@ p {
 .navigation__item {
   padding: 0.5rem 0;
 }
+.navigation__link:hover {
+  background-color: rgb(220, 207, 20);
+}
 
 .navigation__link {
+  margin: 10px;
+  font-family: 'Courier New', Courier, monospace;
   color: var(--grey-dark);
   font-weight: 600;
   text-transform: uppercase;
@@ -92,8 +97,13 @@ p {
   border-left-color: var(--orange-dark);
 }
 
-
-/* Buttons */
+ Button {
+   background-color: black;
+   color: burlywood;
+ }
+ Button:hover {
+   background-color:darkolivegreen ;
+ }
 
   /* INSERT BUTTON STYLES HERE */
 
@@ -120,8 +130,12 @@ p {
 /* hero */
 
 .hero {
-  background-image: url("header-bike.jpg");
+  background-image: url("../images/header-bike.jpg");
+  width: 700px;
+  height: 300px;
   background-color: var(--grey-light);
+  color: aliceblue;
+  padding: 20px;
 }
 
 .hero h1 {
@@ -158,10 +172,15 @@ p {
   background: var(--orange-dark);
 }
 
-
+.needBike {
+  display: flex;
+  justify-content: space-between;
+}
 /* Article */
 
 .article {
+  border-style:solid ;
+  width: 350px;
   margin-bottom: 1rem;
 }
 
@@ -177,6 +196,7 @@ p {
 }
 
 .article__summary {
+  width: 300px;
   margin-top: 0;
   margin-bottom: 1rem;
 }
@@ -235,6 +255,12 @@ p {
   padding-bottom: 1rem;
   text-align: center;
   font-size: 0.85rem;
+}
+#bikeNeed {
+  display:inline-block;
+  margin: 20px;
+  background-color: darkseagreen;
+
 }
 
 /* Media queries */
