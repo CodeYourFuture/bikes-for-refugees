@@ -28,7 +28,7 @@ button {
 }
 
 .navbar-light .navbar-nav .nav-link {
-  color: #292b2c;
+  color: #c05326;
   font-weight: 600;
   text-transform: uppercase;
 
@@ -61,7 +61,7 @@ button {
   top: 0;
   height: 100%;
   width: 1px;
-  background: #c05326;
+  background: #fff;
 }
 
 /* Jumbotron */
@@ -69,7 +69,20 @@ button {
 .jumbotron {
   background-image: url("../images/header.jpg");
   border-radius: 0;
-  color: #fff;
+  color: #130e0c;
+}
+
+.DC2 {
+  color: #c05326;
+  
+}
+button:hover {
+color: #934423;
+}
+button {
+  padding: 5px;
+  border-radius: 5px;
+  border: none;
 }
 
 /* Headings */
@@ -144,10 +157,55 @@ button {
   padding-bottom: 2em;
 }
 
-/* Media queries */
+/*.boxes {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  gap: 10%;
+  margin: 1em;
+}
 
+.boxes .box {
+  background-color: lavender;
+  border: 1px solid rgb(19, 9, 9);
+  width: 50%;
+  height: 50%;
+  border-radius: 2em;
+  padding: 0.5;
+  justify-content: center;
+  align-content: center;
+}*/
+.boxes {
+  display: flex;
+  justify-content: space-around;
+  margin: 1em;
+}
+.boxes .box {
+  border: 0.1em solid black;
+  border-radius: 0.4em;
+  background-color: #292b2c;
+  color: white;
+  padding: 1em;
+  width: 25%;
+  height: 150px;
+  text-align: center;
+  padding-top: 8%;
+}
+/* Media queries */
 @media screen and (min-width: 992px) {
   .navbar-brand > img {
     max-height: 80px;
   }
 }
+@media screen and (max-width: 320px) {
+  .jumbotron h2 {
+    font-size: 28px;
+  }
+  .jumbotron button {
+    font-size: 10px;
+  }
+  .boxes {
+    gap: 0.1em;
+  }
+}
+ 
