@@ -94,6 +94,7 @@ p {
   border: 6px solid var(--white);
   border-left-color: var(--orange-dark);
 }
+ 
 
 
 /* Buttons */
@@ -126,7 +127,7 @@ p {
   background: url("../images/header-bike.jpg");
   background-size: cover;
   background-repeat: no-repeat;
-  height: 20em;
+  height: 19em;
   color: white;
 
 }
@@ -187,18 +188,29 @@ button {
 /* Article */
 
 .article {
-  margin-bottom: 1rem;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 2.25rem;
+  border-style: ridge;
+  padding-top: 1rem;
+  padding-bottom: 0.5rem;
+  border-radius: 5px;
+}
+.article__content {
+  margin-left: 1.25rem;
 }
 
 .article__title {
   margin-bottom: 0.5rem;
-  font-size: 1rem;
+  font-size: 1.15rem;
   font-weight: 700;
+  
 }
 
 .article__title-link {
   text-decoration: none;
   color: var(--orange-dark);
+  color: #1da1f2;
 }
 
 .article__summary {
