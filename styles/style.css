@@ -80,6 +80,12 @@ p {
   text-transform: uppercase;
   text-decoration: none;
 }
+/* nav-hoover */
+.navigation__link:hover {
+  background-color: var(--orange-dark);
+  color: white;
+  border-radius: 3px;
+}
 .donate {
   float: right;
   margin-left: 36rem;
