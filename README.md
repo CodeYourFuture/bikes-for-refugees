@@ -32,7 +32,6 @@ Make sure to add some CSS to make the images look the same as in the design!
 
 There are 3 buttons on the page: can you style them correctly so they follow the design?
 **Remember**, re-use styles as much as possible by using CSS classes.
-
 ### Exercise 4) Add spacing
 
 - Add more space **inside** the hero section so that more of the image is visible. 
