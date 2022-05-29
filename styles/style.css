@@ -156,6 +156,10 @@ p {
   margin-bottom: 2rem;
 }
 
+.hero button {
+  margin: 0 0px 20px 10px;
+}
+
 
 /* Headings */
 
@@ -180,6 +184,27 @@ p {
   background: var(--orange-dark);
 }
 
+/* Info Container */
+
+.infocontainer {
+  display: flex;
+  justify-content: space-between;
+}
+
+.infobox {
+  border: solid 2px black;
+  padding: 20px;
+  margin: 20px 0;
+  background-color: var(--grey-light);
+}
+
+.infobox:first-child {
+  background-color: #ddd;
+}
+
+.infobox:last-child {
+  border: 1px solid #ddd;
+}
 
 /* Article */
 
