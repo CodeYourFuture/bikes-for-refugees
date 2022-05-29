@@ -74,6 +74,7 @@ p {
   font-weight: 600;
   text-transform: uppercase;
   text-decoration: none;
+  padding: 0 2em;
 }
 
 
@@ -96,7 +97,28 @@ p {
 /* Buttons */
 
   /* INSERT BUTTON STYLES HERE */
+  .donatebtn {
+    background-color: #c05326;
+  }
 
+  .volunteerbtn {
+    background-color: #fff;
+    color: #c05326;
+  }
+
+  button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+  }
+
+  button:hover {
+    background-color: #934423;
+  }
+
+   button:focus{
+    background-color: #934423;
+  }
 
 /* Content */
 
