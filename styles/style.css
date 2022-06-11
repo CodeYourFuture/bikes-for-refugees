@@ -237,6 +237,23 @@ p {
   font-size: 0.85rem;
 }
 
+.container {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 50px;  
+}
+
+.container div {
+  background-color: lightgrey;
+  color: black;
+  padding: 30px 30px 30px 30px;
+  border: 1px solid black;
+  font-size: 22px;
+  width: 120px;
+  height: 60px;
+  text-align: center;
+}
+
 /* Media queries */
 
 @media screen and (min-width: 992px) {
@@ -247,4 +264,16 @@ p {
   .main {
     padding-right: 2rem;
   }
+}
+
+@media only screen and (max-device-width: 320px) {
+  body, button {
+    font-size: 0.3rem;
+  }
+
+  .header__logo {
+    max-height: 40px;
+    width: auto;
+  }
+
 }
