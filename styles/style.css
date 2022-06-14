@@ -80,6 +80,9 @@ p {
   text-transform: uppercase;
   text-decoration: none;
 }
+.navigation__link:hover {
+  color: #c05326;
+}
 
 /* Text styles */
 
@@ -106,10 +109,19 @@ button {
   border-radius: 5px;
 }
 
+button:hover {
+  color: #c05326;
+  background-color: #ffffff;
+}
+
 button.inverted {
   color: #c05326;
   background-color: #ffffff;
   font-weight: 600;
+}
+button.inverted:hover {
+  color: #ffffff;
+  background-color: #c05326;
 }
 
 /* Content */
@@ -138,10 +150,9 @@ button.inverted {
   back
   background-size: 100% 100%;
   background-position: center;
-  
   background-color: var(--grey-light);
   color: #ffffff;
-  padding: 60px 0 70px 40px;
+  padding: 90px 40px;
 }
 
 .hero h1 {
@@ -155,6 +166,11 @@ button.inverted {
 }
 
 /* Headings */
+
+.Learn-more-sect {
+  margin-top: 100px;
+  
+}
 
 .heading-underline {
   position: relative;
@@ -179,8 +195,24 @@ button.inverted {
 
 /* Article */
 
+.fp-article {
+  display: flex;
+  
+}
+
+.fp-article-box {
+  border: #e4e7e9 solid 2px;
+  margin: 0 10px 0 0;
+  padding: 20px;
+}
+
 .article {
+  display: flex;
   margin-bottom: 1rem;
+  border: #e4e7e9 solid 2px;
+  margin-right: 10px;
+  padding: 10px;
+  
 }
 
 .article__title {
@@ -235,6 +267,10 @@ button.inverted {
   display: flex;
   flex-direction: column;
   min-width: 350px;
+}
+
+.sidebar img {
+  margin-right: 13px;
 }
 
 /* Footer */
