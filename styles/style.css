@@ -152,7 +152,17 @@ p {
   background-image: url(/images/header-bike.jpg);
   background-color: var(--grey-light);
   width: 100%;
- height: 350px;
+  height: 350px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  /* align-items: center; */
+  color: var(--white);
+}
+
+.hero h1, p, .btncontainer {
+  padding-left: 30px;
 }
 
 .hero h1 {
@@ -272,7 +282,15 @@ section {
   color: var(--orange-dark);
 }
 
-
+.learnarticles {
+  display: flex;
+  gap: 10px;
+  
+}
+.learnarticles article {
+  padding: 10px;
+  border: solid 1px var(--grey-light);
+}
 
 /* Sidebar */
 
@@ -284,11 +302,17 @@ section {
 
 .sidebar article {
   display: flex;
+  border: solid 1px var(--grey-light);
+  padding: 20px;
 }
 
 .sidebar img {
   padding: 0px 10px;
   align-self: center;
+}
+
+.sidebar a {
+  text-align: end;
 }
 
 /* Footer */
