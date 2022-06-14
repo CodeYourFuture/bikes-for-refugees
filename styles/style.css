@@ -82,7 +82,7 @@ p {
   font-weight: 600;
   text-transform: uppercase;
   text-decoration: none;
-  padding: 2rem ;
+  padding: 0.5rem ;
 }
 
 
@@ -158,9 +158,10 @@ button:hover {
 /* hero */
 
 .hero {
-  background-image: url("header-bike.jpg");
-  max-width: 1200px;
-  margin-top: 5rem;
+  background-image: url(/images/header-bike.jpg);
+  background-size: cover;
+  width: 100%;
+  height: 400px;
 }
 
 .hero h1 {
@@ -276,6 +277,15 @@ button:hover {
   display: flex;
   flex-direction: column;
   min-width: 350px;
+}
+
+.sidebar article {
+  display: flex;
+}
+
+.sidebar img {
+  margin: 1em;
+  align-self: center;
 }
 
 /* Footer */
