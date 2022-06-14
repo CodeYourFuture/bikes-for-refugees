@@ -127,6 +127,12 @@ button:hover {
    background-color: #934423;
   }
 
+  .btn__container {
+    display: flex;
+    padding: 0.3rem; 
+    font-size: 0.5rem;
+  }
+
  
 
 
@@ -159,7 +165,7 @@ button:hover {
 
 .hero h1 {
   margin-bottom: 1rem;
-  font-size: 2.5rem;
+  font-size: 1.5rem;
 }
 
 .hero p {
@@ -302,9 +308,11 @@ button:hover {
   }
 }
 
-@media screen only and (max-width: 320px) {
-  p {
-    font-size: 0.5rem;
+@media screen and (min-width: 320px) {
+  h1 {
+    font-size: 2.5rem;
   }
-  
+
 }
+
+
