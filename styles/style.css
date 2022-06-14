@@ -101,32 +101,32 @@ p {
 /* Buttons */
 
   /* INSERT BUTTON STYLES HERE */
-  .donatebtn {
-    background-color: var(--orange-dark);
-  }
+.donatebtn {
+  background-color: var(--orange-dark);
+}
 
-  .volunteerbtn {
-    background-color: var(--white);
-    color: var(--orange-dark);
-  }
+.volunteerbtn {
+  background-color: var(--white);
+  color: var(--orange-dark);
+}
 
-  .donatebtn:hover, .donatebtn:focus {
-    background-color: var(--white);
-    color: var(--orange-dark);
-  }
+.donatebtn:hover, .donatebtn:focus {
+  background-color: var(--white);
+  color: var(--orange-dark);
+}
 
-  .volunteerbtn:hover, .volunteerbtn:focus {
-    background-color: var(--orange-dark);
-    color:var(--white);
-  }
+.volunteerbtn:hover, .volunteerbtn:focus {
+  background-color: var(--orange-dark);
+  color:var(--white);
+}
 
-  button {
-    padding: 10px 20px;
-    border: none;
-    border-radius: 5px;
-    color: var(--white);
-    margin: 10px;
-  }
+button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  color: var(--white);
+  margin: 10px;
+}
 
   /* classwork - commented out due to stretch goal requirements
   
@@ -138,7 +138,7 @@ p {
     background-color: #934423;
   } */
 
-  .btncontainer {
+.btncontainer {
   display: flex;
 }
 
