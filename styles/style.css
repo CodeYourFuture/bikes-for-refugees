@@ -110,6 +110,8 @@ p {
     padding: 10px 20px;
     border: none;
     border-radius: 5px;
+    color: var(--white);
+    margin: 10px;
   }
 
   button:hover {
@@ -145,7 +147,7 @@ p {
   background-image: url(/images/header-bike.jpg);
   background-color: var(--grey-light);
   width: 100%;
- height: 400px;
+ height: 350px;
 }
 
 .hero h1 {
@@ -185,6 +187,10 @@ p {
 
 .infobox:last-child {
   border: 1px solid #ddd;
+}
+
+section {
+  margin-top: 30px;
 }
 
 /* Headings */
