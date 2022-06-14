@@ -63,10 +63,12 @@ p {
 .navigation__list {
   display: flex;
   list-style: none;
+  justify-items: space-between;
 }
 
 .navigation__item {
   padding: 0.5rem 0;
+  padding: 0 20px;
 }
 
 .navigation__link {
@@ -76,6 +78,9 @@ p {
   text-decoration: none;
 }
 
+.navigation__link hover{
+  color: var(--orange-dark);
+}
 
 /* Text styles */
 
@@ -96,28 +101,31 @@ p {
 /* Buttons */
 
   /* INSERT BUTTON STYLES HERE */
-.hero button{
-  margin: 0px 0px 20px 10px;
-}
 
-.infocontainer{
-  display: flex;
-  justify-content: space-between;
-}
-
-.infobox{
-  border: solid 2px black;
-  padding: 20px;
-  margin: 20px 0;
-  background-color: var(--grey-light);
+button{
+  color: var(--white);
+  border: none;
+  border-radius: 5px;
+  padding: 10px;
+  background-color: var(--orange-dark);
 
 }
-.infobox:first-child{
-  background-color: #ddd;
+#volunteer-button{
+  background-color: var(--white);
+  color: var(--orange-dark);
 }
 
-.infobox:last-child{
-  border: 1px solid #ddd
+button:hover{
+  background-color: var(--white);
+  color: var(--orange-dark);
+  border: none;
+  border-radius: 5px;
+  padding: 10px;
+}
+
+#volunteer-button-hover{
+  background-color: var(--orange-dark);
+  color: var(--white);
 }
 
 /* Content */
@@ -142,8 +150,12 @@ p {
 /* hero */
 
 .hero {
-  background-image: url("header-bike.jpg");
+  background-image: url("../images/header-bike.jpg");
   background-color: var(--grey-light);
+  padding: 100px 40px;
+  color: var(--white);
+  margin-bottom: 50px;
+  
 }
 
 .hero h1 {
@@ -235,12 +247,31 @@ p {
 
 /* Sidebar */
 
-.sidebar {
+.sidebar article{
   display: flex;
   flex-direction: column;
   min-width: 350px;
+  border: 1px solid var(--grey-light);
+  padding: 15pax;
+}
+.sidebar img{
+margin-right: 15px;
 }
 
+.facebook-link{
+  display: flex;
+  justify-content: flex-end;
+}
+
+.learn-more-container{
+  display:flex;
+}
+
+.learn-more-container article{
+  border: 1px solid var(--grey-light);
+  padding: 15px;
+  margin-right: 15px;
+}
 /* Footer */
 
 .footer {
