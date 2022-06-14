@@ -13,6 +13,7 @@
    --white: #fff;
  }
 
+
 body {
   margin: 0;
 }
@@ -23,6 +24,13 @@ button {
   color: var(--grey-dark);
   font-size: 1rem;
 }
+
+
+.headerimg {
+  width: 100%vw;
+  height: 100%vh;
+}
+
 
 h1,h2,h3,h4,h5,h6 {
   margin-top: 0;
@@ -74,6 +82,7 @@ p {
   font-weight: 600;
   text-transform: uppercase;
   text-decoration: none;
+  padding: 2rem ;
 }
 
 
@@ -94,8 +103,31 @@ p {
 
 
 /* Buttons */
+button {
+  padding: 0.7rem;
+  border: none;
+  border-radius: 5px;
+  
+}
 
-  /* INSERT BUTTON STYLES HERE */
+.donate__btn {
+  background-color: var(--orange-dark);
+}
+
+.volunteer__btn {
+  background-color: var(--white);
+  color: var(--orange-dark);
+}
+
+button:hover {
+  background-color: #934423;
+ }
+ 
+ button:focus {
+   background-color: #934423;
+  }
+
+ 
 
 
 /* Content */
@@ -121,7 +153,8 @@ p {
 
 .hero {
   background-image: url("header-bike.jpg");
-  background-color: var(--grey-light);
+  max-width: 1200px;
+  margin-top: 5rem;
 }
 
 .hero h1 {
@@ -132,6 +165,26 @@ p {
 .hero p {
   font-size: 1.2rem;
   margin-bottom: 2rem;
+}
+
+.block__container {
+  display: flex;
+  justify-content: space-between;
+  margin: 1em 0;
+}
+
+.block__item {
+  padding: 2em;
+  border: 1px solid var(--grey-dark);
+  background-color: var(--grey-light);
+}
+
+.block__item:first-child {
+  background-color: #ddd;
+}
+
+.block__item:last-child {
+  border: 1px solid #ddd;
 }
 
 
@@ -247,4 +300,11 @@ p {
   .main {
     padding-right: 2rem;
   }
+}
+
+@media screen only and (max-width: 320px) {
+  p {
+    font-size: 0.5rem;
+  }
+  
 }
