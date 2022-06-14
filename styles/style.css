@@ -77,6 +77,10 @@ p {
   padding: 0 2em;
 }
 
+.navigation__link:hover {
+  color: var(--orange-dark);
+}
+
 
 /* Text styles */
 
@@ -285,11 +289,15 @@ section {
 .learnarticles {
   display: flex;
   gap: 10px;
-  
 }
+
 .learnarticles article {
   padding: 10px;
   border: solid 1px var(--grey-light);
+}
+
+.learnarticles h3 {
+  padding-left: 30px;
 }
 
 /* Sidebar */
@@ -304,6 +312,9 @@ section {
   display: flex;
   border: solid 1px var(--grey-light);
   padding: 20px;
+}
+.sidebar h3 {
+  padding-left:30px;
 }
 
 .sidebar img {
