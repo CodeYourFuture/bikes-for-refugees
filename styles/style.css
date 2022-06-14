@@ -96,7 +96,29 @@ p {
 /* Buttons */
 
   /* INSERT BUTTON STYLES HERE */
+.hero button{
+  margin: 0px 0px 20px 10px;
+}
 
+.infocontainer{
+  display: flex;
+  justify-content: space-between;
+}
+
+.infobox{
+  border: solid 2px black;
+  padding: 20px;
+  margin: 20px 0;
+  background-color: var(--grey-light);
+
+}
+.infobox:first-child{
+  background-color: #ddd;
+}
+
+.infobox:last-child{
+  border: 1px solid #ddd
+}
 
 /* Content */
 
