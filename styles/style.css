@@ -82,7 +82,11 @@ p {
   font-weight: 600;
   text-transform: uppercase;
   text-decoration: none;
-  padding: 0.5rem ;
+  padding: 0.7em ;
+}
+
+.navigation__link:hover {
+  color: #c05326;
 }
 
 
@@ -121,9 +125,15 @@ button {
   color: var(--orange-dark);
 }
 
-button:hover {
-  background-color: #934423;
- }
+.donate__btn:hover, .donate__btn:focus {
+  background-color:#fff;
+  color: #c05326;
+}
+
+.volunteer__btn:hover, .volunteer__btn:focus {
+  background-color:#c05326;
+  color:#fff;
+}
  
  button:focus {
    background-color: #934423;
@@ -171,7 +181,7 @@ button:hover {
 
 .hero h1 {
   margin-bottom: 1rem;
-  font-size: 3rem;
+  font-size: 1.5rem;
   font-weight: 700;
   color: #fff;
 }
@@ -296,8 +306,11 @@ section .article {
   color: var(--orange-dark);
 }
 
+
+
 .facebook-link {
   color: var(--orange-dark);
+  text-align: end;
 }
 
 /* Sidebar */
@@ -355,7 +368,7 @@ section .article {
 
 @media screen and (min-width: 320px) {
   h1 {
-    font-size: 2.5rem;
+    font-size: 3rem;
   }
 
 }
