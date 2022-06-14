@@ -110,6 +110,16 @@ p {
     color: var(--orange-dark);
   }
 
+  .donatebtn:hover, .donatebtn:focus {
+    background-color: var(--white);
+    color: var(--orange-dark);
+  }
+
+  .volunteerbtn:hover, .volunteerbtn:focus {
+    background-color: var(--orange-dark);
+    color:var(--white);
+  }
+
   button {
     padding: 10px 20px;
     border: none;
@@ -118,13 +128,15 @@ p {
     margin: 10px;
   }
 
+  /* classwork - commented out due to stretch goal requirements
+  
   button:hover {
     background-color: #934423;
   }
 
    button:focus{
     background-color: #934423;
-  }
+  } */
 
   .btncontainer {
   display: flex;
