@@ -142,8 +142,10 @@ p {
 /* hero */
 
 .hero {
-  background-image: url("header-bike.jpg");
+  background-image: url(/images/header-bike.jpg);
   background-color: var(--grey-light);
+  width: 100%;
+ height: 400px;
 }
 
 .hero h1 {
@@ -262,12 +264,23 @@ p {
   color: var(--orange-dark);
 }
 
+
+
 /* Sidebar */
 
 .sidebar {
   display: flex;
   flex-direction: column;
   min-width: 350px;
+}
+
+.sidebar article {
+  display: flex;
+}
+
+.sidebar img {
+  padding: 0px 10px;
+  align-self: center;
 }
 
 /* Footer */
