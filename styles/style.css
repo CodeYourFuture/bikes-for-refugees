@@ -122,6 +122,11 @@ p {
     background-color: #934423;
   }
 
+  .btncontainer {
+  display: flex;
+}
+
+
 /* Content */
 
 .content {
@@ -162,9 +167,6 @@ p {
 
 .hero button {
   margin: 0 0px 2.5px 2.5px;
-}
-.btncontainer {
-  display: flex;
 }
 
 /* Info Container */
