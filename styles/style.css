@@ -98,12 +98,12 @@ p {
 
   /* INSERT BUTTON STYLES HERE */
   .donatebtn {
-    background-color: #c05326;
+    background-color: var(--orange-dark);
   }
 
   .volunteerbtn {
-    background-color: #fff;
-    color: #c05326;
+    background-color: var(--white);
+    color: var(--orange-dark);
   }
 
   button {
@@ -160,6 +160,27 @@ p {
   margin: 0 0px 20px 10px;
 }
 
+/* Info Container */
+
+.infocontainer {
+  display: flex;
+  justify-content: space-between;
+}
+
+.infobox {
+  border: solid 2px var(--grey-dark);
+  padding: 20px;
+  margin: 20px 0;
+  background-color: var(--grey-light);
+}
+
+.infobox:first-child {
+  background-color: #ddd;
+}
+
+.infobox:last-child {
+  border: 1px solid #ddd;
+}
 
 /* Headings */
 
