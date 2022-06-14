@@ -112,6 +112,7 @@ button {
 
 .donate__btn {
   background-color: var(--orange-dark);
+  color: #fff;
 }
 
 .volunteer__btn {
@@ -172,6 +173,10 @@ button:hover {
 .hero p {
   font-size: 1.2rem;
   margin-bottom: 2rem;
+}
+
+section {
+  margin-top: 30px;
 }
 
 .block__container {
