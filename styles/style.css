@@ -74,6 +74,11 @@ p {
   font-weight: 600;
   text-transform: uppercase;
   text-decoration: none;
+  padding: 0 2em;
+}
+
+.navigation__link:hover {
+  color: var(--orange-dark);
 }
 
 
@@ -96,6 +101,46 @@ p {
 /* Buttons */
 
   /* INSERT BUTTON STYLES HERE */
+.donatebtn {
+  background-color: var(--orange-dark);
+}
+
+.volunteerbtn {
+  background-color: var(--white);
+  color: var(--orange-dark);
+}
+
+.donatebtn:hover, .donatebtn:focus {
+  background-color: var(--white);
+  color: var(--orange-dark);
+}
+
+.volunteerbtn:hover, .volunteerbtn:focus {
+  background-color: var(--orange-dark);
+  color:var(--white);
+}
+
+button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  color: var(--white);
+  margin: 10px;
+}
+
+  /* classwork - commented out due to stretch goal requirements
+  
+  button:hover {
+    background-color: #934423;
+  }
+
+   button:focus{
+    background-color: #934423;
+  } */
+
+.btncontainer {
+  display: flex;
+}
 
 
 /* Content */
@@ -120,13 +165,25 @@ p {
 /* hero */
 
 .hero {
-  background-image: url("header-bike.jpg");
+  background-image: url(/images/header-bike.jpg);
   background-color: var(--grey-light);
+  width: 100%;
+  height: 350px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  /* align-items: center; */
+  color: var(--white);
+}
+
+.hero h1, p, .btncontainer {
+  padding-left: 30px;
 }
 
 .hero h1 {
   margin-bottom: 1rem;
-  font-size: 2.5rem;
+  font-size: 1.5rem;
 }
 
 .hero p {
@@ -134,6 +191,35 @@ p {
   margin-bottom: 2rem;
 }
 
+.hero button {
+  margin: 0 0px 2.5px 2.5px;
+}
+
+/* Info Container */
+
+.infocontainer {
+  display: flex;
+  justify-content: space-between;
+}
+
+.infobox {
+  border: solid 2px var(--grey-dark);
+  padding: 20px;
+  margin: 20px 0;
+  background-color: var(--grey-light);
+}
+
+.infobox:first-child {
+  background-color: #ddd;
+}
+
+.infobox:last-child {
+  border: 1px solid #ddd;
+}
+
+section {
+  margin-top: 30px;
+}
 
 /* Headings */
 
@@ -157,6 +243,7 @@ p {
   max-width: 100px;
   background: var(--orange-dark);
 }
+
 
 
 /* Article */
@@ -211,12 +298,44 @@ p {
   color: var(--orange-dark);
 }
 
+.learnarticles {
+  display: flex;
+  gap: 10px;
+}
+
+.learnarticles article {
+  padding: 10px;
+  border: solid 1px var(--grey-light);
+}
+
+.learnarticles h3 {
+  padding-left: 30px;
+}
+
 /* Sidebar */
 
 .sidebar {
   display: flex;
   flex-direction: column;
   min-width: 350px;
+}
+
+.sidebar article {
+  display: flex;
+  border: solid 1px var(--grey-light);
+  padding: 20px;
+}
+.sidebar h3 {
+  padding-left:30px;
+}
+
+.sidebar img {
+  padding: 0px 10px;
+  align-self: center;
+}
+
+.sidebar a {
+  text-align: end;
 }
 
 /* Footer */
@@ -247,4 +366,17 @@ p {
   .main {
     padding-right: 2rem;
   }
+
 }
+
+
+@media screen and (min-width: 320px) {
+  
+  hero h1 {
+  font-size: 2.5rem;
+}
+    
+}
+
+
+
