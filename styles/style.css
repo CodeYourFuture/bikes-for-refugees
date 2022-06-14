@@ -74,8 +74,13 @@ p {
   font-weight: 600;
   text-transform: uppercase;
   text-decoration: none;
+  display: inline;
+  padding-right: 30px;
 }
-
+.navigation__link:hover {
+cursor: pointer;
+color: var(--orange-dark);
+}
 
 /* Text styles */
 
@@ -94,8 +99,39 @@ p {
 
 
 /* Buttons */
+.donate_button {
+  background-color:var(--orange-dark);
+  text-decoration: none;
+  border: none;
+  padding: 6px 8px;
+  border-radius: 4px;
+  color: var(--white);
+  font-size: 17px; 
+ margin-left: 1rem;
+}
 
-  /* INSERT BUTTON STYLES HERE */
+
+.vol_button {
+  background-color:var(--white);
+  color:var(--orange-dark);
+  border: none;
+  padding: 6px 8px;
+  border-radius: 4px;
+  font-size: 17px;
+  font-weight: 600;
+ 
+}
+.donate_button:hover {
+  color: var(--orange-dark);
+  background-color: var(--white);
+  cursor: pointer;
+  border: 1px solid var(--orange-dark);
+}
+.vol_button:hover {
+  color: var(--white);
+  background-color:var(--orange-dark);
+  cursor: pointer;
+}
 
 
 /* Content */
@@ -120,18 +156,27 @@ p {
 /* hero */
 
 .hero {
-  background-image: url("header-bike.jpg");
-  background-color: var(--grey-light);
+ background-image: url("/images/header-bike.jpg");
+ height: 50%;
+ padding: 0.4rem 1rem;
+
 }
 
 .hero h1 {
   margin-bottom: 1rem;
   font-size: 2.5rem;
+  color: var(--white);
+  margin-left: 1rem;
+  margin-top: 4.5rem;
+
 }
 
 .hero p {
   font-size: 1.2rem;
   margin-bottom: 2rem;
+  color: var(--white);
+  margin-left: 1rem;
+  padding-top: 2px;
 }
 
 
@@ -139,7 +184,7 @@ p {
 
 .heading-underline {
   position: relative;
-  margin-bottom: 2rem;
+  margin: 2rem 0;
   padding-bottom: 0.5rem;
   border-bottom: 2px solid var(--orange-light);
   font-size: 1rem;
@@ -161,14 +206,23 @@ p {
 
 /* Article */
 
-.article {
-  margin-bottom: 1rem;
+
+
+div .article {
+  padding:20px  10px;
+  border: 2px solid gainsboro; 
+  display: flex;
+  float: left;
+  flex-direction: column;
+  margin: 10px;
 }
+
+
 
 .article__title {
   margin-bottom: 0.5rem;
   font-size: 1rem;
-  font-weight: 700;
+  font-weight: 900;
 }
 
 .article__title-link {
@@ -179,11 +233,13 @@ p {
 .article__summary {
   margin-top: 0;
   margin-bottom: 1rem;
+  font-weight: 600;
 }
 
 .article__thumbnail {
   object-fit: contain;
   width: 5rem;
+  padding: 5px;
 }
 
 .article__read-more {
@@ -205,10 +261,27 @@ p {
 .fa {
   margin-right: 0.5rem;
   color: var(--orange-dark);
+  
 }
 
 .facebook-link {
   color: var(--orange-dark);
+  text-align: right;
+
+}
+
+
+.article__content {
+  padding-left: 5px;
+  
+}
+
+
+.more{
+  width: 100%;
+  display: flex;
+ flex-direction:row;
+ flex-wrap:nowrap;
 }
 
 /* Sidebar */
@@ -216,13 +289,26 @@ p {
 .sidebar {
   display: flex;
   flex-direction: column;
-  min-width: 350px;
+  min-width: 350px; 
+  margin-top: -37px;
 }
+
+
+aside article {
+  margin-bottom: 1rem;
+    border: 2px solid gainsboro; 
+  display: flex;
+  align-items:center;
+  justify-content: center;
+  padding: 20px 5px;
+  
+} 
+
 
 /* Footer */
 
 .footer {
-  margin-top: 2rem;
+  margin-top: 8rem;
 }
 
 .footer__content {
@@ -235,6 +321,7 @@ p {
   padding-bottom: 1rem;
   text-align: center;
   font-size: 0.85rem;
+  font-weight: 600;
 }
 
 /* Media queries */
@@ -246,5 +333,18 @@ p {
 
   .main {
     padding-right: 2rem;
+  
   }
 }
+
+/* 
+
+@media screen and (max-width: 320px){
+  .heading {
+    font-size:10px;
+  }
+  .hero button{
+    height: 50px;
+    width: 50px;
+  }
+} */
