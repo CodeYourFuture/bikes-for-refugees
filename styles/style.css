@@ -15,13 +15,27 @@
 
 body {
   margin: 0;
+  padding: 0;
+}
+.container {
+  border: 1px solid;
+  margin: 10px;
+  padding: 20px;
 }
 
 body,
 button {
   font-family: "Source Sans Pro", "Helvetica Neue", Arial, sans-serif;
-  color: var(--grey-dark);
   font-size: 1rem;
+ 
+}
+.butto {
+  font-family: "Source Sans Pro", "Helvetica Neue", Arial, sans-serif;
+  color: white;
+  font-size: 1rem;
+  margin-top: -250px;
+  margin-left: 1150px;
+  background-color: #df4b0b;
 }
 
 h1,h2,h3,h4,h5,h6 {
@@ -34,16 +48,17 @@ p {
   margin-bottom: 0;
 }
 
-.header,
+/* .header,
 .content,
 .footer {
   padding: 0 1.5rem;
   max-width: 1200px;
   margin: 0 auto;
-}
+} */
 
 /* Header */
-
+ 
+/* 
 .header {
   display: flex;
   align-items: center;
@@ -51,30 +66,56 @@ p {
   height: 5rem;
   margin-bottom: 1rem;
   padding-top: 1rem;
-}
-
+}    */
+/* 
 .header__logo {
   max-height: 90px;
   width: auto;
-}
+} */
 
 /* Navigation */
-
+/* 
 .navigation__list {
   display: flex;
   list-style: none;
-}
-
+} */
+/* 
 .navigation__item {
   padding: 0.5rem 0;
-}
-
+} */
+/* 
 .navigation__link {
   color: var(--grey-dark);
   font-weight: 600;
   text-transform: uppercase;
   text-decoration: none;
+} */
+
+/* .header {
+  display: flex;
+} */
+
+li {
+  display: inline;  
 }
+li a {
+ text-decoration: none;
+ padding: 10px 12px;
+ color: #000;
+ font-size: 20px;
+font-weight: 2000;
+}
+ul {
+margin-left: 350px;
+margin-top: -190px;
+}
+.header__logo {
+  width: 100px;
+  height: 100px;
+  margin-top: -30px;
+  
+}
+
 
 
 /* Text styles */
@@ -120,8 +161,32 @@ p {
 /* hero */
 
 .hero {
-  background-image: url("header-bike.jpg");
+  background-image: url("/images/header-bike.jpg");
   background-color: var(--grey-light);
+ height: 270px;
+ width: 900px;
+  padding-top: 120px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-left: 20px;
+ 
+}
+#but {
+  background-color: rgb(236, 22, 22);
+  color: rgb(252, 248, 248);
+}
+#butt {
+  background-color: rgb(247, 242, 243);
+  color: rgb(243, 18, 18);
+}
+.title {
+  color: white;
+  
+}
+.para {
+  color: #fffdfd;
+  
+  
 }
 
 .hero h1 {
@@ -161,14 +226,32 @@ p {
 
 /* Article */
 
+
 .article {
   margin-bottom: 1rem;
+  /* display: flex; */
+  justify-content: space-between;
+}
+.parent {
+  display: flex;
+  flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-between;
+    
+    
 }
 
 .article__title {
   margin-bottom: 0.5rem;
+  margin-top: 1rem;
+  margin-left: 20px;
   font-size: 1rem;
   font-weight: 700;
+  
+}
+.article {
+  border: 1px solid;
 }
 
 .article__title-link {
@@ -178,7 +261,9 @@ p {
 
 .article__summary {
   margin-top: 0;
-  margin-bottom: 1rem;
+  margin-bottom: 2rem;
+  margin-left: 20px;
+  
 }
 
 .article__thumbnail {
@@ -188,6 +273,8 @@ p {
 
 .article__read-more {
   margin-top: 0;
+  margin-bottom: 1rem;
+  margin-left: 20px;
 }
 
 .article__read-more a {
