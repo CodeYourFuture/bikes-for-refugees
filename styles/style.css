@@ -22,6 +22,9 @@ button {
   font-family: "Source Sans Pro", "Helvetica Neue", Arial, sans-serif;
   color: var(--grey-dark);
   font-size: 1rem;
+  padding: 0.1rem;
+  border: 0;
+  border-radius: 0%;
 }
 
 h1,h2,h3,h4,h5,h6 {
@@ -63,10 +66,10 @@ p {
 .navigation__list {
   display: flex;
   list-style: none;
+  padding: 0.5rem;
 }
-
 .navigation__item {
-  padding: 0.5rem 0;
+  padding: 1rem;
 }
 
 .navigation__link {
@@ -96,8 +99,15 @@ p {
 /* Buttons */
 
   /* INSERT BUTTON STYLES HERE */
-
-
+.volunteers {
+  background-color: #fff;
+  color: #c05326;
+  
+}
+/* donate buttons*/
+.donate {
+  background-color: #c05326;
+}
 /* Content */
 
 .content {
@@ -120,8 +130,12 @@ p {
 /* hero */
 
 .hero {
-  background-image: url("header-bike.jpg");
-  background-color: var(--grey-light);
+  /* background-image: url("header-bike.jpg");
+  background-color: var(--grey-light); */
+  background: url('/images/header-bike.jpg') no-repeat center center/cover;
+  width: 100%;
+  height: 50%;
+  color: #fff;
 }
 
 .hero h1 {
@@ -246,5 +260,58 @@ p {
 
   .main {
     padding-right: 2rem;
+  }
+}
+
+/* Flexbox */
+
+#container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+
+#container div {
+  background: #f4f4f4;
+  border: #ddd solid 1px;
+  padding: 20px;
+  text-align: center;
+  margin: 0.75rem;
+  flex: 1;
+}
+
+
+/*  Responsive */
+@media(max-width: 320px){
+  body {
+    font-size: 10px;
+    background: #292b2c;
+  }
+  .volunteers {
+    background-color: #fff;
+    color: #c05326;
+    font-size: 10px;
+  }
+  .donate {
+    background-color: #c05326;
+    font-size: 10px;
+  }
+}
+/* Responsive Button */
+@media only screen and (max-width: 340px){
+  body {
+    font-size: 10px;
+    background: #292b2c;
+  }
+  .volunteers {
+    background-color: #fff;
+    color: #c05326;
+    font-size: 10px;
+  }
+  /* donate buttons*/
+  .donate {
+    background-color: #c05326;
+    font-size: 10px;
   }
 }
