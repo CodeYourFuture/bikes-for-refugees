@@ -61,18 +61,19 @@ header {
 }
 
 /* Navigation */
-
-.navigation__list {
+nav{
+  margin: 0 auto;
+}
+nav ul.navigation__list {
   display: flex;
   list-style: none;
-  font-size: .5rem;
   width: auto;
-  margin-top: 1rem;
+  margin: 1rem auto;
+  padding: 1rem;
 }
 
 .navigation__item {
-  padding: 0.5rem;
-  margin: 14px;
+  margin: .55rem;
 }
 
 .navigation__link {
@@ -81,6 +82,7 @@ header {
   padding: .55rem 1rem;
   border-radius: 3px;
   border: 0;
+  font-size: .7rem;
   text-transform: uppercase;
   text-decoration: none;
 }
@@ -332,7 +334,12 @@ article {
 
 @media screen and (min-width: 992px) {
   
-  .navigation__list {
+
+  .navigation__item {
+    margin: 14px;
+  }
+
+  .navigation__link {
     font-size: 1rem;
   }
 
