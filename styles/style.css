@@ -146,7 +146,7 @@ button.inverted:hover {
 /* hero */
 
 .hero {
-  background-image: url("/bikes-for-refugees/images/header-bike.jpg");
+  background-image: url("header-bike.jpg");
   back
   background-size: 100% 100%;
   background-position: center;
