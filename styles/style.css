@@ -134,8 +134,13 @@ p {
   background-color: var(--grey-light); */
   background: url('/images/header-bike.jpg') no-repeat center center/cover;
   width: 100%;
-  height: 90%;
+  height: 350px;
   color: #fff;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  
+
 }
 
 .hero h1 {
@@ -288,23 +293,6 @@ p {
   text-align: center;
   font-size: 0.85rem;
 }
-.footer {
-  
-  padding: 20px;
-  margin: 40px;
-}
-
-.footer .footer__content {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  color: #333;
-  background: #292b2c;
-  opacity: 0.01px;
-  font-weight: lighter;
-}
-
-
 
 /* Media queries */
 
