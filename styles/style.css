@@ -202,8 +202,16 @@ p {
 
 /* Article */
 
+.article__content{
+  margin-left: 1em;
+}
+
 .article {
   margin-bottom: 1rem;
+  border-style: solid;
+  border-color: rgb(221, 216, 216);
+  padding: 1em;
+  display: flex;
 }
 
 .article__title {
