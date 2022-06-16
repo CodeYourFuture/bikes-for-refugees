@@ -122,6 +122,7 @@ p {
 .hero {
   background-image: url("../images/header-bike.jpg");
   background-color: var(--grey-light);
+  padding-bottom: 5em;
 }
 
 .hero h1 {
@@ -138,7 +139,27 @@ p {
   color: white;
   padding-left: 1em;
 }
-
+.button1{
+  background-color: #c05326;
+  color: white;
+  border-radius: 5px;
+  border: none;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-left: 10px;
+  padding-right: 10px;
+  margin-left: 1em;
+}
+.button2{
+  background-color: white;
+  color: #c05326;
+  border-radius: 5px;
+  border: none;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
 
 /* Headings */
 
