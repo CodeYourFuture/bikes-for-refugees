@@ -63,10 +63,15 @@ p {
 .navigation__list {
   display: flex;
   list-style: none;
+  
+    justify-content: space-between;
+    width: 100%;
 }
 
 .navigation__item {
-  padding: 0.5rem 0;
+  display: flex;
+    list-style: none;
+   
 }
 
 .navigation__link {
@@ -96,7 +101,13 @@ p {
 /* Buttons */
 
   /* INSERT BUTTON STYLES HERE */
-
+button{
+  background-color:#c05326 ;
+  border: none;
+  border-radius: 3px;
+ padding: 10px;
+ color: white;
+}
 
 /* Content */
 
@@ -163,6 +174,28 @@ p {
 
 .article {
   margin-bottom: 1rem;
+  border: solid ;
+  border-color: #f7eae4;
+  border-radius: 4px;
+  padding: 10px;
+  margin: 10px;
+  
+}
+
+.article-1{
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  border: solid ;
+  border-color: #f7eae4;
+  border-radius: 4px;
+  padding: 10px;
+  margin: 10px;
+}
+
+#article-div{
+  display: flex;
+  flex-direction: row;
 }
 
 .article__title {
@@ -173,7 +206,7 @@ p {
 
 .article__title-link {
   text-decoration: none;
-  color: var(--orange-dark);
+  color:rgb(60, 104, 248);
 }
 
 .article__summary {
@@ -184,6 +217,8 @@ p {
 .article__thumbnail {
   object-fit: contain;
   width: 5rem;
+  padding: 10px;
+  margin: 10px;
 }
 
 .article__read-more {
@@ -193,7 +228,7 @@ p {
 .article__read-more a {
   font-size: 0.85rem;
   font-weight: 700;
-  color: var(--orange-dark);
+  color: blue;
   text-decoration: none;
 }
 
@@ -204,11 +239,11 @@ p {
 
 .fa {
   margin-right: 0.5rem;
-  color: var(--orange-dark);
+  color: rgb(60, 104, 248);
 }
 
 .facebook-link {
-  color: var(--orange-dark);
+  color: rgb(60, 104, 248);
 }
 
 /* Sidebar */
