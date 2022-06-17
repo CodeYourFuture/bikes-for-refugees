@@ -124,6 +124,15 @@ a:hover{
     font-family: "Source Sans Pro", "Helvetica Neue", Arial, sans-serif;
   } 
 
+  .donate__button:hover{
+    background-color: white;
+    color: #c05326;
+  }
+  .volunteer__button:hover{
+    background-color: #c05326;
+    color: white;
+  }
+
 /* Content */
 
 .content {
