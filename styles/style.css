@@ -22,6 +22,14 @@ button {
   font-family: "Source Sans Pro", "Helvetica Neue", Arial, sans-serif;
   color: var(--grey-dark);
   font-size: 1rem;
+  padding: 20px;
+  
+
+  
+}
+
+button :hover {
+  background-color: #934423;
 }
 
 h1,h2,h3,h4,h5,h6 {
@@ -63,10 +71,16 @@ p {
 .navigation__list {
   display: flex;
   list-style: none;
+
 }
 
 .navigation__item {
   padding: 0.5rem 0;
+  padding: 15px;
+}
+
+.navigation__item :hover {
+  color: #c05326;
 }
 
 .navigation__link {
@@ -132,6 +146,12 @@ p {
 .hero p {
   font-size: 1.2rem;
   margin-bottom: 2rem;
+}
+
+.donate {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
 }
 
 
@@ -246,5 +266,12 @@ p {
 
   .main {
     padding-right: 2rem;
+  }
+}
+@media screen and (min-width: 320px) and (max-width: 500px) {
+  .refugee {
+    display: flex;
+    flex-direction: row;
+    
   }
 }
