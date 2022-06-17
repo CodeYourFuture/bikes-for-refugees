@@ -63,10 +63,18 @@ p {
 .navigation__list {
   display: flex;
   list-style: none;
+  justify-content: space-between;
+} 
+
+.navigation__list :hover {
+  color: #c05326;
+  transition: 0.5s;
 }
 
 .navigation__item {
   padding: 0.5rem 0;
+  display: flex;
+  margin: 15px;
 }
 
 .navigation__link {
@@ -75,7 +83,6 @@ p {
   text-transform: uppercase;
   text-decoration: none;
 }
-
 
 /* Text styles */
 
@@ -94,6 +101,20 @@ p {
 
 
 /* Buttons */
+button {
+  background-color: #c05326;
+  color: white;
+  border: none;
+  border-radius: 5px; 
+  padding: 8px;
+}
+
+button:hover {
+  background-color: white;
+  color: #c05326;
+  border: #292b2c solid 1px;
+  transition: 1s;
+}
 
   /* INSERT BUTTON STYLES HERE */
 
@@ -120,8 +141,13 @@ p {
 /* hero */
 
 .hero {
-  background-image: url("header-bike.jpg");
+  background-image: url("/images/header-bike.jpg");
   background-color: var(--grey-light);
+  color: white;
+  height: 250px;
+  width: auto;
+  padding: 5em 1em 0.5em 1.5em;
+  margin-bottom: 3em;
 }
 
 .hero h1 {
@@ -163,12 +189,19 @@ p {
 
 .article {
   margin-bottom: 1rem;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-around;
+  padding: 15px;
+  border: solid 1px rgb(212, 212, 212);
+  border-radius: 3px;
 }
 
 .article__title {
   margin-bottom: 0.5rem;
   font-size: 1rem;
   font-weight: 700;
+  padding-left: 15px;
 }
 
 .article__title-link {
@@ -179,6 +212,7 @@ p {
 .article__summary {
   margin-top: 0;
   margin-bottom: 1rem;
+  padding: 15px;
 }
 
 .article__thumbnail {
@@ -209,6 +243,8 @@ p {
 
 .facebook-link {
   color: var(--orange-dark);
+  display: flex;
+  justify-content: flex-end;
 }
 
 /* Sidebar */
@@ -217,6 +253,31 @@ p {
   display: flex;
   flex-direction: column;
   min-width: 350px;
+}
+
+#grid-container {
+  padding: 10px;
+  display: grid;
+  grid-template-columns: 50% 50%;
+}
+
+#article1 {
+  border: solid 1px rgb(212, 212, 212);
+  border-radius: 3px;
+  margin: 10px;
+  padding: 5px;
+  
+}
+
+#article2 {
+  border: solid 1px rgb(212, 212, 212);
+  border-radius: 3px;
+  margin: 10px;
+  padding: 5px;
+}
+
+.arrow-right {
+  margin-left: 10px;
 }
 
 /* Footer */
@@ -248,3 +309,26 @@ p {
     padding-right: 2rem;
   }
 }
+@media only screen and (max-device-width: 320px){
+  .navigation__list
+  {
+    flex-direction: column;
+  }
+  body{
+    
+  }
+} 
+
+
+
+
+
+
+
+
+
+
+
+
+
+]
