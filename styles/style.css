@@ -222,12 +222,25 @@ p {
 
 
 /* Article */
+.article-1 {
+  display: flex;
+}
+
+.article-1 div {
+  width: 80%;
+  display: flex;
+ flex-direction: column;
+ padding: 20px;;
+}
 
 .article {
   display: flex;
-  flex-direction: column;
-  justify-content:space-around;
+  flex-direction: row;
+  justify-content: space-around;
   margin-bottom: 1rem;
+}
+.article div {
+  width: 60%;
 }
 
 .article__title {
@@ -274,7 +287,9 @@ p {
 
 .facebook-link {
   color: var(--orange-dark);
+  margin-left: 190px;
 }
+
 
 /* Sidebar */
 
