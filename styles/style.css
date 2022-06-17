@@ -66,7 +66,11 @@ p {
 }
 
 .navigation__item {
-  padding: 0.5rem 0;
+  padding: 0.5rem 1rem;
+}
+
+.navigation__link:hover {
+  color: #c05326;
 }
 
 .navigation__link {
@@ -98,6 +102,33 @@ p {
   /* INSERT BUTTON STYLES HERE */
 
 
+.donate{
+  color: white;
+  background-color: #c05326;
+  border: none;
+  border-radius: 0.3rem;
+  padding: 0.5rem;
+}
+
+.donate:hover{
+  color: #c05326 ;
+  background-color: white;
+
+}
+
+.volunteer{
+  color: #c05326 ;
+  background-color: white;
+  border: none;
+  border-radius: 0.3rem;
+  padding: 0.5rem;
+}
+
+.volunteer:hover{
+  color: white;
+  background-color: #c05326;
+}
+
 /* Content */
 
 .content {
@@ -117,11 +148,18 @@ p {
   margin-bottom: 2rem;
 }
 
+
 /* hero */
 
 .hero {
-  background-image: url("header-bike.jpg");
+  /* display: flex; */
+  /* flex-direction: column; */
+  /* align-items: flex-start; */
+  background-image: url("/images/header-bike.jpg");
   background-color: var(--grey-light);
+  padding: 10% 5%;
+  margin-bottom: 5%;
+  color: #fff;
 }
 
 .hero h1 {
@@ -158,11 +196,22 @@ p {
   background: var(--orange-dark);
 }
 
+.learn_more{
+  display: flex;
+  justify-content: space-between;
+}
+
+.learn_more > article{
+  width: 44.5%;
+}
 
 /* Article */
 
 .article {
   margin-bottom: 1rem;
+  border: 0.1em lightgrey solid;
+  border-radius: 0.25rem;;
+  padding: 2%;
 }
 
 .article__title {
@@ -217,6 +266,18 @@ p {
   display: flex;
   flex-direction: column;
   min-width: 350px;
+}
+
+aside > .article{
+  display: flex;
+}
+
+.article__content{
+  padding: 3% 6%;
+}
+
+aside > a{
+  text-align: right;
 }
 
 /* Footer */
