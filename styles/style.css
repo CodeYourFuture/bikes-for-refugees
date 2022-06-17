@@ -5,13 +5,13 @@
  * 
  */
 
- :root {
-   --grey-dark: #292b2c;
-   --grey-light: #e4e4e4;
-   --orange-dark: #c05326;
-   --orange-light: #f7eae4;
-   --white: #fff;
- }
+:root {
+  --grey-dark: #292b2c;
+  --grey-light: #e4e4e4;
+  --orange-dark: #c05326;
+  --orange-light: #f7eae4;
+  --white: #fff;
+}
 
 body {
   margin: 0;
@@ -24,7 +24,12 @@ button {
   font-size: 1rem;
 }
 
-h1,h2,h3,h4,h5,h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   margin-top: 0;
   margin-bottom: 0;
 }
@@ -67,6 +72,7 @@ p {
 
 .navigation__item {
   padding: 0.5rem 0;
+  margin: 0 20px;
 }
 
 .navigation__link {
@@ -76,6 +82,16 @@ p {
   text-decoration: none;
 }
 
+header button {
+  background-color: var(--orange-dark);
+  color: var(--white);
+  border: none;
+  height: 30px;
+  width: 150px;
+  font-weight: 500;
+  cursor: pointer;
+  outline: none;
+}
 
 /* Text styles */
 
@@ -92,11 +108,9 @@ p {
   border-left-color: var(--orange-dark);
 }
 
-
 /* Buttons */
 
-  /* INSERT BUTTON STYLES HERE */
-
+/* INSERT BUTTON STYLES HERE */
 
 /* Content */
 
@@ -120,8 +134,17 @@ p {
 /* hero */
 
 .hero {
-  background-image: url("header-bike.jpg");
-  background-color: var(--grey-light);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  color: var(--white);
+  background-image: url(../images/header-bike.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 300px;
+  padding: 20px;
+  margin-bottom: 1rem;
 }
 
 .hero h1 {
@@ -134,6 +157,26 @@ p {
   margin-bottom: 2rem;
 }
 
+.hero .cta-1 {
+  width: 180px;
+  height: 30px;
+  background-color: #c05326;
+  color: #e4e4e4;
+  cursor: pointer;
+  border: none;
+  font-weight: 400;
+  margin-right: 10px;
+}
+
+.hero .cta-2 {
+  width: 100px;
+  height: 30px;
+  color: #c05326;
+  background-color: #e4e4e4;
+  cursor: pointer;
+  border: none;
+  font-weight: 400;
+}
 
 /* Headings */
 
@@ -158,11 +201,19 @@ p {
   background: var(--orange-dark);
 }
 
-
 /* Article */
+
+.articles {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+}
 
 .article {
   margin-bottom: 1rem;
+  margin-right: 1rem;
+  padding: 20px;
+  border: 1px solid var(--grey-light);
 }
 
 .article__title {
@@ -217,6 +268,16 @@ p {
   display: flex;
   flex-direction: column;
   min-width: 350px;
+}
+
+.sidebar .article img {
+  margin-right: 20px;
+}
+
+.sidebar .article {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 /* Footer */
