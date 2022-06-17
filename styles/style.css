@@ -47,38 +47,38 @@ p {
   margin-top: 0;
   margin-bottom: 0;
 }
-
-/* .header,
+/* 
+.header,
 .content,
 .footer {
   padding: 0 1.5rem;
   max-width: 1200px;
   margin: 0 auto;
-} */
+} 
 
 /* Header */
  
-/* 
-.header {
+
+/* .header {
   display: flex;
   align-items: center;
   justify-content: space-between;
   height: 5rem;
   margin-bottom: 1rem;
   padding-top: 1rem;
-}    */
-/* 
-.header__logo {
+}     */
+ 
+/* .header__logo {
   max-height: 90px;
   width: auto;
-} */
+}  */
 
 /* Navigation */
-/* 
-.navigation__list {
+ 
+/* .navigation__list {
   display: flex;
   list-style: none;
-} */
+}  */ */
 /* 
 .navigation__item {
   padding: 0.5rem 0;
@@ -91,12 +91,15 @@ p {
   text-decoration: none;
 } */
 
-/* .header {
+.header {
   display: flex;
-} */
-
+} 
+ 
 li {
   display: inline;  
+}
+li a:hover {
+  background-color:  #df3c0be0;
 }
 li a {
  text-decoration: none;
@@ -107,8 +110,8 @@ font-weight: 2000;
 }
 ul {
 margin-left: 350px;
-margin-top: -190px;
-}
+margin-top: -30px;
+}  
 .header__logo {
   width: 100px;
   height: 100px;
@@ -175,9 +178,15 @@ margin-top: -190px;
   background-color: rgb(236, 22, 22);
   color: rgb(252, 248, 248);
 }
+#but:hover {
+ background-color: #390bdf;
+}
 #butt {
   background-color: rgb(247, 242, 243);
   color: rgb(243, 18, 18);
+}
+#butt:hover {
+  background-color: #390bdf;
 }
 .title {
   color: white;
@@ -229,7 +238,7 @@ margin-top: -190px;
 
 .article {
   margin-bottom: 1rem;
-  /* display: flex; */
+  display: flex;
   justify-content: space-between;
 }
 .parent {
@@ -240,6 +249,16 @@ margin-top: -190px;
     justify-content: space-between;
     
     
+}
+.first-child {
+  border: 1px solid;
+  /* width: 150px; */
+  margin: 20px;
+  margin-left: 1px;
+}
+.nth-child {
+  border: 1px solid;
+  /* width: 150px; */
 }
 
 .article__title {
@@ -252,6 +271,7 @@ margin-top: -190px;
 }
 .article {
   border: 1px solid;
+  /* display: flex; */
 }
 
 .article__title-link {
@@ -269,6 +289,7 @@ margin-top: -190px;
 .article__thumbnail {
   object-fit: contain;
   width: 5rem;
+  margin-left: 15px;
 }
 
 .article__read-more {
