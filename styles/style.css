@@ -63,13 +63,17 @@ p {
 .navigation__list {
   display: flex;
   list-style: none;
+  padding: 5px 12px;
+  font-size: 10px;
 }
+
 
 .navigation__item {
   padding: 0.5rem 0;
 }
 
 .navigation__link {
+  padding: 10px;
   color: var(--grey-dark);
   font-weight: 600;
   text-transform: uppercase;
@@ -94,7 +98,13 @@ p {
 
 
 /* Buttons */
-
+.btn-donate {
+  padding: 4px 8px;
+  border: 5px;
+  border-radius: 2px;
+  background-color: var(--orange-dark);
+  font-size: 10px;
+}
   /* INSERT BUTTON STYLES HERE */
 
 
@@ -102,7 +112,12 @@ p {
 
 .content {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
+  padding-right: 100px;
+  gap: 2rem;
+  align-items: center;
+  
+
 }
 
 /* Alert */
@@ -120,20 +135,37 @@ p {
 /* hero */
 
 .hero {
-  background-image: url("header-bike.jpg");
+  background-image: url("/images/header-bike.jpg");
+  padding: 100px 40px;
   background-color: var(--grey-light);
+  margin-bottom: 50px;
 }
 
 .hero h1 {
   margin-bottom: 1rem;
   font-size: 2.5rem;
+  color: white;
+
 }
 
 .hero p {
-  font-size: 1.2rem;
+  font-size: 1rem;
   margin-bottom: 2rem;
+  color: white;
 }
-
+.btn-volunt {
+font-size: 1rem;
+background-color: white;
+border: 4px;
+border-radius: 3px;
+}
+.btn-donat{
+  font-size: 1rem;
+  background-color: #c05326;
+  border: 4px;
+  border-radius: 3px;
+  
+}
 
 /* Headings */
 
@@ -163,7 +195,14 @@ p {
 
 .article {
   margin-bottom: 1rem;
-}
+  display: flex;
+  
+  }
+  .container{
+    display: flex;
+    justify-content: space-between;
+    height: 1rem;
+  }
 
 .article__title {
   margin-bottom: 0.5rem;
@@ -179,6 +218,7 @@ p {
 .article__summary {
   margin-top: 0;
   margin-bottom: 1rem;
+  
 }
 
 .article__thumbnail {
@@ -208,17 +248,33 @@ p {
 }
 
 .facebook-link {
+  display: flex;
+  justify-content: flex-end;
   color: var(--orange-dark);
 }
 
 /* Sidebar */
 
-.sidebar {
+.sidebar article {
   display: flex;
   flex-direction: column;
+  border: 1px solid var(--grey-light);
+  padding: 15px;
   min-width: 350px;
 }
+.sidebar image{
+  margin-right: 15px;
+}
+.learn-more-container{
+  display: flex;
+  border: 1px solid var(--grey-light);
+}
 
+.learn-more-container article{
+ 
+  padding:15px;
+  margin-right: 15px;
+}
 /* Footer */
 
 .footer {
