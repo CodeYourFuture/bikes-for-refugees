@@ -76,7 +76,7 @@ p {
 
 .navigation__item {
   padding: 0.5rem 0;
-  padding: 15px;
+  padding: 20px;
 }
 
 .navigation__item :hover {
@@ -134,8 +134,13 @@ p {
 /* hero */
 
 .hero {
-  background-image: url("header-bike.jpg");
+  background-image: url("/Users/admin/Documents/Ele clone/bikes-for-refugees/images/header-bike.jpg");
   background-color: var(--grey-light);
+  color: white;
+  padding: 100px;
+  background-repeat: no-repeat;
+  justify-content: left;
+  margin-bottom: 40px;
 }
 
 .hero h1 {
@@ -146,6 +151,43 @@ p {
 .hero p {
   font-size: 1.2rem;
   margin-bottom: 2rem;
+}
+.volunteer {
+  display: flex;
+  flex-direction: row;
+}
+.volunteer-today {
+  background-color: #c05326;
+  color: white;
+  border-radius: 6px;
+  padding: 3px 8px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+.donate-today {
+  background-color: white;
+  color: #c05326;
+  border-radius: 6px;
+  padding: 3px 8px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+.donate-button {
+  background-color: #c05326;
+  color: white;
+  border-radius: 6px;
+  padding: 3px 8px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
 }
 
 .donate {
@@ -182,6 +224,9 @@ p {
 /* Article */
 
 .article {
+  display: flex;
+  flex-direction: column;
+  justify-content:space-around;
   margin-bottom: 1rem;
 }
 
@@ -275,3 +320,4 @@ p {
     
   }
 }
+
