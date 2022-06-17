@@ -43,12 +43,12 @@ There are 3 buttons on the page: can you style them correctly so they follow the
 
 Compare what you can see in your browser with the design provided. Can you spot the differences in layout? Use CSS Flexbox to move elements around so they are positioned correctly.
 
-Also add borders and spacing if required to match the design. 
-
+Also add borders andhe design. 
+ spacing if required to match t
 ### Bonus: hover effects
 
-Add a hover effect using CSS, so that:
-  1) The links in the top menu navigation become orange on hover
+Add a hover effect using CSS, so that:come orange on hove
+  1) The links in the top menu navigation ber
   2) The colours of the buttons are inverted on hover
 
 ## Submit your work
