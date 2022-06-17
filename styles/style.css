@@ -15,13 +15,7 @@
 
 body {
   margin: 0;
-}
-
-body,
-button {
   font-family: "Source Sans Pro", "Helvetica Neue", Arial, sans-serif;
-  color: var(--grey-dark);
-  font-size: 1rem;
 }
 
 h1,h2,h3,h4,h5,h6 {
@@ -69,11 +63,16 @@ p {
   padding: 0.5rem 0;
 }
 
+a:hover{
+  background-color: #c05326;
+}
+
 .navigation__link {
   color: var(--grey-dark);
   font-weight: 600;
   text-transform: uppercase;
   text-decoration: none;
+  padding: 25px 25px;
 }
 
 
@@ -96,7 +95,43 @@ p {
 /* Buttons */
 
   /* INSERT BUTTON STYLES HERE */
+  .donate__button{
+    font-family: "Source Sans Pro", "Helvetica Neue", Arial, sans-serif;
+    color: var(--grey-dark);
+    font-size: 1rem;
+    background-color: #c05326;
+    color: white;
+    border-radius: 5px;
+    border: none;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-left: 1em;
+  
+  }
 
+  .volunteer__button{
+    background-color: white;
+    color: #c05326;
+    border-radius: 5px;
+    border: none;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+    font-size: 1rem;
+    font-family: "Source Sans Pro", "Helvetica Neue", Arial, sans-serif;
+  } 
+
+  .donate__button:hover{
+    background-color: white;
+    color: #c05326;
+  }
+  .volunteer__button:hover{
+    background-color: #c05326;
+    color: white;
+  }
 
 /* Content */
 
@@ -120,20 +155,25 @@ p {
 /* hero */
 
 .hero {
-  background-image: url("header-bike.jpg");
+  background-image: url("../images/header-bike.jpg");
   background-color: var(--grey-light);
+  padding-bottom: 5em;
 }
 
 .hero h1 {
   margin-bottom: 1rem;
   font-size: 2.5rem;
+  color: white;
+  padding-left: 0.5em;
+  padding-top: 1em;
 }
 
 .hero p {
   font-size: 1.2rem;
   margin-bottom: 2rem;
+  color: white;
+  padding-left: 1em;
 }
-
 
 /* Headings */
 
@@ -161,8 +201,24 @@ p {
 
 /* Article */
 
+.article__content{
+  margin-left: 1em;
+}
+
+.article-container{
+  display: flex;
+}
+
+.article__bottom{
+  display: block !important;
+  margin-right: 1em;
+}
 .article {
   margin-bottom: 1rem;
+  border-style: solid;
+  border-color: rgb(221, 216, 216);
+  padding: 1em;
+  display: flex;
 }
 
 .article__title {
