@@ -99,7 +99,7 @@ p {
 /* Buttons */
 
   /* INSERT BUTTON STYLES HERE */
-.volunteers {
+.btn2 {
   background-color: #fff;
   color: #c05326;
   border-radius: 6px;
@@ -110,8 +110,14 @@ p {
   padding: 6px 16px;
   
 }
+
+.btn2:hover{
+  background-color: #c05326;
+  color: #fff;
+}
+
 /* donate buttons*/
-.donate {
+.btn1 {
   background-color: #c05326;
   border-radius: 6px;
   box-shadow: #292b2c;
@@ -120,6 +126,16 @@ p {
   font-size: 16px;
   font-weight: bold;
   padding: 6px 16px;
+}
+
+.btn1:hover{
+  background-color: #fff;
+  color: #c05326;
+} 
+
+.btn{
+  display: flex;
+  padding: 12px;
 }
 /* Content */
 
@@ -165,6 +181,7 @@ p {
   font-size: 1.2rem;
   margin-bottom: 20px;
 }
+
 
 
 /* Headings */
