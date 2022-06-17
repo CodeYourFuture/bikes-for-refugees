@@ -18,22 +18,6 @@ body {
   font-family: "Source Sans Pro", "Helvetica Neue", Arial, sans-serif;
 }
 
-.donateBtn{
-  font-family: "Source Sans Pro", "Helvetica Neue", Arial, sans-serif;
-  color: var(--grey-dark);
-  font-size: 1rem;
-  background-color: #c05326;
-  color: white;
-  border-radius: 5px;
-  border: none;
-  padding-top: 5px;
-  padding-bottom: 5px;
-  padding-left: 10px;
-  padding-right: 10px;
-  margin-left: 1em;
-
-}
-
 h1,h2,h3,h4,h5,h6 {
   margin-top: 0;
   margin-bottom: 0;
@@ -79,6 +63,10 @@ p {
   padding: 0.5rem 0;
 }
 
+a:hover{
+  background-color: #c05326;
+}
+
 .navigation__link {
   color: var(--grey-dark);
   font-weight: 600;
@@ -107,7 +95,34 @@ p {
 /* Buttons */
 
   /* INSERT BUTTON STYLES HERE */
+  .donate__button{
+    font-family: "Source Sans Pro", "Helvetica Neue", Arial, sans-serif;
+    color: var(--grey-dark);
+    font-size: 1rem;
+    background-color: #c05326;
+    color: white;
+    border-radius: 5px;
+    border: none;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-left: 1em;
+  
+  }
 
+  .volunteer__button{
+    background-color: white;
+    color: #c05326;
+    border-radius: 5px;
+    border: none;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+    font-size: 1rem;
+    font-family: "Source Sans Pro", "Helvetica Neue", Arial, sans-serif;
+  } 
 
 /* Content */
 
@@ -150,31 +165,6 @@ p {
   color: white;
   padding-left: 1em;
 }
-.button1{
-  background-color: #c05326;
-  color: white;
-  border-radius: 5px;
-  border: none;
-  padding-top: 5px;
-  padding-bottom: 5px;
-  padding-left: 10px;
-  padding-right: 10px;
-  margin-left: 1em;
-  font-size: 1rem;
-  font-family: "Source Sans Pro", "Helvetica Neue", Arial, sans-serif;
-}
-.button2{
-  background-color: white;
-  color: #c05326;
-  border-radius: 5px;
-  border: none;
-  padding-top: 5px;
-  padding-bottom: 5px;
-  padding-left: 10px;
-  padding-right: 10px;
-  font-size: 1rem;
-  font-family: "Source Sans Pro", "Helvetica Neue", Arial, sans-serif;
-}
 
 /* Headings */
 
@@ -206,6 +196,14 @@ p {
   margin-left: 1em;
 }
 
+.article-container{
+  display: flex;
+}
+
+.article__bottom{
+  display: block !important;
+  margin-right: 1em;
+}
 .article {
   margin-bottom: 1rem;
   border-style: solid;
