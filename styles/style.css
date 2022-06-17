@@ -69,6 +69,10 @@ p {
   padding: 0.5rem 1rem;
 }
 
+.navigation__link:hover {
+  color: #c05326;
+}
+
 .navigation__link {
   color: var(--grey-dark);
   font-weight: 600;
@@ -98,6 +102,33 @@ p {
   /* INSERT BUTTON STYLES HERE */
 
 
+.donate{
+  color: white;
+  background-color: #c05326;
+  border: none;
+  border-radius: 0.3rem;
+  padding: 0.5rem;
+}
+
+.donate:hover{
+  color: #c05326 ;
+  background-color: white;
+
+}
+
+.volunteer{
+  color: #c05326 ;
+  background-color: white;
+  border: none;
+  border-radius: 0.3rem;
+  padding: 0.5rem;
+}
+
+.volunteer:hover{
+  color: white;
+  background-color: #c05326;
+}
+
 /* Content */
 
 .content {
@@ -117,23 +148,6 @@ p {
   margin-bottom: 2rem;
 }
 
-/* buttons */
-
-.donate{
-  color: white;
-  background-color: #c05326;
-  border: none;
-  border-radius: 0.3rem;
-  padding: 0.5rem;
-}
-
-.volunteer{
-  color: #c05326 ;
-  background-color: white;
-  border: none;
-  border-radius: 0.3rem;
-  padding: 0.5rem;
-}
 
 /* hero */
 
@@ -196,6 +210,7 @@ p {
 .article {
   margin-bottom: 1rem;
   border: 0.1em lightgrey solid;
+  border-radius: 0.25rem;;
   padding: 2%;
 }
 
