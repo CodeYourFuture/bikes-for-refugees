@@ -5,13 +5,13 @@
  * 
  */
 
- :root {
-   --grey-dark: #292b2c;
-   --grey-light: #e4e4e4;
-   --orange-dark: #c05326;
-   --orange-light: #f7eae4;
-   --white: #fff;
- }
+:root {
+  --grey-dark: #292b2c;
+  --grey-light: #e4e4e4;
+  --orange-dark: #c05326;
+  --orange-light: #f7eae4;
+  --white: #fff;
+}
 
 body {
   margin: 0;
@@ -24,7 +24,12 @@ button {
   font-size: 1rem;
 }
 
-h1,h2,h3,h4,h5,h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   margin-top: 0;
   margin-bottom: 0;
 }
@@ -66,7 +71,7 @@ p {
 }
 
 .navigation__item {
-  padding: 0.5rem 0;
+  padding: 0.5rem 20px;
 }
 
 .navigation__link {
@@ -75,7 +80,9 @@ p {
   text-transform: uppercase;
   text-decoration: none;
 }
-
+.navigation__link:hover {
+  color: #c05326;
+}
 
 /* Text styles */
 
@@ -92,11 +99,30 @@ p {
   border-left-color: var(--orange-dark);
 }
 
-
 /* Buttons */
 
-  /* INSERT BUTTON STYLES HERE */
+button {
+  color: #ffffff;
+  background-color: #c05326;
+  border: none;
+  padding: 7px;
+  border-radius: 5px;
+}
 
+button:hover {
+  color: #c05326;
+  background-color: #ffffff;
+}
+
+button.inverted {
+  color: #c05326;
+  background-color: #ffffff;
+  font-weight: 600;
+}
+button.inverted:hover {
+  color: #ffffff;
+  background-color: #c05326;
+}
 
 /* Content */
 
@@ -121,7 +147,12 @@ p {
 
 .hero {
   background-image: url("header-bike.jpg");
+  back
+  background-size: 100% 100%;
+  background-position: center;
   background-color: var(--grey-light);
+  color: #ffffff;
+  padding: 90px 40px;
 }
 
 .hero h1 {
@@ -134,8 +165,12 @@ p {
   margin-bottom: 2rem;
 }
 
-
 /* Headings */
+
+.Learn-more-sect {
+  margin-top: 100px;
+  
+}
 
 .heading-underline {
   position: relative;
@@ -158,11 +193,26 @@ p {
   background: var(--orange-dark);
 }
 
-
 /* Article */
 
+.fp-article {
+  display: flex;
+  
+}
+
+.fp-article-box {
+  border: #e4e7e9 solid 2px;
+  margin: 0 10px 0 0;
+  padding: 20px;
+}
+
 .article {
+  display: flex;
   margin-bottom: 1rem;
+  border: #e4e7e9 solid 2px;
+  margin-right: 10px;
+  padding: 10px;
+  
 }
 
 .article__title {
@@ -219,10 +269,15 @@ p {
   min-width: 350px;
 }
 
+.sidebar img {
+  margin-right: 13px;
+}
+
 /* Footer */
 
 .footer {
   margin-top: 2rem;
+  
 }
 
 .footer__content {
