@@ -66,7 +66,7 @@ p {
 }
 
 .navigation__item {
-  padding: 0.5rem 0;
+  padding: 0.5 0;
 }
 
 .navigation__link {
@@ -74,6 +74,7 @@ p {
   font-weight: 600;
   text-transform: uppercase;
   text-decoration: none;
+   padding: 0 25px;
 }
 
 
@@ -94,9 +95,24 @@ p {
 
 
 /* Buttons */
+button {
+   padding: 0.5rem 1rem;
+   border: 0.5rem;
+
+}
 
   /* INSERT BUTTON STYLES HERE */
+.donate {
+  background-color: tomato;
+  color: white;
 
+}
+
+.volunteer {
+  background-color: white;
+  color: tomato;
+
+}
 
 /* Content */
 
@@ -120,8 +136,10 @@ p {
 /* hero */
 
 .hero {
-  background-image: url("header-bike.jpg");
+  background-image: url("../images/header-bike.jpg");
   background-color: var(--grey-light);
+  color: white;
+  padding: 75px 20px 110px;
 }
 
 .hero h1 {
@@ -130,7 +148,7 @@ p {
 }
 
 .hero p {
-  font-size: 1.2rem;
+  font-size: 1rem;
   margin-bottom: 2rem;
 }
 
@@ -161,8 +179,27 @@ p {
 
 /* Article */
 
+.article_container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 0;
+  margin: 0;
+}
+
+.article_container .article{
+  width: 44%;
+  justify-content: space-between;
+
+}
+
 .article {
+  display: flex;
+  flex-direction: column;
   margin-bottom: 1rem;
+  border: 1px solid black;
+  padding: 1rem;
+  
 }
 
 .article__title {
@@ -219,6 +256,19 @@ p {
   min-width: 350px;
 }
 
+.sidebar .article {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+
+
+}
+
+.sidebar img {
+    padding-right: 10px;
+
+}
+
 /* Footer */
 
 .footer {
@@ -248,3 +298,4 @@ p {
     padding-right: 2rem;
   }
 }
+
