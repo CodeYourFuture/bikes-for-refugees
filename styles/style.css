@@ -109,6 +109,10 @@ p {
   background-color: white;
   color:#c05326;
 }
+.btn-primary:hover, .btn-primary:focus,
+.btn-secondary:hover, .btn-primary:focus {
+  background: color #934423;
+}
 /* Content */
 
 .content {
