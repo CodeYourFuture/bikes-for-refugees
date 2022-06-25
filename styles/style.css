@@ -59,6 +59,9 @@ p {
 }
 
 /* Navigation */
+.nav_bar {
+  margin: 1rem;
+}
 
 .navigation__list {
   display: flex;
@@ -66,7 +69,7 @@ p {
 }
 
 .navigation__item {
-  padding: 0.5rem 0;
+  padding: 0.5rem;
 }
 
 .navigation__link {
@@ -74,6 +77,7 @@ p {
   font-weight: 600;
   text-transform: uppercase;
   text-decoration: none;
+  padding: 0 25 px
 }
 
 
@@ -96,8 +100,15 @@ p {
 /* Buttons */
 
   /* INSERT BUTTON STYLES HERE */
+.btn-primary {
+  background-color:#c05326;
+  color:white
+}
 
-
+.btn-secondary {
+  background-color: white;
+  color:#c05326;
+}
 /* Content */
 
 .content {
@@ -121,7 +132,10 @@ p {
 
 .hero {
   background-image: url("header-bike.jpg");
+  background-image: url(../images/header-bike.jpg);
   background-color: var(--grey-light);
+  color:white;
+  padding : 75px 20px  110px;
 }
 
 .hero h1 {
@@ -130,7 +144,7 @@ p {
 }
 
 .hero p {
-  font-size: 1.2rem;
+  font-size: 1rem;
   margin-bottom: 2rem;
 }
 
@@ -160,9 +174,20 @@ p {
 
 
 /* Article */
+.article_container {
+  display: flexbox;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 0;
+  margin: 0;
+}
 
 .article {
+  display: flex;
+  flex-direction:column;
   margin-bottom: 1rem;
+  border: 1px solid black;
+  padding: 1rem;
 }
 
 .article__title {
