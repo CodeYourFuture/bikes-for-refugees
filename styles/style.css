@@ -96,7 +96,14 @@ p {
 /* Buttons */
 
   /* INSERT BUTTON STYLES HERE */
+.orange-button {
+  background-color: #c05326;
+}
 
+.white-button {
+  background-color: #fff;
+  color: #c05326;
+}
 
 /* Content */
 
