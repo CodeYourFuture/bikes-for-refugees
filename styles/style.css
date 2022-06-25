@@ -96,8 +96,18 @@ p {
 /* Buttons */
 
   /* INSERT BUTTON STYLES HERE */
+.button {
+  background-color: #c05326;
+  padding: 8px;
+  border-radius: 7px;
+}
 
-
+#button2  {
+  background-color: #fff;
+  color: #c05326;
+  padding: 8px;
+  border-radius: 7px;
+}
 /* Content */
 
 .content {
