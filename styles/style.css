@@ -179,15 +179,17 @@ p {
 
 /* Article */
 .article_container {
-  display: flexbox;
+  display:flex;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content:space-between;
+  
   padding: 0;
   margin: 0;
 }
 
 .article {
   display: flex;
+  
   flex-direction:column;
   margin-bottom: 1rem;
   border: 1px solid black;
