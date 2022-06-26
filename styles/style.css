@@ -191,7 +191,7 @@ p {
   flex-direction: row;
   justify-content:space-between;
   padding: 50px;
-  margin: 0;
+  margin: 5px;
 }
 
 .article {
@@ -199,24 +199,32 @@ p {
   flex-direction:column;
   margin-bottom: 1rem;
   border: 2px solid rgb(236, 231, 231);
-  padding: 1rem;
-  margin-left: 3px;
+  padding: 0rem;
+  margin-left: 3%;
+  align-items: left;
+  
+  
 }
 
 .article__title {
+  margin: 5px;
   margin-bottom: 0.5rem;
   font-size: 1rem;
   font-weight: 700;
+  margin-left: 1rem;
 }
 
 .article__title-link {
   text-decoration: none;
   color: var(--orange-dark);
+  
 }
 
 .article__summary {
-  margin-top: 0;
+  margin-top: 1;
   margin-bottom: 1rem;
+  margin-left: 1rem;
+  margin right: 1rem;
 }
 
 .article__thumbnail {
@@ -226,6 +234,8 @@ p {
 
 .article__read-more {
   margin-top: 0;
+  margin-left: 1rem;
+  margin-bottom: 1rem;
 }
 
 .article__read-more a {
