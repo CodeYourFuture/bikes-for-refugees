@@ -54,7 +54,7 @@ p {
 }
 
 .header__logo {
-  max-height: 90px;
+  max-height: 120px;
   width: auto;
 }
 
@@ -74,6 +74,8 @@ p {
   font-weight: 600;
   text-transform: uppercase;
   text-decoration: none;
+  padding: 0;
+  float: right;
 }
 
 
@@ -93,11 +95,17 @@ p {
 }
 
 
-/* Buttons */
+/*. Buttons */
 
   /* INSERT BUTTON STYLES HERE */
+.donate-button {
+  background-color: #934423 ;
 
-
+}
+.volunteer-button {
+  background-color: #e4e4e4;
+  color: #934423;
+}
 /* Content */
 
 .content {
@@ -126,7 +134,7 @@ p {
 
 .hero h1 {
   margin-bottom: 1rem;
-  font-size: 2.5rem;
+  font-size: 3rem;
 }
 
 .hero p {
@@ -139,6 +147,7 @@ p {
 
 .heading-underline {
   position: relative;
+  margin-top: 100px;
   margin-bottom: 2rem;
   padding-bottom: 0.5rem;
   border-bottom: 2px solid var(--orange-light);
@@ -169,6 +178,7 @@ p {
   margin-bottom: 0.5rem;
   font-size: 1rem;
   font-weight: 700;
+  border: 2px gray;
 }
 
 .article__title-link {
@@ -183,7 +193,8 @@ p {
 
 .article__thumbnail {
   object-fit: contain;
-  width: 5rem;
+  width: 3rem;
+  border: 2px gray;
 }
 
 .article__read-more {
