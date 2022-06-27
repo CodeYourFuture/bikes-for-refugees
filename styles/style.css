@@ -59,6 +59,9 @@ p {
 }
 
 /* Navigation */
+.nav_bar {
+  margin: 1rem;
+}
 
 .navigation__list {
   display: flex;
@@ -66,7 +69,7 @@ p {
 }
 
 .navigation__item {
-  padding: 0.5rem 0;
+  padding: 0.5rem;
 }
 
 .navigation__link {
@@ -74,6 +77,7 @@ p {
   font-weight: 600;
   text-transform: uppercase;
   text-decoration: none;
+  padding: 0 25 px
 }
 
 
@@ -96,7 +100,21 @@ p {
 /* Buttons */
 
   /* INSERT BUTTON STYLES HERE */
+.btn-primary {
+  background-color:#c05326;
+  color:white;
+  border-radius:  4px;
+}
 
+.btn-secondary {
+  background-color: white;
+  color:#c05326;
+  border-radius:  4px;
+}
+.btn-primary:hover, .btn-primary:focus,
+.btn-secondary:hover, .btn-primary:focus {
+  background: color #934423;
+}
 
 /* Content */
 
@@ -120,17 +138,24 @@ p {
 /* hero */
 
 .hero {
-  background-image: url("header-bike.jpg");
+  
+  background-image: url("../images/header-bike.jpg");
   background-color: var(--grey-light);
+  color:white;
+  padding : 75px 20px  110px;
+  margin-bottom: 2rem;
 }
 
 .hero h1 {
   margin-bottom: 1rem;
   font-size: 2.5rem;
+  color:white;
+  padding-top: 1em;
+  padding-left: 0.5em;
 }
 
 .hero p {
-  font-size: 1.2rem;
+  font-size: 1rem;
   margin-bottom: 2rem;
 }
 
@@ -150,25 +175,45 @@ p {
 .heading-underline:before {
   content: "";
   position: absolute;
-  bottom: -2px;
+  bottom: -1px;
   left: 0;
   width: 25%;
-  height: 2px;
+  height: 1px;
   max-width: 100px;
   background: var(--orange-dark);
 }
 
 
 /* Article */
+.article_container {
+  display:flex;
+  flex-direction: row;
+  justify-content:space-between;
+  width: 100%;
+ 
+}
 
 .article {
+  display: flex;
+  flex-direction:column;
   margin-bottom: 1rem;
+  border: 2px solid rgb(236, 231, 231);
+  padding: 0rem;
+  align-items: left;
+  width: 48%; 
+}
+
+.sidebar_article {
+  border: 2px solid rgb(236, 231, 231);
+  margin-bottom: 1rem; 
 }
 
 .article__title {
+  margin: 5px;
   margin-bottom: 0.5rem;
   font-size: 1rem;
   font-weight: 700;
+  margin-left: 1rem;
 }
 
 .article__title-link {
@@ -177,8 +222,11 @@ p {
 }
 
 .article__summary {
-  margin-top: 0;
+  margin-top: 1;
   margin-bottom: 1rem;
+  margin-left: 1rem;
+  margin-right: 1rem;
+  width: 90%;
 }
 
 .article__thumbnail {
@@ -188,6 +236,8 @@ p {
 
 .article__read-more {
   margin-top: 0;
+  margin-left: 1rem;
+  margin-bottom: 1rem;
 }
 
 .article__read-more a {
@@ -209,6 +259,7 @@ p {
 
 .facebook-link {
   color: var(--orange-dark);
+  text-align: right;
 }
 
 /* Sidebar */
@@ -216,7 +267,7 @@ p {
 .sidebar {
   display: flex;
   flex-direction: column;
-  min-width: 350px;
+  min-width: 400px;
 }
 
 /* Footer */
