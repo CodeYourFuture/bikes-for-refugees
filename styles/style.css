@@ -116,7 +116,7 @@ button {
 button:hover, button:focus {
   background-color: var(--orange-darker);
   color: var(--orange-light);
-  transform: translate(-1px, -2px);
+  transform: translate(1px, 2px);
   box-shadow: 1px 2px var(--grey-dark);
 }
 
@@ -236,6 +236,11 @@ button:hover, button:focus {
 .article__read-more a:hover,
 .article__read-more a:focus {
   text-decoration: underline;
+}
+
+.facebook-container {
+  display: flex;
+  justify-content: flex-end;
 }
 
 .fa {
