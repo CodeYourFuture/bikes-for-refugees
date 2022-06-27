@@ -124,6 +124,7 @@ button:hover, button:focus {
 
 .alert {
   background-color: var(--orange-light);
+  border: 1px solid var(--grey-light);
   border-left: 4px solid var(--orange-dark);
   border-radius: 4px;
   font-size: 0.85rem;
@@ -135,9 +136,10 @@ button:hover, button:focus {
 /* hero */
 
 .hero {
-  padding: 1rem;
-  background-image: url("header-bike.jpg");
+  padding: 4rem 2rem;
+  background-image: url("../images/header-bike.jpg");
   background-color: var(--grey-light);
+  color: var(--grey-light);
 }
 
 .hero h1 {
@@ -155,7 +157,7 @@ button:hover, button:focus {
 
 .heading-underline {
   position: relative;
-  margin-bottom: 2rem;
+  margin: 2rem 0;
   padding-bottom: 0.5rem;
   border-bottom: 2px solid var(--orange-light);
   font-size: 1rem;
@@ -176,9 +178,16 @@ button:hover, button:focus {
 
 
 /* Article */
+.article-container {
+  display: flex;
+  justify-content: space-between;
+}
 
 .article {
+  width: 45%;
   margin-bottom: 1rem;
+  border: 1px solid var(--grey-light);
+  padding: 1rem;
 }
 
 .article__title {
