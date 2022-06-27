@@ -75,6 +75,7 @@ p {
   padding: 0.5rem 0;
 }
 
+
 .navigation__link {
   color: var(--grey-dark);
   font-weight: 600;
@@ -82,7 +83,9 @@ p {
   text-decoration: none;
   padding: 16px;
 }
-
+.navigation__link:hover {
+  color: #fff;
+}
 
 /* Text styles */
 
