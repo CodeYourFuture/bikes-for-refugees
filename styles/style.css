@@ -182,6 +182,7 @@ p {
 
 }
 
+
 .box{
   height:60px;
   width: 120px;
@@ -189,7 +190,7 @@ p {
   text-align: center;
   Padding-top: 40px;
   padding-bottom: 20px;
-  
+  background: var(--grey-light)
 
 
 }
