@@ -5,13 +5,13 @@
  * 
  */
 
- :root {
-   --grey-dark: #292b2c;
-   --grey-light: #e4e4e4;
-   --orange-dark: #c05326;
-   --orange-light: #f7eae4;
-   --white: #fff;
- }
+:root {
+  --grey-dark: #292b2c;
+  --grey-light: #e4e4e4;
+  --orange-dark: #c05326;
+  --orange-light: #f7eae4;
+  --white: #fff;
+}
 
 body {
   margin: 0;
@@ -24,7 +24,7 @@ button {
   font-size: 1rem;
 }
 
-h1,h2,h3,h4,h5,h6 {
+h1, h2, h3, h4, h5, h6 {
   margin-top: 0;
   margin-bottom: 0;
 }
@@ -66,7 +66,7 @@ p {
 }
 
 .navigation__item {
-  padding: 0.5rem 0;
+  padding: 0.5rem 1.5rem;
 }
 
 .navigation__link {
@@ -76,6 +76,13 @@ p {
   text-decoration: none;
 }
 
+.navigation__item:hover {
+  background-color: var(--orange-dark);
+}
+
+.navigation__link:hover {
+  color: var(--grey-light);
+}
 
 /* Text styles */
 
@@ -94,9 +101,36 @@ p {
 
 
 /* Buttons */
+button {
+  padding: 0.3rem 1rem;
+  border: none;
+  border-radius: 5px;
+}
 
-  /* INSERT BUTTON STYLES HERE */
+button:hover, button:focus {
+  transform: translate(1px, 2px);
+  box-shadow: 1px 2px var(--grey-dark);
+}
 
+.btn--primary {
+  background-color: var(--orange-dark);
+  color: var(--white);
+}
+
+.btn--secondary {
+  background-color: var(--white);
+  color: var(--orange-dark);
+}
+
+.btn--secondary:hover, .btn--secondary:focus {
+  background-color: var(--orange-dark);
+  color: var(--orange-light);
+}
+
+.btn--primary:hover, .btn--primary:focus {
+  background-color: var(--orange-light);
+  color: var(--orange-dark);
+}
 
 /* Content */
 
@@ -109,6 +143,7 @@ p {
 
 .alert {
   background-color: var(--orange-light);
+  border: 1px solid var(--grey-light);
   border-left: 4px solid var(--orange-dark);
   border-radius: 4px;
   font-size: 0.85rem;
@@ -120,8 +155,11 @@ p {
 /* hero */
 
 .hero {
-  background-image: url("header-bike.jpg");
+  padding: 6rem 2rem;
+  border: 1px solid var(--grey-light);
+  background-image: url("../images/header-bike.jpg");
   background-color: var(--grey-light);
+  color: var(--grey-light);
 }
 
 .hero h1 {
@@ -139,7 +177,7 @@ p {
 
 .heading-underline {
   position: relative;
-  margin-bottom: 2rem;
+  margin: 2rem 0;
   padding-bottom: 0.5rem;
   border-bottom: 2px solid var(--orange-light);
   font-size: 1rem;
@@ -160,9 +198,19 @@ p {
 
 
 /* Article */
+.article-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.article-container>.article {
+  width: 45%;
+}
 
 .article {
   margin-bottom: 1rem;
+  border: 1px solid var(--grey-light);
+  padding: 1rem;
 }
 
 .article__title {
@@ -174,6 +222,10 @@ p {
 .article__title-link {
   text-decoration: none;
   color: var(--orange-dark);
+}
+
+.article__title-link:hover {
+  color: var(--grey-dark);
 }
 
 .article__summary {
@@ -202,6 +254,11 @@ p {
   text-decoration: underline;
 }
 
+.facebook-container {
+  display: flex;
+  justify-content: flex-end;
+}
+
 .fa {
   margin-right: 0.5rem;
   color: var(--orange-dark);
@@ -211,12 +268,24 @@ p {
   color: var(--orange-dark);
 }
 
+.facebook-link:hover {
+  color: var(--grey-dark);
+}
+
 /* Sidebar */
 
 .sidebar {
   display: flex;
   flex-direction: column;
   min-width: 350px;
+}
+
+.sidebar>.article {
+  display: flex;
+}
+
+.article__content {
+  padding-left: 1rem;
 }
 
 /* Footer */
