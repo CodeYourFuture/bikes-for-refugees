@@ -8,6 +8,7 @@
 :root {
   --grey-dark: #292b2c;
   --grey-light: #e4e4e4;
+  --orange-darker: #934423;
   --orange-dark: #c05326;
   --orange-light: #f7eae4;
   --white: #fff;
@@ -96,15 +97,15 @@ p {
 /* Buttons */
 
 .btn--primary {
-  background-color: #c05326;
+  background-color: var(--orange-dark);
 }
 
 .btn--secondary {
-  background-color: #fff;
+  background-color: var(--white);
 }
 
 button:hover, button:focus {
-  background-color: #934423;
+  background-color: var(--orange-darker);
 }
 
 /* Content */
