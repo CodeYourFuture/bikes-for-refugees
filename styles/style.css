@@ -98,19 +98,26 @@ p {
 
 .btn--primary {
   background-color: var(--orange-dark);
+  color: var(--white);
 }
 
 .btn--secondary {
   background-color: var(--white);
+  color: var(--orange-dark);
 }
 
 button {
   padding: 0.4em;
+  border: none;
   border-radius: 8px;
+  font-weight: 600;
 }
 
 button:hover, button:focus {
   background-color: var(--orange-darker);
+  color: var(--orange-light);
+  transform: translate(-1px, -2px);
+  box-shadow: 1px 2px var(--grey-dark);
 }
 
 /* Content */
