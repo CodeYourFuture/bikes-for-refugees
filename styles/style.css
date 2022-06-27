@@ -137,6 +137,7 @@ button:hover, button:focus {
 
 .hero {
   padding: 4rem 2rem;
+  border: 1px solid var(--grey-light);
   background-image: url("../images/header-bike.jpg");
   background-color: var(--grey-light);
   color: var(--grey-light);
@@ -245,6 +246,14 @@ button:hover, button:focus {
   display: flex;
   flex-direction: column;
   min-width: 350px;
+}
+
+.sidebar>.article {
+  display: flex;
+}
+
+.article__content {
+  padding-left: 1rem;
 }
 
 /* Footer */
