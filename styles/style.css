@@ -115,6 +115,7 @@ p {
 .btn-secondary:hover, .btn-primary:focus {
   background: color #934423;
 }
+
 /* Content */
 
 .content {
@@ -142,7 +143,7 @@ p {
   background-color: var(--grey-light);
   color:white;
   padding : 75px 20px  110px;
-  
+  margin-bottom: 2rem;
 }
 
 .hero h1 {
@@ -165,7 +166,6 @@ p {
   position: relative;
   margin-bottom: 2rem;
   padding-bottom: 0.5rem;
-  padding-top: 3rem;
   border-bottom: 2px solid var(--orange-light);
   font-size: 1rem;
   font-weight: 600;
@@ -177,7 +177,6 @@ p {
   position: absolute;
   bottom: -1px;
   left: 0;
-  
   width: 25%;
   height: 1px;
   max-width: 100px;
@@ -190,8 +189,8 @@ p {
   display:flex;
   flex-direction: row;
   justify-content:space-between;
-  padding: 50px;
-  margin: 5px;
+  width: 100%;
+ 
 }
 
 .article {
@@ -200,10 +199,13 @@ p {
   margin-bottom: 1rem;
   border: 2px solid rgb(236, 231, 231);
   padding: 0rem;
-  margin-left: 3%;
   align-items: left;
-  
-  
+  width: 48%; 
+}
+
+.sidebar_article {
+  border: 2px solid rgb(236, 231, 231);
+  margin-bottom: 1rem; 
 }
 
 .article__title {
@@ -217,14 +219,14 @@ p {
 .article__title-link {
   text-decoration: none;
   color: var(--orange-dark);
-  
 }
 
 .article__summary {
   margin-top: 1;
   margin-bottom: 1rem;
   margin-left: 1rem;
-  margin right: 1rem;
+  margin-right: 1rem;
+  width: 90%;
 }
 
 .article__thumbnail {
@@ -258,7 +260,6 @@ p {
 .facebook-link {
   color: var(--orange-dark);
   text-align: right;
-
 }
 
 /* Sidebar */
@@ -267,7 +268,6 @@ p {
   display: flex;
   flex-direction: column;
   min-width: 400px;
-
 }
 
 /* Footer */
