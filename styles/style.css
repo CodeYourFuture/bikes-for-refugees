@@ -77,6 +77,13 @@ p {
   text-decoration: none;
 }
 
+.navigation__item:hover {
+  background-color: #c05326;
+}
+
+.navigation__link:hover {
+  color: var(--grey-light);
+}
 
 /* Text styles */
 
@@ -212,6 +219,10 @@ button:hover, button:focus {
   color: var(--orange-dark);
 }
 
+.article__title-link:hover {
+  color: var(--orange-darker);
+}
+
 .article__summary {
   margin-top: 0;
   margin-bottom: 1rem;
@@ -250,6 +261,10 @@ button:hover, button:focus {
 
 .facebook-link {
   color: var(--orange-dark);
+}
+
+.facebook-link:hover {
+  color: var(--grey-dark);
 }
 
 /* Sidebar */
