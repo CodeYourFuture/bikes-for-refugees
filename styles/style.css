@@ -183,8 +183,11 @@ button:hover, button:focus {
   justify-content: space-between;
 }
 
-.article {
+.article-container>.article {
   width: 45%;
+}
+
+.article {
   margin-bottom: 1rem;
   border: 1px solid var(--grey-light);
   padding: 1rem;
