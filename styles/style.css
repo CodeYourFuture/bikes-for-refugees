@@ -22,6 +22,20 @@ button {
   font-family: "Source Sans Pro", "Helvetica Neue", Arial, sans-serif;
   color: var(--grey-dark);
   font-size: 1rem;
+  border:0;
+  padding: 1rem;
+  border-radius: 4px;
+  font-weight:600;
+}
+.donate{
+  background-color:#c05326;
+  color:#fff
+}
+
+.volunteer{
+  background-color:#fff;
+  color: #c05326;
+
 }
 
 h1,h2,h3,h4,h5,h6 {
@@ -74,6 +88,7 @@ p {
   font-weight: 600;
   text-transform: uppercase;
   text-decoration: none;
+  padding: 1rem;
 }
 
 
@@ -120,7 +135,7 @@ p {
 /* hero */
 
 .hero {
-  background-image: url("header-bike.jpg");
+  background-image: url("https: //github.com/CodeYourFuture/bikes-for-refugees/blob/9f799b263cbd12a02272ae7db7dd0a2237b35d22/images/header-bike.jpg");
   background-color: var(--grey-light);
 }
 
@@ -156,6 +171,27 @@ p {
   height: 2px;
   max-width: 100px;
   background: var(--orange-dark);
+}
+
+.container{
+  margin-top: 10px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  
+
+}
+
+.box{
+  height:60px;
+  width: 120px;
+  border: 1px solid black;
+  text-align: center;
+  Padding-top: 40px;
+  padding-bottom: 20px;
+  
+
+
 }
 
 
