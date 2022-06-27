@@ -104,6 +104,11 @@ p {
   background-color: var(--white);
 }
 
+button {
+  padding: 0.4em;
+  border-radius: 8px;
+}
+
 button:hover, button:focus {
   background-color: var(--orange-darker);
 }
