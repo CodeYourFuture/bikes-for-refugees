@@ -99,12 +99,12 @@ p {
   /* INSERT BUTTON STYLES HERE */
 .donatebtn {
  background-color:#c05326 ;
-border: 9px dotted gray;
+color: white;
 
 }
 .vlbtn{
   background-color: #fff;
-  
+  color: #c05326;
 }
 /* Content */
 
