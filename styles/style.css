@@ -76,6 +76,10 @@ p {
   text-decoration: none;
 }
 
+.navigation__link:hover {
+  background-color: #c05326;
+}
+
 
 /* Text styles */
 
@@ -96,8 +100,16 @@ p {
 /* Buttons */
 
   /* INSERT BUTTON STYLES HERE */
+
+button {
+  border: none;
+   border-radius: 5px;
+    padding: 10px 7px 10px 7px;
+}
+
 .orange-button {
   background-color: #c05326;
+  color: #fff;
 }
 
 .white-button {
