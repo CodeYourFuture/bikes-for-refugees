@@ -44,6 +44,7 @@ p {
 
 /* Header */
 
+
 .header {
   display: flex;
   align-items: center;
@@ -96,8 +97,15 @@ p {
 /* Buttons */
 
   /* INSERT BUTTON STYLES HERE */
+.donatebtn {
+ background-color:#c05326 ;
+border: 9px dotted gray;
 
-
+}
+.vlbtn{
+  background-color: #fff;
+  
+}
 /* Content */
 
 .content {
