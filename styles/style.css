@@ -196,6 +196,11 @@ margin-left: 2.2em;
 
 .article {
   margin-bottom: 1rem;
+  border-style: solid;
+  border-color: rgb(197, 191, 191);
+  display: flex;
+  flex-direction:column-reverse;
+
 }
 
 .article__title {
@@ -207,6 +212,7 @@ margin-left: 2.2em;
 .article__title-link {
   text-decoration: none;
   color: var(--orange-dark);
+  
 }
 
 .article__summary {
