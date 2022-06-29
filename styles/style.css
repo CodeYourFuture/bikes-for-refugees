@@ -50,7 +50,7 @@ p {
   justify-content: space-between;
   height: 5rem;
   margin-bottom: 1rem;
-  padding-top: 1rem;
+  padding-top: 1.5rem;
 }
 
 .header__logo {
@@ -63,10 +63,12 @@ p {
 .navigation__list {
   display: flex;
   list-style: none;
+  
 }
 
 .navigation__item {
-  padding: 0.5rem 0;
+  padding: 0.5rem 1rem;
+  
 }
 
 .navigation__link {
@@ -74,6 +76,10 @@ p {
   font-weight: 600;
   text-transform: uppercase;
   text-decoration: none;
+}
+
+.navigation__link:hover {
+  color:#c05326;
 }
 
 
@@ -96,7 +102,30 @@ p {
 /* Buttons */
 
   /* INSERT BUTTON STYLES HERE */
+button {
+  background-color: #c05326;
+  color: #fff;
+  padding: 5px 10px;
+  border-radius: 5%;
+  border: none;
+}
 
+button:hover{
+  background: linear-gradient(0deg, #76b8fa 0%, rgba(0, 3, 255, 1)100%);
+  transform: scale(1);
+  transition: 0.1s;
+}
+
+.volunteer {
+  background-color: #fff;
+  color: #000000;
+}
+
+.volunteer:hover{
+  background: linear-gradient(0deg, #a5cff9 0%, rgb(115, 117, 243)100%);
+  transform: scale(1);
+  transition: 0.1s;
+}
 
 /* Content */
 
@@ -120,8 +149,14 @@ p {
 /* hero */
 
 .hero {
-  background-image: url("header-bike.jpg");
   background-color: var(--grey-light);
+  background-image: url("../images/header-bike.jpg");
+  background-size:cover;
+  background-position: center;
+  
+  color: #fff;
+  padding: 60px 30px;
+  margin-bottom: 40px;
 }
 
 .hero h1 {
@@ -159,13 +194,34 @@ p {
 }
 
 
+
 /* Article */
 
+.articles {
+  display: flex;
+  flex-direction: row;
+  
+}
+
 .article {
-  margin-bottom: 1rem;
+  
+  margin: 1rem;
+  border: 1px solid grey;
+  padding: 20px;
+}
+
+.sidebar .article {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.sidebar-img {
+  padding: 15px;
 }
 
 .article__title {
+  display:inline;
   margin-bottom: 0.5rem;
   font-size: 1rem;
   font-weight: 700;
@@ -177,13 +233,22 @@ p {
 }
 
 .article__summary {
-  margin-top: 0;
+  margin-top: 4px;
   margin-bottom: 1rem;
 }
 
 .article__thumbnail {
   object-fit: contain;
   width: 5rem;
+}
+
+.article__content {
+  display: inline;
+}
+
+.article__img{
+  width: 20px;
+  padding: 20px 40px;
 }
 
 .article__read-more {
@@ -209,6 +274,8 @@ p {
 
 .facebook-link {
   color: var(--orange-dark);
+  text-align: right;
+  padding-right: 20px;
 }
 
 /* Sidebar */
