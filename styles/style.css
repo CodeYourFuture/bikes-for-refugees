@@ -22,7 +22,11 @@ button {
   font-family: "Source Sans Pro", "Helvetica Neue", Arial, sans-serif;
   color: var(--grey-dark);
   font-size: 1rem;
+  border: none;
+  padding: 6px;
+  border-radius: 5px;
 }
+
 
 h1,h2,h3,h4,h5,h6 {
   margin-top: 0;
@@ -33,6 +37,8 @@ p {
   margin-top: 0;
   margin-bottom: 0;
 }
+
+
 
 .header,
 .content,
@@ -66,7 +72,7 @@ p {
 }
 
 .navigation__item {
-  padding: 0.5rem 0;
+  padding: 1rem 10px;
 }
 
 .navigation__link {
@@ -74,8 +80,12 @@ p {
   font-weight: 600;
   text-transform: uppercase;
   text-decoration: none;
+  padding: 0.5rem 0;
 }
 
+.navigation__link:hover {
+  color:#c05326
+}
 
 /* Text styles */
 
@@ -96,6 +106,25 @@ p {
 /* Buttons */
 
   /* INSERT BUTTON STYLES HERE */
+.btn-primary {
+  background-color: #c05326;
+  color:#fff
+}
+
+.btn-primary:hover {
+  background-color: #fff;
+  color: #c05326;
+}
+
+.volunteer {
+  color: orangered;
+  background-color: #fff;
+}
+
+.volunteer:hover {
+  color: white;
+  background-color: orangered;
+}
 
 
 /* Content */
@@ -120,8 +149,16 @@ p {
 /* hero */
 
 .hero {
-  background-image: url("header-bike.jpg");
-  background-color: var(--grey-light);
+ 
+   background-color: var(--grey-light);
+   background-image: url(/images/header-bike.jpg);
+   height: 250px;
+   background-position: center;
+   background-size: cover;
+   color: white;
+   padding: 20px;
+   text-align:left center;
+   padding-top: 80px;
 }
 
 .hero h1 {
@@ -139,6 +176,8 @@ p {
 
 .heading-underline {
   position: relative;
+  margin-top: 2rem;
+  padding-bottom: 0.5rem;
   margin-bottom: 2rem;
   padding-bottom: 0.5rem;
   border-bottom: 2px solid var(--orange-light);
@@ -163,6 +202,21 @@ p {
 
 .article {
   margin-bottom: 1rem;
+  border: 3px solid lightgray ;
+  border-radius: 5px;
+  padding: 20px;
+}
+
+.article-bottom {
+  display: flex;
+}
+
+.article1 {
+  margin-right: 20px;
+}
+.article-side {
+  display: flex;
+  
 }
 
 .article__title {
@@ -184,6 +238,7 @@ p {
 .article__thumbnail {
   object-fit: contain;
   width: 5rem;
+  margin-right: 15px;
 }
 
 .article__read-more {
@@ -209,6 +264,7 @@ p {
 
 .facebook-link {
   color: var(--orange-dark);
+  text-align: right;
 }
 
 /* Sidebar */
@@ -217,6 +273,7 @@ p {
   display: flex;
   flex-direction: column;
   min-width: 350px;
+  
 }
 
 /* Footer */
