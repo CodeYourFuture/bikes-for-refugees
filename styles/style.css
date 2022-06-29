@@ -119,6 +119,7 @@ margin-left: 2.2em;
 .content {
   display: flex;
   flex-direction: column;
+
 }
 
 /* Alert */
@@ -189,6 +190,7 @@ margin-left: 2.2em;
   height: 2px;
   max-width: 100px;
   background: var(--orange-dark);
+  
 }
 
 
@@ -198,8 +200,7 @@ margin-left: 2.2em;
   margin-bottom: 1rem;
   border-style: solid;
   border-color: rgb(197, 191, 191);
-  display: flex;
-  flex-direction:column-reverse;
+  
 
 }
 
@@ -207,17 +208,20 @@ margin-left: 2.2em;
   margin-bottom: 0.5rem;
   font-size: 1rem;
   font-weight: 700;
+  
 }
 
 .article__title-link {
   text-decoration: none;
   color: var(--orange-dark);
   
+  
 }
 
 .article__summary {
   margin-top: 0;
   margin-bottom: 1rem;
+  
 }
 
 .article__thumbnail {
@@ -285,5 +289,6 @@ margin-left: 2.2em;
 
   .main {
     padding-right: 2rem;
+    
   }
 }
