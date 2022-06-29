@@ -68,6 +68,7 @@ p {
 
 .navigation__item {
   padding: 0.5rem 0;
+  padding: 40px;
 }
 
 .navigation__link {
@@ -100,11 +101,16 @@ p {
 .donatebtn {
  background-color:#c05326 ;
 color: white;
+border-radius: 5px;
+border-color: transparent;
+margin-left: 2.2em;
 
 }
 .vlbtn{
   background-color: #fff;
   color: #c05326;
+  border-radius: 5px;
+  border-color: transparent;
 }
 /* Content */
 
@@ -128,18 +134,35 @@ color: white;
 /* hero */
 
 .hero {
-  background-image: url("header-bike.jpg");
+  background-image: url("../images/header-bike.jpg");
   background-color: var(--grey-light);
+  height: 362px;
+  color: white;
+  margin-bottom: 1.5rem;
+  
+  
+  
+
+  
 }
 
 .hero h1 {
   margin-bottom: 1rem;
   font-size: 2.5rem;
+  padding-top: 1em;
+  padding-left: 1em;
+  
+  
+  
+  
 }
 
 .hero p {
   font-size: 1.2rem;
   margin-bottom: 2rem;
+  padding-top: 1em;
+  padding-left: 2.2em;
+  
 }
 
 
