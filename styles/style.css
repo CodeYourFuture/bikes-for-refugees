@@ -5,13 +5,13 @@
  * 
  */
 
- :root {
-   --grey-dark: #292b2c;
-   --grey-light: #e4e4e4;
-   --orange-dark: #c05326;
-   --orange-light: #f7eae4;
-   --white: #fff;
- }
+:root {
+  --grey-dark: #292b2c;
+  --grey-light: #e4e4e4;
+  --orange-dark: #c05326;
+  --orange-light: #f7eae4;
+  --white: #fff;
+}
 
 body {
   margin: 0;
@@ -24,7 +24,12 @@ button {
   font-size: 1rem;
 }
 
-h1,h2,h3,h4,h5,h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   margin-top: 0;
   margin-bottom: 0;
 }
@@ -66,7 +71,13 @@ p {
 }
 
 .navigation__item {
-  padding: 0.5rem 0;
+  padding: 0.5rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+.navigation__item:hover {
+  background-color: #c05326;
 }
 
 .navigation__link {
@@ -95,7 +106,35 @@ p {
 
 /* Buttons */
 
-  /* INSERT BUTTON STYLES HERE */
+/* INSERT BUTTON STYLES HERE */
+.donate_now,
+.donate_bike {
+  background-color: #c05326;
+  color: white;
+  padding: 0.5rem;
+  border: none;
+  border-radius: 3px;
+  margin-left: 1rem;
+}
+
+.donate_now:hover,
+.donate_bike:hover {
+  background-color: white;
+  color: #c05326;
+}
+
+.volunteer {
+  background-color: white);
+  color: #c05326;
+  padding: 0.5rem;
+  border: none;
+  border-radius: 3px;
+}
+
+.volunteer:hover {
+  background-color: #c05326;
+  color: white;
+}
 
 
 /* Content */
@@ -120,18 +159,26 @@ p {
 /* hero */
 
 .hero {
-  background-image: url("header-bike.jpg");
+  background-image: url("/images/header-bike.jpg");
   background-color: var(--grey-light);
+  height: 300px;
+
 }
 
 .hero h1 {
   margin-bottom: 1rem;
+  margin-top: auto;
+  margin-left: 1rem;
   font-size: 2.5rem;
+  color: white;
 }
 
 .hero p {
   font-size: 1.2rem;
+  margin-left: 1rem;
+  margin-top: 2rem;
   margin-bottom: 2rem;
+  color: white;
 }
 
 
@@ -141,6 +188,7 @@ p {
   position: relative;
   margin-bottom: 2rem;
   padding-bottom: 0.5rem;
+  padding-top: 3rem;
   border-bottom: 2px solid var(--orange-light);
   font-size: 1rem;
   font-weight: 600;
@@ -163,6 +211,9 @@ p {
 
 .article {
   margin-bottom: 1rem;
+  border-style: ridge;
+  float: left;
+  padding: 20px;
 }
 
 .article__title {
@@ -184,6 +235,7 @@ p {
 .article__thumbnail {
   object-fit: contain;
   width: 5rem;
+  float: left;
 }
 
 .article__read-more {
@@ -209,6 +261,12 @@ p {
 
 .facebook-link {
   color: var(--orange-dark);
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 10px;
 }
 
 /* Sidebar */
