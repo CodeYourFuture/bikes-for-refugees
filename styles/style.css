@@ -202,12 +202,10 @@ p {
 .article {
   margin-bottom: 1rem;
   align-items: center;
-  display: flexbox;
   padding: 0.5rem 1rem;
   border: 1px solid rgb(216, 216, 216);
   border-radius: 5px;
   width: 310px;
-  float: left;
 }
 
 .article__title {
