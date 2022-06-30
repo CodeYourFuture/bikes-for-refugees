@@ -68,7 +68,9 @@ p {
 .navigation__item {
   padding: 0.5rem 0;
 }
-
+.navigation__link:hover{
+  color: orangered;
+}
 .navigation__link {
   color: var(--grey-dark);
   font-weight: 600;
@@ -102,6 +104,10 @@ p {
   color: #fff;
   border: none;
 }
+.button:hover{
+  background-color: black;
+  color:#c05326 ;
+}
 
 #button2 {
   background-color: #fff;
@@ -110,7 +116,9 @@ p {
   border-radius: 5px;
   border: none;
 }
-
+#button2:hover{
+  background-color: black;
+}
   /* INSERT BUTTON STYLES HERE */
 
 
