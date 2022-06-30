@@ -68,12 +68,15 @@ p {
 .navigation__item {
   padding: 0.5rem 0;
 }
-
+.navigation__link:hover{
+  color: orangered;
+}
 .navigation__link {
   color: var(--grey-dark);
   font-weight: 600;
   text-transform: uppercase;
   text-decoration: none;
+  padding: 16px;
 }
 
 
@@ -94,7 +97,28 @@ p {
 
 
 /* Buttons */
+.button {
+  background-color: #c05326;
+  padding: 6px;
+  border-radius: 5px;
+  color: #fff;
+  border: none;
+}
+.button:hover{
+  background-color: black;
+  color:#c05326 ;
+}
 
+#button2 {
+  background-color: #fff;
+  color: #c05326;
+  padding: 6px;
+  border-radius: 5px;
+  border: none;
+}
+#button2:hover{
+  background-color: black;
+}
   /* INSERT BUTTON STYLES HERE */
 
 
@@ -120,22 +144,35 @@ p {
 /* hero */
 
 .hero {
+  position: relative;
   background-image: url("header-bike.jpg");
   background-color: var(--grey-light);
+  margin-bottom: 50px;
 }
-
+.hero img{
+  width: 100%;
+}
+.text{
+  position: absolute;
+  top: 25%;
+  margin-left: 5%;
+  
+}
 .hero h1 {
   margin-bottom: 1rem;
   font-size: 2.5rem;
+  color: #fff;
 }
 
 .hero p {
   font-size: 1.2rem;
   margin-bottom: 2rem;
+  color: #fff;
 }
 
 
 /* Headings */
+
 
 .heading-underline {
   position: relative;
@@ -156,13 +193,37 @@ p {
   height: 2px;
   max-width: 100px;
   background: var(--orange-dark);
+  
 }
 
 
 /* Article */
 
 .article {
+  display: flex;
+  flex-direction: row;
   margin-bottom: 1rem;
+  border-style: solid;
+  border-color: #d0d0d0;
+  border-radius: 4px;
+  padding: 20px;
+  
+}
+.article1{
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 1rem;
+  margin-left: 1rem;
+  border-style: solid;
+  border-color: #d0d0d0;
+  border-radius: 4px;
+  padding:20px;
+  
+}
+.article2{
+  display: flex;
+  flex-direction: row;
+ 
 }
 
 .article__title {
@@ -184,6 +245,7 @@ p {
 .article__thumbnail {
   object-fit: contain;
   width: 5rem;
+  padding-right: 20px;
 }
 
 .article__read-more {
@@ -209,6 +271,7 @@ p {
 
 .facebook-link {
   color: var(--orange-dark);
+  align-self: flex-end;
 }
 
 /* Sidebar */
