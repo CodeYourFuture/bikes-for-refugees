@@ -75,9 +75,10 @@ p {
   text-transform: uppercase;
   text-decoration: none;
 }
-
+/* nav on hover change to orange*/
 .navigation__link:hover {
   background-color: #c05326;
+  color: white;
 }
 
 
@@ -104,7 +105,7 @@ p {
 button {
   border: none;
    border-radius: 5px;
-    padding: 10px 7px 10px 7px;
+    padding: 7px 10px 7px 10px;
 }
 
 .orange-button {
