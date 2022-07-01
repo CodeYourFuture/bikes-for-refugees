@@ -77,6 +77,9 @@ p {
   padding: 8px 8px;
 }
 
+.navigation__link:hover {
+  color: #c05326;
+}
 
 /* Text styles */
 
@@ -104,13 +107,27 @@ p {
   border: none;
   font-size: 1rem;
   padding: 10px 10px;
+  
 }
+
+.button1:hover {
+  color: #c05326;
+  background-color: #fff;
+  cursor: pointer;
+}
+
 #button2 {
   background-color: #fff;
   color: #c05326;
   border: none;
   border-radius: 5px;
   padding: 10px 10px;
+}
+
+#button2:hover {
+    color: #fff;
+    background-color: #c05326;
+    cursor: pointer;
 }
 
 /* Content */
@@ -212,6 +229,7 @@ p {
 .article__thumbnail {
   object-fit: contain;
   width: 5rem;
+  padding-right: 10px;
 }
 
 .article__read-more {
@@ -237,6 +255,7 @@ p {
 
 .facebook-link {
   color: var(--orange-dark);
+  align-self: flex-end;
 }
 
 /* Sidebar */
@@ -245,6 +264,11 @@ p {
   display: flex;
   flex-direction: column;
   min-width: 350px;
+}
+
+.sidebar .article {
+  display: flex;
+  margin: 5px;
 }
 
 /* Footer */
