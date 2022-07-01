@@ -22,6 +22,7 @@ button {
   font-family: "Source Sans Pro", "Helvetica Neue", Arial, sans-serif;
   color: var(--grey-dark);
   font-size: 1rem;
+ 
 }
 
 h1,h2,h3,h4,h5,h6 {
@@ -63,6 +64,7 @@ p {
 .navigation__list {
   display: flex;
   list-style: none;
+  
 }
 
 .navigation__item {
@@ -96,6 +98,20 @@ p {
 /* Buttons */
 
   /* INSERT BUTTON STYLES HERE */
+  .firstb{ 
+    background-color:#c05326;
+
+  }
+
+  .secondb{
+    background-color:#c05326;
+  }
+
+  .thirdb{
+    background-color:#fff;
+    color:orangered;
+    
+  }
 
 
 /* Content */
@@ -213,7 +229,7 @@ p {
 
 /* Sidebar */
 
-.sidebar {
+.aside {
   display: flex;
   flex-direction: column;
   min-width: 350px;
