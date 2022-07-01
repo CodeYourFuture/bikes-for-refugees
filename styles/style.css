@@ -135,7 +135,7 @@ p {
 .hero {
   /* border-style: dashed; */
   /* border-color: hotpink; */
-  height: 58%;
+  height: 52%;
   background-image: url(/images/header-bike.jpg);
   background-color: var(--grey-light);
   margin-bottom: 50px;
@@ -228,6 +228,7 @@ p {
 
 .facebook-link {
   color: var(--orange-dark);
+  align-self: flex-end;
 }
 
 /* Sidebar */
