@@ -15,6 +15,7 @@
 
 body {
   margin: 0;
+  
 }
 
 body,
@@ -44,7 +45,7 @@ p {
 
 /* Header */
 
-.header {
+header {
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -74,6 +75,13 @@ p {
   font-weight: 600;
   text-transform: uppercase;
   text-decoration: none;
+  padding:0 2em;
+}
+/*nav-hoover*/
+.navigation__link:hover{
+  background-color:var(--orange-dark);
+  color:white;
+  border-radius: 3px;
 }
 
 
@@ -95,9 +103,21 @@ p {
 
 /* Buttons */
 
+
+
   /* INSERT BUTTON STYLES HERE */
 
+button{
+  padding: 5px 10px;
+  border-radius: 5%;
+  border:none;
+  background-color: #c05326;
+  color:#fff;
 
+
+
+
+}
 /* Content */
 
 .content {
@@ -120,19 +140,32 @@ p {
 /* hero */
 
 .hero {
-  background-image: url("header-bike.jpg");
+  background-image: url("/images/header-bike.jpg");
   background-color: var(--grey-light);
+  background-size:cover;
+  background-position:center;
+  margin-bottom: 40px;
+  padding: 60px 30px;
+   color:var(--white);
+  
+
 }
 
 .hero h1 {
   margin-bottom: 1rem;
   font-size: 2.5rem;
+  
 }
 
 .hero p {
   font-size: 1.2rem;
   margin-bottom: 2rem;
+  
+  
 }
+
+
+
 
 
 /* Headings */
@@ -161,14 +194,23 @@ p {
 
 /* Article */
 
-.article {
-  margin-bottom: 1rem;
+.articles-container{
+  display: flex;
+  flex-direction: row;
+
 }
+.article {
+  margin: 1rem;
+  border: 1px solid grey;
+  padding:20px;
+}
+
 
 .article__title {
   margin-bottom: 0.5rem;
   font-size: 1rem;
   font-weight: 700;
+  display: inline;
 }
 
 .article__title-link {
@@ -184,6 +226,7 @@ p {
 .article__thumbnail {
   object-fit: contain;
   width: 5rem;
+  padding-right: 20px;
 }
 
 .article__read-more {
@@ -209,9 +252,19 @@ p {
 
 .facebook-link {
   color: var(--orange-dark);
+  text-align: right;
+  padding-right: 20px;
 }
 
 /* Sidebar */
+
+.sidebar .article{
+  display:flex;
+  flex-direction: row;
+  align-items: center;
+
+}
+
 
 .sidebar {
   display: flex;
@@ -237,6 +290,7 @@ p {
   font-size: 0.85rem;
 }
 
+
 /* Media queries */
 
 @media screen and (min-width: 992px) {
@@ -248,3 +302,5 @@ p {
     padding-right: 2rem;
   }
 }
+
+
