@@ -8,7 +8,7 @@
  :root {
    --grey-dark: #292b2c;
    --grey-light: #e4e4e4;
-   --orange-dark: #c05326;
+   --orange-dark: #934423;
    --orange-light: #f7eae4;
    --white: #fff;
  }
@@ -99,17 +99,32 @@ p {
 /* Buttons */
 
   /* INSERT BUTTON STYLES HERE */
+button{
+  padding: 0.4em;
+  border: none;
+  border-radius: 8px;
+  font-weight: 600;
+}
+
   .firstb{ 
     background-color:#c05326;
+    background-color: var(--orange-dark);
+    color: var(--white);
 
   }
 
   .secondb{
     background-color:#c05326;
+    background-color: var(--white);
+    color: var(--orange-dark);
   }
 
   button:hover, button:focus{
     background-color: #934423;
+    background-color: var(--orange-dark);
+    color: var(--orange-light);
+    transform: translate(-1px, -2px)
+    
   }
 
 
@@ -135,9 +150,11 @@ p {
 /* hero */
 
 .hero {
-  padding: 1rem;
-  background-image: url("header-bike.jpg");
+  padding: 4rem 2rem;
+  border: 1px solid var(--grey-light);
+  background-image: url("..images/header-bike.jpg");
   background-color: var(--grey-light);
+  color: var(--grey-light);
 }
 
 .hero h1 {
@@ -155,7 +172,7 @@ p {
 
 .heading-underline {
   position: relative;
-  margin-bottom: 2rem;
+  margin: 2rem;
   padding-bottom: 0.5rem;
   border-bottom: 2px solid var(--orange-light);
   font-size: 1rem;
@@ -176,9 +193,20 @@ p {
 
 
 /* Article */
+.article-container{
+  display: flex;
+  justify-content: space-between;
+}
 
-.article {
+.article-container>.article {
+  width: 45%;
+  
+}
+
+.article{
   margin-bottom: 1rem;
+  border: 1px solid var(--grey-light);
+  padding: 1rem;
 }
 
 .article__title {
@@ -229,10 +257,17 @@ p {
 
 /* Sidebar */
 
-.aside {
+.sidebar {
   display: flex;
   flex-direction: column;
-  min-width: 350px;
+  min-width: 400px;
+}
+.sidebar>.article{
+  display: flex;
+}
+
+.article-content{
+  padding-left: 1rem;
 }
 
 /* Footer */
