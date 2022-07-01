@@ -1,0 +1,7 @@
+In the Bikes for Refugees project, work in pairs
+ to make the Donate Now and Donate a bike today 
+ buttons on the page an orange-red #c05326 colour, 
+ and make the Volunteer button white #fff with orange-red #c05326 text. 
+ Leave the border for now.
+
+

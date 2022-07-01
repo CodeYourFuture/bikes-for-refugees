@@ -62,11 +62,13 @@ p {
 
 .navigation__list {
   display: flex;
+  flex-direction: row;
   list-style: none;
+ 
 }
 
 .navigation__item {
-  padding: 0.5rem 0;
+  padding: 0em 1em;
 }
 
 .navigation__link {
@@ -75,6 +77,12 @@ p {
   text-transform: uppercase;
   text-decoration: none;
 }
+/* nav on hover change to orange*/
+.navigation__link:hover {
+  background-color: #c05326;
+  color: white;
+}
+
 
 
 /* Text styles */
@@ -97,12 +105,41 @@ p {
 
   /* INSERT BUTTON STYLES HERE */
 
+button {
+  border: none;
+   border-radius: 5px;
+    padding: 7px 10px 7px 10px;
+}
+
+.orange-button {
+  background-color: #c05326;
+  color: #fff;
+}
+
+.white-button {
+  background-color: #fff;
+  color: #c05326;
+}
+/* on hover reverse button colour */
+
+.orange-button:hover {
+  background-color: #fff;
+  color: #c05326;
+  border: 1px solid #000;
+}
+
+.white-button:hover {
+ background-color: #c05326;
+ color: #fff;
+
+}
 
 /* Content */
 
 .content {
   display: flex;
   flex-direction: column;
+  
 }
 
 /* Alert */
@@ -120,18 +157,23 @@ p {
 /* hero */
 
 .hero {
-  background-image: url("header-bike.jpg");
-  background-color: var(--grey-light);
+  background-image: url("/images/header-bike.jpg");
+  background-color: var(--grey-light); 
+  padding: 4.5em 4em 5.5em 2em; 
+  margin-bottom: 2em;
+
 }
 
 .hero h1 {
   margin-bottom: 1rem;
   font-size: 2.5rem;
+  color: #fff;
 }
 
 .hero p {
   font-size: 1.2rem;
   margin-bottom: 2rem;
+  color: #fff;
 }
 
 
@@ -161,8 +203,18 @@ p {
 
 /* Article */
 
+.article-container {
+  display: flex;
+  flex-direction: row ;
+  justify-content: space-between;
+}
+
 .article {
   margin-bottom: 1rem;
+  border: solid 1px lightgray ;
+  padding: 15px 15px 15px 15px;
+  width: 325px;
+  
 }
 
 .article__title {
@@ -174,6 +226,9 @@ p {
 .article__title-link {
   text-decoration: none;
   color: var(--orange-dark);
+}
+.article__content {
+  margin-left: 1em;
 }
 
 .article__summary {
@@ -209,6 +264,7 @@ p {
 
 .facebook-link {
   color: var(--orange-dark);
+  text-align: right;
 }
 
 /* Sidebar */
@@ -217,6 +273,11 @@ p {
   display: flex;
   flex-direction: column;
   min-width: 350px;
+}
+
+.aside-article {
+  display: flex;
+  flex-direction: row;
 }
 
 /* Footer */
@@ -229,6 +290,8 @@ p {
   border-top: 2px solid var(--orange-light);
   padding-top: 2rem;
   padding-bottom: 2rem;
+  text-align: justify;
+ 
 }
 
 .footer p {
