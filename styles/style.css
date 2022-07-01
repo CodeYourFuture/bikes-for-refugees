@@ -66,7 +66,7 @@ p {
 }
 
 .navigation__item {
-  padding: 0.5rem 0;
+  padding: 0.5rem 20px;
 }
 
 .navigation__link {
@@ -138,6 +138,7 @@ p {
   height: 58%;
   background-image: url(/images/header-bike.jpg);
   background-color: var(--grey-light);
+  margin-bottom: 50px;
 }
 
 .hero h1 {
