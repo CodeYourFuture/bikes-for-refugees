@@ -133,12 +133,11 @@ p {
 /* hero */
 
 .hero {
-  /* border-style: dashed; */
-  /* border-color: hotpink; */
-  height: 52%;
+  height: 45%;
   background-image: url(/images/header-bike.jpg);
   background-color: var(--grey-light);
   margin-bottom: 50px;
+  color: #fff;
 }
 
 .hero h1 {
@@ -151,6 +150,11 @@ p {
   margin-bottom: 2rem;
 }
 
+.hero-articles {
+  padding-top: 80px;
+  padding-left: 25px;
+  width: 95%;
+}
 
 /* Headings */
 
