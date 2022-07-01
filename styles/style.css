@@ -76,6 +76,9 @@ p {
   text-decoration: none;
 }
 
+.navigation__link:hover {
+  color: #c05326;
+}
 
 /* Text styles */
 
@@ -109,6 +112,16 @@ p {
   border: none;
   border-radius: 3px;
   padding: 7px 10px;
+}
+
+.button-style1:hover {
+  background-color: #fff;
+  color: #c05326;
+}
+
+.button-style2:hover {
+  background-color: #c05326;
+  color: #fff;
 }
 
 /* Content */
