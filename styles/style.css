@@ -63,10 +63,15 @@ p {
 .navigation__list {
   display: flex;
   list-style: none;
+  
 }
 
 .navigation__item {
-  padding: 0.5rem 0;
+  padding: 12px;
+  width: 30%;
+  text-align: center;
+  float: left;
+  text-align:left
 }
 
 .navigation__link {
@@ -74,6 +79,8 @@ p {
   font-weight: 600;
   text-transform: uppercase;
   text-decoration: none;
+
+  
 }
 
 
@@ -95,9 +102,35 @@ p {
 
 /* Buttons */
 
-  /* INSERT BUTTON STYLES HERE */
+    .donate{
+      background-color: #c05326;
+      height: 40px;
+      width: 130px;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      
+    }
 
+    .donate-bike{
+    background-color: #c05326;
+      height: 30px;
+      width: 150px;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      margin-left: 30px;
+    }
 
+      .volunteer{
+        background-color: #fff;
+          color: #c05326;
+          height: 30px;
+          width: 100px;
+          border: none;
+          border-radius: 5px;
+
+      }
 /* Content */
 
 .content {
@@ -120,18 +153,28 @@ p {
 /* hero */
 
 .hero {
-  background-image: url("header-bike.jpg");
+  background-image: url("../images/header-bike.jpg");
   background-color: var(--grey-light);
+  margin-bottom: 10%;
+    height: 59%;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .hero h1 {
   margin-bottom: 1rem;
   font-size: 2.5rem;
+  padding-top: 70px;
+  padding-left: 20px;
+  color: white;
+  
 }
 
 .hero p {
   font-size: 1.2rem;
   margin-bottom: 2rem;
+  color: white;
+  padding-left: 20px;
 }
 
 
@@ -163,6 +206,12 @@ p {
 
 .article {
   margin-bottom: 1rem;
+}
+
+.articles{
+  display: flex;
+  margin: 0px 20px;
+    
 }
 
 .article__title {
@@ -227,7 +276,7 @@ p {
 
 .footer__content {
   border-top: 2px solid var(--orange-light);
-  padding-top: 2rem;
+  padding-top: 10rem;
   padding-bottom: 2rem;
 }
 
