@@ -22,6 +22,17 @@ button {
   font-family: "Source Sans Pro", "Helvetica Neue", Arial, sans-serif;
   color: var(--grey-dark);
   font-size: 1rem;
+  padding: 1rem;
+  border:none;
+  border-radius: 1rem;
+  
+}
+.dont{
+color:#c05326;
+}
+.volun{
+  background-color: #fff;
+  color:var(--orange-dark);
 }
 
 h1,h2,h3,h4,h5,h6 {
@@ -66,8 +77,10 @@ p {
 }
 
 .navigation__item {
-  padding: 0.5rem 0;
+  padding: 2rem ;
 }
+
+
 
 .navigation__link {
   color: var(--grey-dark);
