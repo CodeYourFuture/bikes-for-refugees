@@ -27,11 +27,13 @@ button {
 h1,h2,h3,h4,h5,h6 {
   margin-top: 0;
   margin-bottom: 0;
+  color: white;
 }
 
 p {
   margin-top: 0;
   margin-bottom: 0;
+  
 }
 
 .header,
@@ -94,6 +96,41 @@ p {
 
 
 /* Buttons */
+ 
+  button{
+    padding: 0.3rem 1rem;
+    border: none;
+    border-radius: 5px;
+    
+  }
+
+  button:hover, button:focus {
+    transform: translate(1px, 2px);
+  }
+
+  .btn--today {
+    background-color: #c05326;
+    color: white;
+  }
+  .btn--valun {
+    background-color: var(--white);
+    color: darkgray;
+  }
+  .btn--now {
+    background-color: #c05326;
+    color: white;
+  }
+  }
+
+  .btn--secondary:hover, .btn--secondary:focus {
+    background-color: var(--orange-dark);
+    color: var(--orange-dark);
+  }
+
+  .btn--primary:hover, .btn--primary:focus  {
+    background-color: var(--orange-dark);
+    color: var(--orange-dark);
+  }
 
   /* INSERT BUTTON STYLES HERE */
 
@@ -120,8 +157,11 @@ p {
 /* hero */
 
 .hero {
-  background-image: url("header-bike.jpg");
+  padding: 6rem 2rem;
+  border: 1px solid var(--grey-dark);
+  background-image: url("../images/header-bike.jpg");
   background-color: var(--grey-light);
+  color: var(--grey-dark);
 }
 
 .hero h1 {
@@ -132,6 +172,7 @@ p {
 .hero p {
   font-size: 1.2rem;
   margin-bottom: 2rem;
+  color: white;
 }
 
 
@@ -159,10 +200,45 @@ p {
 }
 
 
-/* Article */
+.article-cotainer {
+  display: flex;
+  justify-content: space-between;
+}
+
+.article-cotainer.article {
+  width: 45%;
+}
 
 .article {
   margin-bottom: 1rem;
+  border: 1px solid var(--grey-dark);
+  padding: 1rem;
+}
+
+.article1 {
+  margin: 10px;
+  margin-bottom: 1rem;
+  border: 1px solid darkgray;
+  padding: 30 px 0;
+  text-align: center;
+  
+
+
+}
+
+.article2 {
+  margin: 10px;
+  margin-bottom: 1rem;
+  border: 1px solid darkgray;
+  padding: 30 px 0;
+  text-align: center;
+}
+
+
+.both-art {
+  display: flex;
+  column-gap: 40px;
+
 }
 
 .article__title {
@@ -174,6 +250,10 @@ p {
 .article__title-link {
   text-decoration: none;
   color: var(--orange-dark);
+}
+
+.article__title-link:hover{
+  color: var(--grey-dark);
 }
 
 .article__summary {
@@ -197,9 +277,15 @@ p {
   text-decoration: none;
 }
 
+
 .article__read-more a:hover,
 .article__read-more a:focus {
   text-decoration: underline;
+}
+
+.facebook-container {
+  display: flex;
+  justify-content: flex-end;
 }
 
 .fa {
