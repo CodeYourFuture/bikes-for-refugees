@@ -96,7 +96,13 @@ p {
 /* Buttons */
 
   /* INSERT BUTTON STYLES HERE */
-
+.button1 {
+  background-color: #c05326;
+}
+#button2 {
+  background-color: #fff;
+  color: #c05326;
+}
 
 /* Content */
 
