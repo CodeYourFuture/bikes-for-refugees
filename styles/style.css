@@ -186,6 +186,8 @@ p {
   margin-bottom: 1rem;
   border: 2px solid #e4e4e4;
   border-radius: 5px;
+  padding: 10px;
+  width: 46%;
 }
 
 .article__title {
@@ -233,6 +235,12 @@ p {
 .facebook-link {
   color: var(--orange-dark);
   align-self: flex-end;
+}
+
+.section2-articles {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 100px;
 }
 
 /* Sidebar */
