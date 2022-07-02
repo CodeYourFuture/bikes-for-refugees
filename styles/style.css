@@ -5,13 +5,13 @@
  * 
  */
 
- :root {
-   --grey-dark: #292b2c;
-   --grey-light: #e4e4e4;
-   --orange-dark: #c05326;
-   --orange-light: #f7eae4;
-   --white: #fff;
- }
+:root {
+  --grey-dark: #292b2c;
+  --grey-light: #e4e4e4;
+  --orange-dark: #c05326;
+  --orange-light: #f7eae4;
+  --white: #fff;
+}
 
 body {
   margin: 0;
@@ -23,19 +23,26 @@ button {
   color: var(--grey-dark);
   font-size: 1rem;
   padding: 1rem;
-  border:none;
+  border: none;
   border-radius: 1rem;
-  
-}
-.dont{
-color:#c05326;
-}
-.volun{
-  background-color: #fff;
-  color:var(--orange-dark);
+
 }
 
-h1,h2,h3,h4,h5,h6 {
+.dont {
+  color: #c05326;
+}
+
+.volun {
+  background-color: #fff;
+  color: var(--orange-dark);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   margin-top: 0;
   margin-bottom: 0;
 }
@@ -77,7 +84,7 @@ p {
 }
 
 .navigation__item {
-  padding: 2rem ;
+  padding: 2rem;
 }
 
 
@@ -108,7 +115,7 @@ p {
 
 /* Buttons */
 
-  /* INSERT BUTTON STYLES HERE */
+/* INSERT BUTTON STYLES HERE */
 
 
 /* Content */
