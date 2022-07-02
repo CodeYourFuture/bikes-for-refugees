@@ -6,31 +6,20 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
 
     <link rel="dns-prefetch" href="//fonts.googleapis.com" />
-    <link
-      href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700,"
-      rel="stylesheet"
-    />
-    <link
-      rel="stylesheet"
-      href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
-    />
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700," rel="stylesheet"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"/>
     <link rel="stylesheet" href="styles/style.css" />
 
     <title>Bikes for Refugees</title>
   </head>
 
   <body>
-    <div class="header">
-
+    <header class="header">
         <a href="#">
-          <img
-            src="images/bikes-for-refugees_logo.jpg"
-            alt="Logo for Bikes for Refugees Scotland"
-            class="header__logo"
-          />
+          <img src="images/bikes-for-refugees_logo.jpg" alt="Logo for Bikes for Refugees Scotland" class="header__logo"/>
         </a>
 
-        <div>
+        <nav>
           <ul class="navigation__list">
             <li class="navigation__item">
               <a class="navigation__link" href="#">Home</a>
@@ -45,14 +34,13 @@
               <a class="navigation__link" href="#">Contact Us</a>
             </li>
           </ul>
-        </div>
+        </nav>
 
-        <button>Donate Now</button>
-
-    </div>
+        <button class="orange-btn" >Donate Now</button>
+    </header>
 
     <div class="content">
-        <div class="main">
+        <main class="main">
           <div class="alert">
             You've helped us give <span class="text-highlight">72</span> bikes
             to refugees and asylum seekers so far. <strong>Thank you!</strong>
@@ -64,30 +52,15 @@
               Providing donated bikes and accessories to refugees and asylum
               seekers in Scotland.
             </p>
-            <button>Donate a bike today</button>
-            <button>Volunteer</button>
+            <button class="orange-btn">Donate a bike today</button>
+            <button class="white-btn">Volunteer</button>
           </div>
 
-          <div>
+          <article>
             <h2 class="heading-underline">Learn more</h2>
 
-            <div>
-              <div class="article">
-                <h3 class="article__title">Why do refugees need bikes?</h3>
-                <p class="article__summary">
-                  Many refugees are placed in housing in areas where there are
-                  few jobs. Bikes provide low-cost transportation so that they
-                  can get to work, manage child care and do their shopping.
-                </p>
-                <p class="article__read-more">
-                  <a href="#">
-                    <span class="arrow-right"></span>
-                    Learn more
-                  </a>
-                </p>
-              </div>
-
-              <div class="article">
+            <section>
+              <article class="article" style="float: right;">
                 <h3 class="article__title">How can I help?</h3>
                 <p class="article__summary">
                   We need lots of bikes and bike accessories! If you have an
@@ -100,21 +73,35 @@
                     Learn more
                   </a>
                 </p>
-              </div>
-            </div>
-          </div>
-        </div>
+              </article>
 
-        <div class="sidebar">
+              <article class="article">
+                <h3 class="article__title">Why do refugees need bikes?</h3>
+                <p class="article__summary">
+                  Many refugees are placed in housing in areas where there are
+                  few jobs. Bikes provide low-cost transportation so that they
+                  can get to work, manage child care and do their shopping.
+                </p>
+                <p class="article__read-more">
+                  <a href="#">
+                    <span class="arrow-right"></span>
+                    Learn more
+                  </a>
+                </p>
+              </article>
+            </section>
+          </article>
+        </main>
+
+        <aside class="sidebar">
           <h2 class="heading-underline">Upcoming events</h2>
 
-          <div class="article">
+          <article class="article">
             <img
               class="article__thumbnail"
-              src="spring-fundraisers_thumbnail.jpg"
-              alt=""
-            />
-            <div class="article__content">
+              src="images/spring-fundraisers_thumbnail.jpg"
+              alt="Thumbnail for spring fundraisers"/>
+            <section class="article__content">
               <h3 class="article__title">
                 <a class="article__title-link" href="#">Join us for our Spring fundraisers</a>
               </h3>
@@ -122,29 +109,28 @@
                 Riders needed now to help raise awareness and funds for BfR and
                 Médecins Sans Frontières.
               </p>
-            </div>
-          </div>
+            </section>
+          </article>
 
-          <div class="article">
+          <article class="article">
             <img
               class="article__thumbnail"
-              src="bikes-for-refugees_logo.jpg"
-              alt=""
+              src="images/bikes-for-refugees_logo.jpg"
+              alt="Logo for Bikes for refugees" style="float:left; padding-right: 20px;"
             />
-            <div class="article__content">
+            <section class="article__content">
               <h3 class="article__title">
                 <a class="article__title-link" href="#">Bike dropoff event in Edinburgh on May 11</a>
               </h3>
-            </div>
-          </div>
+            </section>
+          </article>
 
-          <div class="article">
+          <article class="article">
             <img
               class="article__thumbnail"
-              src="edinburgh-damascus_thumbnail.png"
-              alt=""
-            />
-            <div class="article__content">
+              src="images/edinburgh-damascus_thumbnail.png"
+              alt="Thumbnail for Edinburgh Damascus"/>
+            <section class="article__content">
               <h3 class="article__title">
                 <a class="article__title-link" href="#">Help us cycle 4,797km</a>
               </h3>
@@ -152,8 +138,8 @@
                 We need you to help us cycle 4797km, the distance of Edinburgh
                 to Damascus.
               </p>
-            </div>
-          </div>
+            </section>
+          </article>
 
           <a
             href="https://www.facebook.com/BikesforRefugeesScotland/events/?ref=page_internal"
@@ -163,10 +149,10 @@
             <span class="fa fa-facebook-square"></span>
             All Facebook events
           </a>
-        </div>
-    </div>
+        </aside>
+      </div>
 
-    <div class="footer">
+    <footer class="footer">
       <div class="footer__content">
         <p>
           <strong>Bikes for Refugees Scotland is a volunteer-led project to help
@@ -174,6 +160,6 @@
         </p>
         <p>Website by Code Your Future</p>
       </div>
-    </div>
+    </footer>
   </body>
 </html>
