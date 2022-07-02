@@ -198,6 +198,13 @@ button {
 
 }
 
+.box:first-child{
+  background: grey;
+}
+
+.box:last-child{
+  background: white;
+}
 
 /* Article */
 
