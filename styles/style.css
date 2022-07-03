@@ -15,13 +15,25 @@
 
 body {
   margin: 0;
-}
-
-body,
-button {
   font-family: "Source Sans Pro", "Helvetica Neue", Arial, sans-serif;
   color: var(--grey-dark);
   font-size: 1rem;
+}
+
+button {
+  color: white;
+  background-color: #c05326;
+  height: 40px;
+  border: none;
+  border-radius: 5px;
+}
+button:hover{
+  background-color: white;
+  color: #c05326;
+}
+.hero div{
+  margin-left: 60px;
+  padding-top: 80px;
 }
 
 h1,h2,h3,h4,h5,h6 {
@@ -67,6 +79,10 @@ p {
 
 .navigation__item {
   padding: 0.5rem 0;
+  padding: 10px;
+}
+.navigation__item a:hover{
+  color: #c05326;
 }
 
 .navigation__link {
@@ -120,8 +136,11 @@ p {
 /* hero */
 
 .hero {
-  background-image: url("header-bike.jpg");
+  background-image: url("../images/header-bike.jpg");
   background-color: var(--grey-light);
+  height: 350px;
+  margin-bottom: 40px;
+  color: #fff;
 }
 
 .hero h1 {
