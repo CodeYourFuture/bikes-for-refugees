@@ -21,8 +21,7 @@
 
   <body>
     <div class="header">
-
-        <a href="#">
+         <a href="#">
           <img
             src="images/bikes-for-refugees_logo.jpg"
             alt="Logo for Bikes for Refugees Scotland"
@@ -47,7 +46,8 @@
           </ul>
         </div>
 
-        <button>Donate Now</button>
+        <button class="donate btn1">Donate Now</button>
+        
 
     </div>
 
@@ -64,14 +64,26 @@
               Providing donated bikes and accessories to refugees and asylum
               seekers in Scotland.
             </p>
-            <button>Donate a bike today</button>
-            <button>Volunteer</button>
+            <div class="btn">
+              <button class="donate btn1">Donate a bike today</button>
+            <button class="volunteers btn2">Volunteer</button>
+            </div>
+            
           </div>
 
+          <!-- <div id="container">
+             CONTAINER START 
+            <div>Check availability</div>
+            <div>Donate bikes</div>
+            <div>Volunteer with us</div>
+          </div> -->
+          <!-- CONTAINER END -->
+          
           <div>
+            
             <h2 class="heading-underline">Learn more</h2>
 
-            <div>
+            <div class="bg-flex2">
               <div class="article">
                 <h3 class="article__title">Why do refugees need bikes?</h3>
                 <p class="article__summary">
@@ -108,10 +120,10 @@
         <div class="sidebar">
           <h2 class="heading-underline">Upcoming events</h2>
 
-          <div class="article">
+          <div class="article bg-flex" >
             <img
               class="article__thumbnail"
-              src="spring-fundraisers_thumbnail.jpg"
+              src="./images/spring-fundraisers_thumbnail.jpg"
               alt=""
             />
             <div class="article__content">
@@ -125,10 +137,10 @@
             </div>
           </div>
 
-          <div class="article">
+          <div class="article bg-flex">
             <img
               class="article__thumbnail"
-              src="bikes-for-refugees_logo.jpg"
+              src="./images/bikes-for-refugees_logo.jpg"
               alt=""
             />
             <div class="article__content">
@@ -138,10 +150,10 @@
             </div>
           </div>
 
-          <div class="article">
+          <div class="article bg-flex">
             <img
               class="article__thumbnail"
-              src="edinburgh-damascus_thumbnail.png"
+              src="./images/edinburgh-damascus_thumbnail.png"
               alt=""
             />
             <div class="article__content">
@@ -166,6 +178,11 @@
         </div>
     </div>
 
+    
+    </div>
+    
+  </body>
+  <footer>
     <div class="footer">
       <div class="footer__content">
         <p>
@@ -174,6 +191,5 @@
         </p>
         <p>Website by Code Your Future</p>
       </div>
-    </div>
-  </body>
+  </footer>
 </html>
