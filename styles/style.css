@@ -14,7 +14,7 @@
  }
 
 body {
-  margin: 0;
+ margin: 0;
 }
 
 body,
@@ -37,9 +37,14 @@ p {
 .header,
 .content,
 .footer {
-  padding: 0 1.5rem;
-  max-width: 1200px;
+  padding: 0 2.5rem;
+  max-width: 1700px;
   margin: 0 auto;
+  border: 1px solid black;
+}
+
+.main {
+  width: 75%;
 }
 
 /* Header */
@@ -54,7 +59,7 @@ p {
 }
 
 .header__logo {
-  max-height: 90px;
+  max-height: 80px;
   width: auto;
 }
 
@@ -66,7 +71,8 @@ p {
 }
 
 .navigation__item {
-  padding: 0.5rem 0;
+  padding: 0 1rem;
+  color: #030a0e;
 }
 
 .navigation__link {
@@ -95,14 +101,29 @@ p {
 
 /* Buttons */
 
-  /* INSERT BUTTON STYLES HERE */
-
+.button1,
+.button2{
+  background-color: #c05326;
+  color: #e4e4e4;
+  border: none;
+  border-radius: 6px;
+}
+.button3{
+  border: none;
+  border-radius: 6px;
+}
+.button2,
+.button3{
+  padding: 5px 30px;
+  margin: 0 2px;
+}
 
 /* Content */
 
 .content {
   display: flex;
   flex-direction: column;
+  padding-bottom: 5rem;
 }
 
 /* Alert */
@@ -120,8 +141,9 @@ p {
 /* hero */
 
 .hero {
-  background-image: url("header-bike.jpg");
+  background-image: url("/images/header-bike.jpg");
   background-color: var(--grey-light);
+  border: 1px solid black;
 }
 
 .hero h1 {
@@ -134,12 +156,33 @@ p {
   margin-bottom: 2rem;
 }
 
+/* learn more */
+
+#main-section {
+  margin-top: 5rem;
+}
+
+.learn_more {
+  display: flex;
+  flex-direction: row;
+}
+
+.first_article,
+.second_article {
+  border: 1px solid black;
+} 
+
+.first_article {
+  margin-right: 2rem;
+}
+
+
 
 /* Headings */
 
 .heading-underline {
   position: relative;
-  margin-bottom: 2rem;
+  margin-bottom: 2.5rem;
   padding-bottom: 0.5rem;
   border-bottom: 2px solid var(--orange-light);
   font-size: 1rem;
@@ -162,6 +205,10 @@ p {
 /* Article */
 
 .article {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  border: 5px solid #030a0e;
   margin-bottom: 1rem;
 }
 
@@ -205,6 +252,7 @@ p {
 .fa {
   margin-right: 0.5rem;
   color: var(--orange-dark);
+  text-align: left;
 }
 
 .facebook-link {
@@ -222,13 +270,13 @@ p {
 /* Footer */
 
 .footer {
-  margin-top: 2rem;
+  margin-top: 10rem;
 }
 
 .footer__content {
   border-top: 2px solid var(--orange-light);
-  padding-top: 2rem;
-  padding-bottom: 2rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
 }
 
 .footer p {
