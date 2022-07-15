@@ -137,8 +137,10 @@ button:hover {
 /* hero */
 
 .hero {
-  background-image: url("header-bike.jpg");
+  background-image: url("/images/header-bike.jpg");
   background-color: var(--grey-light);
+  padding: 5rem;
+  color: white;
 }
 
 .hero h1 {
@@ -174,10 +176,21 @@ button:hover {
   background: var(--orange-dark);
 }
 
+/* Section */
+.learn-more {
+  margin-top: 4rem;
+}
+.learn-more-articles {
+  display: flex;
+  gap: 1.5em;
+}
+
 /* Article */
 
 .article {
   margin-bottom: 1rem;
+  padding: 4rem;
+  border: solid 2px rgb(202, 202, 202);
 }
 
 .article__title {
