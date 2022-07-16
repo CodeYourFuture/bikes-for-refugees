@@ -315,6 +315,19 @@ nav {
 
 /* Media queries */
 
+@media screen and (max-width: 320px) {
+  .content {
+    flex-direction: column;
+  }
+
+  .header {
+    flex-direction: column;
+  }
+
+  .main {
+    padding-right: 2rem;
+  }
+}
 @media screen and (min-width: 992px) {
   .content {
     flex-direction: row;
@@ -324,3 +337,4 @@ nav {
     padding-right: 2rem;
   }
 }
+
