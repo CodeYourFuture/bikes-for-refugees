@@ -66,7 +66,7 @@ p {
 }
 
 .navigation__item {
-  padding: 0.5rem 0;
+  padding: 0.5rem ;
 }
 
 .navigation__link {
@@ -95,8 +95,30 @@ p {
 
 /* Buttons */
 
-  /* INSERT BUTTON STYLES HERE */
+button{
+  background-color: var(--orange-dark);
+  border: none;
+  padding: 0.5rem;
+  border-radius: 5px;
+  color: var(--white);
+}
 
+  .donate_btn, .volunteer_btn{
+    padding: 0.5rem;
+    border-radius: 5px;
+    border: none;
+  }
+
+  .donate_btn{
+   margin-left: 2rem;
+   background-color: var(--orange-dark);
+   color: white;
+  }
+
+  .volunteer_btn{
+    color: var(--orange-dark);
+    background-color: white;
+  }
 
 /* Content */
 
@@ -120,19 +142,28 @@ p {
 /* hero */
 
 .hero {
-  background-image: url("header-bike.jpg");
-  background-color: var(--grey-light);
+  background-image: url("../images/header-bike.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 50%;
+  color: white;
+  margin-bottom: 5rem;
+
 }
 
 .hero h1 {
   margin-bottom: 1rem;
   font-size: 2.5rem;
+  padding: 6rem 0 0 2rem;
 }
 
 .hero p {
   font-size: 1.2rem;
   margin-bottom: 2rem;
+  padding-left: 2rem;
 }
+
+
 
 
 /* Headings */
@@ -163,6 +194,10 @@ p {
 
 .article {
   margin-bottom: 1rem;
+  display: flex;
+  border: 2px var(--grey-light) solid;
+  border-radius: 2px;
+  padding: 2rem 0 2rem 1rem;
 }
 
 .article__title {
@@ -184,6 +219,7 @@ p {
 .article__thumbnail {
   object-fit: contain;
   width: 5rem;
+  margin-right: 1rem;
 }
 
 .article__read-more {
@@ -219,10 +255,27 @@ p {
   min-width: 350px;
 }
 
+.sidebar > a{
+  margin-left: 12rem;
+}
+
+/* ---------- */
+
+.article-wrapper{
+  display: flex;
+  gap: 1rem;
+}
+
+.article-wrapper .article{
+  display: flex;
+  flex-direction: column;
+
+}
+
 /* Footer */
 
 .footer {
-  margin-top: 2rem;
+  margin-top: 9rem;
 }
 
 .footer__content {
