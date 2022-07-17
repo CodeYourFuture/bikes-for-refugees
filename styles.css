@@ -5,13 +5,13 @@
  * 
  */
 
- :root {
-   --grey-dark: #292b2c;
-   --grey-light: #e4e4e4;
-   --orange-dark: #c05326;
-   --orange-light: #f7eae4;
-   --white: #fff;
- }
+:root {
+  --grey-dark: #292b2c;
+  --grey-light: #e4e4e4;
+  --orange-dark: #c05326;
+  --orange-light: #f7eae4;
+  --white: #fff;
+}
 
 body {
   margin: 0;
@@ -24,7 +24,12 @@ button {
   font-size: 1rem;
 }
 
-h1,h2,h3,h4,h5,h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   margin-top: 0;
   margin-bottom: 0;
 }
@@ -66,7 +71,7 @@ p {
 }
 
 .navigation__item {
-  padding: 0.5rem 0;
+  padding: 0.5rem 20px;
 }
 
 .navigation__link {
@@ -76,6 +81,9 @@ p {
   text-decoration: none;
 }
 
+.navigation__link:hover {
+  color: #c05326;
+}
 
 /* Text styles */
 
@@ -92,11 +100,33 @@ p {
   border-left-color: var(--orange-dark);
 }
 
-
 /* Buttons */
 
-  /* INSERT BUTTON STYLES HERE */
+.button-style1 {
+  background-color: #c05326;
+  color: #fff;
+  border: none;
+  border-radius: 3px;
+  padding: 7px 10px;
+}
 
+.button-style2 {
+  background-color: #fff;
+  color: #c05326;
+  border: none;
+  border-radius: 3px;
+  padding: 7px 10px;
+}
+
+.button-style1:hover {
+  background-color: #fff;
+  color: #c05326;
+}
+
+.button-style2:hover {
+  background-color: #c05326;
+  color: #fff;
+}
 
 /* Content */
 
@@ -120,8 +150,11 @@ p {
 /* hero */
 
 .hero {
-  background-image: url("header-bike.jpg");
+  height: 45%;
+  background-image: url(images/header-bike.jpg.);
   background-color: var(--grey-light);
+  margin-bottom: 50px;
+  color: #fff;
 }
 
 .hero h1 {
@@ -134,6 +167,11 @@ p {
   margin-bottom: 2rem;
 }
 
+.hero-articles {
+  padding-top: 80px;
+  padding-left: 25px;
+  width: 95%;
+}
 
 /* Headings */
 
@@ -158,11 +196,14 @@ p {
   background: var(--orange-dark);
 }
 
-
 /* Article */
 
 .article {
   margin-bottom: 1rem;
+  border: 2px solid #e4e4e4;
+  border-radius: 5px;
+  padding: 10px;
+  width: 46%;
 }
 
 .article__title {
@@ -184,6 +225,7 @@ p {
 .article__thumbnail {
   object-fit: contain;
   width: 5rem;
+  padding-right: 20px;
 }
 
 .article__read-more {
@@ -209,6 +251,13 @@ p {
 
 .facebook-link {
   color: var(--orange-dark);
+  align-self: flex-end;
+}
+
+.section2-articles {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 100px;
 }
 
 /* Sidebar */
@@ -217,6 +266,16 @@ p {
   display: flex;
   flex-direction: column;
   min-width: 350px;
+}
+
+.sidebar-article {
+  margin-bottom: 1rem;
+  border: 2px solid #e4e4e4;
+  border-radius: 5px;
+  display: flex;
+  justify-content: space-around;
+  height: fit-content;
+  padding: 20px;
 }
 
 /* Footer */
