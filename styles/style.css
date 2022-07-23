@@ -248,3 +248,10 @@ p {
     padding-right: 2rem;
   }
 }
+
+.buton_color {
+background-color: #c05326;
+}
+#buton_color_text {
+  color:#c05326 ;
+}
