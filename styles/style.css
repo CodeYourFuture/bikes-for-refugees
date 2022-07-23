@@ -22,6 +22,10 @@ button {
   font-family: "Source Sans Pro", "Helvetica Neue", Arial, sans-serif;
   color: var(--grey-dark);
   font-size: 1rem;
+  
+}
+.vol {
+  background-color:#fff;
 }
 
 h1,h2,h3,h4,h5,h6 {
