@@ -17,13 +17,20 @@ body {
   margin: 0;
 }
 
-body,
+
 button {
+  background-color: #c05326;
   font-family: "Source Sans Pro", "Helvetica Neue", Arial, sans-serif;
   color: var(--grey-dark);
   font-size: 1rem;
 }
-
+.vol-btn{
+  color: #c05326;
+  background-color: white;
+}
+do-btn{
+  background-color: #c05326;
+}
 h1,h2,h3,h4,h5,h6 {
   margin-top: 0;
   margin-bottom: 0;
