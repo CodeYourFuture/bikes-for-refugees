@@ -243,7 +243,22 @@ p {
   background-color: #fff;
   color: #c05326;
 }
+.boxes {
+background-color: #fff;
+height: 150px;
+display: flex;
+justify-content: space-between;
+align-items: center;
 
+}
+
+.section1 {
+  border: solid 2px;
+  height: 80%;
+  width: 150px;
+  background-color: #ddd;
+
+}
 /* Media queries */
 
 @media screen and (min-width: 992px) {
