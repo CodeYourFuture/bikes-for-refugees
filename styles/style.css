@@ -236,6 +236,13 @@ p {
   text-align: center;
   font-size: 0.85rem;
 }
+.Donate {
+  background-color: #c05326;
+}
+.volunteer {
+  background-color: #fff;
+  color: #c05326;
+}
 
 /* Media queries */
 
