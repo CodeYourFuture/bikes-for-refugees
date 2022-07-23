@@ -93,10 +93,27 @@ p {
 }
 
 
-/* Buttons */
+
+
 
   /* INSERT BUTTON STYLES HERE */
-
+.donation-buttons{
+  background-color: #c05326;
+  color: #f7eae4;
+}
+#volunteer-button{
+background-color: #fff;
+color:#c05326;
+}
+.buttons-section{
+  border: solid 3px;
+   display: flex;
+  justify-content: space-between;
+}
+.btn-style{
+ 
+  
+}
 
 /* Content */
 
