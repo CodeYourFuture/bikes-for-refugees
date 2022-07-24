@@ -237,6 +237,30 @@ p {
   font-size: 0.85rem;
 }
 
+.donate-btn {
+  background-color: #c05326;
+}
+
+.volunteer-btn {
+  background-color: #fff;
+  color: #c05326;
+}
+
+.flex-container {
+  display: flex;
+  justify-content: space-between;
+  padding: 30px;
+}
+
+.flex-box {
+  background-color: #eee;
+  width: 100px;
+  height: 75px;
+  text-align: center;
+  border: 2px solid black;
+}
+
+
 /* Media queries */
 
 @media screen and (min-width: 992px) {
