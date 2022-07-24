@@ -67,6 +67,7 @@ p {
 
 .navigation__item {
   padding: 0.5rem 0;
+  margin-left: 20px;
 }
 
 .navigation__link {
@@ -124,7 +125,7 @@ p {
   background-size: cover;
   background-position: 50% 50%;
   color: white;
-  padding: 30px;
+  padding: 80px 30px;
 }
 
 .hero h1 {
