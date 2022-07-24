@@ -120,8 +120,11 @@ p {
 /* hero */
 
 .hero {
-  background-image: url("header-bike.jpg");
-  background-color: var(--grey-light);
+  background-image: url("../images/header-bike.jpg");
+  background-size: cover;
+  background-position: 50% 50%;
+  color: white;
+  padding: 30px;
 }
 
 .hero h1 {
@@ -238,12 +241,19 @@ p {
 }
 
 .donate-btn {
-  background-color: #c05326;
+  background-color: #C05326;
+  color: white;
+  border: none;
+  padding: 10px;
+  border-radius: 5px;
 }
 
 .volunteer-btn {
   background-color: #fff;
   color: #c05326;
+  border: none;
+  padding: 10px;
+  border-radius: 5px;
 }
 
 .flex-container {
