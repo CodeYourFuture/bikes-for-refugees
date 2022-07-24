@@ -169,10 +169,21 @@ p {
   margin-bottom: 1rem;
 }
 
+.sidebar > .article {
+  display: flex;
+  border: 1px solid black;
+  justify-content: space-between;
+  padding: 20px;
+}
+
 .article__title {
   margin-bottom: 0.5rem;
   font-size: 1rem;
   font-weight: 700;
+}
+
+.article__content {
+  margin-left: 10px;
 }
 
 .article__title-link {
@@ -271,6 +282,15 @@ p {
   border: 2px solid black;
 }
 
+.section-article {
+  display: flex;
+}
+
+.section-article > .article {
+  border: 1px solid black;
+  margin: 10px;
+  padding: 20px;
+}
 
 /* Media queries */
 
