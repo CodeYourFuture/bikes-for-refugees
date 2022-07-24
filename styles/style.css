@@ -67,6 +67,7 @@ p {
 
 .navigation__item {
   padding: 0.5rem 0;
+  margin-left: 20px;
 }
 
 .navigation__link {
@@ -120,8 +121,11 @@ p {
 /* hero */
 
 .hero {
-  background-image: url("header-bike.jpg");
-  background-color: var(--grey-light);
+  background-image: url("../images/header-bike.jpg");
+  background-size: cover;
+  background-position: 50% 50%;
+  color: white;
+  padding: 80px 30px;
 }
 
 .hero h1 {
@@ -165,10 +169,21 @@ p {
   margin-bottom: 1rem;
 }
 
+.sidebar > .article {
+  display: flex;
+  border: 1px solid black;
+  justify-content: space-between;
+  padding: 20px;
+}
+
 .article__title {
   margin-bottom: 0.5rem;
   font-size: 1rem;
   font-weight: 700;
+}
+
+.article__content {
+  margin-left: 10px;
 }
 
 .article__title-link {
@@ -235,6 +250,46 @@ p {
   padding-bottom: 1rem;
   text-align: center;
   font-size: 0.85rem;
+}
+
+.donate-btn {
+  background-color: #C05326;
+  color: white;
+  border: none;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.volunteer-btn {
+  background-color: #fff;
+  color: #c05326;
+  border: none;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.flex-container {
+  display: flex;
+  justify-content: space-between;
+  padding: 30px;
+}
+
+.flex-box {
+  background-color: #eee;
+  width: 100px;
+  height: 75px;
+  text-align: center;
+  border: 2px solid black;
+}
+
+.section-article {
+  display: flex;
+}
+
+.section-article > .article {
+  border: 1px solid black;
+  margin: 10px;
+  padding: 20px;
 }
 
 /* Media queries */
