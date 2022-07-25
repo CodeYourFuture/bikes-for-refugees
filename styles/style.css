@@ -5,13 +5,13 @@
  * 
  */
 
- :root {
-   --grey-dark: #292b2c;
-   --grey-light: #e4e4e4;
-   --orange-dark: #c05326;
-   --orange-light: #f7eae4;
-   --white: #fff;
- }
+:root {
+  --grey-dark: #292b2c;
+  --grey-light: #e4e4e4;
+  --orange-dark: #c05326;
+  --orange-light: #f7eae4;
+  --white: #fff;
+}
 
 body {
   margin: 0;
@@ -24,7 +24,12 @@ button {
   font-size: 1rem;
 }
 
-h1,h2,h3,h4,h5,h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   margin-top: 0;
   margin-bottom: 0;
 }
@@ -67,6 +72,7 @@ p {
 
 .navigation__item {
   padding: 0.5rem 0;
+  margin: 14px;
 }
 
 .navigation__link {
@@ -75,7 +81,6 @@ p {
   text-transform: uppercase;
   text-decoration: none;
 }
-
 
 /* Text styles */
 
@@ -92,11 +97,30 @@ p {
   border-left-color: var(--orange-dark);
 }
 
-
 /* Buttons */
+.btn {
+  background-color: var(--orange-dark);
+  color: #fff;
+  /* list-style-type: none; */
+  border: none;
+  border-radius: 3px;
+  padding: 5px;
+  cursor: pointer;
+}
 
-  /* INSERT BUTTON STYLES HERE */
-
+.btn:hover {
+  background-color: #f84e04;
+}
+.par-button button:last-child {
+  color: var(--orange-dark);
+  background-color: #fff;
+  border: none;
+}
+.par-button button:last-child:hover {
+  color: #f84e04;
+  background-color: rgb(243, 232, 232);
+}
+/* INSERT BUTTON STYLES HERE */
 
 /* Content */
 
@@ -120,20 +144,31 @@ p {
 /* hero */
 
 .hero {
-  background-image: url("header-bike.jpg");
+  height: 354px;
+  background-image: url("../images/header-bike.jpg");
   background-color: var(--grey-light);
+  background-size: cover;
+  display: flex;
+  /* flex-direction: column; */
+  flex-flow: column wrap;
+  /* align-content: center; */
+  justify-content: center;
+  margin-bottom: 25px;
 }
-
+.hero > * {
+  padding-left: 35px;
+}
 .hero h1 {
   margin-bottom: 1rem;
   font-size: 2.5rem;
+  color: #fff;
 }
 
 .hero p {
   font-size: 1.2rem;
   margin-bottom: 2rem;
+  color: #fff;
 }
-
 
 /* Headings */
 
@@ -158,11 +193,28 @@ p {
   background: var(--orange-dark);
 }
 
-
 /* Article */
+.article-noImage {
+  display: flex;
+  gap: 2rem;
+}
+.article-noImage .article {
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  border: solid rgb(224, 211, 211) 1px;
+}
 
-.article {
-  margin-bottom: 1rem;
+.sidebar .article {
+  margin-bottom: 15px;
+  border: solid rgb(224, 211, 211) 1px;
+  display: flex;
+  /* justify-content: center; */
+  width: 21.8rem;
+  height: auto;
+}
+.article__content {
+  padding: 17px;
 }
 
 .article__title {
@@ -184,6 +236,7 @@ p {
 .article__thumbnail {
   object-fit: contain;
   width: 5rem;
+  margin-left: 15px;
 }
 
 .article__read-more {
@@ -209,6 +262,9 @@ p {
 
 .facebook-link {
   color: var(--orange-dark);
+  position: relative;
+  left: 195px;
+  top: 2px;
 }
 
 /* Sidebar */
