@@ -100,10 +100,20 @@ p {
 
 /* Content */
 
+.bike1 {
+  background-color: #c05326;
+}
+
+.bike2 {
+  background-color: #fff;
+color: #c05326;
+}
+
 .content {
   display: flex;
   flex-direction: column;
 }
+
 
 /* Alert */
 
@@ -236,7 +246,34 @@ p {
   text-align: center;
   font-size: 0.85rem;
 }
-
+.w3-container{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+ justify-content:space-between;
+ font-size: 25px;
+}
+ 
+.w3 {
+  background-color: rgb(189, 172, 172);
+  height: 100px;
+  width: 170px;
+  text-align: center;
+  padding-top: 5%;
+}
+w4{
+  height: 100px;
+  width: 170px;
+  text-align: center;
+  padding-top: 5%;
+}
+w5{
+  height: 100px;
+  width: 170px;
+  text-align: center;
+  padding-top: 5%;
+  border: 1px solid #ddd;
+}
 /* Media queries */
 
 @media screen and (min-width: 992px) {
@@ -247,4 +284,5 @@ p {
   .main {
     padding-right: 2rem;
   }
+ 
 }
