@@ -185,16 +185,19 @@ p {
 
 .article {
   margin-bottom: 1rem;
-  
+  border: 1px solid rgb(225, 220, 220);
 }
 
 .article__title {
+  padding: 5px;;
+  display: flex;
   margin-bottom: 0.5rem;
   font-size: 1rem;
   font-weight: 700;
 }
 
 .article__title-link {
+
   text-decoration: none;
   color: var(--orange-dark);
 }
