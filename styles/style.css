@@ -97,7 +97,8 @@ p {
 /* INSERT BUTTON STYLES HERE */
 button{
     border: none;
-    border-radius: 2px;
+    border-radius: 3px;
+    padding: 5px;
   }
 .donation-buttons, 
 .donate-bike-btn{
@@ -137,20 +138,28 @@ color:#c05326;
   background-image: url("/images/header-bike.jpg");
   background-color: var(--grey-light);
   color: white;
-  padding: 10%;
+  padding: 9%;
+  padding-bottom: 20%;
 }
 
 .hero h1 {
   margin-bottom: 1rem;
-  font-size: 2.5rem;
+  font-size: 1.5rem;
 }
 
 .hero p {
-  font-size: 1.2rem;
+  font-size: 1rem;
   margin-bottom: 2rem;
 }
+/* articles-section */
+.articles-section{
+  margin: 20px;
+}
 
-
+/* main-content-articles */
+.main-content-articles{
+  display: flex;
+}
 /* Headings */
 
 .heading-underline {
@@ -161,6 +170,12 @@ color:#c05326;
   font-size: 1rem;
   font-weight: 600;
   text-transform: uppercase;
+}
+
+/* sidebar */
+
+.sidebar{
+  display: flex;
 }
 
 .heading-underline:before {
@@ -179,6 +194,14 @@ color:#c05326;
 
 .article {
   margin-bottom: 1rem;
+  border: solid gray 1px;
+  border-radius: 2px;
+  padding: 10px;
+  margin: 15px;
+}
+.article-sidebar{
+display: flex;
+align-items: center;
 }
 
 .article__title {
@@ -200,6 +223,7 @@ color:#c05326;
 .article__thumbnail {
   object-fit: contain;
   width: 5rem;
+  margin: 20px;
 }
 
 .article__read-more {
