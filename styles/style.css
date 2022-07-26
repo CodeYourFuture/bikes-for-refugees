@@ -76,8 +76,22 @@ p {
 }
 
 .navigation__item {
-  padding: 0.5rem 0;
+  padding: 1rem ;
 }
+
+.navigation__item:hover {
+  background-color: #c05326;
+  border-radius: 5px;
+  color: #ffffff;
+
+}
+
+.navigation__item:active {
+  background-color: #fff;
+  color: #000;
+}
+
+
 
 .navigation__link {
   color: var(--grey-dark);
@@ -286,6 +300,15 @@ p {
   padding: 10px;
 }
 
+
+.donateNow:hover {
+  background-color: #fff;
+  border-radius: 5px;
+  color: #c05326;
+
+}
+
+
 .facebook {
   flex-direction: row;
   justify-content: flex-end;
@@ -302,6 +325,15 @@ p {
   border-radius: 5px;
 }
 
+
+.donateABike:hover {
+  background-color: #fff;
+  border-radius: 5px;
+  color: #c05326;
+
+}
+
+
 .volunteer {
   padding: 10px;
   background-color: #fff;
@@ -309,4 +341,12 @@ p {
   border: 0px solid #fff;
   font-weight: bold;
   border-radius: 5px;
+}
+
+
+.volunteer:hover {
+  background-color: #c05326;
+  border-radius: 5px;
+  color: #fff;
+
 }
