@@ -176,6 +176,7 @@ color:#c05326;
 
 .sidebar{
   display: flex;
+  margin: 20px;
 }
 
 .heading-underline:before {
