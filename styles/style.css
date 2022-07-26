@@ -274,6 +274,8 @@ p {
 .article{
 
  border: solid rgb(165, 163, 163) 1px;
+ border-radius: 5px;
+
  padding: 20px;
 }
 
