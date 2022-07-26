@@ -15,6 +15,7 @@
 
 body {
   margin: 0;
+  opacity: 1;
 }
 
 body,
@@ -104,9 +105,8 @@ button{
 .donate-bike-btn{
   background-color: #c05326;
   color: #f7eae4;
-  /* color-contrast;(wheat vs tan, sienna, #d2691e) */
-  color-interpolation-filters: ;
-}
+  opacity: 1;
+ }
 
 #volunteer-button{
 background-color: rgb(247, 236, 236);
