@@ -63,6 +63,7 @@ p {
 .navigation__list {
   display: flex;
   list-style: none;
+  gap: 25px;
 }
 
 .navigation__item {
@@ -93,27 +94,23 @@ p {
 }
 
 
-
-
-
-  /* INSERT BUTTON STYLES HERE */
-.donation-buttons{
+/* INSERT BUTTON STYLES HERE */
+button{
+    border: none;
+    border-radius: 2px;
+  }
+.donation-buttons, 
+.donate-bike-btn{
   background-color: #c05326;
   color: #f7eae4;
 }
+
 #volunteer-button{
-background-color: #fff;
+background-color: rgb(247, 236, 236);
 color:#c05326;
 }
-.buttons-section{
-  border: solid 3px;
-   display: flex;
-  justify-content: space-between;
-}
-.btn-style{
- 
-  
-}
+
+
 
 /* Content */
 
@@ -137,8 +134,10 @@ color:#c05326;
 /* hero */
 
 .hero {
-  background-image: url("header-bike.jpg");
+  background-image: url("/images/header-bike.jpg");
   background-color: var(--grey-light);
+  color: white;
+  padding: 10%;
 }
 
 .hero h1 {
