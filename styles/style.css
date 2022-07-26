@@ -138,8 +138,12 @@ p {
 /* hero */
 
 .hero {
-  background-image: url("header-bike.jpg");
+  background-image: url("../images/header-bike.jpg");
   background-color: var(--grey-light);
+  background-size: cover;
+  padding:120px 40px;
+  margin: 20px;
+  color: #e4e4e4;
 }
 
 .hero h1 {
@@ -181,6 +185,7 @@ p {
 
 .article {
   margin-bottom: 1rem;
+  
 }
 
 .article__title {
