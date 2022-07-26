@@ -9,7 +9,7 @@
    --grey-dark: #292b2c;
    --grey-light: #e4e4e4;
    --orange-dark: #c05326;
-   --orange-light: #f7eae4;
+   --orange-light: #F7EAE4;
    --white: #fff;
  }
 
@@ -33,6 +33,7 @@ p {
   margin-top: 0;
   margin-bottom: 0;
 }
+
 
 .header,
 .content,
@@ -61,6 +62,7 @@ p {
 /* Navigation */
 
 .navigation__list {
+  
   display: flex;
   list-style: none;
 }
@@ -74,8 +76,14 @@ p {
   font-weight: 600;
   text-transform: uppercase;
   text-decoration: none;
+  padding: 12px;
+  font-size: small;
+  font-family: inherit;
 }
-
+a.navigation__link:hover{
+  color:#C05326;
+  
+}
 
 /* Text styles */
 
@@ -90,12 +98,53 @@ p {
   width: 0;
   border: 6px solid var(--white);
   border-left-color: var(--orange-dark);
+  
 }
+/* .item{
+  border: 1px solid black;
+  height: 100px;
+  width: 100px;
+  margin: 10px;
+  padding: 20px 20px;
+  background-color: lightgray;
+}
+.felx-container{
 
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  
+} */
 
 /* Buttons */
 
-  /* INSERT BUTTON STYLES HERE */
+.donate{
+  background-color: #C05326;
+  color:#F7EAE4 ;
+  border-radius: 3px;
+  border: #C05326;
+  padding: 5px;
+  font-size: small;
+
+}
+.donate:hover{
+  background-color: #F7EAE4;
+  color: #C05326;
+}
+.volunteer{
+  background-color: #FFFFFF;
+  color: #C1562A;
+  font-size: small;
+  font-weight: bolder;
+  border-radius: 3px;
+  border: #FFFFFF;
+  padding: 5px;
+}
+.volunteer:hover{
+  background-color: #C05326;
+  color: #FFFFFF;
+}
 
 
 /* Content */
@@ -120,18 +169,22 @@ p {
 /* hero */
 
 .hero {
-  background-image: url("header-bike.jpg");
+  background-image: url("/images/header-bike.jpg");
   background-color: var(--grey-light);
+  height: 34%;
+  padding :90px 0 0 10px;
 }
 
 .hero h1 {
   margin-bottom: 1rem;
   font-size: 2.5rem;
+  color: #FFFFFF;
 }
 
 .hero p {
   font-size: 1.2rem;
   margin-bottom: 2rem;
+  color: #FFFFFF;
 }
 
 
@@ -145,8 +198,17 @@ p {
   font-size: 1rem;
   font-weight: 600;
   text-transform: uppercase;
+ padding-top: 50px;
 }
-
+.heading-underline1 {
+  position: relative;
+  margin-bottom: 2rem;
+  padding-bottom: 0.5rem;
+  border-bottom: 2px solid var(--orange-light);
+  font-size: 1rem;
+  font-weight: 600;
+  text-transform: uppercase;
+}
 .heading-underline:before {
   content: "";
   position: absolute;
@@ -157,13 +219,32 @@ p {
   max-width: 100px;
   background: var(--orange-dark);
 }
-
+.heading-underline1:before {
+  content: "";
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  width: 25%;
+  height: 2px;
+  max-width: 100px;
+  background: var(--orange-dark);
+}
 
 /* Article */
 
-.article {
-  margin-bottom: 1rem;
+
+.article__container{
+  display: flex;
+  
 }
+
+.article {
+  margin-bottom: 7rem;
+  border: 1px solid #E7E7E7;
+  margin-right: 15px;
+  padding: 10px;
+}
+
 
 .article__title {
   margin-bottom: 0.5rem;
@@ -174,18 +255,39 @@ p {
 .article__title-link {
   text-decoration: none;
   color: var(--orange-dark);
+ 
 }
 
 .article__summary {
   margin-top: 0;
   margin-bottom: 1rem;
+  font-size: small;
+  
 }
 
 .article__thumbnail {
   object-fit: contain;
   width: 5rem;
+  padding: 5px 15px;
 }
-
+.layout{
+  /* margin-bottom: 4rem; */
+  border: 1px solid #E7E7E7;
+  margin: 10px;
+  display: flex;
+  flex-direction: row;
+  padding-top: 15px;
+}
+p.layout{
+  text-align: justify;
+  font-size: small;
+  padding-top: 10px;
+}
+a.layout{
+  
+  padding-top: 30px;
+  text-align: center;
+}
 .article__read-more {
   margin-top: 0;
 }
@@ -205,24 +307,31 @@ p {
 .fa {
   margin-right: 0.5rem;
   color: var(--orange-dark);
+  
 }
 
 .facebook-link {
   color: var(--orange-dark);
+ 
 }
-
+.facebook{
+  text-align: end;
+  font-size: medium;
+}
 /* Sidebar */
 
 .sidebar {
   display: flex;
-  flex-direction: column;
+  flex-direction: column; 
   min-width: 350px;
+  
 }
+
 
 /* Footer */
 
 .footer {
-  margin-top: 2rem;
+  margin-top: 0.5rem;
 }
 
 .footer__content {
@@ -234,7 +343,7 @@ p {
 .footer p {
   padding-bottom: 1rem;
   text-align: center;
-  font-size: 0.85rem;
+  font-size: 0.75rem;
 }
 
 /* Media queries */
