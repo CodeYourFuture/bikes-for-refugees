@@ -5,16 +5,25 @@
  * 
  */
 
- :root {
-   --grey-dark: #292b2c;
-   --grey-light: #e4e4e4;
-   --orange-dark: #c05326;
-   --orange-light: #f7eae4;
-   --white: #fff;
- }
+:root {
+  --grey-dark: #292b2c;
+  --grey-light: #e4e4e4;
+  --orange-dark: #c05326;
+  --orange-light: #f7eae4;
+  --white: #fff;
+}
 
 body {
   margin: 0;
+}
+
+.donate {
+  background-color: #c05326;
+}
+
+.volunteer {
+  color: #c05326;
+  background: #fff;
 }
 
 body,
@@ -24,16 +33,21 @@ button {
   font-size: 1rem;
 }
 
-h1,h2,h3,h4,h5,h6 {
-  margin-top: 0;
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin-top: 0px;
   margin-bottom: 0;
+
 }
 
-p {
-  margin-top: 0;
+/* p { */
+/* margin-top: 0;
   margin-bottom: 0;
-}
-
+} */
 .header,
 .content,
 .footer {
@@ -63,10 +77,13 @@ p {
 .navigation__list {
   display: flex;
   list-style: none;
+
 }
 
 .navigation__item {
   padding: 0.5rem 0;
+  margin: 10px;
+  ;
 }
 
 .navigation__link {
@@ -95,7 +112,7 @@ p {
 
 /* Buttons */
 
-  /* INSERT BUTTON STYLES HERE */
+/* INSERT BUTTON STYLES HERE */
 
 
 /* Content */
@@ -103,6 +120,7 @@ p {
 .content {
   display: flex;
   flex-direction: column;
+
 }
 
 /* Alert */
@@ -120,18 +138,25 @@ p {
 /* hero */
 
 .hero {
-  background-image: url("header-bike.jpg");
+  background-image: url("https://raw.githubusercontent.com/CodeYourFuture/bikes-for-refugees/main/images/header-bike.jpg");
   background-color: var(--grey-light);
+  height: 300px;
+  padding: px;
+  ;
 }
 
 .hero h1 {
   margin-bottom: 1rem;
   font-size: 2.5rem;
+  color: #fff;
+  padding-top: 40px;
 }
 
 .hero p {
   font-size: 1.2rem;
   margin-bottom: 2rem;
+  color: #fff;
+  padding-top: 20px;
 }
 
 
@@ -163,31 +188,54 @@ p {
 
 .article {
   margin-bottom: 1rem;
+  display: flex;
+  margin: 20px;
+  padding: 10px;
+  padding-left: 20px;
+
+
 }
 
 .article__title {
   margin-bottom: 0.5rem;
   font-size: 1rem;
   font-weight: 700;
+  padding: 10px;
+
+
 }
 
 .article__title-link {
   text-decoration: none;
   color: var(--orange-dark);
+  padding: 10px;
+
+
 }
 
 .article__summary {
   margin-top: 0;
   margin-bottom: 1rem;
+  padding: 10px;
+
+
 }
 
 .article__thumbnail {
   object-fit: contain;
   width: 5rem;
+  padding: 10px;
+
+
 }
 
 .article__read-more {
   margin-top: 0;
+  padding: 10px;
+}
+
+.article {
+  border: #828485 solid 1px;
 }
 
 .article__read-more a {
@@ -222,6 +270,7 @@ p {
 /* Footer */
 
 .footer {
+
   margin-top: 2rem;
 }
 
@@ -247,4 +296,34 @@ p {
   .main {
     padding-right: 2rem;
   }
+}
+
+
+
+background-color: rgb(182, 218, 206);
+/* padding: 20px; */
+font-family: 'Lucida Sans',
+'Lucida Sans Regular',
+'Lucida Grande',
+'Lucida Sans Unicode',
+Geneva,
+Verdana,
+sans-serif;
+
+}
+
+.article_first {
+  border: #292b2c solid 1px;
+}
+
+
+/* .part1{
+  border: #828485 solid 1px;
+  
+} */
+.seperate {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margine: 10px;
 }
