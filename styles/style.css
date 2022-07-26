@@ -230,7 +230,6 @@ p {
 
 .facebook-link {
  color: var(--orange-dark);
- flex-direction: row-reverse;
 }
 
 /* Sidebar */
@@ -284,7 +283,15 @@ p {
  background-color: #c05326;
  color: #fff;
  border-radius: 5px;
+ box-shadow: 0px 0px 0px rgba(0, 0, 0, 0.1);
+ outline: none;
+
 
 }
 
 
+.facebook{
+  justify-content: flex-end;
+
+
+}
