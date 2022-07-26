@@ -242,7 +242,8 @@ p {
 /* Footer */
 
 .footer {
-  margin-top: 2rem;
+  margin-top: 15rem;
+  
 }
 
 .footer__content {
@@ -288,6 +289,8 @@ p {
 .facebook {
   flex-direction: row;
   justify-content: flex-end;
+  margin-right: 15px;
+
 }
 
 .donateABike {
