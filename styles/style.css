@@ -19,7 +19,6 @@ body {
 
 
 button {
-
   font-family: "Source Sans Pro", "Helvetica Neue", Arial, sans-serif;
   color: var(--grey-dark);
   font-size: 1rem;
@@ -79,15 +78,27 @@ p {
 /* Navigation */
 
 .navigation__list {
+
+ justify-content:space-between;
+ align-items: center;
   display: flex;
   list-style: none;
+margin-top: 30px;
+margin-right: 100px;
+padding-top: 60px;
+padding-right: 250px;
 }
 
 .navigation__item {
+  justify-items: center;
   padding: 0.5rem 0;
+  display: flex;
+  justify-content: space-between;
+  border: 1px solid rgb(190, 190, 195);
 }
 
 .navigation__link {
+
   color: var(--grey-dark);
   font-weight: 600;
   text-transform: uppercase;
@@ -160,6 +171,7 @@ p {
 /* Headings */
 
 .heading-underline {
+  padding: 5px 6px;
   position: relative;
   margin-bottom: 2rem;
   padding-bottom: 0.5rem;
