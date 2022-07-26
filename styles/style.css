@@ -249,7 +249,8 @@ align-items: center;
 }
 
 .facebook-link {
-  color: var(--orange-dark);
+  align-self: flex-end;
+  color: red;
 }
 
 /* Sidebar */
