@@ -240,11 +240,15 @@ p {
 .fa {
   margin-right: 0.5rem;
   color: var(--orange-dark);
+  justify-content: right;
 }
 
 .facebook-link {
   color: var(--orange-dark);
+  
 }
+
+
 
 /* Sidebar */
 
@@ -289,7 +293,11 @@ p {
   border: solid rgb(165, 163, 163) 1px;
   border-radius: 5px;
   padding: 20px;
+
+}
+.sidebars{
   display: flex;
+
 
 }
 
@@ -313,6 +321,7 @@ p {
 
 .facebook {
   display:flex;
+  justify-content: flex-end;
 }
 
 .donateABike {
