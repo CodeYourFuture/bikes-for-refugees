@@ -66,7 +66,7 @@ p {
 }
 
 .navigation__item {
-  padding: 0.5rem 0;
+  padding: 1rem 0;
 }
 
 .navigation__link {
@@ -74,6 +74,7 @@ p {
   font-weight: 600;
   text-transform: uppercase;
   text-decoration: none;
+  padding: 0px 10px;
 }
 
 
@@ -98,6 +99,7 @@ p {
   /* INSERT BUTTON STYLES HERE */
   .btn1{
     background-color: #c05326;
+    margin: 20px;
   }
    
   .btn2{
@@ -108,38 +110,24 @@ p {
 
 
 
-/*.flex-container
+/*flex-container*/
 
-  .flex-container {
+  .container {
+    width: 300px;
     display: flex;
     flex-direction: row;
-    align-content: space-between;
-    background-color: dodgerblue;
+    border: 1px solid black;
+
+    
   }
   
   
-  .flex-container > div {
-    background-color: #f1f1f1;
-    margin: 10px;
-    padding: 20px;
-    font-size: 30px;
-    text-align: center;
-  }*/
-
   .article {
-    width: 350px;
-    float:left;
+    background-color: #f1f1f1;
     padding: 10px;
-    border: 1px solid black;
   }
 
-  .article1 {
-    width: 300px;
-    float:left;
-    margin: 10px;
-    padding: 10px;
-    border: 1px solid black;
-  }
+ 
 
   
 /* Content */
@@ -164,18 +152,23 @@ p {
 /* hero */
 
 .hero {
-  background-image: url("header-bike.jpg");
+  background-image: url("../images/header-bike.jpg");
   background-color: var(--grey-light);
+  
 }
 
 .hero h1 {
   margin-bottom: 1rem;
   font-size: 2.5rem;
+  color:  white;
+  padding: 20px;
 }
 
 .hero p {
   font-size: 1.2rem;
   margin-bottom: 2rem;
+  color: white;
+  padding: 10px;
 }
 
 
