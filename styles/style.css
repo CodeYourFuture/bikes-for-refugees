@@ -29,6 +29,7 @@ h1,h2,h3,h4,h5,h6 {
   margin-bottom: 0;
 }
 
+
 p {
   margin-top: 0;
   margin-bottom: 0;
@@ -63,10 +64,15 @@ p {
 .navigation__list {
   display: flex;
   list-style: none;
+  flex-direction: row;
+
 }
 
 .navigation__item {
+  display: flex;
+  flex-direction: row;
   padding: 0.5rem 0;
+  justify-content: space-between;
 }
 
 .navigation__link {
@@ -97,6 +103,29 @@ p {
 
   /* INSERT BUTTON STYLES HERE */
 
+  .btn {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .orange_btn {
+    background-color: #c05326;
+    color: white;
+    border: none; 
+    width: 180px;
+    padding: 8px;
+    border-radius: 5px;
+  }
+
+  .volunteer_btn {
+    background-color: white;
+    color:#c05326;
+    border: none;
+    width: 100px;
+    padding: 8px;
+    border-radius: 5px;
+    margin-left: 5px;
+  }
 
 /* Content */
 
@@ -104,6 +133,23 @@ p {
   display: flex;
   flex-direction: column;
 }
+
+.left_side {
+  margin-top: 40px;
+}
+
+.left_article_container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.left_side_article {
+  padding: 10px;
+border: 1px solid var(--grey-light);
+width: 46%;
+}
+
 
 /* Alert */
 
@@ -120,18 +166,25 @@ p {
 /* hero */
 
 .hero {
-  background-image: url("header-bike.jpg");
+  background-image: url("/images/header-bike.jpg");
   background-color: var(--grey-light);
+  height: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 30px;
 }
 
 .hero h1 {
   margin-bottom: 1rem;
   font-size: 2.5rem;
+  color: white;
 }
 
 .hero p {
   font-size: 1.2rem;
   margin-bottom: 2rem;
+  color: white;
 }
 
 
