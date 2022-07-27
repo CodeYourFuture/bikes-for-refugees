@@ -62,11 +62,15 @@ p {
 
 .navigation__list {
   display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  gap: 15px;
   list-style: none;
 }
 
 .navigation__item {
   padding: 0.5rem 0;
+  
 }
 
 .navigation__link {
@@ -96,7 +100,21 @@ p {
 /* Buttons */
 
   /* INSERT BUTTON STYLES HERE */
-
+  .donate-btn{
+    color: white;
+    background-color: #c05326;
+    border-radius: 4px;
+    border:#c05326;
+    padding: 1%;
+    
+  }
+  .volunteer-btn{
+    color: #c05326;
+    background-color: white;
+    border: #fff;
+    border-radius: 4px;
+    padding: 1%;
+  }
 
 /* Content */
 
@@ -120,8 +138,12 @@ p {
 /* hero */
 
 .hero {
-  background-image: url("header-bike.jpg");
+  background-image: url("../images/header-bike.jpg");
   background-color: var(--grey-light);
+  padding: 10%;
+  margin-bottom: 5%;
+  color: #fff;
+  
 }
 
 .hero h1 {
@@ -160,9 +182,18 @@ p {
 
 
 /* Article */
-
+.article-in-detail{
+  display: flex;
+  gap: 5%;
+}
 .article {
   margin-bottom: 1rem;
+  border: 1PX solid #d7d4d4;
+  padding:2%;
+
+}
+.aside-article{
+  display: flex;
 }
 
 .article__title {
@@ -176,6 +207,7 @@ p {
   color: var(--orange-dark);
 }
 
+
 .article__summary {
   margin-top: 0;
   margin-bottom: 1rem;
@@ -184,6 +216,7 @@ p {
 .article__thumbnail {
   object-fit: contain;
   width: 5rem;
+  margin-right: 0.5rem;
 }
 
 .article__read-more {
