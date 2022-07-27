@@ -65,14 +65,17 @@ p {
   display: flex;
   list-style: none;
   flex-direction: row;
+  justify-content: space-around;
+  margin: 0px;
+  padding: 0px;
 
 }
 
 .navigation__item {
   display: flex;
   flex-direction: row;
-  padding: 0.5rem 0;
-  justify-content: space-between;
+  padding: 0.5rem 2rem;
+
 }
 
 .navigation__link {
@@ -127,6 +130,16 @@ p {
     margin-left: 5px;
   }
 
+  .header_btn {
+    background-color: #c05326;
+    color: white;
+    border: none;
+    width: 130px;
+    padding: 8px;
+    border-radius: 5px;
+  }
+
+  
 /* Content */
 
 .content {
@@ -150,6 +163,21 @@ border: 1px solid var(--grey-light);
 width: 46%;
 }
 
+.right_side_article {
+  padding: 10px;
+border: 1px solid var(--grey-light);
+display: flex;
+flex-direction: row;
+}
+
+
+.article__content {
+  padding: 15px;
+}
+
+.facebook-link {
+  align-self: flex-end;
+}
 
 /* Alert */
 
