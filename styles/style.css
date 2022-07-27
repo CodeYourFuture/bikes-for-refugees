@@ -77,10 +77,11 @@ p {
   font-weight: 600;
   text-transform: uppercase;
   text-decoration: none;
-  
-
 }
-
+.navigation__link:hover{
+  background-color: #c05326;
+  color: white;
+}
 
 /* Text styles */
 
