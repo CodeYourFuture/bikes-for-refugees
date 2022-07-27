@@ -66,7 +66,7 @@ p {
 }
 
 .navigation__item {
-  padding: 0.5rem 0;
+  padding: 10px;
 }
 
 .navigation__link {
@@ -75,6 +75,12 @@ p {
   text-transform: uppercase;
   text-decoration: none;
 }
+
+a:hover{
+  color:#c05326;
+}
+
+
 
 
 /* Text styles */
@@ -94,8 +100,33 @@ p {
 
 
 /* Buttons */
+  button{
+    border:#c05326 solid 1px;
+    border-radius: 8%;
+  }
+  .button1{
+    background-color: #c05326;
+    color: white;
+  }
+  .button2{
+    color:#c05326;
+    background-color: white;
+  }
 
-  /* INSERT BUTTON STYLES HERE */
+  .button1:hover{
+    color:#c05326;
+    background-color: white;
+  }
+
+  .button2:hover{
+    background-color: #c05326;
+    color: white;
+  }
+
+  
+  
+
+
 
 
 /* Content */
@@ -120,8 +151,16 @@ p {
 /* hero */
 
 .hero {
-  background-image: url("header-bike.jpg");
-  background-color: var(--grey-light);
+  background-image: url("/images/header-bike.jpg");
+  width: 100%;
+  height: 58%;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+  
 }
 
 .hero h1 {
@@ -163,6 +202,8 @@ p {
 
 .article {
   margin-bottom: 1rem;
+  border: grey solid 1px;
+  padding: 10px;
 }
 
 .article__title {
@@ -209,6 +250,16 @@ p {
 
 .facebook-link {
   color: var(--orange-dark);
+}
+
+.box{
+  display:flex;
+  column-gap: 10px;
+}
+
+.box2{
+  display:flex;
+  column-gap: 10px;
 }
 
 /* Sidebar */
