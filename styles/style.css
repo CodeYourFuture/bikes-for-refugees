@@ -140,7 +140,7 @@ p {
 .hero {
   background-image: url("../images/header-bike.jpg");
   background-color: var(--grey-light);
-  padding: 10%;
+  padding: 5%;
   margin-bottom: 5%;
   color: #fff;
   
