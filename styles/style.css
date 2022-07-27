@@ -218,6 +218,7 @@ p {
 .article__thumbnail {
   object-fit: contain;
   width: 5rem;
+  padding-right: 20px;
 }
 
 .article__read-more {
@@ -287,8 +288,9 @@ p {
 .article {
   border: solid rgb(165, 163, 163) 1px;
   border-radius: 5px;
-
   padding: 20px;
+  display: flex;
+
 }
 
 .donateNow {
@@ -310,10 +312,7 @@ p {
 
 
 .facebook {
-  flex-direction: row;
-  justify-content: flex-end;
-  margin-right: 15px;
-
+  display:flex;
 }
 
 .donateABike {
