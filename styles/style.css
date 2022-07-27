@@ -214,13 +214,15 @@ p {
 
 .articlesection {
  display: flex;
+ justify-content: space-between;
+ align-content: space-around;
 
 }
 
 .articlesection > .article{
  display:flexbox;
- margin: 10px;
-justify-content: space-around;
+ 
+ justify-content: space-between;
  padding: 15px;
 }
 
@@ -240,6 +242,8 @@ justify-content: space-around;
 
 .article__title {
  border: solid, #e4e4e4;
+ display: flex;
+ align-content: space-evenly;
  margin-bottom: 0.5rem;
  font-size: 1rem;
  font-weight: 700;
@@ -286,6 +290,13 @@ justify-content: space-around;
  color: var(--orange-dark);
  
 }
+
+.face {
+display: flex;
+justify-content: flex-end;
+
+}
+
 
 .facebook-link {
   text-align-last: right;
