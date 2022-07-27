@@ -96,8 +96,52 @@ p {
 /* Buttons */
 
   /* INSERT BUTTON STYLES HERE */
+  .btn1{
+    background-color: #c05326;
+  }
+   
+  .btn2{
+    background-color:#fff;
+    color: #c05326;
+    
+  }
 
 
+
+/*.flex-container
+
+  .flex-container {
+    display: flex;
+    flex-direction: row;
+    align-content: space-between;
+    background-color: dodgerblue;
+  }
+  
+  
+  .flex-container > div {
+    background-color: #f1f1f1;
+    margin: 10px;
+    padding: 20px;
+    font-size: 30px;
+    text-align: center;
+  }*/
+
+  .article {
+    width: 350px;
+    float:left;
+    padding: 10px;
+    border: 1px solid black;
+  }
+
+  .article1 {
+    width: 300px;
+    float:left;
+    margin: 10px;
+    padding: 10px;
+    border: 1px solid black;
+  }
+
+  
 /* Content */
 
 .content {
