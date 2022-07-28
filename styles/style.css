@@ -149,13 +149,18 @@ padding-right: 250px;
 /* hero */
 
 .hero {
+  display: block;
+  height: 200px;
+  width: 950px;
+  border: 3px solid blue;
   background-image: url("../images/header-bike.jpg");
   background-color: var(--grey-light);
   background-size: cover;
-  padding:120px 40px;
-  margin: 20px;
+  padding:100px 10px;
+  margin: 10px;
   color: #e4e4e4;
 }
+
 
 .hero h1 {
   margin-bottom: 1rem;
