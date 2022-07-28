@@ -120,8 +120,8 @@ p {
 /* hero */
 
 .hero {
-  background-image: url("header-bike.jpg");
-  background-color: var(--grey-light);
+  border:1px solid black;
+  background:#f7eae4;
 }
 
 .hero h1 {
@@ -254,16 +254,4 @@ background-color: #c05326;
 }
 #buton_color_text {
   color:#c05326 ;
-}
-
-.flex_containers {
-  height: 150px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-.style_boxes {
-  border: 2px solid black;
-  height: 80%;
-  width: 150px;
 }
