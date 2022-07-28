@@ -213,7 +213,7 @@ aside .article {
   display: flex;
 }
 
-aside.article__content {
+aside .article__content {
   padding: 1.2em;
 }
 
@@ -266,6 +266,7 @@ section .article {
 
 .facebook-link {
   color: var(--orange-dark);
+  text-align: right;
 }
 
 /* bottom section container*/
