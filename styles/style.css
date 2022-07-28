@@ -34,7 +34,6 @@ button {
   display: inline block;
 }
 
-
 h1,
 h2,
 h3,
@@ -84,7 +83,9 @@ p {
 }
 
 .navigation__item {
-  padding: 0.5rem 0;
+  padding: 0.5rem 0.8rem;
+  flex-grow: 1;
+  margin-left: 30px;
 }
 
 .navigation__link {
@@ -112,8 +113,8 @@ p {
 /* Buttons */
 .btn-now {
   background-color: #c05326;
-  border-radius: 3px;
-  padding: 6px;
+  border-radius: 5px;
+  padding: 10px;
   border: none;
   color: #fff;
 }
@@ -129,7 +130,7 @@ p {
   padding: 10px;
   border-radius: 5px;
   border: none;
-  color:#de5317;
+  color: #de5317;
 }
 
 /* Content */
@@ -142,9 +143,12 @@ p {
 /* Alert */
 
 .alert {
-  background-color: var(--orange-light);
-  border-left: 4px solid var(--orange-dark);
-  border-radius: 4px;
+  background-color: var(--white);
+  border-left: 2px solid var(--orange-dark);
+  border-top: 1px solid var(--orange-light);
+  border-right: 1px solid var(--orange-light);
+  border-bottom: 1px solid var(--orange-light);
+  border-radius: 2px;
   font-size: 0.85rem;
   line-height: 1.3;
   padding: 1.5rem 1rem;
@@ -197,6 +201,14 @@ p {
 }
 
 /* Article */
+.articlesection {
+  display: flex;
+}
+
+.articlesection > .article {
+  margin: 10px;
+  padding: 10px;
+}
 
 .article {
   margin-bottom: 2rem;
@@ -250,6 +262,9 @@ p {
 
 .facebook-link {
   color: var(--orange-dark);
+  padding-left: 20px;
+  display: flex;
+  justify-content: flex-end;
 }
 
 /* Sidebar */
@@ -274,7 +289,7 @@ p {
   padding-bottom: 2rem;
 }
 
-.footer  {
+.footer {
   padding-bottom: 1rem;
   text-align: center;
   font-size: 0.85rem;
