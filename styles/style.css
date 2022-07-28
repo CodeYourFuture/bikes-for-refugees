@@ -15,6 +15,7 @@
 
 body {
   margin: 0;
+  background-color: white;
 }
 
 body,
@@ -238,10 +239,17 @@ p {
 }
 .Donate {
   background-color: #c05326;
+  color: white;
+  border: 0ch;
+  height: 40%;
+  border-radius: 5%;
 }
 .volunteer {
   background-color: #fff;
   color: #c05326;
+  border: 0ch;
+  height: 40%;
+  border-radius: 5%;
 }
 .boxes {
 background-color: #fff;
