@@ -255,3 +255,15 @@ background-color: #c05326;
 #buton_color_text {
   color:#c05326 ;
 }
+
+.flex_containers {
+  height: 150px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.style_boxes {
+  border: 2px solid black;
+  height: 80%;
+  width: 150px;
+}
