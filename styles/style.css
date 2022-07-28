@@ -71,7 +71,8 @@ p {
 }
 
 .navigation__item {
-  padding: 0.5rem 0;
+  padding: 0.5rem 0.8rem;
+  flex-grow: 1;
 }
 
 .navigation__link {
@@ -126,6 +127,15 @@ p {
 
 /* Content */
 
+/*main area */
+
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  /* flex: 0; */
+}
+
 .content {
   display: flex;
   flex-direction: column;
@@ -150,7 +160,7 @@ p {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  height: 65%;
+  height: 100%;
   background-image: url("../images/header-bike.jpg");
   background-size: cover;
   background-repeat: no-repeat;
@@ -179,6 +189,11 @@ p {
   text-transform: uppercase;
 }
 
+/* add margin below the hero section*/
+section .heading-underline {
+  margin-top: 1.5em;
+}
+
 .heading-underline:before {
   content: "";
   position: absolute;
@@ -192,8 +207,18 @@ p {
 
 /* Article */
 
-.article {
+aside .article {
   margin-bottom: 1rem;
+  border: 1px solid var(--grey-light);
+  display: flex;
+}
+
+aside.article__content {
+  padding: 1.2em;
+}
+
+section .article {
+  border: 1px solid var(--grey-light);
 }
 
 .article__title {
@@ -215,6 +240,7 @@ p {
 .article__thumbnail {
   object-fit: contain;
   width: 5rem;
+  padding: 1.2em;
 }
 
 .article__read-more {
@@ -240,6 +266,20 @@ p {
 
 .facebook-link {
   color: var(--orange-dark);
+}
+
+/* bottom section container*/
+
+.bottom-section-container {
+  display: flex;
+  column-gap: 1.2em;
+  justify-content: space-between;
+}
+
+.bottom-section-container .article {
+  border: 1px solid var(--grey-light);
+  flex: 1;
+  padding: 1.2em;
 }
 
 /* Sidebar */
