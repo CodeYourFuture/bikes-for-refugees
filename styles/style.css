@@ -47,7 +47,6 @@ p {
 
 .header {
   display: flex;
-  align-items: center;
   justify-content: space-between;
   height: 5rem;
   margin-bottom: 1rem;
@@ -59,15 +58,31 @@ p {
   width: auto;
 }
 
+.Donate {
+  background-color: #c05326;
+  color: white;
+  border: 0ch;
+  height: 40%;
+  border-radius: 5%;
+  margin-top: 1%;
+}
+
 /* Navigation */
+.nav-menu {
+  width: 400px;
+}
 
 .navigation__list {
   display: flex;
   list-style: none;
+  justify-content: space-between;
+  
 }
 
 .navigation__item {
   padding: 0.5rem 0;
+  
+  
 }
 
 .navigation__link {
@@ -75,6 +90,8 @@ p {
   font-weight: 600;
   text-transform: uppercase;
   text-decoration: none;
+  
+  
 }
 
 
@@ -237,13 +254,7 @@ p {
   text-align: center;
   font-size: 0.85rem;
 }
-.Donate {
-  background-color: #c05326;
-  color: white;
-  border: 0ch;
-  height: 40%;
-  border-radius: 5%;
-}
+
 .volunteer {
   background-color: #fff;
   color: #c05326;
