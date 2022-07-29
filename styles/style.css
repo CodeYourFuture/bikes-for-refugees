@@ -31,10 +31,7 @@ h1,h2,h3,h4,h5,h6 {
   margin-bottom: 0;
 }
 
-p {
-  /* margin-top: 0;
-  margin-bottom: 0; */
-}
+
 
 .header,
 .content,
@@ -129,7 +126,13 @@ p {
 
 /* Buttons */
 
-  /* INSERT BUTTON STYLES HERE */
+.btn1{
+  background-color:var(--orange-dark);
+}
+.btn2{
+  background-color: var(--white);
+  color: var(--orange-dark);
+}
 
 
 /* Content */
@@ -181,13 +184,10 @@ p {
   
 }
 
-.donate_a_bike{
+.donate_a_bike {
   width: 150px;
   margin: 0px;
   /* border: 2px solid yellow; */
-
-  
-  
 }
 
 .hero h1 {
@@ -369,10 +369,12 @@ aside{
 }
 
 .donate_a_bike{
+  display: flex;
   background-color: #ef5d1e;
   color: white;
   margin-top: 20px;
   padding: 5px;
+  
   
 }
 
