@@ -59,14 +59,20 @@ p {
 }
 
 /* Navigation */
+.nav{
+display: inline;
+flex-direction: row;
+justify-content: space-between;
+}
 
 .navigation__list {
   display: flex;
   list-style: none;
+  justify-content: space-between;
 }
 
 .navigation__item {
-  padding: 0.5rem 0;
+  padding: 5rem 15px;
 }
 
 .navigation__link {
@@ -94,7 +100,34 @@ p {
 
 
 /* Buttons */
-
+.donate {
+  background-color: rgb(215, 88, 65);
+  color:#e4e4e4; 
+   
+}
+.donate-today{
+  background-color: #c05326;
+  color:#fff;
+  position: absolute;
+  bottom: 50px;
+  left:20px;
+}
+.vol{
+  background-color:#fff;
+  color:#c05326;
+  position: absolute;
+  bottom: 50px;
+  left: 170px;
+}
+.container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-top: 0.5%;
+}
+.check{
+  height:15%;
+}
   /* INSERT BUTTON STYLES HERE */
 
 
@@ -108,6 +141,7 @@ p {
 /* Alert */
 
 .alert {
+  display: block;
   background-color: var(--orange-light);
   border-left: 4px solid var(--orange-dark);
   border-radius: 4px;
@@ -120,18 +154,26 @@ p {
 /* hero */
 
 .hero {
-  background-image: url("header-bike.jpg");
+  background-image: url("images\header-bike.jpg");
   background-color: var(--grey-light);
+  position: relative;
 }
 
 .hero h1 {
-  margin-bottom: 1rem;
+  bottom:200px;
+  left:20px ;
   font-size: 2.5rem;
+  position:absolute;
+  color:white;
 }
 
 .hero p {
   font-size: 1.2rem;
   margin-bottom: 2rem;
+  position:absolute;
+  bottom:100px;
+  left:20px;
+  color: #e4e4e4;
 }
 
 
@@ -157,15 +199,23 @@ p {
   max-width: 100px;
   background: var(--orange-dark);
 }
+/*section*/
+.dialogue_box{
+  position:flex;
+flex-direction: row;
+}
 
 
 /* Article */
 
 .article {
+  position: flex;
   margin-bottom: 1rem;
+  border:1px solid rgb(180, 179, 184);
 }
 
 .article__title {
+
   margin-bottom: 0.5rem;
   font-size: 1rem;
   font-weight: 700;
@@ -182,6 +232,7 @@ p {
 }
 
 .article__thumbnail {
+  display:flex;
   object-fit: contain;
   width: 5rem;
 }
@@ -217,6 +268,11 @@ p {
   display: flex;
   flex-direction: column;
   min-width: 350px;
+}
+.sidebar .article {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
 }
 
 /* Footer */
