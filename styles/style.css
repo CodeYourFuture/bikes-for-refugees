@@ -136,10 +136,12 @@ p {
 }
 
 /* hero */
-
+section {
+  background-image: url('/images/header-bike.jpg');
+}
 .hero {
-  background-image: url("header-bike.jpg");
-  background-color: var(--grey-light);
+  background-image: url('/images/header-bike.jpg');
+
 }
 
 .hero h1 {
@@ -178,9 +180,18 @@ p {
 
 
 /* Article */
+.articleMainStyle {
+display: flex;
+align-items: center;
+padding: 10px;
+
+}
 
 .article {
   margin-bottom: 1rem;
+  border: 2px solid var(--grey-light);
+
+
 }
 
 .article__title {
@@ -232,9 +243,11 @@ p {
 /* Sidebar */
 
 .sidebar {
-  display: flex;
   flex-direction: column;
-  min-width: 350px;
+    width: 30%;
+    padding-left: 15px;
+    margin-left: 15px;
+    float: right;
 }
 
 /* Footer */
