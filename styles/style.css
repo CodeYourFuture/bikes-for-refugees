@@ -142,12 +142,17 @@ p {
 
 .hero {
   background-image: url("/images/header-bike.jpg");
+background-size: cover;
+  background-repeat: no-repeat;
   width: 100%;
-  height: 50%;
+  height: 75%;
 /*  object-fit: fill;*/
   background-color: var(--grey-light);
   color: #fff;
+  
 }
+
+
 
 .hero h1 {
   margin-bottom: 1rem;
@@ -357,4 +362,12 @@ p {
   border-radius: 5px;
   color: #fff;
 
+}
+
+
+.articleSuperseder{
+
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
 }
