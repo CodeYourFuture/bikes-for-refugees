@@ -225,7 +225,10 @@ padding-right: 250px;
   text-decoration: none;
   color: var(--orange-dark);
 }
-
+.img_side{
+  display: flex;
+  flex-direction: row;
+}
 .article__summary {
   margin-top: 0;
   margin-bottom: 1rem;
@@ -237,6 +240,8 @@ padding-right: 250px;
 .article__thumbnail {
   object-fit: contain;
   width: 5rem;
+  display: flex;
+  flex-direction: row;
 }
 
 .article__read-more {
