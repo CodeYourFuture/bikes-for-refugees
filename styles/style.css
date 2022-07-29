@@ -167,25 +167,18 @@ p {
 
 
 /* Article */
+.learn-more {
+  display: flex;
+}
+
+.learn-more > .article {
+  margin: 20px;
+}
 
 .article {
   margin-bottom: 2rem;
   border: lightgray 1px solid;
-  width: 100%;
-  display: flex;
-}
-
-.article1 {
-  float: left;
-  width: 45%;
-  border: lightgray 1px solid;
-  padding: 5px;
-}
-
-.article2 {
-  float: right;
-  width: 45%;
-  border: lightgray 1px solid;
+  padding: 20px;
 }
 
 .article__title {
@@ -197,7 +190,6 @@ p {
 .article__title-link {
   text-decoration: none;
   color: var(--orange-dark);
-  margin-left: 40px;
 }
 
 .article__summary {
@@ -206,6 +198,10 @@ p {
   margin: 5px;
   display: inline-block;
   vertical-align: top;
+}
+
+.article__content {
+      margin-left: 10px;
 }
 
 .article__thumbnail {
@@ -244,6 +240,10 @@ p {
   margin-top: -200px;
   flex-direction: column;
   min-width: 350px;
+}
+
+.sidebar > .article {
+  display: flex;
 }
 
 
