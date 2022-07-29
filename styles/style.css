@@ -5,13 +5,13 @@
  * 
  */
 
- :root {
-   --grey-dark: #292b2c;
-   --grey-light: #e4e4e4;
-   --orange-dark: #c05326;
-   --orange-light: #f7eae4;
-   --white: #fff;
- }
+:root {
+  --grey-dark: #292b2c;
+  --grey-light: #e4e4e4;
+  --orange-dark: #c05326;
+  --orange-light: #f7eae4;
+  --white: #fff;
+}
 
 body {
   margin: 0;
@@ -24,7 +24,16 @@ button {
   font-size: 1rem;
 }
 
-h1,h2,h3,h4,h5,h6 {
+.button {
+  color: red;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   margin-top: 0;
   margin-bottom: 0;
 }
@@ -62,12 +71,27 @@ p {
 
 .navigation__list {
   display: flex;
+  justify-content: space-evenly;
   list-style: none;
 }
 
 .navigation__item {
-  padding: 0.5rem 0;
+  padding: 1rem ;
 }
+
+.navigation__item:hover {
+  background-color: #c05326;
+  border-radius: 5px;
+  color: #ffffff;
+
+}
+
+.navigation__item:active {
+  background-color: #fff;
+  color: #000;
+}
+
+
 
 .navigation__link {
   color: var(--grey-dark);
@@ -75,7 +99,6 @@ p {
   text-transform: uppercase;
   text-decoration: none;
 }
-
 
 /* Text styles */
 
@@ -92,11 +115,9 @@ p {
   border-left-color: var(--orange-dark);
 }
 
-
 /* Buttons */
 
-  /* INSERT BUTTON STYLES HERE */
-
+/* INSERT BUTTON STYLES HERE */
 
 /* Content */
 
@@ -120,9 +141,18 @@ p {
 /* hero */
 
 .hero {
-  background-image: url("header-bike.jpg");
+  background-image: url("/images/header-bike.jpg");
+background-size: cover;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 75%;
+/*  object-fit: fill;*/
   background-color: var(--grey-light);
+  color: #fff;
+  
 }
+
+
 
 .hero h1 {
   margin-bottom: 1rem;
@@ -133,7 +163,6 @@ p {
   font-size: 1.2rem;
   margin-bottom: 2rem;
 }
-
 
 /* Headings */
 
@@ -158,7 +187,6 @@ p {
   background: var(--orange-dark);
 }
 
-
 /* Article */
 
 .article {
@@ -169,6 +197,17 @@ p {
   margin-bottom: 0.5rem;
   font-size: 1rem;
   font-weight: 700;
+}
+
+.newButtons {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between; /* or space-around */
+}
+
+.article {
+  border: solid rgb(165, 163, 163) 1px;
+  padding: 20px;
 }
 
 .article__title-link {
@@ -184,6 +223,7 @@ p {
 .article__thumbnail {
   object-fit: contain;
   width: 5rem;
+  padding-right: 20px;
 }
 
 .article__read-more {
@@ -205,11 +245,15 @@ p {
 .fa {
   margin-right: 0.5rem;
   color: var(--orange-dark);
+  justify-content: right;
 }
 
 .facebook-link {
   color: var(--orange-dark);
+  
 }
+
+
 
 /* Sidebar */
 
@@ -222,7 +266,8 @@ p {
 /* Footer */
 
 .footer {
-  margin-top: 2rem;
+  margin-top: 15rem;
+  
 }
 
 .footer__content {
@@ -247,4 +292,82 @@ p {
   .main {
     padding-right: 2rem;
   }
+}
+
+.article {
+  border: solid rgb(165, 163, 163) 1px;
+  border-radius: 5px;
+  padding: 20px;
+
+}
+.sidebars{
+  display: flex;
+
+
+}
+
+.donateNow {
+  background-color: #c05326;
+  color: #fff;
+  border-radius: 5px;
+  border: 0px solid #c05326;
+  outline: none;
+  padding: 10px;
+}
+
+
+.donateNow:hover {
+  background-color: #fff;
+  border-radius: 5px;
+  color: #c05326;
+
+}
+
+
+.facebook {
+  display:flex;
+  justify-content: flex-end;
+}
+
+.donateABike {
+  padding: 10px;
+  background-color: #c05326;
+  color: #fff;
+  border: 0px solid #c05326;
+  font-weight: bold;
+  border-radius: 5px;
+}
+
+
+.donateABike:hover {
+  background-color: #fff;
+  border-radius: 5px;
+  color: #c05326;
+
+}
+
+
+.volunteer {
+  padding: 10px;
+  background-color: #fff;
+  color: #c05326;
+  border: 0px solid #fff;
+  font-weight: bold;
+  border-radius: 5px;
+}
+
+
+.volunteer:hover {
+  background-color: #c05326;
+  border-radius: 5px;
+  color: #fff;
+
+}
+
+
+.articleSuperseder{
+
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
 }
