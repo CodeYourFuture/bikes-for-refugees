@@ -178,6 +178,7 @@ p {
   float: left;
   width: 50%;
   border: lightgray 1px solid;
+  padding: 5px;
 }
 
 .article2 {
