@@ -92,19 +92,6 @@ p {
   border: 6px solid var(--white);
   border-left-color: var(--orange-dark);
 }
-.bikee {
-  background-image: url("../images/header-bike.jpg");
-  background-size: cover;
-background-position: 50% 50%;
-padding: 80px 30px;
-color: white;
-
-}
-.bikee h1 { 
-  font-size: 3.125rem;
-  
-  
-}
 .don {
   background-color: #c05326;
     border: none;
@@ -116,6 +103,22 @@ color: white;
     margin: 4px 2px;
     cursor: pointer;
     border-radius: 4px;
+}
+
+.bikee {
+  background-image: url("../images/header-bike.jpg");
+  background-size: cover;
+background-position: 50% 50%;
+padding: 80px 30px;
+color: white;
+
+}
+.bikee h1 { 
+  font-size: 3.125rem; 
+}
+.bikee .lap {
+  text-align: start;
+  
 }
 .bikee h1,
 .bikee h3 {
@@ -169,22 +172,30 @@ color: white;
 
 .hero {
   background-image: url("header-bike.jpg");
-  margin-bottom: 50px;/*background-color: var(--grey-light)*/
+  margin-bottom: 50px;
+  /*background-color: var(--grey-light)*/
 }
 
 .hero h1 {
-  
+  text-align: start;
   font-size: 2.5rem;
+}
+.hero h3 {
+  text-align: start;
 }
 
 .hero p {
   font-size: 1.2rem;
   margin-bottom: 2rem;
 }
+
 .lap {
   margin-top: 40px;
-  margin-left: 5px;
+  text-align: start;
+  margin-right: auto;
+  
 }
+
 .images {
   max-height: 50px;
   width: auto;
@@ -228,15 +239,33 @@ color: white;
   align-content: flex-end;
 }
 .article__content {
-  border: 3px solid grey;
-  border-radius: 5px;
+  border: 2px solid grey;
+  border-radius: 20px;
   display: flex;
+text-align: start;
+
+
   
 }
 
+
 .article {
   margin-bottom: 1rem;
+  padding: 5px;
   
+
+  
+}
+.articles {
+  border: 3px solid grey;
+  border-radius: 10px;
+  padding: 10px;
+  
+}
+.article_flex {
+  flex-direction: row;
+  display: flex;
+  gap: 10px;
 }
 
 .article__title {
@@ -249,6 +278,7 @@ color: white;
 .article__title-link {
   text-decoration: none;
   color: var(--orange-dark);
+  
 }
 
 .article__summary {
@@ -259,7 +289,7 @@ color: white;
 .article__thumbnail {
   object-fit: contain;
   width: 5rem;
-  padding-right: 20px;
+  padding: 10px;
 }
 
 .article__read-more {
