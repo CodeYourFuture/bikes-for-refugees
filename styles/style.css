@@ -15,6 +15,7 @@
 
 body {
   margin: 0;
+  padding-left: 5rem;
 }
 
 body,
@@ -58,6 +59,14 @@ p {
   width: auto;
 }
 
+.donate{
+  background-color: #c05326;
+  width: 6.5rem;
+  height: 3rem;
+  border-radius: 6px;
+  color: #e4e4e4;
+}
+
 /* Navigation */
 
 .navigation__list {
@@ -98,10 +107,19 @@ p {
 
 .btn1{
   background-color:var(--orange-dark);
+  padding: 10px 16px;
+  margin: 20px 10px;
+  max-width: 25%;
+  border-radius: 6px;
 }
 .btn2{
   background-color: var(--white);
   color: var(--orange-dark);
+  padding: 10px 16px;
+  margin: 5px 10px;
+  margin-left: 1px;
+  max-width: 15%;
+  border-radius: 6px;
 }
 
 
@@ -149,6 +167,11 @@ p {
   margin-bottom: 2rem;
 }
 
+.flex-box{
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
 
 /* Headings */
 
@@ -178,7 +201,29 @@ p {
 
 .article {
   margin-bottom: 1rem;
+  border: 2px solid blue;
+
 }
+
+.article1{
+  flex-direction: column;
+  border: 1px solid rgb(215, 215, 224);
+  row-gap: 10px;
+  max-width: 42%;
+  padding: 10px 15px;
+
+}
+
+.article2{
+  flex-direction: column;
+  flex-wrap: wrap;
+  border: 1px solid rgb(215, 215, 224);
+  row-gap: 10px;
+  max-width: 42%;
+  margin-top: 2%;
+  padding: 10px 15px;
+}
+
 
 .article__title {
   margin-bottom: 0.5rem;
@@ -208,7 +253,7 @@ p {
 .article__read-more a {
   font-size: 0.85rem;
   font-weight: 700;
-  color: var(--orange-dark);
+  color: var(blue);
   text-decoration: none;
 }
 
@@ -223,7 +268,7 @@ p {
 }
 
 .facebook-link {
-  color: var(--orange-dark);
+  color: var(blue);
 }
 
 /* Sidebar */
