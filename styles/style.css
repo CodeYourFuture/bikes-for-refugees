@@ -94,15 +94,16 @@ p {
 }
 .bikee {
   background-image: url("../images/header-bike.jpg");
-  background-size: contain;
-height: 75%;
-flex-direction: initial;
-background-repeat: no-repeat;
-width: 100%;
+  background-size: cover;
+background-position: 50% 50%;
+padding: 80px 30px;
+color: white;
 
 }
 .bikee h1 { 
   font-size: 3.125rem;
+  
+  
 }
 .don {
   background-color: #c05326;
@@ -168,17 +169,21 @@ width: 100%;
 
 .hero {
   background-image: url("header-bike.jpg");
-  background-color: var(--grey-light);
+  margin-bottom: 50px;/*background-color: var(--grey-light)*/
 }
 
 .hero h1 {
-  margin-bottom: 1rem;
+  
   font-size: 2.5rem;
 }
 
 .hero p {
   font-size: 1.2rem;
   margin-bottom: 2rem;
+}
+.lap {
+  margin-top: 40px;
+  margin-left: 5px;
 }
 .images {
   max-height: 50px;
@@ -192,9 +197,7 @@ width: 100%;
   max-height: 50px;
   width: auto;
 }
-.article__summary {
-  align-content: flex-end;
-}
+
 /* Headings */
 
 .heading-underline {
@@ -217,23 +220,30 @@ width: 100%;
   max-width: 100px;
   background: var(--orange-dark);
 }
-.article__sum {
-  text-align: end;
-  border: 25px solid black;
-  
+
+
+
+/* Article */
+.article__summary {
+  align-content: flex-end;
+}
+.article__content {
+  border: 3px solid grey;
+  border-radius: 5px;
+  display: flex;
   
 }
 
-/* Article */
-
 .article {
   margin-bottom: 1rem;
+  
 }
 
 .article__title {
   margin-bottom: 0.5rem;
   font-size: 1rem;
   font-weight: 700;
+
 }
 
 .article__title-link {
@@ -249,6 +259,7 @@ width: 100%;
 .article__thumbnail {
   object-fit: contain;
   width: 5rem;
+  padding-right: 20px;
 }
 
 .article__read-more {
@@ -270,18 +281,35 @@ width: 100%;
 .fa {
   margin-right: 0.5rem;
   color: var(--orange-dark);
+  justify-content: flex-end;
+  
+}
+.fa .fa-facebook-square {
+  display: flex;
+  justify-content: flex-end;
+  text-align: right;
+  
 }
 
 .facebook-link {
   color: var(--orange-dark);
+  
+  margin-right: -30px;
+}
+.facebook {
+  display: flex;
+  justify-content: flex-end;
+  margin-right: 25px;
 }
 
 /* Sidebar */
 
 .sidebar {
+
   display: flex;
   flex-direction: column;
   min-width: 350px;
+
 }
 
 /* Footer */
