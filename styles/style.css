@@ -58,6 +58,9 @@ p {
   width: auto;
 }
 
+img {
+  background-image: url("img/header-bike.jpg");
+}
 /* Navigation */
 
 .navigation__list {
@@ -67,6 +70,7 @@ p {
 
 .navigation__item {
   padding: 0.5rem 0;
+
 }
 
 .navigation__link {
@@ -74,9 +78,17 @@ p {
   font-weight: 600;
   text-transform: uppercase;
   text-decoration: none;
+  padding: 10px;
+  
+  
+
+  
+}
+.nav_link hoover {
+  color: orangered;
 }
 
-
+}
 /* Text styles */
 
 .text-highlight {
@@ -89,7 +101,7 @@ p {
   height: 0;
   width: 0;
   border: 6px solid var(--white);
-  border-left-color: var(--orange-dark);
+  border-left-color: var(--orange-dark);                 
 }
 
 
@@ -117,6 +129,7 @@ p {
   margin-bottom: 2rem;
 }
 
+
 /* hero */
 
 .hero {
@@ -132,6 +145,8 @@ p {
 .hero p {
   font-size: 1.2rem;
   margin-bottom: 2rem;
+
+
 }
 
 
@@ -139,7 +154,7 @@ p {
 
 .heading-underline {
   position: relative;
-  margin-bottom: 2rem;
+  margin-top: 40px;
   padding-bottom: 0.5rem;
   border-bottom: 2px solid var(--orange-light);
   font-size: 1rem;
@@ -248,3 +263,36 @@ p {
     padding-right: 2rem;
   }
 }
+
+
+#donate-btn {
+  background-color:  #c05326;
+  color: white;
+  border: none;
+}
+
+#donate3-btn {
+  background-color:  #c05326;
+border: none;
+color: white;
+}
+#volunteer-btn {
+  color: #c05326;
+  background-color: #fff;
+  border: none;
+  
+
+}
+
+#btn1 {
+  margin-top: 20px;
+  padding: 60px;
+  direction: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+ .hero{
+  background-image: url("./../images/header-bike.jpg");
+  padding: 70px 20px;
+  
+ }
