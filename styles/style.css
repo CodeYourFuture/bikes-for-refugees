@@ -15,14 +15,38 @@
 
 body {
   margin: 0;
-}
-
-body,
-button {
   font-family: "Source Sans Pro", "Helvetica Neue", Arial, sans-serif;
   color: var(--grey-dark);
   font-size: 1rem;
+  display: flex;
+  flex-direction: column;
+  min-width: 350px;
 }
+
+
+
+.donate {
+ background-color: #c05326; 
+
+}
+.donate:focus {
+  outline-color: transparent;
+  outline-style:solid;
+  box-shadow: 0 0 0 4px #5a01a7;
+}
+.btn_txt {
+  color: #c05326;
+font-family: ;
+}
+.donation-option {
+  display: flex;
+  flex-direction: row;
+  padding: 10px;
+  justify-content:space-around;
+  align-items: center;
+  background-color: rgb(9, 23, 221);
+}
+
 
 h1,h2,h3,h4,h5,h6 {
   margin-top: 0;
@@ -104,6 +128,14 @@ p {
   display: flex;
   flex-direction: column;
 }
+.sidebar {
+  display: flex;
+  flex-direction: column;
+  min-width: 350px;
+}
+
+
+
 
 /* Alert */
 
@@ -122,6 +154,7 @@ p {
 .hero {
   background-image: url("header-bike.jpg");
   background-color: var(--grey-light);
+  padding: 100px;
 }
 
 .hero h1 {
@@ -132,6 +165,12 @@ p {
 .hero p {
   font-size: 1.2rem;
   margin-bottom: 2rem;
+}
+
+
+ /* aside  */
+.sidebar {
+  
 }
 
 
@@ -213,11 +252,6 @@ p {
 
 /* Sidebar */
 
-.sidebar {
-  display: flex;
-  flex-direction: column;
-  min-width: 350px;
-}
 
 /* Footer */
 
