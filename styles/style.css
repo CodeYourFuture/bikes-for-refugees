@@ -14,7 +14,9 @@
  }
 
 body {
-  margin: 0;
+  
+  width: 1800px;
+  /* border: 2px solid rgb(23, 237, 241); */
 }
 
 body,
@@ -29,18 +31,37 @@ h1,h2,h3,h4,h5,h6 {
   margin-bottom: 0;
 }
 
-p {
-  margin-top: 0;
-  margin-bottom: 0;
-}
+
 
 .header,
 .content,
 .footer {
   padding: 0 1.5rem;
-  max-width: 1200px;
-  margin: 0 auto;
+  /* max-width: 1200px; */
+  justify-content: space-between;
+  /* border: 3px solid #4026c0; */
+  display: flex;
+  
+  
 }
+
+.nav{
+  display: flex;
+  width: 40%;
+  height: 71px;
+  /* border: 2px solid rgb(222, 250, 8); */
+  justify-content:space-between ;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  font-size: 17px;
+  font-weight: bold;
+  /* overflow: hidden; */
+  /* background-color: rgb(236, 232, 232); */
+    
+  }
+
+
 
 /* Header */
 
@@ -51,6 +72,8 @@ p {
   height: 5rem;
   margin-bottom: 1rem;
   padding-top: 1rem;
+  
+  
 }
 
 .header__logo {
@@ -63,10 +86,17 @@ p {
 .navigation__list {
   display: flex;
   list-style: none;
+  
 }
 
 .navigation__item {
   padding: 0.5rem 0;
+  display: flex;
+  
+  margin: 40px;
+  margin-bottom: 90px;
+  margin-top: 3px;
+  
 }
 
 .navigation__link {
@@ -74,6 +104,7 @@ p {
   font-weight: 600;
   text-transform: uppercase;
   text-decoration: none;
+  
 }
 
 
@@ -95,7 +126,13 @@ p {
 
 /* Buttons */
 
-  /* INSERT BUTTON STYLES HERE */
+.btn1{
+  background-color:var(--orange-dark);
+}
+.btn2{
+  background-color: var(--white);
+  color: var(--orange-dark);
+}
 
 
 /* Content */
@@ -103,7 +140,13 @@ p {
 .content {
   display: flex;
   flex-direction: column;
+  /* border: 4px solid rgb(106, 255, 0); */
+  padding-left: 1px;
+  padding-bottom: 10px;
+  width: 1390px;
 }
+
+
 
 /* Alert */
 
@@ -115,23 +158,50 @@ p {
   line-height: 1.3;
   padding: 1.5rem 1rem;
   margin-bottom: 2rem;
+  width: 1190px;
+  
 }
 
 /* hero */
 
 .hero {
-  background-image: url("header-bike.jpg");
+  display: flex;
+  background-image: url("../images/header-bike.jpg");
   background-color: var(--grey-light);
+  color: white;
+  margin-left: 1px;
+  padding-top: 120px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  /* border: 4px solid red; */
+  width: 1100;
+  height: 420px;
+  flex-direction: column;
+  align-content: flex-end;
+  justify-content: center;
+  
+  
+  
+}
+
+.donate_a_bike {
+  width: 150px;
+  margin: 0px;
+  /* border: 2px solid yellow; */
 }
 
 .hero h1 {
   margin-bottom: 1rem;
   font-size: 2.5rem;
+  /* border: 2px solid blue; */
+  margin-left: 20px;
 }
 
 .hero p {
   font-size: 1.2rem;
   margin-bottom: 2rem;
+  margin-left: 20px;
+  /* border: 2px solid rgb(250, 13, 235); */
 }
 
 
@@ -145,6 +215,9 @@ p {
   font-size: 1rem;
   font-weight: 600;
   text-transform: uppercase;
+  margin-top: 20px
+  
+  
 }
 
 .heading-underline:before {
@@ -162,13 +235,42 @@ p {
 /* Article */
 
 .article {
+  width: 20px;
   margin-bottom: 1rem;
+  border: 1px solid rgb(226, 219, 219);
+  width: 450px;
+  justify-items:space-around;
+  padding: 15px;
+  margin: 10px;
+  
 }
 
+.one_2{
+  display: flex;
+  flex-direction: row;
+  /* border: 5px solid rgb(48, 95, 100); */
+  width: 1100px;
+  height: 200px;
+  justify-content: space-between;
+  margin-left: 30;
+
+}
+
+.three_box{
+  
+  margin-left: 5px;
+  
+}
+
+aside{
+  margin-right: 0;
+  /* border:3px solid #ef5d1e; */
+}
 .article__title {
   margin-bottom: 0.5rem;
   font-size: 1rem;
   font-weight: 700;
+  
 }
 
 .article__title-link {
@@ -209,6 +311,7 @@ p {
 
 .facebook-link {
   color: var(--orange-dark);
+  margin-left: 50%;
 }
 
 /* Sidebar */
@@ -222,13 +325,20 @@ p {
 /* Footer */
 
 .footer {
+  display: flex;
   margin-top: 2rem;
+  justify-content: center;
+  /* border: 3px solid blue; */
 }
 
 .footer__content {
+  
+  flex-direction: column;
   border-top: 2px solid var(--orange-light);
   padding-top: 2rem;
   padding-bottom: 2rem;
+  /* border: 3px solid rgb(203, 25, 31); */
+  justify-content: center;
 }
 
 .footer p {
@@ -247,4 +357,78 @@ p {
   .main {
     padding-right: 2rem;
   }
+}
+
+.donate_now{
+  background-color: #e8713d;
+  color: white;
+  height: 40px;
+  margin-top: 20px;
+  border-radius: 8px;
+  width: 140px;
+}
+
+.donate_a_bike{
+  display: flex;
+  background-color: #ef5d1e;
+  color: white;
+  margin-top: 20px;
+  padding: 5px;
+  
+  
+}
+
+.volunteer{
+  /* display: flex; */
+  width: 90px;
+  color: #c05326;
+  margin-top: auto;
+  padding: 5px;
+  background-color: #ffffff;
+  /* border: 4px solid blue; */
+  
+  
+}
+.button{
+  flex-direction: row;
+  /* border: 4px solid blue; */
+  margin-left: 20px;
+  /* display: flex;
+  flex-direction: row;
+  justify-content: start;
+  margin-left: 0;
+   */
+
+}
+
+providing{
+  margin-top: 10%;
+  padding-top: 50%;
+}
+
+bikes_for{
+  display: flex;
+  margin-top: 100em;
+  
+}
+
+.spring_fun{
+  height: 100px;
+  width: 100px;
+}
+
+.bikes_for_ref{
+  height: 100px;
+  width: 100px;
+}
+
+.help_us{
+  height: 100px;
+  width: 100px;
+}
+.article__content{
+  display: flex;
+  justify-content: space-between;
+  border: 1px solid rgb(226, 219, 219);
+  
 }
