@@ -131,7 +131,10 @@ padding-right: 250px;
 
 
 /* Buttons */
-
+button{
+  background-color: #c05326;
+  color: #f7eae4;
+}
   /* INSERT BUTTON STYLES HERE */
 
 
