@@ -152,7 +152,7 @@ padding-right: 250px;
   display: block;
   height: 200px;
   width: 950px;
-  border: 3px solid blue;
+
   background-image: url("../images/header-bike.jpg");
   background-color: var(--grey-light);
   background-size: cover;
