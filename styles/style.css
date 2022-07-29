@@ -203,6 +203,13 @@ padding-right: 250px;
 .article {
   margin-bottom: 1rem;
   border: 1px solid rgb(225, 220, 220);
+  display: flex;
+  flex-direction: column;
+  
+}
+.artical1{
+  display: flex;
+  flex-direction: row;
 }
 
 .article__title {
@@ -222,6 +229,9 @@ padding-right: 250px;
 .article__summary {
   margin-top: 0;
   margin-bottom: 1rem;
+  display: flex;
+  justify-content: space-around;
+
 }
 
 .article__thumbnail {
@@ -261,6 +271,7 @@ padding-right: 250px;
   flex-direction: column;
   min-width: 350px;
 }
+
 
 /* Footer */
 
