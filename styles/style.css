@@ -172,19 +172,19 @@ p {
   margin-bottom: 2rem;
   border: lightgray 1px solid;
   width: 100%;
+  display: flex;
 }
 
 .article1 {
   float: left;
-  width: 50%;
+  width: 45%;
   border: lightgray 1px solid;
   padding: 5px;
 }
 
 .article2 {
   float: right;
-  margin-top: -127px;
-  width: 50%;
+  width: 45%;
   border: lightgray 1px solid;
 }
 
@@ -203,7 +203,7 @@ p {
 .article__summary {
   margin-top: 0;
   margin-bottom: 1rem;
-  margin-left: 40px;
+  margin: 5px;
   display: inline-block;
   vertical-align: top;
 }
