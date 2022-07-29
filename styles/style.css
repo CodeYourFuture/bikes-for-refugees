@@ -23,13 +23,12 @@ button {
   color: var(--grey-dark);
   font-size: 1rem;
 }
-.header__logo {
-  background-image: url("../ima");
-}
+
+
 h1,h2,h3,h4,h5,h6 {
   margin-top: 0;
   margin-bottom: 0;
-}
+} 
 
 p {
   margin-top: 0;
@@ -68,7 +67,7 @@ p {
 }
 
 .navigation__item {
-  padding: 0.5rem 0;
+  padding: 0.675rem;
 }
 
 .navigation__link {
@@ -93,8 +92,54 @@ p {
   border: 6px solid var(--white);
   border-left-color: var(--orange-dark);
 }
+.bikee {
+  background-image: url("../images/header-bike.jpg");
+  background-size: contain;
+height: 75%;
+flex-direction: initial;
+background-repeat: no-repeat;
+width: 100%;
 
-
+}
+.bikee h1 { 
+  font-size: 3.125rem;
+}
+.don {
+  background-color: #c05326;
+    border: none;
+    color: white;
+    padding: 5px 10px;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 4px;
+}
+.bikee h1,
+.bikee h3 {
+  text-align: center;
+}
+.lap {
+  margin-bottom: 4.457rem;
+}
+.donate {
+  background-color: #d46b15;
+  text-align: center;
+  margin-left: 4.67rem;
+  border-radius: 5px;
+  color: #e4e4e4;
+  border: none;
+  padding: 10px;
+}
+.donation {
+  color: #c05326;
+  text-align: center;
+  border-radius: 5px;
+  border: none;
+  background-color: white;
+  padding: 10px;
+}
 /* Buttons */
 
   /* INSERT BUTTON STYLES HERE */
@@ -135,8 +180,21 @@ p {
   font-size: 1.2rem;
   margin-bottom: 2rem;
 }
-
-
+.images {
+  max-height: 50px;
+  width: auto;
+}
+.imagess {
+  max-height: 50px;
+  width: auto;
+}
+.immage {
+  max-height: 50px;
+  width: auto;
+}
+.article__summary {
+  align-content: flex-end;
+}
 /* Headings */
 
 .heading-underline {
@@ -159,7 +217,12 @@ p {
   max-width: 100px;
   background: var(--orange-dark);
 }
-
+.article__sum {
+  text-align: end;
+  border: 25px solid black;
+  
+  
+}
 
 /* Article */
 
