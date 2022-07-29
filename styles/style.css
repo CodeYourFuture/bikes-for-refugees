@@ -48,7 +48,7 @@ h1,h2,h3,h4,h5,h6 {
 .nav{
   display: flex;
   width: 40%;
-  height: 70px;
+  height: 71px;
   /* border: 2px solid rgb(222, 250, 8); */
   justify-content:space-between ;
   list-style: none;
