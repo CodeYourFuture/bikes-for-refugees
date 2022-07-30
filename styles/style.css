@@ -78,6 +78,10 @@ p {
   padding: 1em;
 }
 
+.navigation__link:hover {
+  color: #c05326;
+}
+
 
 /* Text styles */
 
