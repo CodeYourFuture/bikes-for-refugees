@@ -242,6 +242,7 @@ button:focus {
 .article__thumbnail {
   object-fit: contain;
   width: 5rem;
+  padding: 20px;
 }
 
 .article__read-more {
@@ -263,10 +264,12 @@ button:focus {
 .fa {
   margin-right: 0.5rem;
   color: var(--orange-dark);
+  margin-top: 10px;
 }
 
 .facebook-link {
   color: var(--orange-dark);
+  margin-left: 180px;
 }
 
 /* Sidebar */
@@ -276,6 +279,17 @@ button:focus {
   flex-direction: column;
   min-width: 350px;
 }
+
+.card {
+  display: flex;
+  flex-direction: row;
+  align-content: space-around;
+  align-items: center;
+  padding: 10px;
+  border: #292b2c solid 1px;
+  margin: 10px;
+}
+
 
 /* Footer */
 
