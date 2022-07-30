@@ -19,6 +19,7 @@ body {
 
 body,
 button {
+  
   font-family: "Source Sans Pro", "Helvetica Neue", Arial, sans-serif;
   color: var(--grey-dark);
   font-size: 1rem;
@@ -67,6 +68,8 @@ p {
 
 .navigation__item {
   padding: 0.5rem 0;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
 }
 
 .navigation__link {
@@ -120,8 +123,10 @@ p {
 /* hero */
 
 .hero {
-  background-image: url("header-bike.jpg");
-  background-color: var(--grey-light);
+  background-image: url("/images/header-bike.jpg");
+ /* background-color: var(--grey-light);*/
+ width: auto;
+ height: 350px;
 }
 
 .hero h1 {
@@ -160,9 +165,21 @@ p {
 
 
 /* Article */
+.article-cont {
+  display: flex;
+}
+.article-up {
+  margin-bottom: 1rem;
+  padding: 1.2rem;
+  margin-right: 1.5rem;
+  display: flex;
+  border: #c05326 solid;
+}
 
 .article {
   margin-bottom: 1rem;
+  padding: 1.2rem;
+  margin-right: 1.5rem;
 }
 
 .article__title {
@@ -184,6 +201,7 @@ p {
 .article__thumbnail {
   object-fit: contain;
   width: 5rem;
+  padding-right: 1.5rem;
 }
 
 .article__read-more {
@@ -209,6 +227,7 @@ p {
 
 .facebook-link {
   color: var(--orange-dark);
+  margin-left: 10rem;
 }
 
 /* Sidebar */
@@ -248,3 +267,39 @@ p {
     padding-right: 2rem;
   }
 }
+button {
+  background-color: #ce5f31;
+  padding: 0.3rem;
+  border-color: transparent;
+  margin-left: 3em;
+  margin-top: 5em;
+}
+.volunteer {
+  background-color: #fff;
+  color:#ce5f31 ;
+  margin: 0.5rem;
+  
+  
+}
+.btn:hover {
+  background-color: #fff;
+}
+.hero p {
+  color: #fff;
+  margin-left: 2em;
+  margin-top: 3em;
+}
+.hero h1 {
+  color: #fff;
+  margin-left: 3em;
+}
+.article {
+  border: #888e91 solid; 
+  
+
+}
+.heading-underline {
+  margin-top: 16px;
+}
+
+
