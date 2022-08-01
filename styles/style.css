@@ -101,22 +101,29 @@ ul li:hover {background: var(--orange-dark);}
   border: 6px solid var(--white);
   border-left-color: var(--orange-dark);
   
+  
 }
 
 
 /* Buttons */
 
-  .donate,
+  
   .bike{
+    background-color: #c05326;
+    color: #e4e4e4;
+    padding: 15px;
+    border: none;
+  
+
+  }
+  .donate{
     background-color: #c05326;
     color: #e4e4e4;
     border-radius: 5px;
     border-width: 0px;
-    padding: 15px;
     align-content: center;
+    padding: 15px;
     cursor: pointer;
-  
-
   }
   .donate:hover {background-color: rgb(116, 57, 57);
     color:  #c05326;
@@ -124,12 +131,14 @@ ul li:hover {background: var(--orange-dark);}
   .volunteer{
     background-color: #e4e4e4;
     color: #c05326;
-    border-radius: 5px;
-    border-width: 0px;
-    padding: 5px;
-    align-content: center;
-    cursor: pointer;
+    padding: 15px;
+    border: none;
+    margin-left: 1rem;
+    
+    
   }
+  
+  
 
 
 /* Content */
@@ -137,6 +146,7 @@ ul li:hover {background: var(--orange-dark);}
 .content {
   display: flex;
   flex-direction: column;
+
 }
 
 /* Alert */
@@ -163,7 +173,6 @@ ul li:hover {background: var(--orange-dark);}
   margin-bottom: 25px;
   margin-top: 40px;
   padding: 25px;
-.  
 
   
 }
@@ -209,10 +218,11 @@ ul li:hover {background: var(--orange-dark);}
 
 .article {
   margin-bottom: 1rem;
-  display: flex;
+  display: block;;
   border: 1px solid black;
   justify-content: space-between;
   padding: 20px;
+  
 
   
 }
@@ -221,6 +231,8 @@ ul li:hover {background: var(--orange-dark);}
   margin-bottom: 0.5rem;
   font-size: 1rem;
   font-weight: 700;
+  text-align: center;
+  
   
   
 }
@@ -238,6 +250,9 @@ ul li:hover {background: var(--orange-dark);}
 .article__thumbnail {
   object-fit: contain;
   width: 5rem;
+  
+
+  
 }
 
 .article__read-more {
@@ -249,6 +264,7 @@ ul li:hover {background: var(--orange-dark);}
   font-weight: 700;
   color: var(--orange-dark);
   text-decoration: none;
+  
 }
 
 .article__read-more a:hover,
