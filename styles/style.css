@@ -13,6 +13,7 @@
   --white: #fff;
 }
 
+
 body {
  margin: 0;
 }
@@ -347,14 +348,25 @@ p {
  font-size: 0.85rem;
 }
 
-/* Media queries */
+ /* Media queries */
 
-@media screen and (min-width: 992px) {
- .content {
-   flex-direction: row;
+ @media screen and (min-width: 992px) {
+  .content {
+    flex-direction: row;
+  }
+ 
+  .main {
+    padding-right: 2rem;
+  }
  }
 
- .main {
-   padding-right: 2rem;
- }
+@media screen and (min-width: 320px) {
+  h1, h2 { 
+    font-size: 1em;
+   }
+  .donate-now1,
+  .volunteer {
+    padding: 2px;
+
+  } 
 }
