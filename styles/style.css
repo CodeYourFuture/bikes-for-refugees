@@ -24,6 +24,7 @@ button {
   font-size: 1rem;
 }
 
+
 h1,h2,h3,h4,h5,h6 {
   margin-top: 0;
   margin-bottom: 0;
@@ -67,6 +68,10 @@ p {
 
 .navigation__item {
   padding: 0.5rem 0;
+  justify-content: center;
+  align-items: stretch;
+  margin: 20px;
+  
 }
 
 .navigation__link {
@@ -74,7 +79,12 @@ p {
   font-weight: 600;
   text-transform: uppercase;
   text-decoration: none;
+  display: flex;
+  justify-content: flex-end;
+  padding: 15px;
+  
 }
+ul li:hover {background: var(--orange-dark);}
 
 
 /* Text styles */
@@ -90,12 +100,45 @@ p {
   width: 0;
   border: 6px solid var(--white);
   border-left-color: var(--orange-dark);
+  
+  
 }
 
 
 /* Buttons */
 
-  /* INSERT BUTTON STYLES HERE */
+  
+  .bike{
+    background-color: #c05326;
+    color: #e4e4e4;
+    padding: 15px;
+    border: none;
+  
+
+  }
+  .donate{
+    background-color: #c05326;
+    color: #e4e4e4;
+    border-radius: 5px;
+    border-width: 0px;
+    align-content: center;
+    padding: 15px;
+    cursor: pointer;
+  }
+  .donate:hover {background-color: rgb(116, 57, 57);
+    color:  #c05326;
+   }
+  .volunteer{
+    background-color: #e4e4e4;
+    color: #c05326;
+    padding: 15px;
+    border: none;
+    margin-left: 1rem;
+    
+    
+  }
+  
+  
 
 
 /* Content */
@@ -103,6 +146,7 @@ p {
 .content {
   display: flex;
   flex-direction: column;
+
 }
 
 /* Alert */
@@ -122,16 +166,27 @@ p {
 .hero {
   background-image: url("header-bike.jpg");
   background-color: var(--grey-light);
+  background-size: 100%;
+  flex-flow: wrap;
+  display: flex;
+  height: 300px;;
+  margin-bottom: 25px;
+  margin-top: 40px;
+  padding: 25px;
+
+  
 }
 
 .hero h1 {
   margin-bottom: 1rem;
   font-size: 2.5rem;
+  color: #fff;
 }
 
 .hero p {
   font-size: 1.2rem;
   margin-bottom: 2rem;
+  color: #fff;
 }
 
 
@@ -163,12 +218,23 @@ p {
 
 .article {
   margin-bottom: 1rem;
+  display: block;;
+  border: 1px solid black;
+  justify-content: space-between;
+  padding: 20px;
+  
+
+  
 }
 
 .article__title {
   margin-bottom: 0.5rem;
   font-size: 1rem;
   font-weight: 700;
+  text-align: center;
+  
+  
+  
 }
 
 .article__title-link {
@@ -184,6 +250,9 @@ p {
 .article__thumbnail {
   object-fit: contain;
   width: 5rem;
+  
+
+  
 }
 
 .article__read-more {
@@ -195,6 +264,7 @@ p {
   font-weight: 700;
   color: var(--orange-dark);
   text-decoration: none;
+  
 }
 
 .article__read-more a:hover,
@@ -209,6 +279,7 @@ p {
 
 .facebook-link {
   color: var(--orange-dark);
+  text-align: right;
 }
 
 /* Sidebar */
@@ -217,6 +288,9 @@ p {
   display: flex;
   flex-direction: column;
   min-width: 350px;
+  border: 1px solid black;
+  justify-content: space-between;
+  padding: 20px;
 }
 
 /* Footer */
