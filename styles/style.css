@@ -348,7 +348,20 @@ p {
  font-size: 0.85rem;
 }
 
+<<<<<<< Updated upstream
  /* Media queries */
+=======
+.button 1 {
+  background-color: #c05326;
+  
+}
+.button 2 {
+  background-color: #fff;
+  color: #c05326;
+
+}
+/* Media queries */
+>>>>>>> Stashed changes
 
  @media screen and (min-width: 992px) {
   .content {
@@ -370,3 +383,4 @@ p {
 
   } 
 }
+
