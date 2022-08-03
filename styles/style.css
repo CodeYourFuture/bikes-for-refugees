@@ -17,11 +17,18 @@ body {
   margin: 0;
 }
 
-body,
 button {
   font-family: "Source Sans Pro", "Helvetica Neue", Arial, sans-serif;
   color: var(--grey-dark);
   font-size: 1rem;
+  border: 1px solid transparent;
+  background: #ef7f52;
+  border-radius: 5px;
+  padding: 0.5rem;
+}
+
+button:hover,button:focus {
+  background: #b9491d;
 }
 
 h1,h2,h3,h4,h5,h6 {
@@ -74,6 +81,9 @@ p {
   font-weight: 600;
   text-transform: uppercase;
   text-decoration: none;
+  margin: 1vw;
+  padding: 1vw;
+  border: 1px solid transparent;
 }
 
 
@@ -120,18 +130,32 @@ p {
 /* hero */
 
 .hero {
-  background-image: url("header-bike.jpg");
+  background-image: url("../images/header-bike.jpg");
   background-color: var(--grey-light);
+  color: white;
+  padding: 2.5rem;
+  height: 38%;
 }
 
 .hero h1 {
   margin-bottom: 1rem;
+  margin-top: 1.5rem;
   font-size: 2.5rem;
 }
 
 .hero p {
   font-size: 1.2rem;
   margin-bottom: 2rem;
+}
+
+.flex-organization-buttons {
+  display: flex;
+  flex-flow: row wrap;
+  gap: 1rem;
+}
+
+.:first-child {
+  background-color: aqua;
 }
 
 
@@ -161,8 +185,26 @@ p {
 
 /* Article */
 
-.article {
+.sidebar > article {
   margin-bottom: 1rem;
+  display: flex;
+  flex-direction: row;
+  border: 1px solid rgb(45, 45, 45);
+  padding: 1.5rem;
+}
+
+.learn-more {
+  margin-bottom: 1rem;
+  display: flex;
+  flex-direction: row;
+}
+
+.learn-more > article {
+  margin: 1rem;
+  display: flex;
+  flex-direction: column;
+  border: 1px solid rgb(45, 45, 45);
+  padding: 1.5rem;
 }
 
 .article__title {
@@ -237,7 +279,26 @@ p {
   font-size: 0.85rem;
 }
 
+#buttonVolunteer {
+  background-color: white;
+  color: #ef7f52;
+}
+
+#buttonVolunteer:hover, #buttonVolunteer:focus {
+  background-color: rgb(193, 191, 191);
+}
+
 /* Media queries */
+
+@media screen and (max-width: 320px) {
+  .hero h1 {
+    font-size: 1rem;
+  }
+  
+  .hero button {
+    font-size: 0.5rem;
+  }
+}
 
 @media screen and (min-width: 992px) {
   .content {
