@@ -31,9 +31,14 @@ button:hover,button:focus {
   background: #b9491d;
 }
 
-h1,h2,h3,h4,h5,h6 {
+h1,h3,h4,h5,h6 {
   margin-top: 0;
   margin-bottom: 0;
+}
+
+h2 {
+  margin-top: 40px;
+  padding: auto;
 }
 
 p {
@@ -76,6 +81,7 @@ p {
   padding: 0.5rem 0;
 }
 
+/*menú top*/
 .navigation__link {
   color: var(--grey-dark);
   font-weight: 600;
@@ -86,6 +92,18 @@ p {
   border: 1px solid transparent;
 }
 
+.navigation__link {
+  border: 1px solid transparent;
+  background: none;
+  border-radius: 5px;
+  padding: 0.5rem;
+}
+
+.navigation__link:hover,
+.navigation__link:focus {
+  background: #da511b;
+  color: white
+}
 
 /* Text styles */
 
@@ -132,7 +150,7 @@ p {
 .hero {
   background-image: url("../images/header-bike.jpg");
   background-color: var(--grey-light);
-  color: white;
+  color: rgb(255, 255, 255);
   padding: 2.5rem;
   height: 38%;
 }
