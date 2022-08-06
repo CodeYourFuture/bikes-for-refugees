@@ -337,3 +337,16 @@ padding: 10px;
     padding-right: 1rem;
   }
 }
+@media (max-width: 320px) {
+  #h11 {
+    font-size: 10px;
+  }
+  #button2 {
+    
+    width: 50px;
+    white-space: nowrap;
+  }
+  .buttonc {
+    font-size: 5px;
+  }
+}
