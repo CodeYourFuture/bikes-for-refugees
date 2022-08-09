@@ -101,6 +101,11 @@ p {
   color: white;
 }
 
+.bike {
+  background-color: #c05326;
+  color: white;
+}
+
 .vol {
   background-color: white;
   color: #c05326;
@@ -276,4 +281,14 @@ p {
   .main {
     padding-right: 2rem;
   }
+}
+
+@media screen and (max-width: 320px) { 
+  body {
+    background-color: #c05326;
+    font-size: x-small;
+}
+button {
+  width: 200px !important;
+}
 }
