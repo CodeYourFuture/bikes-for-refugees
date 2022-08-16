@@ -128,7 +128,9 @@ p {
 }
 
 .donate-btn:hover {
-  background-color: #755444;
+  border: solid 1px black;
+  color: #c05326;
+  background-color: #ffffff;
 }
 
 .volunteer-btn {
@@ -137,7 +139,7 @@ p {
 }
 
 .volunteer-btn:hover {
-  background-color: #755444;
+  background-color: #c05326;
   color: #fff;
 }
 
