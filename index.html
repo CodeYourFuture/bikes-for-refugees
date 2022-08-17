@@ -15,22 +15,18 @@
       href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
     />
     <link rel="stylesheet" href="styles/style.css" />
-
     <title>Bikes for Refugees</title>
   </head>
-
   <body>
-    <div class="header">
-
-        <a href="#">
+    <header class="header">
+      <a href="#">
           <img
             src="images/bikes-for-refugees_logo.jpg"
             alt="Logo for Bikes for Refugees Scotland"
             class="header__logo"
           />
-        </a>
-
-        <div>
+      </a>
+      <nav>
           <ul class="navigation__list">
             <li class="navigation__item">
               <a class="navigation__link" href="#">Home</a>
@@ -45,13 +41,10 @@
               <a class="navigation__link" href="#">Contact Us</a>
             </li>
           </ul>
-        </div>
-
-        <button>Donate Now</button>
-
-    </div>
-
-    <div class="content">
+      </nav>
+      <button class="donate">Donate Now</button>
+    </header>
+    <main class="content">
         <div class="main">
           <div class="alert">
             You've helped us give <span class="text-highlight">72</span> bikes
@@ -64,14 +57,22 @@
               Providing donated bikes and accessories to refugees and asylum
               seekers in Scotland.
             </p>
-            <button>Donate a bike today</button>
-            <button>Volunteer</button>
+            <button class="donate">Donate a bike today</button>
+            <button class="volunteer">Volunteer</button>
           </div>
+          <!--  <div  class="container">
+            <div class="box">Check availability</div>
+            <div class="box">Donate bikes</div>
+            <div class="box">Volunteer with us</div>
+          </div> -->
+         
+         
 
-          <div>
+
+        <div>
             <h2 class="heading-underline">Learn more</h2>
 
-            <div>
+            <article class="article-section">
               <div class="article">
                 <h3 class="article__title">Why do refugees need bikes?</h3>
                 <p class="article__summary">
@@ -101,7 +102,7 @@
                   </a>
                 </p>
               </div>
-            </div>
+            </article>
           </div>
         </div>
 
@@ -111,7 +112,7 @@
           <div class="article">
             <img
               class="article__thumbnail"
-              src="spring-fundraisers_thumbnail.jpg"
+              src="images/spring-fundraisers_thumbnail.jpg"
               alt=""
             />
             <div class="article__content">
@@ -125,10 +126,10 @@
             </div>
           </div>
 
-          <div class="article">
+          <article class="article">
             <img
               class="article__thumbnail"
-              src="bikes-for-refugees_logo.jpg"
+              src="images/bikes-for-refugees_logo.jpg"
               alt=""
             />
             <div class="article__content">
@@ -136,12 +137,12 @@
                 <a class="article__title-link" href="#">Bike dropoff event in Edinburgh on May 11</a>
               </h3>
             </div>
-          </div>
+          </article>
 
-          <div class="article">
+          <article class="article">
             <img
               class="article__thumbnail"
-              src="edinburgh-damascus_thumbnail.png"
+              src="images/edinburgh-damascus_thumbnail.png"
               alt=""
             />
             <div class="article__content">
@@ -153,7 +154,7 @@
                 to Damascus.
               </p>
             </div>
-          </div>
+          </article>
 
           <a
             href="https://www.facebook.com/BikesforRefugeesScotland/events/?ref=page_internal"
@@ -164,9 +165,8 @@
             All Facebook events
           </a>
         </div>
-    </div>
-
-    <div class="footer">
+    </main>
+    <footer class="footer">
       <div class="footer__content">
         <p>
           <strong>Bikes for Refugees Scotland is a volunteer-led project to help
@@ -174,6 +174,6 @@
         </p>
         <p>Website by Code Your Future</p>
       </div>
-    </div>
+    </footer>
   </body>
 </html>
