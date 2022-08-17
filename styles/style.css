@@ -11,6 +11,7 @@
    --orange-dark: #c05326;
    --orange-light: #f7eae4;
    --white: #fff;
+   font-family: Arial, Helvetica, sans-serif;
  }
 
 body {
@@ -99,14 +100,15 @@ button {
   color: var(--grey-dark);
   font-size: 1rem;
   border: 0;
-  padding: 1rem;
-  border-radius: 6px;
+  padding: 0.75rem;
+  border-radius: 3px;
   font-weight: 600;
 }
 
 .donate {
   background-color: #c05326;
-  color: #fff
+  color: #fff;
+  margin-left:20px;
 }
 
 .volunteer {
@@ -138,18 +140,26 @@ button {
 /* hero */
 
 .hero {
-  background-image: url("https: //github.com/CodeYourFuture/bikes-for-refugees/blob/9f799b263cbd12a02272ae7db7dd0a2237b35d22/images/header-bike.jpg");
-  background-color: var(--grey-light);
+  background-image: url("../images/header-bike.jpg");
+  height: 300px;
+  margin-bottom: 40px;
+ 
 }
 
 .hero h1 {
   margin-bottom: 1rem;
   font-size: 2.5rem;
+  color: var(--white);
+  padding-left: 20px;
+  padding-top:80px;
 }
 
 .hero p {
   font-size: 1.2rem;
   margin-bottom: 2rem;
+  color: var(--white);
+  padding-left:20px;
+
 }
 
 
@@ -186,6 +196,10 @@ button {
 }
 
 
+
+.facebook-link{
+  text-align: right;
+}
 .box{
   height:60px;
   width: 120px;
@@ -258,12 +272,36 @@ button {
   color: var(--orange-dark);
 }
 
+.article-section {
+  display: flex;
+  justify-content: space-between;
+}
+
+.article-section .article {
+  border: 2px solid var(--grey-light);
+  padding: 20px;
+  width: 44%;
+
+}
+
 /* Sidebar */
 
 .sidebar {
   display: flex;
   flex-direction: column;
   min-width: 350px;
+}
+
+.sidebar .article{
+  display: flex;
+  flex-direction: row;
+  padding: 20px;
+  border: 2px solid var(--grey-light);
+  align-content: center;
+}
+
+.sidebar .article img{
+ padding-right: 20px;
 }
 
 /* Footer */
