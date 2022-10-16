@@ -5,13 +5,13 @@
  * 
  */
 
- :root {
-   --grey-dark: #292b2c;
-   --grey-light: #e4e4e4;
-   --orange-dark: #c05326;
-   --orange-light: #f7eae4;
-   --white: #fff;
- }
+:root {
+  --grey-dark: #292b2c;
+  --grey-light: #e4e4e4;
+  --orange-dark: #c05326;
+  --orange-light: #f7eae4;
+  --white: #fff;
+}
 
 body {
   margin: 0;
@@ -24,7 +24,21 @@ button {
   font-size: 1rem;
 }
 
-h1,h2,h3,h4,h5,h6 {
+.donateButton {
+  background-color: #c05326;
+}
+
+.volunterButton {
+  background-color: #fff;
+  color: #c05326;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   margin-top: 0;
   margin-bottom: 0;
 }
@@ -76,7 +90,6 @@ p {
   text-decoration: none;
 }
 
-
 /* Text styles */
 
 .text-highlight {
@@ -92,11 +105,9 @@ p {
   border-left-color: var(--orange-dark);
 }
 
-
 /* Buttons */
 
-  /* INSERT BUTTON STYLES HERE */
-
+/* INSERT BUTTON STYLES HERE */
 
 /* Content */
 
@@ -134,7 +145,6 @@ p {
   margin-bottom: 2rem;
 }
 
-
 /* Headings */
 
 .heading-underline {
@@ -157,7 +167,6 @@ p {
   max-width: 100px;
   background: var(--orange-dark);
 }
-
 
 /* Article */
 
