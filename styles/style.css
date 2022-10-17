@@ -100,7 +100,7 @@ p {
 
 button {
   padding: 0.5rem;
-  border: 0px;
+  border: 6px;
   border-radius: 15px;
 }
 
@@ -134,9 +134,12 @@ button:hover {
 }
 
 .CTA {
-  margin: 20px;
-  padding: 20px;
+  margin: 2rem;
+  padding: 2rem;
   background-color: aqua;
+  border-radius: 15px;
+  border: 6px;
+  border-color: #292b2c;
 }
 /* Alert */
 
