@@ -24,15 +24,6 @@ button {
   font-size: 1rem;
 }
 
-.donateButton {
-  background-color: #c05326;
-}
-
-.volunterButton {
-  background-color: #fff;
-  color: #c05326;
-}
-
 h1,
 h2,
 h3,
@@ -80,7 +71,7 @@ p {
 }
 
 .navigation__item {
-  padding: 0.5rem 0;
+  padding: 0.5rem 1rem;
 }
 
 .navigation__link {
@@ -107,6 +98,24 @@ p {
 
 /* Buttons */
 
+button {
+  padding: 0.5rem;
+  border: 0px;
+  border-radius: 15px;
+}
+
+.donateButton {
+  background-color: #c05326;
+}
+
+.volunterButton {
+  background-color: #fff;
+  color: #c05326;
+}
+
+button:hover {
+  background-color: #934423;
+}
 /* INSERT BUTTON STYLES HERE */
 
 /* Content */
