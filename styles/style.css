@@ -100,7 +100,7 @@ p {
 
 button {
   padding: 0.5rem;
-  border: 6px;
+  border: 1px solid black;
   border-radius: 15px;
 }
 
@@ -138,8 +138,8 @@ button:hover {
   padding: 2rem;
   background-color: aqua;
   border-radius: 15px;
-  border: 6px;
-  border-color: #292b2c;
+  border: 1px solid black;
+  /*border-color: #292b2c;*/
 }
 /* Alert */
 
@@ -158,6 +158,7 @@ button:hover {
 .hero {
   background-image: url("header-bike.jpg");
   background-color: var(--grey-light);
+  padding: 2rem;
 }
 
 .hero h1 {
