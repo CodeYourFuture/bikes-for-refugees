@@ -125,6 +125,19 @@ button:hover {
   flex-direction: column;
 }
 
+/*call to action*/
+.call-to-action {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  /*background-color: aqua;*/
+}
+
+.CTA {
+  margin: 20px;
+  padding: 20px;
+  background-color: aqua;
+}
 /* Alert */
 
 .alert {
