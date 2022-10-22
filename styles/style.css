@@ -97,6 +97,7 @@ p {
 }
 
 /* Buttons */
+
 .donate-button {
   background-color: #c05326;
   color: white;
@@ -105,10 +106,12 @@ p {
   transition: all ease-in-out 300ms;
 }
 
-.donate-button:hover {
-  color: #c05326;
-  background-color: white;
-  border: 2px solid #c05326;
+.donate-button:hover,
+.donate-button:focus {
+  color: white;
+  background-color: #934423;
+  border: 2px solid black;
+  box-shadow: 0px 5px 10px rgba(77, 34, 6, 0.2);
 }
 
 .white-color-button {
@@ -119,10 +122,12 @@ p {
   transition: all ease-in-out 300ms;
 }
 
-.white-color-button:hover {
-  background-color: #c05326;
+.white-color-button:hover,
+.white-color-button:focus {
+  background-color: #934423;
   color: #fff;
   border: 2px solid black;
+  box-shadow: 0px 5px 10px rgba(77, 34, 6, 0.2);
 }
 
 /* Content */
