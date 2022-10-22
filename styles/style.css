@@ -5,13 +5,13 @@
  * 
  */
 
- :root {
-   --grey-dark: #292b2c;
-   --grey-light: #e4e4e4;
-   --orange-dark: #c05326;
-   --orange-light: #f7eae4;
-   --white: #fff;
- }
+:root {
+  --grey-dark: #292b2c;
+  --grey-light: #e4e4e4;
+  --orange-dark: #c05326;
+  --orange-light: #f7eae4;
+  --white: #fff;
+}
 
 body {
   margin: 0;
@@ -24,7 +24,12 @@ button {
   font-size: 1rem;
 }
 
-h1,h2,h3,h4,h5,h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   margin-top: 0;
   margin-bottom: 0;
 }
@@ -76,7 +81,6 @@ p {
   text-decoration: none;
 }
 
-
 /* Text styles */
 
 .text-highlight {
@@ -92,11 +96,34 @@ p {
   border-left-color: var(--orange-dark);
 }
 
-
 /* Buttons */
+.donate-button {
+  background-color: #c05326;
+  color: white;
+  border: 2px solid black;
+  border-radius: 4px;
+  transition: all ease-in-out 300ms;
+}
 
-  /* INSERT BUTTON STYLES HERE */
+.donate-button:hover {
+  color: #c05326;
+  background-color: white;
+  border: 2px solid #c05326;
+}
 
+.white-color-button {
+  background-color: #fff;
+  color: #c05326;
+  border: 2px solid #c05326;
+  border-radius: 4px;
+  transition: all ease-in-out 300ms;
+}
+
+.white-color-button:hover {
+  background-color: #c05326;
+  color: #fff;
+  border: 2px solid black;
+}
 
 /* Content */
 
@@ -134,7 +161,6 @@ p {
   margin-bottom: 2rem;
 }
 
-
 /* Headings */
 
 .heading-underline {
@@ -157,7 +183,6 @@ p {
   max-width: 100px;
   background: var(--orange-dark);
 }
-
 
 /* Article */
 
