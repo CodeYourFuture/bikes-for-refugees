@@ -42,6 +42,29 @@ footer {
   margin: 0 auto;
 }
 
+button:hover, 
+button:focus {
+  background-color: #934423;
+  color: #ffffff;
+}
+
+/* for accessibility re: contrast, the hover/focus should change the font color white */
+.button-style-two:hover,
+.button-style-two:focus {
+  color: 
+}
+
+.button-style-one {
+  background-color: #c05326;
+  /* for accessibility re: contrast, the font color should not remain black */
+  color: #ffffff;
+}
+
+.button-style-two {
+  background-color: #ffffff;
+  color: #c05326;
+}
+
 /* Header */
 
 header {
