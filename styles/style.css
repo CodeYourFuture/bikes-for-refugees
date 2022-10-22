@@ -34,9 +34,9 @@ p {
   margin-bottom: 0;
 }
 
-.header,
+header,
 .content,
-.footer {
+footer {
   padding: 0 1.5rem;
   max-width: 1200px;
   margin: 0 auto;
@@ -44,7 +44,7 @@ p {
 
 /* Header */
 
-.header {
+header {
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -95,7 +95,7 @@ p {
 
 /* Buttons */
 
-  /* INSERT BUTTON STYLES HERE */
+/* INSERT BUTTON STYLES HERE */
 
 
 /* Content */
@@ -161,7 +161,7 @@ p {
 
 /* Article */
 
-.article {
+article {
   margin-bottom: 1rem;
 }
 
@@ -213,7 +213,7 @@ p {
 
 /* Sidebar */
 
-.sidebar {
+aside {
   display: flex;
   flex-direction: column;
   min-width: 350px;
@@ -221,14 +221,11 @@ p {
 
 /* Footer */
 
-.footer {
+footer {
   margin-top: 2rem;
-}
-
-.footer__content {
-  border-top: 2px solid var(--orange-light);
   padding-top: 2rem;
   padding-bottom: 2rem;
+  border-top: 2px solid var(--orange-light);
 }
 
 .footer p {
@@ -244,7 +241,7 @@ p {
     flex-direction: row;
   }
 
-  .main {
+  main {
     padding-right: 2rem;
   }
 }
