@@ -106,23 +106,23 @@ button {
 button:hover,
 button:focus {
   background-color: #934423;
-  color: #ffffff;
+  color: #fff;
 }
 
 /* for accessibility re: contrast, the hover/focus should change the font color white */
 .button-style-two:hover,
 .button-style-two:focus {
-  color: #ffffff;
+  color: #fff;
 }
 
 .button-style-one {
   background-color: #c05326;
   /* for accessibility re: contrast, the font color should not remain black */
-  color: #ffffff;
+  color: #fff;
 }
 
 .button-style-two {
-  background-color: #ffffff;
+  background-color: #fff;
   color: #c05326;
 }
 
@@ -237,6 +237,37 @@ article {
 
 .facebook-link {
   color: var(--orange-dark);
+}
+
+/* Flex Exercise Three Boxes */
+.flex-example {
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
+}
+
+.flex-example > li {
+  /* neccessary because the <a> are children of the <li> */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 9rem;
+  height: 9rem;
+  border: 0.1rem solid #000;
+  background-color: #eee;
+}
+
+.flex-example > li > a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.flex-example > li:first-child {
+  background-color: #ddd;
+}
+
+.flex-example > li:last-child {
+  border: 1px solid #ddd;
 }
 
 /* Sidebar */

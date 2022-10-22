@@ -68,6 +68,25 @@
             <button class="button-style-two">Volunteer</button>
           </div>
 
+          <!-- the lazy and easy but NOT semantically correct way which produces correct UI behaviour -->
+          <!-- 
+          <div>
+            <a href="">Check Availability</a>
+            <a href="">Donate bikes</a>
+            <a href="">Volunteer with us</a>
+          </div> 
+          -->
+
+          <!-- semantically this must be a <ul> (not a div) with 3 <li>s which are <a>s -->
+          <!-- because it is a series of 3 boxes whose role is to link to contents elsewhere within the site -->
+          <!-- however the <a>s being children of the <li>s creates a UI issue where the entire box does not trigger the link -->
+          <!-- suggestion? that STILL falls inline with true semantic html? -->
+          <ul class="flex-example">
+            <li><a href="">Check Availability</a></li>
+            <li><a href="">Donate bikes</a></li>
+            <li><a href="">Volunteer with us</a></li>
+          </ul>
+
           <div>
             <h2 class="heading-underline">Learn more</h2>
             <div>
