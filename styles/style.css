@@ -42,29 +42,6 @@ footer {
   margin: 0 auto;
 }
 
-button:hover, 
-button:focus {
-  background-color: #934423;
-  color: #ffffff;
-}
-
-/* for accessibility re: contrast, the hover/focus should change the font color white */
-.button-style-two:hover,
-.button-style-two:focus {
-  color: 
-}
-
-.button-style-one {
-  background-color: #c05326;
-  /* for accessibility re: contrast, the font color should not remain black */
-  color: #ffffff;
-}
-
-.button-style-two {
-  background-color: #ffffff;
-  color: #c05326;
-}
-
 /* Header */
 
 header {
@@ -97,6 +74,7 @@ header {
   font-weight: 600;
   text-transform: uppercase;
   text-decoration: none;
+  padding: 0 1rem;
 }
 
 
@@ -118,8 +96,35 @@ header {
 
 /* Buttons */
 
-/* INSERT BUTTON STYLES HERE */
+button {
+  /* for accessibility; 2 factor height 1 factor width */
+  padding: 0.5rem 1rem;
+  border: 0;
+  border-radius: 0.5rem;
+}
 
+button:hover,
+button:focus {
+  background-color: #934423;
+  color: #ffffff;
+}
+
+/* for accessibility re: contrast, the hover/focus should change the font color white */
+.button-style-two:hover,
+.button-style-two:focus {
+  color: #ffffff;
+}
+
+.button-style-one {
+  background-color: #c05326;
+  /* for accessibility re: contrast, the font color should not remain black */
+  color: #ffffff;
+}
+
+.button-style-two {
+  background-color: #ffffff;
+  color: #c05326;
+}
 
 /* Content */
 
