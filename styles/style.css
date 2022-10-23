@@ -63,6 +63,7 @@ p {
 .navigation__list {
   display: flex;
   list-style: none;
+  gap: 20px;
 }
 
 .navigation__item {
@@ -141,6 +142,7 @@ p {
 .heading-underline {
   position: relative;
   margin-bottom: 2rem;
+  margin-top: 2rem;
   padding-bottom: 0.5rem;
   border-bottom: 2px solid var(--orange-light);
   font-size: 1rem;
@@ -223,7 +225,6 @@ p {
   display: flex;
   flex-direction: column;
   min-width: 350px;
-  padding: 20px;
 }
 
 /* Footer */
