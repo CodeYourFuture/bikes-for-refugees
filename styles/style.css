@@ -16,26 +16,12 @@
 body {
   margin: 0;
 }
-#volunteerButton {
-  background-color: #c05326;
-}
 
-.donateButton {
-  background-color: #fff;
-  color: #c05326;
-}
-button:hover:focus {
-  background-color: #934423;
-  color: white;
-}
 body,
 button {
   font-family: "Source Sans Pro", "Helvetica Neue", Arial, sans-serif;
   color: var(--grey-dark);
   font-size: 1rem;
-  padding: 1.3rem;
-  border: none;
-  border-radius: 5%;
 }
 
 h1,
@@ -81,6 +67,9 @@ header {
 
 .navigation__list {
   display: flex;
+  justify-content: space-around;
+  padding-left: 10px;
+  padding-right: 10px;
   list-style: none;
 }
 
@@ -93,8 +82,6 @@ header {
   font-weight: 600;
   text-transform: uppercase;
   text-decoration: none;
-  padding-right: 1.5rem;
-  padding-left: 1.5rem;
 }
 
 /* Text styles */
@@ -121,7 +108,6 @@ header {
 .content {
   display: flex;
   flex-direction: column;
-  margin: 0px;
 }
 
 /* Alert */
@@ -135,20 +121,36 @@ header {
   padding: 1.5rem 1rem;
   margin-bottom: 2rem;
 }
-.nav {
-  padding-left: 50px;
-}
+
 /* hero */
 
 .hero {
   background-image: url("/images/header-bike.jpg");
-  background-size: cover;
-  height: 315px;
-  width: 100%;
-
   background-color: var(--grey-light);
 }
+.donateButton {
+  background-color: #c05426;
+  color: white;
+  border-radius: 5px;
+  border: none;
+  padding: 7px 15px;
+}
+.donateButton:hover {
+  background-color: white;
+  color: #c05426;
+}
 
+#volunteerButton:hover {
+  background-color: #c05426;
+  color: white;
+}
+#volunteerButton {
+  background-color: white;
+  color: #c05426;
+  border-radius: 5px;
+  border: none;
+  padding: 7px 15px;
+}
 .hero h1 {
   margin-bottom: 1rem;
   font-size: 2.5rem;
@@ -184,7 +186,7 @@ header {
 
 /* Article */
 
-.article {
+article {
   margin-bottom: 1rem;
 }
 
@@ -236,7 +238,7 @@ header {
 
 /* Sidebar */
 
-.sidebar {
+aside {
   display: flex;
   flex-direction: column;
   min-width: 350px;
@@ -254,7 +256,7 @@ footer {
   padding-bottom: 2rem;
 }
 
-.footer p {
+footer p {
   padding-bottom: 1rem;
   text-align: center;
   font-size: 0.85rem;
@@ -267,30 +269,7 @@ footer {
     flex-direction: row;
   }
 
-  .main {
+  main {
     padding-right: 2rem;
   }
-}
-
-.container {
-  display: flex;
-  padding: 0.5rem;
-  margin-bottom: 30px;
-  border: 2px solid #e4e4e4;
-}
-.container2 {
-  display: inline;
-  padding: 0.5rem;
-  margin: 0.5rem;
-  border: 2px solid #e4e4e4;
-}
-.container3 {
-  display: flex;
-  justify-content: space-between;
-  margin-left: 30px;
-  margin-right: 30px;
-}
-
-aside {
-  margin-left: 30px;
 }
