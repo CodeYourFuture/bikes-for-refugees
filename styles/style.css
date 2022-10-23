@@ -98,6 +98,28 @@ p {
   /* INSERT BUTTON STYLES HERE */
 
 
+.firstButtonStyle{
+  background-color: var(--orange-dark);
+  color: var(--white);
+  padding: 5px 10px;
+  border: none;
+  border-radius: 5px;
+}
+.firstButtonStyle:hover{
+  background-color: var(--grey-dark);
+}
+
+.secondButtonStyle{
+  background-color: var(--white);
+  color: var(--orange-dark);
+  padding: 5px 10px;
+  border: none;
+  border-radius: 5px;
+}
+.secondButtonStyle:hover{
+  background-color: var(--orange-light);
+}
+
 /* Content */
 
 .content {
@@ -117,21 +139,27 @@ p {
   margin-bottom: 2rem;
 }
 
+
 /* hero */
 
 .hero {
-  background-image: url("header-bike.jpg");
+  background-image: url("/images/header-bike.jpg");
   background-color: var(--grey-light);
+  height: 250px;
+  padding: 100px 25px 0;
 }
 
 .hero h1 {
   margin-bottom: 1rem;
   font-size: 2.5rem;
+  color: var(--white);
+  
 }
 
 .hero p {
   font-size: 1.2rem;
   margin-bottom: 2rem;
+  color: var(--white);
 }
 
 
