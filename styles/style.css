@@ -244,6 +244,14 @@ p {
   font-size: 0.85rem;
 }
 
+.donate {
+  background-color: #c05326;
+  color: white;
+}
+
+.volunteer {
+  color: #c05326;
+}
 /* Media queries */
 
 @media screen and (min-width: 992px) {
