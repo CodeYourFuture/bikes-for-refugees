@@ -97,10 +97,14 @@ p {
 
   /* INSERT BUTTON STYLES HERE */
 
-#donate{
+.donate{
   background-color: #c05326;
   color: #e4e4e4;
   border-radius: 5px;;
+}
+button{
+  color: #c05326;
+  background-color: #e4e4e4;
 }
 /* Content */
 
@@ -124,11 +128,15 @@ p {
 /* hero */
 
 .hero {
-  background-image: url("header-bike.jpg");
+  background-image: url("../images/header-bike.jpg");
   background-color: var(--grey-light);
+  height: 25vh;
+  background-size: contain;
+  color: #e4e4e4;
 }
 
 .hero h1 {
+  padding: 3rem 0 0 0;
   margin-bottom: 1rem;
   font-size: 2.5rem;
 }
@@ -164,9 +172,20 @@ p {
 
 
 /* Article */
+.container-1{
+  display: flex;
+
+}
+.container-1 div{
+  border: 1px #ccc solid;
+  padding: 5px;
+  margin: 5px;
+  
+}
 
 .article {
   margin-bottom: 1rem;
+ 
 }
 
 .article__title {
