@@ -74,6 +74,8 @@ p {
   font-weight: 600;
   text-transform: uppercase;
   text-decoration: none;
+  padding: 16px;
+  margin: 10px;
 }
 
 
@@ -247,4 +249,35 @@ p {
   .main {
     padding-right: 2rem;
   }
+}
+
+.btn1 {
+  background-color: #c05326; 
+  color: white;
+}
+
+.btn2 { 
+  background-color: #fff; 
+  color: #c05326;
+}
+
+button:hover, button:focus {
+  background-color: #934423 ;
+  color: white;
+  cursor: pointer;
+  border: 1px solid black;
+}
+
+button {
+  padding: 8px;
+  margin: 10px;
+  border: none;
+  border-radius: 1em;
+}
+
+.button-section {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
 }
