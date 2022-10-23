@@ -120,8 +120,9 @@ p {
 /* hero */
 
 .hero {
-  background-image: url("header-bike.jpg");
+  background-image: url("/bikes-for-refugees/images/header-bike.jpg");
   background-color: var(--grey-light);
+  height: 320px;
 }
 
 .hero h1 {
@@ -163,6 +164,11 @@ p {
 
 .article {
   margin-bottom: 1rem;
+  display: flex;
+  flex-direction: row;
+  border: 1px solid grey;
+  padding: 10px;
+  gap: 15px;
 }
 
 .article__title {
@@ -217,6 +223,7 @@ p {
   display: flex;
   flex-direction: column;
   min-width: 350px;
+  padding: 20px;
 }
 
 /* Footer */
