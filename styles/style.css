@@ -241,6 +241,18 @@ button{
   flex-direction: column;
   min-width: 350px;
 }
+.uncle {
+  display: flex;
+  border: 1px #ccc solid;
+  padding: 5px;
+  
+}
+.uncle div{
+  
+  margin: 5px;
+  padding: 5px;
+}
+
 
 /* Footer */
 
