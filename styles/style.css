@@ -273,3 +273,21 @@ footer p {
     padding-right: 2rem;
   }
 }
+
+.containerRow {
+  display: flex;
+  border: 2px solid #e4e4e4;
+}
+
+.containerRow2 {
+  display: flex;
+}
+
+.borderArticle {
+  border: 2px solid #e4e4e4;
+  margin-right: 10px;
+}
+.borderArticle2 {
+  border: 2px solid #e4e4e4;
+  margin-left: 10px;
+}
