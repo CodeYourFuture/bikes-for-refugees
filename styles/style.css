@@ -76,6 +76,10 @@ header {
   text-decoration: none;
 }
 
+.navigation__link:hover{
+  color: var(--orange-dark);
+}
+
 
 /* Text styles */
 
@@ -197,6 +201,7 @@ section{
 article {
   margin-bottom: 1rem;
   border: 1px solid var(--grey-light);
+  border-radius: 5px;
   padding: 10px;
   margin: 5px;
   
@@ -258,16 +263,16 @@ aside {
 
 aside article{
   display: flex;
-  margin: 5px;
+  margin: 10px;
   
 }
 
 aside article img{
-  margin: 5px;
+  margin: 10px;
 }
 
-aside a{
-  padding-right: 5px;
+aside .facebook-link{
+  padding-right: 10px;
   display: flex;
   justify-content: flex-end;
 }
