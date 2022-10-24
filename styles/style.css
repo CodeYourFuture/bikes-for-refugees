@@ -126,10 +126,23 @@ button:focus {
 
 .add-btn {
   border: solid 1px black;
+  text-align: center;
+  margin-top: 10px;
+  width: 80px;
+  height: 80px;
   padding: 20px;
   display: flex;
-  justify-content: space-around;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+section {
+  display: flex;
+  flex-direction: row;
   align-content: space-between;
+  justify-content: space-between;
+  padding-bottom: 20px;
 }
 /* Content */
 .content {
