@@ -22,6 +22,7 @@ button {
   font-family: "Source Sans Pro", "Helvetica Neue", Arial, sans-serif;
   color: var(--grey-dark);
   font-size: 1rem;
+  
 }
 
 h1,h2,h3,h4,h5,h6 {
@@ -74,6 +75,7 @@ p {
   font-weight: 600;
   text-transform: uppercase;
   text-decoration: none;
+  padding: 1em;
 }
 
 
@@ -97,6 +99,31 @@ p {
 
   /* INSERT BUTTON STYLES HERE */
 
+  button {
+    padding: 7px 12px 7px 12px;
+    border: none;
+    border-radius: 4px;
+  }
+  .b-donate  {
+   background-color: #c05326;
+   color: #fff;
+  }
+
+  .b-volunteer {
+    background-color: #fff;
+    color: #c05326;
+  }
+
+  .b-donate-bike {
+    background-color: #c05326;
+    margin-left: 2em;
+    color: #fff;
+  }
+  button:hover, button:focus{
+    background-color: #934423;
+  }
+  
+  
 
 /* Content */
 
@@ -120,18 +147,32 @@ p {
 /* hero */
 
 .hero {
-  background-image: url("header-bike.jpg");
+  position: relative;
+  background: url("/images/header-bike.jpg");
   background-color: var(--grey-light);
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin-bottom: 3rem;
+  height: 320px;
+  width: 100%;
+  
 }
 
 .hero h1 {
+  position: relative;
   margin-bottom: 1rem;
   font-size: 2.5rem;
+  color: #fff;
+  padding-top: 5rem;
+  padding-left: 2rem;
 }
 
 .hero p {
+  position: relative;
   font-size: 1.2rem;
   margin-bottom: 2rem;
+  color: #fff;
+  padding-left: 2rem;
 }
 
 
@@ -163,7 +204,30 @@ p {
 
 .article {
   margin-bottom: 1rem;
+  border: 2px solid rgb(217, 217, 217);
+  border-radius: 0.2em;
+  padding: 10px;
+  display: flex;
+  margin-bottom: 2rem;
+  padding-bottom: 0.5rem;
+  width: auto;
+  
+  
+  
 }
+
+.article-1 {
+  padding: 10px;
+  border: 2px solid rgb(217, 217, 217);
+  flex: 1 1 auto;
+}
+
+.article-2 {
+  padding: 10px;
+  border: 2px solid rgb(217, 217, 217);
+  flex: 1 1 auto;
+}
+
 
 .article__title {
   margin-bottom: 0.5rem;
@@ -174,16 +238,22 @@ p {
 .article__title-link {
   text-decoration: none;
   color: var(--orange-dark);
+  
 }
 
 .article__summary {
   margin-top: 0;
   margin-bottom: 1rem;
+
 }
 
 .article__thumbnail {
   object-fit: contain;
-  width: 5rem;
+  width: 4rem;
+  padding-right: 1rem;
+  max-width: 100%;
+  height: auto ;
+  
 }
 
 .article__read-more {
@@ -209,6 +279,7 @@ p {
 
 .facebook-link {
   color: var(--orange-dark);
+  padding-left: 17rem;
 }
 
 /* Sidebar */
@@ -216,7 +287,7 @@ p {
 .sidebar {
   display: flex;
   flex-direction: column;
-  min-width: 350px;
+  min-width: auto;
 }
 
 /* Footer */
