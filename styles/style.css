@@ -5,13 +5,13 @@
  * 
  */
 
- :root {
-   --grey-dark: #292b2c;
-   --grey-light: #e4e4e4;
-   --orange-dark: #c05326;
-   --orange-light: #f7eae4;
-   --white: #fff;
- }
+:root {
+  --grey-dark: #292b2c;
+  --grey-light: #e4e4e4;
+  --orange-dark: #c05326;
+  --orange-light: #f7eae4;
+  --white: #fff;
+}
 
 body {
   margin: 0;
@@ -23,8 +23,12 @@ button {
   color: var(--grey-dark);
   font-size: 1rem;
 }
-
-h1,h2,h3,h4,h5,h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   margin-top: 0;
   margin-bottom: 0;
 }
@@ -74,8 +78,9 @@ p {
   font-weight: 600;
   text-transform: uppercase;
   text-decoration: none;
+  justify-content: space-around;
+  margin-right: 20px;
 }
-
 
 /* Text styles */
 
@@ -92,11 +97,21 @@ p {
   border-left-color: var(--orange-dark);
 }
 
-
 /* Buttons */
 
-  /* INSERT BUTTON STYLES HERE */
+.button_style1 {
+  margin-left: 2rem;
+}
+.button_style2 {
+  background-color: #c05326;
+  color: #292b2c;
+}
 
+.button_style3 {
+  background-color: #fff;
+  color: #c05326;
+}
+/* INSERT BUTTON STYLES HERE */
 
 /* Content */
 
@@ -119,21 +134,30 @@ p {
 
 /* hero */
 
-.hero {
-  background-image: url("header-bike.jpg");
+hero {
+  display: flex;
+  background-image: url("https://github.com/CodeYourFuture/bikes-for-refugees/blob/main/images/header-bike.jpg?raw=true");
   background-color: var(--grey-light);
+  height: 350px;
+  margin-bottom: 3rem;
+  color: #fff;
+  flex-direction: column;
+  align-items: flex-start;
+  /*margin: auto;*/
+  justify-content: center;
 }
 
-.hero h1 {
+hero h1 {
   margin-bottom: 1rem;
   font-size: 2.5rem;
+  margin-left: 2rem;
 }
 
-.hero p {
+hero p {
   font-size: 1.2rem;
   margin-bottom: 2rem;
+  margin-left: 2rem;
 }
-
 
 /* Headings */
 
@@ -158,10 +182,9 @@ p {
   background: var(--orange-dark);
 }
 
-
 /* Article */
 
-.article {
+article {
   margin-bottom: 1rem;
 }
 
@@ -244,7 +267,7 @@ p {
     flex-direction: row;
   }
 
-  .main {
+  main {
     padding-right: 2rem;
   }
 }
