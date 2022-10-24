@@ -114,13 +114,22 @@ button:focus {
   background-color: #fff;
   padding: 10px;
   border: none;
-  border-radius: 20px;
+  border-radius: 10px;
 }
 
 .donate {
   background-color: #c05326;
   padding: 10px;
   border: none;
+  border-radius: 10px;
+}
+
+.add-btn {
+  border: solid 1px black;
+  padding: 20px;
+  display: flex;
+  justify-content: space-around;
+  align-content: space-between;
 }
 /* Content */
 .content {
