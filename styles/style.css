@@ -34,7 +34,7 @@ p {
   margin-bottom: 0;
 }
 
-.header,
+header,
 .content,
 .footer {
   padding: 0 1.5rem;
@@ -44,13 +44,13 @@ p {
 
 /* Header */
 
-.header {
+header {
   display: flex;
   align-items: center;
   justify-content: space-between;
   height: 5rem;
   margin-bottom: 1rem;
-  padding-top: 1rem;
+  padding-top: 1rem;  
 }
 
 .header__logo {
@@ -60,13 +60,17 @@ p {
 
 /* Navigation */
 
+
 .navigation__list {
   display: flex;
-  list-style: none;
+  list-style: none; 
+  
+
+
 }
 
 .navigation__item {
-  padding: 0.5rem 0;
+  padding: 0.5rem 2rem;
 }
 
 .navigation__link {
@@ -94,8 +98,28 @@ p {
 
 
 /* Buttons */
+.orange-btn {
+background-color: var(--orange-dark);
+color: var(--white);
+border: none;
+padding:5px 10px;
+border-radius: 5px;
+}
 
-  /* INSERT BUTTON STYLES HERE */
+.orange-btn:hover {
+background-color:var(--grey-dark);
+}
+.white-btn {
+  background-color: var(--white);
+  color: var(--orange-dark);
+  border: none;
+  padding:5px 10px;
+  border-radius: 5px;
+}
+.white-btn:hover {
+  background-color:var(--orange-light);
+}
+
 
 
 /* Content */
@@ -120,18 +144,24 @@ p {
 /* hero */
 
 .hero {
-  background-image: url("header-bike.jpg");
+  background-image: url("/images/header-bike.jpg");
   background-color: var(--grey-light);
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding:6rem 2rem;
+  margin-bottom:2rem;
 }
 
 .hero h1 {
   margin-bottom: 1rem;
   font-size: 2.5rem;
+  color: #fff;
 }
 
 .hero p {
   font-size: 1.2rem;
   margin-bottom: 2rem;
+  color: #fff;
 }
 
 
@@ -160,9 +190,15 @@ p {
 
 
 /* Article */
-
-.article {
+section {
+  display: flex;
+}
+article {
   margin-bottom: 1rem;
+  border: 1px solid var(--grey-light);
+  border-radius: 5px ;
+  padding: 10px ;
+  margin: 5px;
 }
 
 .article__title {
@@ -209,6 +245,8 @@ p {
 
 .facebook-link {
   color: var(--orange-dark);
+  display: flex;
+  justify-content: flex-end;
 }
 
 /* Sidebar */
@@ -218,11 +256,22 @@ p {
   flex-direction: column;
   min-width: 350px;
 }
+.sidebar article {
+display: flex;
+margin:10px;
+}
+.sidebar article  img {
+  margin: 10px;
 
+}
 /* Footer */
 
-.footer {
+footer {
   margin-top: 2rem;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+
 }
 
 .footer__content {
@@ -235,6 +284,7 @@ p {
   padding-bottom: 1rem;
   text-align: center;
   font-size: 0.85rem;
+
 }
 
 /* Media queries */
@@ -244,7 +294,7 @@ p {
     flex-direction: row;
   }
 
-  .main {
+  main {
     padding-right: 2rem;
   }
 }
