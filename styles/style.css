@@ -105,6 +105,10 @@ border: none;
 padding:5px 10px;
 border-radius: 5px;
 }
+
+.orange-btn:hover {
+background-color:var(--grey-dark);
+}
 .white-btn {
   background-color: var(--white);
   color: var(--orange-dark);
@@ -112,6 +116,10 @@ border-radius: 5px;
   padding:5px 10px;
   border-radius: 5px;
 }
+.white-btn:hover {
+  background-color:var(--orange-light);
+}
+
 
 
 /* Content */
