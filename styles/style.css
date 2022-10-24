@@ -172,19 +172,27 @@ button:hover{
   max-width: 100px;
   background: var(--orange-dark);
 }
-
-
 /* Article */
 
 .article {
   margin-bottom: 1rem;
   display: flex;
-  flex-direction: row;
   border: 1px solid grey;
   padding: 10px;
   gap: 15px;
 }
+.flex-article{
+  display: flex;
+  gap: 15px;
+  
+}
 
+.article-undreline {
+  margin-bottom: 1rem;
+  border: 1px solid grey;
+  padding: 10px;
+  gap: 15px;
+}
 .article__title {
   margin-bottom: 0.5rem;
   font-size: 1rem;
