@@ -96,8 +96,20 @@ header {
 
 
 /* Buttons */
-
-  /* INSERT BUTTON STYLES HERE */
+.orange-btn {
+background-color: var(--orange-dark);
+color: var(--white);
+border: none;
+padding:5px 10px;
+border-radius: 5px;
+}
+.white-btn {
+  background-color: var(--white);
+  color: var(--orange-dark);
+  border: none;
+  padding:5px 10px;
+  border-radius: 5px;
+}
 
 
 /* Content */
