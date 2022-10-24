@@ -63,12 +63,14 @@ header {
 
 .navigation__list {
   display: flex;
-  list-style: none;
+  list-style: none; 
+  
+
 
 }
 
 .navigation__item {
-  padding: 0.5rem 0;
+  padding: 0.5rem 2rem;
 }
 
 .navigation__link {
@@ -139,6 +141,7 @@ border-radius: 5px;
   background-size: cover;
   background-repeat: no-repeat;
   padding:6rem 2rem;
+  margin-bottom:2rem;
 }
 
 .hero h1 {
