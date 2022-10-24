@@ -23,6 +23,18 @@ button {
   color: var(--grey-dark);
   font-size: 1rem;
 }
+.orange {
+  background: #c05326;
+  border: none;
+  border-radius: 8%;
+  color: #fff;
+}
+.white {
+  color: #c05326;
+  background: #fff;
+  border: none;
+  border-radius: 8%;
+}
 
 h1,
 h2,
@@ -79,6 +91,7 @@ p {
   font-weight: 600;
   text-transform: uppercase;
   text-decoration: none;
+  margin: 8px;
 }
 
 /* Text styles */
@@ -124,7 +137,11 @@ p {
 .hero {
   background-image: url("/images/header-bike.jpg");
   background-color: var(--grey-light);
-  height: 320px;
+  height: 220px;
+  color: #fff;
+  padding-top: 100px;
+  padding-left: 30px;
+  margin-bottom: 35px;
 }
 
 .hero h1 {
@@ -162,8 +179,30 @@ p {
 
 /* Article */
 
-.article {
+.learn-more {
   margin-bottom: 1rem;
+  display: flex;
+  flex-direction: row;
+}
+
+.article-l {
+  border: 2px solid gray;
+  margin-right: 10px;
+  padding: 15px;
+  border-radius: 2%;
+}
+.article-r {
+  padding: 15px;
+  border: 2px solid gray;
+  border-radius: 2%;
+}
+
+.article-1 {
+  margin-bottom: 1rem;
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  border: 1px solid grey;
 }
 
 .article__title {
@@ -185,6 +224,7 @@ p {
 .article__thumbnail {
   object-fit: contain;
   width: 5rem;
+  margin: 8px;
 }
 
 .article__read-more {
