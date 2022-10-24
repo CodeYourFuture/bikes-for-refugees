@@ -29,11 +29,18 @@ button {
   border-radius: 8%;
   color: #fff;
 }
+.orange:hover {
+  background: #fff;
+}
+
 .white {
   color: #c05326;
   background: #fff;
   border: none;
   border-radius: 8%;
+}
+.white:hover {
+  background: #c05326;
 }
 
 h1,
@@ -92,6 +99,9 @@ p {
   text-transform: uppercase;
   text-decoration: none;
   margin: 8px;
+}
+.navigation__link:hover {
+  background: orange;
 }
 
 /* Text styles */
