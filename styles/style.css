@@ -77,6 +77,12 @@ p {
   text-decoration: none;
 }
 
+.navigation__link:hover {
+  color: #c05326;
+}
+
+
+
 
 /* Text styles */
 
@@ -96,7 +102,9 @@ p {
 
 /* Buttons */
 
-  /* INSERT BUTTON STYLES HERE */
+button:hover{
+  background-color: blueviolet;
+}
 
 
 /* Content */
@@ -123,7 +131,11 @@ p {
 .hero {
   background-image: url("/bikes-for-refugees/images/header-bike.jpg");
   background-color: var(--grey-light);
-  height: 320px;
+  height: 240px;
+  color:white;
+  margin: auto;
+  padding-top: 80px;
+  padding-left: 20px;
 }
 
 .hero h1 {
@@ -213,6 +225,7 @@ p {
 .fa {
   margin-right: 0.5rem;
   color: var(--orange-dark);
+  padding-left: 190px;
 }
 
 .facebook-link {
