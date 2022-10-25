@@ -5,13 +5,13 @@
  * 
  */
 
- :root {
-   --grey-dark: #292b2c;
-   --grey-light: #e4e4e4;
-   --orange-dark: #c05326;
-   --orange-light: #f7eae4;
-   --white: #fff;
- }
+:root {
+  --grey-dark: #292b2c;
+  --grey-light: #e4e4e4;
+  --orange-dark: #c05326;
+  --orange-light: #f7eae4;
+  --white: #fff;
+}
 
 body {
   margin: 0;
@@ -22,9 +22,16 @@ button {
   font-family: "Source Sans Pro", "Helvetica Neue", Arial, sans-serif;
   color: var(--grey-dark);
   font-size: 1rem;
+  border-radius: 0.3rem;
+  padding: 0.5rem;
 }
 
-h1,h2,h3,h4,h5,h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   margin-top: 0;
   margin-bottom: 0;
 }
@@ -34,7 +41,7 @@ p {
   margin-bottom: 0;
 }
 
-.header,
+header,
 .content,
 .footer {
   padding: 0 1.5rem;
@@ -44,7 +51,7 @@ p {
 
 /* Header */
 
-.header {
+header {
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -74,8 +81,11 @@ p {
   font-weight: 600;
   text-transform: uppercase;
   text-decoration: none;
+  padding-right: 1.5rem;
 }
-
+.navigation__link:hover {
+  color: #c05326;
+}
 
 /* Text styles */
 
@@ -92,11 +102,23 @@ p {
   border-left-color: var(--orange-dark);
 }
 
-
 /* Buttons */
 
-  /* INSERT BUTTON STYLES HERE */
+.button_style1 {
+  margin-left: 2rem;
+}
 
+.button_style2,
+.button_style3:hover {
+  background-color: #c05326;
+  color: #fff;
+}
+.button_style3,
+.button_style2:hover {
+  background-color: #fff;
+  color: #c05326;
+}
+/* INSERT BUTTON STYLES HERE */
 
 /* Content */
 
@@ -119,21 +141,30 @@ p {
 
 /* hero */
 
-.hero {
-  background-image: url("header-bike.jpg");
+hero {
+  display: flex;
+  background-image: url("https://github.com/CodeYourFuture/bikes-for-refugees/blob/main/images/header-bike.jpg?raw=true");
   background-color: var(--grey-light);
+  height: 320px;
+  margin-bottom: 3rem;
+  color: #fff;
+  flex-direction: column;
+  align-items: flex-start;
+
+  justify-content: center;
 }
 
-.hero h1 {
+hero h1 {
   margin-bottom: 1rem;
   font-size: 2.5rem;
+  margin-left: 2rem;
 }
 
-.hero p {
+hero p {
   font-size: 1.2rem;
   margin-bottom: 2rem;
+  margin-left: 2rem;
 }
-
 
 /* Headings */
 
@@ -158,15 +189,32 @@ p {
   background: var(--orange-dark);
 }
 
-
 /* Article */
+section {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
 
-.article {
+article {
   margin-bottom: 1rem;
+  border: solid 0.13rem #e4e4e4;
+}
+.article_style1 {
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 1rem;
+  margin-right: 1rem;
+}
+
+.article_style2 {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
 }
 
 .article__title {
-  margin-bottom: 0.5rem;
+  margin: 1rem;
   font-size: 1rem;
   font-weight: 700;
 }
@@ -177,17 +225,18 @@ p {
 }
 
 .article__summary {
-  margin-top: 0;
-  margin-bottom: 1rem;
+  margin: 0rem 2rem 1rem 1rem;
 }
 
 .article__thumbnail {
   object-fit: contain;
-  width: 5rem;
+  width: 4rem;
+  margin-left: 1rem;
 }
 
 .article__read-more {
-  margin-top: 0;
+  margin-top: 0rem;
+  margin-left: 1rem;
 }
 
 .article__read-more a {
@@ -213,7 +262,7 @@ p {
 
 /* Sidebar */
 
-.sidebar {
+sidebar {
   display: flex;
   flex-direction: column;
   min-width: 350px;
@@ -244,7 +293,7 @@ p {
     flex-direction: row;
   }
 
-  .main {
+  main {
     padding-right: 2rem;
   }
 }
