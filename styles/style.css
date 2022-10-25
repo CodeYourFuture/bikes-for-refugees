@@ -202,7 +202,7 @@ p {
 
 /* Article */
 
-.article {
+article {
   margin-bottom: 1rem;
   border: 2px solid rgb(217, 217, 217);
   border-radius: 0.2em;
@@ -211,53 +211,74 @@ p {
   margin-bottom: 2rem;
   padding-bottom: 0.5rem;
   width: auto;
-  
-  
-  
 }
+
+.article {
+  margin-bottom: 1rem;
+  border: 2px solid rgb(217, 217, 217);
+  border-radius: 0.2em;
+  padding: 10px;
+  display: flex;
+  padding-bottom: 1.5rem;
+  width: 20rem;
+}
+
+.articles {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+}
+
 
 .article-1 {
   padding: 10px;
   border: 2px solid rgb(217, 217, 217);
-  flex: 1 1 auto;
+  display: flex;
+  flex-direction: column;
 }
 
 .article-2 {
   padding: 10px;
   border: 2px solid rgb(217, 217, 217);
-  flex: 1 1 auto;
+  display: flex;
+  flex-direction: column;
 }
 
 
 .article__title {
   margin-bottom: 0.5rem;
+  margin-top: 0.5rem;
+  margin-left: 0.5rem;
   font-size: 1rem;
   font-weight: 700;
+  display: flex;
 }
 
 .article__title-link {
   text-decoration: none;
   color: var(--orange-dark);
-  
+  padding-right: 3.5rem;
 }
 
 .article__summary {
-  margin-top: 0;
-  margin-bottom: 1rem;
-
+  margin-bottom: 0.5rem;
+  margin-left: 0.5rem;
+  margin-right: 0.2rem;
+  padding-right: 0.5rem;
 }
 
 .article__thumbnail {
   object-fit: contain;
   width: 4rem;
-  padding-right: 1rem;
+  padding-right: 0.4rem;
   max-width: 100%;
-  height: auto ;
-  
 }
 
 .article__read-more {
   margin-top: 0;
+  margin-bottom: 0.5rem;
+  margin-top: 0.5rem;
+  margin-left: 0.5rem;
 }
 
 .article__read-more a {
@@ -273,14 +294,25 @@ p {
 }
 
 .fa {
-  margin-right: 0.5rem;
+  margin-right: 0.2rem;
   color: var(--orange-dark);
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  flex-direction: row;
 }
 
 .facebook-link {
   color: var(--orange-dark);
-  padding-left: 17rem;
+  display: flex;
+  justify-content: flex-end;
+  flex-direction: row;
+
 }
+
+
+
+
 
 /* Sidebar */
 
