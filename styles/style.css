@@ -39,7 +39,7 @@ p {
   margin-bottom: 0;
 }
 
-header,
+.header,
 .content,
 .footer {
   padding: 0 1.5rem;
@@ -49,7 +49,7 @@ header,
 
 /* Header */
 
-header {
+.header {
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -71,7 +71,7 @@ header {
 }
 
 .navigation__item {
-  padding: 0.5rem 0;
+  padding: 0.5rem 1rem;
 }
 
 .navigation__link {
@@ -147,8 +147,12 @@ button {
 /* hero */
 
 .hero {
+  width:818px;
+  height: 360px;
   background-image: url("/images/header-bike.jpg");
   background-color: var(--grey-light);
+  /* background-size: 100vh; */
+  margin-bottom: 45px;
 }
 
 .hero h1 {
@@ -246,7 +250,7 @@ button {
 
 /* Footer */
 
-footer {
+.footer {
   margin-top: 2rem;
 }
 
@@ -256,7 +260,7 @@ footer {
   padding-bottom: 2rem;
 }
 
-footer p {
+.footer p {
   padding-bottom: 1rem;
   text-align: center;
   font-size: 0.85rem;
