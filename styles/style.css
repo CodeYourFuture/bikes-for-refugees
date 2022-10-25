@@ -43,7 +43,7 @@ p {
 .content,
 .footer {
   padding: 0 1.5rem;
-  max-width: 1200px;
+  max-width: 1300px;
   margin: 0 auto;
 }
 
@@ -172,7 +172,7 @@ button:focus {
 }
 
 /* hero */
-
+/*
 .ro {
   background-image: url("/images/header-bike.jpg");
   background-position: cover;
@@ -183,15 +183,15 @@ button:focus {
   padding: 5rem 4rem 2rem;
   margin-bottom: 2rem;
 }
+*/
 
 .hero {
   background-image: url("/images/header-bike.jpg");
-  background-position: cover;
+  background-size: cover;
   background-repeat: no-repeat;
   background-size: 100% 100%;
-
   background-color: var(--grey-light);
-  padding: 5rem 2rem 6rem;
+  padding: 5rem 2rem 3rem;
   margin-bottom: 2rem;
 }
 
