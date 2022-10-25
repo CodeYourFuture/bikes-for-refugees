@@ -81,6 +81,10 @@ p {
   text-decoration: none;
 }
 
+.navigation__link:hover {
+  color: #c05326;
+}
+
 /* Text styles */
 
 .text-highlight {
@@ -100,7 +104,7 @@ p {
 
 /* INSERT BUTTON STYLES HERE */
 button {
-  padding: 8px;
+  padding: 6px 11px 6px 11px;
   border: 0;
   border-radius: 4px;
 }
@@ -147,15 +151,19 @@ button {
 /* hero */
 
 .hero {
-  width:818px;
-  height: 360px;
+  width:786px;
+  height: 236px;
   background-image: url("/images/header-bike.jpg");
   background-color: var(--grey-light);
-  /* background-size: 100vh; */
   margin-bottom: 45px;
+  color: #fff;
+  padding: 5rem 0 0 2rem;
+  /* padding: 2rem; */
 }
 
 .hero h1 {
+  /* padding-top: 5rem;
+  padding-left: 2rem; */
   margin-bottom: 1rem;
   font-size: 2.5rem;
 }
