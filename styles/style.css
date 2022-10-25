@@ -99,9 +99,20 @@ header {
 /* Buttons */
 
 /* INSERT BUTTON STYLES HERE */
+button {
+  padding: 8px;
+  border: 0;
+  border-radius: 4px;
+}
+
 .btn-Don {
   background-color: #c05326;
-  color: white;
+  color: #fff;
+}
+
+.btn-Don:hover {
+  background-color: #fff;
+  color: #c05326;
 }
 
 .btn-Vol {
@@ -109,26 +120,9 @@ header {
   color: #c05326;
 }
 
-button {
-  padding: 8px;
-  border: 0;
-  border-radius: 4px;
-}
-
-button:hover {
-  background-color: #e487d9;
-  color: green;
-}
-button:focus {
-  background-color: #e487d9;
-  color: green;
-}
-
-.btn-flex {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  margin: 20px;
+.btn-Vol:hover {
+  background-color: #c05326;
+  color: #fff;
 }
 
 /* Content */
