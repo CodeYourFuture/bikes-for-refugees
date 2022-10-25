@@ -219,7 +219,6 @@ aside .article {
   display: flex;
   gap: 1rem;
 }
-
 .article__title {
   margin-bottom: 0.5rem;
   font-size: 1rem;
