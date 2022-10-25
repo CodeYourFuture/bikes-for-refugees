@@ -198,8 +198,26 @@ button {
 
 /* Article */
 
+.learn-more-articles{
+  display: flex;
+  gap: 1rem;
+}
+
 .article {
   margin-bottom: 1rem;
+  border: 0.15rem solid #e4e4e4;
+  border-radius: 0.25rem;
+  padding: 1rem;
+  width: 100%;
+}
+
+/* .learn-more-articles .article {
+  flex:  2 1 auto;
+} */
+
+aside .article {
+  display: flex;
+  gap: 1rem;
 }
 
 .article__title {
@@ -246,6 +264,7 @@ button {
 
 .facebook-link {
   color: var(--orange-dark);
+  text-align: right;
 }
 
 /* Sidebar */
