@@ -67,6 +67,7 @@ p {
 
 .navigation__item {
   padding: 0.5rem 0;
+  padding: 20px;
 }
 
 .navigation__link {
@@ -76,6 +77,9 @@ p {
   text-decoration: none;
 }
 
+.navigation__link:hover{
+  color: #c05326;
+}
 
 /* Text styles */
 
@@ -120,26 +124,58 @@ p {
 /* hero */
 
 .hero {
-  background-image: url("header-bike.jpg");
+  background-image: url("/images/header-bike.jpg");
   background-color: var(--grey-light);
+  height: 60%;
 }
 
 .hero h1 {
   margin-bottom: 1rem;
   font-size: 2.5rem;
+  color: #fff;
+  padding-left: 30px;
 }
 
 .hero p {
   font-size: 1.2rem;
   margin-bottom: 2rem;
+  color: #fff;
+  padding-left: 30px;
 }
 
+.donate , .donate_now{
+  background-color: #c05326;
+  color: #fff;
+  padding: 5px;
+  border: none;
+  border-radius: 0.5ch;
+  margin-left: 30px;
+}
+
+.donate:hover , .donate_now:hover{
+  background-color: #fff;
+  color: #c05326;
+  /* border-style: solid; */
+}
+
+.volunteer {
+  background-color: #fff;
+  color: #c05326;
+  padding: 5px;
+  border: none;
+  border-radius: 0.5ch;
+}
+
+.volunteer:hover{
+  color: #fff;
+  background-color: #c05326;
+}
 
 /* Headings */
 
 .heading-underline {
   position: relative;
-  margin-bottom: 2rem;
+  margin: 2rem 0rem;
   padding-bottom: 0.5rem;
   border-bottom: 2px solid var(--orange-light);
   font-size: 1rem;
@@ -161,8 +197,27 @@ p {
 
 /* Article */
 
+.article_sidebar {
+  margin-bottom: 1rem;
+  border: 2px solid lightgray;
+  display: flex;
+  padding: 13px;
+}
+
 .article {
   margin-bottom: 1rem;
+}
+
+.flex{ 
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.article_bottom{
+  margin-bottom: 1rem;
+  border: 2px solid lightgray;
+  padding: 10px;
 }
 
 .article__title {
@@ -184,6 +239,7 @@ p {
 .article__thumbnail {
   object-fit: contain;
   width: 5rem;
+  padding: 0px 20px 0px 0px
 }
 
 .article__read-more {
@@ -209,6 +265,7 @@ p {
 
 .facebook-link {
   color: var(--orange-dark);
+  direction: rtl;
 }
 
 /* Sidebar */
@@ -246,5 +303,9 @@ p {
 
   .main {
     padding-right: 2rem;
+  }
+
+  .footer {
+    margin-top: 11rem;
   }
 }
