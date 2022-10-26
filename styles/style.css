@@ -22,7 +22,6 @@ button {
   font-family: "Source Sans Pro", "Helvetica Neue", Arial, sans-serif;
   color: var(--grey-dark);
   font-size: 1rem;
-  
 }
 
 h1,h2,h3,h4,h5,h6 {
@@ -78,6 +77,11 @@ p {
   padding: 1em;
 }
 
+a.navigation__link:hover {
+  color: #934423;
+  filter: invert(0.30);
+}
+
 
 /* Text styles */
 
@@ -93,7 +97,6 @@ p {
   border: 6px solid var(--white);
   border-left-color: var(--orange-dark);
 }
-
 
 /* Buttons */
 
@@ -119,12 +122,11 @@ p {
     margin-left: 2em;
     color: #fff;
   }
+
   button:hover, button:focus{
     background-color: #934423;
   }
   
-  
-
 /* Content */
 
 .content {
@@ -153,9 +155,8 @@ p {
   background-size: cover;
   background-repeat: no-repeat;
   margin-bottom: 3rem;
-  height: 320px;
+  height: 360px;
   width: 100%;
-  
 }
 
 .hero h1 {
@@ -174,7 +175,6 @@ p {
   color: #fff;
   padding-left: 2rem;
 }
-
 
 /* Headings */
 
@@ -198,7 +198,6 @@ p {
   max-width: 100px;
   background: var(--orange-dark);
 }
-
 
 /* Article */
 
@@ -229,7 +228,6 @@ article {
   gap: 10px;
 }
 
-
 .article-1 {
   padding: 10px;
   border: 2px solid rgb(217, 217, 217);
@@ -243,7 +241,6 @@ article {
   display: flex;
   flex-direction: column;
 }
-
 
 .article__title {
   margin-bottom: 0.5rem;
@@ -309,10 +306,6 @@ article {
   flex-direction: row;
 
 }
-
-
-
-
 
 /* Sidebar */
 
