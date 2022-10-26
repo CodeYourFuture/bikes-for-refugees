@@ -149,13 +149,11 @@ p {
   padding: 5px;
   border: none;
   border-radius: 0.5ch;
-  /* margin-left: 30px; */
 }
 
 .donate:hover , .donate_now:hover{
   background-color: #fff;
   color: #c05326;
-  /* border-style: solid; */
 }
 
 .volunteer {
