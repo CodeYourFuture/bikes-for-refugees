@@ -41,7 +41,7 @@ p {
 
 header,
 .content,
-.footer {
+footer {
   padding: 0 1.5rem;
   max-width: 1200px;
   margin: 0 auto;
@@ -79,7 +79,7 @@ header {
   font-weight: 600;
   text-transform: uppercase;
   text-decoration: none;
-  padding: 8px 20px;
+  padding: 0 1rem;
 }
 .navigation__link:hover {
   color: #c05326;
@@ -107,16 +107,21 @@ header {
 button {
   background-color: #c05326;
   color: #fff;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 0.25rem;
 }
 button.volunteer {
   background-color: #fff;
   color: #c05326;
 }
-button:hover {
+button:hover,
+button:focus {
   background-color: #fff;
   color: #c05326;
 }
-button.volunteer:hover {
+button.volunteer:hover,
+button.volunteer:focus {
   background-color: #c05326;
   color: #fff;
 }
@@ -142,7 +147,7 @@ button.volunteer:hover {
 /* hero */
 
 .hero {
-  background-image: url("/images/header-bike.jpg");
+  background-image: url("../images/header-bike.jpg");
   background-color: var(--grey-light);
   margin-bottom: 3rem;
   padding: 80px 40px;
