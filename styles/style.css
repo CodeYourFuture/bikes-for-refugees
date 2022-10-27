@@ -24,7 +24,12 @@ button {
   font-size: 1rem;
 }
 
-h1,h2,h3,h4,h5,h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   margin-top: 0;
   margin-bottom: 0;
 }
@@ -63,6 +68,7 @@ p {
 .navigation__list {
   display: flex;
   list-style: none;
+  gap: 30px;
 }
 
 .navigation__item {
@@ -95,7 +101,20 @@ p {
 
 /* Buttons */
 
-  /* INSERT BUTTON STYLES HERE */
+.donate-btn {
+  color: var(--orange-light);
+  background-color: var(--orange-dark);
+  border-radius: 5px ;
+  border: none;
+  padding: 7px;
+}
+.volonteer-btn {
+  color: var(--orange-dark);
+  background-color: var(--orange-light);
+  border-radius: 5px ;
+  border: none;
+  padding: 7px;
+}
 
 
 /* Content */
@@ -118,15 +137,22 @@ p {
 }
 
 /* hero */
+.box {
+  display: flex;
+}
 
 .hero {
-  background-image: url("header-bike.jpg");
-  background-color: var(--grey-light);
+  background-image: url("/images/header-bike.jpg");
+    background-color: var(--grey-light);
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding: 100px 50px;
+  color: white;
 }
 
 .hero h1 {
   margin-bottom: 1rem;
-  font-size: 2.5rem;
+  font-size: 2.5rem;  
 }
 
 .hero p {
@@ -139,6 +165,7 @@ p {
 
 .heading-underline {
   position: relative;
+  margin-top: 4rem;
   margin-bottom: 2rem;
   padding-bottom: 0.5rem;
   border-bottom: 2px solid var(--orange-light);
@@ -163,12 +190,18 @@ p {
 
 .article {
   margin-bottom: 1rem;
+  border: 3px solid #e4e4e4;
+  border-radius: 5px;
+  padding: 10px;
+  margin: 5px;
+  display: table-header-group;
 }
 
 .article__title {
   margin-bottom: 0.5rem;
   font-size: 1rem;
   font-weight: 700;
+  margin-right: 10px;
 }
 
 .article__title-link {
@@ -184,10 +217,11 @@ p {
 .article__thumbnail {
   object-fit: contain;
   width: 5rem;
+  margin: 11px;
 }
 
 .article__read-more {
-  margin-top: 0;
+  margin-top: 0px;
 }
 
 .article__read-more a {
@@ -209,6 +243,9 @@ p {
 
 .facebook-link {
   color: var(--orange-dark);
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 10px;
 }
 
 /* Sidebar */
@@ -236,6 +273,37 @@ p {
   text-align: center;
   font-size: 0.85rem;
 }
+.d_now_btn {
+  background-color: #c05326;
+outline: 0;
+border: 0;
+}
+
+.volunteer_btn {
+color: #fff;
+background-color: #c05326;
+outline: 0;
+border: 0;
+}
+button:hover {
+  background-color: #467b4d;
+}
+.d_now_btn {
+  background-color: #23934a;
+}
+
+
+
+
+nav {
+  padding: 10px;
+
+
+}
+
+.navigation__link:hover {
+  color: #c05326;
+}
 
 /* Media queries */
 
@@ -248,3 +316,5 @@ p {
     padding-right: 2rem;
   }
 }
+
+
