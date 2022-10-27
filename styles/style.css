@@ -79,6 +79,11 @@ p {
   font-weight: 600;
   text-transform: uppercase;
   text-decoration: none;
+  transition: all ease-in-out 100ms;
+}
+
+.navigation__link:hover {
+  color: #c05326;
 }
 
 /* Text styles */
@@ -154,7 +159,13 @@ p {
 .hero {
   background-image: url("/images/header-bike.jpg");
   background-color: var(--grey-light);
+  color: white;
   padding: 80px 0;
+  margin-bottom: 40px;
+}
+
+.hero .hero-text {
+  padding: 0 25px;
 }
 
 .hero h1 {
@@ -191,9 +202,22 @@ p {
 }
 
 /* Article */
+.article-section {
+  display: flex;
+  flex-direction: row;
+  /* flex: 1 1 0;
+  width: 0; */
+}
+
+.margin-right {
+  margin-right: 15px;
+}
 
 .article {
   margin-bottom: 1rem;
+  border: 2px solid rgba(0, 0, 0, 0.1);
+  border-radius: 4px;
+  padding: 15px;
 }
 
 .article__title {
@@ -240,6 +264,7 @@ p {
 
 .facebook-link {
   color: var(--orange-dark);
+  text-align: right;
 }
 
 /* Sidebar */
