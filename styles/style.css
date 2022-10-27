@@ -248,3 +248,20 @@ p {
     padding-right: 2rem;
   }
 }
+
+button {
+  background-color: var(--white);
+  border: 1px solid transparent;
+  border-radius: 8px;
+  padding: 0.5rem;
+  color: var(--orange-dark);
+  font-weight: bolder;
+}
+.brownbtn {
+  background-color: var(--orange-dark);
+  border: 1px solid transparent;
+  border-radius: 8px;
+  padding: 0.5rem;
+  color: var(--orange-light);
+  font-weight: bolder;
+}
