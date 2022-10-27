@@ -167,6 +167,9 @@ p {
 
 .article {
   margin-bottom: 1rem;
+  border: 2px solid #ddd;
+  border-radius: 5px;
+  padding: 1rem;
 }
 
 .article__title {
@@ -213,6 +216,7 @@ p {
 
 .facebook-link {
   color: var(--orange-dark);
+  text-align: right;
 }
 
 /* Sidebar */
@@ -268,4 +272,13 @@ button {
   padding: 0.5rem;
   color: var(--orange-light);
   font-weight: bolder;
+}
+.mainArticle {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+}
+aside > .article {
+  display: flex;
+  gap: 1rem;
 }
