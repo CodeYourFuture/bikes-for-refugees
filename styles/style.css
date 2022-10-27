@@ -289,3 +289,45 @@ footer p {
     padding-right: 2rem;
   }
 }
+
+/* Flexbox */
+.flexbox {
+  display: flex;
+  justify-content: space-evenly;
+  list-style: none;
+  margin-left: -3rem;
+}
+.flexbox > li > a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 10rem;
+  height: 10rem;
+  background-color: #e4e4e4;
+  border-radius: 2rem;
+  text-decoration: none;
+  color: inherit;
+}
+
+.flex__link:hover {
+  color: var(--white);
+  font-weight: 600;
+  text-decoration: none;
+  padding: 0 1rem;
+  background-color: #c05326;
+  width: 8rem;
+  height: 10rem;
+  border-radius: 2rem;
+  text-decoration: none;
+}
+
+.flexbox .box1 {
+}
+
+.flexbox > li:nth-child(2) {
+  background-color: #f98f5e;
+}
+
+.flexbox > li:last-child {
+  background-color: #292b2c;
+}

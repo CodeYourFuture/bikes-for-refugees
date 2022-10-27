@@ -6,6 +6,10 @@ Exercise for HTML & CSS - lesson 1
 
 ![Bike For Refugees: final design](completed.png)
 
+## Flexbox-Completed
+
+![Bike For Refugees: final design](flexbox-completed.png)
+
 ### Exercise 1) Use semantic markup
 
 Where necessary, replace the `<div>`s with semantic HTML tags. This will not render differently in the browser, but it's good practice to use semantic markup when you can!
