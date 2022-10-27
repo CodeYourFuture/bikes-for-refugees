@@ -95,7 +95,23 @@ p {
 
 /* Buttons */
 
-  /* INSERT BUTTON STYLES HERE */
+.orange__button {
+  background-color: var(--orange-dark);
+  color: var(--white);
+  border: none;
+  border-radius: 2px;
+  font-size: 0.7rem;
+  padding: 6px;
+}
+
+.white__button {
+  background-color: var(--white);
+  color: var(--orange-dark);
+  border: none;
+  border-radius: 2px;
+  font-size: 0.7rem;
+  padding: 6px;
+}
 
 
 /* Content */
