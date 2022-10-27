@@ -19,18 +19,31 @@ body {
 
 .donatebutton {
   font-family: "Source Sans Pro", "Helvetica Neue", Arial, sans-serif;
-  color: var(--grey-dark);
+  color: #fff;
   background-color: #934423;
   font-size: 1rem;
+  padding: 5px;
 }
 
-button:hover{background-color: ;}
+.donatebutton:hover {
+  background-color: #fff;
+  color: #934423;
+}
 
 
 
 .v_button {
+  font-family: "Source Sans Pro", "Helvetica Neue", Arial, sans-serif;
   color:#934423;
   background-color: #fff;
+  font-size: 1rem;
+  padding: 5px;
+
+}
+
+.v_button:hover {
+  background-color: #934423;
+  color: #fff;
 }
 
 h1,h2,h3,h4,h5,h6 {
@@ -84,6 +97,10 @@ p {
   font-weight: 600;
   text-transform: uppercase;
   text-decoration: none;
+}
+
+.navigation__link:hover {
+  color: #934423;
 }
 
 
