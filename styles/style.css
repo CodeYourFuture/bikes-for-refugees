@@ -71,7 +71,7 @@ p {
 }
 
 .navigation__item {
-  padding: 0.5rem 1rem;
+  padding: 0.5rem 1.5rem;
 }
 
 .navigation__link {
@@ -79,6 +79,9 @@ p {
   font-weight: 600;
   text-transform: uppercase;
   text-decoration: none;
+}
+.navigation__link:hover {
+  color: var(--orange-dark);
 }
 
 /* Text styles */
@@ -100,13 +103,18 @@ p {
 
 button {
   padding: 0.5rem;
-  border: 1px solid black;
   border-radius: 0.2em;
+  border-width: 0em;
 }
 
 .donateButton {
   background-color: #c05326;
   color: #fff;
+}
+.donateButton:hover {
+  background-color: #fff;
+  color: #c05326;
+  border: 1px solid #c05326;
 }
 
 .volunterButton {
@@ -114,6 +122,10 @@ button {
   color: #c05326;
 }
 
+.volunterButton:hover {
+  background-color: #c05326;
+  color: #fff;
+}
 /*
 button:hover {
   background-color: #934423;
@@ -198,7 +210,7 @@ button:focus {
   background-size: cover;
   position: relative;
   padding: 5rem 2rem 3rem;
-  margin-bottom: 2rem;
+  margin-bottom: 3rem;
 }
 
 .hero h1 {
