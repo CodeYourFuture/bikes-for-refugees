@@ -122,7 +122,7 @@ p {
 /* hero */
 
 .hero {
-  background-image: url("./images/header-bike.jpg");
+  background-image: url("../images/header-bike.jpg");
   background-color: var(--grey-light);
 }
 
