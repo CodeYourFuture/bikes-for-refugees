@@ -17,11 +17,25 @@ body {
   margin: 0;
 }
 
-body,
-button {
+.button1 {
   font-family: "Source Sans Pro", "Helvetica Neue", Arial, sans-serif;
   color: var(--grey-dark);
+  background-color: #934423;
   font-size: 1rem;
+}
+
+button:hover{background-color: ;}
+
+button2 {
+  font-family: "Source Sans Pro", "Helvetica Neue", Arial, sans-serif;
+  color: var(--grey-dark);
+  background-color: #c05326;
+  font-size: 1rem;
+}
+
+.v_button {
+  color:#934423;
+  background-color: #fff;
 }
 
 h1,h2,h3,h4,h5,h6 {
@@ -66,7 +80,8 @@ p {
 }
 
 .navigation__item {
-  padding: 0.5rem 0;
+  padding: 0.5rem 0.5rem;
+
 }
 
 .navigation__link {
@@ -120,18 +135,20 @@ p {
 /* hero */
 
 .hero {
-  background-image: url("header-bike.jpg");
+  background-image: url("/Users/annamaziz/Documents/Untitled/images/header-bike.jpg");
   background-color: var(--grey-light);
 }
 
 .hero h1 {
-  margin-bottom: 1rem;
-  font-size: 2.5rem;
+  margin-bottom: 10rem;
+  font-size: 3rem;
+  margin-left: 10%;
 }
 
 .hero p {
-  font-size: 1.2rem;
-  margin-bottom: 2rem;
+  font-size: 2rem;
+  margin-bottom: 2.5rem;
+  margin-left: 10%;
 }
 
 
