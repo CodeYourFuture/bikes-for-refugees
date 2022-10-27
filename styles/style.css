@@ -78,7 +78,7 @@ p {
 }
 
 .navigation__link:hover{
-  color: #c05326;
+color: var(--orange-dark);
 }
 
 /* Text styles */
@@ -102,8 +102,8 @@ p {
   /* INSERT BUTTON STYLES HERE */
 .donate,
 .donate_now {
-  background-color: #c05326;
-  color: #fff;
+  background-color: var(--orange-dark);
+  color: var(--white);
   padding: 5px;
   border: none;
   border-radius: 0.5ch;
@@ -111,21 +111,21 @@ p {
 
 .donate:hover,
 .donate_now:hover {
-  background-color: #fff;
-  color: #c05326;
+  background-color: var(--white);
+  color: var(--orange-dark);
 }
 
 .volunteer {
-  background-color: #fff;
-  color: #c05326;
+  background-color: var(--grey-light);
+  color: var(--orange-dark);
   padding: 5px;
   border: none;
   border-radius: 0.5ch;
 }
 
 .volunteer:hover {
-  color: #fff;
-  background-color: #c05326;
+  color: var(--white);
+  background-color: var(--orange-dark);
 }
 
 /* Content */
@@ -155,7 +155,7 @@ p {
   padding: 100px 0px 100px 40px;
   background-repeat: no-repeat;
   background-size: cover;
-  color: #fff;
+  color: var(--white);
 }
 
 .hero h1 {
