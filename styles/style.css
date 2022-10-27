@@ -80,6 +80,9 @@ p {
   text-transform: uppercase;
   text-decoration: none;
 }
+.navigation__link:hover {
+  color: var(--orange-dark);
+}
 
 /* Text styles */
 
@@ -264,6 +267,11 @@ button {
   padding: 0.5rem;
   color: var(--orange-dark);
   font-weight: bolder;
+  cursor: pointer;
+}
+button:hover {
+  color: var(--grey-dark);
+  background-color: lightpink;
 }
 .brownbtn {
   background-color: var(--orange-dark);
