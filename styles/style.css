@@ -112,11 +112,14 @@ p {
   font-size: 1rem;
   border-radius: 5px;
 }
+.btn:hover{
+  filter:invert()
+}
 #btn2{
   margin-left: 3px;
   background-color: white;
   color: #c05326;
- 
+  
 }
 #btn3{
   background-color: #c05326;
@@ -124,6 +127,9 @@ p {
   border: none;
   padding: 10px;
   border-radius: 5px;
+}
+#btn3:hover{
+  filter: invert();
 }
 
 /* Content */
@@ -306,6 +312,11 @@ p {
   font-size: 0.85rem;
   color: #292b2c;
 }
+.navigation__link:hover{
+  color: orange;
+}
+
+
 
 /* Media queries */
 
