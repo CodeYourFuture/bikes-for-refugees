@@ -101,11 +101,12 @@ p {
 button {
   padding: 0.5rem;
   border: 1px solid black;
-  border-radius: 15px;
+  border-radius: 0.2em;
 }
 
 .donateButton {
   background-color: #c05326;
+  color: #fff;
 }
 
 .volunterButton {
@@ -155,10 +156,14 @@ button:focus {
 }
 .CTA2 {
   padding: 0.75rem;
-  border-radius: 0.5rem;
-  border: 0.15rem solid rgb(144, 138, 138);
-  /*border-color: #292b2c;*/
+  border-radius: 0.2rem;
+  border: 0.1rem solid rgb(184, 179, 179);
 }
+
+.CTA3 {
+  margin-right: 1em;
+}
+
 /* Alert */
 
 .alert {
@@ -187,10 +192,11 @@ button:focus {
 
 .hero {
   background-image: url("/images/header-bike.jpg");
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-size: 100% 100%;
   background-color: var(--grey-light);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
   padding: 5rem 2rem 3rem;
   margin-bottom: 2rem;
 }
