@@ -23,7 +23,26 @@ button {
   color: var(--grey-dark);
   font-size: 1rem;
 }
+button:hover{
+  background-color: #934423 ;
+}
+button:focus{
+  background-color: #51362a ;
+}
 
+.white_btton{
+  background-color: #c05326
+}
+.red_button{
+background-color: #ff8800;
+color: #fff;
+}
+.red_button:hover{
+  background-color: green;
+}
+.white_btton:hover{
+  background-color: aqua;
+}
 h1,h2,h3,h4,h5,h6 {
   margin-top: 0;
   margin-bottom: 0;
