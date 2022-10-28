@@ -20,8 +20,9 @@ body {
 body,
 button {
   font-family: "Source Sans Pro", "Helvetica Neue", Arial, sans-serif;
-  color: var(--grey-dark);
+  color: var(--orange-dark);
   font-size: 1rem;
+
 }
 
 h1,h2,h3,h4,h5,h6 {
@@ -33,6 +34,8 @@ p {
   margin-top: 0;
   margin-bottom: 0;
 }
+
+
 
 .header,
 .content,
@@ -62,7 +65,9 @@ p {
 
 .navigation__list {
   display: flex;
-  list-style: none;
+  list-style:none;
+  align-items: center;
+  justify-content:center;
 }
 
 .navigation__item {
@@ -74,6 +79,7 @@ p {
   font-weight: 600;
   text-transform: uppercase;
   text-decoration: none;
+  padding: 12px;
 }
 
 
@@ -99,6 +105,14 @@ p {
 
 
 /* Content */
+.button {
+  transition-duration: 0.4s;
+}
+
+.button:hover {
+  background-color: #ee0c0cc9; /* Green */
+  color: rgb(226, 221, 219);
+}
 
 .content {
   display: flex;
@@ -120,18 +134,29 @@ p {
 /* hero */
 
 .hero {
-  background-image: url("header-bike.jpg");
+  background-image: url("/home/sana/Documents/GitHub/bikes-for-refugees/images/header-bike.jpg");
   background-color: var(--grey-light);
+  background-size: cover;
+  position: relative;
+  height: 500px;
+  background-position: center;
+  background-repeat: no-repeat;
+  
 }
 
 .hero h1 {
   margin-bottom: 1rem;
   font-size: 2.5rem;
+  color: #fff;
+    
 }
 
 .hero p {
+  
   font-size: 1.2rem;
   margin-bottom: 2rem;
+  color:white;
+  a
 }
 
 
@@ -163,6 +188,9 @@ p {
 
 .article {
   margin-bottom: 1rem;
+  border: 2px solid var(--grey-light);
+  border-radius: 3px;
+  padding: 14px 10px;
 }
 
 .article__title {
@@ -217,8 +245,8 @@ p {
   display: flex;
   flex-direction: column;
   min-width: 350px;
+   
 }
-
 /* Footer */
 
 .footer {
