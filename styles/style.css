@@ -36,7 +36,7 @@ p {
 
 header,
 .content,
-.footer {
+footer {
   padding: 0 1.5rem;
   max-width: 1200px;
   margin: 0 auto;
@@ -140,7 +140,8 @@ header {
   background-color: var(--grey-light);
   background-size: cover;
   background-repeat: no-repeat;
-  padding: 2rem 4rem;
+  padding: 6.5rem 3rem;
+  margin-bottom: 40px;
   
 }
 
@@ -179,12 +180,19 @@ header {
   max-width: 100px;
   background: var(--orange-dark);
 }
-
+section{
+  display: flex;
+}
 
 /* Article */
 
 article {
   margin-bottom: 1rem;
+  border: 1px solid var(--grey-light);
+  border-radius: 5px;
+  margin: 5px;
+  padding: 10px;
+
 }
 
 .article__title {
@@ -243,7 +251,7 @@ aside {
 
 /* Footer */
 
-.footer {
+footer {
   margin-top: 2rem;
 }
 
