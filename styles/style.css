@@ -192,9 +192,38 @@ button.volunteer:hover {
 /* Article */
 
 .article {
-  margin-bottom: 1rem;
-}
+  margin-bottom: 1.6rem;
+  display: flex;
+  justify-content: space-around;
 
+  border: solid;
+  border-color: #e4e4e4;
+  padding: 15px 20px;
+}
+.LearnMore {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 2%;
+}
+.articleLearnMore {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  border: solid;
+  border-color: #e4e4e4;
+  padding: 15px 40px;
+}
+.articleLearnMore1 {
+  border: solid;
+  border-color: #e4e4e4;
+  padding: 5px 10px;
+}
+.articleLearnMore2 {
+  border: solid;
+  border-color: #e4e4e4;
+  padding: 5px 10px;
+}
 .article__title {
   margin-bottom: 0.5rem;
   font-size: 1rem;
@@ -214,6 +243,7 @@ button.volunteer:hover {
 .article__thumbnail {
   object-fit: contain;
   width: 5rem;
+  padding-right: 20px;
 }
 
 .article__read-more {
