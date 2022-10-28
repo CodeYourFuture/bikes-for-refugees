@@ -5,13 +5,13 @@
  * 
  */
 
- :root {
-   --grey-dark: #292b2c;
-   --grey-light: #e4e4e4;
-   --orange-dark: #c05326;
-   --orange-light: #f7eae4;
-   --white: #fff;
- }
+:root {
+  --grey-dark: #292b2c;
+  --grey-light: #e4e4e4;
+  --orange-dark: #c05326;
+  --orange-light: #f7eae4;
+  --white: #fff;
+}
 
 body {
   margin: 0;
@@ -24,7 +24,12 @@ button {
   font-size: 1rem;
 }
 
-h1,h2,h3,h4,h5,h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   margin-top: 0;
   margin-bottom: 0;
 }
@@ -74,6 +79,7 @@ p {
   font-weight: 600;
   text-transform: uppercase;
   text-decoration: none;
+  padding: 20px;
 }
 
 
@@ -95,7 +101,50 @@ p {
 
 /* Buttons */
 
-  /* INSERT BUTTON STYLES HERE */
+/* INSERT BUTTON STYLES HERE */
+
+.button-section {
+  display: flex;
+  flex-direction: row;
+}
+
+.button1 {
+  background-color: #c05326;
+  font-size: 1rem;
+  color: white;
+  border-radius: 4px;
+  padding: 5px;
+  height: 30px;
+  width: 120px;
+  border-style: none;
+  margin-right: 4px;
+  
+    
+}
+
+.button2 {
+  background-color: #c05326;
+  font-size: 1rem;
+  color: white;
+  border-radius: 4px;
+  padding: 5px;
+  height: 30px;
+  width: 170px;
+  border-style: none;
+  margin-right: 4px;
+
+}
+
+.button3 {
+  color: #c05326;
+  background-color: white;
+  border-radius: 4px;
+  padding: 5px;
+  height: 30px;
+  width: 100px;
+  border-style: none;
+
+}
 
 
 /* Content */
@@ -120,8 +169,17 @@ p {
 /* hero */
 
 .hero {
-  background-image: url("header-bike.jpg");
+  background-image: url("../images/header-bike.jpg");
+  background-position: cover;
   background-color: var(--grey-light);
+  max-width: 1200px;
+  height: 320px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+  color: #fff;
+  padding-left: 30px;
 }
 
 .hero h1 {
@@ -137,9 +195,19 @@ p {
 
 /* Headings */
 
+.heading-underline-side {
+  position: relative;
+  margin: .1rem 0 2rem 0;
+  padding-bottom: 0.5rem;
+  border-bottom: 2px solid var(--orange-light);
+  font-size: 1rem;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
 .heading-underline {
   position: relative;
-  margin-bottom: 2rem;
+  margin: 3rem 0 2rem 0;
   padding-bottom: 0.5rem;
   border-bottom: 2px solid var(--orange-light);
   font-size: 1rem;
@@ -162,7 +230,14 @@ p {
 /* Article */
 
 .article {
-  margin-bottom: 1rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin: 0 1em 1rem 0;
+  padding: 20px 30px 20px 20px;
+  border: 2px solid #e4e4e4;
+  border-radius: 4px;
+  width: 326px;
 }
 
 .article__title {
@@ -184,6 +259,7 @@ p {
 .article__thumbnail {
   object-fit: contain;
   width: 5rem;
+  padding-right: 15px;
 }
 
 .article__read-more {
@@ -202,13 +278,32 @@ p {
   text-decoration: underline;
 }
 
+.bottom-articles {
+  display: flex;
+  flex-direction: row;
+  
+}
+
+.bottom-articles-a {
+  display: flex;
+  flex-direction: column;
+
+}
+
+
+
+
 .fa {
+  
   margin-right: 0.5rem;
   color: var(--orange-dark);
+  
 }
+
 
 .facebook-link {
   color: var(--orange-dark);
+  text-align: right;
 }
 
 /* Sidebar */
