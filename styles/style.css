@@ -76,6 +76,9 @@ p {
   text-decoration: none;
 }
 
+.navigation__link:hover {
+  color: var(--orange-dark)
+}
 
 /* Text styles */
 
@@ -103,12 +106,22 @@ p {
   padding: 6px 10px;
 }
 
+.orange__button:hover {
+  background-color: var(--white);
+  color: var(--orange-dark);
+}
+
 .white__button {
   background-color: var(--white);
   color: var(--orange-dark);
   border: none;
   border-radius: 3px;
   padding: 6px 10px;
+}
+
+.white__button:hover {
+  background-color: var(--orange-dark);
+  color: var(--white);
 }
 
 
