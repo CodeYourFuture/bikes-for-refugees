@@ -5,13 +5,13 @@
  * 
  */
 
- :root {
-   --grey-dark: #292b2c;
-   --grey-light: #e4e4e4;
-   --orange-dark: #c05326;
-   --orange-light: #f7eae4;
-   --white: #fff;
- }
+:root {
+  --grey-dark: #292b2c;
+  --grey-light: #e4e4e4;
+  --orange-dark: #c05326;
+  --orange-light: #f7eae4;
+  --white: #fff;
+}
 
 body {
   margin: 0;
@@ -24,7 +24,13 @@ button {
   font-size: 1rem;
 }
 
-h1,h2,h3,h4,h5,h6 {
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   margin-top: 0;
   margin-bottom: 0;
 }
@@ -34,9 +40,9 @@ p {
   margin-bottom: 0;
 }
 
-.header,
-.content,
-.footer {
+header,
+content,
+footer {
   padding: 0 1.5rem;
   max-width: 1200px;
   margin: 0 auto;
@@ -44,7 +50,7 @@ p {
 
 /* Header */
 
-.header {
+header {
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -56,6 +62,8 @@ p {
 .header__logo {
   max-height: 90px;
   width: auto;
+  padding: 50px;
+  margin: 70px;
 }
 
 /* Navigation */
@@ -63,6 +71,7 @@ p {
 .navigation__list {
   display: flex;
   list-style: none;
+  gap: 20px;
 }
 
 .navigation__item {
@@ -74,8 +83,12 @@ p {
   font-weight: 600;
   text-transform: uppercase;
   text-decoration: none;
+
 }
 
+a:hover {
+  color: #c05326;
+}
 
 /* Text styles */
 
@@ -92,15 +105,21 @@ p {
   border-left-color: var(--orange-dark);
 }
 
-
 /* Buttons */
 
-  /* INSERT BUTTON STYLES HERE */
+.donate {
+  background-color: #c05326;
+  color: white;
+}
 
+.volunteer {
+  color: #c05326;
+}
+/* INSERT BUTTON STYLES HERE */
 
 /* Content */
 
-.content {
+content {
   display: flex;
   flex-direction: column;
 }
@@ -120,8 +139,13 @@ p {
 /* hero */
 
 .hero {
-  background-image: url("header-bike.jpg");
+  background-image: url(file:///C:/Users/%D0%98%D0%BD%D0%BD%D0%B0/Desktop/CYF%20folder/bikes-for-refugees/images/header-bike.jpg);
   background-color: var(--grey-light);
+  height: 240px;
+  color:white;
+  margin: auto;
+  padding-top: 80px;
+  padding-left: 20px;
 }
 
 .hero h1 {
@@ -134,12 +158,12 @@ p {
   margin-bottom: 2rem;
 }
 
-
 /* Headings */
 
 .heading-underline {
   position: relative;
   margin-bottom: 2rem;
+  margin-top: 2rem;
   padding-bottom: 0.5rem;
   border-bottom: 2px solid var(--orange-light);
   font-size: 1rem;
@@ -158,11 +182,14 @@ p {
   background: var(--orange-dark);
 }
 
-
 /* Article */
 
-.article {
+article {
   margin-bottom: 1rem;
+  display: flex;
+  border: 1px solid grey;
+  padding: 10px;
+  gap: 15px;
 }
 
 .article__title {
@@ -205,6 +232,7 @@ p {
 .fa {
   margin-right: 0.5rem;
   color: var(--orange-dark);
+  padding-left: 190px;
 }
 
 .facebook-link {
@@ -217,11 +245,12 @@ p {
   display: flex;
   flex-direction: column;
   min-width: 350px;
+  
 }
 
 /* Footer */
 
-.footer {
+footer {
   margin-top: 2rem;
 }
 
