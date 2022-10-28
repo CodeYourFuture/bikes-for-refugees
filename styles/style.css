@@ -178,8 +178,20 @@ p {
 
 /* Article */
 
+.flexible {
+  display: flex;
+  justify-content: space-between;
+}
+
+.flexible .article:first-child {
+  margin-right: 16px;
+}
+
 .article {
   margin-bottom: 1rem;
+  border: 2px solid var(--grey-light);
+  border-radius: 3px;
+  padding: 14px 10px;
 }
 
 .article__title {
@@ -201,6 +213,7 @@ p {
 .article__thumbnail {
   object-fit: contain;
   width: 5rem;
+  margin-right: 12px;
 }
 
 .article__read-more {
@@ -226,6 +239,7 @@ p {
 
 .facebook-link {
   color: var(--orange-dark);
+  text-align: right;
 }
 
 /* Sidebar */
@@ -234,6 +248,10 @@ p {
   display: flex;
   flex-direction: column;
   min-width: 350px;
+}
+
+.sidebar .article {
+  display: flex;
 }
 
 /* Footer */
