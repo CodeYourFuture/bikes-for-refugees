@@ -146,6 +146,18 @@ p {
 
 }
 
+button:hover,
+button:focus {
+  background-color: white;
+  color: #c05326;
+}
+
+.button3:hover,
+button:focus {
+  background-color: #c05326;
+  color: white;
+}
+
 
 /* Content */
 
