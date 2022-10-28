@@ -25,22 +25,7 @@ button {
   border: none;
   border-radius: 2px;
 }
-.one {
-  background-color: #c05326;
-  color: white;
-}
-button:hover {
-  color: #934423;
-  background-color: white;
-}
-.volunteer {
-  background-color: white;
-  color: #c05326;
-}
-button.volunteer:hover {
-  background-color: #c05326;
-  color: white;
-}
+
 .navigation__link {
   padding: 10px 20px;
   margin: 20px 20px;
@@ -93,7 +78,7 @@ p {
 }
 
 .navigation__item {
-  padding: 0.5rem 0;
+  padding: 0.5rem 5px;
 }
 
 .navigation__link {
@@ -121,7 +106,22 @@ p {
 /* Buttons */
 
 /* INSERT BUTTON STYLES HERE */
-
+.one {
+  background-color: #c05326;
+  color: white;
+}
+button:hover {
+  color: #934423;
+  background-color: white;
+}
+.volunteer {
+  background-color: white;
+  color: #c05326;
+}
+button.volunteer:hover {
+  background-color: #c05326;
+  color: white;
+}
 /* Content */
 
 .content {
@@ -144,8 +144,12 @@ p {
 /* hero */
 
 .hero {
-  background-image: url("header-bike.jpg");
+  background-image: url("/images/header-bike.jpg");
   background-color: var(--grey-light);
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding: 6.5rem 3rem;
+  margin-bottom: 30px;
 }
 
 .hero h1 {
