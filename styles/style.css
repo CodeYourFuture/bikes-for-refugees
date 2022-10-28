@@ -75,6 +75,9 @@ header {
   text-transform: uppercase;
   text-decoration: none;
 }
+.navigation__link:hover {
+  color: var(--orange-dark);
+}
 
 
 /* Text styles */
@@ -103,12 +106,19 @@ header {
   border-radius: 5px;
 }
 
+.orange-btn:hover {
+  background-color: var(--grey-dark);
+}
+
 .white-btn {
   background-color: var(--white);
   color: var(--orange-dark);
   padding: 5px 10px;
   border: none;
   border-radius: 5px;
+}
+.white-btn:hover {
+  background-color: var(--orange-light);
 }
 
 
