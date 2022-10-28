@@ -60,24 +60,18 @@ p {
 .navigation__list {
   display: flex;
   list-style: none;
-  
-
 }
 
 .navigation__item {
   margin: 15px;
   padding: 0.5rem 0;
- 
 }
-
 .navigation__link {
   color: var(--grey-dark);
   font-weight: 600;
   text-transform: uppercase;
   text-decoration: none;
 }
-
-
 /* Text styles */
 
 .text-highlight {
