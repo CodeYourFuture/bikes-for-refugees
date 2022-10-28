@@ -17,6 +17,24 @@ body {
   margin: 0;
 }
 
+.btn{ 
+  background-color:#c05326;
+
+}
+.btn:hover{color: #234693;
+
+}
+.volunteer{ 
+  background-color: #fff;
+}
+.volunteer:hover{ background-color: red;
+  color: aquamarine;
+
+}
+/* h3{ background-color: aqua;} */
+
+div{background-color: whitesmokeS;}
+
 body,
 button {
   font-family: "Source Sans Pro", "Helvetica Neue", Arial, sans-serif;
@@ -56,6 +74,7 @@ p {
 .header__logo {
   max-height: 90px;
   width: auto;
+  padding: 3px;
 }
 
 /* Navigation */
@@ -67,6 +86,8 @@ p {
 
 .navigation__item {
   padding: 0.5rem 0;
+  padding: 20px;
+  margin: 25px;
 }
 
 .navigation__link {
@@ -76,7 +97,44 @@ p {
   text-decoration: none;
 }
 
+.wrapper {
+ padding: 20px;
+  display: flex; 
+ flex-direction: row;
+ justify-content: space-between; 
+  align-items: center;
+}
 
+.box1{
+  height: 120px;
+  width: 150px;
+  border: 10px solid green;
+  background-color: yellow;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+}
+
+.box2 {
+  height: 120px;
+  width: 150px;
+  border: 10px solid green;
+  background-color: yellowgreen;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.box3 {
+  height: 120px;
+  width: 150px;
+  border: 10px solid green;
+  background-color: pink;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 /* Text styles */
 
 .text-highlight {
@@ -97,6 +155,9 @@ p {
 
   /* INSERT BUTTON STYLES HERE */
 
+.btn {
+  margin-left: 20px;
+}
 
 /* Content */
 
@@ -120,18 +181,26 @@ p {
 /* hero */
 
 .hero {
-  background-image: url("header-bike.jpg");
+  background-image: url("/images/header-bike.jpg");
   background-color: var(--grey-light);
+  background-size: cover; height: 400px; max-width: 800px;
 }
 
 .hero h1 {
   margin-bottom: 1rem;
-  font-size: 2.5rem;
+  font-size: 3rem;
+  color: aliceblue;
+  text-align-last: left;
+  padding-top: 110px;
+  padding-left: 20px;
 }
 
 .hero p {
-  font-size: 1.2rem;
+  font-size: 1rem;
   margin-bottom: 2rem;
+  color: aliceblue;
+  text-align-last: left;
+  padding-left: 20px;
 }
 
 
@@ -161,8 +230,23 @@ p {
 
 /* Article */
 
+
+#main-articles {
+ display: flex;
+ gap: 15px;
+}
+.refugee-information { 
+  border: solid #c05326 1px;
+  padding: 6px;
+
+}
+
 .article {
   margin-bottom: 1rem;
+  border: grey solid 2px;
+  display: flex;
+  padding: 5px;
+
 }
 
 .article__title {
@@ -179,11 +263,14 @@ p {
 .article__summary {
   margin-top: 0;
   margin-bottom: 1rem;
+  display: inline-block;
+  
 }
 
 .article__thumbnail {
   object-fit: contain;
   width: 5rem;
+  margin: 15px;
 }
 
 .article__read-more {
@@ -195,7 +282,10 @@ p {
   font-weight: 700;
   color: var(--orange-dark);
   text-decoration: none;
+
 }
+
+
 
 .article__read-more a:hover,
 .article__read-more a:focus {
@@ -209,6 +299,7 @@ p {
 
 .facebook-link {
   color: var(--orange-dark);
+  text-align: right;
 }
 
 /* Sidebar */
@@ -247,4 +338,7 @@ p {
   .main {
     padding-right: 2rem;
   }
+}
+.btn:hover{
+  background-color: aqua;
 }
