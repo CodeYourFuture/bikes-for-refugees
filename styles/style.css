@@ -106,6 +106,10 @@ p {
 /* Buttons */
 
 /* INSERT BUTTON STYLES HERE */
+button {
+  padding: 5px 12px;
+  border-radius: 4px;
+}
 .one {
   background-color: #c05326;
   color: white;
