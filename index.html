@@ -30,7 +30,7 @@
           />
         </a>
 
-        <div>
+        <nav>
           <ul class="navigation__list">
             <li class="navigation__item">
               <a class="navigation__link" href="#">Home</a>
@@ -45,35 +45,45 @@
               <a class="navigation__link" href="#">Contact Us</a>
             </li>
           </ul>
-        </div>
+        </nav>
 
-        <button>Donate Now</button>
+        <button class="btn-donate">Donate Now</button>
 
     </div>
 
     <div class="content">
+
         <div class="main">
+
           <div class="alert">
             You've helped us give <span class="text-highlight">72</span> bikes
             to refugees and asylum seekers so far. <strong>Thank you!</strong>
           </div>
 
-          <div class="hero">
+          <section class="hero">
             <h1>Bikes for Refugees</h1>
             <p>
               Providing donated bikes and accessories to refugees and asylum
               seekers in Scotland.
             </p>
-            <button>Donate a bike today</button>
-            <button>Volunteer</button>
-          </div>
-
-          <div>
-            <h2 class="heading-underline">Learn more</h2>
-
             <div>
-              <div class="article">
-                <h3 class="article__title">Why do refugees need bikes?</h3>
+              <button class="btn-bike">Donate a bike today</button>
+              <button class="btn-volunteer">Volunteer</button>
+            </div>
+          </section>
+
+          <section class="box-wrap">
+            <div class="box-1">Check availability</div>
+            <div class="box-2">Donate bikes</div>
+            <div class="box-3">Volunteer with us</div>
+          </section>
+
+          <h2 class="heading-underline">Learn more</h2>
+
+          <section class="main-article-container">
+
+            <div class="article-text">
+              <h3 class="article__title">Why do refugees need bikes?</h3>
                 <p class="article__summary">
                   Many refugees are placed in housing in areas where there are
                   few jobs. Bikes provide low-cost transportation so that they
@@ -85,88 +95,73 @@
                     Learn more
                   </a>
                 </p>
-              </div>
-
-              <div class="article">
-                <h3 class="article__title">How can I help?</h3>
-                <p class="article__summary">
-                  We need lots of bikes and bike accessories! If you have an
-                  old bike you don't use, bring it to one of our dropoff
-                  events. Or come attend one of our fundraisers.
-                </p>
-                <p class="article__read-more">
-                  <a href="#">
-                    <span class="arrow-right"></span>
-                    Learn more
-                  </a>
-                </p>
-              </div>
             </div>
-          </div>
+
+            <div class="article-text">
+              <h3 class="article__title">How can I help?</h3>
+              <p class="article__summary">
+                We need lots of bikes and bike accessories! If you have an
+                old bike you don't use, bring it to one of our dropoff
+                events. Or come attend one of our fundraisers.
+              </p>
+              <p class="article__read-more">
+                <a href="#">
+                  <span class="arrow-right"></span>
+                  Learn more
+                </a>
+              </p>
+            </div>
+
+          </section>
+
+
         </div>
 
-        <div class="sidebar">
+        <aside>
+
           <h2 class="heading-underline">Upcoming events</h2>
 
-          <div class="article">
-            <img
-              class="article__thumbnail"
-              src="spring-fundraisers_thumbnail.jpg"
-              alt=""
-            />
-            <div class="article__content">
-              <h3 class="article__title">
+          <article class="aside-article">
+            <img class="aside-article-image" src="/images/spring-fundraisers_thumbnail.jpg" alt="">
+            <div>
+              <h3>
                 <a class="article__title-link" href="#">Join us for our Spring fundraisers</a>
               </h3>
-              <p class="article__summary">
-                Riders needed now to help raise awareness and funds for BfR and
-                Médecins Sans Frontières.
-              </p>
+              <p>Riders needed now to help raise awareness and funds for BfR and
+                Médecins Sans Frontières.</p>
             </div>
-          </div>
+          </article>
 
-          <div class="article">
-            <img
-              class="article__thumbnail"
-              src="bikes-for-refugees_logo.jpg"
-              alt=""
-            />
-            <div class="article__content">
-              <h3 class="article__title">
+          <article class="aside-article">
+            <img class="aside-article-image" src="./images/bikes-for-refugees_logo.jpg" alt="">
+            <div>
+              <h3>
                 <a class="article__title-link" href="#">Bike dropoff event in Edinburgh on May 11</a>
-              </h3>
+                </h3>
             </div>
-          </div>
+          </article>
 
-          <div class="article">
-            <img
-              class="article__thumbnail"
-              src="edinburgh-damascus_thumbnail.png"
-              alt=""
-            />
-            <div class="article__content">
-              <h3 class="article__title">
+          <article class="aside-article">
+            <img class="aside-article-image" src="./images/edinburgh-damascus_thumbnail.png" alt="">
+            <div>
+              <h3>
                 <a class="article__title-link" href="#">Help us cycle 4,797km</a>
               </h3>
-              <p class="article__summary">
-                We need you to help us cycle 4797km, the distance of Edinburgh
-                to Damascus.
-              </p>
+              <p> We need you to help us cycle 4797km, the distance of Edinburgh
+                to Damascus.</p>
             </div>
-          </div>
-
-          <a
-            href="https://www.facebook.com/BikesforRefugeesScotland/events/?ref=page_internal"
-            target="_blank"
-            class="facebook-link"
-          >
-            <span class="fa fa-facebook-square"></span>
-            All Facebook events
+          </article>
+          
+          <a href="https://www.facebook.com/BikesforRefugeesScotland/events/?ref=page_internal" target="_blank" class="facebook-link">
+            <span class="fa fa-facebook-square"></span>All Facebook events
           </a>
-        </div>
+
+        </aside>
+
+
     </div>
 
-    <div class="footer">
+    <footer class="footer">
       <div class="footer__content">
         <p>
           <strong>Bikes for Refugees Scotland is a volunteer-led project to help
@@ -174,6 +169,6 @@
         </p>
         <p>Website by Code Your Future</p>
       </div>
-    </div>
+    </footer>
   </body>
 </html>
