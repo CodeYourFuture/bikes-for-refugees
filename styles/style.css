@@ -72,6 +72,7 @@ p {
 
 .navigation__item {
   padding: 0.5rem 0;
+  margin: 10px;
 }
 
 .navigation__link {
@@ -122,24 +123,36 @@ p {
 /* hero */
 
 .hero {
-  background-image: url("header-bike.jpg");
-  background-color: var(--grey-light);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.header-bike {
+  position: relative;
 }
 
 .hero h1 {
-  margin-bottom: 1rem;
+  position: absolute;
+  top: 28%;
   font-size: 2.5rem;
+  color: white;
+  margin-left: 40px;
 }
 
 .hero p {
+  position: absolute;
   font-size: 1.2rem;
-  margin-bottom: 2rem;
+  color: white;
+  top: 35%;
+  margin-left: 40px;
 }
 
 /* Headings */
 
 .heading-underline {
   position: relative;
+  margin-top: 30px;
   margin-bottom: 2rem;
   padding-bottom: 0.5rem;
   border-bottom: 2px solid var(--orange-light);
@@ -182,7 +195,6 @@ p {
 }
 
 .article__title-link {
-  text-align: justify;
   text-decoration: none;
   color: var(--orange-dark);
 }
@@ -200,6 +212,22 @@ p {
 
 .article__read-more {
   margin-top: 0;
+}
+
+.article-main {
+  display: flex;
+  flex-direction: row;
+}
+
+.why-refugees-need-bikes,
+.how-can-i-help {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 10px;
+  margin: 10px;
+  border: 1px solid gainsboro;
+  border-radius: 3px;
 }
 
 .article__read-more a {
@@ -259,4 +287,35 @@ p {
   .main {
     padding-right: 2rem;
   }
+}
+
+/* Buttons */
+
+.button-container {
+  display: flex;
+  position: absolute;
+  top: 40%;
+  margin-left: 40px;
+  row-gap: 20px;
+}
+
+.button-orange {
+  background-color: hsl(35, 97%, 44%);
+  color: white;
+  padding: 5px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  border: none;
+  border-radius: 5px;
+  margin-right: 10px;
+}
+
+.button-volunteer {
+  background-color: rgb(255, 255, 255);
+  color: rgb(255, 140, 0);
+  padding: 5px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  border: none;
+  border-radius: 5px;
 }
