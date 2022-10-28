@@ -30,6 +30,9 @@ button {
   padding: 10px 20px;
   margin: 20px 20px;
 }
+.navigation__link:hover {
+  color: #c05426;
+}
 
 h1,
 h2,
