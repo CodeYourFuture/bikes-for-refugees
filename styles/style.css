@@ -183,8 +183,8 @@ p {
   justify-content: space-between;
 }
 
-.flexible .article:first-child {
-  margin-right: 16px;
+.flexible .article {
+  width: 46%;
 }
 
 .article {
