@@ -151,12 +151,13 @@ button.volunteer:hover {
 /* hero */
 
 .hero {
-  background-image: url("/images/header-bike.jpg");
+  background-image: url("../images/header-bike.jpg");
   background-color: var(--grey-light);
   background-size: cover;
   background-repeat: no-repeat;
   padding: 6.5rem 3rem;
   margin-bottom: 30px;
+  color: white;
 }
 
 .hero h1 {
