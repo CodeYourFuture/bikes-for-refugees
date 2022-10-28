@@ -66,7 +66,7 @@ header {
 }
 
 .navigation__item {
-  padding: 0.5rem 0;
+  padding: 0.5rem 1rem;
 }
 
 .navigation__link {
@@ -135,6 +135,8 @@ header {
 
 /* hero */
 
+
+
 .hero {
   background-image: url("/images/header-bike.jpg");
   background-color: var(--grey-light);
@@ -192,7 +194,7 @@ article {
   border-radius: 5px;
   margin: 5px;
   padding: 10px;
-
+  
 }
 
 .article__title {
@@ -239,6 +241,8 @@ article {
 
 .facebook-link {
   color: var(--orange-dark);
+  display: flex;
+  justify-content: flex-end;
 }
 
 /* Sidebar */
@@ -247,6 +251,12 @@ aside {
   display: flex;
   flex-direction: column;
   min-width: 350px;
+}
+aside article {
+  display: flex;
+}
+aside article img {
+  margin: 10px;
 }
 
 /* Footer */
@@ -274,7 +284,7 @@ footer {
     flex-direction: row;
   }
 
-  .main {
+  main {
     padding-right: 2rem;
   }
 }
