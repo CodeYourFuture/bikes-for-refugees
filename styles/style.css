@@ -23,6 +23,19 @@ button {
   color: var(--grey-dark);
   font-size: 1rem;
 }
+.hi { 
+  color: #c05326;
+
+}
+.hello:hover {
+  background-color: #c05326;
+  color: #e4e4e4;
+
+}
+.hello:hover {
+  background-color: #c05326;
+  color: #e4e4e4;
+}
 
 h1,h2,h3,h4,h5,h6 {
   margin-top: 0;
@@ -74,6 +87,17 @@ p {
   font-weight: 600;
   text-transform: uppercase;
   text-decoration: none;
+}
+.navigation__link:hover {
+  color: var(--orange-dark)
+}
+.orange__button:hover {
+  background-color: var(--white);
+  color: var(--orange-dark);
+}
+.white__button:hover {
+  background-color: var(--orange-dark);
+  color: var(--white);
 }
 
 
