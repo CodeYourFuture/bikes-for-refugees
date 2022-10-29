@@ -24,12 +24,14 @@ button {
   font-size: 1rem;
 }
 .hi { 
-  color: #c05326;
+  
+  background-color: #c05326;
+  color: bisque;
 
 }
 .hello:hover {
   background-color: #c05326;
-  color: #e4e4e4;
+  color: bisque;
 
 }
 .hello:hover {
@@ -79,7 +81,7 @@ p {
 }
 
 .navigation__item {
-  padding: 0.5rem 0;
+  padding: 0.5rem 1;
 }
 
 .navigation__link {
