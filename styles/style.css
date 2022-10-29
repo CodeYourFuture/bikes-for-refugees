@@ -14,7 +14,7 @@
  }
 
 body {
-  margin: 0;
+  margin: 0.5rem;
 }
 
 body,
@@ -26,7 +26,7 @@ button {
 
 h1,h2,h3,h4,h5,h6 {
   margin-top: 0;
-  margin-bottom: 0;
+  margin-bottom: 0;   
 }
 
 p {
@@ -40,6 +40,7 @@ p {
   padding: 0 1.5rem;
   max-width: 1200px;
   margin: 0 auto;
+  
 }
 
 /* Header */
@@ -56,6 +57,7 @@ p {
 .header__logo {
   max-height: 90px;
   width: auto;
+  text-align: right;
 }
 
 /* Navigation */
@@ -67,6 +69,9 @@ p {
 
 .navigation__item {
   padding: 0.5rem 0;
+  padding-right: 0.5rem;
+  padding-left: 0.5rem;
+  
 }
 
 .navigation__link {
@@ -74,6 +79,10 @@ p {
   font-weight: 600;
   text-transform: uppercase;
   text-decoration: none;
+  padding: 0rem;
+  
+
+
 }
 
 
@@ -94,9 +103,30 @@ p {
 
 
 /* Buttons */
+button{
+  padding: 0.5rem;
+  border: 0.5rem;
+  border-radius: 0.25rem;
+  cursor: pointer;
+background-color: #c05326;
+text-align: justify;
+}
 
-  /* INSERT BUTTON STYLES HERE */
 
+button:hover,
+button:focus{
+  background-color: #934423;
+  color: #fff;
+
+}
+.button-style-one{
+  background-color: #c05326;
+  color: #fff;
+}
+.button-style-two{
+  background-color: #fff;
+  color: #c05326;
+}
 
 /* Content */
 
@@ -209,6 +239,7 @@ p {
 
 .facebook-link {
   color: var(--orange-dark);
+  text-align: right;
 }
 
 /* Sidebar */
