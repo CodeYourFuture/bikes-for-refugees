@@ -111,51 +111,47 @@ p {
 .button1 {
   background-color: #c05326;
   font-size: 1rem;
-  color: white;
+  color: #fff;
   border-radius: 4px;
   padding: 5px;
   height: 30px;
   width: 120px;
   border-style: none;
-  margin-right: 4px;
-  
-    
+  margin-right: 4px;    
 }
 
 .button2 {
   background-color: #c05326;
   font-size: 1rem;
-  color: white;
+  color: #fff;
   border-radius: 4px;
   padding: 5px;
   height: 30px;
   width: 170px;
   border-style: none;
   margin-right: 4px;
-
 }
 
 .button3 {
   color: #c05326;
-  background-color: white;
+  background-color: #fff;
   border-radius: 4px;
   padding: 5px;
   height: 30px;
   width: 100px;
   border-style: none;
-
 }
 
 button:hover,
 button:focus {
-  background-color: white;
+  background-color: #fff;
   color: #c05326;
 }
 
 .button3:hover,
 button:focus {
   background-color: #c05326;
-  color: white;
+  color: #fff;
 }
 
 
@@ -250,7 +246,7 @@ button:focus {
   border: 2px solid #e4e4e4;
   border-radius: 4px;
   width: 326px;
-}
+} 
 
 .article__title {
   margin-bottom: 0.5rem;
@@ -292,26 +288,24 @@ button:focus {
 
 .bottom-articles {
   display: flex;
-  flex-direction: row;
-  
+  flex-direction: row; 
 }
 
 .bottom-articles-a {
   display: flex;
   flex-direction: column;
-
+  justify-content: center;
+  margin: 0 1em 1rem 0;
+  padding: 20px 30px 20px 20px;
+  border: 2px solid #e4e4e4;
+  border-radius: 4px;
+  width: 326px;
 }
-
-
-
 
 .fa {
-  
   margin-right: 0.5rem;
-  color: var(--orange-dark);
-  
+  color: var(--orange-dark); 
 }
-
 
 .facebook-link {
   color: var(--orange-dark);
