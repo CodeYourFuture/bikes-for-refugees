@@ -63,6 +63,7 @@ p {
 .navigation__list {
   display: flex;
   list-style: none;
+  gap: 20px;
 }
 
 .navigation__item {
@@ -75,6 +76,12 @@ p {
   text-transform: uppercase;
   text-decoration: none;
 }
+
+.navigation__link:hover {
+  color: #c05326;
+}
+
+
 
 
 /* Text styles */
@@ -95,7 +102,9 @@ p {
 
 /* Buttons */
 
-  /* INSERT BUTTON STYLES HERE */
+button:hover{
+  background-color: blueviolet;
+}
 
 
 /* Content */
@@ -120,8 +129,13 @@ p {
 /* hero */
 
 .hero {
-  background-image: url("header-bike.jpg");
+  background-image: url("/bikes-for-refugees/images/header-bike.jpg");
   background-color: var(--grey-light);
+  height: 240px;
+  color:white;
+  margin: auto;
+  padding-top: 80px;
+  padding-left: 20px;
 }
 
 .hero h1 {
@@ -140,6 +154,7 @@ p {
 .heading-underline {
   position: relative;
   margin-bottom: 2rem;
+  margin-top: 2rem;
   padding-bottom: 0.5rem;
   border-bottom: 2px solid var(--orange-light);
   font-size: 1rem;
@@ -157,14 +172,28 @@ p {
   max-width: 100px;
   background: var(--orange-dark);
 }
-
-
 /* Article */
 
 .article {
   margin-bottom: 1rem;
+  display: flex;
+  border: 1px solid grey;
+  padding: 10px;
+  gap: 15px;
+}
+.flex-article{
+  display: flex;
+  gap: 15px;
+  
 }
 
+.article-undreline {
+  margin-bottom: 1rem;
+  border: 1px solid grey;
+  padding: 10px;
+  gap: 15px;
+  flex: 1; 
+}
 .article__title {
   margin-bottom: 0.5rem;
   font-size: 1rem;
@@ -205,6 +234,7 @@ p {
 .fa {
   margin-right: 0.5rem;
   color: var(--orange-dark);
+  padding-left: 190px;
 }
 
 .facebook-link {
@@ -237,6 +267,14 @@ p {
   font-size: 0.85rem;
 }
 
+.donate {
+  background-color: #c05326;
+  color: white;
+}
+
+.volunteer {
+  color: #c05326;
+}
 /* Media queries */
 
 @media screen and (min-width: 992px) {
