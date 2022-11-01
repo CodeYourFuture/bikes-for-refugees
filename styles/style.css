@@ -5,13 +5,13 @@
  * 
  */
 
- :root {
-   --grey-dark: #292b2c;
-   --grey-light: #e4e4e4;
-   --orange-dark: #c05326;
-   --orange-light: #f7eae4;
-   --white: #fff;
- }
+:root {
+  --grey-dark: #292b2c;
+  --grey-light: #e4e4e4;
+  --orange-dark: #c05326;
+  --orange-light: #f7eae4;
+  --white: #fff;
+}
 
 body {
   margin: 0;
@@ -23,8 +23,32 @@ button {
   color: var(--grey-dark);
   font-size: 1rem;
 }
+.orange {
+  background: #c05326;
+  border: none;
+  border-radius: 8%;
+  color: #fff;
+}
+.orange:hover {
+  background: #fff;
+}
 
-h1,h2,h3,h4,h5,h6 {
+.white {
+  color: #c05326;
+  background: #fff;
+  border: none;
+  border-radius: 8%;
+}
+.white:hover {
+  background: #c05326;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   margin-top: 0;
   margin-bottom: 0;
 }
@@ -74,8 +98,11 @@ p {
   font-weight: 600;
   text-transform: uppercase;
   text-decoration: none;
+  margin: 8px;
 }
-
+.navigation__link:hover {
+  background: orange;
+}
 
 /* Text styles */
 
@@ -92,11 +119,9 @@ p {
   border-left-color: var(--orange-dark);
 }
 
-
 /* Buttons */
 
-  /* INSERT BUTTON STYLES HERE */
-
+/* INSERT BUTTON STYLES HERE */
 
 /* Content */
 
@@ -120,8 +145,13 @@ p {
 /* hero */
 
 .hero {
-  background-image: url("header-bike.jpg");
+  background-image: url("/images/header-bike.jpg");
   background-color: var(--grey-light);
+  height: 220px;
+  color: #fff;
+  padding-top: 100px;
+  padding-left: 30px;
+  margin-bottom: 35px;
 }
 
 .hero h1 {
@@ -133,7 +163,6 @@ p {
   font-size: 1.2rem;
   margin-bottom: 2rem;
 }
-
 
 /* Headings */
 
@@ -158,11 +187,32 @@ p {
   background: var(--orange-dark);
 }
 
-
 /* Article */
 
-.article {
+.learn-more {
   margin-bottom: 1rem;
+  display: flex;
+  flex-direction: row;
+}
+
+.article-l {
+  border: 2px solid gray;
+  margin-right: 10px;
+  padding: 15px;
+  border-radius: 2%;
+}
+.article-r {
+  padding: 15px;
+  border: 2px solid gray;
+  border-radius: 2%;
+}
+
+.article-1 {
+  margin-bottom: 1rem;
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  border: 1px solid grey;
 }
 
 .article__title {
@@ -184,6 +234,7 @@ p {
 .article__thumbnail {
   object-fit: contain;
   width: 5rem;
+  margin: 8px;
 }
 
 .article__read-more {
@@ -248,3 +299,7 @@ p {
     padding-right: 2rem;
   }
 }
+Footer
+© 2022 GitHub, Inc.
+Footer navigation
+
