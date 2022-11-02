@@ -2,13 +2,21 @@
 
 Exercise for HTML & CSS - lesson 1
 
-## Completed
+## [Live Demo](https://bikes-for-refugeess.netlify.app/)
+
+
+## V2_Flexbox-added
+
+![Bike For Refugees: final design](flexbox-completed.png)
+
+## V1_all tasks
 
 ![Bike For Refugees: final design](completed.png)
 
-## Flexbox-Completed
 
-![Bike For Refugees: final design](flexbox-completed.png)
+
+
+
 
 ### Exercise 1) Use semantic markup
 
