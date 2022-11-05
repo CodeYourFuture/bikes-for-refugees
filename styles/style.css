@@ -205,8 +205,6 @@ p {
 .article-section {
   display: flex;
   flex-direction: row;
-  /* flex: 1 1 0;
-  width: 0; */
 }
 
 .margin-right {
@@ -315,5 +313,31 @@ p {
     flex-direction: column;
     text-align: center;
     padding: 0;
+  }
+
+  .article-section {
+    flex-direction: column;
+  }
+
+  .sidebar {
+    min-width: 100px;
+  }
+
+  .facebook-link {
+    text-align: center;
+  }
+
+  .hero .hero-text {
+    padding: 0 15px;
+  }
+
+  .hero-text button {
+    padding: 5px;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .hero-text h1 {
+    font-size: 28px;
   }
 }
