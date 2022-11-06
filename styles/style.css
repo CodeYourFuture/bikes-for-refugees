@@ -23,6 +23,33 @@ button {
   color: var(--grey-dark);
   font-size: 1rem;
 }
+.hi { 
+  
+  background-color: #c05326;
+  color: bisque;
+
+}
+.hello:hover {
+  background-color: #c05326;
+  color: bisque;
+
+}
+.hello1 {
+  background-color: var(--orange-dark);
+  color: var(--white);
+  border: none;
+  border-radius: 3px;
+  padding: 6px 10px;
+
+}
+.hi {
+  background-color: var(--orange-dark);
+  color: var(--white);
+  border: none;
+  border-radius: 3px;
+  padding: 6px 10px;
+
+}
 
 h1,h2,h3,h4,h5,h6 {
   margin-top: 0;
@@ -62,11 +89,12 @@ p {
 
 .navigation__list {
   display: flex;
+  justify-content: space-between;
   list-style: none;
 }
 
 .navigation__item {
-  padding: 0.5rem 0;
+  padding: 0.5rem 1rem;
 }
 
 .navigation__link {
@@ -74,6 +102,17 @@ p {
   font-weight: 600;
   text-transform: uppercase;
   text-decoration: none;
+}
+.navigation__link:hover {
+  color: var(--orange-dark)
+}
+.orange__button:hover {
+  background-color: var(--white);
+  color: var(--orange-dark);
+}
+.white__button:hover {
+  background-color: var(--orange-dark);
+  color: var(--white);
 }
 
 
@@ -103,6 +142,8 @@ p {
 .content {
   display: flex;
   flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
 }
 
 /* Alert */
@@ -120,8 +161,13 @@ p {
 /* hero */
 
 .hero {
-  background-image: url("header-bike.jpg");
+  background-image: url("C:\Users\User\Documents\GitHub\bikes-for-refugees\images\header-bike.jpg");
   background-color: var(--grey-light);
+  color: var(--white);
+  padding: 85px 30px;
+  margin-bottom: 40px;
+  width: 600px;
+  height: 300px;
 }
 
 .hero h1 {
@@ -163,6 +209,9 @@ p {
 
 .article {
   margin-bottom: 1rem;
+  border: 2px solid var(--grey-light);
+  border-radius: 3px;
+  padding: 14px 10px;
 }
 
 .article__title {
@@ -184,6 +233,7 @@ p {
 .article__thumbnail {
   object-fit: contain;
   width: 5rem;
+  margin-right: 12px;
 }
 
 .article__read-more {
@@ -209,10 +259,13 @@ p {
 
 .facebook-link {
   color: var(--orange-dark);
+  text-align: right;
 }
 
 /* Sidebar */
-
+.sidebar .article {
+  display: flex;
+}
 .sidebar {
   display: flex;
   flex-direction: column;
@@ -239,9 +292,19 @@ p {
 
 /* Media queries */
 
-@media screen and (min-width: 992px) {
+@media screen and (min-width: 320px) {
   .content {
     flex-direction: row;
+  }
+
+  .main {
+    padding-right: 2rem;
+  }
+}
+
+@media screen and (min-width: 600px) {
+  .content {
+    flex-direction: column;
   }
 
   .main {
