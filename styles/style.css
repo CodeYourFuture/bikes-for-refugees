@@ -89,11 +89,12 @@ p {
 
 .navigation__list {
   display: flex;
+  justify-content: space-between;
   list-style: none;
 }
 
 .navigation__item {
-  padding: 0.5rem 1;
+  padding: 0.5rem 1rem;
 }
 
 .navigation__link {
@@ -141,6 +142,8 @@ p {
 .content {
   display: flex;
   flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
 }
 
 /* Alert */
@@ -158,11 +161,13 @@ p {
 /* hero */
 
 .hero {
-  background-image: url("header-bike.jpg");
+  background-image: url("C:\Users\User\Documents\GitHub\bikes-for-refugees\images\header-bike.jpg");
   background-color: var(--grey-light);
   color: var(--white);
   padding: 85px 30px;
   margin-bottom: 40px;
+  width: 600px;
+  height: 300px;
 }
 
 .hero h1 {
@@ -287,9 +292,19 @@ p {
 
 /* Media queries */
 
-@media screen and (min-width: 992px) {
+@media screen and (min-width: 320px) {
   .content {
     flex-direction: row;
+  }
+
+  .main {
+    padding-right: 2rem;
+  }
+}
+
+@media screen and (min-width: 600px) {
+  .content {
+    flex-direction: column;
   }
 
   .main {
