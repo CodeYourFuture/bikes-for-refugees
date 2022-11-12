@@ -24,6 +24,10 @@ button {
   font-size: 1rem;
 }
 
+.button{
+  background-color: #c05326;
+}
+
 h1,h2,h3,h4,h5,h6 {
   margin-top: 0;
   margin-bottom: 0;
@@ -63,6 +67,7 @@ p {
 .navigation__list {
   display: flex;
   list-style: none;
+
 }
 
 .navigation__item {
@@ -74,6 +79,9 @@ p {
   font-weight: 600;
   text-transform: uppercase;
   text-decoration: none;
+margin-right: 0.5rem;
+margin-left: 0.5rem;
+margin-bottom: 0.5rem;
 }
 
 
@@ -93,9 +101,12 @@ p {
 }
 
 
-/* Buttons */
+button{
+ background-color:rgba(128, 0, 113, 0.847);
+}
 
-  /* INSERT BUTTON STYLES HERE */
+
+
 
 
 /* Content */

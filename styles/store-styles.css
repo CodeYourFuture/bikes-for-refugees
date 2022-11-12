@@ -1,0 +1,130 @@
+html,body{
+background-color:space grey;
+display: grid;
+place-items: center;
+height: 100%;
+}
+p, h1, h2, h3, h4{
+  margin: 0;
+  padding: 0;
+}
+.orderForm{
+    display: flex;
+    flex-direction: column;
+    width: 500px;
+   
+   
+    }
+
+/* karma form*/
+
+.name-wrapper{
+  display:flex;
+  gap: 30px;
+  
+
+}
+.full-w-input{
+  width: 100%;
+}
+.country input{
+  flex-grow: 1;
+}
+.postcode{
+width: 30px
+}
+.formwrapper{
+  padding: 40px
+}
+.selectinput{
+padding: 2px
+}
+.radio-wrapper{
+  display:inline-flex
+  align-item:center;
+}
+.
+.input-space{ 
+  margin-top: 10px;
+  margin-bottom: 15px;
+  background color: light blue;
+}
+.desking{
+  width: 100%;
+  height: 1rem;
+}
+
+.input:type{
+  background: red;
+  border: 10px solid  green;
+  
+}
+
+.input:type-radio{
+
+}
+
+.input:type-checkbox:before{
+  color: orange;
+  font: inherit;
+  width: 0.65em;
+  height: 00.65em;
+}
+/* adding new appearence*/
+
+
+display: grid;
+
+
+.image-src{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.search-button{
+  display: none;
+}
+@media  screen and(max-width:640px) {
+  .hero-image{
+    display: none;
+  }
+  .form-label{
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+  }
+}
+.form-input{
+  flex-grow: 1;
+  border-radius: 0;
+  border-radius: 0px;
+  border: 1px black solid;
+}
+
+@media screen and(max-width: 550px) {
+  navigation{
+    display: block;
+  }
+
+  .search-button{
+    display: inline;
+  }
+
+  .hero-content{
+    width: 44%;
+  }
+}
+  
+}
+
+.header,
+.content,
+.footer {
+  padding: 0 1.5rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+
+
