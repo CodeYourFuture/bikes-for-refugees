@@ -106,7 +106,6 @@ p {
 .button-section {
   display: flex;
   flex-direction: row;
-  border: 2px solid red;
 }
 
 .button1 {
@@ -117,7 +116,7 @@ p {
   padding: 5px;
   height: 30px;
   width: 120px;
-  border-style: none;
+  border: 2px solid red;
   margin-right: 4px;    
 }
 
