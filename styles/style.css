@@ -282,3 +282,29 @@ button:hover,
 button:focus {
   background-color: #934423;
 }
+
+
+
+
+.card {
+  background-color: rgb(219, 171, 171);
+  border: solid;
+ /* width: 500px;
+  height: 500px;*/
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  transition: 0.3s;
+  width: 20%;
+  border-radius: 5%;
+  padding: 5em 0;
+  text-align: center;
+  margin: auto;
+ }
+ img {
+  width: 100px;
+  
+  }
+
+  h1 {
+    font-size: smaller;
+    font-weight: bold;
+  }
