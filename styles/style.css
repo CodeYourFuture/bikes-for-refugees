@@ -67,6 +67,8 @@ p {
 
 .navigation__item {
   padding: 0.5rem 0;
+  padding: 20px;
+  margin: 25px;
 }
 
 .navigation__link {
@@ -76,7 +78,15 @@ p {
   text-decoration: none;
 }
 
+.btn{
+  background-color: #c05326;
+  color: white;
+}
 
+.btn1{
+  background-color: #fff;
+  color: #c05326
+}
 /* Text styles */
 
 .text-highlight {
@@ -248,3 +258,13 @@ p {
     padding-right: 2rem;
   }
 }
+
+
+button:hover,
+button:focus {
+  background: #934423;
+  color: yellow;
+}
+
+
+
