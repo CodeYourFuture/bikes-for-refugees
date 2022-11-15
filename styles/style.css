@@ -34,9 +34,9 @@ p {
   margin-bottom: 0;
 }
 
-.header,
+header,
 .content,
-.footer {
+footer {
   padding: 0 1.5rem;
   max-width: 1200px;
   margin: 0 auto;
@@ -44,7 +44,7 @@ p {
 
 /* Header */
 
-.header {
+header {
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -74,6 +74,7 @@ p {
   font-weight: 600;
   text-transform: uppercase;
   text-decoration: none;
+  padding: 0 1rem;
 }
 
 
@@ -95,8 +96,36 @@ p {
 
 /* Buttons */
 
-  /* INSERT BUTTON STYLES HERE */
+button {
+  /* for accessibility; 2 factor height 1 factor width */
+  padding: 0.5rem 1rem;
+  border: 0;
+  border-radius: 0.25rem;
+  cursor: pointer;
+}
 
+button:hover,
+button:focus {
+  background-color: #934423;
+  color: #fff;
+}
+
+/* for accessibility re: contrast, the hover/focus should change the font color white */
+.button-style-two:hover,
+.button-style-two:focus {
+  color: #fff;
+}
+
+.button-style-one {
+  background-color: #c05326;
+  /* for accessibility re: contrast, the font color should not remain black */
+  color: #fff;
+}
+
+.button-style-two {
+  background-color: #fff;
+  color: #c05326;
+}
 
 /* Content */
 
@@ -120,8 +149,11 @@ p {
 /* hero */
 
 .hero {
-  background-image: url("header-bike.jpg");
-  background-color: var(--grey-light);
+  padding: 6rem 3rem;
+  background-image: url("../images/header-bike.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: white;
 }
 
 .hero h1 {
@@ -161,8 +193,15 @@ p {
 
 /* Article */
 
-.article {
+.main-article-container {
+  display: flex;
+  gap: 1rem;
+}
+
+.main-article {
   margin-bottom: 1rem;
+  padding: 1rem;
+  border: 1px solid #e4e4e4;
 }
 
 .article__title {
@@ -209,26 +248,64 @@ p {
 
 .facebook-link {
   color: var(--orange-dark);
+  text-align: right;
+}
+
+/* Flex Exercise Three Boxes */
+.flex-example {
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
+  padding: 0;
+}
+
+.flex-example > li {
+  /* neccessary because the <a> are children of the <li> */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 9rem;
+  height: 9rem;
+  border: 0.1rem solid #000;
+  background-color: #eee;
+}
+
+.flex-example > li > a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.flex-example > li:first-child {
+  background-color: #ddd;
+}
+
+.flex-example > li:last-child {
+  border: 1px solid #ddd;
 }
 
 /* Sidebar */
 
-.sidebar {
+aside {
   display: flex;
   flex-direction: column;
   min-width: 350px;
 }
 
-/* Footer */
-
-.footer {
-  margin-top: 2rem;
+.aside-article {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 1rem;
+  padding: 1rem;
+  border: 1px solid #e4e4e4;
 }
 
-.footer__content {
-  border-top: 2px solid var(--orange-light);
+/* Footer */
+
+footer {
+  margin-top: 2rem;
   padding-top: 2rem;
   padding-bottom: 2rem;
+  border-top: 2px solid var(--orange-light);
 }
 
 .footer p {
@@ -244,7 +321,7 @@ p {
     flex-direction: row;
   }
 
-  .main {
+  main {
     padding-right: 2rem;
   }
 }
