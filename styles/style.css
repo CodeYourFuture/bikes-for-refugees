@@ -5,7 +5,6 @@
  * 
  */
 
-
  :root {
    --grey-dark: #292b2c;
    --grey-light: #e4e4e4;
@@ -21,6 +20,7 @@ body {
 body,
 button {
   font-family: "Source Sans Pro", "Helvetica Neue", Arial, sans-serif;
+  color: var(--grey-dark);
   font-size: 1rem;
 }
 
@@ -46,29 +46,26 @@ p {
 
 .header {
   display: flex;
-  align-items: center;
   justify-content: space-between;
-  height: 5rem;
   margin-bottom: 1rem;
-  padding-top: 1rem;
+  padding-top: 1rem; 
+  flex-direction: column;
 }
 
 .header__logo {
   max-height: 90px;
-  width: auto;
+  width: auto; 
 }
 
 /* Navigation */
 
 .navigation__list {
   display: flex;
-  justify-content: center;
   list-style: none;
 }
 
 .navigation__item {
-  padding: 0.5rem 1.5rem;
-  font-size: 1.039rem; 
+  padding: 0.5rem;
 }
 
 .navigation__link {
@@ -100,30 +97,41 @@ p {
 
 /* Buttons */
 
+  /* INSERT BUTTON STYLES HERE */
+
 button {
-    background-color: var(--orange-dark);
-    padding: 8px 10px;
-    color: var(--white);
-    border-style: none;
-    border-radius: 5px;
-    font-weight: 600;
-    cursor: pointer;
+  border: none;
+  padding: 7px 13px;
+  border-radius: 4px;
+  font-weight: 600;
+  margin-bottom: 1rem;
 }
 
-button ~ button {
-  background-color: var(--white);
-  color: var(--orange-dark);
-}
-
-button:hover {
-  background-color: var(--white);
-  color: var(--orange-dark);
-}
-
-button ~ button:hover {
+.btn-orange {
   background-color: var(--orange-dark);
   color: var(--white);
 }
+
+.btn-orange:hover {
+  background-color: var(--white);
+  color: var(--orange-dark);
+  border: 1px solid var(--grey-light);
+}
+
+.btn-white {
+  background-color: var(--white);
+  color: var(--orange-dark);
+}
+
+.btn-white:hover {
+  background-color: var(--orange-dark);
+  color: var(--white)
+}
+
+.btn-donate {
+  width: 120px;
+}
+
 /* Content */
 
 .content {
@@ -148,25 +156,23 @@ button ~ button:hover {
 .hero {
   background-image: url("../images/header-bike.jpg");
   background-color: var(--grey-light);
-  padding: 70px 60px 88px 40px;
-  margin-bottom: 60px;  
+  padding: 4.4rem 0 4.7rem 3.1rem;
+  margin-bottom: 2.5rem;
+  color: var(--white);
 }
 
 .hero h1 {
   margin-bottom: 1rem;
   font-size: 2.5rem;
-  color: var(--white);
-  margin-left: 0;
-  font-weight: 900;
-  
+  text-shadow: 0px 0px 5px #000000;
 }
 
 .hero p {
   font-size: 1.2rem;
   margin-bottom: 2rem;
-  color: var(--white);
-  font-weight: 600;
+  text-shadow: 0px 0px 5px #000000;
 }
+
 
 /* Headings */
 
@@ -177,7 +183,7 @@ button ~ button:hover {
   border-bottom: 2px solid var(--orange-light);
   font-size: 1rem;
   font-weight: 600;
-  text-transform: uppercase;  
+  text-transform: uppercase;
 }
 
 .heading-underline:before {
@@ -191,18 +197,23 @@ button ~ button:hover {
   background: var(--orange-dark);
 }
 
+
 /* Article */
 
-section {
+.flex {
   display: flex;
+  gap: 20px;
 }
 
 .article {
-  display: flex;
-  margin-bottom: 1rem;
-  border: 2px solid var(--grey-light);
+  margin-bottom: 1.2rem;
+  border: 1px solid var(--grey-light);
   border-radius: 4px;
-  padding: 16px;  
+  padding: 0.9rem;
+}
+
+.bottom-article {
+  width: 50%;
 }
 
 .article__title {
@@ -219,14 +230,11 @@ section {
 .article__summary {
   margin-top: 0;
   margin-bottom: 1rem;
-  /* margin-right: 30px;
-  padding-bottom: 10px;   */
 }
 
 .article__thumbnail {
   object-fit: contain;
   width: 5rem;
-  margin-right: 14px;
 }
 
 .article__read-more {
@@ -245,22 +253,14 @@ section {
   text-decoration: underline;
 }
 
-  .bottom-box {
-    width: 45%;
-}
-
 .fa {
-  padding-left: 190px;
-  margin-right: 0.5rem;
-  color: var(--orange-dark);  
+  margin-right: 0.1rem;
+  color: var(--orange-dark);
 }
 
 .facebook-link {
   color: var(--orange-dark);
-}
-
-section .article:first-child {
-  margin-right: 20px;
+  text-align: right;
 }
 
 /* Sidebar */
@@ -292,14 +292,22 @@ section .article:first-child {
 /* Media queries */
 
 @media screen and (min-width: 992px) {
+
+  .header {
+    flex-direction: row;
+      align-items: center;
+  justify-content: space-between;
+  height: 5rem;
+  margin-bottom: 1rem;
+  padding-top: 1rem;
+  }
+
   .content {
     flex-direction: row;
   }
-section .article {
-  display: flex;
-  flex-direction: column;
-}
+
   .main {
     padding-right: 2rem;
+  
   }
 }
