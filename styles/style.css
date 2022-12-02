@@ -46,16 +46,15 @@ p {
 
 .header {
   display: flex;
-  align-items: center;
   justify-content: space-between;
-  height: 5rem;
   margin-bottom: 1rem;
-  padding-top: 1rem;
+  padding-top: 1rem; 
+  flex-direction: column;
 }
 
 .header__logo {
   max-height: 90px;
-  width: auto;
+  width: auto; 
 }
 
 /* Navigation */
@@ -66,7 +65,7 @@ p {
 }
 
 .navigation__item {
-  padding: 0.5rem 0;
+  padding: 0.5rem;
 }
 
 .navigation__link {
@@ -76,6 +75,9 @@ p {
   text-decoration: none;
 }
 
+.navigation__link:hover {
+  color: var(--orange-dark);
+}
 
 /* Text styles */
 
@@ -97,6 +99,38 @@ p {
 
   /* INSERT BUTTON STYLES HERE */
 
+button {
+  border: none;
+  padding: 7px 13px;
+  border-radius: 4px;
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+
+.btn-orange {
+  background-color: var(--orange-dark);
+  color: var(--white);
+}
+
+.btn-orange:hover {
+  background-color: var(--white);
+  color: var(--orange-dark);
+  border: 1px solid var(--grey-light);
+}
+
+.btn-white {
+  background-color: var(--white);
+  color: var(--orange-dark);
+}
+
+.btn-white:hover {
+  background-color: var(--orange-dark);
+  color: var(--white)
+}
+
+.btn-donate {
+  width: 120px;
+}
 
 /* Content */
 
@@ -120,18 +154,23 @@ p {
 /* hero */
 
 .hero {
-  background-image: url("header-bike.jpg");
+  background-image: url("../images/header-bike.jpg");
   background-color: var(--grey-light);
+  padding: 4.4rem 0 4.7rem 3.1rem;
+  margin-bottom: 2.5rem;
+  color: var(--white);
 }
 
 .hero h1 {
   margin-bottom: 1rem;
   font-size: 2.5rem;
+  text-shadow: 0px 0px 5px #000000;
 }
 
 .hero p {
   font-size: 1.2rem;
   margin-bottom: 2rem;
+  text-shadow: 0px 0px 5px #000000;
 }
 
 
@@ -161,8 +200,20 @@ p {
 
 /* Article */
 
+.flex {
+  display: flex;
+  gap: 20px;
+}
+
 .article {
-  margin-bottom: 1rem;
+  margin-bottom: 1.2rem;
+  border: 1px solid var(--grey-light);
+  border-radius: 4px;
+  padding: 0.9rem;
+}
+
+.bottom-article {
+  width: 50%;
 }
 
 .article__title {
@@ -203,12 +254,13 @@ p {
 }
 
 .fa {
-  margin-right: 0.5rem;
+  margin-right: 0.1rem;
   color: var(--orange-dark);
 }
 
 .facebook-link {
   color: var(--orange-dark);
+  text-align: right;
 }
 
 /* Sidebar */
@@ -240,11 +292,22 @@ p {
 /* Media queries */
 
 @media screen and (min-width: 992px) {
+
+  .header {
+    flex-direction: row;
+      align-items: center;
+  justify-content: space-between;
+  height: 5rem;
+  margin-bottom: 1rem;
+  padding-top: 1rem;
+  }
+
   .content {
     flex-direction: row;
   }
 
   .main {
     padding-right: 2rem;
+  
   }
 }
