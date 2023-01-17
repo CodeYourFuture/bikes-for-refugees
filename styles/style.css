@@ -74,6 +74,7 @@ p {
   font-weight: 600;
   text-transform: uppercase;
   text-decoration: none;
+  padding: 0 1rem;
 }
 
 
@@ -96,6 +97,14 @@ p {
 /* Buttons */
 
   /* INSERT BUTTON STYLES HERE */
+button:hover,button:focus {
+    color: #934423;
+  }
+button {
+  padding: 0.5rem;
+  border: 0;
+  border-radius: 30%;
+}
 
 
 /* Content */
