@@ -24,6 +24,10 @@ button {
   font-size: 1rem;
 }
 
+button:hover {
+  color: #934423;
+}
+
 h1,h2,h3,h4,h5,h6 {
   margin-top: 0;
   margin-bottom: 0;
@@ -238,13 +242,13 @@ p {
 }
 
 .orange_red {
-  color: #c05326;
+  background-color: #c05326;
 
 }
 
 .volunteer_button {
-  color: #fff;
-  text-decoration-color: #c05326;
+  background-color: #fff;
+  color: #c05326;
 }
 
 /* Media queries */
