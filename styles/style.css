@@ -105,8 +105,13 @@ button {
   border: 0;
   border-radius: 30%;
 }
-
-
+.donate {
+  background-color: #c05326;
+}
+.volunteer {
+  background-color: #fff;
+  color: #c05326;
+}
 /* Content */
 
 .content {
