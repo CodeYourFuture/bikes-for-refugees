@@ -22,6 +22,9 @@ button {
   font-family: "Source Sans Pro", "Helvetica Neue", Arial, sans-serif;
   color: var(--grey-dark);
   font-size: 1rem;
+  padding: 0.6rem ;
+  border-style: none;
+  border-radius: 0.5rem;
 }
 
 button:hover {
@@ -67,10 +70,13 @@ p {
 .navigation__list {
   display: flex;
   list-style: none;
+  
+
 }
 
 .navigation__item {
-  padding: 0.5rem 0;
+  padding-right: 10px;
+  padding-left: 10px;
 }
 
 .navigation__link {
@@ -243,6 +249,7 @@ p {
 
 .orange_red {
   background-color: #c05326;
+  color: #fff;
 
 }
 
