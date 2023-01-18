@@ -112,6 +112,21 @@ button {
   background-color: #fff;
   color: #c05326;
 }
+/* flexbox */
+.flex 
+{
+  display: flex;
+  justify-content: space-between;
+}
+.box {
+  margin: 1rem;
+  border: 2px solid black;
+  padding: 2.5rem 1rem;
+  width: 6rem;
+  font-weight: 600;
+  text-align: center;
+  background-color: #e4e4e4;
+}
 /* Content */
 
 .content {
