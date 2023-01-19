@@ -84,6 +84,8 @@ p {
   font-weight: 600;
 }
 
+
+
 .arrow-right {
   display: inline-block;
   height: 0;
@@ -120,8 +122,11 @@ p {
 /* hero */
 
 .hero {
-  background-image: url("header-bike.jpg");
-  background-color: var(--grey-light);
+  background-image: url("/home/user/Documents/GitHub/bikes-for-refugees/images/header-bike.jpg");
+  background-color: var(#cccccc);
+  display: flexbox;
+  width: 45rem;
+  height: 15rem;
 }
 
 .hero h1 {
