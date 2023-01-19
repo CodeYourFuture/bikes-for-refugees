@@ -5,13 +5,13 @@
  * 
  */
 
- :root {
-   --grey-dark: #292b2c;
-   --grey-light: #e4e4e4;
-   --orange-dark: #c05326;
-   --orange-light: #f7eae4;
-   --white: #fff;
- }
+:root {
+  --grey-dark: #292b2c;
+  --grey-light: #e4e4e4;
+  --orange-dark: #c05326;
+  --orange-light: #f7eae4;
+  --white: #fff;
+}
 
 body {
   margin: 0;
@@ -22,9 +22,50 @@ button {
   font-family: "Source Sans Pro", "Helvetica Neue", Arial, sans-serif;
   color: var(--grey-dark);
   font-size: 1rem;
+  border: 2px solid black;
+  padding: 5px 0 5px;
+  border-radius: 3px;
+}
+/* exercise start */
+.donate {
+  background-color: #c05326;
+}
+.volunteer {
+  background-color: #fff;
+  color: #c05326;
+}
+button:hover {
+  background-color: #934423;
+}
+button:focus {
+  background-color: #934423;
 }
 
-h1,h2,h3,h4,h5,h6 {
+.felxBoxModel {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+.container{
+  border: 2px solid black;
+  margin: 15px 0 15px;
+  padding: 2rem 0.5rem 2rem 0.5rem;
+}
+.container:first-child{
+  background-color: #ddd;
+}
+.container:last-child{
+  border: 1px solid black;
+}
+/* end */
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   margin-top: 0;
   margin-bottom: 0;
 }
@@ -66,7 +107,7 @@ p {
 }
 
 .navigation__item {
-  padding: 0.5rem 0;
+  padding: 0.5rem 0.5rem 0.5rem 0.5rem;
 }
 
 .navigation__link {
@@ -75,7 +116,6 @@ p {
   text-transform: uppercase;
   text-decoration: none;
 }
-
 
 /* Text styles */
 
@@ -92,11 +132,9 @@ p {
   border-left-color: var(--orange-dark);
 }
 
-
 /* Buttons */
 
-  /* INSERT BUTTON STYLES HERE */
-
+/* INSERT BUTTON STYLES HERE */
 
 /* Content */
 
@@ -134,7 +172,6 @@ p {
   margin-bottom: 2rem;
 }
 
-
 /* Headings */
 
 .heading-underline {
@@ -157,7 +194,6 @@ p {
   max-width: 100px;
   background: var(--orange-dark);
 }
-
 
 /* Article */
 
