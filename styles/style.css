@@ -97,7 +97,16 @@ p {
 
 /* Buttons */
 
-  /* INSERT BUTTON STYLES HERE */
+.btn {
+  background-color: #ec5d20;
+  color: #fff;
+}
+.bttn{
+  background-color: #fff;
+  color: #ec5d20;
+  display: flexbox;
+
+}
 
 
 /* Content */
@@ -138,7 +147,10 @@ p {
   font-size: 1.2rem;
   margin-bottom: 2rem;
 }
-
+.hero h1, p{
+  color:#fff;
+  padding: 15px;
+}
 
 /* Headings */
 
