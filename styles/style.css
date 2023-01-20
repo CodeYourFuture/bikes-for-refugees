@@ -74,6 +74,7 @@ p {
   font-weight: 600;
   text-transform: uppercase;
   text-decoration: none;
+  padding: 1rem;/*Give a padding in here 1rem*/
 }
 
 
@@ -96,7 +97,13 @@ p {
 /* Buttons */
 
   /* INSERT BUTTON STYLES HERE */
-
+.header button{
+  color:white;
+  background-color: #c05326;
+  border: none;
+  border-radius: 0.3rem;
+  padding: 0.3rem;
+}
 
 /* Content */
 
@@ -120,18 +127,44 @@ p {
 /* hero */
 
 .hero {
-  background-image: url("header-bike.jpg");
+  background-image: url("/home/mele/CodeYourFuture/Directory/bikes-for-refugees/images/header-bike.jpg");
   background-color: var(--grey-light);
+  height: 50%;
 }
 
 .hero h1 {
-  margin-bottom: 1rem;
+  
+  
+  padding-top: 5rem;
+  margin-left: 1.8rem;
   font-size: 2.5rem;
+  color:white ;
 }
 
 .hero p {
+  padding: 1rem;
   font-size: 1.2rem;
-  margin-bottom: 2rem;
+  margin-left: 1rem;
+  margin-bottom: 1rem;
+  color: white;
+}
+.hero button_donate{
+  padding: .3rem;
+  color: white;
+  background-color: #c05326;
+  border: none;
+  border-radius: 0.3rem;
+  margin-left: 1.8rem;
+  
+}
+.hero button_volunteer{
+  padding: 0.3rem;
+  color: #c05326;
+  background-color: white;
+  border: none;
+  border-radius: 0.3rem;
+  margin-left: 0.1rem;
+
 }
 
 
@@ -139,6 +172,7 @@ p {
 
 .heading-underline {
   position: relative;
+  margin-top: 2rem;
   margin-bottom: 2rem;
   padding-bottom: 0.5rem;
   border-bottom: 2px solid var(--orange-light);
@@ -160,9 +194,37 @@ p {
 
 
 /* Article */
+.box{
+  display: flex;
+  flex-direction:row;
+  justify-content: space-between;
 
-.article {
+
+  
+  min-width: 350px;
+  margin-bottom: 10rem;
+  
+}
+.article{
+
   margin-bottom: 1rem;
+  border: 1px solid #f7eae4;
+  padding: 1rem;
+  margin: 1rem;
+}
+
+.article_sidebar{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  
+  margin-bottom: 1rem;
+  border: 1px solid #f7eae4;
+  padding: 1rem;
+  margin: 1rem;
+}
+.article__content{
+  margin-left: 2rem;
 }
 
 .article__title {
@@ -205,10 +267,12 @@ p {
 .fa {
   margin-right: 0.5rem;
   color: var(--orange-dark);
+  
 }
 
 .facebook-link {
   color: var(--orange-dark);
+  text-align: right;
 }
 
 /* Sidebar */
@@ -217,6 +281,8 @@ p {
   display: flex;
   flex-direction: column;
   min-width: 350px;
+  margin-top: -2.5rem;
+  
 }
 
 /* Footer */
