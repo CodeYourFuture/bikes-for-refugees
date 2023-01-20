@@ -95,7 +95,13 @@ p {
 
 /* Buttons */
 
-  /* INSERT BUTTON STYLES HERE */
+  button:hover {
+    background-color: #934423;
+  }
+
+  button:focus {
+    background-color: #934423;    
+  }
 
 
 /* Content */
