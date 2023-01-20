@@ -20,9 +20,9 @@ body {
 body,
 button {
   font-family: "Source Sans Pro", "Helvetica Neue", Arial, sans-serif;
-  color: var(--grey-dark);
   font-size: 1rem;
 }
+
 
 h1,h2,h3,h4,h5,h6 {
   margin-top: 0;
@@ -95,7 +95,14 @@ p {
 
 /* Buttons */
 
-  /* INSERT BUTTON STYLES HERE */
+.donate-now, .donate {
+  background-color: #c05326;
+}
+
+.vol-button {
+ background-color: #fff;
+ color: #c05326;
+}
 
 
 /* Content */
