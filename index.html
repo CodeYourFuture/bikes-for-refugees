@@ -20,7 +20,7 @@
   </head>
 
   <body>
-    <div class="header">
+    <header class="header">
 
         <a href="#">
           <img
@@ -30,7 +30,7 @@
           />
         </a>
 
-        <div>
+        <nav>
           <ul class="navigation__list">
             <li class="navigation__item">
               <a class="navigation__link" href="#">Home</a>
@@ -45,14 +45,14 @@
               <a class="navigation__link" href="#">Contact Us</a>
             </li>
           </ul>
-        </div>
+        </nav>
 
         <button>Donate Now</button>
 
-    </div>
+    </header>
 
     <div class="content">
-        <div class="main">
+        <main class="main">
           <div class="alert">
             You've helped us give <span class="text-highlight">72</span> bikes
             to refugees and asylum seekers so far. <strong>Thank you!</strong>
@@ -64,15 +64,29 @@
               Providing donated bikes and accessories to refugees and asylum
               seekers in Scotland.
             </p>
+            
             <button>Donate a bike today</button>
-            <button>Volunteer</button>
+            <button class="button1" >Volunteer</button>
           </div>
 
+          <div class="container">
+            <!-- CONTAINER START -->
+            <div class="box">
+            <div class="text">Check availability</div>
+            </div>
+            <div class="box">
+            <div class="text">Donate bikes</div>
+            </div>
+            <div class="box">
+            <div class="text">Volunteer with us</div>
+            </div>
+          </div>
+          <!-- CONTAINER END -->
           <div>
             <h2 class="heading-underline">Learn more</h2>
 
-            <div>
-              <div class="article">
+            <div class="article-flex">
+              <div class="article  article-width">
                 <h3 class="article__title">Why do refugees need bikes?</h3>
                 <p class="article__summary">
                   Many refugees are placed in housing in areas where there are
@@ -87,7 +101,7 @@
                 </p>
               </div>
 
-              <div class="article">
+              <div class="article article-width">
                 <h3 class="article__title">How can I help?</h3>
                 <p class="article__summary">
                   We need lots of bikes and bike accessories! If you have an
@@ -103,15 +117,14 @@
               </div>
             </div>
           </div>
-        </div>
+        </main>
 
         <div class="sidebar">
           <h2 class="heading-underline">Upcoming events</h2>
 
           <div class="article">
-            <img
-              class="article__thumbnail"
-              src="spring-fundraisers_thumbnail.jpg"
+            <img class="article__thumbnail"
+              src="images/spring-fundraisers_thumbnail.jpg"
               alt=""
             />
             <div class="article__content">
@@ -128,8 +141,8 @@
           <div class="article">
             <img
               class="article__thumbnail"
-              src="bikes-for-refugees_logo.jpg"
-              alt=""
+              src="images/bikes-for-refugees_logo.jpg"
+              alt="bike for refuges logo"
             />
             <div class="article__content">
               <h3 class="article__title">
@@ -141,8 +154,8 @@
           <div class="article">
             <img
               class="article__thumbnail"
-              src="edinburgh-damascus_thumbnail.png"
-              alt=""
+              src="images/edinburgh-damascus_thumbnail.png"
+              alt="ediburg damascus roadsign"
             />
             <div class="article__content">
               <h3 class="article__title">
