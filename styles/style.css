@@ -95,6 +95,12 @@ p {
 
 /* Buttons */
 
+  button {
+    padding: 0.5rem;
+    border-style: none;
+    border-radius: 1rem;
+  }
+
   button:hover {
     background-color: #934423;
   }
