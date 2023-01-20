@@ -97,6 +97,16 @@ p {
 
   /* INSERT BUTTON STYLES HERE */
 
+  button {
+    background-color: #c05326;
+    color: #fff;
+  }
+
+  #volunteer {
+    background-color: #fff;
+    color: #c05326;
+  }
+
 
 /* Content */
 
