@@ -109,16 +109,26 @@ button {
 .btn--primary {
   background-color: var(--orange-dark);
   color: var(--white);
-  
+}
+.btn--primary:hover {
+  background-color: var(--orange-light);
+  color: var(--orange-dark);
 }
 
 .btn--secondary {
   background-color: var(--orange-light);
   color: var(--orange-dark);
-
 }
 
-.a
+.btn--secondary:hover {
+  background-color: var(--orange-dark);
+  color: var(--orange-light);
+}
+
+a:link:hover {
+  color: var(--orange-dark);
+}
+
 
 /* Content */
 
