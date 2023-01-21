@@ -249,6 +249,10 @@ article {
   border: 1px solid var(--grey-light);
 }
 
+.padding__container {
+  padding: 1rem;
+}
+
 /* Sidebar */
 
 aside {
