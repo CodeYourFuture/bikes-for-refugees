@@ -98,7 +98,7 @@ header {
   button {
     padding: 0.5rem;
     border-style: none;
-    border-radius: 1rem;
+    border-radius: 0.25rem;
   }
 
   button:hover {
