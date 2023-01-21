@@ -144,6 +144,7 @@ header {
 .hero {
   background-image: url("../../images/header-bike.jpg");
   background-color: var(--grey-light);
+  margin-bottom: 2rem;
 }
 
 .hero h1 {
@@ -239,6 +240,15 @@ article {
   color: var(--orange-dark);
 }
 
+.articles__bottom {
+  display: flex;
+  gap: 1.5rem;
+}
+
+.articles__bottom article {
+  border: 1px solid var(--grey-light);
+}
+
 /* Sidebar */
 
 aside {
@@ -254,7 +264,10 @@ aside {
   padding: 1.5rem;
 }
 
-.article
+.facebook__container {
+  display: flex;
+  justify-content: flex-end;
+}
 
 /* Footer */
 
