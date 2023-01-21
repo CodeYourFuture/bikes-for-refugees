@@ -5,13 +5,13 @@
  * 
  */
 
- :root {
-   --grey-dark: #292b2c;
-   --grey-light: #e4e4e4;
-   --orange-dark: #c05326;
-   --orange-light: #f7eae4;
-   --white: #fff;
- }
+:root {
+  --grey-dark: #292b2c;
+  --grey-light: #e4e4e4;
+  --orange-dark: #c05326;
+  --orange-light: #f7eae4;
+  --white: #fff;
+}
 
 body {
   margin: 0;
@@ -24,7 +24,12 @@ button {
   font-size: 1rem;
 }
 
-h1,h2,h3,h4,h5,h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   margin-top: 0;
   margin-bottom: 0;
 }
@@ -67,6 +72,7 @@ p {
 
 .navigation__item {
   padding: 0.5rem 0;
+  margin: 0.5rem;
 }
 
 .navigation__link {
@@ -75,7 +81,6 @@ p {
   text-transform: uppercase;
   text-decoration: none;
 }
-
 
 /* Text styles */
 
@@ -92,10 +97,37 @@ p {
   border-left-color: var(--orange-dark);
 }
 
-
 /* Buttons */
 
-  /* INSERT BUTTON STYLES HERE */
+/* INSERT BUTTON STYLES HERE */
+button {
+  padding: 0.5rem  1rem;
+  border-radius: 5px;
+  border: none;
+
+}
+.btn--primary {
+  background-color: var(--orange-dark);
+  color: var(--white);
+}
+.btn--primary:hover {
+  background-color: var(--orange-light);
+  color: var(--orange-dark);
+}
+
+.btn--secondary {
+  background-color: var(--orange-light);
+  color: var(--orange-dark);
+}
+
+.btn--secondary:hover {
+  background-color: var(--orange-dark);
+  color: var(--orange-light);
+}
+
+a:link:hover {
+  color: var(--orange-dark);
+}
 
 
 /* Content */
@@ -120,20 +152,22 @@ p {
 /* hero */
 
 .hero {
-  background-image: url("header-bike.jpg");
+  background-image: url("/images/header-bike.jpg");
   background-color: var(--grey-light);
+  color: #fff;
+  margin-bottom: 3rem;
+  padding: 5rem 2rem;
 }
 
 .hero h1 {
-  margin-bottom: 1rem;
   font-size: 2.5rem;
+  margin-bottom: 1rem;
 }
 
 .hero p {
   font-size: 1.2rem;
   margin-bottom: 2rem;
 }
-
 
 /* Headings */
 
@@ -161,12 +195,29 @@ p {
 
 /* Article */
 
+.two-articles {
+  display: flex;
+  gap: 1rem;
+  justify-content: space-between;
+}
+
+.two-articles .article {
+  display: flex;
+  flex-direction: column;
+  max-width: 45rem;
+}
+
+
 .article {
-  margin-bottom: 1rem;
+  display: flex;
+  gap: 1rem;
+  padding: 1rem;
+  border: 1px solid var(--grey-light);
+
 }
 
 .article__title {
-  margin-bottom: 0.5rem;
+  margin-bottom: 1rem;
   font-size: 1rem;
   font-weight: 700;
 }
@@ -178,7 +229,7 @@ p {
 
 .article__summary {
   margin-top: 0;
-  margin-bottom: 1rem;
+  /*  */
 }
 
 .article__thumbnail {
@@ -188,6 +239,7 @@ p {
 
 .article__read-more {
   margin-top: 0;
+  margin-bottom: 1rem;
 }
 
 .article__read-more a {
@@ -213,11 +265,18 @@ p {
 
 /* Sidebar */
 
-.sidebar {
+.sidebar  {
   display: flex;
   flex-direction: column;
   min-width: 350px;
+  gap: 1rem;
+  padding: 0 2rem;
 }
+
+
+.facebook-link {
+align-self: flex-end;
+} 
 
 /* Footer */
 
