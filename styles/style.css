@@ -74,6 +74,7 @@ p {
   font-weight: 600;
   text-transform: uppercase;
   text-decoration: none;
+  padding: 0.5rem 0;
 }
 
 
@@ -94,8 +95,22 @@ p {
 
 
 /* Buttons */
+.btn {
+  background-color: var(--orange-dark);
+  padding: 0.25rem 0.5rem;
+  border: none;
+  border-radius: 5px;
+}
+.btn-v {
+  color: var(--orange-dark);
+  background-color: var(--white);
+}
+.btn:hover, .btn:focus {
+  background-color: #934423  ;
+}
 
-  /* INSERT BUTTON STYLES HERE */
+
+
 
 
 /* Content */
@@ -248,3 +263,4 @@ p {
     padding-right: 2rem;
   }
 }
+
