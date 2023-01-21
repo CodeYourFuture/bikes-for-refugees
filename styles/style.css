@@ -12,7 +12,7 @@
    --orange-light: #f7eae4;
    --white: #fff;
  }
- head {
+ title {
   color: var(--white);
  }
 
