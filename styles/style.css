@@ -239,6 +239,15 @@ aside {
   min-width: 350px;
 }
 
+.article__row {
+  display: flex;
+  gap: 1rem;
+  border: 1px solid grey;
+  padding: 1.5rem;
+}
+
+.article
+
 /* Footer */
 
 footer {
