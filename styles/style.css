@@ -41,6 +41,13 @@ p {
   max-width: 1200px;
   margin: 0 auto;
 }
+#DonateNow{background-color:var(--orange-dark); border:none;
+}
+
+#Donateabike{background-color:var(--orange-dark);border:none;
+}
+
+#Volunteer{color:var(--orange-dark);border:none;}
 
 /* Header */
 
@@ -66,7 +73,7 @@ p {
 }
 
 .navigation__item {
-  padding: 0.5rem 0;
+  padding: 0.5rem ;
 }
 
 .navigation__link {
@@ -102,7 +109,7 @@ p {
 
 .content {
   display: flex;
-  flex-direction: column;
+  
 }
 
 /* Alert */
@@ -120,8 +127,10 @@ p {
 /* hero */
 
 .hero {
-  background-image: url("header-bike.jpg");
+  background-image: url("/images/header-bike.jpg");
   background-color: var(--grey-light);
+  padding:6rem 3rem;color:white;
+  margin-bottom: 3rem;
 }
 
 .hero h1 {
@@ -162,8 +171,7 @@ p {
 /* Article */
 
 .article {
-  margin-bottom: 1rem;
-}
+  margin-bottom: 1rem;}
 
 .article__title {
   margin-bottom: 0.5rem;
@@ -183,7 +191,8 @@ p {
 
 .article__thumbnail {
   object-fit: contain;
-  width: 5rem;
+  width: 5rem;float: left;margin-right: 1rem;display:flex;
+  align-items: center;
 }
 
 .article__read-more {
@@ -202,13 +211,29 @@ p {
   text-decoration: underline;
 }
 
+#fundraisers{
+border:5px solid pink;padding: 2rem 1rem;display: flex;
+}
+
+#bikes{border:5px solid pink;padding: 1rem;
+}
+
+#edinburgh{border:5px solid pink;padding: 1rem;display: flex;
+}
+
+#refugees{width:400px;border: 5px solid pink;padding: 1rem;
+}
+
+#help{width:400px;border: 5px solid pink;padding: 1rem;
+  }
+
 .fa {
   margin-right: 0.5rem;
   color: var(--orange-dark);
 }
 
 .facebook-link {
-  color: var(--orange-dark);
+  color: var(--orange-dark);text-align: right;
 }
 
 /* Sidebar */
