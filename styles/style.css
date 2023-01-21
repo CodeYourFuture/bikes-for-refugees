@@ -22,6 +22,7 @@ button {
   font-family: "Source Sans Pro", "Helvetica Neue", Arial, sans-serif;
   color: var(--grey-dark);
   font-size: 1rem;
+  margin: 0.25rem;
 }
 
 h1,h2,h3,h4,h5,h6 {
@@ -49,9 +50,11 @@ p {
   align-items: center;
   justify-content: space-between;
   height: 5rem;
-  margin-bottom: 1rem;
+  margin-bottom: 2rem;
   padding-top: 1rem;
 }
+
+
 
 .header__logo {
   max-height: 90px;
@@ -66,7 +69,7 @@ p {
 }
 
 .navigation__item {
-  padding: 0.5rem 0;
+  padding: 0.5rem 1rem;
 }
 
 .navigation__link {
@@ -97,6 +100,28 @@ p {
 
   /* INSERT BUTTON STYLES HERE */
 
+button {
+  background-color: #c05326;
+  color: #fff;
+  padding: 0.7rem 1rem;
+  border: none;
+  border-radius: 0.70rem;
+}
+
+#volunteer-btn {
+  background-color: #fff;
+  color: #c05326;
+}
+
+button:hover, button:focus {
+  background-color: #934423;
+}
+
+#volunteer-btn:hover, #volunteer-btn:focus {
+  background-color: #934423;
+}
+
+
 
 /* Content */
 
@@ -122,11 +147,40 @@ p {
 .hero {
   background-image: url("header-bike.jpg");
   background-color: var(--grey-light);
+  padding: 3rem;
 }
 
 .hero h1 {
   margin-bottom: 1rem;
   font-size: 2.5rem;
+}
+
+
+
+
+.boxes {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.box {
+  border: 2px solid #292b2c;
+  padding: 2.5rem 1.75rem;
+  margin: 3rem;
+  text-align: center;
+  font-size: 1.25rem;
+  font-weight: 600;
+}
+
+div:first-child span{
+  margin-left: 0;
+  background-color: #ddd;
+}
+
+div span:last-child {
+  margin-right: 0;
+  border: 1px solid #ddd;
 }
 
 .hero p {
