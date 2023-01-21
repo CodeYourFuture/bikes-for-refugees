@@ -5,26 +5,47 @@
  * 
  */
 
- :root {
-   --grey-dark: #292b2c;
-   --grey-light: #e4e4e4;
-   --orange-dark: #c05326;
-   --orange-light: #f7eae4;
-   --white: #fff;
- }
+:root {
+  --grey-dark: #292b2c;
+  --grey-light: #e4e4e4;
+  --orange-dark: #c05326;
+  --orange-light: #f7eae4;
+  --white: #fff;
+}
 
 body {
   margin: 0;
 }
 
-body,
-button {
+body {
   font-family: "Source Sans Pro", "Helvetica Neue", Arial, sans-serif;
-  color: var(--grey-dark);
+
   font-size: 1rem;
 }
 
-h1,h2,h3,h4,h5,h6 {
+.donate,
+.donatetoday {
+  color: #c05326;
+}
+
+
+
+button:hover,
+:focus {
+  background-color: #934423;
+}
+
+.volunteer {
+  background-color: #fff;
+  color: #c05326;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   margin-top: 0;
   margin-bottom: 0;
 }
@@ -66,7 +87,8 @@ p {
 }
 
 .navigation__item {
-  padding: 0.5rem 0;
+
+  padding: 0.5rem 1rem;
 }
 
 .navigation__link {
@@ -95,8 +117,12 @@ p {
 
 /* Buttons */
 
-  /* INSERT BUTTON STYLES HERE */
-
+/* INSERT BUTTON STYLES HERE */
+button {
+  padding: 0.4rem 0.8rem;
+  border-style: none;
+  border-radius: 4px;
+}
 
 /* Content */
 
