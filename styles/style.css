@@ -109,6 +109,14 @@ header {
     background-color: #934423;    
   }
 
+  .orange__button {
+    background-color: #c05326;
+  }
+
+  .white__button {
+    background-color: white;
+    color: #c05326;
+  }
 
 /* Content */
 
