@@ -198,11 +198,13 @@ a:link:hover {
 .two-articles {
   display: flex;
   gap: 1rem;
+  justify-content: space-between;
 }
 
 .two-articles .article {
   display: flex;
   flex-direction: column;
+  max-width: 45rem;
 }
 
 
