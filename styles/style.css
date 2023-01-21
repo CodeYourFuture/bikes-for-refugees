@@ -76,6 +76,10 @@ header {
   text-decoration: none;
 }
 
+.navigation__link:hover {
+  color: var(--orange-dark);
+}
+
 
 /* Text styles */
 
@@ -102,8 +106,18 @@ header {
     font-weight: 600;
   }
 
-  button:hover {
+  .white__button:hover {
     background-color: var(--orange-dark);
+    color: var(--white);
+  }
+
+  .orange__button:hover {
+    background-color: var(--white);
+    color: var(--orange-dark);
+  }
+
+  header .orange__button:hover {
+    border: 1px solid var(--orange-dark);
   }
 
   button:focus {
