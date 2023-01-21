@@ -34,9 +34,9 @@ p {
   margin-bottom: 0;
 }
 
-.header,
+header,
 .content,
-.footer {
+footer {
   padding: 0 1.5rem;
   max-width: 1200px;
   margin: 0 auto;
@@ -44,7 +44,7 @@ p {
 
 /* Header */
 
-.header {
+header {
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -173,7 +173,7 @@ p {
 
 /* Article */
 
-.article {
+article {
   margin-bottom: 1rem;
 }
 
@@ -225,7 +225,7 @@ p {
 
 /* Sidebar */
 
-.sidebar {
+aside {
   display: flex;
   flex-direction: column;
   min-width: 350px;
@@ -233,7 +233,7 @@ p {
 
 /* Footer */
 
-.footer {
+footer {
   margin-top: 2rem;
 }
 
@@ -243,7 +243,7 @@ p {
   padding-bottom: 2rem;
 }
 
-.footer p {
+footer p {
   padding-bottom: 1rem;
   text-align: center;
   font-size: 0.85rem;
@@ -256,7 +256,7 @@ p {
     flex-direction: row;
   }
 
-  .main {
+  main {
     padding-right: 2rem;
   }
 }
