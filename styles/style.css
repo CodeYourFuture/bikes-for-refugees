@@ -12,6 +12,9 @@
    --orange-light: #f7eae4;
    --white: #fff;
  }
+ head {
+  color: var(--white);
+ }
 
 body {
   margin: 0;
