@@ -81,6 +81,10 @@ p {
   text-decoration: none;
 }
 
+.navigation__link:hover {
+  color: var(--orange-dark);
+}
+
 /* Text styles */
 
 .text-highlight {
@@ -101,10 +105,15 @@ p {
 /* INSERT BUTTON STYLES HERE */
 .donate-btn {
   background-color: var(--orange-dark);
-  color: var(--grey-light);
+  color: var(--white);
   padding: 0.5rem;
   border-radius: 5px;
   border: none;
+}
+
+.donate-btn:hover {
+  background-color: var(--white);
+  color: var(--orange-dark);
 }
 
 .volunteer-btn {
@@ -113,6 +122,11 @@ p {
   padding: 0.5rem;
   border-radius: 5px;
   border: none;
+}
+
+.volunteer-btn:hover {
+  background-color: var(--orange-dark);
+  color: var(--white);
 }
 
 /* Content */
@@ -138,7 +152,7 @@ p {
 
 .hero {
   background-image: url("/images/header-bike.jpg");
-  padding: 3.5rem 4rem;
+  padding: 5rem 2rem;
   /*background-color: var(--grey-light);*/
   margin-bottom: 3rem;
 }
@@ -190,12 +204,11 @@ p {
 .article-horiz {
   margin-bottom: 1rem;
   display: flex;
-  padding: 2rem;
+  column-gap: 20px;
 }
 
 .section {
   border: 1px solid var(--grey-light);
-  margin: 1rem;
   padding: 1rem;
 }
 
@@ -244,6 +257,7 @@ p {
 
 .facebook-link {
   color: var(--orange-dark);
+  text-align: right;
 }
 
 /* Sidebar */
