@@ -182,6 +182,21 @@ p {
 
 .article {
   margin-bottom: 1rem;
+  display: flex;
+  border: 1px solid var(--grey-light);
+  padding: 1rem;
+}
+
+.article-horiz {
+  margin-bottom: 1rem;
+  display: flex;
+  padding: 2rem;
+}
+
+.section {
+  border: 1px solid var(--grey-light);
+  margin: 1rem;
+  padding: 1rem;
 }
 
 .article__title {
@@ -203,6 +218,7 @@ p {
 .article__thumbnail {
   object-fit: contain;
   width: 5rem;
+  padding-right: 1rem;
 }
 
 .article__read-more {
