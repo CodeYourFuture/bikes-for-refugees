@@ -66,7 +66,11 @@ p {
 }
 
 .navigation__item {
-  padding: 0.5rem 0;
+  padding: 0.5rem 1rem;
+}
+
+.navigation__item:hover{
+  color:#c05326
 }
 
 .navigation__link {
@@ -76,6 +80,9 @@ p {
   text-decoration: none;
 }
 
+.navigation__link:hover{
+  color:#c05326
+}
 
 /* Text styles */
 
@@ -95,8 +102,20 @@ p {
 
 /* Buttons */
 
-  /* INSERT BUTTON STYLES HERE */
+ button{
+  background-color: #c05326;
+  color: #fff;
+  border-radius: 5px;
+  border: none;
+  padding: 0.6rem;
+  margin-left: 0.2rem;
+  font-weight: 600;
+ }
 
+ button:hover{
+  background-color: #fff;
+  color: #c05326;
+ }
 
 /* Content */
 
@@ -120,8 +139,10 @@ p {
 /* hero */
 
 .hero {
-  background-image: url("header-bike.jpg");
+  background-image: url("/home/coder/Desktop/CYF/Git/bikes-for-refugees/images/header-bike.jpg");
   background-color: var(--grey-light);
+  padding: 4.75rem 2rem;
+  color:#fff;
 }
 
 .hero h1 {
@@ -145,6 +166,7 @@ p {
   font-size: 1rem;
   font-weight: 600;
   text-transform: uppercase;
+  margin-top: 3rem;
 }
 
 .heading-underline:before {
@@ -162,7 +184,11 @@ p {
 /* Article */
 
 .article {
-  margin-bottom: 1rem;
+  border:solid #dadad9 2px;
+  border-radius: 4px;
+  padding: 1rem;
+  margin: 0.75rem 0;
+
 }
 
 .article__title {
@@ -202,6 +228,16 @@ p {
   text-decoration: underline;
 }
 
+.learnmore_articles {
+  display:flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+ .learnmore_articles .article{
+  width:45%;
+ }
+
+
 .fa {
   margin-right: 0.5rem;
   color: var(--orange-dark);
@@ -217,6 +253,15 @@ p {
   display: flex;
   flex-direction: column;
   min-width: 350px;
+}
+
+.sidebar .article {
+    display: flex;
+  flex-direction: row;
+}
+
+.sidebar .article__content {
+  margin-left: 0.7rem;
 }
 
 /* Footer */
