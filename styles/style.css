@@ -66,7 +66,7 @@ p {
 }
 
 .navigation__item {
-  padding: 0.5rem 0;
+  padding: 0.5rem 1rem;
 }
 
 .navigation__link {
@@ -75,6 +75,12 @@ p {
   text-transform: uppercase;
   text-decoration: none;
 }
+
+
+a:hover {
+  color: #c05326;
+}
+
 
 
 /* Text styles */
@@ -92,13 +98,22 @@ p {
   border-left-color: var(--orange-dark);
 }
 
+/*Button*/
+button {
+  background-color: #c05326;
+  color: #fff;
+  font-style: bold;
+  border: none;
+  border-radius: 5px;
+  padding: 0.7rem;
+  font-weight: bold;
+  margin-left: 0.2rem;
+}
 
-/* Buttons */
-
-  /* INSERT BUTTON STYLES HERE */
-
-
-/* Content */
+button:hover{
+  background-color: #fff;
+  color: #c05326;
+}
 
 .content {
   display: flex;
@@ -120,8 +135,10 @@ p {
 /* hero */
 
 .hero {
-  background-image: url("header-bike.jpg");
+  background-image: url("/home/cyf/Documents/CYF/bikes-for-refugees/images/header-bike.jpg");
   background-color: var(--grey-light);
+  padding: 4.75rem 2rem;
+  color: #fff;
 }
 
 .hero h1 {
@@ -145,6 +162,7 @@ p {
   font-size: 1rem;
   font-weight: 600;
   text-transform: uppercase;
+  margin-top: 3rem;
 }
 
 .heading-underline:before {
@@ -163,7 +181,12 @@ p {
 
 .article {
   margin-bottom: 1rem;
+  border: solid #dadad9 2px;
+  border-radius: 4px;
+  padding: 1rem;
 }
+
+
 
 .article__title {
   margin-bottom: 0.5rem;
@@ -202,6 +225,18 @@ p {
   text-decoration: underline;
 }
 
+.learnmore_article {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  
+}
+
+.learnmore_article .article {
+width: 45%;
+
+}
+
 .fa {
   margin-right: 0.5rem;
   color: var(--orange-dark);
@@ -209,6 +244,8 @@ p {
 
 .facebook-link {
   color: var(--orange-dark);
+  
+  
 }
 
 /* Sidebar */
@@ -217,7 +254,33 @@ p {
   display: flex;
   flex-direction: column;
   min-width: 350px;
+
 }
+
+
+
+.sidebar .heading-underline {
+ margin-top: 0;
+
+} 
+
+.sidebar .article {
+  display: flex;
+  flex-direction: row;
+}
+
+.sidebar .article__content {
+  margin-left: 0.7rem;
+  
+
+}
+
+
+.facebook-link {
+  margin-left: 12rem;
+}
+
+
 
 /* Footer */
 
