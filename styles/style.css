@@ -103,7 +103,7 @@ button:hover,button:focus {
 button {
   padding: 0.5rem;
   border: 0;
-  border-radius: 30%;
+  border-radius: 7%;
 }
 .donate {
   background-color: #c05326;
@@ -113,22 +113,19 @@ button {
   color: #c05326;
 }
 /* flexbox */
-
 .flex 
 {
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  flex-direction: row;
 }
-.box {
-  margin: 1rem;
-  border: 2px solid black;
-  padding: 2.5rem 1rem;
-  width: 6rem;
-  font-weight: 600;
-  text-align: center;
-  background-color: #e4e4e4;
+.flex1
+{
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
 }
+
 .box:last-child {
   border: 1px solid #ddd;
 }
@@ -157,8 +154,18 @@ button {
 /* hero */
 
 .hero {
-  background-image: url("header-bike.jpg");
+  background-image: url("../images/header-bike.jpg");
+  background-position: cover;
   background-color: var(--grey-light);
+  max-width: 1200px;
+  height: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+  color: #fff;
+  padding-left: 30px;
+
 }
 
 .hero h1 {
@@ -199,7 +206,9 @@ button {
 /* Article */
 
 .article {
-  margin-bottom: 1rem;
+  margin-bottom: 1 rem;
+  border: 1.5px solid #DBDBDB;
+  padding: 1rem 1rem;
 }
 
 .article__title {
