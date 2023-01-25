@@ -23,7 +23,7 @@ body {
 body,
 button {
   font-family: "Source Sans Pro", "Helvetica Neue", Arial, sans-serif;
-  color: var(--orange-dark);
+  color: var(--grey-dark);
   font-size: 1rem;
 }
 
