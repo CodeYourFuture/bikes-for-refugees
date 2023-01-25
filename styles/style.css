@@ -84,6 +84,8 @@ p {
   font-weight: 600;
 }
 
+
+
 .arrow-right {
   display: inline-block;
   height: 0;
@@ -95,7 +97,18 @@ p {
 
 /* Buttons */
 
-  /* INSERT BUTTON STYLES HERE */
+.btn {
+  background-color: #ec5d20;
+  color: #fff;
+  
+}
+.bttn{
+  background-color: #fff;
+  color: #ec5d20;
+  display: flexbox;
+  padding: 0.2rem;
+
+}
 
 
 /* Content */
@@ -120,20 +133,26 @@ p {
 /* hero */
 
 .hero {
-  background-image: url("header-bike.jpg");
-  background-color: var(--grey-light);
+  background-image: url("/home/user/Documents/GitHub/bikes-for-refugees/images/header-bike.jpg");
+  background-color: var(#cccccc);
+  width: 45rem;
+  height: 15rem;
+  display: flexbox;
+  padding: 2rem;
 }
 
-.hero h1 {
-  margin-bottom: 1rem;
-  font-size: 2.5rem;
+h1 {
+  font-size: 2rem;
+  padding-top: 10px;
 }
 
 .hero p {
-  font-size: 1.2rem;
+  font-size: 0.72rem;
   margin-bottom: 2rem;
 }
-
+.hero h1, p{
+  color:#fff;
+}
 
 /* Headings */
 
