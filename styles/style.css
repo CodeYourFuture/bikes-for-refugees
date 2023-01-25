@@ -12,6 +12,9 @@
    --orange-light: #f7eae4;
    --white: #fff;
  }
+ title {
+  color: var(--white);
+ }
 
 body {
   margin: 0;
@@ -20,7 +23,7 @@ body {
 body,
 button {
   font-family: "Source Sans Pro", "Helvetica Neue", Arial, sans-serif;
-  color: var(--grey-dark);
+  color: var(--orange-dark);
   font-size: 1rem;
 }
 
@@ -125,6 +128,7 @@ p {
 }
 
 .hero h1 {
+  color:var(--white)
   margin-bottom: 1rem;
   font-size: 2.5rem;
 }
