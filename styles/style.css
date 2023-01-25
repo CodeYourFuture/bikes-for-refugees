@@ -27,9 +27,8 @@ button {
   font-size: 1rem;
 }
 
-.h1 {
+h1 {
   color: var(--white);
-
 }
 
 h2,h3,h4,h5,h6 {
