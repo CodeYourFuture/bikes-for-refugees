@@ -13,7 +13,7 @@
    --white: #fff;
  }
  title {
-  color: var(--white);
+  color: var(--grey-dark);
  }
 
 body {
