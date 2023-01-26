@@ -5,16 +5,16 @@
  * 
  */
 
- :root {
-   --grey-dark: #292b2c;
-   --grey-light: #e4e4e4;
-   --orange-dark: #c05326;
-   --orange-light: #f7eae4;
-   --white: #fff;
- }
- title {
+:root {
+  --grey-dark: #292b2c;
+  --grey-light: #e4e4e4;
+  --orange-dark: #c05326;
+  --orange-light: #f7eae4;
+  --white: #fff;
+}
+title {
   color: var(--grey-dark);
- }
+}
 
 body {
   margin: 0;
@@ -31,7 +31,11 @@ h1 {
   color: var(--white);
 }
 
-h2,h3,h4,h5,h6 {
+h2,
+h3,
+h4,
+h5,
+h6 {
   margin-top: 0;
   margin-bottom: 0;
 }
@@ -83,7 +87,6 @@ p {
   text-decoration: none;
 }
 
-
 /* Text styles */
 
 .text-highlight {
@@ -99,11 +102,9 @@ p {
   border-left-color: var(--orange-dark);
 }
 
-
 /* Buttons */
 
-  /* INSERT BUTTON STYLES HERE */
-
+/* INSERT BUTTON STYLES HERE */
 
 /* Content */
 
@@ -126,10 +127,9 @@ p {
 
 /* hero */
 
-
 .hero h1 {
- background-image: url("header-bik.jpg");
- background-image: url("header-bike.jpj");
+  background-image: url("header-bik.jpg");
+  background-image: url("header-bike.jpj");
   margin-bottom: 1rem;
   font-size: 2.5rem;
 }
@@ -138,7 +138,6 @@ p {
   font-size: 1.2rem;
   margin-bottom: 2rem;
 }
-
 
 /* Headings */
 
@@ -162,7 +161,6 @@ p {
   max-width: 100px;
   background: var(--orange-dark);
 }
-
 
 /* Article */
 
