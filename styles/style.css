@@ -122,6 +122,8 @@ button {
   padding: 0.4rem 0.8rem;
   border-style: none;
   border-radius: 4px;
+  margin-bottom: 0.3rem;
+  margin-left: 0.3rem;
 }
 
 /* Content */
@@ -184,6 +186,25 @@ button {
   background: var(--orange-dark);
 }
 
+.flexadd {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 3rem;
+}
+
+.box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 200px;
+  height: 200px;
+  border: 1px solid black;
+}
+
+.box:last-child {
+  background-color: #ddd;
+}
 
 /* Article */
 
