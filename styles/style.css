@@ -66,7 +66,8 @@ p {
 }
 
 .navigation__item {
-  padding: 0.5rem 0;
+  margin: 2rem;
+  
 }
 
 .navigation__link {
@@ -75,7 +76,9 @@ p {
   text-transform: uppercase;
   text-decoration: none;
 }
-
+.navigation__link:hover{
+  color: #c05326;
+}
 
 /* Text styles */
 
@@ -96,7 +99,47 @@ p {
 /* Buttons */
 
   /* INSERT BUTTON STYLES HERE */
+  .button1{
+    color:white;
+    background-color: #c05326;
+    border-color: #c05326;
+    border-radius: 0.3rem;
+    padding: 0.8%;
+  }
 
+  .button1:hover{
+    color: #c05326;
+    background-color: white;
+    border-color:#c05326;
+  }
+
+  .button2{
+    color: #c05326;
+    background-color: white;
+    border-color: white;
+    border-radius: 0.3rem;
+    padding: 0.8%;
+    }
+
+    .button2:hover{
+    color:white;
+    background-color: #c05326;
+    border-color: #c05326;
+    }
+
+  .button3{
+    color:white;
+    background-color: #c05326;
+    border-color: #c05326;
+    border-radius: 0.3rem;
+    padding: 0.8%;
+    }  
+
+   .button3:hover{
+    color: #c05326;
+    background-color: white;
+    border-color:#c05326;
+   }
 
 /* Content */
 
@@ -120,18 +163,28 @@ p {
 /* hero */
 
 .hero {
-  background-image: url("header-bike.jpg");
+  background-image: url(/images/header-bike.jpg);
   background-color: var(--grey-light);
+  padding:9.5% 3%;
+  line-height: 2;
+  margin-bottom: 3rem;
+
 }
 
 .hero h1 {
-  margin-bottom: 1rem;
+
+  margin-left: 0.6rem;
   font-size: 2.5rem;
+  color: white;
+
 }
 
 .hero p {
   font-size: 1.2rem;
-  margin-bottom: 2rem;
+  color: white;
+  margin-left: 0.6rem;
+  margin-bottom: 1rem;
+
 }
 
 
@@ -210,13 +263,31 @@ p {
 .facebook-link {
   color: var(--orange-dark);
 }
+.flex-container{
+  display: flex;
+}
+.flex-container article{
+  margin: 0.8%;
+  padding: 3%;
+  font-size: medium;
+  border-style: solid;
+  border-color: rgb(232, 232, 232);
 
+}
 /* Sidebar */
 
 .sidebar {
   display: flex;
   flex-direction: column;
   min-width: 350px;
+}
+.sidebar article{
+  margin: 0.8%;
+  padding: 3%;
+  font-size: medium;
+  border-style: solid;
+  border-color: rgb(232, 232, 232);
+  text-align: left;
 }
 
 /* Footer */
@@ -235,6 +306,11 @@ p {
   padding-bottom: 1rem;
   text-align: center;
   font-size: 0.85rem;
+}
+.fa-facebook-square {
+  margin-top: 8%;
+  margin-left: 55%;
+
 }
 
 /* Media queries */
