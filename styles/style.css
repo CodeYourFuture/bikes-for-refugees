@@ -5,13 +5,13 @@
  * 
  */
 
- :root {
-   --grey-dark: #292b2c;
-   --grey-light: #e4e4e4;
-   --orange-dark: #c05326;
-   --orange-light: #f7eae4;
-   --white: #fff;
- }
+:root {
+  --grey-dark: #292b2c;
+  --grey-light: #e4e4e4;
+  --orange-dark: #c05326;
+  --orange-light: #f7eae4;
+  --white: #fff;
+}
 
 body {
   margin: 0;
@@ -25,7 +25,12 @@ button {
   font-size: 1rem;
 }
 
-h1,h2,h3,h4,h5,h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   margin-top: 0;
   margin-bottom: 0;
 }
@@ -51,7 +56,6 @@ p {
   justify-content: space-between;
   height: 5rem;
   margin-bottom: 1rem;
-  /* padding-top: 1rem; */
 }
 
 .header__logo {
@@ -78,7 +82,6 @@ p {
   padding: 0.5rem 0;
 }
 
-
 /* Text styles */
 
 .text-highlight {
@@ -94,7 +97,6 @@ p {
   border-left-color: var(--orange-dark);
 }
 
-
 /* Buttons */
 .btn {
   background-color: var(--orange-dark);
@@ -107,16 +109,12 @@ p {
   color: var(--orange-dark);
   background-color: var(--white);
 }
-.btn:hover, .btn:focus {
-  background-color: #934423  ;
+.btn:hover,
+.btn:focus {
+  background-color: #934423;
 }
 
-
-
-
-
 /* Content */
-
 .content {
   display: flex;
   flex-direction: column;
@@ -137,7 +135,7 @@ p {
 /* hero */
 
 .hero {
-  background: url('../images/header-bike.jpg') no-repeat center center/cover;
+  background: url("../images/header-bike.jpg") no-repeat center center/cover;
   /* background-color: var(--grey-light); */
   color: var(--grey-light);
   padding: 2.5rem 1.5rem 3.5rem 1.5rem;
@@ -147,14 +145,12 @@ p {
 .hero h1 {
   margin-bottom: 1rem;
   font-size: 2.5rem;
-  margin-top: 2rem;
 }
 
 .hero p {
   font-size: 1.2rem;
   margin-bottom: 2rem;
 }
-
 
 /* Headings */
 
@@ -167,7 +163,6 @@ p {
   font-weight: 600;
   text-transform: uppercase;
 }
-
 .heading-underline:before {
   content: "";
   position: absolute;
@@ -178,27 +173,23 @@ p {
   max-width: 100px;
   background: var(--orange-dark);
 }
-
 ul li {
   margin: 0 0.5rem;
 }
-
 
 /* Article */
 .articles {
   display: flex;
   justify-content: space-between;
-  
 }
-.articles article:first-child{
+.articles article:first-child {
   margin-right: 1rem;
 }
 
 .article {
   margin-bottom: 1rem;
   border: 3px solid var(--grey-light);
-  padding: 1rem ;
-  
+  padding: 1rem;
 }
 
 .article__title {
@@ -210,7 +201,6 @@ ul li {
 .article__title-link {
   text-decoration: none;
   color: var(--orange-dark);
-  
 }
 
 .article__summary {
@@ -256,12 +246,12 @@ ul li {
   flex-direction: column;
   min-width: 350px;
 }
-.sidebar article{
+.sidebar article {
   display: flex;
   justify-content: center;
   align-items: center;
 }
-.sidebar article img{
+.sidebar article img {
   margin-right: 1rem;
 }
 
@@ -294,4 +284,3 @@ ul li {
     padding-right: 2rem;
   }
 }
-
