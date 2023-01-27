@@ -22,44 +22,25 @@ button {
   font-family: "Source Sans Pro", "Helvetica Neue", Arial, sans-serif;
   color: var(--grey-dark);
   font-size: 1rem;
-  border: 2px solid black;
-  padding: 5px 0 5px;
+}
+
+button {
+  background-color: chocolate;
+  color: #e4e4e4;
   border-radius: 3px;
 }
-/* exercise start */
-.donate {
-  background-color: #c05326;
+#donate_button {
+  /* MY WORK =-=-=-=-=-=-= */
+  width: 110px;
+  height: 34px;
 }
-.volunteer {
-  background-color: #fff;
-  color: #c05326;
+.content_button {
+  height: 34px;
 }
-button:hover {
-  background-color: #934423;
+#volunteer_button {
+  background-color: #e4e4e4;
+  color: chocolate;
 }
-button:focus {
-  background-color: #934423;
-}
-
-.felxBoxModel {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: space-between;
-}
-.container{
-  border: 2px solid black;
-  margin: 15px 0 15px;
-  padding: 2rem 0.5rem 2rem 0.5rem;
-}
-.container:first-child{
-  background-color: #ddd;
-}
-.container:last-child{
-  border: 1px solid black;
-}
-/* end */
-
 h1,
 h2,
 h3,
@@ -104,10 +85,12 @@ p {
 .navigation__list {
   display: flex;
   list-style: none;
+  justify-content: space-between;
+  width: 400px; /* MY WORK */
 }
 
 .navigation__item {
-  padding: 0.5rem 0.5rem 0.5rem 0.5rem;
+  padding: 0.5rem 0;
 }
 
 .navigation__link {
@@ -158,8 +141,14 @@ p {
 /* hero */
 
 .hero {
-  background-image: url("header-bike.jpg");
+/*   background-image: url("./header-bike.jpeg");*/
+  background-image: url("../images/header-bike.jpg");
   background-color: var(--grey-light);
+  height: 260px;
+  width: 820px;
+  color: #fff;
+  padding-top: 100px;
+  background-size: cover; /* to make image cover the div */
 }
 
 .hero h1 {
@@ -170,6 +159,10 @@ p {
 .hero p {
   font-size: 1.2rem;
   margin-bottom: 2rem;
+}
+
+.hero_context {
+  margin-left: 35px;
 }
 
 /* Headings */
@@ -219,7 +212,9 @@ p {
 
 .article__thumbnail {
   object-fit: contain;
-  width: 5rem;
+  /*   width: 5rem;*/
+  width: 150px;
+  margin-right: 10px;
 }
 
 .article__read-more {
@@ -247,17 +242,58 @@ p {
   color: var(--orange-dark);
 }
 
+/* my work in 'Article' */
+.article_border {
+  border: 3px solid var(--grey-light);
+  padding: 20px;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px;
+}
+
+.sidebar_article {
+  display: flex;
+}
+
+.facebook {
+  float: right;
+  clear: both;
+}
+
+/* .main_article_container {
+  display: flex;
+  flex-wrap: nowrap;
+  width: 100%;
+} */
+.main_article_container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: nowrap;
+}
+
+.main_article {
+  flex: 1;
+  width: 100%;
+}
+
+#first_box{
+  margin-right: 5px;
+}
+#second_box{
+  margin-left: 5px;
+}
+
 /* Sidebar */
 
-.sidebar {
-  display: flex;
+sidebar {
+  display: 1;
   flex-direction: column;
   min-width: 350px;
 }
 
 /* Footer */
 
-.footer {
+footer {
   margin-top: 2rem;
 }
 
@@ -267,7 +303,7 @@ p {
   padding-bottom: 2rem;
 }
 
-.footer p {
+footer p {
   padding-bottom: 1rem;
   text-align: center;
   font-size: 0.85rem;
