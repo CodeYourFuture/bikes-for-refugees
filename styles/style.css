@@ -96,7 +96,20 @@ p {
 /* Buttons */
 
   /* INSERT BUTTON STYLES HERE */
+button {
+  border-radius: 0.3rem;
+  border-style: none;
+  padding: 0.4rem 0.6rem;
+}
 
+.orange-button {
+  color: var(--orange-light);
+  background-color: var(--orange-dark);
+}
+.white-button {
+  color: var(--orange-dark);
+  background-color: var(--orange-light);
+}
 
 /* Content */
 
@@ -120,7 +133,7 @@ p {
 /* hero */
 
 .hero {
-  background-image: url("header-bike.jpg");
+  background-image: url("../images/header-bike.jpg");
   background-color: var(--grey-light);
 }
 
