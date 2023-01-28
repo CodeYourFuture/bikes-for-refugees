@@ -115,13 +115,20 @@ p {
   line-height: 1.3;
   padding: 1.5rem 1rem;
   margin-bottom: 2rem;
+  margin-right: 40px;;
 }
 
 /* hero */
 
 .hero {
-  background-image: url("header-bike.jpg");
-  background-color: var(--grey-light);
+  background-image: url("/images/header-bike.jpg");
+  background-size: cover;
+  color: white;
+  padding: 6rem 4rem ;
+  margin-bottom: 40px;
+  margin-right: 40px;
+  
+
 }
 
 .hero h1 {
@@ -160,9 +167,18 @@ p {
 
 
 /* Article */
+.my-article {
+  border: #e4e4e4 1px solid;
+  padding: 15px;
+  border-radius: 5px;
+  display: flex;
+    gap: 1rem;
+
+}
 
 .article {
   margin-bottom: 1rem;
+
 }
 
 .article__title {
@@ -217,6 +233,7 @@ p {
   display: flex;
   flex-direction: column;
   min-width: 350px;
+  padding-left: 10px;
 }
 
 /* Footer */
@@ -247,4 +264,23 @@ p {
   .main {
     padding-right: 2rem;
   }
+}
+ /* button*/
+ .btn-donate{
+    padding:5px;
+    border-radius: 4px;
+    background-color: #c05326;
+    color: white;
+ }
+.btn-volonteer{
+
+    padding: 5px;
+      border-radius: 4px;
+      background-color:white;
+      color:#c05326;
+}
+.sidebar .article{
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
 }
