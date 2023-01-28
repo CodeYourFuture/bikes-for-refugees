@@ -5,13 +5,13 @@
  * 
  */
 
- :root {
-   --grey-dark: #292b2c;
-   --grey-light: #e4e4e4;
-   --orange-dark: #c05326;
-   --orange-light: #f7eae4;
-   --white: #fff;
- }
+:root {
+  --grey-dark: #292b2c;
+  --grey-light: #e4e4e4;
+  --orange-dark: #c05326;
+  --orange-light: #f7eae4;
+  --white: #fff;
+}
 
 body {
   margin: 0;
@@ -24,7 +24,12 @@ button {
   font-size: 1rem;
 }
 
-h1,h2,h3,h4,h5,h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   margin-top: 0;
   margin-bottom: 0;
 }
@@ -66,7 +71,7 @@ p {
 }
 
 .navigation__item {
-  padding: 0.5rem 0;
+  padding: 0.5rem 2rem;
 }
 
 .navigation__link {
@@ -76,6 +81,10 @@ p {
   text-decoration: none;
 }
 
+.navigation__link:hover {
+  color: #c74a15;
+  transition: all 0.5s ease 0s;
+}
 
 /* Text styles */
 
@@ -92,11 +101,37 @@ p {
   border-left-color: var(--orange-dark);
 }
 
-
 /* Buttons */
 
-  /* INSERT BUTTON STYLES HERE */
+button {
+  height: 2.5rem;
+  padding: 0.5rem 1rem;
+  font-weight: 700;
+  border-radius: 5px;
+  max-width: max-content;
+  max-height: max-content;
+}
 
+.orange_btn {
+  background-color: #c05326;
+  color: #e4e4e4;
+}
+
+.orange_btn:hover {
+  transition: all 0.5s ease 0s;
+  background-color: #e4e4e4;
+  color: #c05326;
+}
+
+#white_btn {
+  background-color: #e4e4e4;
+  color: #c05326;
+}
+#white_btn:hover {
+  transition: all 0.5s ease 0s;
+  background-color: #c05326;
+  color: #e4e4e4;
+}
 
 /* Content */
 
@@ -120,20 +155,32 @@ p {
 /* hero */
 
 .hero {
-  background-image: url("header-bike.jpg");
+  background-image: url("/images/header-bike.jpg");
   background-color: var(--grey-light);
+  text-align: start;
+  width: 825px;
+  height: 320px;
+  margin-bottom: 2rem;
+  padding: 0 2rem 2.5rem 0;
 }
 
 .hero h1 {
+  padding-top: 5rem;
+  padding-left: 2rem;
   margin-bottom: 1rem;
   font-size: 2.5rem;
+  color: white;
 }
 
 .hero p {
   font-size: 1.2rem;
   margin-bottom: 2rem;
+  padding-left: 2rem;
+  color: white;
 }
-
+.hero > .orange_btn {
+  margin-left: 2rem;
+}
 
 /* Headings */
 
@@ -158,11 +205,24 @@ p {
   background: var(--orange-dark);
 }
 
-
 /* Article */
+#learn_more {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 20px;
+}
 
 .article {
+  border-width: 2px;
+  border-style: solid;
+  border-color: #d8dbdd;
+  padding: 1rem;
   margin-bottom: 1rem;
+}
+
+.divs > article {
+  min-height: 150px;
 }
 
 .article__title {
@@ -217,6 +277,17 @@ p {
   display: flex;
   flex-direction: column;
   min-width: 350px;
+}
+
+.sidebar > article {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 20px;
+}
+.sidebar > a {
+  display: flex;
+  justify-content: end;
 }
 
 /* Footer */
