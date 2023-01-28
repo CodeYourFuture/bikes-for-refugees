@@ -66,7 +66,7 @@ p {
 }
 
 .navigation__item {
-  padding: 0.5rem 0;
+  padding: 2rem;
 }
 
 .navigation__link {
@@ -93,12 +93,23 @@ p {
 }
 
 
-/* Buttons */
+.orangebutton {
+  background-color: #c05326;
+  color: #fff;
+  border: #c05326;
+  border-radius: 0.5em;
+  font-size: small;
+  padding: 0.5rem;
+  
+}
+.whitebutton {background-color: #fff;
+  color: #c05326;
+  border: #fff;
+  border-radius: 0.5em;
+  font-size: small;
+  padding: 0.5rem;
 
-  /* INSERT BUTTON STYLES HERE */
-
-
-/* Content */
+}
 
 .content {
   display: flex;
