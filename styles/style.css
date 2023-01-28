@@ -63,10 +63,13 @@ p {
 .navigation__list {
   display: flex;
   list-style: none;
+  
 }
 
 .navigation__item {
   padding: 0.5rem 0;
+  
+  
 }
 
 .navigation__link {
@@ -95,7 +98,15 @@ p {
 
 /* Buttons */
 
-  /* INSERT BUTTON STYLES HERE */
+  .btn,
+  .bt{
+    background-color: #df551a;
+    color: #fff
+  }
+  .bttn{
+    background-color: #fff;
+    color:#df551a
+  }
 
 
 /* Content */
@@ -108,8 +119,9 @@ p {
 /* Alert */
 
 .alert {
-  background-color: var(--orange-light);
-  border-left: 4px solid var(--orange-dark);
+  background-color: white;
+  border-left: 2px solid var(--orange-dark);
+  border:1px solid var(--orange-dark) ;
   border-radius: 4px;
   font-size: 0.85rem;
   line-height: 1.3;
@@ -120,18 +132,24 @@ p {
 /* hero */
 
 .hero {
-  background-image: url("header-bike.jpg");
+  background-image: url("https://github.com/CodeYourFuture/bikes-for-refugees/blob/main/images/header-bike.jpg?raw=true");
   background-color: var(--grey-light);
+  height: 360px;
 }
 
 .hero h1 {
   margin-bottom: 1rem;
   font-size: 2.5rem;
+  color: #fff;
+  padding: 1rem;
+  margin: 3rem
 }
 
 .hero p {
-  font-size: 1.2rem;
+  font-size: 1rem;
   margin-bottom: 2rem;
+  color: #fff;
+  
 }
 
 
