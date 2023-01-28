@@ -1,17 +1,12 @@
-/**
- *
- * Module: HTML/CSS
- * Lesson: 1
- * 
- */
 
- :root {
-   --grey-dark: #292b2c;
-   --grey-light: #e4e4e4;
-   --orange-dark: #c05326;
-   --orange-light: #f7eae4;
-   --white: #fff;
- }
+
+:root {
+  --grey-dark: #292b2c;
+  --grey-light: #e4e4e4;
+  --orange-dark: #c05326;
+  --orange-light: #f7eae4;
+  --white: #fff;
+}
 
 body {
   margin: 0;
@@ -24,7 +19,12 @@ button {
   font-size: 1rem;
 }
 
-h1,h2,h3,h4,h5,h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   margin-top: 0;
   margin-bottom: 0;
 }
@@ -56,6 +56,7 @@ p {
 .header__logo {
   max-height: 90px;
   width: auto;
+  padding-left: 1.5rem;
 }
 
 /* Navigation */
@@ -66,7 +67,8 @@ p {
 }
 
 .navigation__item {
-  padding: 0.5rem 0;
+
+  padding: 0.5rem 1rem;
 }
 
 .navigation__link {
@@ -75,7 +77,10 @@ p {
   text-transform: uppercase;
   text-decoration: none;
 }
+.navigation__link:hover {
+  color: orangered;
 
+}
 
 /* Text styles */
 
@@ -95,9 +100,32 @@ p {
 
 /* Buttons */
 
-  /* INSERT BUTTON STYLES HERE */
+/* INSERT BUTTON STYLES HERE */
+.donate-btn {
+  background-color: var(--orange-dark);
+  color: var(--white);
+  padding: 0.5rem;
+  border-radius: 5px;
+  border: none;
+}
 
+.donate-btn:hover {
+  background-color: var(--white);
+  color: var(--orange-dark);
+}
 
+.volunteer-btn {
+  background-color: var(--white);
+  color: var(--orange-dark);
+  padding: 0.5rem;
+  border-radius: 5px;
+  border: none;
+}
+
+.volunteer-btn:hover {
+  background-color: var(--orange-dark);
+  color: var(--white);
+}
 /* Content */
 
 .content {
@@ -120,18 +148,22 @@ p {
 /* hero */
 
 .hero {
-  background-image: url("header-bike.jpg");
+  
+  background-image: url("/images/header-bike.jpg");
+  padding: 5rem 2rem;
   background-color: var(--grey-light);
+  margin-bottom: 3rem;
 }
-
 .hero h1 {
   margin-bottom: 1rem;
   font-size: 2.5rem;
+  color: white;
 }
 
 .hero p {
   font-size: 1.2rem;
   margin-bottom: 2rem;
+  color: white;
 }
 
 
@@ -158,15 +190,37 @@ p {
   background: var(--orange-dark);
 }
 
-
 /* Article */
 
 .article {
+ 
+  margin-bottom: 2rem;
+  display: flex;
+  flex-direction: row;
+  border: 1px solid var(--grey-light);
+  padding: 1rem;
+}
+.first-section
+{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
   margin-bottom: 1rem;
+  column-gap: 1rem;
+}
+@media (max-width: 800px) {
+  .first-section {
+    flex-direction: column;
+  }
+}
+
+.article-main{
+  border: 1px solid lightgray;
+  padding: 1rem;
 }
 
 .article__title {
-  margin-bottom: 0.5rem;
+  margin-bottom: 0rem;
   font-size: 1rem;
   font-weight: 700;
 }
@@ -184,7 +238,9 @@ p {
 .article__thumbnail {
   object-fit: contain;
   width: 5rem;
+  margin-right: 1rem;
 }
+
 
 .article__read-more {
   margin-top: 0;
@@ -209,6 +265,7 @@ p {
 
 .facebook-link {
   color: var(--orange-dark);
+ text-align: right;
 }
 
 /* Sidebar */
@@ -218,6 +275,7 @@ p {
   flex-direction: column;
   min-width: 350px;
 }
+
 
 /* Footer */
 
@@ -247,4 +305,5 @@ p {
   .main {
     padding-right: 2rem;
   }
+  
 }
