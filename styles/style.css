@@ -207,6 +207,7 @@ p {
 .article__summary {
   margin-top: 0;
   margin-bottom: 1rem;
+  padding: 10px;
 }
 
 .article__thumbnail {
