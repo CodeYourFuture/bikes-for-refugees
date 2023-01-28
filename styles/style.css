@@ -1,9 +1,4 @@
-/**
- *
- * Module: HTML/CSS
- * Lesson: 1
- * 
- */
+
 
 :root {
   --grey-dark: #292b2c;
@@ -13,12 +8,14 @@
   --white: #fff;
 }
 
-
 body {
+  margin: 0;
+}
+
+body,
+button {
   font-family: "Source Sans Pro", "Helvetica Neue", Arial, sans-serif;
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
+  color: var(--grey-dark);
   font-size: 1rem;
 }
 
@@ -32,20 +29,17 @@ h6 {
   margin-bottom: 0;
 }
 
-
 p {
   margin-top: 0;
   margin-bottom: 0;
-  /* text-align: justify; */
 }
 
-
+.header,
 .content,
 .footer {
   padding: 0 1.5rem;
-  width: 1200px;
-  /* width: 100%; */
-  /* margin: 0 auto; */
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
 /* Header */
@@ -53,12 +47,10 @@ p {
 .header {
   display: flex;
   align-items: center;
-  justify-content:space-between;
+  justify-content: space-between;
   height: 5rem;
   margin-bottom: 1rem;
   padding-top: 1rem;
-  /* width: 1200px; */
-  width: 90%;
 }
 
 .header__logo {
@@ -109,23 +101,31 @@ p {
 /* Buttons */
 
 /* INSERT BUTTON STYLES HERE */
-button {
-  padding: 0.4rem 0.8rem;
-  border-style: none;
-  border-radius: 4px;
-  margin-bottom: 0.3rem;
-  margin-left: 0.3rem;
-  background-color: #c05326;
-  color: white;
-}
-.donate{
-  margin: 0;
-}
-button:hover {
-  background-color: white;
-  color: #c05326;
+.donate-btn {
+  background-color: var(--orange-dark);
+  color: var(--white);
+  padding: 0.5rem;
+  border-radius: 5px;
+  border: none;
 }
 
+.donate-btn:hover {
+  background-color: var(--white);
+  color: var(--orange-dark);
+}
+
+.volunteer-btn {
+  background-color: var(--white);
+  color: var(--orange-dark);
+  padding: 0.5rem;
+  border-radius: 5px;
+  border: none;
+}
+
+.volunteer-btn:hover {
+  background-color: var(--orange-dark);
+  color: var(--white);
+}
 /* Content */
 
 .content {
@@ -148,32 +148,12 @@ button:hover {
 /* hero */
 
 .hero {
+  
   background-image: url("/images/header-bike.jpg");
+  padding: 5rem 2rem;
   background-color: var(--grey-light);
-  width: 50rem;
-  height: 20rem;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  margin-bottom: 2rem;
-  padding-left: 2rem;
+  margin-bottom: 3rem;
 }
-
-@media screen and (max-width: 380px) {
-  .hero {
-    background-image: url("/images/header-bike.jpg");
-    background-color: var(--grey-light);
-    width: 30rem;
-    height: 10rem;
-    background-size: cover;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    margin-bottom: 2rem;
-  }
-}
-
-
 .hero h1 {
   margin-bottom: 1rem;
   font-size: 2.5rem;
@@ -213,36 +193,34 @@ button:hover {
 /* Article */
 
 .article {
-  margin-bottom: 1rem;
-  border: 1px solid lightgray;
-  padding: 2rem 1rem;
-  width: 22rem;
+ 
+  margin-bottom: 2rem;
+  display: flex;
+  flex-direction: row;
+  border: 1px solid var(--grey-light);
+  padding: 1rem;
 }
 .first-section
 {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  margin-bottom: 1rem;
+  column-gap: 1rem;
 }
 @media (max-width: 800px) {
   .first-section {
     flex-direction: column;
   }
 }
-aside article{
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-}
-.aside-article{
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  width: 20rem;
+
+.article-main{
+  border: 1px solid lightgray;
+  padding: 1rem;
 }
 
 .article__title {
-  margin-bottom: 0.5rem;
+  margin-bottom: 0rem;
   font-size: 1rem;
   font-weight: 700;
 }
@@ -260,13 +238,9 @@ aside article{
 .article__thumbnail {
   object-fit: contain;
   width: 5rem;
-  /* margin-top: 2rem; */
   margin-right: 1rem;
 }
 
-.img1{
-  margin-top: 2.5rem;
-}
 
 .article__read-more {
   margin-top: 0;
@@ -291,7 +265,7 @@ aside article{
 
 .facebook-link {
   color: var(--orange-dark);
-  align-self: flex-end;
+ text-align: right;
 }
 
 /* Sidebar */
@@ -301,6 +275,7 @@ aside article{
   flex-direction: column;
   min-width: 350px;
 }
+
 
 /* Footer */
 
@@ -330,4 +305,5 @@ aside article{
   .main {
     padding-right: 2rem;
   }
+  
 }
