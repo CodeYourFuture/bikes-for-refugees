@@ -27,6 +27,7 @@ button {
 h1,h2,h3,h4,h5,h6 {
   margin-top: 0;
   margin-bottom: 0;
+  
 }
 
 p {
@@ -63,7 +64,6 @@ p {
 .navigation__list {
   display: flex;
   list-style: none;
-  
 }
 
 .navigation__item {
@@ -121,7 +121,7 @@ p {
 /* Alert */
 
 .alert {
-  background-color: white;
+  background-color:white;
   border-left: 2px solid var(--orange-dark);
   border:1px solid var(--orange-dark) ;
   border-radius: 4px;
@@ -153,8 +153,8 @@ p {
   color: #fff;
   
 }
-.hero h1, p{
-  color:#fff;
+.hero , p{
+  color: black;
 }
 
 /* Headings */
@@ -185,7 +185,11 @@ p {
 
 .article {
   margin-bottom: 1rem;
+  display: flex;
+  padding: 10px;
+  
 }
+
 
 .article__title {
   margin-bottom: 0.5rem;
@@ -196,6 +200,7 @@ p {
 .article__title-link {
   text-decoration: none;
   color: var(--orange-dark);
+  
 }
 
 .article__summary {
@@ -231,6 +236,7 @@ p {
 
 .facebook-link {
   color: var(--orange-dark);
+  text-align: right;
 }
 
 /* Sidebar */
@@ -251,6 +257,7 @@ p {
   border-top: 2px solid var(--orange-light);
   padding-top: 2rem;
   padding-bottom: 2rem;
+  
 }
 
 .footer p {
