@@ -131,18 +131,24 @@ p {
 /* hero */
 
 .hero {
-  background-image: url(images/header-bike.jpg);
+  background-image: url(../images/header-bike.jpg);
   background-color: var(--grey-light);
+  padding: 10em;
+  background-repeat: no-repeat;
+  
 }
 
 .hero h1 {
   margin-bottom: 1rem;
   font-size: 2.5rem;
+  color: #fff;
+  text-align: left;
 }
 
 .hero p {
   font-size: 1.2rem;
   margin-bottom: 2rem;
+  color: #fff;
 }
 
 
