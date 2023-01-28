@@ -212,6 +212,7 @@ p {
 .article__thumbnail {
   object-fit: contain;
   width: 5rem;
+  padding: 20px;
 }
 
 .article__read-more {
