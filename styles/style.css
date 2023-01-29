@@ -25,6 +25,9 @@ button {
   font-family: "Source Sans Pro", "Helvetica Neue", Arial, sans-serif;
   color: var(--grey-dark);
   font-size: 1rem;
+  padding: 2%;
+  border: 0cm;
+  border-radius:25px;
 }
 
 h1 {
@@ -74,6 +77,7 @@ p {
 .navigation__list {
   display: flex;
   list-style: none;
+  padding-right: 2%;
 }
 
 .navigation__item {
