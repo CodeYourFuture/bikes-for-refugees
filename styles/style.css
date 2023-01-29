@@ -107,11 +107,12 @@ button {
   padding: 0.4rem 0.6rem;
 }
 
-.orange-button {
+.orange-button, .white-button:hover {
   color: var(--orange-light);
   background-color: var(--orange-dark);
 }
-.white-button {
+
+.white-button, .orange-button:hover {
   color: var(--orange-dark);
   background-color: var(--orange-light);
 }
