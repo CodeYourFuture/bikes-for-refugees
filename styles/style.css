@@ -229,6 +229,22 @@ button {
   color: var(--orange-dark);
 }
 
+/* Flex Container*/
+
+.flex-container {
+  display: flex;
+}
+
+.flex-item {
+  padding: 0.4rem;
+  margin: 0.3rem;
+}
+
+.border {
+  border: var(--grey-light) solid 0.15rem;
+  border-radius: 0.2rem;
+}
+
 /* Sidebar */
 
 .sidebar {
