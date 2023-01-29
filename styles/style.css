@@ -47,11 +47,11 @@ body {
 .button3 {
   font-family: "Source Sans Pro", "Helvetica Neue", Arial, sans-serif;
   background-color: white;
-  color: #c05326
+  color: #c05326;
   font-size: 1rem;
   padding: 2%;
   border: 0cm;
-  border border-radius:25px
+  border border-radius:25px;
 }
 
 h1 {
