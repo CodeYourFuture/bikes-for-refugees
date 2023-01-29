@@ -99,6 +99,22 @@ p {
 /* Buttons */
 
 /* INSERT BUTTON STYLES HERE */
+.hero-text button ,.donate-but{
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 10px 25px;
+  color: white;
+  background-color: rgb(226, 55, 25);
+  text-align: center;
+  border-radius: 8px;
+  cursor: pointer;
+}
+#volun-but {
+  background-color: whitesmoke;
+  color: rgb(226, 55, 25);
+  border-radius: 8px;
+}
 
 /* Content */
 
@@ -123,9 +139,16 @@ p {
 
 .hero {
   background-color: var(--grey-light);
+  background-position: streach;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  height: 40%;
+  width: 100%;
 }
 
 .hero h1 {
+  margin-top: 4ex;
   margin-bottom: 1rem;
   font-size: 2.5rem;
 }
@@ -133,6 +156,15 @@ p {
 .hero p {
   font-size: 1.2rem;
   margin-bottom: 2rem;
+}
+
+.hero-text {
+  text-align: left;
+  position: absolute;
+  top: 40%;
+  left: 37%;
+  transform: translate(-50%, -50%);
+  color: white;
 }
 
 /* Headings */
