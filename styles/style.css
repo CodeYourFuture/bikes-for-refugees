@@ -5,26 +5,64 @@
  * 
  */
 
- :root {
-   --grey-dark: #292b2c;
-   --grey-light: #e4e4e4;
-   --orange-dark: #c05326;
-   --orange-light: #f7eae4;
-   --white: #fff;
- }
+:root {
+  --grey-dark: #292b2c;
+  --grey-light: #e4e4e4;
+  --orange-dark: #c05326;
+  --orange-light: #f7eae4;
+  --white: #fff;
+}
+title {
+  color: var(--grey-dark);
+}
 
 body {
-  margin: 0;
+  margin: 1cm;
 }
 
-body,
-button {
+
+.button1 {
   font-family: "Source Sans Pro", "Helvetica Neue", Arial, sans-serif;
-  color: var(--grey-dark);
+  background-color: #c05326;
+  font-style: var(--orange-dark);
+  padding: 2%;
+  color: var(--white);
   font-size: 1rem;
+  border: 0cm;
+  border border: radius 20px;
+
 }
 
-h1,h2,h3,h4,h5,h6 {
+.button2 {
+  font-family: "Source Sans Pro", "Helvetica Neue", Arial, sans-serif;
+  background-color: #c05326;
+  font-style: var(--orange-dark);
+  color: white;
+  font-size: 1rem;
+  padding: 2%;
+  border: 0cm;
+  border border: radius 20px;
+}
+
+.button3 {
+  font-family: "Source Sans Pro", "Helvetica Neue", Arial, sans-serif;
+  background-color: white;
+  color: #c05326;
+  font-size: 1rem;
+  padding: 2%;
+  border: 0cm;
+  border border-radius:25px;
+}
+
+h1 {
+  color: var(--white);
+}
+
+h2,
+h3,
+h4,
+h5,
+h6 {
   margin-top: 0;
   margin-bottom: 0;
 }
@@ -63,6 +101,7 @@ p {
 .navigation__list {
   display: flex;
   list-style: none;
+  padding-right: 2%;
 }
 
 .navigation__item {
@@ -75,7 +114,6 @@ p {
   text-transform: uppercase;
   text-decoration: none;
 }
-
 
 /* Text styles */
 
@@ -92,11 +130,9 @@ p {
   border-left-color: var(--orange-dark);
 }
 
-
 /* Buttons */
 
-  /* INSERT BUTTON STYLES HERE */
-
+/* INSERT BUTTON STYLES HERE */
 
 /* Content */
 
@@ -119,12 +155,9 @@ p {
 
 /* hero */
 
-.hero {
-  background-image: url("header-bike.jpg");
-  background-color: var(--grey-light);
-}
-
 .hero h1 {
+  background-image: url("header-bik.jpg");
+  background-image: url("header-bike.jpj");
   margin-bottom: 1rem;
   font-size: 2.5rem;
 }
@@ -133,7 +166,6 @@ p {
   font-size: 1.2rem;
   margin-bottom: 2rem;
 }
-
 
 /* Headings */
 
@@ -157,7 +189,6 @@ p {
   max-width: 100px;
   background: var(--orange-dark);
 }
-
 
 /* Article */
 
