@@ -27,9 +27,8 @@ button {
   font-size: 1rem;
   padding: 2%;
   border: 0cm;
-  border-radius:25px;
-
-
+  border border-radius:25px
+}
 
 h1 {
   color: var(--white);
