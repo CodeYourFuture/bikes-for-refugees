@@ -113,12 +113,7 @@ button {
   color: #c05326;
 }
 /* flexbox */
-.flex 
-{
-  display: flex;
-  justify-content: space-between;
-  flex-direction: row;
-}
+
 .flex1
 {
   display: flex;
@@ -201,14 +196,33 @@ button {
   max-width: 100px;
   background: var(--orange-dark);
 }
-
-
+/* flexbox */
+.flex 
+{
+  display: flex;
+  justify-content: space-around;
+  flex-direction: row;
+  
+}
+.flex1
+{
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+}
 /* Article */
 
 .article {
   margin-bottom: 1 rem;
   border: 1.5px solid #DBDBDB;
   padding: 1rem 1rem;
+  width: 230px; 
+}
+.article1 {
+  margin-bottom: 1 rem;
+  border: 1.5px solid #DBDBDB;
+  padding: 1rem 1rem;
+  width: 80px; 
 }
 
 .article__title {
@@ -228,7 +242,7 @@ button {
 }
 
 .article__thumbnail {
-  object-fit: contain;
+  object-fit: cont0ain;
   width: 5rem;
 }
 
