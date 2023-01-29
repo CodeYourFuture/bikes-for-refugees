@@ -95,6 +95,9 @@ p {
   max-height: 90px;
   width: auto;
 }
+.sidebar {
+  grid-area: auto;
+}
 
 /* Navigation */
 
