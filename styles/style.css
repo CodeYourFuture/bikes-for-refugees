@@ -71,7 +71,7 @@ p {
 }
 
 .navigation__item {
-  padding: 0.5rem 0;
+  padding: 0.5rem 1rem;
 }
 
 .navigation__link {
@@ -79,6 +79,9 @@ p {
   font-weight: 600;
   text-transform: uppercase;
   text-decoration: none;
+}
+.navigation__link:hover {
+  color: var(--orange-dark);
 }
 
 /* Text styles */
@@ -110,6 +113,7 @@ p {
   border-radius: 8px;
   cursor: pointer;
 }
+/* volunter button */
 #volun-but {
   background-color: whitesmoke;
   color: rgb(226, 55, 25);
@@ -143,8 +147,6 @@ p {
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
-  height: 40%;
-  width: 100%;
 }
 
 .hero h1 {
