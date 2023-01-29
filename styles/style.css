@@ -28,23 +28,7 @@ button {
   padding: 2%;
   border: 0cm;
   border-radius:25px;
-}
-  .button2 {
-  font-family: "Source Sans Pro", "Helvetica Neue", Arial, sans-serif;
-  color: var(--grey-dark);
-  font-size: 1rem;
-  padding: 2%;
-  border: 0cm;
-  border-radius:25px;
-}
-.button3 {
-  font-family: "Source Sans Pro", "Helvetica Neue", Arial, sans-serif;
-  color: var(--grey-dark);
-  font-size: 1rem;
-  padding: 2%;
-  border: 0cm;
-  border-radius:25px;
-}
+
 
 
 h1 {
