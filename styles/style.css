@@ -21,8 +21,9 @@ body {
 }
 
 body,
-button {
+.button {
   font-family: "Source Sans Pro", "Helvetica Neue", Arial, sans-serif;
+  background-color: #c05326;
   color: white
   font-size: 1rem;
   padding: 2%;
