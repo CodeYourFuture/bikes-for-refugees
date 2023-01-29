@@ -13,9 +13,12 @@
    --white: #fff;
  }
 
-body {
-  margin: 0;
+.button {color:var(--orange-dark)
 }
+
+
+ 
+
 
 body,
 button {
