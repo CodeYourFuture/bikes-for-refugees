@@ -31,12 +31,11 @@ button {
 }
 .button2 {
   font-family: "Source Sans Pro", "Helvetica Neue", Arial, sans-serif;
-  color: var(--grey-dark);
+  background-color: #c05326;
   font-size: 1rem;
   padding: 2%;
   border: 0cm;
   border border-radius:25px
-  background-color: #c05326;
 }
 
 
