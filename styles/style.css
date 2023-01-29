@@ -24,12 +24,15 @@ body {
 .button {
   font-family: "Source Sans Pro", "Helvetica Neue", Arial, sans-serif;
   background-color: #c05326;
+  font-style: var(--orange-dark);
+  padding: 2%;
   color: white
   font-size: 1rem;
-  padding: 2%;
   border: 0cm;
-  border border-radius:25px
+  border border: radius 20px;
+
 }
+
 .button2 {
   font-family: "Source Sans Pro", "Helvetica Neue", Arial, sans-serif;
   background-color: #c05326;
@@ -38,7 +41,7 @@ body {
   font-size: 1rem;
   padding: 2%;
   border: 0cm;
-  border border-radius:25px
+  border border: radius 20px;px
 }
 
 .button3 {
