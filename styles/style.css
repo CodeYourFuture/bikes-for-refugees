@@ -23,7 +23,8 @@ body {
 body,
 button {
   font-family: "Source Sans Pro", "Helvetica Neue", Arial, sans-serif;
-  color: var(--grey-dark);
+  background-color: #c05326;
+  color: white
   font-size: 1rem;
   padding: 2%;
   border: 0cm;
@@ -39,6 +40,15 @@ button {
   border border-radius:25px
 }
 
+.button3 {
+  font-family: "Source Sans Pro", "Helvetica Neue", Arial, sans-serif;
+  background-color: white;
+  color: #c05326
+  font-size: 1rem;
+  padding: 2%;
+  border: 0cm;
+  border border-radius:25px
+}
 
 h1 {
   color: var(--white);
