@@ -37,9 +37,9 @@ p {
   margin-bottom: 0;
 }
 
-.header,
-.content,
-.footer {
+header,
+content,
+footer {
   padding: 0 1.5rem;
   max-width: 1200px;
   margin: 0 auto;
@@ -47,9 +47,8 @@ p {
 
 /* Header */
 
-.header {
+header {
   display: flex;
-  align-items: center;
   justify-content: space-between;
   height: 5rem;
   margin-bottom: 1rem;
@@ -74,7 +73,7 @@ p {
 
 .navigation__link {
   color: var(--grey-dark);
-  font-weight: 600;
+  font-weight: 500Z;
   text-transform: uppercase;
   text-decoration: none;
 }
@@ -123,18 +122,21 @@ p {
 /* hero */
 
 .hero {
-  background-image: url("images/header-bike.jpg");
+  background-image: url("https://github.com/CodeYourFuture/bikes-for-refugees/blob/main/images/header-bike.jpg?raw=true");
   background-color: var(--grey-light);
+  background-size: cover;
 }
 
 .hero h1 {
-  margin-bottom: 1rem;
+  margin-bottom: 5rem;
   font-size: 2.5rem;
+  color: #e4e4e4;
 }
 
 .hero p {
   font-size: 1.2rem;
-  margin-bottom: 2rem;
+  margin-bottom: 5rem;
+  color:#e4e4e4;
 }
 
 
