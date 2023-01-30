@@ -62,13 +62,6 @@ p {
   max-height: 90px;
   width: auto;
 }
-.header button {
-  background-color: orangered;
-  color: white;
-  border: 1px solid orangered;
-  border-radius: 5%;
-  padding: 0.5rem;
-}
 
 /* Navigation */
 
@@ -106,7 +99,19 @@ p {
 
 /* Buttons */
 
-/* INSERT BUTTON STYLES HERE */
+button {
+  background-color: orangered;
+  color: white;
+  border: 1px solid orangered;
+  border-radius: 5%;
+  padding: 0.5rem;
+}
+
+.hero .volunteer {
+  background-color: white;
+  color: orangered;
+  border: 1px solid white;
+}
 
 /* Content */
 
@@ -132,16 +137,20 @@ p {
 .hero {
   background-image: url("../images/header-bike.jpg");
   background-color: var(--grey-light);
+  background-size: cover;
+  height: 40vh;
 }
 
 .hero h1 {
   margin-bottom: 1rem;
   font-size: 2.5rem;
+  color: white;
 }
 
 .hero p {
   font-size: 1.2rem;
   margin-bottom: 2rem;
+  color: white;
 }
 
 /* Headings */
@@ -225,6 +234,11 @@ p {
   display: flex;
   flex-direction: column;
   min-width: 350px;
+}
+
+.sidebar .article {
+  display: flex;
+  gap: 1rem;
 }
 
 /* Footer */
