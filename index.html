@@ -30,7 +30,7 @@
           />
         </a>
 
-        <div>
+        <nav class="navcontent">
           <ul class="navigation__list">
             <li class="navigation__item">
               <a class="navigation__link" href="#">Home</a>
@@ -45,14 +45,14 @@
               <a class="navigation__link" href="#">Contact Us</a>
             </li>
           </ul>
-        </div>
+        </nav>
 
-        <button>Donate Now</button>
+        <button class="orange">Donate Now</button>
 
     </div>
 
     <div class="content">
-        <div class="main">
+        <main class="main">
           <div class="alert">
             You've helped us give <span class="text-highlight">72</span> bikes
             to refugees and asylum seekers so far. <strong>Thank you!</strong>
@@ -64,15 +64,17 @@
               Providing donated bikes and accessories to refugees and asylum
               seekers in Scotland.
             </p>
-            <button>Donate a bike today</button>
-            <button>Volunteer</button>
+            <button class="orange">Donate a bike today</button>
+            <button class="volunteer">Volunteer</button>
           </div>
 
           <div>
             <h2 class="heading-underline">Learn more</h2>
 
-            <div>
-              <div class="article">
+            <div class="temp">
+            
+              <article class="article">
+                
                 <h3 class="article__title">Why do refugees need bikes?</h3>
                 <p class="article__summary">
                   Many refugees are placed in housing in areas where there are
@@ -85,9 +87,11 @@
                     Learn more
                   </a>
                 </p>
-              </div>
+                
+              </article>
+            
 
-              <div class="article">
+              <article class="article" id="special">
                 <h3 class="article__title">How can I help?</h3>
                 <p class="article__summary">
                   We need lots of bikes and bike accessories! If you have an
@@ -100,73 +104,82 @@
                     Learn more
                   </a>
                 </p>
-              </div>
+              </article>
             </div>
           </div>
-        </div>
+        </main>
 
-        <div class="sidebar">
+        <aside class="sidebar">
           <h2 class="heading-underline">Upcoming events</h2>
 
-          <div class="article">
+          <article class="article">
             <img
               class="article__thumbnail"
               src="spring-fundraisers_thumbnail.jpg"
               alt=""
             />
             <div class="article__content">
-              <h3 class="article__title">
-                <a class="article__title-link" href="#">Join us for our Spring fundraisers</a>
-              </h3>
-              <p class="article__summary">
-                Riders needed now to help raise awareness and funds for BfR and
-                Médecins Sans Frontières.
-              </p>
+                <img src="images/spring-fundraisers_thumbnail.jpg" class="aside-img">
+                <div>
+                  <h3 class="article__title">
+                    <a class="article__title-link" href="#">Join us for our Spring fundraisers</a>
+                  </h3>
+                  <p class="article__summary">
+                  Riders needed now to help raise awareness and funds for BfR and
+                  Médecins Sans Frontières.
+                  </p>
+                </div>
             </div>
-          </div>
+          </article>
 
-          <div class="article">
+          <article class="article">
             <img
               class="article__thumbnail"
               src="bikes-for-refugees_logo.jpg"
               alt=""
             />
             <div class="article__content">
+              <img src="images/bikes-for-refugees_logo.jpg" class="aside-img">
               <h3 class="article__title">
                 <a class="article__title-link" href="#">Bike dropoff event in Edinburgh on May 11</a>
               </h3>
             </div>
-          </div>
+          </article>
 
-          <div class="article">
+          <article class="article">
             <img
               class="article__thumbnail"
               src="edinburgh-damascus_thumbnail.png"
               alt=""
             />
             <div class="article__content">
-              <h3 class="article__title">
-                <a class="article__title-link" href="#">Help us cycle 4,797km</a>
-              </h3>
-              <p class="article__summary">
-                We need you to help us cycle 4797km, the distance of Edinburgh
-                to Damascus.
-              </p>
+              <img src="images/edinburgh-damascus_thumbnail.png" class="aside-img">
+              <div>
+                <h3 class="article__title">
+                  <a class="article__title-link" href="#">Help us cycle 4,797km</a>
+                </h3>
+                <p class="article__summary">
+                  We need you to help us cycle 4797km, the distance of Edinburgh
+                  to Damascus.
+                </p>
+              </div>
             </div>
-          </div>
-
-          <a
-            href="https://www.facebook.com/BikesforRefugeesScotland/events/?ref=page_internal"
-            target="_blank"
-            class="facebook-link"
-          >
-            <span class="fa fa-facebook-square"></span>
-            All Facebook events
-          </a>
-        </div>
+          </article>
+        
+          
+            <a
+              href="https://www.facebook.com/BikesforRefugeesScotland/events/?ref=page_internal"
+              target="_blank"
+              class="facebook-link"
+            >
+              <span class="fa fa-facebook-square"></span>
+              All Facebook events
+            </a>
+          </aside>
+        
     </div>
 
-    <div class="footer">
+    <footer class="footer">
       <div class="footer__content">
         <p>
           <strong>Bikes for Refugees Scotland is a volunteer-led project to help
@@ -174,6 +187,6 @@
         </p>
         <p>Website by Code Your Future</p>
       </div>
-    </div>
+    </footer>
   </body>
 </html>
