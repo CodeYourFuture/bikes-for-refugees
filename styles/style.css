@@ -13,11 +13,6 @@
    --white: #fff;
  }
 
-body {
-  margin: 0;
-  display: grid;
-  grid-template-areas:;
-}
 
 body,
 button {
@@ -65,7 +60,13 @@ p {
 .header__logo {
   max-height: 90px;
   width: auto;
+  margin-right: 5rem;
 }
+
+.donate_button {
+  margin-left: 34rem;
+}
+
 
 /* Navigation */
 
@@ -114,7 +115,7 @@ p {
 
 .content {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
 }
 
 /* Alert */
@@ -196,7 +197,10 @@ p {
 /* Article */
 
 .article {
+  display:flex;
   margin-bottom: 1rem;
+  border-style: solid;
+  border-color: rgb(145, 140, 140);
 }
 
 .article__title {
@@ -218,6 +222,7 @@ p {
 .article__thumbnail {
   object-fit: contain;
   width: 5rem;
+  margin-right: 1rem;
 }
 
 .article__read-more {
@@ -251,6 +256,8 @@ p {
   display: flex;
   flex-direction: column;
   min-width: 350px;
+  margin-left: 2rem;
+  
 }
 
 /* Footer */
@@ -270,7 +277,15 @@ p {
   text-align: center;
   font-size: 0.85rem;
 }
+.body {
+  display: flex;
+}
 
+.donate_button {
+  background-color: #c05326;
+  color: #fff;
+
+}
 
 
 /* Media queries */
