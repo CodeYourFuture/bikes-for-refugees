@@ -59,6 +59,8 @@ h1 {
 }
 .h1_image {
   border-image-width: 60%;
+  margin: 3%;
+  position: relative;
 }
 
 h2,
