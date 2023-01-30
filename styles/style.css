@@ -171,6 +171,16 @@ p {
   font-weight: 700;
 }
 
+.article__content {
+  display: flex;
+  
+}
+
+.aside-img {
+  width: 80px;
+}
+
+
 .article__title-link {
   text-decoration: none;
   color: var(--orange-dark);
