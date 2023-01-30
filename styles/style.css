@@ -14,7 +14,7 @@
  }
 
 body {
-  margin: 0;
+  margin: 0 3rem;
 }
 
 body,
@@ -55,13 +55,7 @@ header {
   padding-top: 1rem;
 }
 
-.donate-now{
-  max-height: 35px;
-  margin-top: 1.4rem;
-  border-radius: 0.3rem;
-  color: #fff;
 
-}
 
 /* Navigation */
 
@@ -99,11 +93,30 @@ button:focus {
   background-color: #934423;
 }
 
-.donate-now, .donate {
+.donate-now{
+  max-height: 35px;
+  margin-top: 1.4rem;
+  border-radius: 0.3rem;
+  border: none;
+  padding: 0 1rem;
+  color: #fff;
+  background-color: #c05326;
+}
+
+.donate {
+  height: 2.2rem;
+  border-radius: 0.3rem;
+  border: none;
+  padding: 0 1rem;
+  color: #fff;
   background-color: #c05326;
 }
 
 .vol-button {
+  height: 2.2rem;
+  border-radius: 0.3rem;
+  border: none;
+  padding: 0 1rem;
  background-color: #fff;
  color: #c05326;
 }
@@ -134,28 +147,40 @@ button:focus {
   background-image: url("header-bike.jpg");
   background-color: var(--grey-light);
   display: flex;
+  text-align: center;
+  justify-content: left;
 }
 
 .hero img{
  position: relative;
 }
+ .container{
+  position: absolute;
+  text-align: left;
+  margin-top: 5rem;
+  margin-left: 3rem;
+ }
 
 .hero h1 {
-  position: absolute;
   margin-bottom: 1rem;
   font-size: 2.5rem;
+  color: #fff;
 }
 
 .hero p {
-  position:absolute;
-  font-size: 1.2rem;
+  font-size: 1rem;
   margin-bottom: 2rem;
+  color: #fff;
 }
 
-.hero button{
-  position: absolute;
-}
 
+/* Main */
+main{
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  column-gap: 4rem;
+
+}
 
 /* Headings */
 
