@@ -5,13 +5,13 @@
  * 
  */
 
- :root {
-   --grey-dark: #292b2c;
-   --grey-light: #e4e4e4;
-   --orange-dark: #c05326;
-   --orange-light: #f7eae4;
-   --white: #fff;
- }
+:root {
+  --grey-dark: #292b2c;
+  --grey-light: #e4e4e4;
+  --orange-dark: #c05326;
+  --orange-light: #f7eae4;
+  --white: #fff;
+}
 
 body {
   margin: 0;
@@ -24,7 +24,12 @@ button {
   font-size: 1rem;
 }
 
-h1,h2,h3,h4,h5,h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   margin-top: 0;
   margin-bottom: 0;
 }
@@ -63,6 +68,7 @@ p {
 .navigation__list {
   display: flex;
   list-style: none;
+  gap: 1rem;
 }
 
 .navigation__item {
@@ -76,6 +82,9 @@ p {
   text-decoration: none;
 }
 
+.navigation__link:hover {
+  color: orangered;
+}
 
 /* Text styles */
 
@@ -92,11 +101,22 @@ p {
   border-left-color: var(--orange-dark);
 }
 
-
 /* Buttons */
 
-  /* INSERT BUTTON STYLES HERE */
+button {
+  background-color: orangered;
+  color: white;
+  border: 1px solid orangered;
+  border-radius: 5%;
+  padding: 0.5rem;
+  font-weight: bold;
+}
 
+.hero .volunteer {
+  background-color: white;
+  color: orangered;
+  border: 1px solid white;
+}
 
 /* Content */
 
@@ -120,20 +140,28 @@ p {
 /* hero */
 
 .hero {
-  background-image: url("header-bike.jpg");
+  background-image: url("../images/header-bike.jpg");
   background-color: var(--grey-light);
+  background-size: cover;
+  height: 37vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-left: 2rem;
+  margin-bottom: 2rem;
 }
 
 .hero h1 {
   margin-bottom: 1rem;
   font-size: 2.5rem;
+  color: white;
 }
 
 .hero p {
   font-size: 1.2rem;
   margin-bottom: 2rem;
+  color: white;
 }
-
 
 /* Headings */
 
@@ -158,13 +186,18 @@ p {
   background: var(--orange-dark);
 }
 
-
 /* Article */
 
 .article {
   margin-bottom: 1rem;
+  border: 1px solid gray;
+  padding: 1rem;
 }
 
+.learn-more div {
+  display: flex;
+  gap: 1rem;
+}
 .article__title {
   margin-bottom: 0.5rem;
   font-size: 1rem;
@@ -209,6 +242,7 @@ p {
 
 .facebook-link {
   color: var(--orange-dark);
+  align-self: flex-end;
 }
 
 /* Sidebar */
@@ -217,6 +251,11 @@ p {
   display: flex;
   flex-direction: column;
   min-width: 350px;
+}
+
+.sidebar .article {
+  display: flex;
+  gap: 1rem;
 }
 
 /* Footer */
