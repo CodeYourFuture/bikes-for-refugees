@@ -253,8 +253,8 @@ main{
 }
 
 
-.article__read-more a:hover,
-.article__read-more a:focus {
+.article-read-more a:hover,
+.article-read-more a:focus {
   text-decoration: underline;
 }
 
@@ -275,19 +275,38 @@ main{
   min-width: 350px;
 }
 
-/* Footer */
-
-.footer {
-  margin-top: 2rem;
+.article-r{
+  margin-bottom: 1rem;
+  border: solid rgb(213, 213, 213);
+  padding: 1rem;
+  display: flex;
+  flex-direction: row;
 }
 
-.footer__content {
+
+.article-content{
+  margin-left: 1rem;
+}
+
+.facebook-link{
+  text-align: right;
+}
+
+/* Footer */
+
+footer {
+  margin-top: 2rem;
   border-top: 2px solid var(--orange-light);
   padding-top: 2rem;
+
+}
+
+.footer-content {
+  
   padding-bottom: 2rem;
 }
 
-.footer p {
+footer p {
   padding-bottom: 1rem;
   text-align: center;
   font-size: 0.85rem;
