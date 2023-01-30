@@ -82,6 +82,10 @@ p {
   text-decoration: none;
 }
 
+.navigation__link:hover {
+  color: orangered;
+}
+
 /* Text styles */
 
 .text-highlight {
@@ -238,6 +242,7 @@ button {
 
 .facebook-link {
   color: var(--orange-dark);
+  align-self: flex-end;
 }
 
 /* Sidebar */
