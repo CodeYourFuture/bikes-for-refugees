@@ -105,6 +105,7 @@ button {
   border: 1px solid orangered;
   border-radius: 5%;
   padding: 0.5rem;
+  font-weight: bold;
 }
 
 .hero .volunteer {
@@ -139,6 +140,10 @@ button {
   background-color: var(--grey-light);
   background-size: cover;
   height: 40vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-left: 2rem;
 }
 
 .hero h1 {
@@ -180,6 +185,8 @@ button {
 
 .article {
   margin-bottom: 1rem;
+  border: 1px solid gray;
+  padding: 0.5rem;
 }
 
 .article__title {
