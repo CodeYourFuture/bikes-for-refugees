@@ -178,8 +178,8 @@ p {
 .heading-underline {
   position: relative;
   margin-bottom: 2rem;
-  padding-bottom: 0.5rem;
-  padding-top: 0.5rem;
+  padding-bottom: 1rem;
+  padding-top: 1rem;
   border-bottom: 2px solid var(--orange-light);
   font-size: 1rem;
   font-weight: 600;
