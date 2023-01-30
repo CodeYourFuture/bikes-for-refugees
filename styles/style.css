@@ -139,11 +139,12 @@ button {
   background-image: url("../images/header-bike.jpg");
   background-color: var(--grey-light);
   background-size: cover;
-  height: 40vh;
+  height: 37vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
   padding-left: 2rem;
+  margin-bottom: 2rem;
 }
 
 .hero h1 {
@@ -186,9 +187,13 @@ button {
 .article {
   margin-bottom: 1rem;
   border: 1px solid gray;
-  padding: 0.5rem;
+  padding: 1rem;
 }
 
+.learn-more div {
+  display: flex;
+  gap: 1rem;
+}
 .article__title {
   margin-bottom: 0.5rem;
   font-size: 1rem;
