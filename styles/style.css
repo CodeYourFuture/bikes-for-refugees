@@ -68,6 +68,9 @@ header {
 .nav-bar{
   margin-top: 2rem;
 }
+.nav-bar a:hover{
+  color: var(--orange-dark);
+}
 
 
 /* Text styles */
