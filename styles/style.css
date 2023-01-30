@@ -120,8 +120,12 @@ p {
 /* hero */
 
 .hero {
-  background-image: url("header-bike.jpg");
+  background-image: url("/images/header-bike.jpg");
   background-color: var(--grey-light);
+  color: white;
+  padding-top: 100px;
+  padding-bottom: 100px;
+
 }
 
 .hero h1 {
@@ -163,6 +167,14 @@ p {
 
 .article {
   margin-bottom: 1rem;
+  border: 2px solid lightgrey;
+  
+  
+}
+
+.temp {
+  display: flex;
+  
 }
 
 .article__title {
@@ -173,6 +185,8 @@ p {
 
 .article__content {
   display: flex;
+ 
+  
   
 }
 
@@ -181,14 +195,17 @@ p {
 }
 
 
+
 .article__title-link {
   text-decoration: none;
   color: var(--orange-dark);
+  margin-left: 1rem;
 }
 
 .article__summary {
   margin-top: 0;
   margin-bottom: 1rem;
+  margin-left: 1rem;
 }
 
 .article__thumbnail {
