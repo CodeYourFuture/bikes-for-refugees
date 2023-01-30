@@ -66,7 +66,9 @@ p {
 }
 
 .navigation__item {
-  padding: 0.5rem 0;
+  display: inline;
+  text-align: center;
+  padding: 2rem;
 }
 
 .navigation__link {
@@ -74,6 +76,10 @@ p {
   font-weight: 600;
   text-transform: uppercase;
   text-decoration: none;
+}
+
+.navigation__link:hover{
+  color: #c05326;
 }
 
 
@@ -96,6 +102,45 @@ p {
 /* Buttons */
 
   /* INSERT BUTTON STYLES HERE */
+  
+  button:hover,
+  button:focus {
+  color: #944523;
+  }
+
+  button {
+    background-color: #c05326;
+    color: #fff;
+    border-style: none;
+    padding: 5px 10px;
+    cursor: pointer;
+  }
+  
+.btn1{
+  border-radius: 8px;
+ 
+}
+.btn1:hover{
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.24), 0 6px 50px 0 rgba(0,0,0,0.19);
+  color: black;
+}
+
+  .btn2{
+    border-radius: 30px;
+  }
+  .btn2:hover{
+    color: black;
+  }
+
+  .btn3:hover {
+    color: black;
+  }
+
+  .btn3 {
+    border-radius: 30px;
+    background-color: #fff;
+    color: #c05326;
+  }
 
 
 /* Content */
@@ -120,8 +165,15 @@ p {
 /* hero */
 
 .hero {
-  background-image: url("header-bike.jpg");
+  background-image: url("../images/header-bike.jpg");
   background-color: var(--grey-light);
+  color: white;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 36%;
+  width: 96%;
+  padding-left: 35px;
+  padding-top: 6rem;
 }
 
 .hero h1 {
@@ -140,6 +192,7 @@ p {
 .heading-underline {
   position: relative;
   margin-bottom: 2rem;
+  margin-top: 2rem;
   padding-bottom: 0.5rem;
   border-bottom: 2px solid var(--orange-light);
   font-size: 1rem;
@@ -162,13 +215,18 @@ p {
 /* Article */
 
 .article {
+  display: flex;
   margin-bottom: 1rem;
+  flex-direction: row;
+  border: 1px solid black;
+  padding: 1.5rem 1rem;
 }
 
 .article__title {
   margin-bottom: 0.5rem;
   font-size: 1rem;
   font-weight: 700;
+  padding-left: 10px;
 }
 
 .article__title-link {
@@ -177,8 +235,11 @@ p {
 }
 
 .article__summary {
+  display: flex;
+  align-items: center;
   margin-top: 0;
   margin-bottom: 1rem;
+  padding-left: 10px;
 }
 
 .article__thumbnail {
@@ -188,6 +249,7 @@ p {
 
 .article__read-more {
   margin-top: 0;
+  padding-left: 10px;
 }
 
 .article__read-more a {
@@ -209,6 +271,8 @@ p {
 
 .facebook-link {
   color: var(--orange-dark);
+  display: flex;
+  align-self: flex-end;
 }
 
 /* Sidebar */
