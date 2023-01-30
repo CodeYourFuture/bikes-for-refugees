@@ -271,6 +271,8 @@ p {
 
 .facebook-link {
   color: var(--orange-dark);
+  display: flex;
+  align-self: flex-end;
 }
 
 /* Sidebar */
