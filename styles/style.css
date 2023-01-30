@@ -47,37 +47,32 @@ p {
 
 /* Header */
 
-.header {
+header {
   display: flex;
-  align-items: center;
   justify-content: space-between;
   height: 5rem;
   margin-bottom: 1rem;
   padding-top: 1rem;
 }
 
-.header__logo {
-  max-height: 90px;
-  width: auto;
+.donate-now{
+  max-height: 35px;
+  margin-top: 1.4rem;
+  border-radius: 0.3rem;
+  color: #fff;
+
 }
 
 /* Navigation */
 
-.navigation__list {
-  display: flex;
-  list-style: none;
-}
-
-.navigation__item {
-  padding: 0.5rem 0;
-}
-
-.navigation__link {
-  color: var(--grey-dark);
-  font-weight: 600;
-  text-transform: uppercase;
+.nav-bar a{
+  color: #292b2c;
   text-decoration: none;
-  padding: 0 3rem;
+  font-size: 1.2rem;
+  margin: 0 1.5rem;
+}
+.nav-bar{
+  margin-top: 2rem;
 }
 
 
@@ -138,16 +133,27 @@ button:focus {
 .hero {
   background-image: url("header-bike.jpg");
   background-color: var(--grey-light);
+  display: flex;
+}
+
+.hero img{
+ position: relative;
 }
 
 .hero h1 {
+  position: absolute;
   margin-bottom: 1rem;
   font-size: 2.5rem;
 }
 
 .hero p {
+  position:absolute;
   font-size: 1.2rem;
   margin-bottom: 2rem;
+}
+
+.hero button{
+  position: absolute;
 }
 
 
