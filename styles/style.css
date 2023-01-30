@@ -89,6 +89,8 @@ p {
   height: 5rem;
   margin-bottom: 1rem;
   padding-top: 1rem;
+  padding-left: 10%;
+  padding-right: 10%;
 }
 
 .header__logo {
