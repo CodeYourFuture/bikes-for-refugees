@@ -173,6 +173,12 @@ button:focus {
   color: #fff;
 }
 
+.two-articles{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 1rem;
+}
+
 
 /* Main */
 main{
@@ -210,39 +216,42 @@ main{
 
 .article {
   margin-bottom: 1rem;
+  border: solid rgb(213, 213, 213);
+  padding: 1rem;
 }
 
-.article__title {
+.article-title {
   margin-bottom: 0.5rem;
   font-size: 1rem;
   font-weight: 700;
 }
 
-.article__title-link {
-  text-decoration: none;
-  color: var(--orange-dark);
-}
-
-.article__summary {
-  margin-top: 0;
-  margin-bottom: 1rem;
-}
-
-.article__thumbnail {
-  object-fit: contain;
-  width: 5rem;
-}
-
-.article__read-more {
-  margin-top: 0;
-}
-
-.article__read-more a {
+.article a{
   font-size: 0.85rem;
   font-weight: 700;
   color: var(--orange-dark);
   text-decoration: none;
 }
+
+.article-link {
+  text-decoration: none;
+  color: var(--orange-dark);
+}
+
+.article-summary {
+  margin-top: 0;
+  margin-bottom: 1rem;
+}
+
+.article-thumbnail {
+  object-fit: contain;
+  width: 5rem;
+}
+
+.article-read-more {
+  margin-top: 0;
+}
+
 
 .article__read-more a:hover,
 .article__read-more a:focus {
