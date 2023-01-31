@@ -35,9 +35,9 @@ There are 3 buttons on the page: can you style them correctly so they follow the
 
 ### Exercise 4) Add spacing
 
-- Add more space **inside** the hero section so that more of the image is visible. 
-- Add more space **below** the hero section to move the 'Learn more' section down.
-- Use the `padding` property to add some more horizontal space between the navigation links in the header.
++ Add more space **inside** the hero section so that more of the image is visible. 
++ Add more space **below** the hero section to move the 'Learn more' section down.
++ Use the `padding` property to add some more horizontal space between the navigation links in the header.
 
 ### Exercise 5) Fix the positioning
 
@@ -48,8 +48,8 @@ Also add borders and spacing if required to match the design.
 ### Bonus: hover effects
 
 Add a hover effect using CSS, so that:
-  1) The links in the top menu navigation become orange on hover
-  2) The colours of the buttons are inverted on hover
+  1) The links in the top menu navigation become orange on hover +
+  2) The colours of the buttons are inverted on hover +
 
 ## Submit your work
 
