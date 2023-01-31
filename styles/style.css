@@ -182,34 +182,14 @@ p {
 /* Article */
 
 .container1 {
-  display: flex;
-  flex-wrap: wrap; 
-  border: grey, solid;
-  width: 50%;
-  justify-content: left;
-  
-
-
-}
-  
-.container2 {
-  display: flex;
-  flex-wrap: wrap; 
-  border: grey, solid;
-
-  width: 50%;
-  justify-content: right;
-  
-  
-
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 1rem;
+  border: grey, solid, 1rem;
 
 }
   
 
-.article {
-  margin-bottom: 1rem; 
-  
-}
 
 .article__title {
   margin-bottom: 0.5rem;
