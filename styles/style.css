@@ -20,7 +20,7 @@ body {
 body,
 button {
   font-family: "Source Sans Pro", "Helvetica Neue", Arial, sans-serif;
-  color: var(--grey-dark);
+  
   font-size: 1rem;
 }
 
@@ -61,7 +61,7 @@ p {
 /* Navigation */
 
 
-a:hover {
+.navigation__list a:hover {
   background-color: orange;
 }
 
@@ -133,6 +133,7 @@ a:hover {
 .content {
   display: flex;
   flex-direction: column;
+
 }
 
 /* Alert */
@@ -150,8 +151,10 @@ a:hover {
 /* hero */
 
 .hero {
-  
-  background-image: url("images/header-bike.jpg");
+  background-image: url(../images/header-bike.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 300px;
   padding: 3rem;
   margin-bottom: 5rem;
 }
