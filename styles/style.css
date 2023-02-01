@@ -103,10 +103,11 @@ button:hover,button:focus {
 button {
  padding: 0.5rem;
  border: 0;
- border-radius: 30%;
+ border-radius: 3%;
 }
 .donate {
  background-color: #c05326;
+ color: white;
 }
 .volunteer {
  background-color: #fff;
@@ -157,18 +158,30 @@ button {
 /* hero */
 
 .hero {
- background-image: url("header-bike.jpg");
+
  background-color: var(--grey-light);
+ background-image: url("/images/header-bike.jpg");
+ background-size: cover;
+ height: 250px;
+ max-width: 1200px;
+ padding-left:2rem;
+ padding-top: 4rem;
+ margin-bottom: 3rem;
+
+ 
 }
 
 .hero h1 {
  margin-bottom: 1rem;
- font-size: 2.5rem;
+ font-size: 2rem;
+ color: white
 }
 
 .hero p {
  font-size: 1.2rem;
- margin-bottom: 2rem;
+ margin-bottom: 1rem;
+ color: white;
+ 
 }
 
 
@@ -198,8 +211,15 @@ button {
 
 /* Article */
 
+.main-articles {
+  display: flex;
+  flex-direction: row;
+}
+
 .article {
  margin-bottom: 1rem;
+border: 1px solid var(--grey-light);
+padding: 1rem;
 }
 
 .article__title {
