@@ -119,7 +119,7 @@ button {
 .sidebar
 {
   display: flex;
-  justify-content: space-between;
+
   flex-direction: column;
 }
 .box:last-child {
@@ -211,7 +211,7 @@ button {
 .sidebar
 {
   display: flex;
-  justify-content: space-between;
+  
   flex-direction: column;
 }
 /* Article */
@@ -227,7 +227,7 @@ button {
   border-style: solid;
   border-color: #d8dbdd;
   padding: 1rem;
-  margin-bottom: 1rem;
+  margin-bottom: 2rem;
   width: 15rem; 
   display: flex;
 }
@@ -250,11 +250,9 @@ button {
 }
 
 .article__thumbnail {
-  object-fit: cont0ain;
-  width: auto;
-  height: 2rem;
-  align-items: center;
-  padding-right: 1rem;
+  object-fit: contain;
+  width: 5rem;
+  margin-right: 10px;
 }
 
 .article__read-more {
