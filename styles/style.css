@@ -214,12 +214,23 @@ button {
 .main-articles {
   display: flex;
   flex-direction: row;
+  justify-content: space-between;
 }
 
-.article {
+.article-item {
  margin-bottom: 1rem;
 border: 1px solid var(--grey-light);
 padding: 1rem;
+width: 300px;
+}
+
+.article {
+  margin-bottom: 1rem;
+ border: 1px solid var(--grey-light);
+ padding: 1rem;
+ display: flex;
+ justify-content: center;
+ width: 300px;
 }
 
 .article__title {
@@ -241,6 +252,7 @@ padding: 1rem;
 .article__thumbnail {
  object-fit: contain;
  width: 5rem;
+ padding-right: 1rem;
 }
 
 .article__read-more {
@@ -267,7 +279,9 @@ padding: 1rem;
 .facebook-link {
  color: var(--orange-dark);
 }
-
+article a {
+  ;
+}
 /* Sidebar */
 
 .sidebar {
@@ -275,7 +289,10 @@ padding: 1rem;
  flex-direction: column;
  min-width: 350px;
 }
-
+.facebook-link {
+  text-align: end;
+  margin-right: 15px;
+}
 /* Footer */
 
 .footer {
