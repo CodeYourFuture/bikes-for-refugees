@@ -208,12 +208,7 @@ button {
   flex-direction: row;
   
 }
-.sidebar
-{
-  display: flex;
-  
-  flex-direction: column;
-}
+
 /* Article */
 
 .article {
@@ -278,6 +273,7 @@ button {
 
 .facebook-link {
   color: var(--orange-dark);
+  margin-left: 8rem;
 }
 
 /* Sidebar */
@@ -299,7 +295,9 @@ button {
   padding-top: 2rem;
   padding-bottom: 2rem;
 }
-
+.sidebar a{
+  padding-left: 6 rem;
+}
 .footer p {
   padding-bottom: 1rem;
   text-align: center;
