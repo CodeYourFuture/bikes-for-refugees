@@ -5,13 +5,13 @@
  * 
  */
 
- :root {
-   --grey-dark: #292b2c;
-   --grey-light: #e4e4e4;
-   --orange-dark: #c05326;
-   --orange-light: #f7eae4;
-   --white: #fff;
- }
+:root {
+  --grey-dark: #292b2c;
+  --grey-light: #e4e4e4;
+  --orange-dark: #c05326;
+  --orange-light: #f7eae4;
+  --white: #fff;
+}
 
 body {
   margin: 0;
@@ -22,9 +22,36 @@ button {
   font-family: "Source Sans Pro", "Helvetica Neue", Arial, sans-serif;
   color: var(--grey-dark);
   font-size: 1rem;
+  margin:0px 0px 0px 50px
+}
+button:hover {
+  background-color: #934423;
+}
+button:focus {
+  background-color: #575554;
+}
+.white-button {
+  background-color: #fbfbfb;
+  color:#c14611
+
+}
+.red-button {
+  background-color: #ff8800;
+  color: #fff;
+}
+.red-button:hover {
+  background-color: green;
+}
+.white-button:hover {
+  background-color: aqua;
 }
 
-h1,h2,h3,h4,h5,h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   margin-top: 0;
   margin-bottom: 0;
 }
@@ -34,9 +61,9 @@ p {
   margin-bottom: 0;
 }
 
-.header,
+header,
 .content,
-.footer {
+footer {
   padding: 0 1.5rem;
   max-width: 1200px;
   margin: 0 auto;
@@ -44,7 +71,7 @@ p {
 
 /* Header */
 
-.header {
+header {
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -76,7 +103,6 @@ p {
   text-decoration: none;
 }
 
-
 /* Text styles */
 
 .text-highlight {
@@ -92,11 +118,9 @@ p {
   border-left-color: var(--orange-dark);
 }
 
-
 /* Buttons */
 
-  /* INSERT BUTTON STYLES HERE */
-
+/* INSERT BUTTON STYLES HERE */
 
 /* Content */
 
@@ -120,20 +144,27 @@ p {
 /* hero */
 
 .hero {
-  background-image: url("header-bike.jpg");
+  background-image: url("/images/header-bike.jpg");
   background-color: var(--grey-light);
+  height:300px;
+  
+  
 }
 
 .hero h1 {
   margin-bottom: 1rem;
   font-size: 2.5rem;
+  color: #f7eae4;
+  margin: 50px;
 }
 
 .hero p {
   font-size: 1.2rem;
   margin-bottom: 2rem;
-}
+  color:#fbfbfb;
+  margin:50px
 
+}
 
 /* Headings */
 
@@ -158,10 +189,9 @@ p {
   background: var(--orange-dark);
 }
 
-
 /* Article */
 
-.article {
+article {
   margin-bottom: 1rem;
 }
 
@@ -213,7 +243,7 @@ p {
 
 /* Sidebar */
 
-.sidebar {
+aside {
   display: flex;
   flex-direction: column;
   min-width: 350px;
@@ -221,20 +251,23 @@ p {
 
 /* Footer */
 
-.footer {
+footer {
   margin-top: 2rem;
+
 }
 
 .footer__content {
   border-top: 2px solid var(--orange-light);
   padding-top: 2rem;
   padding-bottom: 2rem;
+  
 }
 
 .footer p {
   padding-bottom: 1rem;
   text-align: center;
   font-size: 0.85rem;
+  
 }
 
 /* Media queries */
@@ -244,7 +277,7 @@ p {
     flex-direction: row;
   }
 
-  .main {
+  main {
     padding-right: 2rem;
   }
 }
