@@ -22,6 +22,7 @@ button {
   font-family: "Source Sans Pro", "Helvetica Neue", Arial, sans-serif;
   color: var(--grey-dark);
   font-size: 1rem;
+  margin:0px 0px 0px 50px
 }
 button:hover {
   background-color: #934423;
@@ -29,17 +30,19 @@ button:hover {
 button:focus {
   background-color: #575554;
 }
-.white_btton {
-  background-color: #c05326;
+.white-button {
+  background-color: #fbfbfb;
+  color:#c14611
+
 }
-.red_button {
+.red-button {
   background-color: #ff8800;
   color: #fff;
 }
-.red_button:hover {
+.red-button:hover {
   background-color: green;
 }
-.white_btton:hover {
+.white-button:hover {
   background-color: aqua;
 }
 
@@ -143,17 +146,24 @@ header {
 .hero {
   background-image: url("/images/header-bike.jpg");
   background-color: var(--grey-light);
+  height:300px;
+  
+  
 }
 
 .hero h1 {
   margin-bottom: 1rem;
   font-size: 2.5rem;
   color: #f7eae4;
+  margin: 50px;
 }
 
 .hero p {
   font-size: 1.2rem;
   margin-bottom: 2rem;
+  color:#fbfbfb;
+  margin:50px
+
 }
 
 /* Headings */
@@ -243,18 +253,21 @@ aside {
 
 footer {
   margin-top: 2rem;
+
 }
 
 .footer__content {
   border-top: 2px solid var(--orange-light);
   padding-top: 2rem;
   padding-bottom: 2rem;
+  
 }
 
 .footer p {
   padding-bottom: 1rem;
   text-align: center;
   font-size: 0.85rem;
+  
 }
 
 /* Media queries */
