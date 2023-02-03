@@ -163,6 +163,7 @@ p {
 .heading-underline {
   position: relative;
   margin-bottom: 2rem;
+  margin-top: 3rem;
   padding-bottom: 0.5rem;
   border-bottom: 2px solid var(--orange-light);
   font-size: 1rem;
@@ -186,6 +187,19 @@ p {
 
 .article {
   margin-bottom: 1rem;
+  padding: 10px;
+  border: 1px solid rgb(197, 170, 143); 
+  display:flex;
+  /* justify-content: center; */
+  flex-direction: row;
+ }
+
+.article-underline {
+  margin-bottom: 1rem;
+  padding: 10px;
+  border: 1px solid rgb(197, 170, 143); 
+ 
+
 }
 
 .article__title {
@@ -207,6 +221,8 @@ p {
 .article__thumbnail {
   object-fit: contain;
   width: 5rem;
+  padding-right: 20px
+  
 }
 
 .article__read-more {
@@ -228,10 +244,13 @@ p {
 .fa {
   margin-right: 0.5rem;
   color: var(--orange-dark);
+  
 }
 
 .facebook-link {
   color: var(--orange-dark);
+  display: flex;
+  justify-content: flex-end;
 }
 
 /* Sidebar */
@@ -240,6 +259,7 @@ p {
   display: flex;
   flex-direction: column;
   min-width: 350px;
+ 
 }
 
 /* Footer */
