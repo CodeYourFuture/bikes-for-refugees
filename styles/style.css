@@ -139,6 +139,25 @@ p {
 }
 
 
+/* button  */
+.button{
+  border: none;
+  padding: 9px;
+  font-weight: 600;
+  font-size: 1rem;
+}
+
+.orange-button{
+  background-color: rgb(226, 94, 5);
+  color: white;
+}
+
+.white-button{
+  background-color: white;
+  color:  rgb(226, 94, 5);
+
+}
+
 /* Headings */
 
 .heading-underline {
