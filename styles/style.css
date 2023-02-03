@@ -66,7 +66,8 @@ p {
 }
 
 .navigation__item {
-  padding: 0.5rem 0;
+  padding: 1rem;
+
 }
 
 .navigation__link {
@@ -74,6 +75,14 @@ p {
   font-weight: 600;
   text-transform: uppercase;
   text-decoration: none;
+}
+
+.navigation__link:hover{
+  color:orange;
+}
+
+header button:hover{
+  background-color: #292b2c;
 }
 
 
