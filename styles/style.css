@@ -181,16 +181,23 @@ p {
 
 /* Article */
 
-.container1 {
+.container {
   display: flex;
   flex-direction:row;
   min-width: 350px;
-  border-width: 0.1rem;
-  border-color: grey;
-
+  gap: 1rem;
+  
 }
 
-  
+  .container article {
+  border-width: 0.1rem;
+  border-style: solid;
+  border-color: grey;
+  padding: 1rem;
+  flex: 1;
+
+
+  }
 
 
 .article__title {
@@ -247,9 +254,27 @@ p {
 .sidebar {
   display: flex;
   flex-direction: column;
+  flex-wrap: wrap;
   min-width: 350px;
   border-width: 0.1rem;
+  gap: 1rem;
+ 
+  
+}
+.sidebar article {
+  display: flex;
+  border-width: 0.1rem;
+  border-style: solid;
   border-color: grey;
+  padding:0.3rem 0.5rem;
+  flex: auto;
+  gap: 1rem;
+
+}
+
+.article__thumbnail{
+  flex-direction: row;
+  
   
 }
 
