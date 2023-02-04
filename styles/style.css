@@ -45,7 +45,8 @@ p {
 /* Header */
 
 .header {
-  display: flex;
+  display: flex; 
+  flex-direction: row;
   align-items: center;
   justify-content: space-between;
   height: 5rem;
@@ -62,6 +63,7 @@ p {
 
 .navigation__list {
   display: flex;
+  flex-direction: row;
   list-style: none;
 }
 
@@ -76,6 +78,7 @@ p {
   font-weight: 600;
   text-transform: uppercase;
   text-decoration: none;
+  padding: 0.5rem;
 }
 
 .navigation__link:hover{
@@ -269,6 +272,7 @@ p {
 
 .facebook-link {
   color: var(--orange-dark);
+  text-align: right;
 }
 
 /* Sidebar */
@@ -278,6 +282,14 @@ p {
   justify-content: center;
   flex-direction: column;
   min-width: 350px;
+}
+
+.article_sidebar{
+  display: flex;
+  flex-direction: row;
+  border: 1px solid black;
+  margin-bottom: 10px;
+  padding: 10px;
 }
 
 /* Footer */
