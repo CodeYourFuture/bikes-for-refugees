@@ -21,13 +21,21 @@ body,
 button {
   font-family: "Source Sans Pro", "Helvetica Neue", Arial, sans-serif;
   color: var(--grey-dark);
+  padding: 8px 21px;
   font-size: 1rem;
+  border-radius: 8px;
 }
+
+.header1 {
+  color: var(--white)
+}
+
 
 h1,h2,h3,h4,h5,h6 {
   margin-top: 0;
   margin-bottom: 0;
 }
+
 
 p {
   margin-top: 0;
@@ -63,6 +71,12 @@ p {
 .navigation__list {
   display: flex;
   list-style: none;
+  justify-content: space-between;
+  width: 400px;
+}
+
+.navigation__list a:hover {
+  color: #c05326;
 }
 
 .navigation__item {
@@ -75,6 +89,8 @@ p {
   text-transform: uppercase;
   text-decoration: none;
 }
+
+
 
 
 /* Text styles */
@@ -94,7 +110,18 @@ p {
 
 
 /* Buttons */
+  .btn-1 {
+  color: white;
+  background-color: #c05326;
+}
+ 
+  .btn-1:hover {
+    color: #c05326;
+    background-color: #e4e4e4;
+  }
 
+  
+  
   /* INSERT BUTTON STYLES HERE */
 
 
@@ -104,6 +131,8 @@ p {
   display: flex;
   flex-direction: column;
 }
+
+
 
 /* Alert */
 
@@ -120,8 +149,12 @@ p {
 /* hero */
 
 .hero {
-  background-image: url("header-bike.jpg");
+  background-image: url("../images/header-bike.jpg");
   background-color: var(--grey-light);
+  height: 260px;
+  width: 820px;
+  padding-top: 100px;
+  background-size: cover;
 }
 
 .hero h1 {
@@ -202,6 +235,67 @@ p {
   text-decoration: underline;
 }
 
+.needbikes {
+  display: flex;
+  
+}
+
+.needbikes .article {
+  border-style: solid  ;
+  border-radius: 10px;
+  border-width: thin;
+  border-color: rgb(196, 196, 181);
+  padding: 10px;
+  margin-right: 10px;
+  
+}
+
+.article1 {
+  display:flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  border-style: solid;
+  border-radius: 10px;
+  border-width: thin;
+  border-color: rgb(196, 196, 181)
+}
+
+.article1 img {
+  margin-right: 2rem;
+}
+
+.article2 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  border-style: solid;
+  border-radius: 10px;
+  border-width: thin;
+  border-color: rgb(196, 196, 181);
+}
+
+.article2 img {
+  margin-right: 2rem;
+}
+
+.article3 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  border-style: solid ;
+  border-width: thin;
+  border-radius: 10px;
+  border-color: rgb(196, 196, 181)
+}
+
+.article3 img {
+  margin-right: 2rem;
+}
+
+
 .fa {
   margin-right: 0.5rem;
   color: var(--orange-dark);
@@ -209,6 +303,7 @@ p {
 
 .facebook-link {
   color: var(--orange-dark);
+  text-align: right;
 }
 
 /* Sidebar */
