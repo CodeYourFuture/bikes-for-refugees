@@ -15,6 +15,7 @@
 
 body {
   margin: 0;
+  padding: 0;
 }
 
 body,
@@ -22,6 +23,7 @@ button {
   font-family: "Source Sans Pro", "Helvetica Neue", Arial, sans-serif;
   color: var(--grey-dark);
   font-size: 1rem;
+  
 }
 
 h1,h2,h3,h4,h5,h6 {
@@ -46,11 +48,11 @@ p {
 
 .header {
   display: flex;
-  align-items: center;
+  text-align: start;
   justify-content: space-between;
   height: 5rem;
   margin-bottom: 1rem;
-  padding-top: 1rem;
+  padding: 1.5rem 2.5rem;
 }
 
 .header__logo {
@@ -59,14 +61,25 @@ p {
 }
 
 /* Navigation */
+a:hover {
+  background-color: orange;
+}
+
+#menu {
+  display: flex;
+  justify-content: start;
+  width: 900px;
+}
 
 .navigation__list {
   display: flex;
   list-style: none;
+  n
 }
 
 .navigation__item {
   padding: 0.5rem 0;
+  margin:0px 20px;
 }
 
 .navigation__link {
@@ -74,6 +87,7 @@ p {
   font-weight: 600;
   text-transform: uppercase;
   text-decoration: none;
+  padding: 0.5rem 0;
 }
 
 
@@ -96,7 +110,25 @@ p {
 /* Buttons */
 
   /* INSERT BUTTON STYLES HERE */
-
+.button-donate {
+    background: orangered;
+    border-radius: 5px;
+    color:#fff;
+    border-style: none;
+    padding: 15x 10px;
+    height: 35px;
+    font-weight: lighter
+    }
+    #button-volunteer {
+      background: #fff;
+      color: orangered;
+      border-radius: 5px;
+      color: orange-red;
+      border-style: none;
+      padding: 15x 10px;
+    height: 35px;
+    font-weight: lighter;
+    }
 
 /* Content */
 
@@ -120,18 +152,21 @@ p {
 /* hero */
 
 .hero {
-  background-image: url("header-bike.jpg");
-  background-color: var(--grey-light);
+  background-image: url("../images/header-bike.jpg");
+  padding: 3rem;
+  margin-bottom: 5rem;
 }
 
 .hero h1 {
   margin-bottom: 1rem;
-  font-size: 2.5rem;
+  font-size: 3.5rem;
+  color: #e4e4e4;
 }
 
 .hero p {
-  font-size: 1.2rem;
+  font-size: 1.3rem;
   margin-bottom: 2rem;
+  color:#e4e4e4
 }
 
 
@@ -161,8 +196,32 @@ p {
 
 /* Article */
 
+.main-article {
+  display: flex;
+  justify-content: center;
+}
+
+#main-article1 {
+ margin-right: 1rem; 
+}
+
+#main-article2 {
+  margin-left: 1rem; 
+ }
+
 .article {
+
+  border: 2px solid lightgray;
   margin-bottom: 1rem;
+  padding: 1rem;
+
+}
+.article2{
+  display: flex;
+  justify-content: flex-start;
+  border: 2px solid lightgray;
+  margin-bottom: 1rem;
+  padding: 1.5rem 0rem;
 }
 
 .article__title {
@@ -184,6 +243,7 @@ p {
 .article__thumbnail {
   object-fit: contain;
   width: 5rem;
+  margin-right: 1rem;
 }
 
 .article__read-more {
