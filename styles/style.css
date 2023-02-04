@@ -177,12 +177,17 @@ buttons{
 
 .article {
  margin-bottom: 1rem;
+ border: 1px solid black;
+ align-items: center;
+ padding-top: 20px;
+ padding-bottom: 20px;
 }
 
 .article__title {
  margin-bottom: 0.5rem;
  font-size: 1rem;
  font-weight: 700;
+ padding-left: 10px;
 }
 
 .article__title-link {
@@ -233,6 +238,14 @@ buttons{
  flex-direction: column;
  min-width: 350px;
  
+}
+
+.article-sidebar{
+  display: flex;
+  flex-direction: row;
+  border: 1px solid black;
+  margin-bottom: 10px;
+  padding: 10px;
 }
 
 /* Footer */

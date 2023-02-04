@@ -1,0 +1,20 @@
+  164  git branch -ls
+  165  git branch -l
+  166  git checkout homework
+  167  git add index.html, style.css
+  168* git add index.htm
+  169  git status
+  170  styles/style.css
+  171  git add styles/style.css
+  172  git status
+  173  git commit -m"first changes"
+  174  git push
+  175  git push --set-upstream origin homework
+  176  git push
+  177  git check
+  178  git checkout main
+  179  git log
+  180  git pull
+  181  history 10
+  182  history 20
+  183  history 20 > git-commands.txt
