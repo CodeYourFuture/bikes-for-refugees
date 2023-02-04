@@ -182,12 +182,14 @@ p {
 /* Article */
 
 .container1 {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-gap: 1rem;
-  border: grey, solid, 1rem;
+  display: flex;
+  flex-direction:row;
+  min-width: 350px;
+  border-width: 0.1rem;
+  border-color: grey;
 
 }
+
   
 
 
