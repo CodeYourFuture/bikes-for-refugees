@@ -253,11 +253,13 @@ p {
 
 .sidebar {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   flex-wrap: wrap;
   min-width: 350px;
   border-width: 0.1rem;
   gap: 1rem;
+  flex: 300px;
+
  
   
 }
@@ -266,9 +268,10 @@ p {
   border-width: 0.1rem;
   border-style: solid;
   border-color: grey;
-  padding:0.3rem 0.5rem;
+  padding:0.3rem 0.3rem;
   flex: auto;
   gap: 1rem;
+  
 
 }
 
