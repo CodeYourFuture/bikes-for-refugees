@@ -220,7 +220,7 @@ p {
 .article {
   display: flex;
   margin-bottom: 1rem;
-  flex-direction: row;
+  flex-direction: column;
   border: 1px solid black;
   padding: 1.5rem 1rem;
 }
@@ -278,7 +278,6 @@ p {
   text-align: right;
 =======
   display: flex;
-  align-self: flex-end;
 >>>>>>> 35d0030bb558658996221340cf501774ab3d2bdb
 }
 
