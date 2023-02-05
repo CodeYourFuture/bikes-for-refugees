@@ -22,6 +22,7 @@ button {
   font-family: "Source Sans Pro", "Helvetica Neue", Arial, sans-serif;
   color: var(--grey-dark);
   font-size: 1rem;
+  
 }
 
 h1,h2,h3,h4,h5,h6 {
@@ -63,10 +64,11 @@ p {
 .navigation__list {
   display: flex;
   list-style: none;
+  padding: 0 3px;
 }
 
 .navigation__item {
-  padding: 0.5rem 0;
+  padding: 0.5rem 12px;
 }
 
 .navigation__link {
@@ -94,8 +96,12 @@ p {
 
 
 /* Buttons */
-
-  /* INSERT BUTTON STYLES HERE */
+.header button {
+  background-color: #c05326;
+  color: white;
+  border: none;
+  padding: 7px 7px;
+}
 
 
 /* Content */
@@ -120,18 +126,48 @@ p {
 /* hero */
 
 .hero {
-  background-image: url("header-bike.jpg");
+  background-image: url("../images/header-bike.jpg");
   background-color: var(--grey-light);
+  height: 66%;
+    width: 94%;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
 }
 
 .hero h1 {
   margin-bottom: 1rem;
   font-size: 2.5rem;
+  color: white;
 }
 
 .hero p {
   font-size: 1.2rem;
   margin-bottom: 2rem;
+  color: white;
+}
+
+.heroButton {
+  display: flex;
+  flex-direction: row;
+}
+
+.hero button {
+ border: none;
+ margin: 0 14px;
+  padding: 7px 5px;;
+}
+
+.donateButton{
+  background-color: #c05326;
+  color: white;
+}
+.VolunteerButton {
+  background-color: white;
+  color: #c05326;
+
 }
 
 
