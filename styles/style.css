@@ -66,7 +66,7 @@ p {
 }
 
 .navigation__item {
-  padding: 0.5rem 0;
+  padding: 2rem;
 }
 
 .navigation__link {
@@ -93,12 +93,23 @@ p {
 }
 
 
-/* Buttons */
+.orangebutton {
+  background-color: #c05326;
+  color: #fff;
+  border: #c05326;
+  border-radius: 0.5em;
+  font-size: small;
+  padding: 0.5rem;
+  
+}
+.whitebutton {background-color: #fff;
+  color: #c05326;
+  border: #fff;
+  border-radius: 0.5em;
+  font-size: small;
+  padding: 0.5rem;
 
-  /* INSERT BUTTON STYLES HERE */
-
-
-/* Content */
+}
 
 .content {
   display: flex;
@@ -120,18 +131,26 @@ p {
 /* hero */
 
 .hero {
-  background-image: url("header-bike.jpg");
+  background-image: url(../images/header-bike.jpg);
   background-color: var(--grey-light);
+  padding: 5em;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
 }
 
 .hero h1 {
   margin-bottom: 1rem;
   font-size: 2.5rem;
+  color: #fff;
+  ;
+  
 }
 
 .hero p {
   font-size: 1.2rem;
   margin-bottom: 2rem;
+  color: #fff;
 }
 
 
@@ -140,6 +159,7 @@ p {
 .heading-underline {
   position: relative;
   margin-bottom: 2rem;
+  padding-top: 3rem;
   padding-bottom: 0.5rem;
   border-bottom: 2px solid var(--orange-light);
   font-size: 1rem;
@@ -161,14 +181,30 @@ p {
 
 /* Article */
 
-.article {
-  margin-bottom: 1rem;
+.container {
+  display: flex;
+  flex-direction:row;
+  min-width: 350px;
+  gap: 1rem;
+  
 }
+
+  .container article {
+  border-width: 0.1rem;
+  border-style: solid;
+  border-color: grey;
+  padding: 1rem;
+  flex: 1;
+
+
+  }
+
 
 .article__title {
   margin-bottom: 0.5rem;
   font-size: 1rem;
   font-weight: 700;
+  
 }
 
 .article__title-link {
@@ -179,11 +215,13 @@ p {
 .article__summary {
   margin-top: 0;
   margin-bottom: 1rem;
+  
 }
 
 .article__thumbnail {
   object-fit: contain;
   width: 5rem;
+  
 }
 
 .article__read-more {
@@ -215,8 +253,32 @@ p {
 
 .sidebar {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
+  flex-wrap: wrap;
   min-width: 350px;
+  border-width: 0.1rem;
+  gap: 1rem;
+  flex: 300px;
+
+ 
+  
+}
+.sidebar article {
+  display: flex;
+  border-width: 0.1rem;
+  border-style: solid;
+  border-color: grey;
+  padding:0.3rem 0.3rem;
+  flex: auto;
+  gap: 1rem;
+  
+
+}
+
+.article__thumbnail{
+  flex-direction: row;
+  
+  
 }
 
 /* Footer */
