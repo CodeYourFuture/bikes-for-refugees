@@ -133,6 +133,10 @@ button {
   border: none;
   border-radius: 0.20rem;
 }
+.afsha{
+  display: flex;
+  gap: 10px;
+}
 
 #volunteer-btn {
   background-color: #fff;
@@ -246,6 +250,7 @@ div span:last-child {
   width: 45rem;
   height: 20 rem;
   justify-content: space-betweenf;
+  gap: 10px;
 }
 
 article {
