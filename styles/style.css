@@ -148,16 +148,19 @@ list-style: none;
 /* hero */
 
 
-.hero {
-background-image: url(/images/header-bike.jpg);
-background-color: var(--grey-light);
-padding-top: 4rem;
-padding-bottom: 5rem;
-padding-left: 2rem;
-padding-right: 2rem;
-line-height: 1.5;
-align-content: flex-end;
-}
+
+
+  .hero {
+    background-image: url('/images/header-bike.jpg ');
+    background-color: var(--grey-light);
+    /* text-align: center; */
+    background-size: cover;
+    padding: 5rem;
+    line-height: 1.5;
+    align-content: flex-end;
+  }
+    
+
 
 .hero-title {
 font-weight: bold;
@@ -207,41 +210,125 @@ margin-bottom: 2rem;
 
 
 /* Article */
-
+/* 
 .article {
   margin-bottom: 1rem;
  border-style: solid;
  border-radius: 5px;
  border-width: thin;
+ border-color: var(--grey-light); */
+
+
+ 
+
+ .article1 {
+  margin-bottom: 1rem;
+ border-style: solid;
+ border-radius: 5px;
+ border-width: thin;
  border-color: var(--grey-light);
-
-
- }
-
+ width: 350px;
+ height: 150px;
+ padding: 1rem;
+ 
+ } 
+ 
+ .article2 {
+  margin-bottom: 1rem;
+ border-style: solid;
+ border-radius: 5px;
+ border-width: thin;
+ border-color: var(--grey-light);
+ width: 350px;
+ height: 150px;
+ padding: 1rem;
  
  
+ } 
+ 
+#boxes {
+
+  display: flex;
+  
+  
+}
+
+
+.article3
+{
+  margin-bottom: 1rem;
+ border-style: solid;
+ border-radius: 5px;
+ border-width: thin;
+ border-color: var(--grey-light);
+  display: flex;
+  min-width: 350px;
+  min-height:  100px;
+}
+
+.article4
+{
+  margin-bottom: 1rem;
+ border-style: solid;
+ border-radius: 5px;
+ border-width: thin;
+ border-color: var(--grey-light);
+  display: flex;
+  min-width: 350px;
+  min-height: 60px;
+}
+
+.article5
+{
+  margin-bottom: 1rem;
+ border-style: solid;
+ border-radius: 5px;
+ border-width: thin;
+ border-color: var(--grey-light);
+  display: flex;
+  min-width: 350px;
+  min-height: 100px;}
+
 
 .article__title {
+  margin-top: 1 rem;
   margin-bottom: 0.5rem;
   font-size: 1rem;
   font-weight: 700;
+  
 
  
 }
 
+.article__content1{
+
+  padding: 1rem;
+}
+
+.article__content2
+{
+  padding: 1rem;
+}
+.article__content3{
+  padding: 1rem;
+}
 .article__title-link {
   text-decoration: none;
   color: var(--orange-dark);
+  
 }
 
 .article__summary {
-  margin-top: 0;
+  margin-top: 1rem;
   margin-bottom: 1rem;
 }
 
 .article__thumbnail {
   object-fit: contain;
   width: 5rem;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+
 }
 
 .article__read-more {
@@ -262,11 +349,16 @@ margin-bottom: 2rem;
 
 .fa {
   margin-right: 0.5rem;
+  
   color: var(--orange-dark);
 }
 
 .facebook-link {
   color: var(--orange-dark);
+}
+
+#link{
+  padding-left: 238px;
 }
 
 /* Sidebar */
