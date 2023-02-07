@@ -48,6 +48,8 @@ p {
   align-items: center;
 }
 
+
+
 .header__logo {
   max-height: 90px;
   width: auto;
@@ -63,7 +65,7 @@ p {
 
 .navigation__item {
   font-size: 0.75rem;
-  margin: 0.5remau;
+  margin: 0.5rem;
   padding: 1rem;
   height: 1.5rem;
   width: auto;
@@ -96,6 +98,28 @@ p {
 /* Buttons */
 
   /* INSERT BUTTON STYLES HERE */
+
+button {
+  background-color: #c05326;
+  color: #fff;
+  padding: 0.7rem 1rem;
+  border: none;
+  border-radius: 0.70rem;
+}
+
+#volunteer-btn {
+  background-color: #fff;
+  color: #c05326;
+}
+
+button:hover, button:focus {
+  background-color: #934423;
+}
+
+#volunteer-btn:hover, #volunteer-btn:focus {
+  background-color: #934423;
+}
+
 
 
 /* Content */
@@ -152,6 +176,34 @@ button:hover {
   margin-bottom: 1rem;
   font-size: 2rem;
   color: white;
+}
+
+
+
+
+.boxes {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.box {
+  border: 2px solid #292b2c;
+  padding: 2.5rem 1.75rem;
+  margin: 3rem;
+  text-align: center;
+  font-size: 1.25rem;
+  font-weight: 600;
+}
+
+div:first-child span{
+  margin-left: 0;
+  background-color: #ddd;
+}
+
+div span:last-child {
+  margin-right: 0;
+  border: 1px solid #ddd;
 }
 
 .hero p {
