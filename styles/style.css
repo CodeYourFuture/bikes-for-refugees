@@ -4,6 +4,11 @@
  * Lesson: 1
  * 
  */
+ *{
+  margin: 0;
+  border: 0;
+  box-sizing:border-box;
+ }
 
  :root {
    --grey-dark: #292b2c;
@@ -94,8 +99,29 @@ p {
 
 
 /* Buttons */
+button{
+  width:220 px ;
+  height:60px ;
+  padding-right: 30px;
+  display: inline-block;
+  font-size: 25px;
+  text-align: center;
+  color: #fff;
+  background: #c05326;
+  border: 2px solid var(--orange-dark);
+  border-radius: 15px;
+  line-height: 1.25;
+  white-space: nowrap;
+  vertical-align: middle;
+}
 
-  /* INSERT BUTTON STYLES HERE */
+.volunter{
+  color:  #c05326;
+  background:#ffff;
+  
+  
+
+}
 
 
 /* Content */
@@ -120,8 +146,11 @@ p {
 /* hero */
 
 .hero {
-  background-image: url("header-bike.jpg");
-  background-color: var(--grey-light);
+  background-image: url("/images/header-bike.jpg");
+  color: #ffffff;
+  height: 60%;
+  /* position:absolute; */
+ 
 }
 
 .hero h1 {
