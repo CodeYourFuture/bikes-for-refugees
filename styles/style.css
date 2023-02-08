@@ -5,13 +5,13 @@
  * 
  */
 
- :root {
-   --grey-dark: #292b2c;
-   --grey-light: #e4e4e4;
-   --orange-dark: #c05326;
-   --orange-light: #f7eae4;
-   --white: #fff;
- }
+:root {
+  --grey-dark: #292b2c;
+  --grey-light: #e4e4e4;
+  --orange-dark: #c05326;
+  --orange-light: #f7eae4;
+  --white: #fff;
+}
 
 body {
   margin: 0;
@@ -50,7 +50,7 @@ p {
   justify-content: space-between;
   height: 5rem;
   margin-bottom: 1rem;
-  padding-top: 1rem;
+  padding: 1rem;
 }
 
 .header__logo {
@@ -62,7 +62,14 @@ p {
 
 .navigation__list {
   display: flex;
+  gap: 2rem;
   list-style: none;
+}
+@media screen and (max-width:600px) {
+  .navigation__list{
+    width: 30rem;
+  }
+
 }
 
 .navigation__item {
@@ -75,7 +82,10 @@ p {
   text-transform: uppercase;
   text-decoration: none;
 }
+.navigation__link:hover{
+  color: #efa748;
 
+}
 
 /* Text styles */
 
@@ -95,9 +105,20 @@ p {
 
 /* Buttons */
 
-  /* INSERT BUTTON STYLES HERE */
-
-
+/* INSERT BUTTON STYLES HERE */
+button{
+  background-color: #c05326;
+  border: 0px;
+  border-radius: 5px;
+  color: #f7eae4;
+  height: 2rem;
+  padding: 0rem 1rem;
+}
+#vol-btn{
+  background-color:#fff;
+  color:#c05326;
+}
+ 
 /* Content */
 
 .content {
@@ -120,18 +141,36 @@ p {
 /* hero */
 
 .hero {
-  background-image: url("header-bike.jpg");
+  background-image: url("../images/header-bike.jpg" ) ;
   background-color: var(--grey-light);
+  background-position: right;
+  background-size: cover;
+  width: 100%;
+  color: #fff;
+  padding: 3rem 3rem;
+  width: 50rem;
+  height: 250px;
+
+  
+  
+ 
+}
+@media screen and (max-width:800px) {
+  .hero {
+    width: 30rem;
+
+  }
 }
 
 .hero h1 {
-  margin-bottom: 1rem;
+  margin-top: 2rem;
   font-size: 2.5rem;
+  
 }
 
 .hero p {
   font-size: 1.2rem;
-  margin-bottom: 2rem;
+  margin: 1rem 0.5rem;
 }
 
 
@@ -140,7 +179,9 @@ p {
 .heading-underline {
   position: relative;
   margin-bottom: 2rem;
-  padding-bottom: 0.5rem;
+  
+  padding-bottom: .5rem;
+  margin-top: .2rem;
   border-bottom: 2px solid var(--orange-light);
   font-size: 1rem;
   font-weight: 600;
@@ -162,7 +203,25 @@ p {
 /* Article */
 
 .article {
-  margin-bottom: 1rem;
+  margin-bottom: 2rem;
+  border: 1px solid rgb(219, 196, 196);
+  box-shadow:2px 2px 1px ;
+  border-radius: 5px;
+  padding: 1rem;
+  display: flex;
+  gap: 15px;
+}
+.main-article{
+  margin-bottom: 2rem;
+  border: 1px solid rgb(219, 196, 196);
+  box-shadow:2px 2px 1px ;
+  border-radius: 5px;
+  padding: 1rem;
+  
+}
+.mid-article{
+  display: flex;
+  gap: 20px;
 }
 
 .article__title {
@@ -174,6 +233,7 @@ p {
 .article__title-link {
   text-decoration: none;
   color: var(--orange-dark);
+  
 }
 
 .article__summary {
@@ -184,6 +244,7 @@ p {
 .article__thumbnail {
   object-fit: contain;
   width: 5rem;
+  
 }
 
 .article__read-more {
@@ -248,3 +309,4 @@ p {
     padding-right: 2rem;
   }
 }
+
