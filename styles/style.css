@@ -171,7 +171,7 @@ button:hover {
 /* hero */
 
 .hero {
-  background-image: url('/../images/header-bike.jpg');
+  background-image: url("../images/header-bike.jpg");
   background-color: var(--grey-light);
   padding: 3rem;
 }
@@ -249,7 +249,6 @@ div span:last-child {
   flex-direction: row;
   width: 45rem;
   height: 20 rem;
-  justify-content: space-betweenf;
   gap: 10px;
 }
 
