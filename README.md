@@ -1,7 +1,7 @@
 
 # Depolid to netlify
 
-https://luxury-crisp-ca2cff.netlify.app/
+https://cyf-ali-nasir-html-css-week-2.netlify.app/
 
 
 # bikes-for-refugees
