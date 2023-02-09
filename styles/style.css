@@ -13,33 +13,32 @@
    --white: #fff;
  }
 
-body {
-  margin: 0;
-}
+ .header__logo {
+  width: 3.5em;
+  height: 3.5em;
+ }
 
-body,
-button {
+body {
   font-family: "Source Sans Pro", "Helvetica Neue", Arial, sans-serif;
   color: var(--grey-dark);
   font-size: 1rem;
+  margin: 0 2rem;
 }
 
 h1,h2,h3,h4,h5,h6 {
+  font-size: 1rem;
   margin-top: 0;
   margin-bottom: 0;
 }
 
 p {
-  margin-top: 0;
-  margin-bottom: 0;
+  margin: 0
 }
 
 .header,
 .content,
 .footer {
-  padding: 0 1.5rem;
-  max-width: 1200px;
-  margin: 0 auto;
+  margin: 0em;
 }
 
 /* Header */
@@ -47,11 +46,9 @@ p {
 .header {
   display: flex;
   align-items: center;
-  justify-content: space-between;
-  height: 5rem;
-  margin-bottom: 1rem;
-  padding-top: 1rem;
 }
+
+
 
 .header__logo {
   max-height: 90px;
@@ -63,10 +60,15 @@ p {
 .navigation__list {
   display: flex;
   list-style: none;
+  margin: 1rem;
 }
 
 .navigation__item {
-  padding: 0.5rem 0;
+  font-size: 0.75rem;
+  margin: 0.5rem;
+  padding: 1rem;
+  height: 1.5rem;
+  width: auto;
 }
 
 .navigation__link {
@@ -97,8 +99,54 @@ p {
 
   /* INSERT BUTTON STYLES HERE */
 
+button {
+  background-color: #c05326;
+  color: #fff;
+  padding: 0.7rem 1rem;
+  border: none;
+  border-radius: 0.70rem;
+}
+
+#volunteer-btn {
+  background-color: #fff;
+  color: #c05326;
+}
+
+button:hover, button:focus {
+  background-color: #934423;
+}
+
+#volunteer-btn:hover, #volunteer-btn:focus {
+  background-color: #934423;
+}
+
+
 
 /* Content */
+
+button {
+  background-color: #c05326;
+  color:#fff;
+  padding: 0.5rem;
+  width: auto;
+  height: 2rem;
+  border: none;
+  border-radius: 0.20rem;
+}
+
+
+#volunteer-btn {
+  background-color: #fff;
+  color:#c05326 ;
+}
+
+button:hover {
+  background-color: #934423;
+}
+
+#volunteer-btn:hover {
+  background-color: #934423;
+}
 
 .content {
   display: flex;
@@ -120,18 +168,50 @@ p {
 /* hero */
 
 .hero {
-  background-image: url("header-bike.jpg");
+  background-image: url("../images/header-bike.jpg");
   background-color: var(--grey-light);
+  padding: 3rem;
 }
 
 .hero h1 {
   margin-bottom: 1rem;
-  font-size: 2.5rem;
+  font-size: 2rem;
+  color: white;
+}
+
+
+
+
+.boxes {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.box {
+  border: 2px solid #292b2c;
+  padding: 2.5rem 1.75rem;
+  margin: 3rem;
+  text-align: center;
+  font-size: 1.25rem;
+  font-weight: 600;
+}
+
+div:first-child span{
+  margin-left: 0;
+  background-color: #ddd;
+}
+
+div span:last-child {
+  margin-right: 0;
+  border: 1px solid #ddd;
 }
 
 .hero p {
-  font-size: 1.2rem;
+  font-size: 1rem;
   margin-bottom: 2rem;
+  font-weight: bold;
+  color: white;
 }
 
 
@@ -161,8 +241,43 @@ p {
 
 /* Article */
 
-.article {
+.main_article__section {
+  display: flex;
+  flex-direction: row;
+  width: 45rem;
+  height: 20 rem;
+  gap: 10px;
+}
+
+article {
   margin-bottom: 1rem;
+  border: grey solid 0.1rem;
+  padding: 1rem;
+}
+
+aside {
+  display: flex;
+  flex-direction: column;
+  width: 350px;
+  height: 500px;
+  padding:  0 0 2rem 2rem;
+}
+
+.aside_article__section {
+  display: flex;
+  flex-direction: row;
+  margin: 0.5rem;
+  border: grey solid 0.1rem;
+  padding: 0;
+  width: 350px;
+  height: auto;
+}
+
+.article__content {
+  display:flex;
+  flex-direction: column;
+  margin: 1rem;
+  
 }
 
 .article__title {
@@ -186,11 +301,8 @@ p {
   width: 5rem;
 }
 
-.article__read-more {
-  margin-top: 0;
-}
 
-.article__read-more a {
+.article__read-more {
   font-size: 0.85rem;
   font-weight: 700;
   color: var(--orange-dark);
@@ -209,31 +321,30 @@ p {
 
 .facebook-link {
   color: var(--orange-dark);
+  text-align: right;
 }
 
 /* Sidebar */
 
-.sidebar {
-  display: flex;
-  flex-direction: column;
-  min-width: 350px;
-}
+
 
 /* Footer */
 
 .footer {
-  margin-top: 2rem;
+  margin-top: 0.5rem;
 }
 
 .footer__content {
   border-top: 2px solid var(--orange-light);
   padding-top: 2rem;
-  padding-bottom: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
-.footer p {
-  padding-bottom: 1rem;
-  text-align: center;
+.footer__content {
+  padding: 1.5rem 0 0 0;
+  justify-content: center;
   font-size: 0.85rem;
 }
 
