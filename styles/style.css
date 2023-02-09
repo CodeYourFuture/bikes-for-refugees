@@ -5,13 +5,13 @@
  * 
  */
 
- :root {
-   --grey-dark: #292b2c;
-   --grey-light: #e4e4e4;
-   --orange-dark: #c05326;
-   --orange-light: #f7eae4;
-   --white: #fff;
- }
+:root {
+  --grey-dark: #292b2c;
+  --grey-light: #e4e4e4;
+  --orange-dark: #c05326;
+  --orange-light: #f7eae4;
+  --white: #fff;
+}
 
 body {
   margin: 0;
@@ -24,7 +24,12 @@ button {
   font-size: 1rem;
 }
 
-h1,h2,h3,h4,h5,h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   margin-top: 0;
   margin-bottom: 0;
 }
@@ -66,7 +71,7 @@ p {
 }
 
 .navigation__item {
-  padding: 0.5rem 0;
+  padding: 0.5rem 15px;
 }
 
 .navigation__link {
@@ -76,6 +81,9 @@ p {
   text-decoration: none;
 }
 
+.navigation__link:hover {
+  color: var(--orange-dark);
+}
 
 /* Text styles */
 
@@ -92,11 +100,31 @@ p {
   border-left-color: var(--orange-dark);
 }
 
-
 /* Buttons */
 
-  /* INSERT BUTTON STYLES HERE */
+/* INSERT BUTTON STYLES HERE */
 
+.firstButtonStyle {
+  background-color: var(--orange-dark);
+  color: var(--white);
+  padding: 5px 10px;
+  border: none;
+  border-radius: 5px;
+}
+.firstButtonStyle:hover {
+  background-color: var(--grey-dark);
+}
+
+.secondButtonStyle {
+  background-color: var(--white);
+  color: var(--orange-dark);
+  padding: 5px 10px;
+  border: none;
+  border-radius: 5px;
+}
+.secondButtonStyle:hover {
+  background-color: var(--orange-light);
+}
 
 /* Content */
 
@@ -120,8 +148,11 @@ p {
 /* hero */
 
 .hero {
-  background-image: url("header-bike.jpg");
+  background-image: url("/images/header-bike.jpg");
   background-color: var(--grey-light);
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding: 6.5rem 3rem;
 }
 
 .hero h1 {
@@ -132,13 +163,14 @@ p {
 .hero p {
   font-size: 1.2rem;
   margin-bottom: 2rem;
+  color: var(--white);
 }
-
 
 /* Headings */
 
 .heading-underline {
   position: relative;
+  margin-top: 2rem;
   margin-bottom: 2rem;
   padding-bottom: 0.5rem;
   border-bottom: 2px solid var(--orange-light);
@@ -157,12 +189,20 @@ p {
   max-width: 100px;
   background: var(--orange-dark);
 }
+/* section */
 
+section {
+  display: flex;
+}
 
 /* Article */
 
 .article {
   margin-bottom: 1rem;
+  border: 1px solid var(--grey-light);
+  border-radius: 5px;
+  padding: 10px;
+  margin: 5px;
 }
 
 .article__title {
@@ -218,11 +258,28 @@ p {
   flex-direction: column;
   min-width: 350px;
 }
+aside article {
+  display: flex;
+  margin: 10px;
+}
+
+aside article img {
+  margin: 10px;
+}
+
+aside .facebook-link {
+  padding-right: 10px;
+  display: flex;
+  justify-content: flex-end;
+}
 
 /* Footer */
 
 .footer {
   margin-top: 2rem;
+  display: flex;
+  justify-content: center;
+  text-align: center;
 }
 
 .footer__content {
