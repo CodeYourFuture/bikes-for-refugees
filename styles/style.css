@@ -94,8 +94,17 @@ p {
 
 
 /* Buttons */
-
   /* INSERT BUTTON STYLES HERE */
+
+.buttonD
+  {
+    background-color: #c05326;
+}
+.buttonV
+  {
+    background-color: #fff;
+    color: #c05326;
+}
 
 
 /* Content */
