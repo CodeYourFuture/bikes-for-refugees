@@ -1,3 +1,9 @@
+
+# Depolid to netlify
+
+https://cyf-ali-nasir-html-css-week-2.netlify.app/
+
+
 # bikes-for-refugees
 Exercise for HTML & CSS - lesson 1
 
