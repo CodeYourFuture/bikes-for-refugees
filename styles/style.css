@@ -66,7 +66,7 @@ p {
 }
 
 .navigation__item {
-  padding: 0.5rem 0;
+  padding: 0.5 rem 1 rem;
 }
 
 .navigation__link {
@@ -99,11 +99,15 @@ p {
 .buttonD
   {
     background-color: #c05326;
+    padding: 0.5 rem 0.5 rem;
+
 }
 .buttonV
   {
     background-color: #fff;
     color: #c05326;
+    padding: 0.5 rem 0.5 rem;
+
 }
 button :hover{
   background-color: #934423;
