@@ -66,7 +66,7 @@ p {
 }
 
 .navigation__item {
-  padding: 2 rem 2 rem;
+  padding: 0.5 rem 0 rem;
 }
 
 .navigation__link {
@@ -97,25 +97,29 @@ p {
 
 /* Buttons */
   /* INSERT BUTTON STYLES HERE */
-
-.buttonD
+.button
+{
+  padding: 1 rem 1 rem;
+  border: 1rem none;
+  border-radius: 0.5rem;
+}
+#buttonD
   {
     background-color: #c05326;
-    padding: 0.5 rem 0.5 rem;
 
 }
-.buttonV
+#buttonV
   {
     background-color: #fff;
     color: #c05326;
-    padding: 0.5 rem 0.5 rem;
 
 }
+
 button :hover{
   background-color: #934423;
 }
 button :focus{
-  background-color: #fff;
+  background-color: rgb(255, 255, 255);
 }
 /* Content */
 
