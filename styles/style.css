@@ -66,7 +66,8 @@ p {
 }
 
 .navigation__item {
-  padding: 0 rem 2 rem;
+  padding: 0.5 rem 0;
+  margin: 10px;
 }
 
 .navigation__link {
@@ -101,7 +102,9 @@ p {
 {
   padding: 5 rem 5 rem;
   border: 1rem none;
-  border-radius: 0.5rem;
+  border-radius: 0.4rem;
+  text-align: center;
+
 }
 #buttonD
   {
