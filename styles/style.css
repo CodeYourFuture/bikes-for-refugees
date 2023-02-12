@@ -66,7 +66,7 @@ p {
 }
 
 .navigation__item {
-  padding: 2 rem 2 rem;
+  padding: 0 rem 2 rem;
 }
 
 .navigation__link {
@@ -74,7 +74,7 @@ p {
   font-weight: 600;
   text-transform: uppercase;
   text-decoration: none;
-  padding: 2 rem 2 rem;
+  padding: 0 rem 2 rem;
 
 }
 
