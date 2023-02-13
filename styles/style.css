@@ -18,11 +18,22 @@ body {
 }
 
 body,
-button {
+.button {
   font-family: "Source Sans Pro", "Helvetica Neue", Arial, sans-serif;
   color: var(--grey-dark);
   font-size: 1rem;
+  border-top-right-radius: 5%;
+  border-color: #ff9800;
+
 }
+
+
+.button:hover {
+  background: #ff9800;
+  color: white;
+
+}
+
 
 h1,h2,h3,h4,h5,h6 {
   margin-top: 0;
@@ -51,6 +62,7 @@ p {
   height: 5rem;
   margin-bottom: 1rem;
   padding-top: 1rem;
+  color: #c05326;
 }
 
 .header__logo {
@@ -63,11 +75,21 @@ p {
 .navigation__list {
   display: flex;
   list-style: none;
+  margin-right:10px;
+  justify-content: space-between;
+  width: 400px;
 }
 
+
 .navigation__item {
-  padding: 0.5rem 0;
+  padding: 0.5rem 5;
+  margin: 1; 
+  justify-content: space-between;
+
 }
+.navigation__item:hover {
+  background: #ff9800;
+  color: white;}
 
 .navigation__link {
   color: var(--grey-dark);
@@ -92,18 +114,11 @@ p {
   border-left-color: var(--orange-dark);
 }
 
-
-/* Buttons */
-
-  /* INSERT BUTTON STYLES HERE */
-
-
-/* Content */
-
 .content {
   display: flex;
   flex-direction: column;
-}
+
+} 
 
 /* Alert */
 
@@ -120,18 +135,34 @@ p {
 /* hero */
 
 .hero {
-  background-image: url("header-bike.jpg");
+  background-image: url("../images/header-bike.jpg");
   background-color: var(--grey-light);
+  height: 70;
+  width: 50;
+  color: rgb(244, 239, 239);
 }
 
 .hero h1 {
   margin-bottom: 1rem;
   font-size: 2.5rem;
+  }
+
+/* Buttons */
+ button{
+  border-color: #ff9800;
+  color: rgb(223, 148, 18);
+  border-radius: 5px;
+}
+button:hover {
+  background: #ff9800;
+  color: white;
+
 }
 
 .hero p {
   font-size: 1.2rem;
   margin-bottom: 2rem;
+  
 }
 
 
@@ -163,6 +194,8 @@ p {
 
 .article {
   margin-bottom: 1rem;
+  border: 1px solid var(--grey-dark);
+  border-radius: 3px;
 }
 
 .article__title {
@@ -179,11 +212,15 @@ p {
 .article__summary {
   margin-top: 0;
   margin-bottom: 1rem;
+  padding-left: 5px;
+
+
 }
 
 .article__thumbnail {
   object-fit: contain;
   width: 5rem;
+  margin-right: 5rem;
 }
 
 .article__read-more {
@@ -203,12 +240,14 @@ p {
 }
 
 .fa {
-  margin-right: 0.5rem;
+  margin-bottom: 0.5rem;
   color: var(--orange-dark);
+
 }
 
 .facebook-link {
   color: var(--orange-dark);
+  padding-bottom: 2rem;
 }
 
 /* Sidebar */
@@ -217,6 +256,7 @@ p {
   display: flex;
   flex-direction: column;
   min-width: 350px;
+
 }
 
 /* Footer */
