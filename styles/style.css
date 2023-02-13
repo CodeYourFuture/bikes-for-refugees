@@ -66,7 +66,7 @@ p {
 }
 
 .navigation__item {
-  padding: 0.5 rem 0;
+  padding: 0.5 rem 1 rem;
   margin: 10px;
 }
 
@@ -75,7 +75,6 @@ p {
   font-weight: 600;
   text-transform: uppercase;
   text-decoration: none;
-  padding: 0 rem 2 rem;
 
 }
 
@@ -113,7 +112,7 @@ p {
 }
 #buttonV
   {
-    background-color: rgb(255, 255, 255);
+    background-color: #fff;
     color: #c05326;
 
 }
