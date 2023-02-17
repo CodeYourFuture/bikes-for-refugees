@@ -27,6 +27,7 @@ button {
 h1,h2,h3,h4,h5,h6 {
   margin-top: 0;
   margin-bottom: 0;
+  
 }
 
 p {
@@ -66,7 +67,7 @@ p {
 }
 
 .navigation__item {
-  padding: 0.5rem 0;
+  padding: 0.5rem 1;
 }
 
 .navigation__link {
@@ -74,8 +75,8 @@ p {
   font-weight: 600;
   text-transform: uppercase;
   text-decoration: none;
+  padding: 0.5rem;
 }
-
 
 /* Text styles */
 
@@ -83,6 +84,8 @@ p {
   color: var(--orange-dark);
   font-weight: 600;
 }
+
+
 
 .arrow-right {
   display: inline-block;
@@ -95,7 +98,23 @@ p {
 
 /* Buttons */
 
-  /* INSERT BUTTON STYLES HERE */
+  .btn,
+  .bt{
+    background-color: #df551a;
+    color: #fff;
+    border-radius: 5px;
+    border: none;
+  }
+  .bttn{
+    background-color: #fff;
+    border-radius: 5px;
+    color:#df551a;
+    border: none;
+    }
+  .btn{
+    
+    margin-left: 50px;
+  }
 
 
 /* Content */
@@ -108,8 +127,9 @@ p {
 /* Alert */
 
 .alert {
-  background-color: var(--orange-light);
-  border-left: 4px solid var(--orange-dark);
+  background-color:white;
+  border-left: 2px solid var(--orange-dark);
+  border:1px solid var(--orange-dark) ;
   border-radius: 4px;
   font-size: 0.85rem;
   line-height: 1.3;
@@ -120,20 +140,28 @@ p {
 /* hero */
 
 .hero {
-  background-image: url("header-bike.jpg");
+  background-image: url("https://github.com/CodeYourFuture/bikes-for-refugees/blob/main/images/header-bike.jpg?raw=true");
   background-color: var(--grey-light);
+  height: 360px;
+  
 }
 
 .hero h1 {
-  margin-bottom: 1rem;
+  color: #fff;
+  margin-bottom: 1.8rem;
   font-size: 2.5rem;
+  padding: 2rem;
+  margin-left: 20px;
 }
-
 .hero p {
-  font-size: 1.2rem;
+  color: #fff;
+  font-size: 1rem;
   margin-bottom: 2rem;
+  margin-left: 50px;
 }
-
+.hero , p{
+  color: black;
+}
 
 /* Headings */
 
@@ -163,7 +191,12 @@ p {
 
 .article {
   margin-bottom: 1rem;
+  border: #df551a 0.5px solid;
+  display: flex;
+  justify-items:flex-end;
+  padding: 10px;
 }
+
 
 .article__title {
   margin-bottom: 0.5rem;
@@ -174,6 +207,7 @@ p {
 .article__title-link {
   text-decoration: none;
   color: var(--orange-dark);
+  
 }
 
 .article__summary {
@@ -184,6 +218,7 @@ p {
 .article__thumbnail {
   object-fit: contain;
   width: 5rem;
+  padding: 20px;
 }
 
 .article__read-more {
@@ -209,6 +244,7 @@ p {
 
 .facebook-link {
   color: var(--orange-dark);
+  text-align: right;
 }
 
 /* Sidebar */
@@ -229,6 +265,7 @@ p {
   border-top: 2px solid var(--orange-light);
   padding-top: 2rem;
   padding-bottom: 2rem;
+  
 }
 
 .footer p {
