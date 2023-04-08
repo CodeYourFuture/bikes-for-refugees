@@ -1,11 +1,12 @@
-# bikes-for-refugees
-Exercise for HTML & CSS - lesson 1
+# Bikes For Refugees
+
+Fun fact, [Bikes For Refugees](https://www.bikesforrefugees.scot/) is a real project, and CYF grads have worked on apps for it for their Final Projects.
 
 ## Set up
 
-**Clone** this repository onto your machine. Remember [the git cheat-sheet]( https://syllabus.codeyourfuture.io/git/desktop/cheatsheet#i-want-to-get-code-from-a-repo-onto-my-computer-cloning) if you get stuck!
+**Clone** this repository onto your machine. Remember [the git cheat-sheet]( https://syllabus.codeyourfuture.io/git/desktop/cheatsheet#i-want-to-get-code-from-a-repo-onto-my-computer-cloning) if you get stuck.
 
-Open up the repository you just cloned (again, check [the git cheat-sheet](https://syllabus.codeyourfuture.io/git/desktop/cheatsheet#i-want-to-open-visual-studio-code-with-code-from-my-repository) if you need help!)
+Open up the repository you just cloned (again, check [the git cheat-sheet](https://syllabus.codeyourfuture.io/git/desktop/cheatsheet#i-want-to-open-visual-studio-code-with-code-from-my-repository) if you need help.)
 
 You're now ready to code!
 
@@ -19,18 +20,18 @@ Open the `index.html` file in your browser, and compare it to the image of the f
 
 ### Exercise 1) Use semantic markup
 
-Where necessary, replace the `<div>`s with semantic HTML tags. This will not render differently in the browser, but it's good practice to use semantic markup when you can!
+Open up Devtools and [choose the Accessibility tab](https://stackoverflow.com/questions/58988357/accessing-the-accessibility-tree-of-a-website) next to Layout (or behind the >> chevrons). Now start to replace the `<div>`s with semantic HTML tags. The visual render looks the same, but the API interprets the semantic HTML totally differently. Semantic HTML does stuff!
 
 ### Exercise 2) Fix the broken images
 
 Some of the links to images are broken. The images you need are in the `images` folder - please replace any broken image links with the correct paths. 
 It's also good practice to include a description of the image in the `alt` attribute. 
 
-Make sure to add some CSS to make the images look the same as in the design!
+Make sure to add some CSS to make the images look like the design.
 
 ### Exercise 3) Style buttons
 
-There are 3 buttons on the page: can you style them correctly so they follow the design?
+There are 3 buttons on the page: can you style them like the design?
 **Remember**, re-use styles as much as possible by using CSS classes.
 
 ### Exercise 4) Add spacing
@@ -41,7 +42,7 @@ There are 3 buttons on the page: can you style them correctly so they follow the
 
 ### Exercise 5) Fix the positioning
 
-Compare what you can see in your browser with the design provided. Can you spot the differences in layout? Use CSS Flexbox to move elements around so they are positioned correctly.
+Compare what you can see in your browser with the design provided. Can you spot the differences in layout? Use CSS Flexbox or Grid to move elements around so they are positioned correctly.
 
 Also add borders and spacing if required to match the design. 
 
@@ -53,6 +54,6 @@ Add a hover effect using CSS, so that:
 
 ## Submit your work
 
-Once you've finished, **open a pull request** so your work can be reviewed by a mentor.
+Once you've finished, **open a pull request**.
 
 As always, you can check [the git cheatsheet](https://syllabus.codeyourfuture.io/git/desktop/cheatsheet#i-want-to-send-my-code-to-volunteers-pushing) if you get stuck!
