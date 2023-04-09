@@ -13,9 +13,6 @@
    --white: #fff;
  }
 
-body {
-  margin: 0;
-}
 
 body,
 button {
@@ -34,9 +31,9 @@ p {
   margin-bottom: 0;
 }
 
-.header,
-.content,
-.footer {
+header,
+content,
+footer {
   padding: 0 1.5rem;
   max-width: 1200px;
   margin: 0 auto;
@@ -44,13 +41,15 @@ p {
 
 /* Header */
 
-.header {
+header {
   display: flex;
+  flex-direction: row;
   align-items: center;
   justify-content: space-between;
   height: 5rem;
   margin-bottom: 1rem;
   padding-top: 1rem;
+  
 }
 
 .header__logo {
@@ -74,6 +73,7 @@ p {
   font-weight: 600;
   text-transform: uppercase;
   text-decoration: none;
+  gap: 0.5;
 }
 
 
@@ -96,6 +96,10 @@ p {
 /* Buttons */
 
   /* INSERT BUTTON STYLES HERE */
+  button{
+    color: white;
+    background: orange;
+  }
 
 
 /* Content */
@@ -120,18 +124,23 @@ p {
 /* hero */
 
 .hero {
-  background-image: url("header-bike.jpg");
+  background-image: url(../images/header-bike.jpg);
   background-color: var(--grey-light);
+  color: white;
 }
 
 .hero h1 {
   margin-bottom: 1rem;
   font-size: 2.5rem;
+  padding: 3rem;
+  text-align: center;
 }
 
 .hero p {
   font-size: 1.2rem;
   margin-bottom: 2rem;
+  padding: 3rem;
+  text-align: center;
 }
 
 
@@ -145,6 +154,7 @@ p {
   font-size: 1rem;
   font-weight: 600;
   text-transform: uppercase;
+  margin-top: 1rem;
 }
 
 .heading-underline:before {
