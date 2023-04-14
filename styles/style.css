@@ -74,6 +74,7 @@ p {
   font-weight: 600;
   text-transform: uppercase;
   text-decoration: none;
+  padding: 0 1rem;
 }
 
 
@@ -96,10 +97,41 @@ p {
 /* Buttons */
 
   /* INSERT BUTTON STYLES HERE */
+button:hover,button:focus {
+    color: #934423;
+  }
+button {
+  padding: 0.5rem;
+  border: 0;
+  border-radius: 7%;
+}
+.donate {
+  background-color: #c05326;
+  color: #FAF9F6;
+  
+}
+.volunteer {
+  background-color: #fff;
+  color: #c05326;
+}
+/* flexbox */
 
+.sidebar
+{
+  display: flex;
 
+  flex-direction: column;
+}
+.box:last-child {
+  border: 1px solid #ddd;
+}
+.box:first-child {
+  background-color: #ddd;
+}
 /* Content */
-
+.section{
+  margin-top: 2rem;
+}
 .content {
   display: flex;
   flex-direction: column;
@@ -120,8 +152,19 @@ p {
 /* hero */
 
 .hero {
-  background-image: url("header-bike.jpg");
+  background-image: url("../images/header-bike.jpg");
+  background-position: cover;
   background-color: var(--grey-light);
+  max-width: 1200px;
+  height: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+  color: #fff;
+  padding-left: 30px;
+  margin-bottom: 3rem;
+
 }
 
 .hero h1 {
@@ -157,12 +200,31 @@ p {
   max-width: 100px;
   background: var(--orange-dark);
 }
-
+/* flexbox */
+.first_articles
+{
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  
+}
 
 /* Article */
 
 .article {
-  margin-bottom: 1rem;
+  margin-bottom: 1 rem;
+  border: 1.5px solid #DBDBDB;
+  padding: 1rem 1rem;
+  width: 18.5rem; 
+}
+.article_side {
+  border-width: 2px;
+  border-style: solid;
+  border-color: #d8dbdd;
+  padding: 1rem;
+  margin-bottom: 2rem;
+  width: 15rem; 
+  display: flex;
 }
 
 .article__title {
@@ -179,11 +241,13 @@ p {
 .article__summary {
   margin-top: 0;
   margin-bottom: 1rem;
+  font-size: 0.8rem;
 }
 
 .article__thumbnail {
   object-fit: contain;
   width: 5rem;
+  margin-right: 10px;
 }
 
 .article__read-more {
@@ -209,6 +273,7 @@ p {
 
 .facebook-link {
   color: var(--orange-dark);
+  margin-left: 8rem;
 }
 
 /* Sidebar */
@@ -230,7 +295,9 @@ p {
   padding-top: 2rem;
   padding-bottom: 2rem;
 }
-
+.sidebar a{
+  padding-left: 6 rem;
+}
 .footer p {
   padding-bottom: 1rem;
   text-align: center;
@@ -247,4 +314,16 @@ p {
   .main {
     padding-right: 2rem;
   }
+}
+@media screen and (max-width: 320px) {
+  .hero h1 {
+    font-size: 1rem;
+  }
+  .hero p {
+  font-size: 0.5rem;
+  }
+  .button_hero {
+    display: flex;
+    flex-direction: row;
+  } 
 }
