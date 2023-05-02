@@ -203,7 +203,8 @@ p {
 
 .article__thumbnail {
   object-fit: contain;
-  width: 5rem;float: left;
+  width: 5rem;
+  float: left;
   margin-right: 1rem;
   display:flex;
   align-items: center;
