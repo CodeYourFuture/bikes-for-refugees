@@ -5,13 +5,13 @@
  * 
  */
 
- :root {
-   --grey-dark: #292b2c;
-   --grey-light: #e4e4e4;
-   --orange-dark: #c05326;
-   --orange-light: #f7eae4;
-   --white: #fff;
- }
+:root {
+  --grey-dark: #292b2c;
+  --grey-light: #e4e4e4;
+  --orange-dark: #c05326;
+  --orange-light: #f7eae4;
+  --white: #fff;
+}
 
 body {
   margin: 0;
@@ -24,7 +24,12 @@ button {
   font-size: 1rem;
 }
 
-h1,h2,h3,h4,h5,h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   margin-top: 0;
   margin-bottom: 0;
 }
@@ -56,6 +61,7 @@ p {
 .header__logo {
   max-height: 90px;
   width: auto;
+  padding: 0.5rem;
 }
 
 /* Navigation */
@@ -66,7 +72,10 @@ p {
 }
 
 .navigation__item {
-  padding: 0.5rem 0;
+  padding: 0.5rem;
+}
+.navigation__item:hover {
+  background-color: var(--orange-dark);
 }
 
 .navigation__link {
@@ -75,7 +84,6 @@ p {
   text-transform: uppercase;
   text-decoration: none;
 }
-
 
 /* Text styles */
 
@@ -92,12 +100,30 @@ p {
   border-left-color: var(--orange-dark);
 }
 
-
 /* Buttons */
 
-  /* INSERT BUTTON STYLES HERE */
-
-
+/* INSERT BUTTON STYLES HERE */
+.donate {
+  background-color: var(--orange-dark);
+  color: #fff;
+  border-radius: 1em;
+  border: 1rem;
+  padding: 0.5rem;
+}
+.donate:hover {
+  background-color: #934423;
+}
+.volunteer {
+  background-color: #fff;
+  color: #c05326;
+  border-radius: 1em;
+  border: 1rem;
+  padding: 0.5rem;
+}
+.volunteer:hover {
+  background-color: #934423;
+  color: var(--white);
+}
 /* Content */
 
 .content {
@@ -120,8 +146,9 @@ p {
 /* hero */
 
 .hero {
-  background-image: url("header-bike.jpg");
+  background-image: url("../images/header-bike.jpg");
   background-color: var(--grey-light);
+  color: #fff;
 }
 
 .hero h1 {
@@ -133,7 +160,6 @@ p {
   font-size: 1.2rem;
   margin-bottom: 2rem;
 }
-
 
 /* Headings */
 
@@ -158,11 +184,16 @@ p {
   background: var(--orange-dark);
 }
 
-
 /* Article */
+.attempt {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+}
 
 .article {
   margin-bottom: 1rem;
+  border: black solid 0.5px;
 }
 
 .article__title {
