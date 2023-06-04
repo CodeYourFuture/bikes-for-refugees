@@ -46,6 +46,7 @@ p {
 
 .header {
   display: flex;
+  flex-direction: row;
   align-items: center;
   justify-content: space-between;
   height: 5rem;
@@ -62,11 +63,12 @@ p {
 
 .navigation__list {
   display: flex;
+  flex-direction: row;
   list-style: none;
 }
 
 .navigation__item {
-  padding: 0.5 rem 1 rem;
+  padding: 0.5 rem 1;
   margin: 10px;
 }
 
@@ -75,6 +77,7 @@ p {
   font-weight: 600;
   text-transform: uppercase;
   text-decoration: none;
+  padding: 0.5rem;
 
 }
 
@@ -97,6 +100,27 @@ p {
 
 /* Buttons */
   /* INSERT BUTTON STYLES HERE */
+  .btn1{
+    color: #FFFFFF;
+    background: hsl(18, 62%, 36%);
+   }
+ 
+   button{
+    margin-bottom: 30px;
+    margin-left: 20px;
+    color: #FFFFFF;
+    background: #934423;
+ 
+   } 
+ 
+   .btn2{
+    margin-bottom: 30px;
+    margin-left: 0px;
+    color: #934423;
+    background: #FFFFFF;
+ 
+   }
+
 .button
 {
   padding: 5 rem 5 rem;
@@ -145,18 +169,24 @@ button :focus{
 /* hero */
 
 .hero {
-  background-image: url("header-bike.jpg");
-  background-color: var(--grey-light);
+  background-image: url("https://raw.githubusercontent.com/CodeYourFuture/bikes-for-refugees/main/images/header-bike.jpg");
+  color: #FFFFFF;
+  /* height: 260px;
+  width: 820px;
+  padding-top: 100px; */
+  background-size: cover;
 }
 
 .hero h1 {
-  margin-bottom: 1rem;
+  margin-top: 2rem;
   font-size: 2.5rem;
+  padding: 3rem;
 }
 
 .hero p {
   font-size: 1.2rem;
   margin-bottom: 2rem;
+  padding: 2rem;
 }
 
 
@@ -170,9 +200,10 @@ button :focus{
   font-size: 1rem;
   font-weight: 600;
   text-transform: uppercase;
+  margin-top: 2rem;
 }
 
-.heading-underline:before {
+.heading-underline: before { */
   content: "";
   position: absolute;
   bottom: -2px;
@@ -188,12 +219,18 @@ button :focus{
 
 .article {
   margin-bottom: 1rem;
+  border: 1px solid black;
+  align-items: center;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding: 5px;
 }
 
 .article__title {
   margin-bottom: 0.5rem;
   font-size: 1rem;
   font-weight: 700;
+  padding-left: 10px;
 }
 
 .article__title-link {
@@ -204,6 +241,7 @@ button :focus{
 .article__summary {
   margin-top: 0;
   margin-bottom: 1rem;
+  padding: 5px;
 }
 
 .article__thumbnail {
@@ -213,6 +251,7 @@ button :focus{
 
 .article__read-more {
   margin-top: 0;
+  padding: 5px;
 }
 
 .article__read-more a {
@@ -234,9 +273,18 @@ button :focus{
 
 .facebook-link {
   color: var(--orange-dark);
+  ext-align: right;
 }
 
 /* Sidebar */
+.article-sidebar{
+  display: flex;
+  flex-direction: row;
+  border: 1px solid black;
+  margin-bottom: 10px;
+  padding: 10px;
+}
+
 
 .sidebar {
   display: flex;
