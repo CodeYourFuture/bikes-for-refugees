@@ -5,6 +5,29 @@
  * 
  */
 
+ html * {
+  font-size: 16px;
+  line-height: 1.625;
+  color: #202013;
+  font-family: Nunito, sans-serif;
+}
+
+
+title {  
+    font-size: 16px;
+    color: #fff;
+    font-family: Nunito, sans-serif;
+  }
+
+
+
+
+#bikes2 {
+  font-size: 16px;
+  color: #fff;
+  font-family: Nunito, sans-serif;
+}
+
  :root {
    --grey-dark: #292b2c;
    --grey-light: #e4e4e4;
@@ -17,11 +40,33 @@ body {
   margin: 0;
 }
 
-body,
-button {
+.donatebutton {
   font-family: "Source Sans Pro", "Helvetica Neue", Arial, sans-serif;
-  color: var(--grey-dark);
+  color: #fff;
+  background-color: #934423;
   font-size: 1rem;
+  padding: 5px;
+}
+
+.donatebutton:hover {
+  background-color: #fff;
+  color: #934423;
+}
+
+
+
+.v_button {
+  font-family: "Source Sans Pro", "Helvetica Neue", Arial, sans-serif;
+  color:#934423;
+  background-color: #fff;
+  font-size: 1rem;
+  padding: 5px;
+
+}
+
+.v_button:hover {
+  background-color: #934423;
+  color: #fff;
 }
 
 h1,h2,h3,h4,h5,h6 {
@@ -66,7 +111,8 @@ p {
 }
 
 .navigation__item {
-  padding: 0.5rem 0;
+  padding: 0.5rem 0.5rem;
+
 }
 
 .navigation__link {
@@ -74,6 +120,10 @@ p {
   font-weight: 600;
   text-transform: uppercase;
   text-decoration: none;
+}
+
+.navigation__link:hover {
+  color: #934423;
 }
 
 
@@ -120,18 +170,21 @@ p {
 /* hero */
 
 .hero {
-  background-image: url("header-bike.jpg");
+  background-image: url("../images/header-bike.jpg");
   background-color: var(--grey-light);
 }
 
 .hero h1 {
-  margin-bottom: 1rem;
-  font-size: 2.5rem;
+  margin-bottom: 9rem;
+  font-size: 3rem;
+  margin-left: 5%;
+  color: white;
 }
 
 .hero p {
-  font-size: 1.2rem;
-  margin-bottom: 2rem;
+  font-size: 2rem;
+  margin-bottom: 2.5rem;
+  margin-left: 5%;
 }
 
 
@@ -159,10 +212,29 @@ p {
 }
 
 
+
+
 /* Article */
 
 .article {
   margin-bottom: 1rem;
+}
+
+.container1 {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+}
+
+.container1 div {
+  border: 1px #ccc solid;
+  padding: 5px;
+  margin: 5px;
+}
+
+.child {
+  margin-bottom: 1rem;
+  border: #292b2c;
 }
 
 .article__title {
@@ -215,9 +287,21 @@ p {
 
 .sidebar {
   display: flex;
+  flex-wrap: wrap;
   flex-direction: column;
   min-width: 350px;
 }
+.sidebox {
+  display: flex;
+  flex-wrap: wrap;
+  border: 1px #ccc solid;
+  padding: 5px;
+}
+.sidebox div{
+  margin: 5px;
+  padding: 5px;
+}
+
 
 /* Footer */
 
@@ -248,3 +332,4 @@ p {
     padding-right: 2rem;
   }
 }
+
