@@ -4,9 +4,13 @@ Fun fact, [Bikes For Refugees](https://www.bikesforrefugees.scot/) is a real pro
 
 ## Set up
 
-**Clone** this repository onto your machine. Remember [the git cheat-sheet]( https://syllabus.codeyourfuture.io/git/desktop/cheatsheet#i-want-to-get-code-from-a-repo-onto-my-computer-cloning) if you get stuck.
+1. **Clone** this repository onto your machine. Remember [the git cheat-sheet]( https://syllabus.codeyourfuture.io/git/desktop/cheatsheet#i-want-to-get-code-from-a-repo-onto-my-computer-cloning) if you get stuck.
+1. Open up the repository you just cloned (again, check [the git cheat-sheet](https://syllabus.codeyourfuture.io/git/desktop/cheatsheet#i-want-to-open-visual-studio-code-with-code-from-my-repository) if you need help.)
+1. Make a new branch for your work; name it with your cohort/name. For example: NW7/GermanBencci
 
-Open up the repository you just cloned (again, check [the git cheat-sheet](https://syllabus.codeyourfuture.io/git/desktop/cheatsheet#i-want-to-open-visual-studio-code-with-code-from-my-repository) if you need help.)
+```git
+git checkout -b COHORT/YourName
+```
 
 You're now ready to code!
 
@@ -14,7 +18,7 @@ You're now ready to code!
 
 The aim of the exercise is for your webpage to look like the following screenshot:
 
-![Bike For Refugees: final design](bikes-for-refugees_final-design.png)
+![Bike For Refugees: final design](https://github.com/CodeYourFuture/bikes-for-refugees/blob/main/bikes-for-refugees_final-design.png)
 
 Open the `index.html` file in your browser, and compare it to the image of the final result. What's different?
 
