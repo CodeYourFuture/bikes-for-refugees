@@ -4,7 +4,7 @@ Fun fact, [Bikes For Refugees](https://www.bikesforrefugees.scot/) is a real pro
 
 ## Set up
 
-1. **Clone** this repository onto your machine. Remember [the git cheat-sheet]( https://syllabus.codeyourfuture.io/git/desktop/cheatsheet#i-want-to-get-code-from-a-repo-onto-my-computer-cloning) if you get stuck.
+1. **Clone** [this repository](https://github.com/CodeYourFuture/bikes-for-refugees/) onto your machine. Remember [the git cheat-sheet]( https://syllabus.codeyourfuture.io/git/desktop/cheatsheet#i-want-to-get-code-from-a-repo-onto-my-computer-cloning) if you get stuck.
 1. Open up the repository you just cloned (again, check [the git cheat-sheet](https://syllabus.codeyourfuture.io/git/desktop/cheatsheet#i-want-to-open-visual-studio-code-with-code-from-my-repository) if you need help.)
 1. Make a new branch for your work; name it with your cohort/name. For example: NW7/GermanBencci
 
