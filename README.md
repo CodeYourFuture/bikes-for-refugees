@@ -4,13 +4,9 @@ Fun fact, [Bikes For Refugees](https://www.bikesforrefugees.scot/) is a real pro
 
 ## Set up
 
-1. **Clone** [this repository](https://github.com/CodeYourFuture/bikes-for-refugees/) onto your machine. Remember [the git cheat-sheet]( https://syllabus.codeyourfuture.io/git/desktop/cheatsheet#i-want-to-get-code-from-a-repo-onto-my-computer-cloning) if you get stuck.
-1. Open up the repository you just cloned (again, check [the git cheat-sheet](https://syllabus.codeyourfuture.io/git/desktop/cheatsheet#i-want-to-open-visual-studio-code-with-code-from-my-repository) if you need help.)
-1. Make a new branch for your work; name it with your cohort/name. For example: NW7/GermanBencci
-
-```git
-git checkout -b COHORT/YourName
-```
+1. **Clone** [this repository](https://github.com/CodeYourFuture/bikes-for-refugees/) onto your machine. You can use this [video guide](https://www.youtube.com/watch?v=ILJ4dfOL7zs) to refresh your memory if you're stuck.
+1. Open up the repository you just cloned using VSCode.
+1. Make a new branch for your work in the form `cohort/name`. For example: `NW7/GermanBencci`
 
 You're now ready to code!
 
@@ -60,4 +56,4 @@ Add a hover effect using CSS, so that:
 
 Once you've finished, **open a pull request**.
 
-As always, you can check [the git cheatsheet](https://syllabus.codeyourfuture.io/git/desktop/cheatsheet#i-want-to-send-my-code-to-volunteers-pushing) if you get stuck!
+As always, you can use this guide if you need to refresh your memory 👉 https://curriculum.codeyourfuture.io/guides/create-a-pull-request/
