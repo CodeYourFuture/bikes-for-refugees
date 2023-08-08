@@ -16,12 +16,25 @@
 body {
   margin: 0;
 }
-
 body,
 button {
   font-family: "Source Sans Pro", "Helvetica Neue", Arial, sans-serif;
   color: var(--grey-dark);
   font-size: 1rem;
+}
+button {
+   background-color: #c05326;
+   color: #fff;
+   border: 0px #c05326 solid;
+   border-radius: 3px;
+   padding: 5px 10px;
+}
+#volunteer {
+  background-color: #fff;
+  color: #c05326;
+  border: 0px #c05326 solid;
+  border-radius: 3px;
+  margin-left: 5px;
 }
 
 h1,h2,h3,h4,h5,h6 {
@@ -74,6 +87,7 @@ p {
   font-weight: 600;
   text-transform: uppercase;
   text-decoration: none;
+  margin-left: 1.5rem;
 }
 
 
@@ -120,8 +134,19 @@ p {
 /* hero */
 
 .hero {
-  background-image: url("header-bike.jpg");
+  background-image: url("/images/header-bike.jpg");
+  background-size: auto;
+  height: 47%;
   background-color: var(--grey-light);
+  color: #fff;
+  padding: 20px 20px;
+  display: flex;
+  align-items: start;
+  flex-direction: column;
+  justify-content: center;
+}
+.butt {
+  display: flex;
 }
 
 .hero h1 {
