@@ -41,7 +41,7 @@ p {
 
 .header,
 .content,
-.footer {
+.footer_content {
   padding: 0 1.5rem;
   max-width: 1200px;
   margin: 0 auto;
@@ -105,7 +105,7 @@ p {
 
 /* Buttons */
 
-button {
+.donate-btn {
   background-color: #c05326;
   color: #e4e4e4;
   border: none;
@@ -113,18 +113,24 @@ button {
   border-radius: 6px;
   font-weight: 600;
   transition: background-color ease-in-out 0.3s;
+  text-decoration: none;
 }
 
-button:hover,
-button:active {
+.donate-btn:hover,
+.donate-btn:active {
   background-color: white;
   color: #c05326;
 }
 
 .volunteer-btn {
-  background-color: white;
+  background-color: #e4e4e4;
   color: #c05326;
+  border: none;
+  padding: 0.6rem 0.8rem;
+  border-radius: 6px;
+  font-weight: 600;
   transition: background-color ease-in-out 0.3s;
+  text-decoration: none;
 }
 
 .volunteer-btn:hover,
@@ -282,7 +288,7 @@ button:active {
 
 /* Footer */
 
-.footer {
+.footer_content {
   margin-top: 10.8rem;
   border-top: 2px solid var(--orange-light);
   width: 76%;
@@ -292,7 +298,7 @@ button:active {
   padding: 2rem 2rem 0 2rem;
 }
 
-.footer p {
+.footer_content p {
   padding-bottom: 1rem;
   text-align: center;
   font-size: 0.85rem;
