@@ -6,12 +6,12 @@
  */
 
  :root {
-   --grey-dark: #292b2c;
-   --grey-light: #e4e4e4;
-   --orange-dark: #c05326;
-   --orange-light: #f7eae4;
-   --white: #fff;
- }
+  --grey-dark: #292b2c;
+  --grey-light: #e4e4e4;
+  --orange-dark: #c05326;
+  --orange-light: #f7eae4;
+  --white: #fff;
+}
 
 body {
   margin: 0;
@@ -24,7 +24,29 @@ button {
   font-size: 1rem;
 }
 
-h1,h2,h3,h4,h5,h6 {
+button {
+  background-color: chocolate;
+  color: #e4e4e4;
+  border-radius: 3px;
+}
+#donate_button {
+  /* MY WORK =-=-=-=-=-=-= */
+  width: 110px;
+  height: 34px;
+}
+.content_button {
+  height: 34px;
+}
+#volunteer_button {
+  background-color: #e4e4e4;
+  color: chocolate;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   margin-top: 0;
   margin-bottom: 0;
 }
@@ -63,6 +85,8 @@ p {
 .navigation__list {
   display: flex;
   list-style: none;
+  justify-content: space-between;
+  width: 400px; /* MY WORK */
 }
 
 .navigation__item {
@@ -75,7 +99,6 @@ p {
   text-transform: uppercase;
   text-decoration: none;
 }
-
 
 /* Text styles */
 
@@ -92,11 +115,9 @@ p {
   border-left-color: var(--orange-dark);
 }
 
-
 /* Buttons */
 
-  /* INSERT BUTTON STYLES HERE */
-
+/* INSERT BUTTON STYLES HERE */
 
 /* Content */
 
@@ -120,8 +141,14 @@ p {
 /* hero */
 
 .hero {
-  background-image: url("header-bike.jpg");
+/*   background-image: url("./header-bike.jpeg");*/
+  background-image: url("../images/header-bike.jpg");
   background-color: var(--grey-light);
+  height: 260px;
+  width: 820px;
+  color: #fff;
+  padding-top: 100px;
+  background-size: cover; /* to make image cover the div */
 }
 
 .hero h1 {
@@ -134,6 +161,9 @@ p {
   margin-bottom: 2rem;
 }
 
+.hero_context {
+  margin-left: 35px;
+}
 
 /* Headings */
 
@@ -157,7 +187,6 @@ p {
   max-width: 100px;
   background: var(--orange-dark);
 }
-
 
 /* Article */
 
@@ -183,7 +212,9 @@ p {
 
 .article__thumbnail {
   object-fit: contain;
-  width: 5rem;
+  /*   width: 5rem;*/
+  width: 150px;
+  margin-right: 10px;
 }
 
 .article__read-more {
@@ -211,17 +242,58 @@ p {
   color: var(--orange-dark);
 }
 
+/* my work in 'Article' */
+.article_border {
+  border: 3px solid var(--grey-light);
+  padding: 20px;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px;
+}
+
+.sidebar_article {
+  display: flex;
+}
+
+.facebook {
+  float: right;
+  clear: both;
+}
+
+/* .main_article_container {
+  display: flex;
+  flex-wrap: nowrap;
+  width: 100%;
+} */
+.main_article_container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: nowrap;
+}
+
+.main_article {
+  flex: 1;
+  width: 100%;
+}
+
+#first_box{
+  margin-right: 5px;
+}
+#second_box{
+  margin-left: 5px;
+}
+
 /* Sidebar */
 
-.sidebar {
-  display: flex;
+sidebar {
+  display: 1;
   flex-direction: column;
   min-width: 350px;
 }
 
 /* Footer */
 
-.footer {
+footer {
   margin-top: 2rem;
 }
 
@@ -231,7 +303,7 @@ p {
   padding-bottom: 2rem;
 }
 
-.footer p {
+footer p {
   padding-bottom: 1rem;
   text-align: center;
   font-size: 0.85rem;
