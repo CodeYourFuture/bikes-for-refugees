@@ -5,13 +5,13 @@
  * 
  */
 
- :root {
-   --grey-dark: #292b2c;
-   --grey-light: #e4e4e4;
-   --orange-dark: #c05326;
-   --orange-light: #f7eae4;
-   --white: #fff;
- }
+:root {
+  --grey-dark: #292b2c;
+  --grey-light: #e4e4e4;
+  --orange-dark: #c05326;
+  --orange-light: #f7eae4;
+  --white: #fff;
+}
 
 body {
   margin: 0;
@@ -26,7 +26,12 @@ button {
   font-size: 1rem;
 }
 
-h1,h2,h3,h4,h5,h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   margin-top: 0;
   margin-bottom: 0;
 }
@@ -65,14 +70,16 @@ p {
 .navigation__list {
   display: flex;
   list-style: none;
-  
+
 }
 
 .navigation__item {
   padding: .5rem 1em;
 }
-.navigation__item:hover{
+
+.navigation__item:hover {
   background-color: var(--orange-dark);
+  color: var(--white);
 }
 
 .navigation__link {
@@ -103,23 +110,33 @@ p {
 
 /* Buttons */
 
-button{
+button {
   cursor: pointer;
   height: 2.5rem;
   padding: 0.5rem 0.8rem;
-  background-color:var(--orange-dark);
+  background-color: var(--orange-dark);
   border: none;
   border-radius: .2rem;
   color: white;
   font-weight: 600;
 }
-.volunteer{
+
+button:hover,
+button:active {
+  background-color: var(--white);
+  color: #c05326;
+
+}
+
+.volunteer {
   background-color: var(--white);
   color: var(--orange-dark);
 }
-button:hover,.volunteer:hover{
-  box-shadow: 0px 0px 10px var(--orange-light);
-  
+
+.volunteer:hover,
+.volunteer:active {
+  background-color: var(--orange-dark);
+  color: var(--white);
 }
 
 
@@ -157,7 +174,8 @@ button:hover,.volunteer:hover{
 
   margin-bottom: 1rem;
   font-size: 2.5rem;
-  color: var(--white)}
+  color: var(--white)
+}
 
 .hero p {
   font-size: 1.2rem;
@@ -191,12 +209,27 @@ button:hover,.volunteer:hover{
 
 
 /* Article */
+.article__container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: .5rem;
+}
+
+.article-sidebar {
+
+  display: flex;
+  justify-content: space-around;
+  gap: 1rem;
+  border: 2px solid var(--grey-light);
+  padding: .7rem;
+}
 
 .article {
- 
+  height: 9rem;
   margin-bottom: 1rem;
   border: 2px solid var(--grey-light);
-  padding: 0.5rem;
+  padding: 1rem;
 }
 
 .article__title {
@@ -252,15 +285,9 @@ button:hover,.volunteer:hover{
   display: flex;
   flex-direction: column;
   min-width: 350px;
- 
+  gap: 1rem;
 }
-aside .article{
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  height: 6rem;
-  gap: 5rem;
-}
+
 
 /* Footer */
 
