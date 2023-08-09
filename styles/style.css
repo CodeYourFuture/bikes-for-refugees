@@ -163,7 +163,7 @@ p {
 .hero {
   background-image: url("/images/header-bike.jpg");
   background-color: var(--grey-light);
-  height: 55.2%;
+  height: 58%;
   background-size: auto;
   color: white;
   padding-left: 4.4%;
