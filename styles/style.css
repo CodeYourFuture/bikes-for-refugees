@@ -59,6 +59,15 @@ p {
 }
 
 /* Navigation */
+.btn-donate {
+background-color: #c05326;
+  border: none;
+  font-weight: bold;
+  color: #fff;
+  padding: 0.5rem 0.8rem;
+  border-radius: 0.3rem;
+}
+  
 
 .navigation__list {
   display: flex;
@@ -66,7 +75,7 @@ p {
 }
 
 .navigation__item {
-  padding: 0.5rem 0;
+  padding: 1.5rem;
 }
 
 .navigation__link {
@@ -120,8 +129,28 @@ p {
 /* hero */
 
 .hero {
-  background-image: url("header-bike.jpg");
-  background-color: var(--grey-light);
+     background-image: url(/images/header-bike.jpg);
+      background-size: cover;
+      height: 16rem;
+      color: #fff;
+      padding-top: 10%;
+      padding-left: 4%;
+}
+.donate-bike-btn {
+    border: none;
+    background-color: #c05326;
+    color: #fff;
+    border-radius: 0.2rem;
+    padding: 0.4rem 0.6rem;
+    margin-top: 5%;
+}
+.volunteer-btn {
+    border: none;
+    background-color: white;
+    color: #c05326;
+    border-radius: 0.2rem;
+    padding: 0.4rem 0.6rem;
+    margin-top: 5%;
 }
 
 .hero h1 {
@@ -139,6 +168,7 @@ p {
 
 .heading-underline {
   position: relative;
+  margin-top: 2rem;
   margin-bottom: 2rem;
   padding-bottom: 0.5rem;
   border-bottom: 2px solid var(--orange-light);
@@ -148,8 +178,8 @@ p {
 }
 
 .heading-underline:before {
-  content: "";
   position: absolute;
+  content: "";
   bottom: -2px;
   left: 0;
   width: 25%;
@@ -161,8 +191,12 @@ p {
 
 /* Article */
 
+
 .article {
+  display: flex;
+  border: solid 2px var(--grey-light);
   margin-bottom: 1rem;
+  gap: 1rem;
 }
 
 .article__title {
@@ -209,14 +243,28 @@ p {
 
 .facebook-link {
   color: var(--orange-dark);
+  margin-left: auto;
 }
 
+.article-under-hero {
+  display: flex;
+  flex-direction: column;
+  border: 2px solid var(--grey-light);
+  /* margin-right: 12px; */
+}
+article {
+  display: flex;
+  gap: 12px;
+  padding: 14px;
+  border-radius: 5px;
+}
 /* Sidebar */
 
 .sidebar {
   display: flex;
   flex-direction: column;
   min-width: 350px;
+  gap: 14px;
 }
 
 /* Footer */
