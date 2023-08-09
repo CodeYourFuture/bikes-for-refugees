@@ -22,8 +22,40 @@ button {
   font-family: "Source Sans Pro", "Helvetica Neue", Arial, sans-serif;
   color: var(--grey-dark);
   font-size: 1rem;
+  padding: 10px;
 }
 
+/* my code added */
+
+.volunteer{
+  color: #c05326;
+  background-color: white;
+}
+.donate, .volunteer {
+  margin-left: 1rem;
+  margin-bottom: 2rem;
+}
+.navigation__list{
+  display: flex;
+  align-content: space-between;
+}
+.hero_paragraph, .paragraph {
+  color: white;
+  margin-left: 1rem;
+  margin-bottom: 2rem;
+}
+.navigation__list> li {
+  padding-left:30px;
+  padding-right:30px;
+}
+.donate_now{
+  margin-left: 5rem;
+}
+ button:hover{
+    cursor: pointer;
+  }
+
+/* my code added upto here */
 h1,h2,h3,h4,h5,h6 {
   margin-top: 0;
   margin-bottom: 0;
@@ -63,6 +95,7 @@ p {
 .navigation__list {
   display: flex;
   list-style: none;
+  margin-right: 5rem;
 }
 
 .navigation__item {
@@ -75,7 +108,6 @@ p {
   text-transform: uppercase;
   text-decoration: none;
 }
-
 
 /* Text styles */
 
@@ -90,12 +122,20 @@ p {
   width: 0;
   border: 6px solid var(--white);
   border-left-color: var(--orange-dark);
+  color: blue;
 }
 
 
 /* Buttons */
 
-  /* INSERT BUTTON STYLES HERE */
+  button{
+    background-color: #c05326;
+    color: white;
+    border-radius: 3px;
+    border: none;
+  
+  }
+
 
 
 /* Content */
@@ -108,7 +148,9 @@ p {
 /* Alert */
 
 .alert {
-  background-color: var(--orange-light);
+  border-top: 1px solid #c05326;
+  border-right: 1px solid black;
+  border-bottom: 1px solid black;
   border-left: 4px solid var(--orange-dark);
   border-radius: 4px;
   font-size: 0.85rem;
@@ -120,8 +162,9 @@ p {
 /* hero */
 
 .hero {
-  background-image: url("header-bike.jpg");
-  background-color: var(--grey-light);
+  background-image: url(../images/header-bike.jpg) ;
+  margin-bottom: 2.5rem;
+  padding: 4rem;
 }
 
 .hero h1 {
@@ -159,10 +202,28 @@ p {
 }
 
 
-/* Article */
+/* Article - (AMENDED= I gave some classname to the 
+tags and added some new properties here)*/
 
-.article {
+.article_big {
   margin-bottom: 1rem;
+  border: 0.5px solid #c05326;
+  border-radius: 3px;
+  display: flex;
+}
+.article_s {
+  text-align:left;
+  display: flex;
+}
+.article_small2, .article_small1 {
+  margin-bottom: 1rem;
+  border: 0.5px solid #c05326;
+  border-radius: 3px;
+  margin-inline: 1px;
+}
+
+.article__title, .article__summary, .article__read-more{
+  margin: 10px 10px;
 }
 
 .article__title {
@@ -173,7 +234,7 @@ p {
 
 .article__title-link {
   text-decoration: none;
-  color: var(--orange-dark);
+  color: blue;
 }
 
 .article__summary {
@@ -193,7 +254,7 @@ p {
 .article__read-more a {
   font-size: 0.85rem;
   font-weight: 700;
-  color: var(--orange-dark);
+  color: blue;
   text-decoration: none;
 }
 
@@ -208,7 +269,8 @@ p {
 }
 
 .facebook-link {
-  color: var(--orange-dark);
+  color:#c05326;
+  text-decoration: none;
 }
 
 /* Sidebar */
