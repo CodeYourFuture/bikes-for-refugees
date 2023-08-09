@@ -15,6 +15,8 @@
 
 body {
   margin: 0;
+  min-height: 100vh;
+
 }
 
 body,
@@ -70,7 +72,7 @@ p {
   padding: .5rem 1em;
 }
 .navigation__item:hover{
-  background-color: var(--orange-light);
+  background-color: var(--orange-dark);
 }
 
 .navigation__link {
@@ -102,7 +104,9 @@ p {
 /* Buttons */
 
 button{
+  cursor: pointer;
   height: 2.5rem;
+  padding: 0.5rem 0.8rem;
   background-color:var(--orange-dark);
   border: none;
   border-radius: .2rem;
@@ -113,8 +117,10 @@ button{
   background-color: var(--white);
   color: var(--orange-dark);
 }
-
-
+button:hover,.volunteer:hover{
+  box-shadow: 0px 0px 10px var(--orange-light);
+  
+}
 
 
 /* Content */
@@ -190,7 +196,7 @@ button{
  
   margin-bottom: 1rem;
   border: 2px solid var(--grey-light);
-  padding: .7rem;
+  padding: 0.5rem;
 }
 
 .article__title {
