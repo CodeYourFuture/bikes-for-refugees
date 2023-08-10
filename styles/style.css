@@ -24,6 +24,37 @@ button {
   font-size: 1rem;
 }
 
+button {
+  background-color: #C05326;
+  color: #fff;
+  border: 0px #c05326 solid;
+  border-radius: 3px;
+  padding: 5px 10px;
+  border-color: #c05326;
+}
+button:hover{
+  background-color:#fff;
+  color: #C05326;
+  border: 0px #fff solid;
+}
+#volunteer {
+  background-color: #fff;
+  color: #C05326;
+  border: 0px #Cfff solid;
+  border-radius: 3px;
+  margin-left: 5px;
+}
+#volunteer:hover{
+  background-color: #C05326;
+  color: #fff;
+  border: 0px #C05326 solid;
+}
+
+
+#button2 {
+  display: flex;
+}
+
 h1,h2,h3,h4,h5,h6 {
   margin-top: 0;
   margin-bottom: 0;
@@ -74,8 +105,11 @@ p {
   font-weight: 600;
   text-transform: uppercase;
   text-decoration: none;
+  margin: 1.5rem;
 }
-
+.navigation__link:hover{
+  color:#c05326
+}
 
 /* Text styles */
 
@@ -120,8 +154,17 @@ p {
 /* hero */
 
 .hero {
-  background-image: url("header-bike.jpg");
+  background-image: url("/images/header-bike.jpg");
   background-color: var(--grey-light);
+  height:54%;
+  background-size: auto;
+  color: white;
+  margin-bottom: 2rem;
+  padding: 10px 20px;
+  display:flex;
+  flex-direction: column;
+  justify-content:center ;
+  align-items:start ;
 }
 
 .hero h1 {
@@ -162,7 +205,12 @@ p {
 /* Article */
 
 .article {
-  margin-bottom: 1rem;
+  margin:10px;
+  border:2px solid #DADADB;
+  border-radius:4px;
+  display: flex;
+  align-content: center;
+  padding: 10px;
 }
 
 .article__title {
@@ -201,6 +249,17 @@ p {
 .article__read-more a:focus {
   text-decoration: underline;
 }
+.article__content{
+  margin: 10px;
+
+}
+.article2{
+display: block;
+border:2px solid #DADADB;
+margin: 10px;
+padding: 12px;
+}
+
 
 .fa {
   margin-right: 0.5rem;
@@ -209,8 +268,13 @@ p {
 
 .facebook-link {
   color: var(--orange-dark);
+  text-align: right ;
+  margin-right: 12px;
 }
-
+.article-box {
+  display: flex;
+  
+}
 /* Sidebar */
 
 .sidebar {
@@ -222,7 +286,8 @@ p {
 /* Footer */
 
 .footer {
-  margin-top: 2rem;
+  margin-top:12rem;
+ 
 }
 
 .footer__content {
