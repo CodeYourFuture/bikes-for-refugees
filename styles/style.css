@@ -187,7 +187,15 @@ p {
 /* Article */
 
 .article {
-  margin-bottom: 1rem;
+  margin:10px;
+  border:2px solid #DADADB;
+  border-radius:4px;
+  display: flex;
+  align-content: center;
+  padding: 10px;
+}
+.article__content {
+  margin: 10px;
 }
 
 .article__title {
