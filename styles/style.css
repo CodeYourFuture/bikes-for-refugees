@@ -156,7 +156,6 @@ p {
 /* Message section styles */
 .hero {
   background-image: url("../images/header-bike.jpg");
-  background-color: #e4e4e4;
   height: 58%;
   background-size: contain;
   color: white;
