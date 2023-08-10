@@ -158,7 +158,7 @@ p {
   background-image: url("../images/header-bike.jpg");
   background-color: #e4e4e4;
   height: 55.2%;
-  background-size: auto;
+  background-size: contain;
   color: white;
   padding-left: 4.4%;
   display: flex;
