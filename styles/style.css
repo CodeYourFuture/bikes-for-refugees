@@ -165,7 +165,7 @@ button:active {
   display: block;
   height: 20rem;
   background-image: url(/images/header-bike.jpg);
-  background-color: var(--grey-light);
+  background-size:contain;
   padding: 1.5rem;
   margin-bottom: 1.7rem;
 }
