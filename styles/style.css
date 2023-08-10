@@ -101,9 +101,10 @@ p {
 }
 
 /* Button styles */
-button {
+.donate-btn {
   background-color: #c05326;
-  color: #e4e4e4;
+  color: #fff;
+  text-decoration: none;
   border: none;
   padding: 0.6rem 0.8rem;
   border-radius: 6px;
@@ -111,8 +112,8 @@ button {
   transition: background-color ease-in-out 0.3s;
 }
 
-button:hover,
-button:active {
+.donate-btn:hover,
+.donate-btn:active {
   background-color: rgb(219, 204, 204);
   color: #c05326;
 }
@@ -121,6 +122,11 @@ button:active {
 .volunteer-btn {
   background-color: white;
   color: #c05326;
+  text-decoration: none;
+  border: none;
+  padding: 0.6rem 0.8rem;
+  border-radius: 6px;
+  font-weight: 600;
   transition: background-color ease-in-out 0.3s;
 }
 
