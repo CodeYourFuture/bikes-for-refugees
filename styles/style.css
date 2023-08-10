@@ -135,15 +135,16 @@ p {
 
 .hero {
   background-image: url("/images/header-bike.jpg");
-  background-size: auto;
-  height: 47%;
   background-color: var(--grey-light);
-  color: #fff;
-  padding: 20px 20px;
-  display: flex;
-  align-items: start;
+  height:54%;
+  background-size: auto;
+  color: white;
+  margin-bottom: 2rem;
+  padding: 10px 20px;
+  display:flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content:center ;
+  align-items:start ;
 }
 .butt {
   display: flex;
@@ -234,6 +235,15 @@ p {
 .article__read-more a:focus {
   text-decoration: underline;
 }
+.article2 {
+  display: block;
+  border:2px solid #DADADB;
+  margin: 10px;
+  padding: 15px;
+}
+.article-box {
+  display: flex;
+}
 
 .fa {
   margin-right: 0.5rem;
@@ -242,6 +252,8 @@ p {
 
 .facebook-link {
   color: var(--orange-dark);
+  text-align: right;
+  margin-right: 12px;
 }
 
 /* Sidebar */
@@ -255,7 +267,7 @@ p {
 /* Footer */
 
 .footer {
-  margin-top: 2rem;
+  margin-top: 12rem;
 }
 
 .footer__content {
