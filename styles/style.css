@@ -255,6 +255,18 @@ margin:10px;
 .article__read-more a:focus {
   text-decoration: underline;
 }
+.article2{
+  display:block;
+  border: 2px solid #dadadb;
+  
+  margin:10px;
+  padding:10px;
+}
+.article_box{
+  display:flex;
+  
+  
+}
 
 .fa {
   margin-right: 0.5rem;
@@ -263,6 +275,7 @@ margin:10px;
 
 .facebook-link {
   color: var(--orange-dark);
+  text-align:right;
 }
 
 /* Sidebar */
@@ -276,7 +289,7 @@ margin:10px;
 /* Footer */
 
 .footer {
-  margin-top: 2rem;
+  margin-top: 12rem;
 }
 
 .footer__content {
