@@ -157,7 +157,7 @@ p {
 
   
 }
-.butty{
+.button2{
   display:flex;
 }
 
@@ -200,16 +200,19 @@ p {
 
 
 .article {
-  margin-bottom: 1rem;
- 
-  
+margin-bottom: 1rem;
+border: 2px solid #dadadb;
+border-radius: 4px;
+display: flex;
+align-content: center;
+padding: 10px;
+
+
 }
 
 
 .article__content{
-  border:2px solid #dadadb;
-  border-radius:4px;
-
+margin:10px;
 }
 
 .article__title {
