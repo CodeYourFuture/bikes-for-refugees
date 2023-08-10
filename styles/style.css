@@ -5,16 +5,18 @@
  * 
  */
 
- :root {
-   --grey-dark: #292b2c;
-   --grey-light: #e4e4e4;
-   --orange-dark: #c05326;
-   --orange-light: #f7eae4;
-   --white: #fff;
- }
+:root {
+  --grey-dark: #292b2c;
+  --grey-light: #e4e4e4;
+  --orange-dark: #c05326;
+  --orange-light: #f7eae4;
+  --white: #fff;
+}
 
 body {
   margin: 0;
+  min-height: 100vh;
+
 }
 
 body,
@@ -24,7 +26,12 @@ button {
   font-size: 1rem;
 }
 
-h1,h2,h3,h4,h5,h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   margin-top: 0;
   margin-bottom: 0;
 }
@@ -63,10 +70,16 @@ p {
 .navigation__list {
   display: flex;
   list-style: none;
+
 }
 
 .navigation__item {
-  padding: 0.5rem 0;
+  padding: .5rem 1em;
+}
+
+.navigation__item:hover {
+  background-color: var(--orange-dark);
+  color: var(--white);
 }
 
 .navigation__link {
@@ -74,7 +87,9 @@ p {
   font-weight: 600;
   text-transform: uppercase;
   text-decoration: none;
+  padding: 1rem 0rem;
 }
+
 
 
 /* Text styles */
@@ -95,7 +110,34 @@ p {
 
 /* Buttons */
 
-  /* INSERT BUTTON STYLES HERE */
+button {
+  cursor: pointer;
+  height: 2.5rem;
+  padding: 0.5rem 0.8rem;
+  background-color: var(--orange-dark);
+  border: none;
+  border-radius: .2rem;
+  color: white;
+  font-weight: 600;
+}
+
+button:hover,
+button:active {
+  background-color: var(--white);
+  color: #c05326;
+
+}
+
+.volunteer {
+  background-color: var(--white);
+  color: var(--orange-dark);
+}
+
+.volunteer:hover,
+.volunteer:active {
+  background-color: var(--orange-dark);
+  color: var(--white);
+}
 
 
 /* Content */
@@ -120,18 +162,25 @@ p {
 /* hero */
 
 .hero {
-  background-image: url("header-bike.jpg");
-  background-color: var(--grey-light);
+  display: block;
+  height: 20rem;
+  background-image: url(/images/header-bike.jpg);
+  background-size:contain;
+  padding: 1.5rem;
+  margin-bottom: 1.7rem;
 }
 
 .hero h1 {
+
   margin-bottom: 1rem;
   font-size: 2.5rem;
+  color: var(--white)
 }
 
 .hero p {
   font-size: 1.2rem;
   margin-bottom: 2rem;
+  color: var(--white);
 }
 
 
@@ -160,9 +209,27 @@ p {
 
 
 /* Article */
+.article__container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: .5rem;
+}
+
+.article-sidebar {
+
+  display: flex;
+  justify-content: space-around;
+  gap: 1rem;
+  border: 2px solid var(--grey-light);
+  padding: .7rem;
+}
 
 .article {
+  height: 9rem;
   margin-bottom: 1rem;
+  border: 2px solid var(--grey-light);
+  padding: 1rem;
 }
 
 .article__title {
@@ -208,6 +275,7 @@ p {
 }
 
 .facebook-link {
+  text-align: right;
   color: var(--orange-dark);
 }
 
@@ -217,7 +285,9 @@ p {
   display: flex;
   flex-direction: column;
   min-width: 350px;
+  gap: 1rem;
 }
+
 
 /* Footer */
 
