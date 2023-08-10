@@ -22,6 +22,22 @@ button {
   font-family: "Source Sans Pro", "Helvetica Neue", Arial, sans-serif;
   color: var(--grey-dark);
   font-size: 1rem;
+  
+}
+button{
+  background-color:#c05326;
+  color:#e4e4e4;
+  border-radius: 3px;
+  border:0px solid #c05326;
+  padding:5px 10px;
+}
+#volunteer{
+  background-color:aliceblue;
+  color:#c05326;
+  border-radius: 3px;
+  border: 0px solid aliceblue;
+  padding: 5px 10px;
+  margin-left:5px;
 }
 
 h1,h2,h3,h4,h5,h6 {
@@ -51,6 +67,8 @@ p {
   height: 5rem;
   margin-bottom: 1rem;
   padding-top: 1rem;
+ 
+  
 }
 
 .header__logo {
@@ -63,6 +81,7 @@ p {
 .navigation__list {
   display: flex;
   list-style: none;
+ 
 }
 
 .navigation__item {
@@ -74,6 +93,10 @@ p {
   font-weight: 600;
   text-transform: uppercase;
   text-decoration: none;
+  margin:1.5rem;
+
+  
+    
 }
 
 
@@ -120,8 +143,22 @@ p {
 /* hero */
 
 .hero {
-  background-image: url("header-bike.jpg");
+  background-image: url("/images/header-bike.jpg");
   background-color: var(--grey-light);
+  height:54%;
+  background-size: auto;
+  color: white;
+  margin-bottom: 2rem;
+  padding: 10px 20px;
+  display:flex;
+  flex-direction: column;
+  justify-content:center ;
+  align-items:start ;
+
+  
+}
+.butty{
+  display:flex;
 }
 
 .hero h1 {
@@ -161,29 +198,43 @@ p {
 
 /* Article */
 
+
 .article {
   margin-bottom: 1rem;
+ 
+  
+}
+
+
+.article__content{
+  border:2px solid #dadadb;
+  border-radius:4px;
+
 }
 
 .article__title {
   margin-bottom: 0.5rem;
   font-size: 1rem;
   font-weight: 700;
+  
 }
 
 .article__title-link {
   text-decoration: none;
   color: var(--orange-dark);
+  
 }
 
 .article__summary {
   margin-top: 0;
   margin-bottom: 1rem;
+ 
 }
 
 .article__thumbnail {
   object-fit: contain;
-  width: 5rem;
+  width:5rem;
+  
 }
 
 .article__read-more {
