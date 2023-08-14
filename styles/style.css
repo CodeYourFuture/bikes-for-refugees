@@ -185,9 +185,16 @@ p {
   margin-bottom: 1rem;
   padding: .5rem;
   border: 1px solid var(--grey-light);
+  display: flex;
+  flex-direction: row;
+  padding: .4rem;
   
 }
+/*.article img{
+  margin-right: .5rem;
+  size: 60rem;
 
+}*/
 .article__title {
   margin-bottom: 0.5rem;
   font-size: 1rem;
@@ -206,7 +213,8 @@ p {
 
 .article__thumbnail {
   object-fit: contain;
-  width: 5rem;
+  width: 6rem;
+  margin: .1rem .6rem .2rem .3rem;
 }
 
 .article__read-more {
