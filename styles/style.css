@@ -51,6 +51,7 @@ p {
   height: 5rem;
   margin-bottom: 1rem;
   padding-top: 1rem;
+  margin-bottom: 10px;
 }
 
 .header__logo {
@@ -97,7 +98,18 @@ p {
 
 /* Buttons */
 
-  /* INSERT BUTTON STYLES HERE */
+  #donate_id{
+    width: 8rem;
+    height: 2rem;
+    background-color: var(--orange-dark);
+    border-radius: 3px;
+    text-align: center;
+    color: var(--white);
+    font-weight: bold;
+  }
+  #donate_id:hover{
+    background-color: #bb6540;
+  }
 
 
 /* Content */
