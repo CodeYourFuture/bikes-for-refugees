@@ -183,6 +183,9 @@ p {
 
 .article {
   margin-bottom: 1rem;
+  padding: .5rem;
+  border: 1px solid var(--grey-light);
+  
 }
 
 .article__title {
