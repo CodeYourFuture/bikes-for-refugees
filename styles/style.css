@@ -76,7 +76,7 @@ p {
 
 .navigation__link:hover,
 .navigation__link:active {
-  color: #c05326;
+  color: var(--orange-dark);
 }
 
 .navigation__link {
@@ -105,7 +105,7 @@ p {
 
 /* Buttons */
 
-.donate-btn {
+.btn {
   background-color: #c05326;
   color: #e4e4e4;
   border: none;
@@ -116,27 +116,21 @@ p {
   text-decoration: none;
 }
 
-.donate-btn:hover,
-.donate-btn:active {
+.btn:hover,
+.btn:active {
   background-color: white;
   color: #c05326;
 }
 
-.volunteer-btn {
-  background-color: #e4e4e4;
-  color: #c05326;
-  border: none;
-  padding: 0.6rem 0.8rem;
-  border-radius: 6px;
-  font-weight: 600;
-  transition: background-color ease-in-out 0.3s;
-  text-decoration: none;
+.volunteer {
+  background-color: var(--white);
+  color: var(--orange-dark);
 }
 
-.volunteer-btn:hover,
-.volunteer-btn:active {
-  background-color: #c05326;
-  color: white;
+.volunteer:hover,
+.volunteer:active {
+  background-color: var(--orange-dark);
+  color: var(--white);
 }
 
 /* Content */
@@ -289,9 +283,9 @@ p {
 /* Footer */
 
 .footer_content {
-  margin-top: 10.8rem;
+  margin-top: 14rem;
   border-top: 2px solid var(--orange-light);
-  width: 76%;
+  max-width: 76%;
 }
 
 .footer_content {
