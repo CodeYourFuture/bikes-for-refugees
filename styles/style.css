@@ -161,7 +161,7 @@ p {
 /* hero */
 
 .hero {
-  background-image: url("/bikes-for-refugees/images/header-bike.jpg");
+  background-image: url("/images/header-bike.jpg");
   background-color: var(--grey-light);
   height: 58%;
   background-size: auto;
