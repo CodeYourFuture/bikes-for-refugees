@@ -328,6 +328,9 @@ p {
 
 }
 
+.article_holder{
+  flex: 1;
+}
 /* Footer */
 
 .footer {
