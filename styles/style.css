@@ -93,13 +93,39 @@ p {
 }
 
 
-/* Buttons */
+button{
+  background-color: var(--orange-dark);
+  color: var(--white);
+  border-radius: 3px;
+  text-align: center;
+  font-weight: 600;
+  padding: 0.6rem 0.8rem;
+  border: 0px solid var(--orange-dark);
 
-  /* INSERT BUTTON STYLES HERE */
+}
 
+#vol{
+  color: var(--orange-dark);
+  background-color: var(--white);
+  border-radius: 3px;
+  padding: 5px 10px;
+  border: 0px #e4e4e4;
+  margin-left: 5px;
+}
 
-/* Content */
+#vol:hover{
+background-color: var(--orange-dark);
+color: var(--white);
+}
 
+.butt{
+  display:flex;
+}
+button:hover{
+  background-color:#fff;
+  color: #C05326;
+  border: 0px #fff solid
+}
 .content {
   display: flex;
   flex-direction: column;
@@ -118,10 +144,18 @@ p {
 }
 
 /* hero */
-
 .hero {
-  background-image: url("header-bike.jpg");
-  background-color: var(--grey-light);
+background-image: url("/images/header-bike.jpg");
+background-color: var(--grey-light);
+height:54%;
+background-size: auto;
+color: white;
+margin-bottom: 2rem;
+padding: 10px 20px;
+display:flex;
+flex-direction: column;
+justify-content:center ;
+align-items:start ;
 }
 
 .hero h1 {
