@@ -65,6 +65,9 @@ p {
   list-style: none;
 }
 
+.navigation__link:hover{
+  color: var(--orange-dark);
+}
 .navigation__item {
   padding: 0.5rem 0;
 }
@@ -74,8 +77,7 @@ p {
   font-weight: 600;
   text-transform: uppercase;
   text-decoration: none;
-  margin: 10px;
-  padding: 10px;
+  margin: 1.5rem;
 }
 
 
@@ -199,13 +201,21 @@ align-items:start ;
 
 .article {
   margin-bottom: 1rem;
+  padding: 10px;
+  display: flex;
+  border-radius: 4px;
+  align-items: center;
+  border: 2px solid #dadadb;
+}
+
+.article__content{
+  margin: 10px;
 }
 
 .article__title {
   margin-bottom: 0.5rem;
   font-size: 1rem;
   font-weight: 700;
-  padding-right: 12%;
 }
 
 .article__title-link {
@@ -221,7 +231,7 @@ align-items:start ;
 .article__thumbnail {
   object-fit: contain;
   width: 5rem;
-  display: flex;
+  
 }
 
 .article__read-more {
@@ -238,6 +248,17 @@ align-items:start ;
 .article__read-more a:hover,
 .article__read-more a:focus {
   text-decoration: underline;
+}
+
+.article1{
+  border: 2px solid #dadadb;
+  display: block;
+  margin: 10px;
+  padding: 10px;
+}
+
+.article-shape{
+  display: flex;
 }
 
 .fa {
