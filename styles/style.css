@@ -74,6 +74,8 @@ p {
   font-weight: 600;
   text-transform: uppercase;
   text-decoration: none;
+  margin: 10px;
+  padding: 10px;
 }
 
 
@@ -203,6 +205,7 @@ align-items:start ;
   margin-bottom: 0.5rem;
   font-size: 1rem;
   font-weight: 700;
+  padding-right: 12%;
 }
 
 .article__title-link {
@@ -218,6 +221,7 @@ align-items:start ;
 .article__thumbnail {
   object-fit: contain;
   width: 5rem;
+  display: flex;
 }
 
 .article__read-more {
@@ -243,6 +247,7 @@ align-items:start ;
 
 .facebook-link {
   color: var(--orange-dark);
+  margin-left: auto;
 }
 
 /* Sidebar */
@@ -256,7 +261,7 @@ align-items:start ;
 /* Footer */
 
 .footer {
-  margin-top: 2rem;
+  margin-top: 12rem;
 }
 
 .footer__content {
