@@ -11,6 +11,7 @@
    --orange-dark: #c05326;
    --orange-light: #f7eae4;
    --white: #fff;
+   --hproportion: calc(calc(362/730)*100%);
  }
 
 body {
@@ -62,15 +63,28 @@ p {
 
 .navigation__list {
   display: flex;
+  gap: 1rem;
   list-style: none;
 }
 
 .navigation__item {
+  color: var(--grey-dark);
   padding: 0.5rem 0;
+  padding: 1rem;
+  transition: all 0.2s ease-in;
 }
 
+.navigation__item:hover {
+  background-color: var(--orange-dark);
+  color: var(--white);
+  padding: 1rem;
+  transition: all 0.2s ease-in;
+}
+
+
+
 .navigation__link {
-  color: var(--grey-dark);
+  color: inherit;
   font-weight: 600;
   text-transform: uppercase;
   text-decoration: none;
@@ -95,8 +109,39 @@ p {
 
 /* Buttons */
 
-  /* INSERT BUTTON STYLES HERE */
+button {
+  border-radius: 4px;
+  border: none;
+  font: inherit;
+  cursor: pointer;
+  outline: inherit;
+  padding: 0.5rem 0.75rem;
+  background-color: none;
+}
 
+.button-dark {
+  background-color: var(--orange-dark);
+  color: var(--white);
+  transition: all 0.2s ease-in;
+}
+
+.button-dark:hover {
+  background-color: var(--white);
+  color: var(--orange-dark);
+  transition: all 0.2s ease-in;
+}
+
+.button-light {
+  background-color: var(--white);
+  color: var(--orange-dark);
+  transition: all 0.2s ease-in;
+}
+
+.button-light:hover {
+  background-color: var(--orange-dark);
+  color: var(--white);
+  transition: all 0.2s ease-in;
+}
 
 /* Content */
 
@@ -120,9 +165,27 @@ p {
 /* hero */
 
 .hero {
-  background-image: url("header-bike.jpg");
-  background-color: var(--grey-light);
+  background: url("../images/header-bike.jpg") no-repeat center center;
+  background-size: cover;
+  border-radius: 4px;
+  position: relative;
+  width: 100%;
+  padding-bottom: var(--hproportion);
+  margin-bottom: 2rem;
+  color: var(--white);
 }
+
+.hero article {
+  position: absolute;
+  margin: auto;
+  top: 50%;
+  left: 2rem;
+  bottom: 0;
+  right: 0;
+  transform: translateY(-50%);
+  background-color: rgba(3,3,3,0.4);
+  padding-top: 1rem;
+} 
 
 .hero h1 {
   margin-bottom: 1rem;
@@ -158,11 +221,25 @@ p {
   background: var(--orange-dark);
 }
 
+.learn-more-articles {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+}
+
 
 /* Article */
 
 .article {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
   margin-bottom: 1rem;
+  border-radius: 4px;
+  border: 2px solid var(--grey-light);
+  padding: 1rem;
 }
 
 .article__title {
@@ -183,7 +260,12 @@ p {
 
 .article__thumbnail {
   object-fit: contain;
-  width: 5rem;
+  width: 25%;
+}
+
+.article__content {
+  display: inline-block;
+  width: 70%;
 }
 
 .article__read-more {
@@ -209,6 +291,7 @@ p {
 
 .facebook-link {
   color: var(--orange-dark);
+  text-align: right;
 }
 
 /* Sidebar */
