@@ -99,6 +99,18 @@ p {
 /* Buttons */
 
 /* INSERT BUTTON STYLES HERE */
+
+button {
+  background-color: #e95b1e;
+  color: white;
+  border-radius: 4px;
+  padding: 6px 6px;
+  border: 0px;
+}
+
+button:hover {
+  background-color: rgb(55, 178, 235);
+}
 .orange {
   background-color: #e95b1e;
   color: white;
