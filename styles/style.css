@@ -20,7 +20,7 @@ body {
 body,
 button {
   font-family: "Source Sans Pro", "Helvetica Neue", Arial, sans-serif;
-  color: var(--grey-dark);
+  color: var(grey-dark);
   font-size: 1rem;
 }
 
@@ -95,7 +95,23 @@ p {
 
 /* Buttons */
 
-  /* INSERT BUTTON STYLES HERE */
+button {
+  background-color: var(--orange-dark);
+  color: var(--white);
+  border: none;
+  padding: 10px 20px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease; /* Add a transition for smoother hover effect */
+}
+
+button:hover {
+  background-color: var(--white);
+  color: var(--orange-dark);
+   /* Change the background color on hover */
+}
+
+
 
 
 /* Content */
@@ -120,18 +136,76 @@ p {
 /* hero */
 
 .hero {
-  background-image: url("header-bike.jpg");
-  background-color: var(--grey-light);
+  background-image: url("/images/header-bike.jpg");
+  background-size: cover;
+  background-position: center;
+  color: var(--white);
+  padding: 3rem;
+  text-align: center;
 }
 
+
 .hero h1 {
-  margin-bottom: 1rem;
   font-size: 2.5rem;
+  margin-bottom: 1rem;
+  font-weight: 700;
 }
 
 .hero p {
   font-size: 1.2rem;
   margin-bottom: 2rem;
+}
+
+/* extra navigation styles added */
+
+.navigation__list {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.navigation__item {
+  margin-right: 1rem;
+}
+
+.navigation__link {
+  color: var(--grey-dark);
+  font-weight: 600;
+  text-transform: uppercase;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.navigation__link:hover {
+  color: var(--orange-dark);
+}
+/* Article style added here */
+
+.article {
+  margin-bottom: 2rem;
+  padding: 1rem;
+  border: 1px solid var(--grey-light);
+  border-radius: 4px;
+}
+
+.article__title {
+  font-size: 1.25rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+}
+
+.article__title-link {
+  color: var(--orange-dark);
+  text-decoration: none;
+}
+
+.article__title-link:hover {
+  text-decoration: underline;
+}
+
+.article__summary {
+  margin: 0;
 }
 
 
@@ -248,3 +322,9 @@ p {
     padding-right: 2rem;
   }
 }
+
+.sidebar {
+  flex: 1;
+  padding-left: 2rem;
+}
+
