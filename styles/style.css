@@ -5,13 +5,13 @@
  * 
  */
 
- :root {
-   --grey-dark: #292b2c;
-   --grey-light: #e4e4e4;
-   --orange-dark: #c05326;
-   --orange-light: #f7eae4;
-   --white: #fff;
- }
+:root {
+  --grey-dark: #292b2c;
+  --grey-light: #e4e4e4;
+  --orange-dark: #c05326;
+  --orange-light: #f7eae4;
+  --white: #fff;
+}
 
 body {
   margin: 0;
@@ -24,7 +24,12 @@ button {
   font-size: 1rem;
 }
 
-h1,h2,h3,h4,h5,h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   margin-top: 0;
   margin-bottom: 0;
 }
@@ -66,7 +71,7 @@ p {
 }
 
 .navigation__item {
-  padding: 0.5rem 0;
+  padding: 0.5rem 1rem;
 }
 
 .navigation__link {
@@ -76,6 +81,9 @@ p {
   text-decoration: none;
 }
 
+.navigation__item:hover {
+  background-color: #c05326;
+}
 
 /* Text styles */
 
@@ -92,11 +100,38 @@ p {
   border-left-color: var(--orange-dark);
 }
 
-
 /* Buttons */
 
-  /* INSERT BUTTON STYLES HERE */
+/* INSERT BUTTON STYLES HERE */
 
+button {
+  padding: 0.5rem;
+  border-radius: 0.3rem;
+}
+
+.donate {
+  background-color: #c05326;
+  color: #e4e4e4;
+  font-weight: bold;
+  border-color: #c05326;
+}
+
+.donate:hover {
+  background-color: #e4e4e4;
+  color: #c05326;
+}
+
+.volunteer {
+  background-color: #e4e4e4;
+  color: #c05326;
+  font-weight: bold;
+  border-color: #e4e4e4;
+}
+
+.volunteer:hover {
+  background-color: #c05326;
+  color: #e4e4e4;
+}
 
 /* Content */
 
@@ -120,20 +155,24 @@ p {
 /* hero */
 
 .hero {
-  background-image: url("header-bike.jpg");
+  background-image: url("../images/header-bike.jpg");
   background-color: var(--grey-light);
+  background-size: cover;
+  padding: 6rem 3rem;
+  margin-bottom: 3rem;
 }
 
 .hero h1 {
   margin-bottom: 1rem;
   font-size: 2.5rem;
+  color: #fff;
 }
 
 .hero p {
   font-size: 1.2rem;
   margin-bottom: 2rem;
+  color: #fff;
 }
-
 
 /* Headings */
 
@@ -158,11 +197,25 @@ p {
   background: var(--orange-dark);
 }
 
-
 /* Article */
 
 .article {
+  display: flex;
+  justify-content: space-between;
   margin-bottom: 1rem;
+  border: 1px solid #c1c4c5;
+  padding: 1rem;
+}
+
+.bottom_lm {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+}
+
+.article_lm {
+  border: 1px solid #c1c4c5;
+  padding: 1rem;
 }
 
 .article__title {
@@ -184,6 +237,7 @@ p {
 .article__thumbnail {
   object-fit: contain;
   width: 5rem;
+  padding-right: 1rem;
 }
 
 .article__read-more {
@@ -203,12 +257,14 @@ p {
 }
 
 .fa {
-  margin-right: 0.5rem;
+  margin-right: 0.1rem;
   color: var(--orange-dark);
 }
 
 .facebook-link {
+  display: flex;
   color: var(--orange-dark);
+  justify-content: end;
 }
 
 /* Sidebar */
