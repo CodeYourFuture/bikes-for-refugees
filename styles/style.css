@@ -202,6 +202,15 @@ p {
   margin-bottom: 1rem;
   border: 2px solid black;
   padding: 15px;
+  display: flex;
+  flex-direction: column;
+}
+.articles {
+  margin-bottom: 1rem;
+  border: 2px solid black;
+  display: flex;
+  padding: 15px;
+  margin: 10px;
 }
 
 .article__title {
@@ -221,6 +230,9 @@ p {
   flex: 50%;
   padding: 10px;
   margin: 10px;
+}
+.article__content {
+  padding: 10px;
 }
 
 .article__summary {
