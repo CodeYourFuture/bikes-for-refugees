@@ -151,7 +151,10 @@ p {
   font-size: 1.2rem;
   margin-bottom: 2rem;
 }
-
+.article-sec-one{
+  display: flex;
+  gap: 10px;
+}
 
 /* Headings */
 
@@ -180,8 +183,10 @@ p {
 /* Article */
 
 .article {
+  display: flex;
   margin-bottom: 1rem;
   border:#292b2c 1px solid;
+  padding: 10px;
 
 }
 
