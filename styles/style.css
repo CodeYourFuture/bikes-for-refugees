@@ -251,7 +251,8 @@ p {
 
 .facebook-link {
   color: var(--orange-dark);
-  text-align: right;
+  display: flex;
+  justify-content: end;
 } 
 
 /* main-article 2article */
