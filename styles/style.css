@@ -6,12 +6,12 @@
  */
 
  :root {
-   --grey-dark: #292b2c;
-   --grey-light: #e4e4e4;
-   --orange-dark: #c05326;
-   --orange-light: #f7eae4;
-   --white: #fff;
- }
+  --grey-dark: #292b2c;
+  --grey-light: #e4e4e4;
+  --orange-dark: #c05326;
+  --orange-light: #f7eae4;
+  --white: #fff;
+}
 
 body {
   margin: 0;
@@ -24,7 +24,12 @@ button {
   font-size: 1rem;
 }
 
-h1,h2,h3,h4,h5,h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   margin-top: 0;
   margin-bottom: 0;
 }
@@ -76,7 +81,6 @@ p {
   text-decoration: none;
 }
 
-
 /* Text styles */
 
 .text-highlight {
@@ -92,11 +96,37 @@ p {
   border-left-color: var(--orange-dark);
 }
 
-
 /* Buttons */
 
-  /* INSERT BUTTON STYLES HERE */
+/* INSERT BUTTON STYLES HERE */
 
+button {
+  background-color: #e95b1e;
+  color: white;
+  border-radius: 4px;
+  padding: 6px 6px;
+  border: 0px;
+}
+
+button:hover {
+  background-color: rgb(55, 178, 235);
+}
+.orange {
+  background-color: #e95b1e;
+  color: white;
+  margin-left: 25px;
+  border-radius: 4px;
+  padding: 6px 6px;
+  border: 0px;
+}
+
+.white {
+  color: #c05326;
+  background-color: white;
+  border-radius: 4px;
+  padding: 6px 6px;
+  border: 0px;
+}
 
 /* Content */
 
@@ -114,26 +144,35 @@ p {
   font-size: 0.85rem;
   line-height: 1.3;
   padding: 1.5rem 1rem;
-  margin-bottom: 2rem;
+  margin-bottom: 3rem;
 }
 
 /* hero */
 
 .hero {
-  background-image: url("header-bike.jpg");
   background-color: var(--grey-light);
+  background-position: center center;
+  background-size: cover;
+  padding-top: 100px;
+  padding-bottom: 100px;
 }
 
 .hero h1 {
+  margin-left: 25px;
   margin-bottom: 1rem;
   font-size: 2.5rem;
+  color: white;
 }
 
 .hero p {
   font-size: 1.2rem;
   margin-bottom: 2rem;
+  margin-left: 25px;
+  color: white;
 }
-
+h2 {
+  padding: 20px 20px;
+}
 
 /* Headings */
 
@@ -158,13 +197,25 @@ p {
   background: var(--orange-dark);
 }
 
-
 /* Article */
-
+.articlearea {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 20px;
+}
 .article {
   margin-bottom: 1rem;
+  border: 1px solid #ccc;
+  width: 50%;
+  padding: 12px 9px;
 }
-
+.sideBySide {
+  display: flex;
+  flex-direction: row;
+  width: fit-content;
+  gap: 20px;
+}
 .article__title {
   margin-bottom: 0.5rem;
   font-size: 1rem;
