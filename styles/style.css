@@ -5,13 +5,13 @@
  * 
  */
 
- :root {
-   --grey-dark: #292b2c;
-   --grey-light: #e4e4e4;
-   --orange-dark: #c05326;
-   --orange-light: #f7eae4;
-   --white: #fff;
- }
+:root {
+  --grey-dark: #292b2c;
+  --grey-light: #e4e4e4;
+  --orange-dark: #c05326;
+  --orange-light: #f7eae4;
+  --white: #fff;
+}
 
 body {
   margin: 0;
@@ -24,7 +24,12 @@ button {
   font-size: 1rem;
 }
 
-h1,h2,h3,h4,h5,h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   margin-top: 0;
   margin-bottom: 0;
 }
@@ -76,7 +81,6 @@ p {
   text-decoration: none;
 }
 
-
 /* Text styles */
 
 .text-highlight {
@@ -91,7 +95,6 @@ p {
   border: 6px solid var(--white);
   border-left-color: var(--orange-dark);
 }
-
 
 /* Buttons */
 
@@ -108,11 +111,8 @@ button {
 button:hover {
   background-color: var(--white);
   color: var(--orange-dark);
-   /* Change the background color on hover */
+  /* Change the background color on hover */
 }
-
-
-
 
 /* Content */
 
@@ -143,7 +143,6 @@ button:hover {
   padding: 3rem;
   text-align: center;
 }
-
 
 .hero h1 {
   font-size: 2.5rem;
@@ -182,6 +181,15 @@ button:hover {
 }
 /* Article style added here */
 
+.articles-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.article {
+  flex: 40 0 0%;
+  box-sizing: border-box;
+}
 .article {
   margin-bottom: 2rem;
   padding: 1rem;
@@ -208,7 +216,6 @@ button:hover {
   margin: 0;
 }
 
-
 /* Headings */
 
 .heading-underline {
@@ -231,7 +238,6 @@ button:hover {
   max-width: 100px;
   background: var(--orange-dark);
 }
-
 
 /* Article */
 
@@ -327,4 +333,3 @@ button:hover {
   flex: 1;
   padding-left: 2rem;
 }
-
