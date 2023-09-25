@@ -5,13 +5,13 @@
  * 
  */
 
- :root {
-   --grey-dark: #292b2c;
-   --grey-light: #e4e4e4;
-   --orange-dark: #c05326;
-   --orange-light: #f7eae4;
-   --white: #fff;
- }
+:root {
+  --grey-dark: #292b2c;
+  --grey-light: #e4e4e4;
+  --orange-dark: #c05326;
+  --orange-light: #f7eae4;
+  --white: #fff;
+}
 
 body {
   margin: 0;
@@ -24,7 +24,12 @@ button {
   font-size: 1rem;
 }
 
-h1,h2,h3,h4,h5,h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   margin-top: 0;
   margin-bottom: 0;
 }
@@ -74,6 +79,7 @@ p {
   font-weight: 600;
   text-transform: uppercase;
   text-decoration: none;
+  padding: 20px;
 }
 
 
@@ -95,7 +101,58 @@ p {
 
 /* Buttons */
 
-  /* INSERT BUTTON STYLES HERE */
+/* INSERT BUTTON STYLES HERE */
+
+.button-section {
+  display: flex;
+  flex-direction: row;
+}
+
+.button1 {
+  background-color: #c05326;
+  font-size: 1rem;
+  color: #fff;
+  border-radius: 4px;
+  padding: 5px;
+  height: 30px;
+  width: 120px;
+  border: 10px solid red;
+  margin-right: 4px;    
+}
+
+.button2 {
+  background-color: #c05326;
+  font-size: 1rem;
+  color: #fff;
+  border-radius: 4px;
+  padding: 5px;
+  height: 30px;
+  width: 170px;
+  border-style: none;
+  margin-right: 4px;
+}
+
+.button3 {
+  color: #c05326;
+  background-color: #fff;
+  border-radius: 4px;
+  padding: 5px;
+  height: 30px;
+  width: 100px;
+  border-style: none;
+}
+
+button:hover,
+button:focus {
+  background-color: #fff;
+  color: #c05326;
+}
+
+.button3:hover,
+button:focus {
+  background-color: #c05326;
+  color: #fff;
+}
 
 
 /* Content */
@@ -120,8 +177,17 @@ p {
 /* hero */
 
 .hero {
-  background-image: url("header-bike.jpg");
+  background-image: url("../images/header-bike.jpg");
+  background-position: cover;
   background-color: var(--grey-light);
+  max-width: 1200px;
+  height: 320px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+  color: #fff;
+  padding-left: 30px;
 }
 
 .hero h1 {
@@ -134,12 +200,43 @@ p {
   margin-bottom: 2rem;
 }
 
+.site-boxes {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  justify-content: space-between;
+  margin-top: 10px;
+}
+
+.box {
+  display: flex;
+  border: 2px solid rgb(94, 88, 88);
+  border-radius: 4px;
+  justify-content: center;
+  align-items: center;
+  font-size: 1rem;
+  font-weight: bold;
+  width: 100px;
+  height: 100px;
+  padding: 30px;
+  text-align: center;
+}
 
 /* Headings */
 
+.heading-underline-side {
+  position: relative;
+  margin: .1rem 0 2rem 0;
+  padding-bottom: 0.5rem;
+  border-bottom: 2px solid var(--orange-light);
+  font-size: 1rem;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
 .heading-underline {
   position: relative;
-  margin-bottom: 2rem;
+  margin: 1rem 0 2rem 0;
   padding-bottom: 0.5rem;
   border-bottom: 2px solid var(--orange-light);
   font-size: 1rem;
@@ -162,8 +259,15 @@ p {
 /* Article */
 
 .article {
-  margin-bottom: 1rem;
-}
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin: 0 1em 1rem 0;
+  padding: 20px 20px 10px 20px;
+  border: 2px solid #e4e4e4;
+  border-radius: 4px;
+  width: 90%;
+} 
 
 .article__title {
   margin-bottom: 0.5rem;
@@ -184,6 +288,7 @@ p {
 .article__thumbnail {
   object-fit: contain;
   width: 5rem;
+  padding-right: 15px;
 }
 
 .article__read-more {
@@ -202,13 +307,44 @@ p {
   text-decoration: underline;
 }
 
+.bottom-articles {
+  display: flex;
+  flex-direction: row; 
+  width: 100%;
+  padding: 0;
+  gap: 15px;
+}
+
+.bottom-articles-a {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 0;
+  padding: 20px;
+  border: 2px solid #e4e4e4;
+  border-radius: 4px;
+  width: 50%;
+}
+
+.bottom-articles-b {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 0;
+  padding: 20px;
+  border: 2px solid #e4e4e4;
+  border-radius: 4px;
+  width: 50%;
+}
+
 .fa {
   margin-right: 0.5rem;
-  color: var(--orange-dark);
+  color: var(--orange-dark); 
 }
 
 .facebook-link {
   color: var(--orange-dark);
+  text-align: right;
 }
 
 /* Sidebar */
@@ -247,4 +383,18 @@ p {
   .main {
     padding-right: 2rem;
   }
+}
+
+@media screen and (max-width: 320px) {
+  .hero1 h1 {
+  font-size: 1rem;
+ }
+
+ .button2 {
+  width: auto;
+ }
+
+ .button3 {
+  width: auto;
+ } 
 }
