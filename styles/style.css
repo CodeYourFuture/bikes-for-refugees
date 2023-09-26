@@ -81,9 +81,11 @@ p {
   text-decoration: none;
   padding: 1rem;
 }
-
+.navigation__link:hover{
+  color: #c05326;
+}
 .navigation__item:hover{
-  background-color: #c05326;
+  background-color: #fff;
 }
 
 /* Text styles */
