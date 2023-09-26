@@ -63,14 +63,21 @@ p {
 .navigation__list {
   display: flex;
   list-style: none;
+
 }
+
 
 .navigation__item {
   padding: 0.5rem 0;
   margin-left: 1.5em;
 
 }
-
+.navigation__item:hover{
+  background-color: #c05326;
+  padding-left: 0.5em;
+  padding-right: 0.5em;
+  border-radius: 5px;
+}
 .navigation__link {
   color: var(--grey-dark);
   font-weight: 600;
@@ -272,8 +279,9 @@ background-color: white;
 }
 .section{
   display: flex;
-  
-
+}
+.section-learn{
+  margin-top: 2em;
 }
 #article-one
 {
