@@ -72,6 +72,7 @@ p {
 
 .navigation__item {
   padding: 0.5rem 0;
+  margin-right: 2rem; /* space between items */
 }
 
 .navigation__link {
@@ -79,6 +80,13 @@ p {
   font-weight: 600;
   text-transform: uppercase;
   text-decoration: none;
+  transition: color 0.4s;
+}
+
+/* hover effect on Navigation */
+
+.navigation__link:hover {
+  color: var(--orange-dark);
 }
 
 /* Text styles */
@@ -109,23 +117,29 @@ button {
 }
 
 button:hover {
-  background-color: rgb(55, 178, 235);
+  background-color: orangered;
 }
-.orange {
-  background-color: #e95b1e;
+.btn-orange {
+  background-color: var(--orange-dark);
   color: white;
   margin-left: 25px;
   border-radius: 4px;
   padding: 6px 6px;
   border: 0px;
+  transition: color 0.4s; /* effect for font color */
 }
 
-.white {
-  color: #c05326;
+.btn-white {
+  color: var(--orange-dark);
   background-color: white;
   border-radius: 4px;
   padding: 6px 6px;
   border: 0px;
+}
+
+/* Change font color to orange when hovered */
+.btn-white:hover {
+  color: white;
 }
 
 /* Content */
