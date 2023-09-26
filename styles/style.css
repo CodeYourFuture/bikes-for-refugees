@@ -5,13 +5,13 @@
  * 
  */
 
- :root {
-   --grey-dark: #292b2c;
-   --grey-light: #e4e4e4;
-   --orange-dark: #c05326;
-   --orange-light: #f7eae4;
-   --white: #fff;
- }
+:root {
+  --grey-dark: #292b2c;
+  --grey-light: #e4e4e4;
+  --orange-dark: #c05326;
+  --orange-light: #f7eae4;
+  --white: #fff;
+}
 
 body {
   margin: 0;
@@ -24,7 +24,12 @@ button {
   font-size: 1rem;
 }
 
-h1,h2,h3,h4,h5,h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   margin-top: 0;
   margin-bottom: 0;
 }
@@ -74,8 +79,14 @@ p {
   font-weight: 600;
   text-transform: uppercase;
   text-decoration: none;
+  padding: 1rem;
 }
-
+.navigation__link:hover{
+  color: #c05326;
+}
+.navigation__item:hover{
+  background-color: #fff;
+}
 
 /* Text styles */
 
@@ -92,11 +103,37 @@ p {
   border-left-color: var(--orange-dark);
 }
 
-
 /* Buttons */
 
-  /* INSERT BUTTON STYLES HERE */
+/* INSERT BUTTON STYLES HERE */
 
+.orange-button {
+  background-color: #c05326;
+  color: #fff;
+  border:#c05326;
+  border-radius: 0.3rem;
+  padding: 0.5rem;
+  font-weight: bold;
+}
+
+.orange-button:hover{
+  background-color: #fff;
+  color: #c05326;
+}
+
+.white-button {
+  background-color: #fff;
+  color: #c05326;
+  border:#fff;
+  border-radius: 0.3rem;
+  padding: 0.5rem;
+  font-weight:bold;
+}
+
+.white-button:hover{
+  background-color: #c05326;
+  color: #fff;
+}
 
 /* Content */
 
@@ -120,8 +157,11 @@ p {
 /* hero */
 
 .hero {
-  background-image: url("header-bike.jpg");
+  background-image: url(../images/header-bike.jpg);
   background-color: var(--grey-light);
+  color: #fff;
+  padding: 5rem;
+  margin-bottom: 2rem;
 }
 
 .hero h1 {
@@ -133,7 +173,6 @@ p {
   font-size: 1.2rem;
   margin-bottom: 2rem;
 }
-
 
 /* Headings */
 
@@ -158,10 +197,14 @@ p {
   background: var(--orange-dark);
 }
 
-
 /* Article */
 
 .article {
+  display: flex;
+  justify-content: space-between;
+  border: 2px solid var(--grey-light);
+  border-radius: 0.4rem;
+  padding: 1rem;
   margin-bottom: 1rem;
 }
 
@@ -184,6 +227,7 @@ p {
 .article__thumbnail {
   object-fit: contain;
   width: 5rem;
+  padding: 1rem;
 }
 
 .article__read-more {
@@ -209,6 +253,24 @@ p {
 
 .facebook-link {
   color: var(--orange-dark);
+  display: flex;
+  justify-content: end;
+} 
+
+/* main-article 2article */
+
+.articless{
+  display: flex;
+}
+
+.main-article, .main-articles {
+  flex: 50%;
+  border: 2px solid var(--grey-light);
+  border-radius: 0.4rem;
+  padding: 1rem;
+  margin: 0.4rem 0.4rem;
+}
+
 }
 
 /* Sidebar */
