@@ -5,13 +5,13 @@
  * 
  */
 
- :root {
-   --grey-dark: #292b2c;
-   --grey-light: #e4e4e4;
-   --orange-dark: #c05326;
-   --orange-light: #f7eae4;
-   --white: #fff;
- }
+:root {
+  --grey-dark: #292b2c;
+  --grey-light: #e4e4e4;
+  --orange-dark: #c05326;
+  --orange-light: #f7eae4;
+  --white: #fff;
+}
 
 body {
   margin: 0;
@@ -24,7 +24,12 @@ button {
   font-size: 1rem;
 }
 
-h1,h2,h3,h4,h5,h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   margin-top: 0;
   margin-bottom: 0;
 }
@@ -67,6 +72,7 @@ p {
 
 .navigation__item {
   padding: 0.5rem 0;
+  margin-right: 2rem; /* space between items */
 }
 
 .navigation__link {
@@ -74,8 +80,14 @@ p {
   font-weight: 600;
   text-transform: uppercase;
   text-decoration: none;
+  transition: color 0.2s;
 }
 
+/* hover effect on Navigation */
+
+.navigation__link:hover {
+  color: var(--orange-dark);
+}
 
 /* Text styles */
 
@@ -92,11 +104,50 @@ p {
   border-left-color: var(--orange-dark);
 }
 
-
 /* Buttons */
 
-  /* INSERT BUTTON STYLES HERE */
+/* INSERT BUTTON STYLES HERE */
 
+button {
+  background-color: var(--orange-dark);
+  color: white;
+  border-radius: 4px;
+  padding: 6px 6px;
+  border: 1px;
+}
+button:hover {
+  color: orangered;
+  background-color: white;
+  border: 1px;
+}
+
+.btn-orange {
+  background-color: var(--orange-dark);
+  color: var(--white);
+  border-radius: 4px;
+  padding: 6px 6px;
+  border: 1px;
+  margin-left: 25px;
+  transition: color 0.2s; /*effect speed*/
+}
+.btn-orange:hover {
+  color: orangered;
+  background-color: white;
+}
+
+.btn-white {
+  background-color: var(--white);
+  color: var(--orange-dark);
+  border-radius: 4px;
+  padding: 6px 6px;
+  border: 1px;
+  margin-left: 5px;
+}
+
+.btn-white:hover {
+  color: white;
+  background-color: orangered;
+}
 
 /* Content */
 
@@ -120,27 +171,41 @@ p {
 /* hero */
 
 .hero {
-  background-image: url("header-bike.jpg");
   background-color: var(--grey-light);
+  background-position: center center;
+  background-size: cover;
+  padding-top: 100px;
+  padding-bottom: 100px;
+  margin-bottom: 1rem;
 }
 
 .hero h1 {
+  margin-left: 25px;
   margin-bottom: 1rem;
   font-size: 2.5rem;
+  color: white;
 }
 
 .hero p {
   font-size: 1.2rem;
   margin-bottom: 2rem;
+  margin-left: 25px;
+  color: white;
 }
-
+h2 {
+  margin-bottom: 2px;
+  padding: 5px 20px;
+  padding-left: 0px;
+}
 
 /* Headings */
 
 .heading-underline {
   position: relative;
+
   margin-bottom: 2rem;
   padding-bottom: 0.5rem;
+  padding-top: 0px;
   border-bottom: 2px solid var(--orange-light);
   font-size: 1rem;
   font-weight: 600;
@@ -150,7 +215,7 @@ p {
 .heading-underline:before {
   content: "";
   position: absolute;
-  bottom: -2px;
+  bottom: -3px;
   left: 0;
   width: 25%;
   height: 2px;
@@ -158,13 +223,26 @@ p {
   background: var(--orange-dark);
 }
 
-
 /* Article */
-
+.articlearea {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 20px;
+}
 .article {
   margin-bottom: 1rem;
+  border: 1px solid #ccc;
+  width: 50%;
+  padding: 12px 9px;
 }
-
+.sideBySide {
+  display: flex;
+  flex-direction: row;
+  width: fit-content;
+  gap: 20px;
+  margin-bottom: 2rem;
+}
 .article__title {
   margin-bottom: 0.5rem;
   font-size: 1rem;
