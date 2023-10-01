@@ -79,6 +79,10 @@ p {
   font-weight: 600;
   text-transform: uppercase;
   text-decoration: none;
+  transition: all 0.2s ease-in;
+}
+.navigation__link:hover {
+  color: var(--orange-dark);
 }
 
 /* Text styles */
