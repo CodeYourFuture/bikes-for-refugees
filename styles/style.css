@@ -101,16 +101,15 @@ p {
 .primary-button {
   color: var(--white);
   background-color: var(--orange-dark);
-  border: 1px solid var(--orange-dark);
+  border: none;
   border-radius: 0.3rem;
-  padding: 0.5rem 1.5rem;
+  padding: 0.5rem;
   transition: all 0.2s ease-in;
 }
 
 .primary-button:hover {
   color: var(--orange-dark);
   background-color: var(--white);
-  border: 1px solid var(--orange-dark);
 }
 
 /* Content */
@@ -138,17 +137,23 @@ p {
   background-image: url(../images/header-bike.jpg);
   background-color: var(--grey-light);
   display: flex;
+  flex-direction: column;
   height: 320px;
+  justify-content: center;
+  padding-left: 2rem;
+  margin-bottom: 3rem;
 }
 
 .hero h1 {
   margin-bottom: 1rem;
   font-size: 2.5rem;
+  color: var(--white);
 }
 
 .hero p {
   font-size: 1.2rem;
   margin-bottom: 2rem;
+  color: var(--white);
 }
 
 /* Headings */
@@ -156,7 +161,6 @@ p {
 .heading-underline {
   position: relative;
   margin-bottom: 2rem;
-  padding-top: 3rem;
   padding-bottom: 0.5rem;
   border-bottom: 2px solid var(--orange-light);
   font-size: 1rem;
@@ -179,6 +183,8 @@ p {
 
 .article {
   margin-bottom: 1rem;
+  border: 0.1rem solid var(--grey-light);
+  padding: 1rem;
 }
 
 .article__title {
@@ -200,6 +206,7 @@ p {
 .article__thumbnail {
   object-fit: contain;
   width: 5rem;
+  margin-right: 1rem;
 }
 
 .article__read-more {
@@ -227,12 +234,21 @@ p {
   color: var(--orange-dark);
 }
 
+.learn-more-content {
+  display: flex;
+  gap: 1rem;
+}
+
 /* Sidebar */
 
 .sidebar {
   display: flex;
   flex-direction: column;
   min-width: 350px;
+}
+
+.sidebar > .article {
+  display: flex;
 }
 
 /* Footer */
