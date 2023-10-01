@@ -236,6 +236,7 @@ p {
 
 .facebook-link {
   color: var(--orange-dark);
+  align-self: end;
 }
 
 .learn-more-content {
@@ -243,6 +244,9 @@ p {
   gap: 1rem;
 }
 
+.learn-more-content > .article {
+  width: 50%;
+}
 /* Sidebar */
 
 .sidebar {
