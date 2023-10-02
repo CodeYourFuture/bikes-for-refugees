@@ -13,9 +13,11 @@
    --white: #fff;
  }
 
-body {
-  margin: 0;
-}
+
+
+
+ 
+
 
 body,
 button {
@@ -34,9 +36,9 @@ p {
   margin-bottom: 0;
 }
 
-.header,
-.content,
-.footer {
+header,
+content,
+footer {
   padding: 0 1.5rem;
   max-width: 1200px;
   margin: 0 auto;
@@ -44,13 +46,14 @@ p {
 
 /* Header */
 
-.header {
+header {
   display: flex;
-  align-items: center;
   justify-content: space-between;
   height: 5rem;
   margin-bottom: 1rem;
   padding-top: 1rem;
+  align-items: center;
+  flex-direction: row;
 }
 
 .header__logo {
@@ -71,9 +74,10 @@ p {
 
 .navigation__link {
   color: var(--grey-dark);
-  font-weight: 600;
+  font-weight: 600Z;
   text-transform: uppercase;
   text-decoration: none;
+  padding: 0.5rem;
 }
 
 
@@ -97,6 +101,8 @@ p {
 
   /* INSERT BUTTON STYLES HERE */
 
+button{ color:white;
+background: #934423;}
 
 /* Content */
 
@@ -113,25 +119,30 @@ p {
   border-radius: 4px;
   font-size: 0.85rem;
   line-height: 1.3;
-  padding: 1.5rem 1rem;
+  padding: 1rem;
   margin-bottom: 2rem;
 }
 
 /* hero */
 
 .hero {
-  background-image: url("header-bike.jpg");
+  background-image: url("https://github.com/CodeYourFuture/bikes-for-refugees/blob/main/images/header-bike.jpg?raw=true");
   background-color: var(--grey-light);
+  color:white;
+
 }
 
 .hero h1 {
   margin-bottom: 1rem;
   font-size: 2.5rem;
+  padding:2rem;
 }
 
 .hero p {
   font-size: 1.2rem;
-  margin-bottom: 2rem;
+  margin-bottom: 1rem;
+  padding: 2rem;
+  
 }
 
 
@@ -141,10 +152,11 @@ p {
   position: relative;
   margin-bottom: 2rem;
   padding-bottom: 0.5rem;
-  border-bottom: 2px solid var(--orange-light);
+  border-bottom: 1px solid var(--orange-light);
   font-size: 1rem;
   font-weight: 600;
   text-transform: uppercase;
+  margin-top: 1rem;
 }
 
 .heading-underline:before {
@@ -201,6 +213,10 @@ p {
 .article__read-more a:focus {
   text-decoration: underline;
 }
+section{border:1px solid grey;
+  display:flex;
+  flex-direction: row;
+}
 
 .fa {
   margin-right: 0.5rem;
@@ -209,6 +225,7 @@ p {
 
 .facebook-link {
   color: var(--orange-dark);
+  text-align: right;
 }
 
 /* Sidebar */
