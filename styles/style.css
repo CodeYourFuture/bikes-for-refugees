@@ -73,7 +73,8 @@ p {
 
 }
 .navigation__item:hover{
-  background-color: #c05326;
+  background-color: white;
+  color: rgb(222, 82, 31);
   padding-left: 0.5em;
   padding-right: 0.5em;
   border-radius: 5px;
@@ -109,6 +110,11 @@ p {
   border-radius: 3px;
   padding: 4px 6px;
   cursor: pointer;
+}
+.volunteer-button:hover{
+  background-color: orangered;
+  color: white;
+
 }
 .donate-button{
   color: white;
