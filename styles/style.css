@@ -63,19 +63,28 @@ p {
 .navigation__list {
   display: flex;
   list-style: none;
+
 }
+
 
 .navigation__item {
   padding: 0.5rem 0;
-}
+  margin-left: 1.5em;
 
+}
+.navigation__item:hover{
+  background-color: white;
+  color: rgb(222, 82, 31);
+  padding-left: 0.5em;
+  padding-right: 0.5em;
+  border-radius: 5px;
+}
 .navigation__link {
   color: var(--grey-dark);
   font-weight: 600;
   text-transform: uppercase;
   text-decoration: none;
 }
-
 
 /* Text styles */
 
@@ -94,7 +103,32 @@ p {
 
 
 /* Buttons */
+.volunteer-button{
+  background-color: white;
+  color: #c05326;
+  border: none;
+  border-radius: 3px;
+  padding: 4px 6px;
+  cursor: pointer;
+}
+.volunteer-button:hover{
+  background-color: orangered;
+  color: white;
 
+}
+.donate-button{
+  color: white;
+  background-color: #c05326;
+  border: none;
+  border-radius: 3px;
+  padding: 4px 6px;
+  cursor: pointer;
+       }
+.donate-button:hover{
+color: #c05326;
+background-color: white;
+
+}
   /* INSERT BUTTON STYLES HERE */
 
 
@@ -120,20 +154,22 @@ p {
 /* hero */
 
 .hero {
-  background-image: url("header-bike.jpg");
+  background-image: url("../images/header-bike.jpg");
   background-color: var(--grey-light);
+  padding: 100px;
 }
 
 .hero h1 {
   margin-bottom: 1rem;
   font-size: 2.5rem;
+  color: white;
 }
 
 .hero p {
+  color: white;
   font-size: 1.2rem;
   margin-bottom: 2rem;
 }
-
 
 /* Headings */
 
@@ -145,6 +181,8 @@ p {
   font-size: 1rem;
   font-weight: 600;
   text-transform: uppercase;
+
+
 }
 
 .heading-underline:before {
@@ -163,29 +201,53 @@ p {
 
 .article {
   margin-bottom: 1rem;
+  border: 1.5px solid rgb(215, 210, 210);
+  border-radius: 5px;
+  padding : 1em 2em;
+ 
+  
 }
+
+
+
 
 .article__title {
   margin-bottom: 0.5rem;
   font-size: 1rem;
   font-weight: 700;
+  
+  
+
 }
 
 .article__title-link {
   text-decoration: none;
   color: var(--orange-dark);
+ 
+ 
+  
+ 
+  
 }
 
 .article__summary {
   margin-top: 0;
   margin-bottom: 1rem;
+  
+  
 }
 
 .article__thumbnail {
+  float: left;
   object-fit: contain;
   width: 5rem;
+  margin-top: 1em;
+ 
+  
 }
-
+.article__content{
+  margin-left: 6em;
+}
 .article__read-more {
   margin-top: 0;
 }
@@ -209,6 +271,7 @@ p {
 
 .facebook-link {
   color: var(--orange-dark);
+  margin-left: 12em;
 }
 
 /* Sidebar */
@@ -217,8 +280,19 @@ p {
   display: flex;
   flex-direction: column;
   min-width: 350px;
+  margin-left: 2em;
+  
 }
-
+.section{
+  display: flex;
+}
+.section-learn{
+  margin-top: 2em;
+}
+#article-one
+{
+  margin-right: 70px;
+}
 /* Footer */
 
 .footer {
