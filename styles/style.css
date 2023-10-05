@@ -5,13 +5,13 @@
  * 
  */
 
- :root {
-   --grey-dark: #292b2c;
-   --grey-light: #e4e4e4;
-   --orange-dark: #c05326;
-   --orange-light: #f7eae4;
-   --white: #fff;
- }
+:root {
+  --grey-dark: #292b2c;
+  --grey-light: #e4e4e4;
+  --orange-dark: #c05326;
+  --orange-light: #f7eae4;
+  --white: #fff;
+}
 
 body {
   margin: 0;
@@ -24,7 +24,12 @@ button {
   font-size: 1rem;
 }
 
-h1,h2,h3,h4,h5,h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   margin-top: 0;
   margin-bottom: 0;
 }
@@ -66,7 +71,11 @@ p {
 }
 
 .navigation__item {
-  padding: 0.5rem 0;
+  padding: 0.5rem 1rem;
+}
+
+.navigation__item:hover {
+  background-color: #c05326;
 }
 
 .navigation__link {
@@ -94,8 +103,36 @@ p {
 
 
 /* Buttons */
+button {
+  border-radius: 0.3rem;
+  padding: 0.5rem;
+}
 
-  /* INSERT BUTTON STYLES HERE */
+.dark {
+  background-color: #c05326;
+  color: #e4e4e4;
+  font-weight: bold;
+  border-color: #c05326;
+}
+
+.dark:hover {
+  background-color: var(--white);
+  color: var(--orange-dark);
+}
+
+.light {
+  background-color: var(--white);
+  color: var(--orange-dark);
+  font-weight: bold;
+  border-color: #e4e4e4;
+}
+
+.light:hover {
+  background-color: var(--orange-dark);
+  color: var(--white);
+}
+
+/* INSERT BUTTON STYLES HERE */
 
 
 /* Content */
@@ -120,18 +157,23 @@ p {
 /* hero */
 
 .hero {
-  background-image: url("header-bike.jpg");
+  background-image: url("../images/header-bike.jpg");
+  background-size: cover;
   background-color: var(--grey-light);
+  padding: 6rem 3rem;
+  margin-bottom: 3rem;
 }
 
 .hero h1 {
   margin-bottom: 1rem;
   font-size: 2.5rem;
+  color: #fff;
 }
 
 .hero p {
   font-size: 1.2rem;
   margin-bottom: 2rem;
+  color: #fff;
 }
 
 
@@ -162,7 +204,23 @@ p {
 /* Article */
 
 .article {
+  display: flex;
+  justify-content: space-between;
+  border-radius: 4px;
+  border: 2px solid var(--grey-light);
+  padding: 1rem;
   margin-bottom: 1rem;
+}
+
+.article-info {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+}
+
+.article-more {
+  border: 1px solid #c1c4c5;
+  padding: 1rem;
 }
 
 .article__title {
@@ -183,7 +241,13 @@ p {
 
 .article__thumbnail {
   object-fit: contain;
-  width: 5rem;
+  width: 25%;
+  padding-right: 1rem;
+}
+
+.aricle__content {
+  display: inline-block;
+  width: 70%;
 }
 
 .article__read-more {
@@ -203,12 +267,14 @@ p {
 }
 
 .fa {
-  margin-right: 0.5rem;
+  margin-right: 0.1rem;
   color: var(--orange-dark);
 }
 
 .facebook-link {
+  display: flex;
   color: var(--orange-dark);
+  justify-content: end;
 }
 
 /* Sidebar */
