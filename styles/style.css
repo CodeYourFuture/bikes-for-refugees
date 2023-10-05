@@ -94,6 +94,12 @@ p {
 
 
 /* Buttons */
+button{
+  background-color: var(--orange-dark);
+  color: var(--white);
+  border-radius: none;
+  padding: 0.5rem;
+}
 
   /* INSERT BUTTON STYLES HERE */
 
@@ -120,11 +126,13 @@ p {
 /* hero */
 
 .hero {
-  background-image: url("header-bike.jpg");
+  background-image: url("/images/header-bike.jpg");
   background-color: var(--grey-light);
+  padding-bottom: 160px;
 }
 
 .hero h1 {
+  color: #fff;
   margin-bottom: 1rem;
   font-size: 2.5rem;
 }
@@ -162,7 +170,11 @@ p {
 /* Article */
 
 .article {
+  border: 1px solid grey;
   margin-bottom: 1rem;
+  padding-left: 4px;
+  display: table-cell;
+  margin-inline-start: ;
 }
 
 .article__title {
