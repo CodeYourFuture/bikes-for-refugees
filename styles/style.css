@@ -24,6 +24,8 @@ button {
   font-size: 1rem;
 }
 
+
+
 h1,h2,h3,h4,h5,h6 {
   margin-top: 0;
   margin-bottom: 0;
@@ -67,6 +69,7 @@ p {
 
 .navigation__item {
   padding: 0.5rem 0;
+  margin-left: 20px;
 }
 
 .navigation__link {
@@ -76,6 +79,10 @@ p {
   text-decoration: none;
 }
 
+.navigation__link:hover,
+.navigation__link:focus {
+  color: var(--orange-dark);
+}
 
 /* Text styles */
 
@@ -96,6 +103,31 @@ p {
 /* Buttons */
 
   /* INSERT BUTTON STYLES HERE */
+  button {
+    font-family: "Source Sans Pro", "Helvetica Neue", Arial, sans-serif;
+    background-color: var(--orange-dark);
+    color: var(--white);
+    font-size: 1rem;
+  }
+
+  button:hover,
+  button:focus {
+    background-color: var(--white);
+    color: var(--orange-dark);
+  }
+
+  .button2 {
+    font-family: "Source Sans Pro", "Helvetica Neue", Arial, sans-serif;
+    background-color: var(--white);
+    color: var(--orange-dark);
+    font-size: 1rem;
+  }
+
+  .button2:hover,
+  .button2:focus {
+    background-color: var(--orange-dark);
+    color: var(--write);
+  }
 
 
 /* Content */
@@ -120,8 +152,11 @@ p {
 /* hero */
 
 .hero {
+  padding: 70px;
+  margin-bottom: 30px;
   background-image: url("header-bike.jpg");
   background-color: var(--grey-light);
+  color:#fff
 }
 
 .hero h1 {
@@ -163,6 +198,10 @@ p {
 
 .article {
   margin-bottom: 1rem;
+  border-style: solid;
+  border-color: lightgray;
+  padding: 10px;
+  width: 350px;
 }
 
 .article__title {
@@ -214,6 +253,7 @@ p {
 /* Sidebar */
 
 .sidebar {
+  margin-left: 30px;
   display: flex;
   flex-direction: column;
   min-width: 350px;
@@ -247,4 +287,12 @@ p {
   .main {
     padding-right: 2rem;
   }
+}
+
+.container {
+  display: flex;
+} 
+
+.item {
+  margin-right: 10px;
 }
