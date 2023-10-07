@@ -138,6 +138,7 @@ button{
 }
 
 .hero p {
+  color: #e4e4e4;
   font-size: 1.2rem;
   margin-bottom: 2rem;
 }
@@ -168,13 +169,20 @@ button{
 
 
 /* Article */
+.articleArea {
+display: flex;
+flex-direction: row;
+column-gap: 12px;
+padding-left: 5px;
+}
 
 .article {
+
   border: 1px solid grey;
   margin-bottom: 1rem;
-  padding-left: 4px;
+  padding-left: 4p;
   display: table-cell;
-  margin-inline-start: ;
+  margin-inline-start ;
 }
 
 .article__title {
@@ -248,6 +256,8 @@ button{
   text-align: center;
   font-size: 0.85rem;
 }
+.vol1{ background-color: white;}
+.button-div{ margin-top: 6em ;}
 
 /* Media queries */
 
