@@ -13,15 +13,19 @@
    --white: #fff;
  }
 
-body {
-  margin: 0;
-}
 
 body,
 button {
   font-family: "Source Sans Pro", "Helvetica Neue", Arial, sans-serif;
   color: var(--grey-dark);
   font-size: 1rem;
+  padding: 0.6rem ;
+  border-style: none;
+  border-radius: 0.5rem;
+}
+
+button:hover {
+  color: #934423;
 }
 
 h1,h2,h3,h4,h5,h6 {
@@ -56,17 +60,26 @@ p {
 .header__logo {
   max-height: 90px;
   width: auto;
+  margin-right: 5rem;
 }
+
+.donate_button {
+  margin-left: 34rem;
+}
+
 
 /* Navigation */
 
 .navigation__list {
   display: flex;
   list-style: none;
+  
+
 }
 
 .navigation__item {
-  padding: 0.5rem 0;
+  padding-right: 10px;
+  padding-left: 10px;
 }
 
 .navigation__link {
@@ -102,7 +115,7 @@ p {
 
 .content {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
 }
 
 /* Alert */
@@ -120,19 +133,41 @@ p {
 /* hero */
 
 .hero {
-  background-image: url("header-bike.jpg");
-  background-color: var(--grey-light);
+  background-image: url('../images/header-bike.jpg');
+  height: 362px;
+  width: 820px;
+  background-size: cover;
+  position: relative;
+  padding-left: 20px;
+  
 }
 
 .hero h1 {
-  margin-bottom: 1rem;
+  padding-top: 100px;
   font-size: 2.5rem;
+  color: white;
+  justify-content: center;
+  padding-bottom: 10px;
+  
 }
 
 .hero p {
   font-size: 1.2rem;
   margin-bottom: 2rem;
+  color: white;
 }
+
+.orange_red {
+  background-color: #c05326;
+  color: #fff;
+
+}
+
+.volunteer_button {
+  background-color: #fff;
+  color: #c05326;
+}
+
 
 
 /* Headings */
@@ -140,6 +175,7 @@ p {
 .heading-underline {
   position: relative;
   margin-bottom: 2rem;
+  margin-top: 4rem;
   padding-bottom: 0.5rem;
   border-bottom: 2px solid var(--orange-light);
   font-size: 1rem;
@@ -162,7 +198,10 @@ p {
 /* Article */
 
 .article {
+  display:flex;
   margin-bottom: 1rem;
+  border-style: solid;
+  border-color: rgb(145, 140, 140);
 }
 
 .article__title {
@@ -184,6 +223,7 @@ p {
 .article__thumbnail {
   object-fit: contain;
   width: 5rem;
+  margin-right: 1rem;
 }
 
 .article__read-more {
@@ -217,6 +257,8 @@ p {
   display: flex;
   flex-direction: column;
   min-width: 350px;
+  margin-left: 2rem;
+  
 }
 
 /* Footer */
@@ -236,6 +278,34 @@ p {
   text-align: center;
   font-size: 0.85rem;
 }
+.body {
+  display: flex;
+}
+
+.donate_button {
+  background-color: #c05326;
+  color: #fff;
+
+}
+
+.bottom_section_article {
+  display: flex;
+  justify-content: space-between;
+  
+}
+
+.article1, .article2 {
+    display:flex;
+    flex-direction: column;
+    margin-bottom: 1rem;
+    border-style: solid;
+    border-color: rgb(145, 140, 140);
+    padding: 1rem;
+}
+
+.article1 {
+  margin-right: 1rem;
+}
 
 /* Media queries */
 
@@ -246,5 +316,6 @@ p {
 
   .main {
     padding-right: 2rem;
+    margin: 10% 10% 10% 10%;
   }
 }
