@@ -176,6 +176,32 @@ p {
   background: var(--orange-dark);
 }
 
+.navbtn {
+  color: #e4e4e4;
+  background-color: #c05326;
+  width: 100px;
+  height: 35px;
+  border-radius: 5px;
+  border: #292b2c;
+}
+
+.btn1 {
+  color: #e4e4e4;
+  background-color: #c05326;
+  width: 150px;
+  height: 35px;
+  border-radius: 5px;
+  border: #292b2c;
+}
+.btn2 {
+  color: #e4e4e4;
+  background-color: #c05326;
+  width: 100px;
+  height: 35px;
+  border-radius: 5px;
+  border: #292b2c;
+}
+
 
 /* Article */
 
