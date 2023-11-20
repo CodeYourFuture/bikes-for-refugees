@@ -94,6 +94,12 @@ p {
 
 
 /* Buttons */
+button{
+  background-color: var(--orange-dark);
+  color: var(--white);
+  border-radius: none;
+  padding: 0.5rem;
+}
 
   /* INSERT BUTTON STYLES HERE */
 
@@ -120,16 +126,19 @@ p {
 /* hero */
 
 .hero {
-  background-image: url("header-bike.jpg");
+  background-image: url("/images/header-bike.jpg");
   background-color: var(--grey-light);
+  padding-bottom: 160px;
 }
 
 .hero h1 {
+  color: #fff;
   margin-bottom: 1rem;
   font-size: 2.5rem;
 }
 
 .hero p {
+  color: #e4e4e4;
   font-size: 1.2rem;
   margin-bottom: 2rem;
 }
@@ -160,9 +169,20 @@ p {
 
 
 /* Article */
+.articleArea {
+display: flex;
+flex-direction: row;
+column-gap: 12px;
+padding-left: 5px;
+}
 
 .article {
+
+  border: 1px solid grey;
   margin-bottom: 1rem;
+  padding-left: 4p;
+  display: table-cell;
+  margin-inline-start ;
 }
 
 .article__title {
@@ -178,6 +198,7 @@ p {
 
 .article__summary {
   margin-top: 0;
+  padding-left: 5px;
   margin-bottom: 1rem;
 }
 
@@ -236,6 +257,8 @@ p {
   text-align: center;
   font-size: 0.85rem;
 }
+.vol1{ background-color: white;}
+.button-div{ margin-top: 6em ;}
 
 /* Media queries */
 
