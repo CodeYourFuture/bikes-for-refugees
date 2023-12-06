@@ -5,16 +5,17 @@
  * 
  */
 
- :root {
-   --grey-dark: #292b2c;
-   --grey-light: #e4e4e4;
-   --orange-dark: #c05326;
-   --orange-light: #f7eae4;
-   --white: #fff;
- }
+:root {
+  --grey-dark: #292b2c;
+  --grey-light: #e4e4e4;
+  --orange-dark: #c05326;
+  --orange-light: #f7eae4;
+  --white: #fff;
+}
 
 body {
   margin: 0;
+  box-sizing: border-box;
 }
 
 body,
@@ -24,7 +25,12 @@ button {
   font-size: 1rem;
 }
 
-h1,h2,h3,h4,h5,h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   margin-top: 0;
   margin-bottom: 0;
 }
@@ -50,7 +56,6 @@ p {
   justify-content: space-between;
   height: 5rem;
   margin-bottom: 1rem;
-  padding-top: 1rem;
 }
 
 .header__logo {
@@ -74,8 +79,8 @@ p {
   font-weight: 600;
   text-transform: uppercase;
   text-decoration: none;
+  padding: 0.5rem 0;
 }
-
 
 /* Text styles */
 
@@ -92,14 +97,24 @@ p {
   border-left-color: var(--orange-dark);
 }
 
-
 /* Buttons */
-
-  /* INSERT BUTTON STYLES HERE */
-
+.btn {
+  background-color: var(--orange-dark);
+  color: var(--white);
+  padding: 0.25rem 0.5rem;
+  border: none;
+  border-radius: 5px;
+}
+.btn-v {
+  color: var(--orange-dark);
+  background-color: var(--white);
+}
+.btn:hover,
+.btn:focus {
+  background-color: #934423;
+}
 
 /* Content */
-
 .content {
   display: flex;
   flex-direction: column;
@@ -120,8 +135,11 @@ p {
 /* hero */
 
 .hero {
-  background-image: url("header-bike.jpg");
-  background-color: var(--grey-light);
+  background: url("../images/header-bike.jpg") no-repeat center center/cover;
+  /* background-color: var(--grey-light); */
+  color: var(--grey-light);
+  padding: 2.5rem 1.5rem 3.5rem 1.5rem;
+  margin-bottom: 2rem;
 }
 
 .hero h1 {
@@ -134,7 +152,6 @@ p {
   margin-bottom: 2rem;
 }
 
-
 /* Headings */
 
 .heading-underline {
@@ -146,7 +163,6 @@ p {
   font-weight: 600;
   text-transform: uppercase;
 }
-
 .heading-underline:before {
   content: "";
   position: absolute;
@@ -157,12 +173,23 @@ p {
   max-width: 100px;
   background: var(--orange-dark);
 }
-
+ul li {
+  margin: 0 0.5rem;
+}
 
 /* Article */
+.articles {
+  display: flex;
+  justify-content: space-between;
+}
+.articles article:first-child {
+  margin-right: 1rem;
+}
 
 .article {
   margin-bottom: 1rem;
+  border: 3px solid var(--grey-light);
+  padding: 1rem;
 }
 
 .article__title {
@@ -209,6 +236,7 @@ p {
 
 .facebook-link {
   color: var(--orange-dark);
+  text-align: right;
 }
 
 /* Sidebar */
@@ -218,11 +246,19 @@ p {
   flex-direction: column;
   min-width: 350px;
 }
+.sidebar article {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.sidebar article img {
+  margin-right: 1rem;
+}
 
 /* Footer */
 
 .footer {
-  margin-top: 2rem;
+  margin-top: 1rem;
 }
 
 .footer__content {
@@ -232,7 +268,7 @@ p {
 }
 
 .footer p {
-  padding-bottom: 1rem;
+  padding-bottom: 0.25rem;
   text-align: center;
   font-size: 0.85rem;
 }
